@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Ezerolabs-Individual-Apply-KYC 13.1</title>
+		<!-- Fav Icons -->
+		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+		<link rel="icon" href="images/favicon.png" type="image/x-icon" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+		/>
+		<!-- <title>jQuery UI Datepicker - Default functionality</title> -->
+
+		<!-- Stylesheets -->
+		
+		<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/dashboard-header.css" rel="stylesheet" />
+		<link href="css/dashboard-style.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous" />
+	</head>
+
+<body>
+<div class="container-fluid dashboard-body-bg">
+	<div class="row">
+		<header class="custom-header">			
+			<div class="ezl-dashboard-header">
+				<div class="menu-left">
+					<div class="menu-wrap">
+						<a href="#menu" class="menu-link"><img src="images/Menu.png" alt="Menu" class="img-fluid"/></a>
+					</div>
+					<div class="header-logo"><a href="javascript:void(0)"><img src="images/logo.png" alt="logo" class="img-fluid"/></a></div>
+				</div>
+				<div class="menuright-side">
+					<div class="right-search">
+						<form class="search-form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Fund, ISIN, Keyword ">
+									<button class="search-form-btn" type="Submit"><img class="search-img" src="images/search.png" alt="search"></button>
+							</div>
+						</form>
+					</div>
+					<div class="menu-mid-sect">
+						<ul id="submenubar">
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/home.png" alt="home" class="img-fluid"/></div>
+								<a href="javascript:void(0)">Home</a>
+							</li>
+							<!-- <li class="">
+								<div class="menu-times-notifi"><img src="images/network.png" alt="network" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">My Network</a>
+							</li> -->
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/Chat.png" alt="Chat" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">Messaging</a>
+							</li>
+							<li class="ether-block">
+								<div class="menu-times-notifi mr-2"><img src="images/Ethereum.png" alt="Ethereum" class="img-fluid"/></div>
+								<a href="javascript:void(0)">ETH Mainnet <i class="fa fa-angle-right"></i></a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)">Connect Wallet</a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)"><span><img src="images/cart.png" class="img-fluid mr-2"/></span>Cart</a>
+							</li>
+							
+						</ul>
+						<div class="toggle-menu">
+								<div onclick="subtogglediv('submenubar','submenu-toggle');" class="d-inline-block">
+									<i class="fa fa-bars" aria-hidden="true" id="submenu-toggle"></i>
+								</div>
+							</div>
+					</div>
+					
+					<div class="ezl-notificaion">
+					<div class="position-relative notificaion-dropdown ezl-notificaion-marg">
+						<a href="javascript:void(0)" class="popup"><img src="images/help.png" alt="help"/></a>							
+											
+					</div>
+					<div class=" position-relative notificaion-dropdown">
+						<a href="javascript:void(0)" class="popup"><img src="images/alertBell.png" alt="Bell"><span class="notificaion-spn">10</span></a>							
+						
+					</div>
+					</div>
+					<div class="ezl-user-ac">
+					
+					<div class="account-d dropdown">
+						<div class="dropdown-buttn"><span class="popup" onclick="popupFunction()"><div class="user-img"><img src="images/user-img.png" alt="user image" class="img-fluid"/></div></span>
+							<!-- <div class="popupbox dropdown-menu" id="myPopup">
+								
+								<ul class="">
+									<li>
+										<div  class="enoch-usr-prof"><span><img src="images/user-pro-pic.png" class="img-fluid" alt="profile- pic"/> EncchUser007</span><span><a href="#">Change</a></span></div>
+									</li>
+									<li>
+										<div class="enoch-usr-status-block">
+											<div class="usr-status-left">Online Status</div>
+											<div class="usr-status-right">
+												<div class="post-switch">
+													<label class="postswitch">
+													  <input type="checkbox" checked>
+													  <span class="post-slider round"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="enoch-usr-status-block"><a href="#">Public Profile</a></div>
+										<div class="enoch-usr-status-block mb-0"><a href="#">User Settings</a></div>
+									</li>
+									<li>
+										<div class="enoch-usr-status-block"><a href="#">Billing</a></div>
+										<div class="enoch-usr-status-block"><a href="#">Help Center</a></div>
+										<div class="enoch-usr-status-block"><a href="#">Verify Account (KYC)</a></div>
+										<div class="enoch-usr-status-block mb-0"><a href="#" class="orange-clr">Upgrade to Premium</a></div>
+									</li>
+									<li class="mt-4">
+										<div class="enoch-usr-status-block mb-0">Free Bonus<span><a href="#" class="btn freebonus-btn">$50/500 $Enoch </a></span></div>
+									</li>
+									<li class="mt-4">
+										<div class="enoch-usr-status-block mb-0"><a href="#" data-toggle="modal" data-target="switch-user-modal">Switch Account</a></div>
+										
+									</li>
+									<li class="mt-4 mb-0 pb-0">
+										<div class="enoch-usr-status-block mb-0"><a href="#" class="post-red-clr">Logout</a></div>
+									</li>
+								</ul>
+							</div> -->
+						</div>
+					</div>
+					</div>
+				</div>				
+			</div>
+			
+		</header>
+	</div>	
+	
+	<div class="row">
+        <div class="dashboard-header-bredcrumb">
+			<div class="ezl-dashboard-container">
+				<div class="col-12">
+					<ul>
+						<li class="mr-2"><img src="images/bread-crumb-icon-home.png" alt="icon" class="img-fluid"/> </li>
+						<li class="mr-1"><a href="#" class="dsh-active-black"> Individual KYC / </a></li>
+						<li><a href="#"> Apply EKYC</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		
+		<div class="KYC-BODY ezl-dashboard-container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="Individual-profile-sect">
+						<h1>Individual profile</h1>
+						<div class="KYC-profile-picture-sect">
+							<h2>Profile Picture</h2>
+							<div class="KYC-profile-picture-content">
+								<div class="row">
+									<div class="col-md-2">
+										<div class="KYC-profile-picture">
+										    <div class="KYC-profile-picture-img">
+										        <img src="images/profile-pic.png" alt="profile-picture" class="img-fluid" />
+										    </div>
+											<input type="file" class="my_file" />
+										</div>
+									</div>
+
+									<div class="col-md-10">
+										<div class="KYC-profile-picture-text">
+											<h3>Upload your photo here</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+	            <div class="Personal-Information-sect">
+                    <ul class="kyc-card-headings">
+                        <li>Personal Information</li>
+                        <li class="pencil pencil-1 pencil-dactive pencil-active pr-2"><img src="images/KYC-AML/pencil-bg.png" alt="pencil" class="img-fluid"/></li>
+                    </ul>
+                
+	                <div class="KYC-Personal-Information">
+	                    <ul>
+	                        <li class="text-gray">First name <span class="list-1">Robert</span></li>
+	                        <li class="text-gray">Middle name <span class="list-2">******</span></li>
+	                        <li class="last-list text-gray">Last name <span class="list-3">Rose</span></li>
+	                    </ul>
+	                </div>
+	            </div>
+	            
+	            <div class="Address-information Address-information-active Personal-Information-active">
+						<ul class="kyc-card-headings">
+							<li>Personal Information</li>
+							<li class="edit-save-btn">
+								<button><a href="#">Save</a></button>
+							</li>
+						</ul>
+
+						<div class="KYC-Address-information KYC-Address-information-active KYC-Personal-Information-active">
+							<ul>
+								<li>
+									<lable>First name</lable>
+									<input type="text" value="Robert" />
+								</li>
+
+								<li>
+									<lable>Middle name</lable>
+									<input type="text" value="-" />
+								</li>
+
+								<li class="last-list">
+									<lable>Last name</lable>
+									<input type="text" value="Rose" />
+								</li>
+
+							</ul>
+						</div>
+					</div>
+	            
+	        </div>
+	        
+				<div class="col-lg-6">
+					<div class="Account-Information AccInfoDefault">
+						<ul class="kyc-card-headings">
+							<li>Account Information</li>
+							<li class="pencil pencil-2 pencil-dactive pencil-active pr-2"><img src="images/KYC-AML/pencil-active.png" alt="pencil" class="img-fluid"/></li>
+						</ul>
+
+						<div class="KYC-Account-Information">
+							<h1>I am an <span>&nbsp;Individual</span></h1>
+							<ul>
+								<li class="text-gray">Date of Birth <span class="list-1">11/09/1976</span></li>
+								<li class="text-gray">Country <span class="list-2 ">United Kingdom</span></li>
+								<li class="text-gray">Email <span class="list-3 text-small">a.rose@ace.co.uk</span></li>
+								<li class="last-list text-gray">Phone No. <span class="list-4">+44 0755******678</span></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="Account-Information Account-Information-active">
+						<ul class="kyc-card-headings">
+							<li>Account Information</li>
+							<li class="edit-save-btn">
+								<button><a href="#">Save</a></button>
+							</li>
+						</ul>
+
+						<div class="KYC-Account-Information">
+							<h1>I am an <span>&nbsp;Individual</span></h1>
+							<ul>
+
+							    <li class="date date__container">
+							        <lable class="text-gray">Date of Birth</lable>
+							        <input class="pl-5 border-error" type="text" id="custom__date" placeholder="11/09/1976">
+							        <label class="date__trigger" for="custom__date"> <img src="images/Date.png" alt="" class="img-fluid"/></label>
+							        <label class="dropdown_trigger" for="custom__date"> <img src="images/step-3-kyc-id/dropdown.png" alt="" class="img-fluid"/></label>
+							    </li>
+
+								<li>
+									<lable class="country-dropdown-lable text-gray">Country</lable>
+									<div class="country-dropdown">
+										<div class="select-box account-select-box border-error">
+											<div class="options-container acc-options-container">
+												<div class="option acc-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="acc-info-label" for="automobiles">Afghanistan</label>
+												</div>
+
+												<div class="option acc-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="acc-info-label" for="automobiles">Albania</label>
+												</div>
+
+												<div class="option acc-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="acc-info-label" for="automobiles">Algeria</label>
+												</div>
+
+												<div class="option acc-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="acc-info-label" for="automobiles">Andorra</label>
+												</div>
+
+												<div class="option acc-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="acc-info-label" for="automobiles">Angola</label>
+												</div>
+
+												<div class="option acc-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="acc-info-label" for="automobiles">Argentina</label>
+												</div>
+
+												<div class="option acc-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="acc-info-label" for="automobiles">Australia</label>
+												</div>
+
+												<div class="option acc-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="acc-info-label" for="automobiles">France</label>
+												</div>
+
+												<div class="option acc-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="acc-info-label" for="automobiles">Gabon</label>
+												</div>
+
+												<div class="option acc-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="acc-info-label" for="automobiles">Georgia</label>
+												</div>
+
+												<div class="option acc-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="acc-info-label" for="automobiles">Germany</label>
+												</div>
+
+												<div class="option acc-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="acc-info-label" for="automobiles">Ghana</label>
+												</div>
+
+												<div class="option acc-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="acc-info-label" for="automobiles">Greece</label>
+												</div>
+
+												<div class="option acc-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="acc-info-label" for="automobiles">Grenada</label>
+												</div>
+											</div>
+
+											<div class="selected acc-info-select">United Kingdom</div>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<lable class="text-gray">Email</lable>
+									<input class="border-error" type="mail" placeholder="a.rose@ace.co.uk" />
+								</li>
+
+								<li class="last-list acc-info-last-list">
+									<lable class="phn-lable text-gray">Phone No.</lable>
+
+									<div class="sign-form-input border-error d-flex">
+											<div class="position-relative signup-phn">
+												<div class="sign-form-drop-box2">
+													<a href="javascript:void(0)" onclick="selectPhn()" id="selectPhn" class="sign-form-droplist sign-form-droplist-phn">+44</a>
+												</div>
+												<div id="selectPhn-form-DropdownList" class="sign-form-content signup-poohe-content">										
+													<ul class="sign-form-drop-scrollable">
+														<li>
+														    <div class="country-name-and-flag">
+														        <div class="country-flag">
+														            <img src="images/flags/uk.png" alt="UK-flag" class="img-fluid" />
+														        </div>
+														        <div class="country-name">
+														            <p>United Kingdom</p>
+														        </div>
+														    </div>
+														    <div class="contact-inner">+44</div>
+														</li>
+														
+														<li>
+														    <div class="country-name-and-flag">
+														        <div class="country-flag">
+														            <img src="images/flags/usa.png" alt="USA-flag" class="img-fluid" />
+														        </div>
+														        <div class="country-name">
+														            <p>United States of America</p>
+														        </div>
+														    </div>
+														    <div class="contact-inner">+1</div>
+														</li>
+														
+														<li>
+														    <div class="country-name-and-flag">
+														        <div class="country-flag">
+														            <img src="images/flags/Uruguay.png" alt="Uruguay-flag" class="img-fluid" />
+														        </div>
+														        <div class="country-name">
+														            <p>Uruguay</p>
+														        </div>
+														    </div>
+														    <div class="contact-inner">+598</div>
+														</li>
+														
+														<li>
+														    <div class="country-name-and-flag">
+														        <div class="country-flag">
+														            <img src="images/flags/Uzbekistan.png" alt="Uzbekistan-flag" class="img-fluid" />
+														        </div>
+														        <div class="country-name">
+														            <p>Uzbekistan</p>
+														        </div>
+														    </div>
+														    <div class="contact-inner">+998</div>
+														</li>
+														
+														<li>
+														    <div class="country-name-and-flag">
+														        <div class="country-flag">
+														            <img src="images/flags/Vanuatu.png" alt="Vanuatu-flag" class="img-fluid" />
+														        </div>
+														        <div class="country-name">
+														            <p>Vanuatu</p>
+														        </div>
+														    </div>
+														    <div class="contact-inner">+678</div>
+														</li>
+														
+														<li>
+														    <div class="country-name-and-flag">
+														        <div class="country-flag">
+														            <img src="images/flags/Vatican%20City.png" alt="Vatican City-flag" class="img-fluid" />
+														        </div>
+														        <div class="country-name">
+														            <p>Vatican City</p>
+														        </div>
+														    </div>
+														    <div class="contact-inner">+39</div>
+														</li>
+														
+														<li>
+														    <div class="country-name-and-flag">
+														        <div class="country-flag">
+														            <img src="images/flags/Venezuela.png" alt="Venezuela-flag" class="img-fluid" />
+														        </div>
+														        <div class="country-name">
+														            <p>Venezuela</p>
+														        </div>
+														    </div>
+														    <div class="contact-inner">+58</div>
+														</li>
+														
+														<li>
+														    <div class="country-name-and-flag">
+														        <div class="country-flag">
+														            <img src="images/flags/Gembia.png" alt="Gambia-flag" class="img-fluid" />
+														        </div>
+														        <div class="country-name">
+														            <p>Gambia</p>
+														        </div>
+														    </div>
+														    <div class="contact-inner">+220</div>
+														</li>
+														
+														<li>
+														    <div class="country-name-and-flag">
+														        <div class="country-flag">
+														            <img src="images/flags/Georgia.png" alt="Georgia-flag" class="img-fluid" />
+														        </div>
+														        <div class="country-name">
+														            <p>Georgia</p>
+														        </div>
+														    </div>
+														    <div class="contact-inner">+995</div>
+														</li>
+														
+														<li>
+														    <div class="country-name-and-flag">
+														        <div class="country-flag">
+														            <img src="images/flags/Germany.png" alt="Germany-flag" class="img-fluid" />
+														        </div>
+														        <div class="country-name">
+														            <p>Germany</p>
+														        </div>
+														    </div>
+														    <div class="contact-inner">+49</div>
+														</li>
+														
+														<li>
+														    <div class="country-name-and-flag">
+														        <div class="country-flag">
+														            <img src="images/flags/Ghana.png" alt="Ghana-flag" class="img-fluid" />
+														        </div>
+														        <div class="country-name">
+														            <p>Ghana</p>
+														        </div>
+														    </div>
+														    <div class="contact-inner">+233</div>
+														</li>
+														
+														<li>
+														    <div class="country-name-and-flag">
+														        <div class="country-flag">
+														            <img src="images/flags/Greece.png" alt="Greece-flag" class="img-fluid" />
+														        </div>
+														        <div class="country-name">
+														            <p>Greece</p>
+														        </div>
+														    </div>
+														    <div class="contact-inner">+30</div>
+														</li>
+														
+														<li>
+														    <div class="country-name-and-flag">
+														        <div class="country-flag">
+														            <img src="images/flags/Greenland.png" alt="Greenland-flag" class="img-fluid" />
+														        </div>
+														        <div class="country-name">
+														            <p>Greenland</p>
+														        </div>
+														    </div>
+														    <div class="contact-inner">+299</div>
+														</li>
+														
+														<li>
+														    <div class="country-name-and-flag">
+														        <div class="country-flag">
+														            <img src="images/flags/Grenada.png" alt="Grenada-flag" class="img-fluid" />
+														        </div>
+														        <div class="country-name">
+														            <p>Grenada</p>
+														        </div>
+														    </div>
+														    <div class="contact-inner">+1-473</div>
+														</li>
+														
+													</ul>
+												</div>
+											</div>
+											<div class="signup-number"><input type="text" placeholder="0755******678"></div>
+										</div>
+									
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="Address-information Add-info">
+						<ul class="kyc-card-headings">
+							<li>Address information</li>
+							<li class="pencil pencil-3 pencil-dactive pencil-active pr-2"><img src="images/KYC-AML/pencil-active.png" alt="pencil" class="img-fluid"/></li>
+						</ul>
+
+						<div class="KYC-Address-information add-info-complite">
+							<ul>
+								<li class="text-gray">Address 1 <span class="text-dark">Down Town Station</span></li>
+								<li class="text-gray">Address 2 <span class="text-dark">15 Neutwache Frankfurt</span></li>
+								<li class="text-gray">City/Town <span class="text-dark">Berlin</span></li>
+								<li class="text-gray">Country <span class="text-dark">Germany</span></li>
+								<li class="last-list text-gray">Postal code <span class="text-dark">21149</span></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="Address-information Address-information-active Add-info-act">
+						<ul class="kyc-card-headings">
+							<li>Address information</li>
+							<li class="edit-save-btn">
+								<button><a href="#">Save</a></button>
+							</li>
+						</ul>
+
+						<div class="KYC-Address-information KYC-Address-information-active">
+							<ul>
+								<li>
+									<lable class="text-gray">Address 1</lable>
+									<input class="" type="text" value="Down Town Station" />
+								</li>
+
+								<li>
+									<lable class="text-gray">Address 2</lable>
+									<input class="" type="text" value="15 Neutwache Frankfurt" />
+								</li>
+
+								<li>
+									<lable class="text-gray">City/Town</lable>
+									<input class="" type="text" value="Berlin" />
+								</li>
+
+								<li>
+									<lable class="country-dropdown-lable text-gray">Country</lable>
+									<div class="country-dropdown">
+										<div class="select-box address-select-box">
+											<div class="options-container address-options-container">
+												<div class="option address-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="address-info-label" for="automobiles">Afghanistan</label>
+												</div>
+
+												<div class="option address-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="address-info-label" for="automobiles">Albania</label>
+												</div>
+
+												<div class="option address-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="address-info-label" for="automobiles">Algeria</label>
+												</div>
+
+												<div class="option address-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="address-info-label" for="automobiles">Andorra</label>
+												</div>
+
+												<div class="option address-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="address-info-label" for="automobiles">Angola</label>
+												</div>
+
+												<div class="option address-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="address-info-label" for="automobiles">Argentina</label>
+												</div>
+
+												<div class="option address-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="address-info-label" for="automobiles">Australia</label>
+												</div>
+
+												<div class="option address-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="address-info-label" for="automobiles">France</label>
+												</div>
+
+												<div class="option address-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="address-info-label" for="automobiles">Gabon</label>
+												</div>
+
+												<div class="option address-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="address-info-label" for="automobiles">Georgia</label>
+												</div>
+
+												<div class="option address-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="address-info-label" for="automobiles">Germany</label>
+												</div>
+
+												<div class="option address-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="address-info-label" for="automobiles">Ghana</label>
+												</div>
+
+												<div class="option address-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="address-info-label" for="automobiles">Greece</label>
+												</div>
+
+												<div class="option address-option">
+													<input type="radio" class="radio" id="automobiles" name="category" />
+													<label class="address-info-label" for="automobiles">Grenada</label>
+												</div>
+											</div>
+
+											<div class="selected address-info-select">Select country</div>
+										</div>
+									</div>
+								</li>
+
+								<li class="last-list">
+									<lable class="text-gray">Postal code</lable>
+									<input class="" type="text" value="21149" />
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6"></div>
+
+				<div class="col-lg-6">
+				    <div class="enoch-last-btn-sect">
+				        <button class="button-primary pl-4 pr-4 mb-5 w-sm-100"><a href="#">Continue</a></button>
+				    </div>
+				</div>
+
+				<div class="col-lg-6">
+				    <div class="KYC-submission-sect">
+				        <div class="row">
+				            <div class="col-2">
+				                <div class="Path-success">
+				                    <img src="images/step-4-imgs/danger.png" alt="danger" class="img-fluid" />
+				                </div>
+				            </div>
+				            <div class="col-8 p-0">
+				                <div class="KYC-submission-text KYC-submission-rejected-text">
+				                    <h1>Save Account Information before proceding with “Continue”</h1>
+				                    <h2 class="mt-4">Learn More</h2>
+				                </div>
+				            </div>
+				            <div class="col-2">
+				                <div class="KYC-submission-close">
+				                    <img src="images/step-4-imgs/danger-close.png" alt="X" class="img-fluid KYC-submission-sect-close" />
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+	        
+	        
+
+			</div>
+		</div>
+</div>
+		
+		<!--JS-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		
+		
+        <script src="js/bundle.min.js"></script>
+		<script>
+			$('#flag1').click(() => {
+				// $('#test').prop('src')
+				alert($('#test').prop('src'));
+			});
+		</script>
+
+		<script>
+			$(function () {
+				$('#datepicker').datepicker();
+			});
+		</script>
+		<script type="text/javascript">
+			// When the user clicks, open the popup
+			function popupFunction() {
+				var popup = document.getElementById('myPopup');
+				popup.classList.toggle('show');
+			}
+		</script>
+		
+		<script>
+		    $(document).ready(function() {
+		        $('.KYC-submission-sect-close').click(function() {
+		            $('.KYC-submission-sect').fadeOut();
+		        });
+		    });
+		</script>
+
+		<script>
+			$(document).ready(function () {
+				$('.WarningClose').click(function () {
+					$('.account-Disabled-sect').fadeOut();
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function () {
+				$('.pencil-2').click(function () {
+					$('.AccInfoDefault').hide();
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function () {
+				$('.pencil-2').click(function () {
+					$('.Account-Information-active').show();
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function () {
+				$('.pencil-3').click(function () {
+					$('.Add-info').hide();
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function () {
+				$('.pencil-3').click(function () {
+					$('.Add-info-act').show();
+				});
+			});
+		</script>
+		<script>
+        $(document).ready(function() {
+            $('.pencil-1').click(function() {
+                $('.Personal-Information-sect').hide();
+            });
+        });
+    </script>
+        <script>
+        $(document).ready(function() {
+            $('.pencil-1').click(function() {
+                $('.Personal-Information-active').show();
+            });
+        });
+    </script>
+		<script>
+		    $(document).ready(function() {
+		        $('.KYC-submission-sect-close').click(function() {
+		            $('.KYC-submission-sect').fadeOut();
+		        });
+		    });
+		</script>
+		<script>
+			$(function () {
+				$('#datepicker').datepicker();
+			});
+		</script>
+		<script>
+			const selectedAcc = document.querySelector('.acc-info-select');
+			const optionsContainerAcc = document.querySelector('.acc-options-container');
+
+			const optionsListAcc = document.querySelectorAll('.acc-option');
+
+			selectedAcc.addEventListener('click', () => {
+				optionsContainerAcc.classList.toggle('active');
+			});
+
+			optionsListAcc.forEach((o) => {
+				o.addEventListener('click', () => {
+					selectedAcc.innerHTML = o.querySelector('.acc-info-label').innerHTML;
+					optionsContainerAcc.classList.remove('active');
+				});
+			});
+		</script>
+		<script>
+			const selectedAdd = document.querySelector('.address-info-select');
+			const optionsContainerAdd = document.querySelector('.address-options-container');
+
+			const optionsListAdd = document.querySelectorAll('.address-option');
+
+			selectedAdd.addEventListener('click', () => {
+				optionsContainerAdd.classList.toggle('active');
+			});
+
+			optionsListAdd.forEach((o) => {
+				o.addEventListener('click', () => {
+					selectedAdd.innerHTML = o.querySelector('.address-info-label').innerHTML;
+					optionsContainerAdd.classList.remove('active');
+				});
+			});
+		</script>
+		<script>
+		
+		/*phone dropdown*/
+		function selectPhn() {
+
+	var selectPhn = document.getElementById("selectPhn-form-DropdownList");
+	selectPhn.classList.toggle("show");
+  
+}
+var selectPhn2 = document.getElementById("selectPhn-form-DropdownList").querySelectorAll(".sign-form-content .contact-inner");
+selectPhn2.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('selectPhn').innerHTML = this.innerHTML;
+var selItem2 = document.getElementById("selectPhn");
+	selItem2.classList.add("select-active");         
+		 }
+		
+	
+        });
+
+		// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.sign-form-droplist')) {
+    var dropdowns = document.getElementsByClassName("sign-form-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+	<!--  var selItem = document.getElementById("athp-sel"); -->
+	
+}
+	</script>
+		<script>
+        /*for toggle sub menu*/
+        function subtogglediv(id, icon) {
+            var id = document.getElementById(id);
+            id.classList.toggle('submenu-active');
+            var cross = document.getElementById(icon);
+            cross.classList.toggle('fa-times');
+            cross.classList.toggle('fa-bars');
+        }
+    </script>
+	<script>
+		$(function(){
+		   $('.menu-mid-sect ul li.submenubar-item a').click(function(){
+			 $('.menu-mid-sect ul li.submenubar-item a').each(function(a){
+			   $( this ).removeClass('selectedclass')
+			 });
+			 $( this ).addClass('selectedclass');
+		   });
+		  
+		 });
+		</script>
+	</body>
+</html>

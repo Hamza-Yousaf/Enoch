@@ -1,0 +1,78 @@
+.mrgacc-bttn {
+  width: 88px;
+  height: 30px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+}
+.color-blue {
+  text-decoration: none !important;
+  color: #8d35fd !important;
+}
+
+.color-white {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+.sign-form-droplist-phn:after {
+  content: '\f0d7';
+  font-family: fontawesome;
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8a9099;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range,
+.react-datepicker__month-text--selected,
+.react-datepicker__month-text--in-selecting-range,
+.react-datepicker__month-text--in-range,
+.react-datepicker__quarter-text--selected,
+.react-datepicker__quarter-text--in-selecting-range,
+.react-datepicker__quarter-text--in-range,
+.react-datepicker__year-text--selected,
+.react-datepicker__year-text--in-selecting-range,
+.react-datepicker__year-text--in-range {
+  background-color: #ff8a00 !important;
+}
+
+.cus-file-upload .k-upload-button {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  margin-top: -40px;
+  /* visibility: hidden; */
+}
+
+.cus-file-upload .k-upload-button:hover,
+.cus-file-upload .k-upload-button:focus {
+  background-color: transparent !important;
+
+  /* visibility: hidden; */
+}
+
+.cus-file-upload .k-button:hover::before,
+.cus-file-upload .k-button.k-state-hover::before {
+  opacity: 0;
+}
+
+.cus-file-upload .k-button:focus::before,
+.cus-file-upload .k-button.k-state-focus::before {
+  opacity: 0;
+}
+
+.white-color-txt{
+  color: white !important;
+}

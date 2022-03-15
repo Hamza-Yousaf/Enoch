@@ -1,0 +1,1491 @@
+.dashboard-header-bredcrumb  .helpCenter-active-black{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: lowercase;
+    color: #3F434A;
+}
+.HelpCenter-body{
+    max-width: 1272px;
+    width: 100%;
+    margin: auto;
+}
+/*
+.HelpCenter-CREATE-TICKET-sect{
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 24px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.HelpCenter-CREATE-TICKET-left-sect{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.CREATE-TICKET-left-buttons{
+    display: flex;
+}
+.CREATE-TICKET-left-buttons button{
+    width: 140px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid #8A9099;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+    margin-right: 16px;
+}
+.CREATE-TICKET-left-buttons button a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #8A9099;
+}
+.HelpCenter-CREATE-TICKET-right-sect{
+    display: flex;
+    align-items: center;
+}
+.CREATE-TICKET-right-buttons{
+    display: flex;
+    align-items: center;
+}
+.CREATE-TICKET-right-buttons button{
+    margin-right: 12px;
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    outline: none;
+    border: 1px solid #8A9099;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.CREATE-TICKET-right-buttons .CREATE-TICKET-Btn{
+    width: 142px;
+    height: 40px;
+    background: #2BBD54;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+}
+.CREATE-TICKET-right-buttons .CREATE-TICKET-Btn a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+.CREATE-TICKET-right-searchBar{
+    border: 1px solid #8A9099;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 40px;
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 36px;
+}
+.CREATE-TICKET-right-searchBar input[type=text] {
+    width: 84%;
+    height: 95%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: transparent;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-left: 16px;
+}
+.CREATE-TICKET-right-searchBar button{
+    background: transparent;
+    width: 16%;
+    height: 100%;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*/
+.Create-Support-Ticket-sect{
+    background: #FFFFFF;
+    border-radius: 2px;
+    box-sizing: border-box;
+    height: 516px;
+    margin-bottom: 150px;
+}
+.Create-Support-Ticket-headings{
+    border-bottom: 1px solid #D4D8DD;
+    padding-top: 20px;
+    padding-bottom: 16px;
+}
+.Create-Support-Ticket-headings h1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E1F2D;
+    padding-left: 24px;
+}
+.Create-Support-Ticket-text{
+    max-width: 857px;
+    margin: auto;
+    margin-left: 24px;
+    margin-top: 21px;
+    margin-bottom: 24px;
+    margin-right: 24px;
+}
+.Create-Support-Ticket-text p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 26px;
+    color: #000000;
+}
+.Create-Support-dropdown-sect{
+    max-width: 1224px;
+    width: 100%;
+    margin: auto;
+}
+.Create-Support-dropdown-right{}
+.Create-Support-dropdown-right input{
+    border: 1px solid #D4D8DD;
+    height: 48px;
+    width: 100%;
+    outline: none;
+    border-radius: 2px;
+    padding-left: 16px;
+}
+.HelpCenter-Resume-Writing-Sect{
+    height: auto;
+    max-width: 1223px;
+    margin: auto;
+    margin-top: 21px;
+    border: 1px solid #E8E9EB;
+    border-radius: 2px;
+}
+.HelpCenter-Resume-Writing-Heading{
+    height: 48px;
+    background: #F8F8F8;
+    max-width: 101%;
+    margin: auto;
+    margin-top: -0.5px;
+    border: 1px solid #E8E9EB;
+    /*
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;*/
+    display: flex;
+    align-items: center;
+    margin-left: -0.5px;
+    padding: 0px 10px;
+}
+.HelpCenter-Resume-Writing-Heading ul{
+    border-right: 2px solid #E8E9EB;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.HelpCenter-Resume-Writing-Heading ul li{
+    cursor: pointer;
+}
+.HelpCenter-Resume-Writing-Heading .list-1{
+    
+}
+.HelpCenter-Resume-Writing-Heading .list-1 li{
+    padding-right: 10px;
+}
+.HelpCenter-Resume-Writing-Heading .list-1 li img{
+    opacity: 0.7;
+}
+.HelpCenter-Resume-Writing-Heading .list-2 li{
+    margin: 7px;
+}
+.HelpCenter-Resume-Writing-Heading .list-3 li{
+    margin: 10px;
+}
+.HelpCenter-Resume-Writing-Heading .list-4 li{
+    margin: 8px;
+}
+.HelpCenter-Resume-Writing-Heading .list-5{
+    border: none;
+}
+.HelpCenter-Resume-Writing-Heading .list-5 li{
+    margin: 8px;
+}
+.HelpCenter-Resume-Writing-Heading-menu-1, .HelpCenter-Resume-Writing-Heading-menu-2 {
+    display: flex;
+    align-items: center;
+}
+.HelpCenter-Resume-Writing-body{
+    
+}
+
+.HelpCenter-textarea textarea{
+    width: 100%;
+    height: 140px;
+    resize: none;
+    border: none;
+    outline: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 180%;
+    color: #1E1F2D;
+    overflow-y: scroll;
+    padding-top: 17px;
+    padding-left: 17px;
+    padding-bottom: 0px;
+}
+.HelpCenter-textarea textarea::-webkit-scrollbar {
+    width: 13.5px;
+    background: #F8F8F8;
+    border: none;
+    border-bottom: none;
+    padding-right: 0px;
+    border-radius: 0px;
+}
+.HelpCenter-textarea textarea::-webkit-scrollbar-thumb {
+    background: #C6C9CC;
+    border-radius: 6px;
+    border-left: 3px solid #F8F8F8;
+    border-right: 2.5px solid #F8F8F8;
+    position: absolute;
+    right: 10px;
+}
+.HelpCenter-textarea-btns{
+    display: flex;
+    align-items: center;
+    margin: -8px 0px 0px 17px;
+    border-right: 13px solid #F8F8F8;
+    padding-bottom: 20px;
+}
+.HelpCenter-textarea-btns .btn-send{}
+.HelpCenter-textarea-btns .btn-send button{
+    width: 126px;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    border: 0px solid transparent;
+    outline: none;
+}
+.HelpCenter-textarea-btns .btn-send button:hover a{
+    border-bottom: 3px solid transparent;
+}
+.HelpCenter-textarea-btns .btn-send button:hover .clock-btn{
+    border-bottom: 3px solid transparent;
+}
+.HelpCenter-textarea-btns .btn-send button a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+    background: #FF6B00;
+    border: 1px solid transparent;
+    border-bottom: 3px solid rgba(0,0,0,.2);
+    border-right: 1px solid #ffffff;
+    border-radius: 2px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.HelpCenter-textarea-btns .btn-send button .clock-btn{
+    width: 30%;
+    height: 100%;
+    background: #FF6B00;
+    border: 1px solid transparent;
+    border-bottom: 3px solid rgba(0,0,0,.2);
+    border-radius: 2px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.HelpCenter-textarea-btns .atachment-btn{
+    margin: 0px 22px;
+}
+.HelpCenter-textarea-btns .three-btns{
+    display: flex;
+    align-items: center;
+}
+.HelpCenter-textarea-btns .three-btns button{
+    border: 0.5px solid #D4D8DD;
+    box-sizing: border-box;
+    border-radius: 21.75px;
+    background: transparent;
+    height: 26px;
+    outline: none;
+    width: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+.HelpCenter-textarea-btns .three-btns button a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3F434A;
+}
+.HelpCenter-textarea-btns .three-btns button img{
+    margin-right: 8px;
+}
+.HelpCenter-textarea-btns .three-btns .btn-3{
+    width: auto;
+}
+.HelpCenter-textarea-btns-left{
+    display: flex;
+    align-items: center;
+}
+.Create-Support-Ticket-sect-close{
+    text-align: right;
+}
+.Create-Support-dropdown-left .timeSetting-content.show{
+    z-index: 1;
+}
+.Create-Support-dropdown-left .timeSetting-drop-box {
+    max-width: 100%;
+}
+.Create-Support-dropdown-left .timeSetting-droplist{
+    max-width: 100%;
+    border: 1px solid #D4D8DD;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #8A9099;
+}
+.Create-Support-dropdown-left .timeSetting-content{
+    max-width: 100%;
+    border-radius: 0px;
+    border: 1px solid #D4D8DD;
+    height: 339px;
+}
+.Create-Support-dropdown-left .timeSetting-droplist.select-active:after{
+    transform: rotate(0deg);
+}
+.Create-Support-dropdown-left .timeSetting-content ul li {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24.5px;
+    display: flex;
+    align-items: center;
+    color: #3F434A;
+}
+.Create-Support-dropdown-left .timeSetting-content ul li:hover {
+    color: #595F69;
+}
+.Create-Support-dropdown-left .setting-form-drop-scrollable {
+    height: 100%;
+    overflow-y: scroll;
+}
+.hDelete-alart{
+    width: 470px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFEEE5;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    position: absolute;
+    right: 0px;
+    top: 65px;
+    z-index: 100;
+    padding: 0px 24px;
+}
+.hDelete-alart-text{}
+.hDelete-alart-text p{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.653846px;
+    color: #FB3030;
+}
+.hDelete-alart-sect{
+    display: none;
+}
+.hModal .modal-title h4{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+}
+.hModal .modal-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #D4D8DD;
+    padding-bottom: 8px;
+}
+.hModal .modal-Close{
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    opacity: 1;
+}
+.hModal .modal-content{
+    max-width: 440px;
+    width: 100%;
+    margin: auto;
+    margin-top: 35vh;
+}
+.hModal .modal-body .modal-body-text{
+    max-width: 350px;
+    margin: auto;
+}
+.hModal .modal-body .modal-body-text p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #3F434A;
+}
+.hModal .modal-body-btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 252px;
+    margin: auto;
+    margin-top: 20px;
+}
+.hModal .modal-body-btns .Cancle{
+    height: 40px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: 1px solid #7521E2;
+    border-radius: 2px;
+    background: transparent;
+}
+.hModal .modal-body-btns .Delete{
+    height: 40px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: 1px solid transparent;
+    background: #F03B31;
+    border-bottom: 3px solid rgba(0,0,0,.2);
+    border-radius: 2px;
+}
+.hModal .modal-body-btns .Cancle a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #595F69;
+}
+.hModal .modal-body-btns .Cancle:hover{
+    border: 1px solid transparent;
+    background: #e2ccff; 
+}
+.hModal .modal-body-btns .Cancle:hover a{
+    color: #7521E2;
+}
+.hModal .modal-body-btns .Delete a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+.hModal .modal-body-btns .Delete:hover{
+    border-bottom: 3px solid transparent;
+}
+.hModal-Two-and-three .modal-title h4 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+}
+.hModal-Two-and-three .modal-content {
+    max-width: 846px;
+    width: 100%;
+    margin: auto;
+    margin-top: 15vh;
+}
+.hModal-Two-and-three .modal-header{
+    max-width: 798px;
+    margin: auto 24px;
+    padding: 24px 0px 12px 0px;
+}
+.hModal-Two-and-three .modal-dialog{
+    position: relative;
+    max-width: 856px !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+    pointer-events: none;
+}
+.hModal-Two-and-three .modal-Close {
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    opacity: 1;
+}
+.hModal-Two-and-three .modal-Close:hover{
+    opacity: 1 !important;
+}
+.hModal-Two-and-three .modal-body-keyDropdown-and-input .Create-Support-dropdown-right{
+    margin-top: 16px;
+}
+.hModal-Two-and-three .timeSetting-drop-box input{
+    border: 1px solid #D4D8DD;
+    outline: none;
+}
+.hModal-Two-and-three .modal-body-keyDropdown-and-input input{
+    border: 1px solid #D4D8DD;
+    height: 48px;
+    width: 100%;
+    outline: none;
+    border-radius: 2px;
+    padding-left: 16px;
+    
+}
+
+.hModal-Two-and-three .modal-body-keyDropdown-and-input .timeSetting-droplist{
+    outline: none;
+    border: 0px;
+    background: transparent;
+    width: 100%;
+    margin-left: -20px;
+    z-index: 1;
+}
+.hModal-Two-and-three .Create-Support-dropdown-left .timeSetting-content {
+    max-width: 58.5%;
+    border-radius: 0px;
+    border: 1px solid #D4D8DD;
+    height: 256px;
+    padding: 0px;
+}
+.hModal-Two-and-three .modal-body{
+    padding: 24px;
+}
+.hModal-Two-and-three .HelpCenter-Resume-Writing-Sect {
+    margin-bottom: 0px;
+}
+.hModal-Two-and-three .HelpCenter-textarea textarea{
+    height: 80px;
+    
+}
+.hModal-Two-and-three .HelpCenter-Resume-Writing-inbox{
+    margin: 0px 17px;
+    margin-top: -8px;
+    margin-right: 0px;
+    height: 42px;
+    overflow-y: scroll;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 180%;
+    color: #1E1F2D;
+    border-right: 13px solid #F8F8F8;
+}
+.hModal-Two-and-three .HelpCenter-Resume-Writing-inbox::-webkit-scrollbar {
+    width: 13px;
+    background: transparent;
+    border: 2px solid transparent;
+    padding-right: 0px;
+    border-radius: 0px;
+}
+.hModal-Two-and-three .HelpCenter-Resume-Writing-inbox::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 6px;
+    border-left: 2.5px solid transparent;
+    border-right: 2.5px solid transparent;
+    position: absolute;
+    right: 10px;
+}
+.hModal-Two-and-three .HelpCenter-textarea-btns{
+    margin-bottom: 0px;
+    margin-right: auto;
+    padding-bottom: 19px;
+    padding-top: 15px;
+}
+.hModal-Two-and-three .HelpCenter-Resume-Writing-Sect{
+    height: auto;
+} 
+.hModal-Two-and-three .HelpCenter-textarea-btns .btn-send button{
+    opacity: 1;
+}
+.hModal-Two-and-three .HelpCenter-textarea-btns .btn-send button:hover{
+    opacity: 1 !important;
+}
+.hModal-Success .modal-content {
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    height: 100px;
+    margin-top: 35vh;
+}
+.hModal-Success .modal-header {
+    max-width: 100%;
+    margin: auto 24px;
+    padding: 0px;
+    border: none;
+}
+.hModal-Success .modal-header .modal-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.hModal-Success .modal-header .modal-title .modal-success-icon{
+   
+}
+.hModal-Success .modal-header .modal-title h5{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    color: #2BBD54;
+    margin-left: 18px;
+    padding-top: 5px;
+    
+}
+.hModal .modal-backdrop{
+    background: #1E1F2D;
+}
+.hModal .modal-backdrop.show {
+    opacity: 1;
+}
+.Resume-Writing-inbox-person-1 p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 180%;
+    color: #1E1F2D;
+}
+
+
+.hModal-inbox .HelpCenter-textarea textarea::-webkit-scrollbar {
+    width: 13px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    padding-right: 0px;
+    border-radius: 0px;
+}
+.hModal-inbox .HelpCenter-textarea textarea::-webkit-scrollbar-thumb {
+    background: #C6C9CC;
+    border-radius: 6px;
+    border-left: 3px solid #ffffff;
+    border-right: 2.5px solid #ffffff;
+    position: absolute;
+    right: 10px;
+}
+.hInbox{
+    margin: 0px 0px 0px 0px;
+    height: auto;
+    overflow-y: scroll;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 180%;
+    margin-top: -8px;
+    padding-top: 0px;
+    color: #1E1F2D;
+    border-right: 13px solid #f8f8f8;
+    padding: 0px 5px 160px 18px;
+}
+.hInbox-top-border{
+    border-top: 1px solid #D4D8DD;
+    margin-right: 13px;
+    margin-top: 5px;
+}
+.hInbox::-webkit-scrollbar {
+    width: 0px;
+    background: #F8F8F8;
+    border: 0px solid transparent;
+    padding-right: 0px;
+    border-radius: 0px;
+}
+.hInbox::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 0px;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    position: absolute;
+    right: 10px;
+}
+.hInbox-person-1{
+    background: #FFFFFF;
+    border: 1px solid #D4D8DD;
+    box-sizing: border-box;
+    border-radius: 18px 18px 18px 0px;
+    max-width: 484px;
+    padding: 20px 0px 12px 21px;
+    margin-left: 17px;
+}
+.hInbox-person-1 p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 180%;
+    color: #D4D8DD;
+    font-weight: 600;
+    -webkit-text-fill-color: #1E1F2D;
+    -webkit-text-stroke-width: 0.4px;
+    
+}
+.hInbox-person-1 .two-btns{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 65px;
+    border: 0.5px solid #D4D8DD;
+    box-sizing: border-box;
+    max-width: 120px;
+    margin-left: auto;
+}
+.hInbox-person-1 .two-btns .btn-1 {
+    background: #FFFFFF;
+    border: 0.5px solid #D4D8DD;
+    box-sizing: border-box;
+    border-radius: 21.75px;
+    outline: none;
+    height: 26px;
+    width: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    margin-right: 8px;
+}
+.hInbox-person-1 .two-btns .btn-1 a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.hInbox-person-1 .two-btns button a {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #3F434A;
+}
+.hInbox-person-1 .two-btns .btn-2 {
+    background: #FFFFFF;
+    border: 0.5px solid #D4D8DD;
+    box-sizing: border-box;
+    border-radius: 21.75px;
+    outline: none;
+    width: 26px;
+    height: 26px;
+}
+.hInbox-Date{}
+.hInbox-Date h6{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 140%;
+    color: #D4D8DD;
+    -webkit-text-fill-color: #1E1F2D;
+    -webkit-text-stroke-width: 0.5px;
+    padding-left: 43px;
+    padding-top: 6px;
+}
+.hInbox-person{
+    display: flex;
+    align-items: flex-end; 
+    max-width: 483px;
+    width: 80%;
+    margin-left: auto;
+}
+.hInbox-person-2{
+    margin-top: 31px;
+}
+.hInbox-person-2-Text{
+    background: #cef0dd;
+    border-radius: 18px 18px 0px 18px;
+    width: 434px;
+    margin-left: auto;
+    margin-right: 14.2px;
+}
+.hInbox-text-3dots{
+    text-align: right;
+    margin-right: 12.42px;
+    margin-top: 5px;
+}
+.hInbox-person-2-Text p{
+    margin-left: 21.3px;
+    margin-bottom: 12px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 180%;
+    color: #1E1F2D;
+    margin-top: -12px;
+}
+.hInbox-reply-time{
+    text-align: right;
+    margin-right: 52px;
+    margin-top: 8px;
+}
+.hInbox-reply-time h6{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 140%;
+    text-align: right;
+    color: #000000;
+}
+.hInbox-person-3-Text{
+    background: #E5E5E5;
+    width: 379px;
+}
+.hInbox-person-3-Text p{
+    margin-top: -30px;
+    margin-bottom: 0px;
+    max-width: 334px;
+}
+.hModal-Two-and-three .Create-Support-dropdown-left .timeSetting-content ul li {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid #D4D8DD;
+    line-height: 0px;
+    margin-bottom: 0px;
+    padding: 12px 20px;
+}
+.hModal-Two-and-three .Create-Support-dropdown-left .setting-form-drop-scrollable {
+    height: 100%;
+    overflow-y: hidden;
+}
+.share-ticket-user-name{
+    display: flex;
+    align-items: center;
+    margin-left: 13px;
+    margin-top: 5px;
+}
+.share-ticket-user-name h5{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 180%;
+    color: #1E1F2D;
+}
+.share-ticket-user-name h6{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 180%;
+    color: #1E1F2D;
+    padding-left: 3px;
+}
+.active-status-dot img{
+    position: absolute;
+    top: 15px;
+    left: 53px;
+}
+.timeSetting-content ul li .user-dp{
+    display: flex;
+    align-items: center;
+}
+.onkeypress-DropBox{
+    border: 1px solid #D4D8DD;
+    height: 48px;
+    width: 100%;
+    outline: none;
+    border-radius: 2px;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+}
+.onkeypress-DropBox .select-active{
+    display: flex;
+    border-radius: 23px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: -8px;
+    padding: 0px 5px;
+    z-index: 2;
+}
+.onkeypress-DropBox .select-active .active-status-dot{
+    display: none;
+}
+.onkeypress-DropBox .select-active .share-ticket-user-name span{
+    display: none;
+}
+.onkeypress-DropBox .select-active .share-ticket-user-name h6{
+    display: none;
+}
+.onkeypress-DropBox .select-active .dp{
+    height: 24px;
+    width: 24px;
+}
+.onkeypress-DropBox .select-active .share-ticket-user-name h5{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 180%;
+    color: #1E1F2D;
+    display: block;
+}
+.forword-ticket img{
+    filter: grayscale(100%);
+    opacity: 0.62;
+}
+.forword-ticket:hover img{
+    filter: grayscale(0%);
+    opacity: 1;
+}
+.forword-ticket a:hover{
+    border: 1px solid #474CD5;
+}
+.share-ticket img{
+    filter: grayscale(100%);
+    opacity: 1;
+}
+.share-ticket:hover img{
+    filter: grayscale(0%);
+    opacity: 1;
+}
+.share-ticket a:hover{
+    border: 1px solid #2BBD54;
+}
+.chat-block-txteditor .timeSetting-droplist {
+    max-width: 100%;
+    border: none;
+    outline: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #8A9099;
+    padding-left: 2px;
+}
+.chat-block-txteditor .timeSetting-content {
+    max-width: 54%;
+    border-radius: 0px;
+    border: 1px solid #D4D8DD;
+    height: auto;
+    top: 35px;
+    left: 20px;
+    box-shadow: none;
+    padding: 0px;
+    height: 128px;
+}
+.chat-block-txteditor .setting-form-drop-scrollable{
+    width: 101%;
+}
+.chat-block-txteditor .timeSetting-content ul li{
+    border-bottom: 1px solid #D4D8DD;
+    padding: 0px 15px;
+    margin: 0px;
+    width: auto;
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+.chat-block-txteditor .timeSetting-content ul .last-list{
+    border: none;
+}
+.hModal-Two-and-three .HelpCenter-textarea textarea{
+    width: 100%;
+    height: 90px;
+    resize: none;
+    border: none;
+    outline: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 180%;
+    color: #1E1F2D;
+    overflow-y: scroll;
+    padding-top: 17px;
+    padding-left: 17px;
+    padding-bottom: 0px;
+}
+.hModal-Two-and-three .HelpCenter-textarea textarea::-webkit-scrollbar {
+    width: 13.5px;
+    background: #F8F8F8;
+    border: none;
+    border-bottom: none;
+    padding-right: 0px;
+    border-radius: 0px;
+}
+.hModal-Two-and-three .HelpCenter-textarea textarea::-webkit-scrollbar-thumb {
+    background: #C6C9CC;
+    border-radius: 6px;
+    border-left: 3px solid #F8F8F8;
+    border-right: 2.5px solid #F8F8F8;
+    position: absolute;
+    right: 10px;
+}
+.hInbox-border{
+    padding: 0px 5px 0px 18px;
+}
+.user-dp-after-select{
+    display: flex;
+    align-items: center;
+}
+.select-active .user-dp-after-select{
+    width: 160px;
+    border: 1px solid  #C6C9CC;
+    border-radius: 70px;
+    background: #ffffff;
+    padding: 0px 5px;
+}
+.select-active .user-dp-after-select h5{
+    margin-left: 10px;   
+}
+.select-active .user-dp-after-select .share-ticket-user-name{
+    margin-left: 0px;
+}
+.select-active-coustom {
+    display: flex;
+    border-radius: 23px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: -8px;
+    padding: 0px 5px;
+    z-index: 2;
+}
+.select-active-coustom .active-status-dot{
+    display: none;
+}
+.select-active-coustom .share-ticket-user-name span{
+    display: none;
+}
+.select-active-coustom .share-ticket-user-name h6{
+    display: none;
+}
+.select-active-coustom .dp{
+    height: 24px;
+    width: 24px;
+}
+.select-active-coustom .share-ticket-user-name h5{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 180%;
+    color: #1E1F2D;
+    display: block;
+}
+.select-active-coustom .user-dp-after-select{
+    width: 160px;
+    border: 1px solid  #C6C9CC;
+    border-radius: 70px;
+    background: #ffffff;
+    padding: 0px 5px;
+}
+.select-active-coustom .user-dp-after-select h5{
+    margin-left: 10px;   
+}
+.select-active-coustom .user-dp-after-select .share-ticket-user-name{
+    margin-left: 0px;
+}
+
+
+
+@media(max-width: 1359px){
+    .Create-Support-dropdown-sect{
+        padding: 0px 24px;
+    }
+    .HelpCenter-Resume-Writing-Sect{
+        margin: 20px 25px;
+    }
+    .hModal-Two-and-three .HelpCenter-Resume-Writing-Sect {
+        margin: 20px 0px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1279px){
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .hDelete-alart{
+        top: 100px;
+    }
+}
+
+@media(max-width: 991px){
+    .Create-Support-dropdown-right {
+        margin-top: 25px;
+    }
+    .Create-Support-dropdown-right input {
+        width: 100%;
+    }
+    .Create-Support-Ticket-sect {
+        height: auto;
+    }
+    
+}
+
+@media (max-width: 870px){
+    .hModal-Two-and-three .modal-Close {
+        position: absolute;
+        right: -1px;
+        top: -8px;
+        opacity: 1;
+    }
+    .hModal-Two-and-three .Create-Support-dropdown-left .timeSetting-content {
+        max-width: 75.5%;
+    }
+    
+    
+}
+
+@media (min-width: 812px) and (max-width: 991px){
+    
+}
+
+@media (min-width: 768px) and (max-width: 811px){
+    
+}
+
+@media(max-width: 767px){
+    .hDelete-alart{
+        top: 180px;
+    }
+    
+    .hModal-Two-and-three .modal-body-keyDropdown-and-input .timeSetting-droplist {
+        outline: none;
+        border: 0px;
+        background: transparent;
+        width: 64%;
+    }
+    .onkeypress-DropBox .select-active{
+        
+    }
+    
+}
+
+@media (min-width: 736px) and (max-width: 767px){
+    
+}
+
+@media (min-width: 667px) and (max-width: 735px){
+    
+}
+
+@media(max-width: 666px){
+    .HelpCenter-Resume-Writing-Heading{
+        padding: 15px 0px;
+        flex-direction: column;
+        height: auto;
+    }
+    .HelpCenter-Resume-Writing-Heading-menu-1{
+        margin-bottom: 20px;
+    }
+    .HelpCenter-Resume-Writing-Heading-menu-1, .HelpCenter-Resume-Writing-Heading-menu-2 {
+        margin-right: auto;
+    }
+    .HelpCenter-Resume-Writing-Heading .list-1 {
+        margin-left: 7px;
+    }
+    .HelpCenter-Resume-Writing-Heading .list-3{
+        border: none;
+    }
+    .HelpCenter-Resume-Writing-Sect {
+        height: auto;
+    }
+    .hInbox-person-1 {
+        background: #FFFFFF;
+        border: 1px solid #D4D8DD;
+        box-sizing: border-box;
+        border-radius: 18px 18px 18px 0px;
+        max-width: 484px;
+        width: 90%;
+        padding: 20px 0px 12px 21px;
+        margin-left: 0px;
+    }
+    .hInbox-person {
+        display: flex;
+        align-items: flex-end;
+        max-width: 483px;
+        width: 90%;
+        margin-left: auto;
+    }
+    .hInbox-person-2-Text {
+        background: #cef0dd;
+        border-radius: 18px 18px 0px 18px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: 14.2px;
+    }
+    .hInbox-person-3-Text {
+        background: #E5E5E5;
+        width: 90%;
+    }
+    .hInbox-person-3-Text p {
+        margin-top: -10px;
+        margin-bottom: 0px;
+        max-width: 334px;
+    }
+    .hInbox-person-1 .two-btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        border: 0.5px solid #D4D8DD;
+        box-sizing: border-box;
+        max-width: 120px;
+        margin-left: auto; 
+    }
+    .hModal-Two-and-three .Create-Support-dropdown-left .timeSetting-content {
+        max-width: 100%;
+    }
+    .chat-block-txteditor .timeSetting-content{
+        max-width: 90%;
+    }
+    
+    
+    
+    
+}
+
+@media (min-width: 540px) and (max-width: 666px){
+    
+}
+
+@media(max-width: 539px){
+    .HelpCenter-textarea-btns{
+        flex-direction: column;
+    }
+    .HelpCenter-textarea-btns-left{
+        margin-bottom: 20px;
+        margin-right: auto;
+    }
+    .HelpCenter-textarea-btns .atachment-btn {
+        margin: 0px 20px;
+    }
+    .HelpCenter-textarea-btns .three-btns{
+        margin-right: auto;
+    }
+    .hDelete-alart{
+        width: 100%;
+    }
+    .hDelete-alart-text{
+        width: 85%;
+    }
+    .hModal-Two-and-three .HelpCenter-textarea-btns-left {
+        margin-bottom: 0px;
+        margin-right: auto;
+    }
+    .share-ticket-user-name h5{
+        margin-right: auto;
+        line-height: 100%;
+    }
+    .share-ticket-user-name h6{
+        margin-right: auto;
+        padding-left: 0px;
+        line-height: 100%;
+    }
+    .share-ticket-user-name{
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+    }
+    .onkeypress-DropBox {
+        border: 1px solid #D4D8DD;
+        height: 48px;
+        width: 100%;
+        outline: none;
+        border-radius: 2px;
+        padding-left: 16px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        height: auto;
+    }
+    .select-active .user-dp-after-select {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 539px){
+    
+}
+
+@media (min-width: 411px) and (max-width: 424px){
+    
+    
+}
+
+@media(max-width: 424px){
+    .hModal-Success .modal-header .modal-title h5{
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 410px){
+    .hModal-Success .modal-header .modal-title h5{
+        font-size: 15px;
+    }
+    
+}
+
+@media (min-width: 360px) and (max-width: 374px){
+    .hModal-Success .modal-header .modal-title .modal-success-icon {
+        width: 20%;
+        text-align: right;
+
+    }
+    .share-ticket-user-name h6{
+        font-size: 11px;
+    }
+    .share-ticket-user-name h5{
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 359px){
+    .HelpCenter-Resume-Writing-Heading .list-1 li {
+        padding-right: 5px;
+    }
+    .HelpCenter-Resume-Writing-Heading .list-2 li {
+        margin: 5px;
+    }
+    .HelpCenter-Resume-Writing-Heading .list-3 li {
+        margin: 6px;
+    }
+    .hModal-Success .modal-header .modal-title .modal-success-icon {
+        width: 12%;
+        text-align: right;
+
+    }
+    .share-ticket-user-name h6{
+        font-size: 11px;
+    }
+    .share-ticket-user-name h5{
+        font-size: 11px;
+    }
+    
+}
+
+@media (min-width: 280px) and (max-width: 319px){
+    .HelpCenter-Resume-Writing-Heading .list-1 li {
+        padding-right: 0px;
+    }
+    .HelpCenter-Resume-Writing-Heading .list-2 li {
+        margin: 5px;
+    }
+    .HelpCenter-Resume-Writing-Heading .list-3 li {
+        margin: 5px;
+    }
+    .HelpCenter-textarea-btns .three-btns button {
+        width: 75px;
+    }
+    .HelpCenter-textarea-btns .three-btns button a{
+        font-size: 10px;
+    }
+    .hModal .modal-body-btns .Cancle, .hModal .modal-body-btns .Delete{
+        width: 47%;
+    }
+    .hModal-Success .modal-header .modal-title .modal-success-icon {
+        width: 12%;
+        text-align: right;
+
+    }
+    .share-ticket-user-name h6{
+        font-size: 11px;
+    }
+    .share-ticket-user-name h5{
+        font-size: 11px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

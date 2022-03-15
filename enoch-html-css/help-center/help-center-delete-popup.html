@@ -1,0 +1,1607 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Helpcenter :: Create ticket</title>
+    <!-- Fav Icons -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <!-- Stylesheets -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/dashboard-header.css" rel="stylesheet" />
+    <link href="css/dashboard-style.css" rel="stylesheet" />
+    <link href="css/helpCenterStyle.css" rel="stylesheet" />
+    <link href="css/help-center.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+	<div class="container-fluid dashboard-body-bg">
+	<div class="row">
+		<header class="custom-header">			
+			<div class="ezl-dashboard-header">
+				<div class="menu-left">
+					<div class="menu-wrap">
+						<a href="#menu" class="menu-link"><img src="images/Menu.png" alt="Menu" class="img-fluid"/></a>
+					</div>
+					<div class="header-logo"><a href="javascript:void(0)"><img src="images/logo.png" alt="logo" class="img-fluid"/></a></div>
+				</div>
+				<div class="menuright-side">
+					<div class="right-search">
+						<form class="search-form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Fund, ISIN, Keyword ">
+									<button class="search-form-btn" type="Submit"><img class="search-img" src="images/search.png" alt="search"></button>
+							</div>
+						</form>
+					</div>
+					<div class="menu-mid-sect">
+						<ul id="submenubar">
+							<li class="submenubar-item">
+								<div class="menu-times-notifi"><img src="images/home.png" alt="home" class="img-fluid"/></div>
+								<a href="javascript:void(0)">Home</a>
+							</li>
+							
+							<li class="submenubar-item">
+								<div class="menu-times-notifi"><img src="images/Chat.png" alt="Chat" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">Messaging</a>
+							</li>
+							<li class="ether-block">
+								<div class="menu-times-notifi mr-2"><img src="images/Ethereum.png" alt="Ethereum" class="img-fluid"/></div>
+								<a href="javascript:void(0)">ETH Mainnet <i class="fa fa-angle-right"></i></a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)">Connect Wallet</a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)"><span><img src="images/cart.png" class="img-fluid mr-2"/></span>Cart</a>
+							</li>
+							
+						</ul>
+						<div class="toggle-menu">
+								<div onclick="subtogglediv('submenubar','submenu-toggle');" class="d-inline-block">
+									<i class="fa fa-bars" aria-hidden="true" id="submenu-toggle"></i>
+								</div>
+							</div>
+					</div>
+					
+					<div class="ezl-notificaion">
+					<div class="position-relative notificaion-dropdown ezl-notificaion-marg">
+						<a href="javascript:void(0)" class="popup"><img src="images/help.png" alt="help"/></a>							
+											
+					</div>
+					<div class=" position-relative notificaion-dropdown">
+						<a href="javascript:void(0)" class="popup"><img src="images/alertBell.png" alt="Bell"><span class="notificaion-spn">10</span></a>							
+						
+					</div>
+					</div>
+					<div class="ezl-user-ac">
+					
+					<div class="account-d dropdown">
+						<div class="dropdown-buttn"><span class="popup" onclick="popupFunction()"><div class="user-img"><img src="images/user-img.png" alt="user image" class="img-fluid"/></div></span>
+							<!-- <div class="popupbox dropdown-menu" id="myPopup">
+								
+								<ul class="">
+									<li>
+										<div  class="enoch-usr-prof"><span><img src="images/user-pro-pic.png" class="img-fluid" alt="profile- pic"/> EncchUser007</span><span><a href="#">Change</a></span></div>
+									</li>
+									<li>
+										<div class="enoch-usr-status-block">
+											<div class="usr-status-left">Online Status</div>
+											<div class="usr-status-right">
+												<div class="post-switch">
+													<label class="postswitch">
+													  <input type="checkbox" checked>
+													  <span class="post-slider round"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="enoch-usr-status-block"><a href="#">Public Profile</a></div>
+										<div class="enoch-usr-status-block mb-0"><a href="#">User Settings</a></div>
+									</li>
+									<li>
+										<div class="enoch-usr-status-block"><a href="#">Billing</a></div>
+										<div class="enoch-usr-status-block"><a href="#">Help Center</a></div>
+										<div class="enoch-usr-status-block"><a href="#">Verify Account (KYC)</a></div>
+										<div class="enoch-usr-status-block mb-0"><a href="#" class="orange-clr">Upgrade to Premium</a></div>
+									</li>
+									<li class="mt-4">
+										<div class="enoch-usr-status-block mb-0">Free Bonus<span><a href="#" class="btn freebonus-btn">$50/500 $Enoch </a></span></div>
+									</li>
+									<li class="mt-4">
+										<div class="enoch-usr-status-block mb-0"><a href="#" data-toggle="modal" data-target="switch-user-modal">Switch Account</a></div>
+										
+									</li>
+									<li class="mt-4 mb-0 pb-0">
+										<div class="enoch-usr-status-block mb-0"><a href="#" class="post-red-clr">Logout</a></div>
+									</li>
+								</ul>
+							</div> -->
+						</div>
+					</div>
+					</div>
+				</div>				
+			</div>
+			
+		</header>
+	</div>	
+	<div class="row">
+        <div class="dashboard-header-bredcrumb">
+			<div class="ezl-dashboard-container">
+				<div class="col-12 p-md-0">
+					<ul>
+						<li class="mr-2"><img src="images/home-icon.png" alt="icon" class="img-fluid"/> </li>
+						
+						<li><a href="javascript:void(0)" class="dsh-active"> Helpcenter /  </a></li>
+						<li><a href="javascript:void(0)"> &nbsp;inbox</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">	
+		<div class="ezl-dashboard-container">			
+			<div class="help-center-inbox">
+				<div class="help-center-inbox-lft">
+					<ul>
+						<li class="helptablinks h-active enable-click-btn" onclick="helpfunction(event, 'inbox')"><a href="javascript:void(0)">INBOX</a><span class="inbox-msg-count">5</span></li>
+						<li class="helptablinks enable-click-btn" onclick="helpfunction(event, 'sent')"><a href="javascript:void(0)">SENT</a></li>
+						<li class="helptablinks disable-click-btn" onclick="helpfunction(event, 'draft')"><a href="javascript:void(0)">DRAFT</a></li>
+					</ul>
+				</div>
+				<div class="help-center-inbox-right">
+					<div class="help-search-form">
+					<form>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Search">
+									<button class="help-search-form-btn" type="Submit"><img class="search-img" src="images/help-Search.png" alt="search"></button>
+							</div>
+						</form>
+					</div>
+					<div class="help-option-group">
+						<ul>
+							<li><span class="help-btn-popover">Delete</span><a href="#" class="hDelete" data-toggle="modal" data-target="#myModal"><img src="images/hDelete.png" alt="delete" class="img-fluid del-norml"/><img src="images/redDelete.png" alt="delete" class="img-fluid reddel-hov"/></a></li>
+							<li class="disable-tickets"><span class="help-bttom-popover">Download</span><a href="#"><img src="images/hDownload.png" alt="download" class="img-fluid"/></a></li>
+							<li class="disable-tickets share-ticket"><span class="help-btn-popover">Share</span><a href="#" data-toggle="modal" data-target="#myModal-2"><img src="images/hShare.png" alt="share" class="img-fluid"/></a></li>
+							<li class="disable-tickets forword-ticket"><span class="help-bttom-popover">Forword</span><a href="#" class="img-fluid" data-toggle="modal" data-target="#myModal-3"><img src="images/hForword.png" alt="forward" class="img-fluid"/></a></li>
+						</ul>
+					
+					</div>
+					<div class="help-create-tckt">
+						<a href="#" class="btn create-tckt-btn">CREATE TICKET</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="hModal">
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" role="dialog">
+			    <div class="modal-dialog">
+
+			        <!-- Modal content-->
+			        <div class="modal-content">
+			            <div class="modal-header">
+                            <div class="modal-title">
+                                <h4>Delete permanently</h4>
+                            </div>
+			                <div class="close modal-Close" data-dismiss="modal">
+			                    <img src="images/hCross.png" alt="X" class="img-fluid">
+			                </div>
+			            </div>
+			            <div class="modal-body">
+			                <div class="modal-body-text">
+			                    <p>This messages will deleted parmanently from your inbox. This cannot be <b>undone.</b></p>
+			                </div>
+			                <div class="modal-body-btns">
+			                    <button class="Cancle close" data-dismiss="modal"><a href="#">Cancle</a></button>
+			                    <button class="Delete"><a href="#">Delete</a></button>
+			                </div>
+			            </div>
+			        </div>
+
+			    </div>
+			</div>
+			</div>
+			
+			<div class="hModal-Two hModal-Two-and-three">
+			<!-- Modal -->
+			<div class="modal fade" id="myModal-2" role="dialog">
+			    <div class="modal-dialog">
+
+			        <!-- Modal content-->
+			        <div class="modal-content">
+			            <div class="modal-header">
+                            <div class="modal-title">
+                                <h4>Share your message  in your network</h4>
+                            </div>
+			                <div class="close modal-Close" data-dismiss="modal">
+			                    <img src="images/hModal-close-icon.png" alt="X" class="img-fluid">
+			                </div>
+			            </div>
+			            <div class="modal-body">
+			                <div class="modal-body-keyDropdown-and-input">
+			                    <div class="Create-Support-dropdown-left">
+	                        <div class="position-relative">
+	                            <div class="onkeypress-DropBox">
+                                    <div id="onkeypressdropdown">
+                                       
+                                    </div>
+	                                <input onkeypress="onkeypressdropdown()" class="timeSetting-droplist" placeholder="Share  the ticket within your network">
+	                            </div>
+	                            <div id="onkeypress-DropdownList" class="timeSetting-content custm-zindex-1">
+	                                <ul class="setting-form-drop-scrollable">
+	                                    <li>
+	                                        <div class="user-dp">
+	                                            <div class="user-dp-after-select">
+	                                                <img src="images/h-DP-1.png" alt="avatar" class="img-fluid dp">
+	                                            <div class="active-status-dot">
+	                                                <img src="images/active-status-dot.png" alt="dot" class="img-fluid" />
+	                                            </div>
+	                                            <div class="share-ticket-user-name">
+                                                    <h5>Ange lina Eberle<span>,</span></h5>
+	                                                <h6>Designer, ABC Technology</h6>
+	                                            </div>
+	                                            </div>
+	                                        </div>
+	                                        
+	                                    </li>
+	                                    
+	                                    <li>
+                                        <div class="user-dp">
+                                            <div class="user-dp-after-select">
+                                                <img src="images/h-DP-2.png" alt="avatar" class="img-fluid dp">
+                                                <div class="share-ticket-user-name">
+                                                    <h5>Ange lina Eberle<span>,</span></h5>
+                                                    <h6>Designer, ABC Technology</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+	                                    </li>
+	                                    
+	                                    <li>
+                                            <div class="user-dp">
+                                                <div class="user-dp-after-select">
+                                                    <img src="images/h-DP-3.png" alt="avatar" class="img-fluid dp">
+                                                    <div class="share-ticket-user-name">
+                                                        <h5>Alex<span>,</span></h5>
+                                                        <h6>Support Desk, Enoch Technology</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+	                                    </li>
+	                                    
+	                                    <li>
+                                            <div class="user-dp">
+                                                <div class="user-dp-after-select">
+                                                    <img src="images/h-DP-4.png" alt="avatar" class="img-fluid dp">
+                                                    <div class="share-ticket-user-name">
+                                                        <h5>Alena Jason<span>,</span></h5>
+	                                                    <h6>Support Desk, Enoch Technology</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+	                                    </li>
+	                                </ul>
+	                            </div>
+	                        </div>
+	                    </div>
+                            
+	                            <div class="Create-Support-dropdown-right">
+	                                <input type="text" placeholder="Write subject">
+	                            </div>
+			                </div>
+			                <div class="HelpCenter-Resume-Writing-Sect">
+                <div class="HelpCenter-Resume-Writing-Heading">
+                    <div class="HelpCenter-Resume-Writing-Heading-menu-1">
+                        <ul class="list-1">
+                            <li>
+                                <img src="images/A.png" alt="A" class="img-fluid" />
+                                <img src="images/dropdown.png" alt="icon" class="img-fluid" />
+                            </li>
+                        </ul>
+                        <ul class="list-2">
+                            <li><img src="images/Bold.png" alt="B" class="img-fluid" /></li>
+                            <li><img src="images/Italic.png" alt="I" class="img-fluid" /></li>
+                            <li><img src="images/Underline.png" alt="U" class="img-fluid" /></li>
+                        </ul>
+                        <ul class="list-3">
+                            <li><img src="images/text-aria-Link.png" alt="Link" class="img-fluid" /></li>
+                            <li><img src="images/emoji.png" alt="emoji" class="img-fluid" /></li>
+                            <li><img src="images/gallery.png" alt="img" class="img-fluid" /></li>
+                        </ul>
+                    </div>
+                    <div class="HelpCenter-Resume-Writing-Heading-menu-2">
+                        <ul class="list-4">
+                            <li><img src="images/List.png" alt="emoji" class="img-fluid" /></li>
+                            <li><img src="images/Numbered%20List.png" alt="img" class="img-fluid" /></li>
+                        </ul>
+                        <ul class="list-5">
+                            <li><img src="images/Align-Left.png" alt="left" class="img-fluid" /></li>
+                            <li><img src="images/Align-%20Center.png" alt="Center" class="img-fluid" /></li>
+                            <li><img src="images/Align-Right.png" alt="Right" class="img-fluid" /></li>
+                            <li><img src="images/Align-Justify.png" alt="Justify" class="img-fluid" /></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="HelpCenter-Resume-Writing-body">
+                    <div class="HelpCenter-textarea">
+                    <textarea placeholder="Write your message">Hey Angelina,
+My KYC issue is solved now.</textarea>
+                    </div>
+                    <div class="hInbox hInbox-border">
+                        <div class="hInbox-top-border">
+                            &nbsp;
+                        </div>
+                    </div>
+                    <div class="HelpCenter-Resume-Writing-inbox">
+                        <div class="Resume-Writing-inbox-person-1">
+                            <p>Hi Support,<br>
+                            Please find all desired attachment for my KYC to br done.<br>
+                            Thanks,<br>
+                            Robert Rose</p>
+                        </div>
+                    </div>
+                    <div class="HelpCenter-textarea-btns">
+                        <div class="HelpCenter-textarea-btns-left">
+                            <div class="btn-send">
+                                <button data-toggle="modal" data-target="#myModal-Success" data-dismiss="modal" class="close"><a href="#">Send</a><div class="clock-btn"><img src="images/Time.png" alt="clock" class="img-fluid" /></div></button>
+                            </div>
+                            <div class="atachment-btn">
+                                <buttton><a href="#"><img src="images/Attachment.png" alt="icon" class="img-fluid" /></a></buttton>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+	        </div>
+			            </div>
+			        </div>
+
+			    </div>
+			</div>
+			</div>
+			
+			<div class="hModal-three hModal-Two-and-three">
+			<!-- Modal -->
+			<div class="modal fade" id="myModal-3" role="dialog">
+			    <div class="modal-dialog">
+
+			        <!-- Modal content-->
+			        <div class="modal-content">
+			            <div class="modal-header">
+                            <div class="modal-title">
+                                <h4>Forword your message </h4>
+                            </div>
+			                <div class="close modal-Close" data-dismiss="modal">
+			                    <img src="images/hModal-close-icon.png" alt="X" class="img-fluid">
+			                </div>
+			            </div>
+			            <div class="modal-body">
+			                <div class="modal-body-keyDropdown-and-input">
+			                    <div class="Create-Support-dropdown-left">
+                                    <input type="email" placeholder="Enater mail id">
+			                    </div>
+	                            <div class="Create-Support-dropdown-right">
+	                                <input type="text" placeholder="Write subject">
+	                            </div>
+			                </div>
+			                <div class="HelpCenter-Resume-Writing-Sect">
+                <div class="HelpCenter-Resume-Writing-Heading">
+                    <div class="HelpCenter-Resume-Writing-Heading-menu-1">
+                        <ul class="list-1">
+                            <li>
+                                <img src="images/A.png" alt="A" class="img-fluid" />
+                                <img src="images/dropdown.png" alt="icon" class="img-fluid" />
+                            </li>
+                        </ul>
+                        <ul class="list-2">
+                            <li><img src="images/Bold.png" alt="B" class="img-fluid" /></li>
+                            <li><img src="images/Italic.png" alt="I" class="img-fluid" /></li>
+                            <li><img src="images/Underline.png" alt="U" class="img-fluid" /></li>
+                        </ul>
+                        <ul class="list-3">
+                            <li><img src="images/text-aria-Link.png" alt="Link" class="img-fluid" /></li>
+                            <li><img src="images/emoji.png" alt="emoji" class="img-fluid" /></li>
+                            <li><img src="images/gallery.png" alt="img" class="img-fluid" /></li>
+                        </ul>
+                    </div>
+                    <div class="HelpCenter-Resume-Writing-Heading-menu-2">
+                        <ul class="list-4">
+                            <li><img src="images/List.png" alt="emoji" class="img-fluid" /></li>
+                            <li><img src="images/Numbered%20List.png" alt="img" class="img-fluid" /></li>
+                        </ul>
+                        <ul class="list-5">
+                            <li><img src="images/Align-Left.png" alt="left" class="img-fluid" /></li>
+                            <li><img src="images/Align-%20Center.png" alt="Center" class="img-fluid" /></li>
+                            <li><img src="images/Align-Right.png" alt="Right" class="img-fluid" /></li>
+                            <li><img src="images/Align-Justify.png" alt="Justify" class="img-fluid" /></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="HelpCenter-Resume-Writing-body">
+                    <div class="HelpCenter-textarea">
+                    <textarea placeholder="Write your message">Hey Dan and Steve,
+Hope you are doing good. I am forwording this message to let you know that Enoch help desk is really great.</textarea>
+                    </div>
+                    <div class="hInbox hInbox-border">
+                        <div class="hInbox-top-border">
+                            &nbsp;
+                        </div>
+                    </div>
+                    <div class="HelpCenter-Resume-Writing-inbox">
+                        <div class="Resume-Writing-inbox-person-1">
+                            <p>Hi Support,<br>
+                            Please find all desired attachment for my KYC to br done.<br>
+                            Thanks,<br>
+                            Robert Rose</p>
+                        </div>
+                    </div>
+                    <div class="HelpCenter-textarea-btns">
+                        <div class="HelpCenter-textarea-btns-left">
+                            <div class="btn-send">
+                                <button data-toggle="modal" data-target="#myModal-Success" data-dismiss="modal" class="close"><a href="#">Send</a><div class="clock-btn"><img src="images/Time.png" alt="clock" class="img-fluid" /></div></button>
+                            </div>
+                            <div class="atachment-btn">
+                                <buttton><a href="#"><img src="images/Attachment.png" alt="icon" class="img-fluid" /></a></buttton>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+	        </div>
+			            </div>
+			        </div>
+
+			    </div>
+			</div>
+			</div>
+			
+			<div class="hModal hModal-Success hModal-Two-and-three">
+			<!-- Modal -->
+			<div class="modal fade" id="myModal-Success" role="dialog">
+			    <div class="modal-dialog">
+
+			        <!-- Modal content-->
+			        <div class="modal-content">
+			            <div class="modal-header">
+                            <div class="modal-title">
+                                <div class="modal-success-icon">
+                                    <img src="images/hSuccess.png" alt="✅" class="img-fluid"/>
+                                </div>
+                                <h5>The messge has been sent successfully</h5>
+                            </div>
+			                <div class="close modal-Close" data-dismiss="modal">
+			                    <img src="images/hModal-close-icon.png" alt="X" class="img-fluid">
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+			</div>
+			
+			<div class="help-center-content-block">
+				<div id="inbox" class="supporttabcontent grid-d-block">
+					<div class="helpCenter-deatails-tbl">						
+						<div class="helpCenter-table">				
+							<div class="tableHeading enable">
+									<div class="tableCell pl-0">
+										<div class="hlp-filter-dropbox">
+											<div class="dropdown">
+												<div class="fancycheckbox">
+													<label class="filtercheck_container">
+														<input type="checkbox" onclick="checkall(this)" class="buttons cebox">
+														<span class="filtercheckmark"></span>
+													</label>
+												</div>
+												<div class="filter-dropbttn"><img src="images/Polygon-drop.png" alt="icon" class="pl-4" data-toggle="dropdownpopup" data-link="filterdiv"></div>
+												<div class="dropdown-menu option-menu" id="filterdiv">
+                                                    <div class="filteration">
+                                                         <ul>
+															<li onclick="rowenable()">All</li>
+															<li>None</li>
+															<li>Read </li>
+															<li>Unread</li> 
+															<li>Starred</li> 
+															<li>Unstarred</li> 
+														</ul>
+                                                    </div>
+                                                </div>
+											</div> 
+											<span class="refresh-tbl"><a href="#"><img src="images/hupdate.png" alt="icon" img="img-fluid"/></a></span>	
+										</div>											
+									</div>
+									<div class="tableCell">Lead</div>
+									<div class="tableCell">Ticket ID</div>
+									<div class="tableCell">Category</div>
+									<div class="tableCell">Subject  </div>
+									<div class="tableCell">  </div>
+									<div class="tableCell">Status</div>
+									<div class="tableCell">Date & Time</div>
+									<div class="tableCell text-right"></div>
+							</div>
+							<div class="tableBody">
+								<div class="tableRow tableRow-inactive">
+										<div class="hlp-collapse-bttn">
+											<span class="tableCell-collapse-btn">
+												<img src="images/Plus.png" alt="Plus" class="img-fluid collpse-plus"/>
+												<img src="images/Minus.png" alt="Minus" class="img-fluid collpse-minus"/>
+											</span>
+										</div>
+										<div class="tableRowHeader helpcenter-read-mail">
+											<div class="tableCell">
+												<div class="helpCenter-select pl-4">
+													<div class="filterfancycheckbox">
+														<label class="filtercheck_container">
+															<input type="checkbox" name="foo" class="cbox" checked>
+															<span class="filtercheckmark"></span>
+														</label>
+													</div>
+													<div class="helpCenter-star" data-toggleclass="starclass" data-class="start-color"><i class="fa fa-star-o ratingstart" aria-hidden="true"></i><i class="fa fa-star ratingstart2" aria-hidden="true"></i></div>
+													<div class="helpCenter-mailbox"><img src="images/hlpmail.png" alt="icon" img="img-fluid"/></div>
+												</div>
+											</div>
+											<div class="tableCell">
+											
+												<div class="tableCell-lead"><img src="images/usr1.png" alt="user" class="img-fluid mr-2"/>Regina Cooper </div>
+											</div>
+											<div class="tableCell">
+												<div class="tableCell-ticket">876829/<span>K033</span></div>
+												
+											</div>
+											<div class="tableCell">
+												<div class="tableCell-cat">
+													Security
+												</div>							
+											</div>
+											<div class="tableCell">
+												<div class="tableCell-sub">Be aware of scam </div>
+											</div>
+											<div class="tableCell">
+												<div class="tableCell-image">
+													<ul class="">
+														<li><a href="#"><img src="images/image-icon.png" alt="icon"> Image...</a></li>
+														<!-- <li><a href="#"><img src="images/copyof.png" alt="icon"> Copy... </a></li>
+														<li class="draft-copyof"><a href="#"> +2 </a></li> -->
+													</ul>
+												</div>
+											</div>
+											<div class="tableCell">
+												<div class="tableCell-status">
+													N/A
+												</div>
+											</div>
+											<div class="tableCell">
+												<div class="tableCell-date-time">
+													12/05/2021 10:30 AM 
+												</div>
+											</div>
+											<div class="tableCell">
+												<div class="tableCell-collapse-block">
+													<span><img src="images/Delete.png" alt="Delete" class="img-fluid"/></span>
+												</div>
+											</div>							
+										</div>
+										<div id="collapse-block1" class="tableRow-collapse-block">
+										</div>
+									</div>	
+								<div class="tableRow tableRow-inactive">
+									<div class="hlp-collapse-bttn">
+										<span class="tableCell-collapse-btn collapsed">
+												<img src="images/Plus.png" alt="Plus" class="img-fluid collpse-plus"/>
+												<img src="images/Minus.png" alt="Minus" class="img-fluid collpse-minus"/>
+											</span>
+									</div>
+									<div class="tableRowHeader unread-mail">
+										<div class="tableCell">
+											<div class="helpCenter-select pl-4">
+												<div class="filterfancycheckbox">
+													<label class="filtercheck_container">
+														<input type="checkbox" name="foo" class="cbox">
+														<span class="filtercheckmark"></span>
+													</label>
+												</div>
+												<div class="helpCenter-star" data-toggleclass="starclass" data-class="start-color"><i class="fa fa-star-o ratingstart" aria-hidden="true"></i><i class="fa fa-star ratingstart2" aria-hidden="true"></i></div>
+												<div class="helpCenter-mailbox"><img src="images/ReadMail.png" alt="icon" img="img-fluid"/></div>
+											</div>
+										</div>
+										<div class="tableCell">
+										
+											<div class="tableCell-lead"><img src="images/user2.png" alt="user" class="img-fluid mr-2"/>Robert Rose</div>
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-ticket">876829/<span>K032</span></div>
+											
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-cat">
+												Account
+											</div>							
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-sub">KYC Documents</div>
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-image">
+												<ul class="">
+													<li><a href="#"><img src="images/image-icon.png" alt="icon"> Image...</a></li>
+													<li><a href="#"><img src="images/copyof.png" alt="icon"> Copy... </a></li>
+													<li class="tableCell-list-last"><a href="#"> +2 </a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-status in-progress">
+												In-Progress
+											</div>
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-date-time">
+												12/05/2021 10:30 AM 
+											</div>
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-collapse-block">
+												<span><img src="images/Delete.png" alt="Delete" class="img-fluid"/></span>
+											</div>
+										</div>							
+									</div>
+									<div id="collapse-block2" class="tableRow-collapse-block">
+										
+									</div>
+								</div>
+								<div class="tableRow tableRow-inactive">
+									<div class="hlp-collapse-bttn">
+										<span class="tableCell-collapse-btn collapsed">
+												<img src="images/Plus.png" alt="Plus" class="img-fluid collpse-plus"/>
+												<img src="images/Minus.png" alt="Minus" class="img-fluid collpse-minus"/>
+											</span>
+									</div>
+									<div class="tableRowHeader unread-mail">
+										<div class="tableCell">
+											<div class="helpCenter-select pl-4">
+												<div class="filterfancycheckbox">
+													<label class="filtercheck_container">
+														<input type="checkbox" name="foo" class="cbox" checked>
+														<span class="filtercheckmark"></span>
+													</label>
+												</div>
+												<div class="helpCenter-star" data-toggleclass="starclass" data-class="start-color"><i class="fa fa-star-o ratingstart" aria-hidden="true"></i><i class="fa fa-star ratingstart2" aria-hidden="true"></i></div>
+												<div class="helpCenter-mailbox"><img src="images/ReadMail.png" alt="icon" img="img-fluid"/></div>
+											</div>
+										</div>
+										<div class="tableCell">
+										
+											<div class="tableCell-lead"><img src="images/user2.png" alt="user" class="img-fluid mr-2"/>Robert Rose</div>
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-ticket">876829/<span>K024</span></div>
+											
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-cat">
+												Account
+											</div>							
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-sub">KYC Documents</div>
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-image">
+												<ul class="">
+													<li><a href="#"><img src="images/image-icon.png" alt="icon"> Image...</a></li>
+													<li><a href="#"><img src="images/copyof.png" alt="icon"> Copy... </a></li>
+													<li class="tableCell-list-last"><a href="#"> +2 </a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-status in-solved">
+												Solved
+											</div>
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-date-time">
+												12/05/2021 10:30 AM 
+											</div>
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-collapse-block">
+												<span><img src="images/Delete.png" alt="Delete" class="img-fluid"/></span>
+											</div>
+										</div>							
+									</div>
+									<div id="collapse-block2" class="tableRow-collapse-block">
+										
+									</div>
+								</div>							
+							</div>
+						</div>
+							
+
+					</div>
+				</div>
+				<div id="sent" class="supporttabcontent">
+					<div class="helpCenter-deatails-tbl">						
+						<div class="helpCenter-table">				
+							<div class="tableHeading enable">
+									<div class="tableCell pl-0">
+										<div class="hlp-filter-dropbox">
+											<div class="dropdown">
+												<div class="fancycheckbox">
+													<label class="filtercheck_container">
+														<input type="checkbox" onclick="checkall(this)" class="buttons cebox">
+														<span class="filtercheckmark"></span>
+													</label>
+												</div>
+												<div class="filter-dropbttn"><img src="images/Polygon-drop.png" alt="icon" class="pl-4" data-toggle="dropdownpopup" data-link="filterdiv"></div>
+												<div class="dropdown-menu option-menu" id="filterdiv">
+                                                    <div class="filteration">
+                                                         <ul>
+															<li onclick="rowenable()">All</li>
+															<li>None</li>
+															<li>Read </li>
+															<li>Unread</li> 
+															<li>Starred</li> 
+															<li>Unstarred</li> 
+														</ul>
+                                                    </div>
+                                                </div>
+											</div> 
+											<span class="refresh-tbl"><a href="#"><img src="images/hupdate.png" alt="icon" img="img-fluid"/></a></span>	
+										</div>											
+									</div>
+									<div class="tableCell">Lead</div>
+									<div class="tableCell">Ticket ID</div>
+									<div class="tableCell">Category</div>
+									<div class="tableCell">Subject  </div>
+									<div class="tableCell">  </div>
+									<div class="tableCell">Status</div>
+									<div class="tableCell">Date & Time</div>
+									<div class="tableCell text-right"></div>
+							</div>
+							<div class="tableBody">
+								<div class="tableRow tableRow-inactive">
+										<div class="hlp-collapse-bttn">
+											<span class="tableCell-collapse-btn">
+												<img src="images/Plus.png" alt="Plus" class="img-fluid collpse-plus"/>
+												<img src="images/Minus.png" alt="Minus" class="img-fluid collpse-minus"/>
+											</span>
+										</div>
+										<div class="tableRowHeader helpcenter-read-mail">
+											<div class="tableCell">
+												<div class="helpCenter-select pl-4">
+													<div class="filterfancycheckbox">
+														<label class="filtercheck_container">
+															<input type="checkbox" name="foo" class="cbox">
+															<span class="filtercheckmark"></span>
+														</label>
+													</div>
+													<div class="helpCenter-star" data-toggleclass="starclass" data-class="start-color"><i class="fa fa-star-o ratingstart" aria-hidden="true"></i><i class="fa fa-star ratingstart2" aria-hidden="true"></i></div>
+													<div class="helpCenter-mailbox"><img src="images/hlpmail.png" alt="icon" img="img-fluid"/></div>
+												</div>
+											</div>
+											<div class="tableCell">
+											
+												<div class="tableCell-lead"><img src="images/user2.png" alt="user" class="img-fluid mr-2"/>Robert Rose</div>
+											</div>
+											<div class="tableCell">
+												<div class="tableCell-ticket">876829/<span>K018</span></div>
+												
+											</div>
+											<div class="tableCell">
+												<div class="tableCell-cat">
+													Account
+												</div>							
+											</div>
+											<div class="tableCell">
+												<div class="tableCell-sub">Correct my address </div>
+											</div>
+											<div class="tableCell">
+												<div class="tableCell-image">
+													<ul class="">
+														<li><a href="#"><img src="images/image-icon.png" alt="icon"> Image...</a></li>
+														<!-- <li><a href="#"><img src="images/copyof.png" alt="icon"> Copy... </a></li>
+														<li class="draft-copyof"><a href="#"> +2 </a></li> -->
+													</ul>
+												</div>
+											</div>
+											<div class="tableCell">
+												<div class="tableCell-status in-solved">
+													Solved
+												</div>
+											</div>
+											<div class="tableCell">
+												<div class="tableCell-date-time">
+													05/05/2021 09:00 AM 
+												</div>
+											</div>
+											<div class="tableCell">
+												<div class="tableCell-collapse-block">
+													<span><img src="images/Delete.png" alt="Delete" class="img-fluid"/></span>
+												</div>
+											</div>							
+										</div>
+										<div id="collapse-block1" class="tableRow-collapse-block">
+										</div>
+									</div>	
+								<div class="tableRow tableRow-inactive">
+										<div class="hlp-collapse-bttn">
+											<span class="tableCell-collapse-btn">
+												<img src="images/Plus.png" alt="Plus" class="img-fluid collpse-plus"/>
+												<img src="images/Minus.png" alt="Minus" class="img-fluid collpse-minus"/>
+											</span>
+										</div>
+										<div class="tableRowHeader helpcenter-read-mail">
+											<div class="tableCell">
+												<div class="helpCenter-select pl-4">
+													<div class="filterfancycheckbox">
+														<label class="filtercheck_container">
+															<input type="checkbox" name="foo" class="cbox">
+															<span class="filtercheckmark"></span>
+														</label>
+													</div>
+													<div class="helpCenter-star" data-toggleclass="starclass" data-class="start-color"><i class="fa fa-star-o ratingstart" aria-hidden="true"></i><i class="fa fa-star ratingstart2" aria-hidden="true"></i></div>
+													<div class="helpCenter-mailbox"><img src="images/hlpmail.png" alt="icon" img="img-fluid"/></div>
+												</div>
+											</div>
+											<div class="tableCell">
+											
+												<div class="tableCell-lead"><img src="images/user2.png" alt="user" class="img-fluid mr-2"/>Robert Rose</div>
+											</div>
+											<div class="tableCell">
+												<div class="tableCell-ticket">876829/<span>K012</span></div>
+												
+											</div>
+											<div class="tableCell">
+												<div class="tableCell-cat">
+													KYC /AML
+												</div>							
+											</div>
+											<div class="tableCell">
+												<div class="tableCell-sub">Driving License </div>
+											</div>
+											<div class="tableCell">
+												<div class="tableCell-image">
+													<ul class="">
+														<li><a href="#"><img src="images/image-icon.png" alt="icon"> Image...</a></li>
+														<li class="tableCell-list-last"><a href="#"> +2 </a></li>
+														<!-- <li><a href="#"><img src="images/copyof.png" alt="icon"> Copy... </a></li>-->
+													</ul>
+												</div>
+											</div>
+											<div class="tableCell">
+												<div class="tableCell-status in-solved">
+													Solved
+												</div>
+											</div>
+											<div class="tableCell">
+												<div class="tableCell-date-time">
+													28/04/2021 10:30 AM 
+												</div>
+											</div>
+											<div class="tableCell">
+												<div class="tableCell-collapse-block">
+													<span><img src="images/Delete.png" alt="Delete" class="img-fluid"/></span>
+												</div>
+											</div>							
+										</div>
+										<div id="collapse-block1" class="tableRow-collapse-block">
+										</div>
+									</div>	
+								<div class="tableRow tableRow-active">
+									<div class="hlp-collapse-bttn">
+										<span class="tableCell-collapse-btn">
+												<img src="images/Plus.png" alt="Plus" class="img-fluid collpse-plus"/>
+												<img src="images/Minus.png" alt="Minus" class="img-fluid collpse-minus"/>
+											</span>
+									</div>
+									<div class="tableRowHeader helpcenter-read-mail">
+										<div class="tableCell">
+											<div class="helpCenter-select pl-4">
+												<div class="filterfancycheckbox">
+													<label class="filtercheck_container">
+														<input type="checkbox" name="foo" class="cbox">
+														<span class="filtercheckmark"></span>
+													</label>
+												</div>
+												<div class="helpCenter-star" data-toggleclass="starclass" data-class="start-color"><i class="fa fa-star-o ratingstart" aria-hidden="true"></i><i class="fa fa-star ratingstart2" aria-hidden="true"></i></div>
+												 <div class="helpCenter-mailbox"><img src="images/ReadMail.png" alt="icon" img="img-fluid"/></div>
+											</div>
+										</div>
+										<div class="tableCell">
+										
+											<div class="tableCell-lead"><img src="images/user2.png" alt="user" class="img-fluid mr-2"/>Robert Rose</div>
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-ticket">876829/<span>K010</span></div>
+											
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-cat">
+												KYC/AML
+											</div>							
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-sub">KYC Documents </div>
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-image">
+												<ul class="">
+													<li><a href="#"><img src="images/image-icon.png" alt="icon"> Image...</a></li>
+													<li><a href="#"><img src="images/copyof.png" alt="icon"> Copy... </a></li>
+													<li class="tableCell-list-last"><a href="#"> +1 </a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-status in-close">
+												Closed
+											</div>
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-date-time">
+												10/05/2021 05:00 AM 
+											</div>
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-collapse-block">
+												<span><img src="images/Delete.png" alt="Delete" class="img-fluid"/></span>
+											</div>
+										</div>							
+									</div>
+									<div id="collapse-block3" class="tableRow-collapse-block">
+										<div class="tableRow-collapse-block-lft">
+											<h3>Subject: Find my document</h3>
+											<div class="tableRow-collapse-chat-block">
+												<div class="chat-block-old-msg">1 Old Messages</div>
+												<div class="chat-block-reciever-block">
+													<div class="chat-block-reciever">
+														<div class="chat-block-dot"><a href="#"><img src="images/dots-g.png"></a></div>
+														<p>Hi Support,</p>
+														<p>Please find attached KYC documents. </p>
+														<p>Thanks,</p>
+														<p>Robert Rose</p>
+														<div class="chat-block-bottm">
+															<div class="tableCell-image">
+																<ul class="">
+																	<li><a href="#"><img src="images/image-icon.png" alt="icon"> Image...</a></li>
+																	<li><a href="#"><img src="images/copyof.png" alt="icon"> Copy... </a></li>
+																	<li class="tableCell-list-last"><a href="#"> +2 </a></li>
+																</ul>
+															</div>
+														</div>
+														
+													</div>
+													<div class="chat-block-date">10/05/2021</div>
+												</div>
+												<div class="chat-block-sendr-parent">
+													<div class="chat-block-sendr-block">
+														<div class="chat-block-sendr">
+															<div class="chat-block-dot"><a href="#"><img src="images/dots-w.png"></a></div>
+															<div class="chat-block-h">
+															<p>@Robertrose </p>
+															<p>Thank you, I will include KYC desk</p>
+															<p>Thanks ,</p>
+															</div>
+															<h4>Regina Copper , Support Desk</h4>
+														</div>
+														<div class="chat-block-date">Yesterday</div>
+													</div>
+													<div class="chat-block-user-img"><img src="images/chat-user.png" class="img-fluid" alt="user"></div>
+												</div>
+												<div class="chat-block-sendr-sent">
+													<div class="chat-block-sendr-block">
+														<div class="chat-block-sendr hlp-cyan-bg">
+															<div class="chat-block-dot"><a href="#"><img src="images/dots-w.png"></a></div>
+															<div class="chat-block-h">
+															<p>@Reginacopper</p>
+															<p>I am not sure about this document. Please add Luciana and Annita. </p>
+															<p>Thanks,</p>
+															</div>
+															<h4>Jack Williams, KYC Desk</h4>
+														</div>
+														<div class="chat-block-date">12/05/2021</div>
+													</div>
+													<div class="chat-block-user-img"><img src="images/user3.png" class="img-fluid" alt="user"></div>
+												</div>
+												
+											</div>
+											<div class="chat-block-text-editor">
+												<div class="chat-block-editor-header">
+													<div class="editor-font"><img src="images/Textarea/Font.png" alt="font"><img src="images/Textarea/arrow.png" alt="font" class="ml-1"></div>
+													<ul>
+														<li><img src="images/Textarea/Bold.png" alt="font"></li>
+														<li><img src="images/Textarea/Italic.png" alt="font"></li>
+														<li><img src="images/Textarea/Underline.png" alt="font"></li>
+													</ul>
+													<ul>
+														<li><img src="images/Textarea/Link.png" alt="font"></li>
+														<li><img src="images/Textarea/Smile.png" alt="font"></li>
+														<li><img src="images/Textarea/Image.png" alt="font"></li>
+													</ul>
+													<ul class="border-right-0">
+														<li><img src="images/Textarea/List.png" alt="font"></li>
+														<li><img src="images/Textarea/Numbered List.png" alt="font"></li>
+														<li><img src="images/Textarea/Align-Left.png" alt="font"></li>
+														<li><img src="images/Textarea/Align-Center.png" alt="font"></li>
+														<li><img src="images/Textarea/Align-Right.png" alt="font"></li>
+														<li><img src="images/Textarea/Align-Justify.png" alt="font"></li>
+													</ul>
+												</div>
+												<div class="chat-block-editor-txtarea">
+													<textarea placeholder="Type something"></textarea>
+												</div>
+												<div class="chat-block-btn">
+													<a href="#" class="btn chat-send-btn"><span class="chat-send-btn-lft">Send</span><span class="chat-send-btn-right"><img src="images/timed.png" alt="time" class="img-fluid"></span></a>
+													<div class="chat-attached"><a href="#"><img src="images/hattachment.png" alt="hattachment" class="img-fluid"></a></div>
+												</div>
+											</div>
+										</div>
+										<div class="tableRow-collapse-block-right">
+											<h3>Message thread </h3>
+											<div class="hlpcenter-message-thrd-block">
+												<ul>
+													<li>
+														<div class="message-thrd-block-user">
+															<div class="thread-usr-img"><img src="images/avtr.png" alt="user" class="img-fluid"></div>
+															<h2>You</h2>
+															<p class="message-thrd-date">10/05/2021</p>
+														</div>
+													</li>
+													<li>
+														<div class="message-thrd-block-user">
+															<div class="thread-usr-img"><img src="images/chat-user.png" alt="user" class="img-fluid"></div>
+															<p class="thread-usr-txt">Regina Cooper</p>
+															<p class="thread-usr-txt1">Support  Desk</p>
+															<p class="message-thrd-date">Yesterday</p>
+														</div>
+													</li>
+													<li>
+														<div class="message-thrd-block-user"><p class="thread-usr-txt2">Regina include Jack</p></div>
+													</li>
+													<li>
+														<div class="message-thrd-block-user">
+															<div class="thread-usr-img"><img src="images/user3.png" alt="user" class="img-fluid"></div>
+															<p class="thread-usr-txt">Jack WIlliams</p>
+															<p class="thread-usr-txt1">KYC Desk</p>
+															<p class="message-thrd-date">12:14 PM</p>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tableRow tableRow-inactive">
+									<div class="hlp-collapse-bttn">
+										<span class="tableCell-collapse-btn collapsed" data-toggle="collapse" data-target="#collapse-block4">
+												<img src="images/Plus.png" alt="Plus" class="img-fluid collpse-plus"/>
+												<img src="images/Minus.png" alt="Minus" class="img-fluid collpse-minus"/>
+											</span>
+									</div>
+									<div class="tableRowHeader helpcenter-read-mail">
+										<div class="tableCell">
+											<div class="helpCenter-select pl-4">
+												<div class="filterfancycheckbox">
+													<label class="filtercheck_container">
+														<input type="checkbox" name="foo" class="cbox">
+														<span class="filtercheckmark"></span>
+													</label>
+												</div>
+												<div class="helpCenter-star" data-toggleclass="starclass" data-class="start-color"><i class="fa fa-star-o ratingstart" aria-hidden="true"></i><i class="fa fa-star ratingstart2" aria-hidden="true"></i></div>
+												<div class="helpCenter-mailbox"><img src="images/reply-all.png" alt="icon" img="img-fluid"></div>
+											</div>
+										</div>
+										<div class="tableCell">
+										
+											<div class="tableCell-lead"><img src="images/usr1.png" alt="user" class="img-fluid mr-2">Regina Cooper </div>
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-ticket">876829/<span>K010</span></div>
+											
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-cat">
+												Promotion 
+											</div>							
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-sub">Stake stable coin 22% APY</div>
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-image">
+												<ul class="">
+													<li><a href="#"><img src="images/image-icon.png" alt="icon"> Image...</a></li>
+													<li><a href="#"><img src="images/copyof.png" alt="icon"> Copy... </a></li>
+													<li class="tableCell-list-last"><a href="#"> +1 </a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-status in-close">
+												Closed
+											</div>
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-date-time">
+												25/05/2021 11:00 AM 
+											</div>
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-collapse-block">
+												<span><img src="images/Delete.png" alt="Delete" class="img-fluid"></span>
+											</div>
+										</div>							
+									</div>
+									<div id="collapse-block4" class="tableRow-collapse-block collapse">
+										
+									</div>
+								</div>
+															
+							</div>
+						</div>
+							
+
+					</div>
+				</div>
+				<div id="draft" class="supporttabcontent">
+					<div class="helpCenter-deatails-tbl">						
+						<div class="helpCenter-table helpCenter-table-draft">				
+							<div class="tableHeading enable">
+									<div class="tableCell pl-0">
+										<div class="hlp-filter-dropbox">
+											<div class="dropdown">
+												<div class="fancycheckbox">
+													<label class="filtercheck_container">
+														<input type="checkbox" onclick="checkall(this)" class="buttons cebox">
+														<span class="filtercheckmark"></span>
+													</label>
+												</div>
+												<div class="filter-dropbttn"><img src="images/Polygon-drop.png" alt="icon" class="pl-4" data-toggle="dropdownpopup" data-link="filterdiv"></div>
+												<div class="dropdown-menu option-menu" id="filterdiv">
+                                                    <div class="filteration">
+                                                         <ul>
+															<li onclick="rowenable()">All</li>
+															<li>None</li>
+															<li>Read </li>
+															<li>Unread</li> 
+															<li>Starred</li> 
+															<li>Unstarred</li> 
+														</ul>
+                                                    </div>
+                                                </div>
+											</div> 
+											<span class="refresh-tbl"><a href="#"><img src="images/hupdate.png" alt="icon" img="img-fluid"/></a></span>	
+										</div>											
+									</div>
+									<div class="tableCell">Lead</div>
+									
+									<div class="tableCell">Category</div>
+									<div class="tableCell">Subject  </div>
+									
+									<div class="tableCell">Message</div>
+									<div class="tableCell">Date & Time</div>
+									<div class="tableCell text-right"></div>
+							</div>
+							<div class="tableBody">
+								<div class="tableRow">
+										<div class="tableRowHeader helpcenter-read-mail">
+										<div class="tableCell">
+											<div class="helpCenter-select pl-4">
+												<div class="filterfancycheckbox">
+													<label class="filtercheck_container">
+														<input type="checkbox" name="foo" class="cbox">
+														<span class="filtercheckmark"></span>
+													</label>
+												</div>
+												<div class="helpCenter-star" data-toggleclass="starclass" data-class="start-color"><i class="fa fa-star-o ratingstart" aria-hidden="true"></i><i class="fa fa-star ratingstart2" aria-hidden="true"></i></div>
+												
+											</div>
+										</div>
+										<div class="tableCell">
+										
+											<div class="tableCell-lead"><img src="images/user2.png" alt="user" class="img-fluid"/></div>
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-txt">KYC/AML</div>
+											
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-txt">
+												Find my documents
+											</div>							
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-txt">Sent you the documents</div>
+										</div>
+										
+										
+										<div class="tableCell">
+											<div class="tableCell-txt">
+												12/05/2021 10:30 AM 
+											</div>
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-collapse-block">
+												<span><img src="images/Delete.png" alt="Delete" class="img-fluid"/></span>
+											</div>
+										</div>							
+									</div>
+								</div>	
+								<div class="tableRow">
+									<div class="tableRowHeader helpcenter-read-mail">
+										<div class="tableCell">
+											<div class="helpCenter-select pl-4">
+												<div class="filterfancycheckbox">
+													<label class="filtercheck_container">
+														<input type="checkbox" name="foo" class="cbox">
+														<span class="filtercheckmark"></span>
+													</label>
+												</div>
+												<div class="helpCenter-star" data-toggleclass="starclass" data-class="start-color"><i class="fa fa-star-o ratingstart" aria-hidden="true"></i><i class="fa fa-star ratingstart2" aria-hidden="true"></i></div>
+												
+											</div>
+										</div>
+										<div class="tableCell">
+										
+											<div class="tableCell-lead"><img src="images/user2.png" alt="user" class="img-fluid"/></div>
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-txt">Profile</div>
+											
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-txt">
+												Profile picture issue
+											</div>							
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-txt">Please find all desired attachment for my KYC to br done...</div>
+										</div>
+										
+										
+										<div class="tableCell">
+											<div class="tableCell-txt">
+												05/05/2021 11:00 AM 
+											</div>
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-collapse-block">
+												<span><img src="images/Delete.png" alt="Delete" class="img-fluid"/></span>
+											</div>
+										</div>							
+									</div>
+								</div>
+								<div class="tableRow">
+									<div class="tableRowHeader helpcenter-read-mail">
+										<div class="tableCell">
+											<div class="helpCenter-select pl-4">
+												<div class="filterfancycheckbox">
+													<label class="filtercheck_container">
+														<input type="checkbox" name="foo" class="cbox">
+														<span class="filtercheckmark"></span>
+													</label>
+												</div>
+												<div class="helpCenter-star" data-toggleclass="starclass" data-class="start-color"><i class="fa fa-star-o ratingstart" aria-hidden="true"></i><i class="fa fa-star ratingstart2" aria-hidden="true"></i></div>
+												
+											</div>
+										</div>
+										<div class="tableCell">
+										
+											<div class="tableCell-lead"><img src="images/user2.png" alt="user" class="img-fluid"/></div>
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-txt">Exchange</div>
+											
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-txt">
+												Wallet
+											</div>							
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-sub"></div>
+										</div>
+										
+										
+										<div class="tableCell">
+											<div class="tableCell-txt">
+												05/05/2021 09:00 AM 
+											</div>
+										</div>
+										<div class="tableCell">
+											<div class="tableCell-collapse-block">
+												<span><img src="images/Delete.png" alt="Delete" class="img-fluid"/></span>
+											</div>
+										</div>							
+									</div>
+								</div>
+								
+								
+															
+							</div>
+						</div>
+							
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	
+	</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+
+// When the user clicks, open the popup
+function popupFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+
+}
+
+
+</script>
+<script>
+	/*for toggle sub menu*/
+		function subtogglediv(id, icon) {
+			var id = document.getElementById(id);
+			id.classList.toggle('submenu-active');
+			var cross = document.getElementById(icon);
+			cross.classList.toggle('fa-times');
+			cross.classList.toggle('fa-bars');
+		}
+		</script>
+		<script>
+	/*for Tab*/
+        function helpfunction(evt, faqName) {
+            var i, supporttabcontent, helptablinks;
+            supporttabcontent = document.getElementsByClassName("supporttabcontent");
+            for (i = 0; i < supporttabcontent.length; i++) {
+                supporttabcontent[i].style.display = "none";
+            }
+            helptablinks = document.getElementsByClassName("helptablinks");
+            for (i = 0; i < helptablinks.length; i++) {
+                helptablinks[i].className = helptablinks[i].className.replace(" h-active", "");
+            }
+            document.getElementById(faqName).style.display = "block";
+            evt.currentTarget.className += " h-active";
+        }
+		</script>
+		<script type="text/javascript">
+		/* for modal dropdown menu*/
+	    var dropdownpopup = document.querySelectorAll('[data-toggle=dropdownpopup]');
+	    for (var k = 0; k < dropdownpopup.length; k++) {
+	        dropdownpopup[k].addEventListener('click', function (e) {
+	            if (this.hasAttribute('data-link')) {
+	                var m_ID = this.getAttribute('data-link');
+	                //for closing other popup
+	                var activedropdown = document.querySelector('.dropdown-menu.drop-active');
+	                if(activedropdown && activedropdown.getAttribute('id') != m_ID)
+	                {
+	                    activedropdown.classList.remove('drop-active');
+	                }
+	                //activting popup
+	                document.getElementById(m_ID).classList.toggle('drop-active');
+	            }
+	        });
+	    }
+	 
+		/*mass select*/
+		function checkall(source) {
+	  		checkboxes = document.getElementsByName('foo');
+	  		for(var i=0, n=checkboxes.length;i<n;i++) {
+	    		checkboxes[i].checked = source.checked;
+	  		}
+		}
+		
+
+		/*rating start*/
+		var changeClass = document.querySelectorAll('[data-toggleclass=starclass]');
+	    for (var k = 0; k < changeClass.length; k++) {
+	        changeClass[k].addEventListener('click', function (e) {
+	            if (this.hasAttribute('data-class')) {
+	                var dataClass = this.getAttribute('data-class');
+	                this.classList.toggle(dataClass);
+	            }
+	        });
+	    }
+
+	    //For modal
+		document.addEventListener('click', function (e) {
+	        e = e || window.event;
+	        var target = e.target || e.srcElement;
+
+	        if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') 
+	        {
+	            if (target.hasAttribute('data-target')) 
+	            {
+	                var m_ID = target.getAttribute('data-target');
+	                document.getElementById(m_ID).classList.add('open');
+	            }
+	        }
+
+	        // Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
+	        if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') ||target.classList.contains('modal')) {
+	            var modal = document.querySelector('.modal.open');
+	            modal.classList.remove('open');
+	        }
+        }, false);
+
+       
+	
+ 	</script>
+ 	<script type="text/javascript">
+		
+     //for accordion tab
+		var accItem = document.getElementsByClassName('tableRow');
+		var accHD = document.getElementsByClassName('hlp-collapse-bttn');
+		for (i = 0; i < accHD.length; i++) {
+			accHD[i].addEventListener('click', toggleItem, false);
+		}
+		function toggleItem() {
+			var itemClass = this.parentElement.className;
+			for (i = 0; i < accItem.length; i++) {
+				accItem[i].className = 'tableRow tableRow-inactive';
+			}
+			if (itemClass == 'tableRow tableRow-inactive') {
+				this.parentNode.className = 'tableRow tableRow-active';
+			}
+		}
+		
+	</script>
+	<script type="text/javascript">
+	
+
+		var enable = document.querySelectorAll('.enable')
+		function rowenable() {
+			a = document.getElementsByClassName('cebox');
+		  	for (var i = 0; i < enable.length; i++) {
+		  		for(var i=0; i < a.length; i++) {
+		  			if (a[i].checked = "checked") {
+		  				enable[i].classList.add('border-row');
+		  			}
+		  			else {
+	  					enable[i].classList.remove('border-row');
+		  			}
+		    	}
+		  	}
+		  	//remove disable row
+		  	var disable = document.querySelectorAll('.disable.border-row')
+		  	b = document.getElementsByClassName('cbox');
+		  	for (var i = 0; i < disable.length; i++) {
+		  		for(var i=0; i < b.length; i++) {
+		  			if (b[i].checked = "checked") {
+		  				disable[i].classList.remove('border-row');
+		  				b[i].checked = false
+		  			}
+		  			else {
+	  					console.log("else");
+		  			}
+		    	}
+		  	}
+		}
+ 
+		var disable = document.querySelectorAll('.disable')
+		function rowdisable() {
+			a = document.getElementsByClassName('cbox');
+		  	for (var i = 0; i < disable.length; i++) {
+		  		for(var i=0; i < a.length; i++) {
+		  			if (a[i].checked = "checked") {
+		  				disable[i].classList.add('border-row');
+		  			}
+		  			else {
+	  					disable[i].classList.remove('border-row');
+		  			}
+		    	}
+		  	}
+		  	//remove enable row
+		  	var enable = document.querySelectorAll('.enable.border-row')
+		  	b = document.getElementsByClassName('cebox');
+		  	for (var i = 0; i < enable.length; i++) {
+		  		for(var i=0; i < b.length; i++) {
+		  			if (b[i].checked = "checked") {
+		  				enable[i].classList.remove('border-row');
+		  				b[i].checked = false
+		  			}
+		  			else {
+	  					console.log("else");
+		  			}
+		    	}
+		  	}
+		}
+ 	</script>
+	<script>
+    $(document).ready(function() {
+        $('.hDelete-alart-close').click(function() {
+            $('.hDelete-alart-sect').hide();
+        });
+    });
+    
+    $(document).ready(function() {
+        $('.hDelete').click(function() {
+            $('.hDelete-alart-sect').show();
+        });
+    });
+</script>
+<script>
+		
+		function onkeypressdropdown() {
+
+	var selectmedia1 = document.getElementById("onkeypress-DropdownList");
+	selectmedia1.classList.toggle("show");
+	var selItem = document.getElementById("onkeypressdropdown");
+	
+  selItem.classList.toggle("select-active"); 
+}
+var selectmedia2 = document.getElementById("onkeypress-DropdownList").querySelectorAll(".timeSetting-content ul li .user-dp");
+selectmedia2.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('onkeypressdropdown').innerHTML = this.innerHTML;
+ 
+	
+	        
+		 }
+		  
+        });
+	
+
+		// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.timeSetting-droplist')) {
+    var dropdowns = document.getElementsByClassName("timeSetting-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+	<!--  var selItem = document.getElementById("athp-sel"); -->
+	
+}
+	</script>
+  <script>
+$(document).ready(function(){
+ 
+  $(".disable-click-btn").click(function(){
+  
+    $(".help-option-group").addClass("disable-rest-btn");
+  });
+   $(".enable-click-btn").click(function(){
+  
+    $(".help-option-group").removeClass("disable-rest-btn");
+  });
+  
+});
+</script>
+<script>
+	$(function(){
+	   $('.menu-mid-sect ul li.submenubar-item a').click(function(){
+		 $('.menu-mid-sect ul li.submenubar-item a').each(function(a){
+		   $( this ).removeClass('selectedclass')
+		 });
+		 $( this ).addClass('selectedclass');
+	   });
+	  
+	 });
+	</script>
+</body>
+
+</html>

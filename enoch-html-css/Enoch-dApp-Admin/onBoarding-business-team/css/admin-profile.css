@@ -1,0 +1,2121 @@
+.Launchpad-container{
+    position: relative;
+}
+.Launchpad-back-btn{
+    position: absolute;
+    top: -48px;
+    right: 0px;
+    z-index: 100000;
+}
+.Admin-Profile-body-left-cell{
+    background: #ffffff;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.Admin-Profile-body-center-cell{
+    background: #ffffff;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 10px 0px 26px 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+.Admin-Profile-body-right-cell{
+    background: #ffffff;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 10px 0px 26px 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+.admin-profile-sect{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.admin-profile-picture{
+    width: 25%;
+    left: 0px;
+}
+.admin-name-And-Email-and-btn{
+    width: 75%;
+}
+.admin-name-And-Email-and-btn h1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #1E1F2D;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.admin-name-And-Email-and-btn h2{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #3F434A;
+    margin-bottom: 16px;
+    margin-top: 0px;
+}
+.admin-name-And-Email-and-btn button{
+    background: #c9f5df;
+    height: 31px;
+    width: 88px;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+.admin-name-And-Email-and-btn button a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #2BBD54;
+}
+.admin-name-And-Email-and-btn h3{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #8A9099;
+    max-width: 181px;
+    width: 100%;
+    padding-top: 12px;
+}
+.Organizational-Unit-sect{
+    border-top: 1px solid #D4D8DD;
+    border-bottom: 1px solid #D4D8DD;
+    height: 58px;
+    padding: 8px 0px;
+    margin-top: 28px;
+}
+.Organizational-Unit-sect{}
+.Organizational-Unit-sect h1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 100%;
+    color: #8A9099;
+    text-align: left;
+}
+.Organizational-Unit-sect h2{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    color: #1E1F2D;
+    text-align: left;
+}
+.RESEND-SIGN-INFO-list{}
+.RESEND-SIGN-INFO-list ul{}
+.RESEND-SIGN-INFO-list ul li{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000000;
+    padding: 20px 0px;
+}
+.RESEND-SIGN-INFO-list ul .disable{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #C6C9CC;
+}
+.RESEND-SIGN-INFO-list ul .Authenticator-enabled{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
+}
+.RESEND-SIGN-INFO-list ul .Authenticator-enabled button{
+    border: 1px solid #2BBD54;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+.RESEND-SIGN-INFO-list ul .Authenticator-enabled button a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 140%;
+    text-align: center;
+    color: #2BBD54;
+}
+.Admin-Profile-col-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 58px;
+    border-bottom: 1px solid #D4D8DD;
+    padding: 0px 24px;
+}
+.Admin-Profile-col-heading h1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E1F2D;
+    padding-top: 5px;
+}
+.Admin-Profile-col-heading a {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #D4D8DD;
+}
+.Admin-Profile-col-heading .edit-form{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #7521E2;
+    
+}
+.User-Info-form{
+    margin: 24px 24px 0px 24px ;
+}
+.user-name-sect{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.User-Info-form form lable{
+    margin-bottom: 9px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #8A9099;
+}
+.User-Info-form form input{
+    width: 100%;
+    margin-right: auto;
+    border: 1px solid #E8E9EB;
+    height: 48px;
+    width: 100%;
+    border-radius: 2px;
+    margin-bottom: 23px;
+    padding: 15px 16px;
+    outline: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #3F434A;
+}
+/*
+.User-Info-form form select{
+    width: 100%;
+    margin-right: auto;
+    border: 1px solid #E8E9EB;
+    height: 48px;
+    width: 100%;
+    border-radius: 2px;
+    margin-bottom: 23px;
+    padding: 15px 16px;
+    outline: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #3F434A;
+}*/
+.helpcenter-admin-country-drop-box .timeSetting-droplist:after {
+    content: "\f107";
+    font-family: fontawesome;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #8A9099;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.helpcenter-admin-country-drop-box .adminProfile-Droplist-btns:after {
+    content: "\f107";
+    font-family: fontawesome;
+    position: absolute;
+    top: -15px;
+    right: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #8A9099;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.helpcenter-admin-country-drop-box .timeSetting-droplist{
+    border: 1px solid #E8E9EB;
+    border-radius: 2px
+}
+.admin-profile-country-dropdown .disable .timeSetting-droplist{
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    pointer-events: none;
+}
+.admin-profile-country-dropdown .disable .timeSetting-droplist:after {
+    display: none;
+}
+.User-Info-form form .disable{
+    background: #EDEDED;
+    border: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #8A9099;
+    border-radius: 2px;
+}
+.User-Info-form form .row{
+    margin-right: -6px;
+    margin-left: -6px;
+}
+.User-Info-form form .col-md-6, .User-Info-form form .col-md-12{
+    padding: 0px 8px;
+} 
+.dashboard-header-bredcrumb ul .text-act{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-transform: lowercase;
+    color: #3F434A;
+}
+.Organizational-Details-headings{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 58px;
+    border-bottom: 1px solid #D4D8DD;
+    padding: 0px 24px;
+}
+.Organizational-Details-headings h1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E1F2D;
+    padding-top: 5px;
+}
+.Organizational-Details-headings a {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #D4D8DD;
+    
+}
+.Organizational-Details-headings .edit-form{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #7521E2;
+}
+.Admin-Profile-body .col-lg-3,
+.Admin-Profile-body .col-lg-4,
+.Admin-Profile-body .col-lg-5{
+    padding: 0px 8px;
+}
+
+
+/*Organizational-Details-body*/
+.Organizational-Details-body{
+    padding: 24px;
+}
+.Organizational-Details-body lable{
+    margin-bottom: 9px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #8A9099;
+}
+.Organizational-Details-body input{
+    width: 100%;
+    margin-right: auto;
+    border: 1px solid #E8E9EB;
+    height: 48px;
+    width: 100%;
+    border-radius: 2px;
+    margin-bottom: 23px;
+    padding: 15px 16px;
+    outline: none;
+}
+.Organizational-Details-body .disable{
+    background: #EDEDED;
+    border: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #8A9099;
+}
+.Organizational-Details-body .Permission-btns{
+    background: #ffffff;
+    height: 84px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 2px;
+    border: 1px solid #E8E9EB;
+}
+.Organizational-Details-body .disable{
+    background: #EDEDED;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 2px;
+    border: none;
+}
+.Organizational-Details-body .Permission-btns .two-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+}
+.Organizational-Details-body .Permission-btns .last-one-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+}
+.Organizational-Details-body .Permission-btns a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #8A9099;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #D4D8DD;
+    border-radius: 30px;
+}
+.disable{
+    pointer-events: none;
+}
+.adminProfile-Droplist {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #8A9099;
+}
+.Create-Support-dropdown-left .adminProfile-dropdown-content {
+    max-width: 100%;
+    border-radius: 0px;
+    border: 1px solid #D4D8DD;
+    height: auto;
+}
+.Create-Support-dropdown-left .adminProfile-Droplist-act {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #3F434A;
+}
+.Create-Support-dropdown-left .disable .adminProfile-Droplist-act {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #8A9099;
+}
+.admin-profile-country-dropdown{
+    margin-bottom: 23px;
+}
+.admin-profile-country-dropdown .adminProfile-Droplist-btns {
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    pointer-events: none;
+    height: 84px;
+    padding: 9px 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-items: flex-start;
+    
+}
+.admin-profile-country-dropdown .adminProfile-Droplist-btns .two-btns{
+    margin-right: auto;
+}
+.admin-profile-country-dropdown .adminProfile-Droplist-btns .last-one-btn{
+    margin-right: auto;
+}
+.Admin-Profile-body .custom-row{
+    margin: 0px;
+}
+.admin-profile-country-dropdown .adminProfile-Droplist-btns .Permission-act{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #3F434A;
+}
+.admin-profile-picture-img img {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.update-profile {
+    position: absolute;
+    top: 0px;
+    outline: none;
+    color: transparent;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 0px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+    border: none;
+}
+.update-profile::before {
+    content: '\f030';
+    font-family: fontAwesome;
+    font-size: 0px;
+    color: #ffffff;
+    position: absolute;
+    right: 20px;
+    top: 24px;
+    z-index: 1;
+    -webkit-user-select: none;
+    background: #6112E1;
+    background: url(../images/admin-dp-C.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    padding: 7px;
+    height: 20px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+}
+update-profile::after {
+    content: '';
+    font-family: 'arial';
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+    top: 10px;
+    font-size: 14px;
+    position: absolute;
+}
+.admin-profile-save-btns{
+    text-align: right;
+}
+.admin-profile-save-btns .Cancel{
+    height: 48px;
+    width: 110px;
+    border-radius: 2px;
+    background: transparent;
+    border: 1.5px solid #7521E2;
+} 
+.admin-profile-save-btns .Cancel a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #7521E2;
+}
+.admin-profile-save-btns .Save-Chnages{
+    height: 48px;
+    width: 155px;
+    border-radius: 2px;
+    background: #FF6B00;
+    border: 3px solid transparent;
+    border-bottom: 3px solid rgba(0,0,0,.2);
+    margin-left: 16px;
+}
+.admin-profile-save-btns .Save-Chnages a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+.admin-profile-save-btns .Save-Chnages:hover{
+    border-bottom: 3px solid transparent;
+}
+.User-Info-btns {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    display: none;
+}
+.Organizational-Details-btns {
+    position: absolute;
+    right: 24px;
+    bottom: 26px;
+    display: flex;
+    display: none;
+}
+.admin-profile-save-btns .Cancel:hover{
+    background: #e2ccff;
+    border: 1px solid transparent;
+}
+.admin-profile-save-btns .Save-Chnages-disable{
+    background: #D4D8DD;
+    border: 3px solid transparent;
+    border-bottom: 3px solid rgba(0,0,0,.2);
+    pointer-events: none;
+}
+.admin-profile-save-btns .Cancel-disable{
+    border: 1.5px solid #D4D8DD;
+    pointer-events: none;
+}
+.admin-profile-save-btns .Cancel-disable a{
+    color: #D4D8DD;
+    pointer-events: none;    
+}
+.admin-profile-picture .update-profile{
+    display: none;
+}
+.admin-profile-picture:hover .update-profile{
+    display: block;
+}
+.Organizational-Details-body form{
+    margin-bottom: 50px;
+}
+.User-Info-form form{
+    margin-bottom: 50px;
+}
+.Launchpad-body{
+    max-width: 1272px;
+    width: 100%;
+    background: #ffffff;
+    height: auto;
+    margin: auto;
+    padding: 40px;
+    padding-bottom: 12px;
+}
+.Yay {
+    max-width: 1192px;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    border: 1px solid #D4D8DD;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 24px;
+}
+.Yay-logo{
+    max-width: 74px;
+    padding: 7px 11px;
+}
+.Yay-text{
+    max-width: 1118px;
+}
+.Yay-text p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 140%;
+    color: #000000;
+    padding-left: 5px;
+}
+.Launchpad-cards-sect{
+    margin: 0px 5px;
+}
+.Launchpad-cards-sect .col-md-4 , .Launchpad-cards-sect .col-4{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.Launchpad-3card {
+    border: 1px solid #D4D8DD;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 16px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.Launchpad-3card-headings{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid #D4D8DD;
+    padding-bottom: 14px;
+}
+.Launchpad-3card-headings-text h1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #000000;
+    margin-left: 16px;
+    padding-top: 8px;
+}
+.Launchpad-3card-headings-body{}
+.Launchpad-3card-headings-body h2{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #1E1F2D;
+    margin-top: 16px;
+}
+.Launchpad-3card-headings-body h3{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #8A9099;
+}
+.Launchpad-cards {
+    border: 1px solid #D4D8DD;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 21px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.Launchpad-cards-text{
+    margin-left: 15px;
+}
+.Launchpad-cards-text h1 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #000000;
+}
+.Launchpad-cards-text p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 140%;
+    color: #000000;
+}
+.identity-Organization-body{
+    padding: 24px 40px;
+    background: #ffffff;
+    border-radius: 4px;
+    margin-bottom: 50px;
+}
+.identity-Organization-headings{
+    border-bottom: 1px solid #C6C9CC;
+    padding-bottom: 10px;
+}
+.identity-Organization-headings h1 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 170.23%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #4D5B61;
+}
+.Migrate-projects-sect{
+    padding: 24px 0px;
+    border-bottom: 1px solid #C6C9CC;
+}
+.Migrate-projects-sect h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #1E1F2D;
+}
+.Migrate-projects-sect p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #3F434A;
+    padding-bottom: 14px;
+}
+.Migrate-projects-btns{}
+.Migrate-projects-btns button{
+    width: 98px;
+    height: 40px;
+    border: 1.5px solid #7521E2;
+    border-radius: 2px;
+    background: #ffffff;
+    margin-right: 16px;
+}
+.Migrate-projects-btns button a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #595F69;
+}
+.SET-PERMISSION-sect{
+    padding: 24px 0px;
+    border-bottom: 1px solid #C6C9CC;
+}
+.SET-PERMISSION-sect h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #1E1F2D;
+}
+.SET-PERMISSION-sect p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #3F434A;
+    padding-bottom: 14px;
+}
+.SET-PERMISSION-btns{}
+.SET-PERMISSION-btns button{
+    width: 145px;
+    height: 40px;
+    border: 1.5px solid #7521E2;
+    border-radius: 2px;
+    background: #ffffff;
+    margin-right: 16px;
+}
+.SET-PERMISSION-btns button a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #595F69;
+}
+.SET-organizations-sect{
+    padding: 24px 0px;
+    border-bottom: 1px solid #C6C9CC;
+}
+.SET-organizations-sect h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #1E1F2D;
+}
+.SET-organizations-sect p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #3F434A;
+    padding-bottom: 14px;
+}
+.SET-organizations-sect p a{
+    color: #7521E2;
+}
+.SET-organizations-btns{}
+.SET-organizations-btns button{
+    width: 159px;
+    height: 40px;
+    border: 1.5px solid #7521E2;
+    border-radius: 2px;
+    background: #ffffff;
+    margin-right: 16px;
+}
+.SET-organizations-btns button a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #595F69;
+}
+.Admin-console-sect{
+    padding: 24px 0px;
+    padding-bottom: 105px;
+}
+.Admin-console-sect h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #1E1F2D;
+}
+.Admin-console-sect p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #3F434A;
+    padding-bottom: 14px;
+}
+.Admin-console-btns{}
+.Admin-console-btns button{
+    width: 139px;
+    height: 40px;
+    border: 1.5px solid #7521E2;
+    border-radius: 2px;
+    background: #ffffff;
+    margin-right: 16px;
+}
+.Admin-console-btns button a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #595F69;
+}
+.identity-Organization-body button:hover{
+    outline: none;
+    background: #e2ccff;
+    border: 1px solid transparent;
+}
+.identity-Organization-body button:hover a{
+    color: #7521E2;
+}
+
+.ASSIGN-ROLE-Sect{
+    background: #ffffff;
+    height: 1138px;
+    width: 544px;
+    z-index: 100;
+    padding: 0px 40px;
+    box-shadow: -4px 0px 24px rgba(137, 137, 137, 0.25);
+}
+.ASSIGN-ROLE-headings{
+    padding-top: 48px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #D4D8DD;
+    position: relative;
+}
+.ASSIGN-ROLE-headings h1 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 140%;
+    color: #000000;
+}
+.ASSIGN-ROLE-headings h1 p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #3F434A;
+}
+.ASSIGN-ROLE-close{
+    position: absolute;
+    top: 40px;
+    right: -20px;
+}
+.ASSIGN-ROLE-Body{
+    margin-top: 24px;
+}
+.ASSIGN-ROLE-dropdown .timeSetting-droplist {
+    max-width: 100%;
+    border: 1px solid #D4D8DD;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #8A9099;
+    outline: none;
+}
+.ASSIGN-ROLE-dropdown .timeSetting-content{
+    height: auto;
+    border: none;
+    box-shadow: -4px 0px 24px rgba(137, 137, 137, 0.25);
+    max-width: 100%;
+    padding: 18px 16px 9px 16px;
+    border-radius: 4px;
+}
+.Job-Title-searchBar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #D4D8DD;
+    padding-bottom: 12px;
+    margin-bottom: 8px;
+}
+.Job-Title-searchBar input{
+    border: none;
+    outline: none;
+    width: 88%;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: #8A9099;
+}
+.Job-Title-searchBar button{
+    border: none;
+    outline: none;
+    width: 10%;
+    background: transparent;
+}
+.ASSIGN-ROLE-dropdown .ASSIGN-ROLE-dropdown-content ul li {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 36px;
+    color: #3F434A;
+    margin-bottom: 0px;
+}
+.ASSIGN-ROLE-dropdown .ASSIGN-ROLE-dropdown-content ul li:hover{
+    color: #445FBC;
+}
+
+.Select-Role-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.Select-Role-content .Select-Role-options{
+    width: 50%;
+}
+.Select-Role-options-left{
+    overflow-y: scroll;
+    height: 216px;
+    margin-bottom: 21px;
+}
+.Select-Role-options-left::-webkit-scrollbar {
+    width: 8px;
+    background: #F8F8F8;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding-right: 15px;
+    border-radius: 200px;
+}
+.Select-Role-options-left::-webkit-scrollbar-thumb {
+    background: #7521E2;
+    border-left: 2px solid #F8F8F8;
+    border-right: 2px solid #F8F8F8;
+    border-radius: 5px;
+    position: absolute;
+    right: 10px;
+}
+.Select-Role-options-right{
+    margin-left:  16px;
+}
+.ASSIGN-ROLE-dropdown-2 , .ASSIGN-ROLE-dropdown-3{
+    margin-top: 24px;
+}
+.ASSIGN-ROLE-dropdown .disable{
+    background: #EDEDED;
+    border: none;
+}
+.Select-Permission-heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #D4D8DD;
+    padding-bottom: 10px;
+    margin-bottom: 8px;
+}
+.Select-Permission-heading h1 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: #8A9099;
+}
+.Select-Permission-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.Permission-options-left{
+    overflow-y: scroll;
+    height: 216px;
+    margin-bottom: 21px;
+}
+.Permission-options-left::-webkit-scrollbar {
+    width: 8px;
+    background: #F8F8F8;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding-right: 15px;
+    border-radius: 200px;
+}
+.Permission-options-left::-webkit-scrollbar-thumb {
+    background: #7521E2;
+    border-left: 2px solid #F8F8F8;
+    border-right: 2px solid #F8F8F8;
+    border-radius: 5px;
+    position: absolute;
+    right: 10px;
+}
+.Select-Permission-content .Permission-options{
+    width: 50%;
+}
+.Select-Permission-content ul li {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 36px;
+    color: #3F434A;
+}
+.Permission-options-right{
+    margin-left: 15px;
+}
+.Permission-options-right li input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    background-color: #ffffff;
+    border: 1px solid #E8E9EB;
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Permission-options-right li input[type="checkbox"]:after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    font-size: 10px;
+    color: white;
+    display: none;
+}
+.Permission-options-right li input[type="checkbox"]:hover{
+    background-color: #FF7511;
+}
+.Permission-options-right li input[type="checkbox"]:checked{
+    background-color: #FF8A00;
+}
+.Permission-options-right li input[type="checkbox"]:checked:after{
+    display: block;
+}
+.Permission-options-right li lable{
+    padding-left: 12px;
+}
+.ASSIGN-ROLE-btns{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+.ASSIGN-ROLE-btns .Cancel{
+    width: 47.5%;
+    height: 48px;
+    border: 1.5px solid #7521E2;
+    outline: none;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+.ASSIGN-ROLE-btns .Cancel a {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #595F69;
+}
+.ASSIGN-ROLE-btns .Cancel:hover{
+    opacity: 1 !important;
+    background: #D8D8D8;
+    border: 1px solid #D8D8D8;
+}
+.ASSIGN-ROLE-btns .Cancel:hover a{
+    color: #7521E2;
+}
+.ASSIGN-ROLE-btns .Save{
+    width: 47.5%;
+    height: 48px;
+    border: 3px solid transparent;
+    border-bottom: 3px solid rgba(0,0,0,.2);
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:  #FF8A00;
+    border-radius: 2px;
+    
+}
+.ASSIGN-ROLE-btns .Save a {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+.ASSIGN-ROLE-btns .Save:hover{
+    background:  #FF8A00;
+    color: #fff;
+    border: none;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+}
+.ASSIGN-ROLE-3Dropdoen-Sect{
+    position: relative;
+}
+.ASSIGN-ROLE-dropbox {
+    border: 1px solid #E8E9EB;
+    box-sizing: border-box;
+    border-radius: 2px;
+    max-width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 22px;
+    position: relative;
+    
+}
+.ASSIGN-ROLE-dropbox span {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #8A9099;
+}
+.ASSIGN-ROLE-content{
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    border-radius: 2px;
+    filter: drop-shadow(0px 20px 50px rgba(44, 63, 88, 0.15));
+    padding: 18px 16px 9px 16px;
+    position: absolute;
+    display: none;
+}
+.ASSIGN-ROLE-droplist ul li{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 36px;
+    color: #3F434A;
+    display: flex;
+    align-items: center;
+}
+.ASSIGN-ROLE-droplist ul li:hover{
+    color: #445FBC;
+
+}
+.ASSIGN-ROLE-droplist-footer{
+    border-top: 1px solid #D4D8DD;
+    display: flex;
+    justify-content: flex-end;
+}
+.ASSIGN-ROLE-droplist-footer a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-items: flex-end;
+    color: #7521E2;
+    padding-top: 7px;
+}
+.roles_collapsible{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ASSIGN-ROLE-content-1{
+    z-index: 3;
+}
+.ASSIGN-ROLE-content-2{
+    z-index: 2;
+}
+.ASSIGN-ROLE-content-3{
+    z-index: 1;
+}
+.ASSIGN-ROLE-dropbox-3 ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.ASSIGN-ROLE-dropbox-3 ul li {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #3F434A;
+    border: 1px solid #C6C9CC;
+    box-sizing: border-box;
+    border-radius: 70px;
+    padding: 4px 12px;
+    margin-right: 8px;
+}
+.ASSIGN-ROLE-dropbox:after {
+    content: "\f107";
+    font-family: fontawesome;
+    position: absolute;
+    top: 0;
+    right: 18px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #8A9099;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+/*---roles---*/
+
+.FILTER-TABLE-sect {
+    background: #F9FAFD;
+    height: 55px;
+    width: 100%;
+    padding: 18px 27px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.FILTER-TABLE-headings{}
+.FILTER-TABLE-headings h1 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 140%;
+    color: #3F434A;
+    padding-left: 13px;
+    padding-top: 10px;
+}
+.roles_collapsible{
+    height: 56px;
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 32px; 
+    border: none;
+    border-bottom: 1px solid #F8F8F8;
+    box-sizing: border-box;
+    outline: none !important;
+}
+.roles_collapsible-btn{
+    display: flex;
+    align-items: center;
+    
+}
+.roles_collapsible-btn lable {
+    padding-left: 21px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #1E1F2D;
+}
+/*
+.roles_collapsible-btn input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff;
+    border: 1px solid #E8E9EB;
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.roles_collapsible-btn input[type="checkbox"]:after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    font-size: 12px;
+    color: white;
+    display: none;
+}
+.roles_collapsible-btn input[type="checkbox"]:hover{
+    background-color: #FF7511;
+}
+.roles_collapsible-btn input[type="checkbox"]:checked{
+    background-color: #FF8A00;
+}
+.roles_collapsible-btn input[type="checkbox"]:checked:after{
+    display: block;
+}
+*/
+.roles_collaps{
+    display: none;
+}
+.roles-collaps-Table{
+    height: auto !important;
+    padding: 0px 2px !important;
+    margin-bottom: 0px !important;
+    border-top: 1px solid #C6C9CC;
+}
+.roles-collaps-Table .TeamtableHeading{
+    padding: 8px 28px !important;
+    height: 50px !important;
+}
+.roles-collaps-Table .TeamtableHeading .TeamtableCell{
+    padding-top: 5px;
+}
+.roles-collaps-Table .TeamtableHeading .TeamtableCell:nth-child(1),
+.roles-collaps-Table .TeamtableRowHeader .TeamtableCell:nth-child(1) {
+    width: 30px !important;
+}
+..roles-collaps-Table .team-table .TeamtableHeading .TeamtableCell:nth-child(2),
+.roles-collaps-Table .team-table .TeamtableRowHeader .TeamtableCell:nth-child(2) {
+    width: 23% !important;
+}
+.FILTER-TABLE-content {
+    background: #ffffff;
+    height: 630px;
+}
+.roles_collapsible-1.active .roles_collapsible-btn lable{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #474CD5;
+    
+}
+.roles_collapsible-2.active .roles_collapsible-btn lable{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #474CD5;
+}
+.roles_collapsible-3.active .roles_collapsible-btn lable{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #474CD5;
+}
+.roles_collapsible-4.active .roles_collapsible-btn lable{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #474CD5;
+}
+.no-border{
+    border: none !important;
+}
+.Sup-Admin-up , .Sup-Admin-up-2 , .Sup-Admin-up-3 , .Sup-Admin-up-4{
+    display: none;
+}
+.border-7521E2 {
+    border: 1px solid #7521E2;
+    box-sizing: border-box;
+}
+.border-bottom-gray{
+    border-bottom: 1px solid #F8F8F8 !important;
+}
+.roles_collapsible-1:hover , .roles_collapsible-2:hover , .roles_collapsible-3:hover , .roles_collapsible-4:hover{
+    border: 1px solid #7521E2;
+}
+.border-bottom-gray{
+    border-bottom: 1px solid #F8F8F8 !important;
+}
+.roles_collapsible-1.active , .roles_collapsible-2.active , .roles_collapsible-3.active , .roles_collapsible-4.active{
+    border: 1px solid #7521E2;
+    border-bottom: none;
+}
+.roles-collaps-Table-sect{
+    border: 1px solid #7521E2;
+    border-top: none;
+}
+.ASSIGN-ROLE-Modal .fade:not(.show){
+    opacity: 1;
+}
+.ASSIGN-ROLE-Modal .modal-content{
+    max-width: 544px;
+    margin-left: auto;
+}
+.ASSIGN-ROLE-Modal .close{
+    opacity: 1;
+}
+.roles_collaps .team-table .TeamtableRowHeader:hover {
+    background: #FFFFFF;
+    border: none;
+    box-sizing: border-box;
+}
+
+
+
+
+@media (min-width: 576px){
+    .ASSIGN-ROLE-Modal .modal-dialog {
+        max-width: 100%;
+        margin: 1.75rem auto;
+    }
+}
+@media (min-width: 992px) and (max-width: 1279px){
+    .admin-profile-country-dropdown .adminProfile-Droplist-btns .Permission-act {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 9px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        color: #3F434A;
+    }
+    .Organizational-Details-body .Permission-btns a {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        color: #8A9099;
+        padding: 5px 7px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        border: 1px solid #D4D8DD;
+        border-radius: 30px;
+    }
+    .admin-profile-save-btns .Cancel{
+        height: 48px;
+        width: 45%;
+    }
+    .admin-profile-save-btns .Cancel a{
+        font-size: 10px;
+    }
+    .admin-profile-save-btns .Save-Chnages {
+        height: 48px;
+        width: 45%;
+    }
+    .admin-profile-save-btns .Save-Chnages a{
+        font-size: 10px;
+    }
+    .admin-name-And-Email-and-btn h1{
+        font-size: 21px;
+    }
+    .admin-name-And-Email-and-btn h2{
+        font-size: 12px;
+    }
+    .admin-name-And-Email-and-btn {
+        width: 68%;
+        margin-left: 10px;
+    }
+    .admin-profile-picture {
+        width: 26%;
+        left: 0px;
+    }
+    .Admin-Profile-col-heading h1 , .Organizational-Details-headings h1{
+        font-size: 14px;
+    }
+    .Organizational-Details-btns {
+        position: absolute;
+        right: 14px;
+        bottom: 26px;
+        width: 80%;
+        display: flex;
+    }
+    .User-Info-btns {
+        position: absolute;
+        right: 14px;
+        bottom: 26px;
+        width: 80%;
+        display: flex;
+    }
+    .Launchpad-cards-img img{
+        width: 60px;
+    }
+    .Launchpad-cards-text h1 {
+        font-size: 13px;
+        line-height: 140%;
+    }
+}
+@media (min-width: 812px) and (max-width: 991px){
+    /*
+    .Launchpad-cards-img img{
+        width: 70px;
+    }*/
+}
+@media (min-width: 992px) {
+    .custom-col-lg-4 {
+        /*-ms-flex: 0 0 31.333333%;*/
+        flex: 0 0 31%;
+        max-width: 31%;
+        width: 100%;
+    }
+    .custom-col-lg-5 {
+        /*-ms-flex: 0 0 39.666667%;*/
+        flex: 0 0 40%;
+        max-width: 40%;
+        width: 100%;
+    }
+    .custom-col-lg-3{
+        /*-ms-flex: 0 0 25%;*/
+        flex: 0 0 29%;
+        max-width: 29%;
+        width: 100%;
+    }
+
+}
+@media (max-width: 991px){
+    .Yay-logo{
+        width: 10%;
+    }
+    .Yay-text {
+        width: 90%;
+    }
+    .custom-col-4 {
+    /*-ms-flex: 0 0 33.333333%;*/
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+}
+@media (max-width: 766px){
+    .Admin-Profile-body .col-lg-3,
+    .Admin-Profile-body .col-lg-4,
+    .Admin-Profile-body .col-lg-5 {
+        padding: 0px 8px;
+        max-width: 95%;
+        margin: auto;
+    }
+    .Admin-Profile-body-center-cell{
+        height: auto;
+    }
+    .Launchpad-body{
+        width: 95%;
+        margin: auto;
+        padding: 40px 15px;
+        padding-bottom: 12px;
+    }
+    .User-Info-btns {
+        justify-content: center;
+    }
+    .Organizational-Details-btns {
+        left: 0px;
+        right: 0px;
+        justify-content: center;
+    }
+}
+@media (min-width: 667px) and (max-width: 736px){
+    .Launchpad-cards-text h1 {
+        font-size: 14px;
+        line-height: 140%;
+    }
+}
+@media (max-width: 666px){
+    .Yay-logo{
+        width: 15%;
+    }
+    .Yay-text {
+        width: 85%;
+    }
+    .custom-col-4 {
+    /*-ms-flex: 0 0 33.333333%;*/
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+}
+@media(max-width: 545px){
+    .ASSIGN-ROLE-Sect {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 539px){
+    .Yay-logo{
+        width: 20%;
+    }
+    .Yay-text {
+        width: 80%;
+    }
+    .ASSIGN-ROLE-dropbox-3 ul li{
+        font-size: 11px;
+    }
+}
+@media (min-width: 424px) and (max-width: 991px){
+    .admin-profile-picture{
+        width: auto;
+    }
+    .admin-name-And-Email-and-btn{        width: auto;
+        margin-left: 10px;
+    }
+    .admin-profile-sect {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+}
+@media (max-width: 423px){
+    .ASSIGN-ROLE-dropbox-3 ul li{
+        font-size: 10px;
+    }
+}
+@media (max-width: 410px){
+    .ASSIGN-ROLE-dropbox-3 ul li{
+        font-size: 9px;
+        padding: 2px 5px;
+    }
+}
+@media (max-width: 374px){
+    .admin-profile-save-btns .Cancel {
+        width: 45%;
+    }
+    .admin-profile-save-btns .Save-Chnages {
+        width: 45%;
+    }
+    .admin-profile-save-btns .Cancel{
+        height: 48px;
+        width: 45%;
+    }
+    .admin-profile-save-btns .Cancel a{
+        font-size: 10px;
+    }
+    .admin-profile-save-btns .Save-Chnages {
+        height: 48px;
+        width: 45%;
+    }
+    .admin-profile-save-btns .Save-Chnages a{
+        font-size: 10px;
+    }
+    .Organizational-Details-btns {
+        position: absolute;
+        right: 16px;
+        bottom: 26px;
+        width: 80%;
+        display: flex;
+    }
+    .User-Info-btns {
+        position: absolute;
+        right: 16px;
+        bottom: 26px;
+        width: 80%;
+        display: flex;
+    }
+    .Yay-logo{
+        width: 22%;
+    }
+    .Yay-text {
+        width: 78%;
+    }
+}
+@media (max-width: 359px){
+    .admin-profile-country-dropdown .adminProfile-Droplist-btns .Permission-act {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        color: #3F434A;
+    }
+    .Organizational-Details-body .Permission-btns a {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        color: #8A9099;
+        padding: 5px 7px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        border: 1px solid #D4D8DD;
+        border-radius: 30px;
+    }
+    .admin-name-And-Email-and-btn h1{
+        font-size: 23px;
+    }
+    .admin-name-And-Email-and-btn h2{
+        font-size: 14px;
+    }
+    .admin-name-And-Email-and-btn{
+        margin-left: 10px;
+    }
+    .update-profile {
+        position: absolute;
+        top: 0px;
+        outline: none;
+        color: transparent;
+        background: rgba(255, 255, 255, 0.5);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.5s;
+        border: none;
+    }
+    .admin-profile-picture-img img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .update-profile::before {
+        content: '\f030';
+        font-family: fontAwesome;
+        font-size: 0px;
+        color: #ffffff;
+        position: absolute;
+        right: 12px;
+        top: 16px;
+        z-index: 1;
+        -webkit-user-select: none;
+        background: #6112E1;
+        background: url(../images/admin-dp-C.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        padding: 7px;
+        height: 20px;
+        width: 25px;
+        display: flex;
+        align-items: center;
+    }
+    .Yay-logo{
+        width: 24%;
+    }
+    .Yay-text {
+        width: 76%;
+    }
+    .Organizational-Details-btns {
+        position: absolute;
+        right: 20px;
+        left: auto;
+        bottom: 26px;
+        width: 80%;
+        display: flex;
+    }
+    .User-Info-btns {
+        position: absolute;
+        right: 20px;
+        left: auto;
+        bottom: 26px;
+        width: 80%;
+        display: flex;
+    }
+    .Launchpad-cards-img img{
+        width: 60px;
+    }
+    .ASSIGN-ROLE-dropdown .ASSIGN-ROLE-dropdown-content ul li{
+        font-size: 13px;
+    }
+    .ASSIGN-ROLE-Sect{
+        padding: 0px 15px;
+    }
+    .ASSIGN-ROLE-close {
+        position: absolute;
+        top: 35px;
+        right: 0px;
+    }
+    .ASSIGN-ROLE-dropdown-3 .PermissionSelect-active-coustom lable {
+        font-size: 11px;
+    }
+
+}
+@media (max-width: 319px){
+    .admin-profile-country-dropdown .adminProfile-Droplist-btns .Permission-act {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 9px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        color: #3F434A;
+    }
+    .Organizational-Details-body .Permission-btns a {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 9px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        color: #8A9099;
+        padding: 5px 7px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        border: 1px solid #D4D8DD;
+        border-radius: 30px;
+    }
+    .admin-name-And-Email-and-btn h1{
+        font-size: 21px;
+    }
+    .admin-name-And-Email-and-btn h2{
+        font-size: 12px;
+    }
+    .admin-name-And-Email-and-btn{
+        margin-left: 10px;
+    }
+    .update-profile {
+        position: absolute;
+        top: 0px;
+        outline: none;
+        color: transparent;
+        background: rgba(255, 255, 255, 0.5);
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.5s;
+        border: none;
+    }
+    .admin-profile-picture-img img {
+        height: 46px;
+        width: 46px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .update-profile::before {
+        content: '\f030';
+        font-family: fontAwesome;
+        font-size: 0px;
+        color: #ffffff;
+        position: absolute;
+        right: 11px;
+        top: 14px;
+        z-index: 1;
+        -webkit-user-select: none;
+        background: #6112E1;
+        background: url(../images/admin-dp-C.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        padding: 7px;
+        height: 20px;
+        width: 25px;
+        display: flex;
+        align-items: center;
+    }
+    .admin-name-And-Email-and-btn {
+        width: 73%;
+    }
+    .admin-profile-picture {
+        width: 27%;
+        left: 0px;
+    }
+    .Organizational-Details-btns {
+        position: absolute;
+        right: 20px;
+        bottom: 26px;
+        width: 80%;
+        display: flex;
+    }
+    .User-Info-btns {
+        position: absolute;
+        right: 20px;
+        bottom: 26px;
+        width: 80%;
+        display: flex;
+    }
+    .Launchpad-cards-img img{
+        width: 70px;
+    }
+    .ASSIGN-ROLE-droplist ul li{
+        font-size: 11px;
+    }
+    .ASSIGN-ROLE-dropbox-3 ul li{
+        font-size: 8px;
+        padding: 2px 5px;
+    }
+}
+
+

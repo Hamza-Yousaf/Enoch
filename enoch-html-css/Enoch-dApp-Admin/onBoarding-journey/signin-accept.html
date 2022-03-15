@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Enoch dAPP
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/signup-signin-style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/team-journey.css">
+	
+	
+</head>
+<body>
+
+	<section>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-6">
+					
+					<div class="sign-in-form team-signIn">
+						<div class="team-header-logo"><img src="images/logo-big.png" alt="logo" class="img-fluid"/></div>
+						<div class="signin-head">
+							
+							<h2>Sign In</h2>
+												
+						</div>
+						<div class="team-signin-accetBody">
+							<p class="mb-4">Welcome to your new account Regina . Your account is compatable with many Enoch, but your Jadoolabs.com administrator decides services you may acces using your account. For tips about using your new account, visit the Enoch <a href="#">Help Center.</a></p>
+
+							<p class="mb-4">When you use Enoch services, your domain administrator will have access to your reginacooper01@gmail.com account information, including any data you store with this account in Enoch services. You can learns more <a href="#">here</a>, or by consulting your organization’s privacy policy, if one exists. You can choose to maintain separate account for your personal use of any Enoch services. If you have multiple Enoch accounts, you can <a href="#">manage which account you use</a> with Enoch services and <a href="#">switch between them</a> whenever you choose. Your username and profile picture can help you enusre that you`re using the intenet account. </p>
+
+							<p class="mb-4">If your organization provides you to access to the Enoch <a href="#">core services,</a>  your use of those services is governed by your organization`s Enoch agreement. Any other Enoch services your administrator enables (Additional Services) are avialable to you under the Enoch <a href="#">Terms of services</a> and the Enoch <a href="#">Privacy Policy.</a> Certain Additional Services may also have <a href="#">service-specific terms.</a> Your use of any services your administrator allows you to access constitutes acceptance of applicable service-specific terms.</p>
+
+							<p class="mb-4">Click "ACCEPT" bellow to indicate that you understand this description of how your reginacooper01@gmail.com account works and agree to the Enoch <a href="#">Terms of Services</a> and the Enoch <a href="#">Privacy Policy.</a></p>
+							<p class=""><button type="button" class="bttn-primary team-signin-bttn">Accept</button></p>
+						</div>		
+						
+					</div>
+				</div>
+				<div class="col-lg-6 p-0">
+					<div class="sign-up-bg-image team-signIn-image">
+						<div class="twitwr-img"><a href="#"><img src="images/twitter.png" alt="twitter" class="img-fluid"/></a></div>
+						<div><img src="images/signup.png" alt="signup" class="img-fluid"/></div>
+						<div class="top-corner"><img src="images/img1.png" alt="signup" class="img-fluid"/></div>
+						<div class="bottom-corner"><img src="images/img2.png" alt="signup" class="img-fluid"/></div>
+						
+						<div class="linkedin-img"><a href="#"><img src="images/linkedin.png" alt="linkedin" class="img-fluid"/></a></div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-tab.js"></script>
+	<script src="js/datepick.js"></script>
+	<!-- <script>
+	$(document).ready(function(){
+		  $('input[name="b-plan"]').click(function () {
+		$(this).tab('show');
+	});
+	
+		$('.sign-form-input > input , .sign-form-input > textarea').focus(function(){
+		$(this).siblings().addClass('placeholder-up');
+	});
+	$('.sign-form-input > input , .sign-form-input > textarea').blur(function(){
+		var value = $(this).val();
+		if(value === undefined || value === ''){
+			$(this).siblings().removeClass('placeholder-up');
+		}
+	});
+	});
+	</script> -->
+	<script>
+        $('#datepicker').datepicker({
+            uiLibrary: 'bootstrap4'
+        });
+		$('#datepicker1').datepicker({
+            uiLibrary: 'bootstrap4'
+        });
+    </script>
+	<script>
+   function Validate() {
+        var password = document.getElementById("inputpassword1").value;
+        var confirmPassword = document.getElementById("confirmpassword").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+    }
+</script>
+<script>
+$(".toggle-password").click(function() {
+
+  $(this).toggleClass("eye-slash");
+  var input = $($(this).attr("toggle"));
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+});
+</script>
+<script>
+        function contactfunc(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("contacttabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("signuptablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+	<script>
+		
+		function signupCountry() {
+
+	var selectmedia1 = document.getElementById("sign-form-DropdownList");
+	selectmedia1.classList.toggle("show");
+  
+}
+var selectmedia2 = document.getElementById("sign-form-DropdownList").querySelectorAll(".sign-form-content ul li");
+selectmedia2.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('signupCountry').innerHTML = this.innerHTML;
+  //selItem.classList.toggle("select-active");
+	var selItem = document.getElementById("signupCountry");
+	selItem.classList.add("select-active");         
+		 }
+		  
+        });
+		/*phone dropdown*/
+		function selectphone() {
+
+	var selectphone = document.getElementById("selectphone-form-DropdownList");
+	selectphone.classList.toggle("show");
+  
+}
+var selectphone2 = document.getElementById("selectphone-form-DropdownList").querySelectorAll(".sign-form-content ul li");
+selectphone2.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('selectphone').innerHTML = this.innerHTML;
+var selItem2 = document.getElementById("selectphone");
+	selItem2.classList.add("select-active");         
+		 }
+		
+	
+        });
+
+		// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.sign-form-droplist')) {
+    var dropdowns = document.getElementsByClassName("sign-form-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+	<!--  var selItem = document.getElementById("athp-sel"); -->
+	
+}
+	</script>
+</body>
+</html>

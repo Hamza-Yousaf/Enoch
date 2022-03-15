@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Helpcenter - Team</title>
+	<!-- Fav Icons -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/dashboard-header.css" rel="stylesheet" />
+    <link href="css/dashboard-style.css" rel="stylesheet" />
+    <link href="css/helpCenterStyle.css" rel="stylesheet" />
+    <link href="css/help-center.css" rel="stylesheet" />
+    <link href="css/helpcenter-Admin.css" rel="stylesheet" />
+    <link href="css/admin-help-center.css" rel="stylesheet" />
+	 <link href="css/admin-profile.css" rel="stylesheet" />
+    <link href="css/admin-team.css" rel="stylesheet" />
+    <link href="css/team-journey.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="container-fluid dashboard-body-bg">
+	<div class="row">
+		<header class="custom-header">			
+			<div class="ezl-dashboard-header">
+				<div class="menu-left">
+					<div class="menu-wrap">
+						<a href="#menu" class="menu-link"><img src="images/Menu.png" alt="Menu" class="img-fluid"/></a>
+					</div>
+					<div class="header-logo"><a href="javascript:void(0)"><img src="images/logo.png" alt="logo" class="img-fluid"/></a></div>
+				</div>
+				<div class="menuright-side">
+					<div class="right-search">
+						<form class="search-form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Fund, ISIN, Keyword ">
+									<button class="search-form-btn" type="Submit"><img class="search-img" src="images/search.png" alt="search"></button>
+							</div>
+						</form>
+					</div>
+					<div class="menu-mid-sect">
+						<ul id="submenubar">
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/home.png" alt="home" class="img-fluid"/></div>
+								<a href="javascript:void(0)">Home</a>
+							</li>
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/network.png" alt="network" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">My Network</a>
+							</li>
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/jobs.png" alt="jobs" class="img-fluid"/></div>
+								<a href="javascript:void(0)">Jobs</a>
+							</li>
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/Chat.png" alt="Chat" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">Messaging</a>
+							</li>
+							<li class="ether-block">
+								<div class="menu-times-notifi mr-2"><img src="images/Ethereum.png" alt="Ethereum" class="img-fluid"/></div>
+								<a href="javascript:void(0)">ETH Mainnet <i class="fa fa-angle-right"></i></a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)">Connect Wallet</a>
+							</li>
+							
+						</ul>
+						<div class="toggle-menu">
+								<div onclick="subtogglediv('submenubar','submenu-toggle');" class="d-inline-block">
+									<i class="fa fa-bars" aria-hidden="true" id="submenu-toggle"></i>
+								</div>
+							</div>
+					</div>
+					
+					<div class="ezl-notificaion">
+					<div class="position-relative notificaion-dropdown ezl-notificaion-marg">
+						<a href="javascript:void(0)" class="popup"><img src="images/help.png" alt="help"/></a>							
+											
+					</div>
+					<div class=" position-relative notificaion-dropdown">
+						<a href="javascript:void(0)" class="popup"><img src="images/alertBell.png" alt="Bell"><span class="notificaion-spn">10</span></a>							
+						
+					</div>
+					</div>
+					<div class="ezl-user-ac">
+					
+					<div class="account-d dropdown">
+						<div class="dropdown-buttn"><span class="popup" onclick="popupFunction()"><div class="user-img"><img src="images/user-ReginaCooper.png" alt="user image" class="img-fluid"></div></span>
+							<div class="popupbox dropdown-menu" id="myPopup">
+								<ul class="">
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+	
+				
+			</div>
+		</header>
+	</div>	
+
+	<div class="ezl-dashboard-container">	
+		<div class="onboarding-enable-form">
+		
+			<div class="onboarding-enable-head">
+				
+				<h2>You’ve enabled two-factor <br>authentication</h2>
+				<h3>Now, add a backup methrod</h3>
+				<p>If you lose access to your default methrod, you can use backup to gain access to your account</p>					
+			</div>
+			<div class="onboarding-enable-options">
+				<div class="authenticator-enable-options-block shighlight">
+					<input id="Personal-acount" name="b-plan" type="radio" checked="">
+					<label for="Personal-acount">Backup codes (recommended)</label>
+					<p>Generate a set of 20 unique codes to keep on hand.</p>
+				</div>
+				<div class="authenticator-enable-options-block mb-0">
+					<input id="Personal-acount1" name="b-plan" type="radio">
+					<label for="Personal-acount1">SMS</label>
+					<p>You will receive a unique code via SMS if you need  to use your backup methrod.</p>
+				</div>
+			</div>													
+													
+			<div class="d-flex authenticator-request-btn"><a href="#" class="btn bttn-primary onboarding-continue-btn">Continue</a></div>
+		</div>
+	</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+
+// When the user clicks, open the popup
+function popupFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+
+}
+
+
+</script>
+<script>
+	/*for toggle sub menu*/
+		function subtogglediv(id, icon) {
+			var id = document.getElementById(id);
+			id.classList.toggle('submenu-active');
+			var cross = document.getElementById(icon);
+			cross.classList.toggle('fa-times');
+			cross.classList.toggle('fa-bars');
+		}
+		</script>
+		
+		
+		<script>
+$(document).ready(function() {
+  $('input:radio').change(function() {
+    $('div.shighlight').removeClass('shighlight');
+    $(this).closest('.authenticator-enable-options-block').addClass('shighlight');
+  });
+});
+</script>
+    
+    
+    
+</body>
+
+</html>

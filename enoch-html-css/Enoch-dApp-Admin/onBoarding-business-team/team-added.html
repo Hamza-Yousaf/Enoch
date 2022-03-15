@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title> Team</title>
+	<!-- Fav Icons -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/dashboard-header.css" rel="stylesheet" />
+    <link href="css/dashboard-style.css" rel="stylesheet" />
+    <link href="css/helpCenterStyle.css" rel="stylesheet" />
+    <link href="css/help-center.css" rel="stylesheet" />
+    <link href="css/helpcenter-Admin.css" rel="stylesheet" />
+    <link href="css/admin-help-center.css" rel="stylesheet" />
+	 <link href="css/admin-profile.css" rel="stylesheet" />
+    <link href="css/admin-team.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="container-fluid dashboard-body-bg">
+	<div class="row">
+		<header class="custom-header">			
+			<div class="ezl-dashboard-header">
+				<div class="menu-left">
+					<div class="menu-wrap">
+						<a href="#menu" class="menu-link"><img src="images/Menu.png" alt="Menu" class="img-fluid"/></a>
+					</div>
+					<div class="header-logo"><a href="javascript:void(0)"><img src="images/logo.png" alt="logo" class="img-fluid"/></a></div>
+				</div>
+				<div class="menuright-side">
+					<div class="right-search">
+						<form class="search-form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Fund, ISIN, Keyword ">
+									<button class="search-form-btn" type="Submit"><img class="search-img" src="images/search.png" alt="search"></button>
+							</div>
+						</form>
+					</div>
+					<div class="menu-mid-sect">
+						<ul id="submenubar">
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/home.png" alt="home" class="img-fluid"/></div>
+								<a href="javascript:void(0)">Home</a>
+							</li>
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/network.png" alt="network" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">My Network</a>
+							</li>
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/jobs.png" alt="jobs" class="img-fluid"/></div>
+								<a href="javascript:void(0)">Jobs</a>
+							</li>
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/Chat.png" alt="Chat" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">Messaging</a>
+							</li>
+							<li class="ether-block">
+								<div class="menu-times-notifi mr-2"><img src="images/Ethereum.png" alt="Ethereum" class="img-fluid"/></div>
+								<a href="javascript:void(0)">ETH Mainnet <i class="fa fa-angle-right"></i></a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)">Connect Wallet</a>
+							</li>
+							
+						</ul>
+						<div class="toggle-menu">
+								<div onclick="subtogglediv('submenubar','submenu-toggle');" class="d-inline-block">
+									<i class="fa fa-bars" aria-hidden="true" id="submenu-toggle"></i>
+								</div>
+							</div>
+					</div>
+					
+					<div class="ezl-notificaion">
+					<div class="position-relative notificaion-dropdown ezl-notificaion-marg">
+						<a href="javascript:void(0)" class="popup"><img src="images/help.png" alt="help"/></a>							
+											
+					</div>
+					<div class=" position-relative notificaion-dropdown">
+						<a href="javascript:void(0)" class="popup"><img src="images/alertBell.png" alt="Bell"><span class="notificaion-spn">10</span></a>							
+						
+					</div>
+					</div>
+					<div class="ezl-user-ac">
+					
+					<div class="account-d dropdown">
+						<div class="dropdown-buttn"><span class="popup" onclick="popupFunction()"><div class="user-img"><img src="images/user-ReginaCooper.png" alt="user image" class="img-fluid"></div></span>
+							<div class="popupbox dropdown-menu" id="myPopup">
+								<ul class="">
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+	
+				
+			</div>
+		</header>
+	</div>	
+	<div class="row">
+        <div class="dashboard-header-bredcrumb">
+			<div class="ezl-dashboard-container">
+				<div class="col-12 p-md-0">
+					<ul>
+						<li class="mr-2"><img src="images/home-icon.png" alt="icon" class="img-fluid"/> </li>
+						
+						<li><a href="javascript:void(0)" class="dsh-active"> Helpcenter / </a></li>
+						<li><a href="javascript:void(0)" class="helpCenter-active-black pl-1"> inbox </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ezl-dashboard-container">	
+		<div class="no-team-block-hd">
+			<div class="no-team-block-hd-lft">
+				<div class="enochApp-drop-box dropdown">
+					<span class="enoch-green-circle"></span><a href="javascript:void(0)" id="enochAppfunc" class="enochApp-droplist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">enoch.app</a>
+					<div id="enochAppfunc-DropdownList" class="enochApp-content custm-zindex-1 dropdown-menu">										
+					<ul class="enochAppfunc-drop-scrollable">
+						<li>enoch.app</li>
+						<li>Delegate Organization Adminstration role</li>
+						
+																																																																														
+					</ul>
+				</div>
+				</div>
+				
+			</div>
+			<div class="no-team-block-hd-right">
+				<div><a href="#" class="bttn-primary add-usr-bttn" data-toggle="modal" data-target="add-new-user-modal">Add new user</a></div>
+			</div>
+		</div>
+		<div class="add-new-user-popup">
+			<div id="add-new-user-modal" class="modal fade">
+				<!-- Modal content -->
+				<div class="modal-content new-user-body">
+					<span class="close"><img src="images/tCross.png" alt="close" class="img-fluid" data-dismiss="modal"></span>
+					<h2>ADD A NEW USER</h2>	
+					<div class="add-new-user-form">
+						<form>
+							<div class="add-user-form-body">
+								<div class="add-user-upload">
+									<div class="add-user-upload-lft">
+										<img src="images/camera2.png" alt="camera" class="img-fluid"/>
+									</div>
+									<div class="add-user-upload-right">
+										<h3>Upload a Photo</h3>
+										<p>From your computer</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 cust-6">
+										<div class="add-user-form-input">
+											<input type="text" placeholder="Name" value="">
+										</div>
+									</div>
+									<div class="col-md-6 cust-6">
+										<div class="add-user-form-input">
+											<input type="text" placeholder="Surname" value="">
+										</div>
+									</div>
+									<div class="col-md-12 cust-6">
+										<div class="add-user-form-input">
+											<input type="text" placeholder="Email" value="">
+										</div>
+									</div>
+									<div class="col-md-6 cust-6">
+										<div class="add-user-form-input">
+											<input type="text" placeholder="Organizational unit" value="">
+										</div>
+									</div>
+									<div class="col-md-6 cust-6">
+										<div class="add-org-block">
+											<div class="orgUnit-drop-box">
+												<a href="javascript:void(0)" onclick="orgUnitfunc()" id="orgUnitfunc" class="orgUnit-droplist">Choose one</a>
+											</div>
+											<div id="orgUnitfunc-DropdownList" class="orgUnit-content custm-zindex-1">										
+												<ul class="orgUnitfunc-drop-scrollable">
+													<li>Support desk</li>
+													<li></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="add-user-form-input">
+											<input type="text" placeholder="Secondary Email" value="">
+										</div>
+									</div>
+									<div class="col-md-12 cust-6">
+										<div class="add-user-form-input">
+											<input type="text" placeholder="Mobile number" value="">
+										</div>
+									</div>
+									<div class="col-md-12 cust-6 mb-4">
+										<div class="add-org-block">
+											<div class="orgUnit-drop-box">
+												<a href="javascript:void(0)" onclick="countryfunc()" id="countryfunc" class="orgUnit-droplist">Country</a>
+											</div>
+											<div id="countryfunc-DropdownList" class="orgUnit-content custm-zindex-1">										
+												<ul class="setting-form-drop-scrollable">
+													<li>Dutch</li>
+													<li>English (India)</li>
+													<li>English (UK)</li>
+													<li>English (USA)</li>
+													<li>Esperanto</li>
+													<li>Estonian</li>																																																																				
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="new-user-btn-grp">
+									<span><a href="#" class="bttn-secondary add-bttn-cancel" data-dismiss="modal">Cancel</a></span>
+									<span><a href="#" class="bttn-primary add-bttn-usr" id="register" data-toggle="modal" data-target="new-user-added-modal">Add new user</a></span>
+								</div>
+							</div>
+						</form>
+						
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="userAdded-modal-block">															
+				<div id="new-user-added-modal" class="modal fade">
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span class="close"><img src="images/threadCross.png" alt="close" class="img-fluid" data-dismiss="modal"></span>
+						<div class="userAdded-body">
+							<h2>NEW USER ADDED</h2>
+							<div class="userAdded-body-inner">
+								<div class="add-user-upload-lft">
+										<img src="images/camera2.png" alt="camera" class="img-fluid">
+								</div>
+								<h3>Regina Cooper</h3>
+								<p>reginacooper01@gmail.com</p>
+								<div class="userAdded-password-block">
+									<p class="userAdded-password-hd">Password</p>
+									<p class="userAdded-password-val"><input type="password" value="12345678" ><span><img src="images/pass-eye.png" alt="eye" class="img-fluid"/></span></p>
+									<p class="userAdded-password-bottom"><a href="#">COPY PASSWORD</a></p>
+									<p class="userAdded-password-bottom-txt">This password will need to be changed once<br/> Regins signs into the account</p>
+								</div>
+								<ul>
+									<li><a href="#">DONE</a></li>
+									<li><a href="#" id="register2" data-toggle="modal" data-target="email-signin-modal">EMAIL USER SIGN-IN INFO</a></li>
+									<li>
+										<div class="dropdown">
+										  <a href="#" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											MORE ACTIONS
+										  </a>
+										  <div class="dropdown-menu userAdded-drop-box" aria-labelledby="dropdownMenuButton">
+											<ul>
+												<li><a class="" href="#">Add to Groups</a></li>
+												<li><a class="" href="#">Edit User</a></li>
+												<li><a class="" href="#">Print Login Info</a></li>
+											
+											</ul>
+										  </div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="userAdded-modal-block">															
+				<div id="email-signin-modal" class="modal fade">
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span class="close"><img src="images/threadCross.png" alt="close" class="img-fluid" data-dismiss="modal"></span>
+						<div class="email-signin-body">
+							<div class="email-signin-body-hd">
+								<h2>EMAIL SIGN-IN INFO</h2>
+								<p>Regina Cooper</p>
+								</div>
+							<div class="email-signin-body-inner">
+								<form>
+									<div class="emailSignin-input">
+										<input type="text" placeholder="Type something">
+									</div>
+									<p class="emailSignin-sendCopy">
+										
+											<input id="business-acount" name="b-plan" type="checkbox" class="signuptablinks">
+											<label for="business-acount">Send copy to myself</label>
+										
+									</p>
+									<div class="emailSignin-subjct">
+										<h3>Subject: <span>Welcome to Enoch.app</span></h3>
+										<div class="emailSignin-subjct-body">
+											<p class="emailSignin-subjct-body-edit"><a href="#">EDIT</a></p>
+											<div class="emailSignin-subjct-body-content">
+												<p class="mb-4">Hello Regina,</p>
+
+												<p class="mb-4">You have a new Enoch account with the Enoch.dapp organization. </p>
+												<p class="mb-4">Sign in to your Enoch account to acces services your orgaization provides.<p>
+												<h4>Your username </h4>
+												<p class="mb-4">reginacooper01@gmail.com</p>
+
+												<h4>Your password</h4>
+												<p class="mb-4">Click Sign in below to set your password and sign in. To keep your  account secure , follow these <a href="#">password guidelenes</a></p>
+												<p>< Sign in button appeasr here></p>
+												<p>For your security , the reset password link expires after 48 hours. After that , please contanct your <a href="#">administrator</a> for your password</p>
+											</div>
+										</div>
+									</div>
+									<div class="new-user-btn-grp">
+									<span><a href="#" class="bttn-secondary add-bttn-cancel" data-dismiss="modal">Cancel</a></span>
+									<span><a href="#" class="bttn-primary add-bttn-usr">Send</a></span>
+								</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="team-member-role-block">
+			<div class="team-member-tab-block">
+					<ul>
+						<li class="teamtablinks h-active" onclick="helpfunction(event, 'members')"><a href="javascript:void(0)">Members</a><span class="inbox-msg-count">5</span></li>
+						<li class="teamtablinks" onclick="helpfunction(event, 'roles')"><a href="javascript:void(0)">Roles</a></li>
+						
+					</ul>
+				</div>
+				<div id="members" class="supporttabcontent grid-d-block">
+					<div class="team-role-table-block">
+						<div class="team-role-table-hd-txt"><span><img src="images/filter.png" alt="filter" class="img-fluid"/></span>FILTER TABLE</div>
+						<div class="team-deatails-tbl table-responsive">						
+							<div class="team-table">				
+								<div class="TeamtableHeading">
+										<div class="TeamtableCell pl-0">Team</div>
+										<div class="TeamtableCell">Member</div>
+										<div class="TeamtableCell">Name</div>
+										<div class="TeamtableCell">Job title  </div>
+										<div class="TeamtableCell">Role</div>
+										<div class="TeamtableCell">Inheritance</div>
+										<div class="TeamtableCell">Status</div>
+										<div class="TeamtableCell">Action</div>
+								</div>
+								<div class="tableBody">
+									<div class="TeamtableRow">
+											<div class="TeamtableRowHeader">
+											<div class="TeamtableCell">
+												<div class="filterfancycheckbox">
+														<label class="teamfiltercheck_container">
+															<input type="checkbox" name="foo" class="cbox">
+															<span class="teamfiltercheckmark"></span>
+														</label>
+													</div>
+											</div>
+											<div class="TeamtableCell"><div class="TeamtableCell-txt">mikaelkayanian@enoch.dapp</div></div>
+											<div class="TeamtableCell"><div class="TeamtableCell-name"><a href="#">Mikael Kayanian</a></div></div>
+											<div class="TeamtableCell"><div class="TeamtableCell-txt admin-gray-clr">Founder</div></div>
+											<div class="TeamtableCell"><div class="TeamtableCell-txt admin-gray-clr">Super Admin</div></div>
+											<div class="TeamtableCell"><div class="TeamtableCell-inherit"><a href="#"><img src="images/pen-edit.png" alt="edit" class="img-fluid"></a></div></div>
+											<div class="TeamtableCell"><div class="TeamtableCell-status st-active">active</div></div>
+											<div class="TeamtableCell">
+												<div class="TeamtableCell-action dropdown">
+													<a href="#" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/Elipses.png" alt="Elipses" class="img-fluid"/></a>
+													<div class="dropdown-menu userStatus-drop-box">
+														<ul>
+															<li><a class="" href="#"  data-toggle="modal" data-target="action-del-modal"><span><img src="images/Del.png" alt="delete" class="img-fluid"/></span>Delete</a></li>
+															<li><a class="" href="#"><span><img src="images/checkmark.png" alt="checkmark"class="img-fluid"/></span>Enable</a></li>
+															<li><a class="" href="#"><span><img src="images/permission.png" alt="permission"class="img-fluid"/></span>Permission</a></li>
+															<li><a class="" href="#"><span><img src="images/user.png" alt="profile"class="img-fluid"/></span>Profile</a></li>
+														
+														</ul>
+													  </div>
+												</div>
+											</div>					
+										</div>
+									</div>	
+									<div class="TeamtableRow">
+											<div class="TeamtableRowHeader">
+											<div class="TeamtableCell">
+												<div class="filterfancycheckbox">
+														<label class="teamfiltercheck_container">
+															<input type="checkbox" name="foo" class="cbox">
+															<span class="teamfiltercheckmark"></span>
+														</label>
+													</div>
+											</div>
+											<!--WORKING-->
+											<div class="TeamtableCell"><div class="TeamtableCell-txt">reginacooper01@gmail.com</div></div>
+											<div class="TeamtableCell"><div class="TeamtableCell-name"><a href="#">Regina Cooper</a></div></div>
+											<div class="TeamtableCell"><div class="TeamtableCell-txt admin-gray-clr">KYC Support Desk</div></div>
+											<div class="TeamtableCell"><div class="TeamtableCell-txt admin-gray-clr"></div></div>
+											<div class="TeamtableCell"><div class="TeamtableCell-inherit"><a href="#" data-toggle="modal" data-target="#ModalASSIGNrOLE"><img src="images/pen-edit.png" alt="edit" class="img-fluid"/></a></div></div>
+											<div class="TeamtableCell"><div class="TeamtableCell-status st-enable">enabled</div></div>
+											<div class="TeamtableCell">
+												<div class="TeamtableCell-action dropdown">
+													<a href="#" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/Elipses.png" alt="Elipses" class="img-fluid"/></a>
+													<div class="dropdown-menu userStatus-drop-box">
+														<ul>
+															<li><a class="" href="#"  data-toggle="modal" data-target="action-del-modal"><span><img src="images/Del.png" alt="delete" class="img-fluid"/></span>Delete</a></li>
+															<li><a class="" href="#"><span><img src="images/checkmark.png" alt="checkmark"class="img-fluid"/></span>Enable</a></li>
+															<li><a class="" href="#"><span><img src="images/permission.png" alt="permission"class="img-fluid"/></span>Permission</a></li>
+															<li><a class="" href="#"><span><img src="images/user.png" alt="profile"class="img-fluid"/></span>Profile</a></li>
+														
+														</ul>
+													  </div>
+												</div>
+											</div>				
+										</div>
+									</div>
+									<div class="TeamtableRow">
+											<div class="TeamtableRowHeader">
+											<div class="TeamtableCell">
+												<div class="filterfancycheckbox">
+														<label class="teamfiltercheck_container">
+															<input type="checkbox" name="foo" class="cbox">
+															<span class="teamfiltercheckmark"></span>
+														</label>
+													</div>
+											</div>
+											<div class="TeamtableCell"><div class="TeamtableCell-txt">annita.feggins@outlook.com</div></div>
+											<div class="TeamtableCell"><div class="TeamtableCell-name"><a href="#">Annita Feggins</a></div></div>
+											<div class="TeamtableCell"><div class="TeamtableCell-txt admin-gray-clr">KYC Support Desk</div></div>
+											<div class="TeamtableCell"><div class="TeamtableCell-txt admin-gray-clr">KYC,  Technical Support</div></div>
+											<div class="TeamtableCell"><div class="TeamtableCell-inherit"><a href="#"><img src="images/pen-edit.png" alt="edit" class="img-fluid"/></a></div></div>
+											<div class="TeamtableCell"><div class="TeamtableCell-status st-active">active</div></div>
+											<div class="TeamtableCell">
+												<div class="TeamtableCell-action dropdown">
+													<a href="#" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/Elipses.png" alt="Elipses" class="img-fluid"/></a>
+													<div class="dropdown-menu userStatus-drop-box">
+														<ul>
+															<li><a class="" href="#"  data-toggle="modal" data-target="action-del-modal"><span><img src="images/Del.png" alt="delete" class="img-fluid"/></span>Delete</a></li>
+															<li><a class="" href="#"><span><img src="images/checkmark.png" alt="checkmark"class="img-fluid"/></span>Enable</a></li>
+															<li><a class="" href="#"><span><img src="images/permission.png" alt="permission"class="img-fluid"/></span>Permission</a></li>
+															<li><a class="" href="#"><span><img src="images/user.png" alt="profile"class="img-fluid"/></span>Profile</a></li>
+														
+														</ul>
+													  </div>
+												</div>
+											</div>					
+										</div>
+									</div>
+									<div class="TeamtableRow">
+											<div class="TeamtableRowHeader">
+											<div class="TeamtableCell">
+												<div class="filterfancycheckbox">
+														<label class="teamfiltercheck_container">
+															<input type="checkbox" name="foo" class="cbox">
+															<span class="teamfiltercheckmark"></span>
+														</label>
+													</div>
+											</div>
+											<div class="TeamtableCell"><div class="TeamtableCell-txt">Luciana01@gmail.com</div></div>
+											<div class="TeamtableCell"><div class="TeamtableCell-name"><a href="#">Luciana Kerney</a></div></div>
+											<div class="TeamtableCell"><div class="TeamtableCell-txt admin-gray-clr">Technical Lead</div></div>
+											<div class="TeamtableCell"><div class="TeamtableCell-txt admin-gray-clr">KYC,  Technical Support</div></div>
+											<div class="TeamtableCell"><div class="TeamtableCell-inherit"><a href="#"><img src="images/pen-edit.png" alt="edit" class="img-fluid"/></a></div></div>
+											<div class="TeamtableCell"><div class="TeamtableCell-status st-active">active</div></div>
+											<div class="TeamtableCell">
+												<div class="TeamtableCell-action dropdown">
+													<a href="#" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/Elipses.png" alt="Elipses" class="img-fluid"/></a>
+													<div class="dropdown-menu userStatus-drop-box">
+														<ul>
+															<li><a class="" href="#"  data-toggle="modal" data-target="action-del-modal"><span><img src="images/Del.png" alt="delete" class="img-fluid"/></span>Delete</a></li>
+															<li><a class="" href="#"><span><img src="images/checkmark.png" alt="checkmark"class="img-fluid"/></span>Enable</a></li>
+															<li><a class="" href="#"><span><img src="images/permission.png" alt="permission"class="img-fluid"/></span>Permission</a></li>
+															<li><a class="" href="#"><span><img src="images/user.png" alt="profile"class="img-fluid"/></span>Profile</a></li>
+														
+														</ul>
+													  </div>
+												</div>
+											</div>					
+										</div>
+									</div>
+								</div>
+							</div>						
+						</div>
+					</div>
+				</div>
+				<div id="roles" class="supporttabcontent FILTER-TABLE-content">
+                    <div class="FILTER-TABLE-sect">
+                        <div class="FILTER-TABLE-icon">
+                            <img src="images/Filter-icon.png" alt="icon" class="img-fluid" />
+                        </div>
+                        <div class="FILTER-TABLE-headings">
+                            <h1>FILTER TABLE</h1>
+                        </div>
+                    </div>
+                    <div class="roles_collaps-sect">
+                        <div class="roles_collaps-row roles_collaps-row-1">
+                            <button class="roles_collapsible roles_collapsible-1">
+                                <div class="roles_collapsible-btn">
+                                    <div class="filterfancycheckbox">
+                                        <label class="teamfiltercheck_container">
+                                            <input type="checkbox" name="foo" class="cbox">
+                                            <span class="teamfiltercheckmark"></span>
+                                        </label>
+                                    </div>
+                                    <label>Super Admin (1)</label>
+                                </div>
+                                <div class="Transfer_Ticket_collapsible-icon">
+                                    <img src="images/Arrow-down.png" alt="down" class="img-fluid Sup-Admin-down" />
+                                   
+                                </div>
+                            </button>
+                            <div class="roles_collaps">
+                                <div class="team-deatails-tbl table-responsive roles-collaps-Table-sect pt-0">
+                                    <div class="team-table roles-collaps-Table">
+                                        <div class="TeamtableHeading border-bottom-gray">
+                                            <div class="TeamtableCell pl-0">&nbsp;</div>
+                                            <div class="TeamtableCell no-border">Member</div>
+                                            <div class="TeamtableCell">Name</div>
+                                            <div class="TeamtableCell">Job title </div>
+                                            <div class="TeamtableCell">Role</div>
+                                            <div class="TeamtableCell">Inheritance</div>
+                                            <div class="TeamtableCell">Status</div>
+                                            <div class="TeamtableCell">Action</div>
+                                        </div>
+                                        <div class="tableBody">
+                                            <div class="TeamtableRow">
+                                                <div class="TeamtableRowHeader">
+                                                    <div class="TeamtableCell">
+                                                        <div class="filterfancycheckbox">
+                                                            <label class="teamfiltercheck_container">
+                                                                <input type="checkbox" name="foo" class="cbox">
+                                                                <span class="teamfiltercheckmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="TeamtableCell">
+                                                        <div class="TeamtableCell-txt">mikaelkayanian@enoch.dapp</div>
+                                                    </div>
+                                                    <div class="TeamtableCell">
+                                                        <div class="TeamtableCell-name"><a href="#">Mikael Kayanian</a></div>
+                                                    </div>
+                                                    <div class="TeamtableCell">
+                                                        <div class="TeamtableCell-txt admin-gray-clr">Founder</div>
+                                                    </div>
+                                                    <div class="TeamtableCell">
+                                                        <div class="TeamtableCell-txt admin-gray-clr">Super Admin</div>
+                                                    </div>
+                                                    <div class="TeamtableCell">
+                                                        <div class="TeamtableCell-inherit"><a href="#" data-toggle="modal" data-target="#ModalASSIGNrOLE"><img src="images/pen-edit.png" alt="edit" class="img-fluid" /></a></div>
+                                                    </div>
+                                                    <div class="TeamtableCell">
+                                                        <div class="TeamtableCell-status st-active">active</div>
+                                                    </div>
+                                                    <div class="TeamtableCell pl-4">
+                                                        <div class="TeamtableCell-action dropdown">
+                                                            <a href="#" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/Elipses.png" alt="Elipses" class="img-fluid" /></a>
+                                                            <div class="dropdown-menu userStatus-drop-box">
+                                                                <ul>
+                                                                    <li><a class="" href="#" data-toggle="modal" data-target="action-del-modal"><span><img src="images/Del.png" alt="delete" class="img-fluid" /></span>Delete</a></li>
+                                                                    <li><a class="" href="#"><span><img src="images/checkmark.png" alt="checkmark" class="img-fluid" /></span>Enable</a></li>
+                                                                    <li><a class="" href="#"><span><img src="images/permission.png" alt="permission" class="img-fluid" /></span>Permission</a></li>
+                                                                    <li><a class="" href="#"><span><img src="images/user.png" alt="profile" class="img-fluid" /></span>Profile</a></li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="roles_collaps-row roles_collaps-row-2">
+                            <button class="roles_collapsible roles_collapsible-2">
+                                <div class="roles_collapsible-btn">
+                                    <div class="filterfancycheckbox">
+                                        <label class="teamfiltercheck_container">
+                                            <input type="checkbox" name="foo" class="cbox">
+                                            <span class="teamfiltercheckmark"></span>
+                                        </label>
+                                    </div>
+                                    <label>Admin (2)</label>
+                                </div>
+                                <div class="Transfer_Ticket_collapsible-icon">
+                                    <img src="images/Arrow-down.png" alt="down" class="img-fluid Sup-Admin-down-2" />
+                                   
+                                </div>
+                            </button>
+                            <div class="roles_collaps">
+                                <div class="team-deatails-tbl table-responsive roles-collaps-Table-sect pt-0">
+                                    <div class="team-table roles-collaps-Table">
+                                        <div class="TeamtableHeading border-bottom-gray">
+                                            <div class="TeamtableCell pl-0">&nbsp;</div>
+                                            <div class="TeamtableCell no-border">Member</div>
+                                            <div class="TeamtableCell">Name</div>
+                                            <div class="TeamtableCell">Job title </div>
+                                            <div class="TeamtableCell">Role</div>
+                                            <div class="TeamtableCell">Inheritance</div>
+                                            <div class="TeamtableCell">Status</div>
+                                            <div class="TeamtableCell">Action</div>
+                                        </div>
+                                        <div class="tableBody">
+											<div class="TeamtableRow">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="roles_collaps-row roles_collaps-row-3">
+                            <button class="roles_collapsible roles_collapsible-3">
+                                <div class="roles_collapsible-btn">
+                                    <div class="filterfancycheckbox">
+                                        <label class="teamfiltercheck_container">
+                                            <input type="checkbox" name="foo" class="cbox">
+                                            <span class="teamfiltercheckmark"></span>
+                                        </label>
+                                    </div>
+									<label>KYC Desk (3)</label>
+                                   
+                                </div>
+                                <div class="Transfer_Ticket_collapsible-icon">
+                                    <img src="images/Arrow-down.png" alt="down" class="img-fluid Sup-Admin-down-3" />
+                                    
+                                </div>
+                            </button>
+                            <div class="roles_collaps">
+                                <div class="team-deatails-tbl table-responsive roles-collaps-Table-sect pt-0">
+                                    <div class="team-table roles-collaps-Table">
+                                        <div class="TeamtableHeading border-bottom-gray">
+                                            <div class="TeamtableCell pl-0">&nbsp;</div>
+                                            <div class="TeamtableCell no-border">Member</div>
+                                            <div class="TeamtableCell">Name</div>
+                                            <div class="TeamtableCell">Job title </div>
+                                            <div class="TeamtableCell">Role</div>
+                                            <div class="TeamtableCell">Inheritance</div>
+                                            <div class="TeamtableCell">Status</div>
+                                            <div class="TeamtableCell">Action</div>
+                                        </div>
+                                        <div class="tableBody">
+											<div class="TeamtableRow">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="roles_collaps-row roles_collaps-row-4">
+                            <button class="roles_collapsible roles_collapsible-4">
+                                <div class="roles_collapsible-btn">
+                                    <div class="filterfancycheckbox">
+                                        <label class="teamfiltercheck_container">
+                                            <input type="checkbox" name="foo" class="cbox">
+                                            <span class="teamfiltercheckmark"></span>
+                                        </label>
+                                    </div>
+                                    <label>Support Desk (3)</label>
+                                </div>
+                                <div class="Transfer_Ticket_collapsible-icon">
+                                    <img src="images/Arrow-down.png" alt="down" class="img-fluid Sup-Admin-down-4" />
+                                   
+                                </div>
+                            </button>
+                            <div class="roles_collaps">
+                                <div class="team-deatails-tbl table-responsive roles-collaps-Table-sect pt-0">
+                                    <div class="team-table roles-collaps-Table">
+                                        <div class="TeamtableHeading border-bottom-gray">
+                                            <div class="TeamtableCell pl-0">&nbsp;</div>
+                                            <div class="TeamtableCell no-border">Member</div>
+                                            <div class="TeamtableCell">Name</div>
+                                            <div class="TeamtableCell">Job title </div>
+                                            <div class="TeamtableCell">Role</div>
+                                            <div class="TeamtableCell">Inheritance</div>
+                                            <div class="TeamtableCell">Status</div>
+                                            <div class="TeamtableCell">Action</div>
+                                        </div>
+                                        <div class="tableBody">
+											<div class="TeamtableRow">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+				
+				
+		</div>
+	</div>
+	</div>
+	<!--delete popup-->
+	<div class="userAdded-modal-block">															
+				<div id="action-del-modal" class="modal fade">
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span class="close"><img src="images/threadCross.png" alt="close" class="img-fluid" data-dismiss="modal"></span>
+						<div class="email-signin-body">
+							<div class="email-signin-body-hd text-center">
+								<h2>Are you sure you want to  <br/>delete account?</h2>
+								
+								</div>
+							<div class="email-signin-body-inner text-center">
+								<p class="mb-4">If you delete the account, you are no longer <br/>able to access this accout.</p>
+								<div class="new-user-btn-grp action-del-btn-grp">
+									<span><a href="#" class="bttn-secondary add-bttn-cancel" data-dismiss="modal">Cancel</a></span>
+									<span><a href="#" class="bttn-primary add-bttn-usr">Send</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+	<!--ASSIGN-ROLE-POPUP-->	
+    <div class="ASSIGN-ROLE-Modal">
+        <div class="modal fade" id="ModalASSIGNrOLE" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">                    
+                    <div class="ASSIGN-ROLE-Sect">
+				    <div class="ASSIGN-ROLE-headings">
+				        <h1>ASSIGN ROLE</h1>
+				        <p>Regina Cooper - reginacooper01@gmail.com</p>
+				        <div class="ASSIGN-ROLE-close">
+				            <img src="images/tCross.png" alt="X" data-dismiss="modal" class="img-fluid close"/>
+				        </div>
+				    </div>
+				    <div class="ASSIGN-ROLE-Body">
+				        <div class="ASSIGN-ROLE-3Dropdoen-Sect">
+				            <div class="ASSIGN-ROLE-dropdown ASSIGN-ROLE-dropdown-1">
+				                <div class="ASSIGN-ROLE-dropbox ASSIGN-ROLE-dropbox-1" id="click-to-remove-disable">
+				                    <span>Select Job Title</span>
+				                </div>
+				                <div class="ASSIGN-ROLE-content ASSIGN-ROLE-content-1">
+				                    <div class="Job-Title-searchBar">
+				                        <input type="text" placeholder="Search Job Title">
+				                        <button><img src="images/Team-AddSearch.png" alt="icon" class="img-fluid" /></button>
+				                    </div>
+				                    <div class="ASSIGN-ROLE-droplist ASSIGN-ROLE-droplist-1">
+				                        <ul>
+				                            <li>Head of finance</li>
+				                            <li>Transformation Director</li>
+				                            <li>Vice President</li>
+				                            <li>Senior Transaction Manager</li>
+				                            <li>Securitisation Assistant Manager</li>
+				                            <li>KYC-Support Desk</li>
+				                        </ul>
+				                    </div>
+				                    <div class="ASSIGN-ROLE-droplist-footer mt-2">
+				                        <a href="#">Manage Job Title</a>
+				                    </div>
+				                </div>
+				            </div>
+				            
+				            
+				            <div class="ASSIGN-ROLE-dropdown ASSIGN-ROLE-dropdown-2">
+				                <div class="ASSIGN-ROLE-dropbox disable ASSIGN-ROLE-dropbox-2" id="remove-TeamAddDropdown-disable">
+				                    <span>KYC, Editor</span>
+				                </div>
+				                <div class="ASSIGN-ROLE-content ASSIGN-ROLE-content-2">
+				                    <div class="Job-Title-searchBar">
+				                        <input type="text" placeholder="Search Role">
+				                        <button><img src="images/Team-AddSearch.png" alt="icon" class="img-fluid" /></button>
+				                    </div>
+				                    <div class="ASSIGN-ROLE-droplist ASSIGN-ROLE-droplist-2">
+				                        <div class="Select-Role-content">
+				                            <ul class="Select-Role-options Select-Role-options-left">
+				                                <li><span>KYC</span></li>
+				                                <li><span>Help Center</span></li>
+				                                <li><span>Account</span></li>
+				                                <li><span>Exchange</span></li>
+				                                <li><span>Swap</span></li>
+				                                <li><span>&nbsp;</span></li>
+				                                <li><span>&nbsp;</span></li>
+				                                <li><span>&nbsp;</span></li>
+				                                <li><span>&nbsp;</span></li>
+				                            </ul>
+				                            <ul class="Select-Role-options Select-Role-options-right">
+				                                <li><span>Editor</span></li>
+				                                <li><span>Viewer</span></li>
+				                            </ul>
+				                        </div>
+				                    </div>
+				                    <div class="ASSIGN-ROLE-droplist-footer">
+				                        <a href="#">Manage Role</a>
+				                    </div>
+				                </div>
+				            </div>
+				            
+				            
+				            <div class="ASSIGN-ROLE-dropdown ASSIGN-ROLE-dropdown-3">
+				                <div class="ASSIGN-ROLE-dropbox disable ASSIGN-ROLE-dropbox-3" id="remove-TeamAddDropdown-disable-2">
+				                    <span>Permission</span>
+				                </div>
+				                <div class="ASSIGN-ROLE-content ASSIGN-ROLE-content-3">
+				                    <div class="Select-Permission-heading">
+				                        <h1>Select Permission</h1>
+				                    </div>
+				                    <div class="ASSIGN-ROLE-droplist ASSIGN-ROLE-droplist-3">
+				                        <div class="Select-Permission-content">
+				                            <ul class="Permission-options Permission-options-left">
+				                                <li>Help Center</li>
+				                                <li>&nbsp;</li>
+				                                <li>&nbsp;</li>
+				                                <li>&nbsp;</li>
+				                                <li>&nbsp;</li>
+				                                <li>&nbsp;</li>
+				                                <li>&nbsp;</li>
+				                                <li>&nbsp;</li>
+				                                <li>&nbsp;</li>
+				                                <li>&nbsp;</li>
+				                            </ul>
+				                            <ul class="Permission-options Permission-options-right">
+				                                <li><input type="checkbox"><lable>Permission 1</lable></li>
+				                                <li><input type="checkbox"><lable>Permission 2</lable></li>
+				                                <li><input type="checkbox"><lable>Permission 3</lable></li>
+				                                <li><input type="checkbox"><lable>Permission 4</lable></li>
+				                                <li><input type="checkbox"><lable>Permission 5</lable></li>
+				                                <li><input type="checkbox"><lable>Permission 6</lable></li>
+				                            </ul>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+				            
+				        </div>
+				    </div>
+				    
+				    <div class="ASSIGN-ROLE-btns">
+				        <button class="Cancel close" data-dismiss="modal"><a href="#">Cancel</a></button>
+				        <button class="Save"><a href="#">Save</a></button>
+				    </div>
+				    
+				</div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+			
+			
+			
+			
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+
+// When the user clicks, open the popup
+function popupFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+
+}
+
+  //For modal
+		document.addEventListener('click', function (e) {
+	        e = e || window.event;
+	        var target = e.target || e.srcElement;
+
+	        if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') 
+	        {
+	            if (target.hasAttribute('data-target')) 
+	            {
+	                var m_ID = target.getAttribute('data-target');
+	                document.getElementById(m_ID).classList.add('open');
+	            }
+	        }
+
+	        // Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
+	        if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') ||target.classList.contains('modal')) {
+	            var modal = document.querySelector('.modal.open');
+	            modal.classList.remove('open');
+	        }
+        }, false);
+//close first popup window
+	var modal = document.getElementById("add-new-user-modal");
+	var btn = document.getElementById("register");
+	btn.onclick = function() {
+	  modal.classList.remove('open');
+	}
+	var modal2 = document.getElementById("new-user-added-modal");
+	var btn2 = document.getElementById("register2");
+	btn2.onclick = function() {
+	  modal2.classList.remove('open');
+	}
+</script>
+<script>
+	/*for toggle sub menu*/
+		function subtogglediv(id, icon) {
+			var id = document.getElementById(id);
+			id.classList.toggle('submenu-active');
+			var cross = document.getElementById(icon);
+			cross.classList.toggle('fa-times');
+			cross.classList.toggle('fa-bars');
+		}
+		</script>
+		<script>
+	/*for Tab*/
+        function helpfunction(evt, faqName) {
+            var i, supporttabcontent, teamtablinks;
+            supporttabcontent = document.getElementsByClassName("supporttabcontent");
+            for (i = 0; i < supporttabcontent.length; i++) {
+                supporttabcontent[i].style.display = "none";
+            }
+            teamtablinks = document.getElementsByClassName("teamtablinks");
+            for (i = 0; i < teamtablinks.length; i++) {
+                teamtablinks[i].className = teamtablinks[i].className.replace(" h-active", "");
+            }
+            document.getElementById(faqName).style.display = "block";
+            evt.currentTarget.className += " h-active";
+        }
+		</script>
+		
+		<script>
+  	
+		function enochAppfunc() {
+
+	var enochApp = document.getElementById("enochAppfunc-DropdownList");
+	enochApp.classList.toggle("show");
+
+}
+var enochApp2 = document.getElementById("enochAppfunc-DropdownList").querySelectorAll(".enochApp-content ul li");
+enochApp2.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('enochAppfunc').innerHTML = this.innerHTML;
+ 
+	
+	        
+		 }
+		  
+        });
+	
+
+		
+	</script>
+   
+    <script>
+  	
+		function orgUnitfunc() {
+
+	var orgUnit = document.getElementById("orgUnitfunc-DropdownList");
+	orgUnit.classList.toggle("show");
+
+}
+var orgUnit2 = document.getElementById("orgUnitfunc-DropdownList").querySelectorAll(".orgUnit-content ul li");
+orgUnit2.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('orgUnitfunc').innerHTML = this.innerHTML;
+ 
+			var selItems = document.getElementById("orgUnitfunc");
+		selItems.classList.add("selItems");
+	       
+		 }
+		  
+        });
+		function countryfunc() {
+
+	var countryfunc = document.getElementById("countryfunc-DropdownList");
+	countryfunc.classList.toggle("show");
+
+}
+var countryfunc2 = document.getElementById("countryfunc-DropdownList").querySelectorAll(".orgUnit-content ul li");
+countryfunc2.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('countryfunc').innerHTML = this.innerHTML;
+ 
+		var selItems = document.getElementById("countryfunc");
+		selItems.classList.add("selItems");
+	        
+		 }
+		  
+        });
+	
+
+		// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.orgUnit-droplist')) {
+    var dropdowns = document.getElementsByClassName("orgUnit-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+ 
+}
+	</script>
+  
+    <script>
+        $('#click-to-remove-disable').bind('click', function() {
+            if (allFilledpassauthd()) $('#remove-TeamAddDropdown-disable').removeClass('disable');
+        });
+        $('#click-to-remove-disable').bind('click', function() {
+            if (allFilledpassauthd()) $('#remove-TeamAddDropdown-disable-2').removeClass('disable');
+        });
+
+        function allFilledpassauthd() {
+            var filled = true;
+            $('.TiCKET-Status-checkbox .ckeckbox-1 input').each(function() {
+                if ($(this).val() == '') filled = false;
+            });
+            return filled;
+        }
+    </script>
+  
+  <script>
+    $(document).ready(function() {
+        $('.ASSIGN-ROLE-dropbox-1').click(function() {
+            $('.ASSIGN-ROLE-content-1').toggle();
+        });
+    });
+
+    $(document).ready(function() {
+        $('.ASSIGN-ROLE-dropbox-2').click(function() {
+            $('.ASSIGN-ROLE-content-2').toggle();
+        });
+    });
+        
+    $(document).ready(function() {
+        $('.ASSIGN-ROLE-dropbox-3').click(function() {
+            $('.ASSIGN-ROLE-content-3').toggle();
+        });
+    });
+</script>
+    
+    <script>
+var coll = document.getElementsByClassName("roles_collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var Transfer_Ticket_collaps = this.nextElementSibling;
+    if (Transfer_Ticket_collaps.style.display === "block") {
+      Transfer_Ticket_collaps.style.display = "none";
+    } else {
+      Transfer_Ticket_collaps.style.display = "block";
+    }
+  });
+} 
+</script>
+   
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</body>
+
+</html>

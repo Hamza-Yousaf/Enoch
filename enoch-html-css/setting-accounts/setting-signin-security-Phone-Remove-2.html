@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Setting/Account</title>
+	<!-- Fav Icons -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+	<link href="css/global.css" rel="stylesheet" />
+	<link href="css/dashboard-header.css" rel="stylesheet" />
+	<link href="css/dashboard-style.css" rel="stylesheet" />
+
+  
+</head>
+
+<body>
+	<div class="container-fluid dashboard-body-bg">
+	<div class="row">
+		<header class="custom-header">			
+			<div class="ezl-dashboard-header">
+				<div class="menu-left">
+					<div class="menu-wrap">
+						<a href="#menu" class="menu-link"><img src="images/Menu.png" alt="Menu" class="img-fluid"/></a>
+					</div>
+					<div class="header-logo"><a href="javascript:void(0)"><img src="images/logo.png" alt="logo" class="img-fluid"/></a></div>
+				</div>
+				<div class="menuright-side">
+					<div class="right-search">
+						<form class="search-form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Fund, ISIN, Keyword ">
+									<button class="search-form-btn" type="Submit"><img class="search-img" src="images/search.png" alt="search"></button>
+							</div>
+						</form>
+					</div>
+					<div class="menu-mid-sect">
+						<ul id="submenubar">
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/home.png" alt="home" class="img-fluid"/></div>
+								<a href="javascript:void(0)">Home</a>
+							</li>
+							<!-- <li class="">
+								<div class="menu-times-notifi"><img src="images/network.png" alt="network" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">My Network</a>
+							</li> -->
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/Chat.png" alt="Chat" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">Messaging</a>
+							</li>
+							<li class="ether-block">
+								<div class="menu-times-notifi mr-2"><img src="images/Ethereum.png" alt="Ethereum" class="img-fluid"/></div>
+								<a href="javascript:void(0)">ETH Mainnet <i class="fa fa-angle-right"></i></a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)">Connect Wallet</a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)"><span><img src="images/cart.png" class="img-fluid mr-2"/></span>Cart</a>
+							</li>
+							
+						</ul>
+						<div class="toggle-menu">
+								<div onclick="subtogglediv('submenubar','submenu-toggle');" class="d-inline-block">
+									<i class="fa fa-bars" aria-hidden="true" id="submenu-toggle"></i>
+								</div>
+							</div>
+					</div>
+					
+					<div class="ezl-notificaion">
+					<div class="position-relative notificaion-dropdown ezl-notificaion-marg">
+						<a href="javascript:void(0)" class="popup"><img src="images/help.png" alt="help"/></a>							
+											
+					</div>
+					<div class=" position-relative notificaion-dropdown">
+						<a href="javascript:void(0)" class="popup"><img src="images/alertBell.png" alt="Bell"><span class="notificaion-spn">10</span></a>							
+						
+					</div>
+					</div>
+					<div class="ezl-user-ac">
+					
+					<div class="account-d dropdown">
+						<div class="dropdown-buttn"><span class="popup" onclick="popupFunction()"><div class="user-img"><img src="images/user-img.png" alt="user image" class="img-fluid"/></div></span>
+							<!-- <div class="popupbox dropdown-menu" id="myPopup">
+								
+								<ul class="">
+									<li>
+										<div  class="enoch-usr-prof"><span><img src="images/user-pro-pic.png" class="img-fluid" alt="profile- pic"/> EncchUser007</span><span><a href="#">Change</a></span></div>
+									</li>
+									<li>
+										<div class="enoch-usr-status-block">
+											<div class="usr-status-left">Online Status</div>
+											<div class="usr-status-right">
+												<div class="post-switch">
+													<label class="postswitch">
+													  <input type="checkbox" checked>
+													  <span class="post-slider round"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="enoch-usr-status-block"><a href="#">Public Profile</a></div>
+										<div class="enoch-usr-status-block mb-0"><a href="#">User Settings</a></div>
+									</li>
+									<li>
+										<div class="enoch-usr-status-block"><a href="#">Billing</a></div>
+										<div class="enoch-usr-status-block"><a href="#">Help Center</a></div>
+										<div class="enoch-usr-status-block"><a href="#">Verify Account (KYC)</a></div>
+										<div class="enoch-usr-status-block mb-0"><a href="#" class="orange-clr">Upgrade to Premium</a></div>
+									</li>
+									<li class="mt-4">
+										<div class="enoch-usr-status-block mb-0">Free Bonus<span><a href="#" class="btn freebonus-btn">$50/500 $Enoch </a></span></div>
+									</li>
+									<li class="mt-4">
+										<div class="enoch-usr-status-block mb-0"><a href="#" data-toggle="modal" data-target="switch-user-modal">Switch Account</a></div>
+										
+									</li>
+									<li class="mt-4 mb-0 pb-0">
+										<div class="enoch-usr-status-block mb-0"><a href="#" class="post-red-clr">Logout</a></div>
+									</li>
+								</ul>
+							</div> -->
+						</div>
+					</div>
+					</div>
+				</div>				
+			</div>
+			
+		</header>
+	</div>	
+	<div class="row">
+        <div class="dashboard-header-bredcrumb">
+			<div class="ezl-dashboard-container">
+				<div class="col-12 p-md-0">
+					<ul>
+						<li class="mr-2"><img src="images/bd-icon.png" alt="icon" class="img-fluid"/> </li>
+						<li class="mr-1"><a href="javascript:void(0)"> Setting / </a></li>
+						<li><a href="javascript:void(0)" class="dsh-active"> Account / </a></li>
+						<li><a href="javascript:void(0)"> sign in & security</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ezl-dashboard-container">	
+		<div class="row">
+			<div class="col-12">
+			<div class="enoch-setting-acblock">
+				<div class="enoch-setting-acblock-lft" id="accordion-block">
+					<div class="enoch-setting-acblock-lft-panel">
+						<h3 class="enoch-setting-accordion">Account  Prefrences </h3>
+						<ul class="tog-d-block">
+							<li class="setting-list-active"><a href="#proffile-info">Profile Information</a></li>
+							<li><a href="#site-prefrnc">Site Preferences</a></li>
+							<li><a href="#sync-option">Syncing Options</a></li>
+							<li><a href="#subscription-payment">Subscription & payments</a></li>
+							<li><a href="#partners-service">Partners & services</a></li>
+							<li><a href="#account-mngt">Account management</a></li>
+						</ul>
+					</div>
+					<div class="enoch-setting-acblock-lft-panel">
+						<h3 class="enoch-setting-accordion accordion-active">Sign in & Security</h3>
+						<ul class="tog-d-block">
+							<li class="setting-list-active"><a href="#account-access"> Account Access</a></li>
+							
+						
+						</ul>
+					</div>
+					<div class="enoch-setting-acblock-lft-panel">
+						<h3 class="enoch-setting-accordion">Visibility</h3>
+						<ul class="tog-d-block">
+							<li class="setting-list-active"><a href="#profile-network">Visibility of your Profile & Network</a></li>
+							<li><a href="#visibility-activity">Visibility of your Enoch Activity</a></li>	
+						
+						</ul>
+					</div>
+					<div class="enoch-setting-acblock-lft-panel">
+						<h3 class="enoch-setting-accordion">Communications</h3>
+						<ul class="tog-d-block">
+							<li class="setting-list-active"><a href="#get-notification">How you get your notifications</a></li>
+							<li><a href="#who-reach">Who can Reach you</a></li>
+							<li><a href="#message-exp">Messaging experience</a></li>																		
+						</ul>
+					</div>
+					<div class="enoch-setting-acblock-lft-panel">
+						<h3 class="enoch-setting-accordion">Data Privacy</h3>
+						<ul class="tog-d-block">
+							<li class="setting-list-active"><a href="#use-your-data">How Enroch uses your data</a></li>
+							<li><a href="#job-seeking">Who can Reach you</a></li>
+							<li><a href="#other-application">Other applications</a></li>																		
+						</ul>
+					</div>
+					<div class="enoch-setting-acblock-lft-panel">
+						<h3 class="enoch-setting-accordion border-bottom-0">Advertising Data</h3>
+						<ul class="tog-d-block">
+							<li class="setting-list-active"><a href="#advertising-data">Advertising preferences</a></li>
+							<li><a href="#data-collected">Who can Reach you</a></li>
+							<li><a href="#third-party-data">Third-party data</a></li>																		
+						</ul>
+					</div>
+				</div>
+				<div class="enoch-setting-acblock-right" id="accordion-togg-block">
+					<div class="enoch-setting-right-block" id="account-access">
+						<h3>Account Access</h3>
+						<h4>Settings to help you keep your account secure</h4>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-block">
+							<div class="enoch-acount-detail-lft">
+								<h5>Email addresses</h5>
+								<p>Add or remove email addresses on your account </p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+								<p>1 Email address</p>
+							</div>
+							
+							<div class="accordion-content-blck">
+								<div class="accordion-content-emailadd">
+									<div class="accordion-content-emailadd-hd">
+											<div class="accordion-content-emailadd-hd-lft">
+												r.rose@gmail.com
+											</div>
+											<div class="accordion-content-emailadd-hd-lft-right">
+												<span class="enoch-setting-primary"><a href="javascript:void(0)">Primary </a></span><span class="enoch-setting-remove"><a href="javascript:void(0)">rEMOVE</a></span>
+											</div>
+									</div>
+									<div class="accordion-content-emailadd-more" id="emailadd-more-id">
+										<div><a href="javascript:void(0)" class="emailadd-more-cls" onclick="addEmail()">+ Add Email Address</a></div>
+										<div class="addemail-input-form">
+											<h3>Email Address</h3>
+											<div class="addemail-input-txtbox"><input type="text" placeholder="Add New" id="user_input1"></div>
+											<div class="addEmail-bttns">
+												<span class="mr-4"><a href="#" class="btn addemail-cancel-btn">Cancel</a></span>
+												<span><a href="#" class="btn addemail-verify-btn addemail-bttn-disable" id="register" data-toggle="modal" data-target="setting-verify-modal">Send Verification</a></span>
+											</div>
+										</div>
+									</div>
+									<div class="enoch-setting-modal-block">
+										<div id="setting-verify-modal" class="modal fade">
+
+											  <!-- Modal content -->
+											  <div class="modal-content setting-change-number">
+												<span class="close"><img src="images/sCross.png" alt="close" class="img-fluid" data-dismiss="modal"></span>
+												<div class="setting-no-header">Add new email </div>	
+												<div class="setting-change-number-nxt">
+													<p>Enter the 6-digit code sent to your new email . </p>
+													<div class="setting-number-blocks">
+														<div class="setting-key setting-num-key addnum-key m-0">
+															<ul class="fullwith">
+																							
+																<li><input type="text" class="form-control" id="u_input1" maxlength="1"></li>
+																<li><input type="text" class="form-control" id="u_input2" maxlength="1"></li>
+																<li><input type="text" class="form-control" id="u_input3" maxlength="1"></li>
+																<li><input type="text" class="form-control" id="u_input4" maxlength="1"></li>
+																<li><input type="text" class="form-control" id="u_input5" maxlength="1"></li>
+																<li><input type="text" class="form-control" id="u_input6" maxlength="1"></li>
+																							
+															</ul>
+														</div>
+														<div class="d-flex setting-confirm-btn"><a href="#" class="btn bttn-primary bttn-disable" id="confirmkey">Confirm</a></div>
+													</div>
+													
+												</div>
+											  </div>
+
+										</div>
+								
+									</div>
+								</div>
+							</div>
+							</div>
+							
+						</div>
+						
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-block">
+								<div class="enoch-acount-detail-lft">
+									<h5>Phone numbers</h5>
+									<p>Add a phone number in case you have trouble signing in </p>
+								</div>
+								<div class="enoch-acount-detail-right">
+									<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+									<p>1 phone number</p>
+								</div>
+								<div class="accordion-content-blck">
+								    <div class="pho-no-form-sect">
+								        <div class="phn-no-remove-sect">
+								            <div class="phn-no-remove-left phn-no-save-success-left">
+								                <h1>DE +49 7550*****76</h1>
+								                <div class="phn-no-Saved-alrt">Saved</div>
+								            </div>
+								            <div class="phn-no-remove-right">
+								                <a href="#">Primary</a>
+								                <a href="#" class="remove">remove</a>
+								            </div>
+								        </div>
+								        <div class="phn-no-add-sect">
+								            <div class="Use-Password-ReSet-check Use-Password-ReSet-check-after">
+								                <input type="checkbox">
+								                <lable>Use for Password Re-set </lable>
+								            </div>
+								        </div>
+								        <div class="phn-no-remove-sect phn-no-make-primary-sect">
+								            <div class="phn-no-remove-left phn-no-make-primary-left">
+								                <h1>DE +49 7550*****76 </h1>
+								            </div>
+								            <div class="phn-no-remove-right phn-no-make-primary-right">
+								                <a href="#" class="Num-make-primary">Make Primary</a>
+								                <a href="#" class="remove" data-toggle="modal" data-target="#myModal">remove</a>
+								            </div>
+								        </div>
+								        <div class="phn-no-add-sect-text">
+								            <p class="mb-0">Your phone number helps us keep your account secure by adding an additional layer of verification. It also helps others, who already have your phone number, discover and connect with you. You can always decide how you want your phone number used. <a href="#">Learn more</a></p>
+								        </div>
+								        <div class="enoch-setting-modal-block PhnNo-Add-Modal">
+								            <div class="container">
+
+								                <!-- Modal -->
+								                <div class="modal fade" id="myModal" role="dialog">
+								                    <div class="modal-dialog">
+
+								                        <!-- Modal content-->
+								                        <div class="modal-content phnNo-Add-pass-modal">
+								                            <div class="modal-header">
+								                                <h4 class="modal-title">Provide your Password</h4>
+								                                <button type="button" class="close" data-dismiss="modal"><img src="images/sCross.png" alt="close" class="img-fluid" /></button>
+								                            </div>
+								                            <div class="modal-body">
+								                                <form>
+								                                    <lable>For your security, Enter your Password to make this change.</lable>
+								                                    <div class="form-input-and-btn">
+								                                        <input type="password" placeholder="Password" id="Num_remove_pass-input">
+								                                        <div class="pass-trigger-hide"><img src="images/eye.png" alt="Eye" class="img-fluid" /></div>
+								                                        <div class="pass-trigger-show"><img src="images/eye2.png" alt="Eye" class="img-fluid" /></div>
+								                                        <button class="btn btn-disable btn-active phn-no-otp-show" id="Num_remove_pass"><a href="#">Done</a></button>
+								                                    </div>
+								                                </form>
+								                                <div class="forget-pass-sect">
+								                                    <a href="#">Forgot Password?</a>
+								                                </div>
+								                            </div>
+								                        </div>
+								                        
+								                    </div>
+								                </div>
+
+								            </div>
+									    </div>
+								    </div>
+								    
+								</div>
+                            </div>
+						</div>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-block">
+								<div class="enoch-acount-detail-lft">
+									<h5>Change Password</h5>
+									<p>Choose a unique password to protect your account</p>
+								</div>
+								<div class="enoch-acount-detail-right">
+									<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+									<p>Last changed : 14 Feb, 2021</p>
+								</div>
+								<div class="accordion-content-blck">
+									<div class="password-input-form">
+											<h3>Type your current password</h3>
+											<div class="password-input-txtbox"><input type="password" placeholder="" id="pass_input"></div>
+											<div class="password-bttns">
+												<span><a href="#" class="btn disable-clr" id="disablekey" data-toggle="modal" data-target="setting-change-pass-modal">Continue </a></span>
+												
+											</div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="enoch-setting-modal-block">
+										<div id="setting-change-pass-modal" class="modal fade">
+
+											  <!-- Modal content -->
+											  <div class="modal-content setting-change-number">
+												<span class="close"><img src="images/sCross.png" alt="close" class="img-fluid" data-dismiss="modal"></span>
+												<div class="setting-no-header">Change password</div>	
+												<div class="setting-change-number-nxt">
+													<p class="mb-4">Enter the 6-digit code generated in your Google Authenticator App. </p>
+													<div class="setting-number-blocks mb-2">
+														<div class="setting-key setting-num-key num-key-pass m-0">
+															<ul class="fullwith">
+																							
+																<li><input type="text" class="form-control" id="ui_input1" maxlength="1"></li>
+																<li><input type="text" class="form-control" id="ui_input2" maxlength="1"></li>
+																<li><input type="text" class="form-control" id="ui_input3" maxlength="1"></li>
+																<li><input type="text" class="form-control" id="ui_input4" maxlength="1"></li>
+																<li><input type="text" class="form-control" id="ui_input5" maxlength="1"></li>
+																<li><input type="text" class="form-control" id="ui_input6" maxlength="1"></li>
+																							
+															</ul>
+														</div>
+														<div class="d-flex setting-confirm-btn"><a href="#" class="btn bttn-primary bttn-disable" id="confirmpasskey">Confirm</a></div>
+													</div>
+													<p class="seting-md-bttm mb-0 pt-1">Don’t have Authenticator App. <a href="#">Learn More and Follow the Steps</a></p>
+												</div>
+											  </div>
+
+										</div>
+								
+									</div>
+						</div>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-block">
+								<div class="enoch-acount-detail-lft">
+									<h5>Where you are Signed-In</h5>
+									<p>Add a Phone number in case you have trouble Signing In</p>
+								</div>
+								<div class="enoch-acount-detail-right">
+									<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+									<p>3 Active session</p>
+								</div>
+								<div class="accordion-content-blck">
+									<div class="setting-signedin">
+										<h3>You’re currently signed in to 3 sessions.</h3>
+										<p>Here’s a list of all the places you’re signed into LinkedIn right now. You can see details about each session, sign out of individual sessions, or sign out of everywhere at once. You can also sign out of apps you've authorized with Enoch from the <a href="#">Permitted services</a> setting.</p>
+										<div class="setting-session-tbl table-responsive">
+											<table class="table">
+												<thead>
+													<th><div class="session-tbl-hd">Session</div></th>
+													<th><div class="session-tbl-hd">Details </div></th>
+													<th><div class="session-tbl-hd"></div></th>
+													
+												</thead>
+												
+											
+											<tbody>
+												<tr>
+													<td><div class="session-tbl-txt">Current</div></td>
+													<td>
+														<div class="session-tbl-txt">
+															<p>Calcutta, West Bengal, India</p>
+															<p>(Approximate location)</p>
+															<p>Chrome on Windows</p>
+															<p>IP Address:</p>
+															<p>2292:4061:2ed2:43jm:29b7:8cb7:hghg:b556</p>
+															<p>IP Address Owner:</p>
+															<p>Reliance Jio Infocomm Limited</p>
+														</div>
+													</td>
+													<td></td>
+													
+												</tr>
+												<tr>
+													<td><div class="session-tbl-txt">4 Hours Ago</div></td>
+													<td>
+														<div class="session-tbl-txt">
+															<p>Calcutta, West Bengal, India</p>
+															<p>(Approximate location)</p>
+															<p>On Android</p>
+														</div>
+													</td>
+													<td>
+														<div class="setting-detailsignout"><span><a href="#">Details</a></span><span><a href="#">Sign Out</a></span></div>
+													</td>
+													
+												</tr>
+												<tr>
+													<td><div class="session-tbl-txt">1 Month Ago</div></td>
+													<td>
+														<div class="session-tbl-txt">
+															<p>Pune, Maharashtra, India</p>
+															<p>(Approximate location)</p>
+															<p>Chrome Mobile on Android 10</p>
+														</div>
+													</td>
+													<td>
+														<div class="setting-detailsignout"><span><a href="#">Details</a></span><span><a href="#">Sign Out</a></span></div>
+													</td>
+													
+												</tr>
+											</tbody>
+											</table>
+										</div>
+										<p>Other active sessions (2) <a href="#">Sign out of all these sessions</a></p>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-block">
+								<div class="enoch-acount-detail-lft">
+									<h5>Devices that remember your Password</h5>
+									<p>Add a Phone number in case you have trouble Signing In</p>
+								</div>
+								<div class="enoch-acount-detail-right">
+									<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+									<p>0 device</p>
+								</div>
+								<div class="accordion-content-blck">
+								<p class="p-txt1">There are no devices associated with this account.</p>
+								</div>
+							</div>
+						</div>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-block">
+								<div class="enoch-acount-detail-lft">
+									<h5>Two step verification</h5>
+									<p>Activate this feature for enhanced account security   </p>
+								</div>
+								<div class="enoch-acount-detail-right">
+									<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+									<p>on</p>
+								</div>
+								<div class="accordion-content-blck">
+									<div class="setting-twostep-verification">
+										<p>Verification codes will be sent to authenticator app at sign-in:</p>
+										<h3>Via Authenticator app</h3>
+										<p>Use your Authenticator Code at sign in </p>
+										<div class="setting-twostep-content-blck">
+											<div class="setting-twostep-content-lft">
+												<h3>Backup method: Codes</h3>
+												<p>You have 20 backup codes remaining.</p>
+												<p><a href="#">Regenerate codes </a></p>
+											</div>
+											<div class="setting-twostep-content-right">
+												Backup Code enabled
+											</div>
+										</div>
+										<div class="setting-twostep-content-blck">
+											<div>
+												<p class="setting-verify-btnlink"><a href="javascript:void(0)" data-toggle="modal" data-target="setting-Authenticator-modal">Change verification Method</a></p>
+												<p>Can’t access your Authentication code? <a href="#">Generate yours</a></p>
+											</div>
+										</div>
+									</div>
+									</div>
+								</div>
+								<div class="enoch-setting-modal-block">
+										<div id="setting-Authenticator-modal" class="modal fade">
+
+											  <!-- Modal content -->
+											  <div class="modal-content setting-change-number">
+												<span class="close"><img src="images/sCross.png" alt="close" class="img-fluid" data-dismiss="modal"></span>
+												<div class="setting-no-header">Change verfication mothod </div>	
+												<div class="setting-change-number-nxt">
+													<p class="mb-4">Enter the 6-digit code generated in your Google Authenticator App. </p>
+													<div class="setting-number-blocks mb-2">
+														<div class="setting-key setting-num-key auth-key-pass m-0">
+															<ul class="fullwith">
+																							
+																<li><input type="text" class="form-control" id="au_input1" maxlength="1"></li>
+																<li><input type="text" class="form-control" id="au_input2" maxlength="1"></li>
+																<li><input type="text" class="form-control" id="au_input3" maxlength="1"></li>
+																<li><input type="text" class="form-control" id="au_input4" maxlength="1"></li>
+																<li><input type="text" class="form-control" id="au_input5" maxlength="1"></li>
+																<li><input type="text" class="form-control" id="au_input6" maxlength="1"></li>
+																							
+															</ul>
+														</div>
+														<div class="d-flex setting-confirm-btn"><a href="javascript:void(0)" class="btn bttn-primary bttn-disable" id="autheticatorpasskey">Confirm</a></div>
+													</div>
+													<p class="seting-md-bttm mb-0 pt-1">Don’t have Authenticator App. <a href="#">Learn More and Follow the Steps</a></p>
+												</div>
+											  </div>
+
+										</div>
+								
+									</div>
+									
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			</div>
+		</div>
+		
+	</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+
+// When the user clicks, open the popup
+function popupFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+
+}
+</script>
+<script>
+//Modal popup
+	document.addEventListener('click', function (e) {
+        e = e || window.event;
+        var target = e.target || e.srcElement;
+        if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') {
+            if (target.hasAttribute('data-target')) {
+                var m_ID = target.getAttribute('data-target');
+                document.getElementById(m_ID).classList.add('open');
+            }
+        }
+
+        // Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
+        if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') || target.classList.contains('modal') || target.classList.contains('closeanother')) {
+             var modal = document.querySelector('.modal.open');
+            modal.classList.remove('open');
+        }
+      
+    }, false);
+//close first popup window
+	var modal = document.getElementById("setting-Authenticator-modal");
+	var btnmodal = document.getElementById("autheticatorpasskey");
+	btnmodal.onclick = function() {
+	  modal.classList.remove('open');
+	  }
+</script>
+<script>
+	/*for toggle sub menu*/
+		function subtogglediv(id, icon) {
+			var id = document.getElementById(id);
+			id.classList.toggle('submenu-active');
+			var cross = document.getElementById(icon);
+			cross.classList.toggle('fa-times');
+			cross.classList.toggle('fa-bars');
+		}
+		</script>
+	<script>
+// Add active class to the current button (highlight it)
+//var header = document.getElementById("accordion-block");
+var btns = document.getElementsByClassName("enoch-setting-accordion");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  btnlinks = document.getElementsByClassName("enoch-setting-accordion");
+            for (i = 0; i < btnlinks.length; i++) {
+                btnlinks[i].className = btnlinks[i].className.replace(" accordion-active", "");
+            }
+  this.className += " accordion-active";
+  });
+}
+</script>
+
+<script>
+var acc = document.getElementsByClassName("enoch-acount-detail-right");
+var i;
+var accblock=document.getElementsByClassName("enoch-acount-detail");
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("acc-active");
+	
+    
+  });
+   accblock[i].addEventListener("click", function() {
+    this.classList.toggle("acc-active-parent");
+	
+    
+  });
+}
+
+
+</script>
+<script>
+		
+		function timeSetting() {
+
+	var selectmedia1 = document.getElementById("timeSetting-DropdownList");
+	selectmedia1.classList.toggle("show");
+	var selItem = document.getElementById("timeSetting");
+	
+  selItem.classList.toggle("select-active"); 
+}
+var selectmedia2 = document.getElementById("timeSetting-DropdownList").querySelectorAll(".timeSetting-content ul li");
+selectmedia2.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('timeSetting').innerHTML = this.innerHTML;
+ 
+	
+	        
+		 }
+		  
+        });
+		//language dropdown
+		function langSetting() {
+
+	var selectlang = document.getElementById("langSetting-DropdownList");
+	selectlang.classList.toggle("show");
+	var selItem2 = document.getElementById("langSetting");
+	
+  selItem2.classList.toggle("select-active"); 
+}
+var selectlang2 = document.getElementById("langSetting-DropdownList").querySelectorAll(".timeSetting-content ul li");
+selectlang2.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('langSetting').innerHTML = this.innerHTML;
+ 
+	
+	        
+		 }
+		  
+        });
+		//content language dropdown
+		function contentlangSetting() {
+
+	var selectcontentlang = document.getElementById("contentlangSetting-DropdownList");
+	selectcontentlang.classList.toggle("show");
+	var selectcontentlang2 = document.getElementById("contentlangSetting");
+	
+  selectcontentlang2.classList.toggle("select-active"); 
+}
+var selectcontentlang3 = document.getElementById("contentlangSetting-DropdownList").querySelectorAll(".timeSetting-content ul li");
+selectcontentlang3.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('contentlangSetting').innerHTML = this.innerHTML;
+ 
+	
+	        
+		 }
+		  
+        });
+		//showing profile dropdown
+		function profileSetting() {
+
+	var profileSetting = document.getElementById("profileSetting-DropdownList");
+	profileSetting.classList.toggle("show");
+	var profileSetting2 = document.getElementById("profileSetting");
+	
+  profileSetting2.classList.toggle("select-active"); 
+}
+var profileSetting3 = document.getElementById("profileSetting-DropdownList").querySelectorAll(".timeSetting-content ul li");
+profileSetting3.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('profileSetting').innerHTML = this.innerHTML;
+ 
+	
+	        
+		 }
+		  
+        });
+
+		// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.timeSetting-droplist')) {
+    var dropdowns = document.getElementsByClassName("timeSetting-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+	<!--  var selItem = document.getElementById("athp-sel"); -->
+	
+}
+	</script>
+	<script>
+		function addEmail() {
+
+	var addEmail = document.getElementById("emailadd-more-id");
+	addEmail.classList.add("input-show");
+	}
+	</script>
+	<script>
+	$('#user_input1').bind('keyup', function() {
+    if(allFilled2()) $('#register').removeClass('addemail-bttn-disable');
+});
+
+function allFilled2() {
+    var filled = true;
+    $('.addemail-input-txtbox input').each(function() {
+        if($(this).val() == '') filled = false;
+    });
+    return filled;
+}
+</script>
+<script>
+//6 digit for new number
+$('#u_input1,#u_input2,#u_input3,#u_input4,#u_input5,#u_input6').bind('keyup', function() {
+    if(allFilled()) $('#confirmkey').removeClass('bttn-disable');
+});
+
+function allFilled() {
+    var filled = true;
+    $('.addnum-key ul li input').each(function() {
+        if($(this).val() == '') filled = false;
+    });
+    return filled;
+}
+</script>
+<script>
+$('#pass_input').bind('keyup', function() {
+    if(allFilledpass()) $('#disablekey').removeClass('disable-clr');
+});
+
+function allFilledpass() {
+    var filled = true;
+    $('.password-input-txtbox input').each(function() {
+        if($(this).val() == '') filled = false;
+    });
+    return filled;
+}
+</script>
+<script> 
+$('#ui_input1,#ui_input2,#ui_input3,#ui_input4,#ui_input5,#ui_input6').bind('keyup', function() {
+    if(allFilledpass2()) $('#confirmpasskey').removeClass('bttn-disable');
+});
+
+function allFilledpass2() {
+    var filled = true;
+    $('.num-key-pass ul li input').each(function() {
+        if($(this).val() == '') filled = false;
+    });
+    return filled;
+}
+</script>
+<script> 
+$('#au_input1,#au_input2,#au_input3,#au_input4,#au_input5,#au_input6').bind('keyup', function() {
+    if(allFilledpassauth()) $('#autheticatorpasskey').removeClass('bttn-disable');
+});
+
+function allFilledpassauth() {
+    var filled = true;
+    $('.auth-key-pass ul li input').each(function() {
+        if($(this).val() == '') filled = false;
+    });
+    return filled;
+}
+</script>
+<script>    
+    $(document).ready(function() {
+        $('.Num-make-primary').click(function() {
+            $('.phn-no-Saved-alrt').fadeToggle();
+        });
+    });
+    
+</script>
+<script>
+			const selectedAcc = document.querySelector('.acc-info-select');
+			const optionsContainerAcc = document.querySelector('.acc-options-container');
+
+			const optionsListAcc = document.querySelectorAll('.acc-option');
+
+			selectedAcc.addEventListener('click', () => {
+				optionsContainerAcc.classList.toggle('active');
+			});
+
+			optionsListAcc.forEach((o) => {
+				o.addEventListener('click', () => {
+					selectedAcc.innerHTML = o.querySelector('.acc-info-label').innerHTML;
+					optionsContainerAcc.classList.remove('active');
+				});
+			});
+		</script>
+<script>
+	$('#Num_remove_pass-input').bind('keyup', function() {
+    if(allFilled2()) $('#Num_remove_pass').removeClass('btn-disable');
+});
+
+function allFilled2() {
+    var filled = true;
+    $('.phnNo-Add-pass-modal .modal-body .form-input-and-btn input').each(function() {
+        if($(this).val() == '') filled = false;
+    });
+    return filled;
+}
+</script>
+<script>
+    $(document).ready(function() {
+        $('.pass-trigger-hide').click(function() {
+            $('.pass-trigger-hide').hide();
+        });
+    });
+    
+    $(document).ready(function() {
+        $('.pass-trigger-hide').click(function() {
+            $('.pass-trigger-show').show();
+        });
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        $('.pass-trigger-show').click(function() {
+            $('.pass-trigger-show').hide();
+        });
+    });
+    
+    $(document).ready(function() {
+        $('.pass-trigger-show').click(function() {
+            $('.pass-trigger-hide').show();
+        });
+    });
+</script>
+
+</body>
+
+</html>

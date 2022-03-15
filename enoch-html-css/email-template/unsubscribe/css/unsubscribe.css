@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+}
+.unsubscribe-body{
+    background: #E5E5E5;
+    height: 100vh;
+    padding-top: 34px;
+}
+.unsubscribe-block {
+    background: #fff;
+    max-width: 620px;
+    margin: auto;
+    filter: drop-shadow(-4px 8px 24px rgba(44, 63, 88, 0.02));
+    position: relative;
+    
+}
+.unsubscribe-close{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+.unsubscribe-block h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    padding: 16px 32px 14px;
+    border-bottom: 1px solid #D4D8DD;
+    margin: 0px;
+}
+
+.unsubscribe-block p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding-left: 32px;
+    padding-right: 18px;
+}
+.unsubscribe-bttn-grb{
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 32px;
+    padding-right: 18px;
+    padding-bottom: 16px;
+}
+.unsubscribe-cancelbtn{
+    border: 1px solid #3F434A;
+    box-sizing: border-box;
+    border-radius: 60px;
+    width: 132px;
+    height: 40px;
+    background: transparent;
+    outline: none;
+    margin-right: 10px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #1E1F2D;
+    cursor: pointer;
+}
+.unsubscribe-confirmbtn{
+    border: 1px solid #7521E2;
+    box-sizing: border-box;
+    border-radius: 60px;
+    width: 132px;
+    height: 40px;
+    background: #7521E2;
+    outline: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}

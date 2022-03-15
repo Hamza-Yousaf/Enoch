@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>identity & Organization</title>
+	<!-- Fav Icons -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/dashboard-header.css" rel="stylesheet" />
+    <link href="css/dashboard-style.css" rel="stylesheet" />
+    <link href="css/helpCenterStyle.css" rel="stylesheet" />
+    <link href="css/help-center.css" rel="stylesheet" />
+    <link href="css/helpcenter-Admin.css" rel="stylesheet" />
+    <link href="css/admin-help-center.css" rel="stylesheet" />
+    <link href="css/admin-profile.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="container-fluid dashboard-body-bg">
+	<div class="row">
+		<header class="custom-header">			
+			<div class="ezl-dashboard-header">
+				<div class="menu-left">
+					<div class="menu-wrap">
+						<a href="#menu" class="menu-link"><img src="images/Menu.png" alt="Menu" class="img-fluid"/></a>
+					</div>
+					<div class="header-logo"><a href="javascript:void(0)"><img src="images/logo.png" alt="logo" class="img-fluid"/></a></div>
+				</div>
+				<div class="menuright-side">
+					<div class="right-search">
+						<form class="search-form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Fund, ISIN, Keyword ">
+									<button class="search-form-btn" type="Submit"><img class="search-img" src="images/search.png" alt="search"></button>
+							</div>
+						</form>
+					</div>
+					<div class="menu-mid-sect">
+						<ul id="submenubar">
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/home.png" alt="home" class="img-fluid"/></div>
+								<a href="javascript:void(0)">Home</a>
+							</li>
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/network.png" alt="network" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">My Network</a>
+							</li>
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/jobs.png" alt="jobs" class="img-fluid"/></div>
+								<a href="javascript:void(0)">Jobs</a>
+							</li>
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/Chat.png" alt="Chat" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">Messaging</a>
+							</li>
+							<li class="ether-block">
+								<div class="menu-times-notifi mr-2"><img src="images/Ethereum.png" alt="Ethereum" class="img-fluid"/></div>
+								<a href="javascript:void(0)">ETH Mainnet <i class="fa fa-angle-right"></i></a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)">Connect Wallet</a>
+							</li>
+							
+						</ul>
+						<div class="toggle-menu">
+								<div onclick="subtogglediv('submenubar','submenu-toggle');" class="d-inline-block">
+									<i class="fa fa-bars" aria-hidden="true" id="submenu-toggle"></i>
+								</div>
+							</div>
+					</div>
+					
+					<div class="ezl-notificaion">
+					<div class="position-relative notificaion-dropdown ezl-notificaion-marg">
+						<a href="javascript:void(0)" class="popup"><img src="images/help.png" alt="help"/></a>							
+											
+					</div>
+					<div class=" position-relative notificaion-dropdown">
+						<a href="javascript:void(0)" class="popup"><img src="images/alertBell.png" alt="Bell"><span class="notificaion-spn">10</span></a>							
+						
+					</div>
+					</div>
+					<div class="ezl-user-ac">
+					
+					<div class="account-d dropdown">
+						<div class="dropdown-buttn"><span class="popup" onclick="popupFunction()"><div class="user-img"><img src="images/user-ReginaCooper.png" alt="user image" class="img-fluid"></div></span>
+							<div class="popupbox dropdown-menu" id="myPopup">
+								<ul class="">
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+	
+				
+			</div>
+		</header>
+	</div>	
+	<div class="row">
+        <div class="dashboard-header-bredcrumb">
+			<div class="ezl-dashboard-container">
+				<div class="col-12">
+					<ul>
+						<li class="mr-2"><img src="images/home-icon.png" alt="icon" class="img-fluid"/> </li>
+						
+						<li><a href="javascript:void(0)" class="helpCenter-active-black pl-1">Helpcenter /</a></li>
+						<li><a href="javascript:void(0)" class="pl-1"> inbox </a></li>
+					</ul>
+				</div>
+			</div> 
+		</div>
+	</div>
+	<div class="row">	
+		<div class="ezl-dashboard-container">
+		    <div class="identity-Organization-body">
+		        <div class="identity-Organization-headings">
+		            <h1>identity & Organization</h1>
+		        </div>
+		        <div class="Migrate-projects-sect">
+		            <h1>Migrate projects and billing account</h1>
+		            <p>Launch the project and account migartion request, or follow up and migrate waiting projects into your organisation.</p>
+		            <div class="Migrate-projects-btns">
+		                <button><a href="#">Request</a></button>
+		                <button class="mr-0"><a href="#">Accept</a></button>
+		            </div>
+		        </div>
+		        
+		        <div class="SET-PERMISSION-sect">
+		            <h1>Migrate projects and billing account</h1>
+		            <p>Set permissions for the admin roles - Organization Admins, Billing Admins, Network Admins.</p>
+		            <div class="SET-PERMISSION-btns">
+		                <button class="mr-0"><a href="#">Request</a></button>
+		            </div>
+		        </div>
+		        
+		        <div class="SET-organizations-sect">
+		            <h1>How to set up organizations</h1>
+		            <p>Familiarize yourself with documentation on how to set up your organization. Or delegate setup to someone else with  a simple email. <a href="#">Leran more</a> </p>
+		            <div class="SET-organizations-btns">
+		                <button class="mr-0"><a href="#">Delegate Setup</a></button>
+		            </div>
+		        </div>
+		        
+		        <div class="Admin-console-sect">
+		            <h1>Admin console</h1>
+		            <p>Manage your organization settings , users, gorups, devices, and more through the LX Admin. </p>
+		            <div class="Admin-console-btns">
+		                <button><a href="#">Request</a></button>
+		                <button class="mr-0"><a href="#">Accept</a></button>
+		            </div>
+		        </div>
+		        
+		        
+		    </div>
+		</div>
+	
+	</div>
+	
+	
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+
+// When the user clicks, open the popup
+function popupFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+
+}
+
+
+</script>
+<script>
+	/*for toggle sub menu*/
+		function subtogglediv(id, icon) {
+			var id = document.getElementById(id);
+			id.classList.toggle('submenu-active');
+			var cross = document.getElementById(icon);
+			cross.classList.toggle('fa-times');
+			cross.classList.toggle('fa-bars');
+		}
+		</script>
+		<script>
+	/*for Tab*/
+        function helpfunction(evt, faqName) {
+            var i, supporttabcontent, helptablinks;
+            supporttabcontent = document.getElementsByClassName("supporttabcontent");
+            for (i = 0; i < supporttabcontent.length; i++) {
+                supporttabcontent[i].style.display = "none";
+            }
+            helptablinks = document.getElementsByClassName("helptablinks");
+            for (i = 0; i < helptablinks.length; i++) {
+                helptablinks[i].className = helptablinks[i].className.replace(" h-active", "");
+            }
+            document.getElementById(faqName).style.display = "block";
+            evt.currentTarget.className += " h-active";
+        }
+		</script>
+		<script type="text/javascript">
+		/* for modal dropdown menu*/
+	    var dropdownpopup = document.querySelectorAll('[data-toggle=dropdownpopup]');
+	    for (var k = 0; k < dropdownpopup.length; k++) {
+	        dropdownpopup[k].addEventListener('click', function (e) {
+	            if (this.hasAttribute('data-link')) {
+	                var m_ID1 = this.getAttribute('data-link');
+	                //for closing other popup
+	                var activedropdown = document.querySelector('.dropdown-menu.drop-active');
+	                if(activedropdown && activedropdown.getAttribute('id') != m_ID1)
+	                {
+	                    activedropdown.classList.remove('drop-active');
+	                }
+	                //activting popup
+	                document.getElementById(m_ID1).classList.toggle('drop-active');
+	            }
+	        });
+	    }
+	 
+		/*mass select*/
+		function checkall(source) {
+	  		checkboxes = document.getElementsByName('foo');
+	  		for(var i=0, n=checkboxes.length;i<n;i++) {
+	    		checkboxes[i].checked = source.checked;
+	  		}
+		}
+		
+
+		/*rating start*/
+		var changeClass = document.querySelectorAll('[data-toggleclass=starclass]');
+	    for (var k = 0; k < changeClass.length; k++) {
+	        changeClass[k].addEventListener('click', function (e) {
+	            if (this.hasAttribute('data-class')) {
+	                var dataClass = this.getAttribute('data-class');
+	                this.classList.toggle(dataClass);
+	            }
+	        });
+	    }
+
+	    //For modal
+		document.addEventListener('click', function (e) {
+	        e = e || window.event;
+	        var target = e.target || e.srcElement;
+
+	        if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') 
+	        {
+	            if (target.hasAttribute('data-target')) 
+	            {
+	                var m_ID = target.getAttribute('data-target');
+	                document.getElementById(m_ID).classList.add('open');
+	            }
+	        }
+
+	        // Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
+	        if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') ||target.classList.contains('modal')) {
+	            var modal = document.querySelector('.modal.open');
+	            modal.classList.remove('open');
+	        }
+        }, false);
+
+       
+	
+ 	</script>
+	<script>
+//var accrow = document.getElementsByClassName("tableCell-collapse-btn");
+//var i;
+//var accrowblock=document.getElementsByClassName("tableRow");
+//for (i = 0; i < accrowblock.length; i++) {
+ // accrow[i].addEventListener("click", function() {
+ //   accrowblock[1].classList.toggle("tableRow-active");
+	    
+//  });
+ 
+//}
+
+
+</script>
+<script type="text/javascript">
+		
+     //for accordion tab
+		var accItem = document.getElementsByClassName('tableRow');
+		var accHD = document.getElementsByClassName('hlp-collapse-bttn');
+		for (i = 0; i < accHD.length; i++) {
+			accHD[i].addEventListener('click', toggleItem, false);
+		}
+		function toggleItem() {
+			var itemClass = this.parentElement.className;
+			for (i = 0; i < accItem.length; i++) {
+				accItem[i].className = 'tableRow tableRow-inactive';
+			}
+			if (itemClass == 'tableRow tableRow-inactive') {
+				this.parentNode.className = 'tableRow tableRow-active';
+			}
+		}
+		
+	</script>
+<script type="text/javascript">
+	
+
+		var enable = document.querySelectorAll('.enable')
+		function rowenable() {
+			a = document.getElementsByClassName('cebox');
+		  	for (var i = 0; i < enable.length; i++) {
+		  		for(var i=0; i < a.length; i++) {
+		  			if (a[i].checked = "checked") {
+		  				enable[i].classList.add('border-row');
+		  			}
+		  			else {
+	  					enable[i].classList.remove('border-row');
+		  			}
+		    	}
+		  	}
+		  	//remove disable row
+		  	var disable = document.querySelectorAll('.disable.border-row')
+		  	b = document.getElementsByClassName('cbox');
+		  	for (var i = 0; i < disable.length; i++) {
+		  		for(var i=0; i < b.length; i++) {
+		  			if (b[i].checked = "checked") {
+		  				disable[i].classList.remove('border-row');
+		  				b[i].checked = false
+		  			}
+		  			else {
+	  					console.log("else");
+		  			}
+		    	}
+		  	}
+		}
+ 
+		var disable = document.querySelectorAll('.disable')
+		function rowdisable() {
+			a = document.getElementsByClassName('cbox');
+		  	for (var i = 0; i < disable.length; i++) {
+		  		for(var i=0; i < a.length; i++) {
+		  			if (a[i].checked = "checked") {
+		  				disable[i].classList.add('border-row');
+		  			}
+		  			else {
+	  					disable[i].classList.remove('border-row');
+		  			}
+		    	}
+		  	}
+		  	//remove enable row
+		  	var enable = document.querySelectorAll('.enable.border-row')
+		  	b = document.getElementsByClassName('cebox');
+		  	for (var i = 0; i < enable.length; i++) {
+		  		for(var i=0; i < b.length; i++) {
+		  			if (b[i].checked = "checked") {
+		  				enable[i].classList.remove('border-row');
+		  				b[i].checked = false
+		  			}
+		  			else {
+	  					console.log("else");
+		  			}
+		    	}
+		  	}
+		}
+ 	</script>
+<script>
+var coll = document.getElementsByClassName("Transfer_Ticket_collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var Transfer_Ticket_collaps = this.nextElementSibling;
+    if (Transfer_Ticket_collaps.style.display === "block") {
+      Transfer_Ticket_collaps.style.display = "none";
+    } else {
+      Transfer_Ticket_collaps.style.display = "block";
+    }
+  });
+}
+</script> 	  
+<script>
+    $(document).ready(function() {
+        $('.Transfer_Ticket_collapsible').click(function() {
+            $('.Transfer_Ticket-collpse-plus').toggle();
+        });
+    });
+
+    $(document).ready(function() {
+        $('.Transfer_Ticket_collapsible').click(function() {
+            $('.Transfer_Ticket-collpse-minus').toggle();
+        });
+    });
+</script>
+<script>
+$(document).ready(function(){
+ 
+  $(".disable-click-btn").click(function(){
+  
+    $(".help-option-group").addClass("disable-rest-btn");
+  });
+   $(".enable-click-btn").click(function(){
+  
+    $(".help-option-group").removeClass("disable-rest-btn");
+  });
+  
+});
+</script>
+
+</body>
+
+</html>

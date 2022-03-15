@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Help Center</title>
+	<!-- Fav Icons -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- Stylesheets -->
+	<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/global.css" rel="stylesheet" />
+  <link href="css/dashboard-header.css" rel="stylesheet" />
+  <link href="css/dashboard-style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/helpCenterStyle.css" />
+  <link href="css/help-center.css" rel="stylesheet" />
+  
+  
+</head>
+
+<body>
+	<div class="container-fluid dashboard-body-bg">
+	<div class="row">
+		<header class="custom-header">			
+			<div class="ezl-dashboard-header">
+				<div class="menu-left">
+					<div class="menu-wrap">
+						<a href="#menu" class="menu-link"><img src="images/Menu.png" alt="Menu" class="img-fluid"/></a>
+					</div>
+					<div class="header-logo"><a href="javascript:void(0)"><img src="images/logo.png" alt="logo" class="img-fluid"/></a></div>
+				</div>
+				<div class="menuright-side">
+					<div class="right-search">
+						<form class="search-form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Fund, ISIN, Keyword ">
+									<button class="search-form-btn" type="Submit"><img class="search-img" src="images/search.png" alt="search"></button>
+							</div>
+						</form>
+					</div>
+					<div class="menu-mid-sect">
+						<ul id="submenubar">
+							<li class="submenubar-item">
+								<div class="menu-times-notifi"><img src="images/home.png" alt="home" class="img-fluid"/></div>
+								<a href="javascript:void(0)">Home</a>
+							</li>
+							
+							<li class="submenubar-item">
+								<div class="menu-times-notifi"><img src="images/Chat.png" alt="Chat" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">Messaging</a>
+							</li>
+							<li class="ether-block">
+								<div class="menu-times-notifi mr-2"><img src="images/Ethereum.png" alt="Ethereum" class="img-fluid"/></div>
+								<a href="javascript:void(0)">ETH Mainnet <i class="fa fa-angle-right"></i></a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)">Connect Wallet</a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)"><span><img src="images/cart.png" class="img-fluid mr-2"/></span>Cart</a>
+							</li>
+							
+						</ul>
+						<div class="toggle-menu">
+								<div onclick="subtogglediv('submenubar','submenu-toggle');" class="d-inline-block">
+									<i class="fa fa-bars" aria-hidden="true" id="submenu-toggle"></i>
+								</div>
+							</div>
+					</div>
+					
+					<div class="ezl-notificaion">
+					<div class="position-relative notificaion-dropdown ezl-notificaion-marg">
+						<a href="javascript:void(0)" class="popup"><img src="images/help.png" alt="help"/></a>							
+											
+					</div>
+					<div class=" position-relative notificaion-dropdown">
+						<a href="javascript:void(0)" class="popup"><img src="images/alertBell.png" alt="Bell"><span class="notificaion-spn">10</span></a>							
+						
+					</div>
+					</div>
+					<div class="ezl-user-ac">
+					
+					<div class="account-d dropdown">
+						<div class="dropdown-buttn"><span class="popup" onclick="popupFunction()"><div class="user-img"><img src="images/user-img.png" alt="user image" class="img-fluid"/></div></span>
+							<!-- <div class="popupbox dropdown-menu" id="myPopup">
+								
+								<ul class="">
+									<li>
+										<div  class="enoch-usr-prof"><span><img src="images/user-pro-pic.png" class="img-fluid" alt="profile- pic"/> EncchUser007</span><span><a href="#">Change</a></span></div>
+									</li>
+									<li>
+										<div class="enoch-usr-status-block">
+											<div class="usr-status-left">Online Status</div>
+											<div class="usr-status-right">
+												<div class="post-switch">
+													<label class="postswitch">
+													  <input type="checkbox" checked>
+													  <span class="post-slider round"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="enoch-usr-status-block"><a href="#">Public Profile</a></div>
+										<div class="enoch-usr-status-block mb-0"><a href="#">User Settings</a></div>
+									</li>
+									<li>
+										<div class="enoch-usr-status-block"><a href="#">Billing</a></div>
+										<div class="enoch-usr-status-block"><a href="#">Help Center</a></div>
+										<div class="enoch-usr-status-block"><a href="#">Verify Account (KYC)</a></div>
+										<div class="enoch-usr-status-block mb-0"><a href="#" class="orange-clr">Upgrade to Premium</a></div>
+									</li>
+									<li class="mt-4">
+										<div class="enoch-usr-status-block mb-0">Free Bonus<span><a href="#" class="btn freebonus-btn">$50/500 $Enoch </a></span></div>
+									</li>
+									<li class="mt-4">
+										<div class="enoch-usr-status-block mb-0"><a href="#" data-toggle="modal" data-target="switch-user-modal">Switch Account</a></div>
+										
+									</li>
+									<li class="mt-4 mb-0 pb-0">
+										<div class="enoch-usr-status-block mb-0"><a href="#" class="post-red-clr">Logout</a></div>
+									</li>
+								</ul>
+							</div> -->
+						</div>
+					</div>
+					</div>
+				</div>				
+			</div>
+			
+		</header>
+	</div>	
+	<div class="row">
+        <div class="dashboard-header-bredcrumb">
+			<div class="ezl-dashboard-container">
+				<div class="col-12 p-md-0">
+					<ul>
+						<li class="mr-2"><img src="images/home-icon.png" alt="icon" class="img-fluid"/> </li>
+						
+						<li><a href="javascript:void(0)" class="dsh-active"> Helpcenter /  </a></li>
+						<li><a href="javascript:void(0)"> &nbsp;inbox /</a></li>
+						<li><a href="javascript:void(0)"> &nbsp;Create ticket</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">	
+		<div class="ezl-dashboard-container">			
+			<div class="help-center-inbox">
+				<div class="help-center-inbox-lft">
+					<ul>
+						<li class="helptablinks" onclick="helpfunction(event, 'inbox')"><a href="javascript:void(0)">INBOX</a></li>
+						<li class="helptablinks" onclick="helpfunction(event, 'sent')"><a href="javascript:void(0)">SENT</a></li>
+						<li class="helptablinks" onclick="helpfunction(event, 'draft')"><a href="javascript:void(0)">DRAFT</a></li>
+					</ul>
+				</div>
+				<div class="help-center-inbox-right">
+					<div class="help-search-form">
+					<form>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Search">
+									<button class="help-search-form-btn" type="Submit"><img class="search-img" src="images/help-Search.png" alt="search"></button>
+							</div>
+						</form>
+					</div>
+					<div class="help-option-group">
+						<ul>
+							<li><span class="help-btn-popover">Delete</span><a href="#" class="hDelete" data-toggle="modal" data-target="#myModal"><img src="images/hDelete.png" alt="delete" class="img-fluid del-norml"/><img src="images/redDelete.png" alt="delete" class="img-fluid reddel-hov"/></a></li>
+							<li><span class="help-bttom-popover">Download</span><a href="#"><img src="images/hDownload.png" alt="download" class="img-fluid"/></a></li>
+							<li class="share-ticket"><span class="help-btn-popover">Share</span><a href="#" data-toggle="modal" data-target="#myModal-2"><img src="images/hShare.png" alt="share" class="img-fluid"/></a></li>
+							<li class="forword-ticket"><span class="help-bttom-popover">Forword</span><a href="#" class="img-fluid" data-toggle="modal" data-target="#myModal-3"><img src="images/hForword.png" alt="forward" class="img-fluid"/></a></li>
+						</ul>
+					
+					</div>
+					<div class="help-create-tckt">
+						<a href="#" class="btn create-tckt-btn">CREATE TICKET</a>
+					</div>
+				</div>
+			</div>
+			<div class="Create-Support-Ticket-sect HelpCenter-body">
+	        <div class="Create-Support-Ticket-headings">
+	            <h1>Create Support Ticket</h1>
+	        </div>
+	        <div class="Create-Support-Ticket-text">
+	            <p>Please select the topic write the subject and description below to create  a support ticket.We aim to ewply aa tickets within 1 hour during regular time.</p>
+	        </div>
+	        <div class="Create-Support-dropdown-sect">
+	            <div class="row">
+	                <div class="col-lg-6">
+	                    <div class="Create-Support-dropdown-left">
+	                        <div class="position-relative">
+	                            <div class="timeSetting-drop-box">
+	                                <a href="javascript:void(0)" onclick="creatTicket()" id="creatTicket" class="timeSetting-droplist">Select category</a>
+	                            </div>
+	                            <div id="creatTicket-DropdownList" class="timeSetting-content custm-zindex-1">
+	                                <ul class="setting-form-drop-scrollable">
+	                                    <li>KYC/AML</li>
+	                                    <li>Profile</li>
+	                                    <li>Account</li>
+	                                    <li>Exchange</li>
+	                                    <li>Launchpad</li>
+	                                    <li>Farming</li>
+	                                    <li>Security</li>
+	                                    <li>Promotion</li>
+	                                </ul>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-lg-6">
+	                    <div class="Create-Support-dropdown-right">
+	                        <input type="text" value="Profile picture issue">
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="HelpCenter-Resume-Writing-Sect">
+                <div class="HelpCenter-Resume-Writing-Heading">
+                    <div class="HelpCenter-Resume-Writing-Heading-menu-1">
+                        <ul class="list-1">
+                            <li>
+                                <img src="images/A.png" alt="A" class="img-fluid" />
+                                <img src="images/dropdown.png" alt="icon" class="img-fluid" />
+                            </li>
+                        </ul>
+                        <ul class="list-2">
+                            <li><img src="images/Bold.png" alt="B" class="img-fluid" /></li>
+                            <li><img src="images/Italic.png" alt="I" class="img-fluid" /></li>
+                            <li><img src="images/Underline.png" alt="U" class="img-fluid" /></li>
+                        </ul>
+                        <ul class="list-3">
+                            <li><img src="images/text-aria-Link.png" alt="Link" class="img-fluid" /></li>
+                            <li><img src="images/emoji.png" alt="emoji" class="img-fluid" /></li>
+                            <li><img src="images/gallery.png" alt="img" class="img-fluid" /></li>
+                        </ul>
+                    </div>
+                    <div class="HelpCenter-Resume-Writing-Heading-menu-2">
+                        <ul class="list-4">
+                            <li><img src="images/List.png" alt="emoji" class="img-fluid" /></li>
+                            <li><img src="images/Numbered%20List.png" alt="img" class="img-fluid" /></li>
+                        </ul>
+                        <ul class="list-5">
+                            <li><img src="images/Align-Left.png" alt="left" class="img-fluid" /></li>
+                            <li><img src="images/Align-%20Center.png" alt="Center" class="img-fluid" /></li>
+                            <li><img src="images/Align-Right.png" alt="Right" class="img-fluid" /></li>
+                            <li><img src="images/Align-Justify.png" alt="Justify" class="img-fluid" /></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="HelpCenter-Resume-Writing-body">
+                    <div class="HelpCenter-textarea">
+                    <textarea placeholder="Write your message">Hi Support,
+                    
+Please find all desired attachment for my KYC to br done...
+                    </textarea>
+                    </div>
+                    <div class="HelpCenter-textarea-btns">
+                        <div class="HelpCenter-textarea-btns-left">
+                            <div class="btn-send">
+                                <button><a href="#">Send</a><div class="clock-btn"><img src="images/Time.png" alt="clock" class="img-fluid" /></div></button>
+                            </div>
+                            <div class="atachment-btn">
+                                <buttton><a href="#"><img src="images/Attachment.png" alt="icon" class="img-fluid" /></a></buttton>
+                            </div>
+                        </div>
+                        <div class="three-btns">
+                            <button class="btn-1"><a href="#"><img src="images/gallery-icon.png" alt="icon" class="img-fluid" />Image ...</a></button>
+                            <button class="btn-2"><a href="#"><img src="images/copy-icon.png" alt="icon" class="img-fluid" />Copy...</a></button>
+                            <button class="btn-3"><a href="#">+2</a></button>
+                        </div>
+                    </div>
+                </div>
+	        </div>
+	        </div>
+		</div>
+		
+	
+	</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+
+// When the user clicks, open the popup
+function popupFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+
+}
+
+
+</script>
+<script>
+	/*for toggle sub menu*/
+		function subtogglediv(id, icon) {
+			var id = document.getElementById(id);
+			id.classList.toggle('submenu-active');
+			var cross = document.getElementById(icon);
+			cross.classList.toggle('fa-times');
+			cross.classList.toggle('fa-bars');
+		}
+		</script>
+		<script>
+	/*for Tab*/
+        function helpfunction(evt, faqName) {
+            var i, supporttabcontent, helptablinks;
+            supporttabcontent = document.getElementsByClassName("supporttabcontent");
+            for (i = 0; i < supporttabcontent.length; i++) {
+                supporttabcontent[i].style.display = "none";
+            }
+            helptablinks = document.getElementsByClassName("helptablinks");
+            for (i = 0; i < helptablinks.length; i++) {
+                helptablinks[i].className = helptablinks[i].className.replace(" h-active", "");
+            }
+            document.getElementById(faqName).style.display = "block";
+            evt.currentTarget.className += " h-active";
+        }
+		</script>
+		<script>
+		
+		function creatTicket() {
+
+	var selectmedia1 = document.getElementById("creatTicket-DropdownList");
+	selectmedia1.classList.toggle("show");
+	var selItem = document.getElementById("creatTicket");
+	
+  selItem.classList.toggle("select-active"); 
+}
+var selectmedia2 = document.getElementById("creatTicket-DropdownList").querySelectorAll(".timeSetting-content ul li");
+selectmedia2.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('creatTicket').innerHTML = this.innerHTML;
+ 
+	
+	        
+		 }
+		  
+        });
+	
+
+		// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.timeSetting-droplist')) {
+    var dropdowns = document.getElementsByClassName("timeSetting-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+	<!--  var selItem = document.getElementById("athp-sel"); -->
+	
+}
+	</script>
+	<script>
+		$(function(){
+		   $('.menu-mid-sect ul li.submenubar-item a').click(function(){
+			 $('.menu-mid-sect ul li.submenubar-item a').each(function(a){
+			   $( this ).removeClass('selectedclass')
+			 });
+			 $( this ).addClass('selectedclass');
+		   });
+		  
+		 });
+		</script>
+</body>
+
+</html>

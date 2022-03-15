@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>community</title>
+	<!-- Fav Icons -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/dashboard-header.css" rel="stylesheet" />
+    <link href="css/dashboard-style.css" rel="stylesheet" />
+    <link href="css/helpCenterStyle.css" rel="stylesheet" />
+    <link href="css/help-center.css" rel="stylesheet" />
+    <link href="css/helpcenter-Admin.css" rel="stylesheet" />
+    <link href="css/admin-help-center.css" rel="stylesheet" />
+    <link href="css/admin-profile.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/OnBoardingJourney.css" />
+    <link rel="stylesheet" href="css/dApp-S-home.css" />
+    <link rel="stylesheet" href="css/home-post.css" />
+    <link rel="stylesheet" href="css/community.css" />
+	
+</head>
+
+<body>
+	<div class="container-fluid dashboard-body-bg second-body-bg">
+	<div class="row">
+		<header class="custom-header">			
+			<div class="ezl-dashboard-header">
+				<div class="menu-left">
+					<div class="menu-wrap">
+						<a href="#menu" class="menu-link"><img src="images/Menu.png" alt="Menu" class="img-fluid"/></a>
+					</div>
+					<div class="header-logo"><a href="javascript:void(0)"><img src="images/logo.png" alt="logo" class="img-fluid"/></a></div>
+				</div>
+				<div class="menuright-side">
+					<div class="right-search">
+						<form class="search-form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Fund, ISIN, Keyword ">
+									<button class="search-form-btn" type="Submit"><img class="search-img" src="images/search.png" alt="search"></button>
+							</div>
+						</form>
+					</div>
+					<div class="menu-mid-sect">
+						<ul id="submenubar">
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/home.png" alt="home" class="img-fluid"/></div>
+								<a href="javascript:void(0)">Home</a>
+							</li>
+							<!-- <li class="">
+								<div class="menu-times-notifi"><img src="images/network.png" alt="network" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">My Network</a>
+							</li> -->
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/Chat.png" alt="Chat" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">Messaging</a>
+							</li>
+							<li class="ether-block">
+								<div class="menu-times-notifi mr-2"><img src="images/Ethereum.png" alt="Ethereum" class="img-fluid"/></div>
+								<a href="javascript:void(0)">ETH Mainnet <i class="fa fa-angle-right"></i></a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)">Connect Wallet</a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)"><span><img src="images/cart.png" class="img-fluid mr-2"/></span>Cart</a>
+							</li>
+							
+						</ul>
+						<div class="toggle-menu">
+								<div onclick="subtogglediv('submenubar','submenu-toggle');" class="d-inline-block">
+									<i class="fa fa-bars" aria-hidden="true" id="submenu-toggle"></i>
+								</div>
+							</div>
+					</div>
+					
+					<div class="ezl-notificaion">
+					<div class="position-relative notificaion-dropdown ezl-notificaion-marg">
+						<a href="javascript:void(0)" class="popup"><img src="images/help.png" alt="help"/></a>							
+											
+					</div>
+					<div class=" position-relative notificaion-dropdown">
+						<a href="javascript:void(0)" class="popup"><img src="images/alertBell.png" alt="Bell"><span class="notificaion-spn">10</span></a>							
+						
+					</div>
+					</div>
+					<div class="ezl-user-ac">
+					
+					<div class="account-d dropdown">
+						<div class="dropdown-buttn"><span class="popup" onclick="popupFunction()"><div class="user-img"><img src="images/user-ReginaCooper.png" alt="user image" class="img-fluid"/></div></span>
+							<div class="popupbox dropdown-menu" id="myPopup">
+								
+								<ul class="">
+									<li>
+										<div  class="enoch-usr-prof"><span><img src="images/user-pro-pic.png" class="img-fluid mr-1" alt="profile- pic"/> @Hulk66</span><span><a href="#">Change</a></span></div>
+									</li>
+									<li>
+										<div class="enoch-usr-status-block">
+											<div class="usr-status-left">Online Status</div>
+											<div class="usr-status-right">
+												<div class="post-switch">
+													<label class="postswitch">
+													  <input type="checkbox" checked>
+													  <span class="post-slider round"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="enoch-usr-status-block"><a href="#">Become Creator </a></div>
+										<div class="enoch-usr-status-block mb-0"><a href="#" class="enoch-blue-clr">Your Public Profile</a></div>
+									</li>
+									<li>
+										<div class="enoch-usr-status-block"><a href="#">Setting </a></div>
+										<div class="enoch-usr-status-block"><a href="#">Help Center</a></div>										
+										<div class="enoch-usr-status-block mb-0"><a href="#" class="orange-clr">Upgrade to Premium</a></div>
+									</li>
+									<li class="mt-4">
+										<div class="enoch-usr-status-block mb-0">Wallet  <span><a href="#" class="btn freebonus-btn">$400 </a></span></div>
+									</li>
+									<li class="mt-4 pb-0">
+										<div class="enoch-usr-status-block mb-0 manage-ac">
+											<h3>Manage</h3>
+											<ul>
+												<li>
+													<div class="manage-ac-block">
+														<span>Comapny:	</span>
+														<span class="ml-1"><img src="images/man-icon1.png" class="img-fluid mr-1" alt="user"/>88mph  </span>
+													</div>
+												</li>
+												<li>
+													<div class="manage-ac-block">
+														<span>Comapny:	</span>
+														<span class="ml-1"><img src="images/man-icon2.png" class="img-fluid mr-1" alt="user"/>CryptoBlue    </span>
+													</div>
+												</li>
+											</ul>
+										</div>
+										
+									</li>
+									<li class="mb-0 pb-0">
+										<div class="enoch-usr-status-block mb-0"><a href="#" class="post-red-clr">Logout</a></div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>				
+			</div>
+			<div class="switch-user-modal-block">
+				<div id="switch-user-modal" class="modal fade">
+					<!-- Modal content -->
+					<div class="modal-content switch-user-modal-content">
+						<span class="close"><img src="images/postCross.png" alt="close" class="img-fluid" data-dismiss="modal"></span>
+						<h2>Which account would you like to use?</h2>
+						<div class="switch-user-modal-list">
+							<h3>Your accounts</h3>
+							<ul>
+								<li><img src="images/postUser1.png" class="img-fluid" alt="pic"> <span>Robert Rose</span></li>
+								<li><img src="images/postUser2.png" class="img-fluid" alt="pic"> <span>88mph</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>								
+			</div>
+		</header>
+		<div class="dApp-menu-btn">
+	   <a href="#"><img src="images/LeftSide-Menu.png" alt="menu" class="img-fluid"  data-toggle="modal" data-target="right-top-modal" /></a>
+	   <div class="right-top-modal-block">
+				<div id="right-top-modal" class="modal fade">
+					<!-- Modal content -->
+					<div class="modal-content right-top-modal-content">
+						<span class="close"><img src="images/postCross2.png" alt="close" class="img-fluid" data-dismiss="modal"></span>
+						<div class="right-top-body-block">
+							<div class="right-top-body-block-lft">
+								<form class="right-search-form">
+									<div class="right-form-group">
+										<img src="images/help-Search.png" class="img-fluid" alt="search"/><input type="text" class="form-control" placeholder="Search menu...">
+											
+									</div>
+								</form>
+								<div class="enoch-community-scrollable">
+								<div class="enoch-menu-block-panel">
+									<div class="enoch-menu-block-lft">
+										<div class="enoch-menu-block-items">
+											<h2>Peronal</h2>
+											<ul>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon1.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Earn</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon2.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Ranking</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon3.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Billing</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon4.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Affiliate</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												
+											</ul>
+										</div>
+										<div class="enoch-menu-block-items">
+											<h2>Entertainment</h2>
+											<ul>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon11.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Popular</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon12.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Slots</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon13.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Live Casino </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon14.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Lottery</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon15.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Roulette</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon16.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Promotions</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="enoch-menu-block-items">
+											<h2>Advertising</h2>
+											<ul>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon19.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Ad Manager </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon20.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Enoch Ad  </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												
+											</ul>
+										</div>
+										<div class="enoch-menu-block-items mb-0">
+											<h2>User Setting </h2>
+											<ul>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon26.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Your Profile  </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon27.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Your Account</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												
+											</ul>
+										</div>
+									</div>
+									<div class="enoch-menu-block-right">
+										<div class="enoch-menu-block-items">
+											<h2>Social</h2>
+											<ul>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon5.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>My Networks</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon6.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Communities</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon7.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Artist Channels </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon8.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Company pages </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon9.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Events </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon10.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>News Feed  </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="enoch-menu-block-items">
+											<h2>Shopping</h2>
+											<ul>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon17.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Digital Art Marketplace </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												
+											</ul>
+										</div>
+										<div class="enoch-menu-block-items">
+											<h2>Jobs</h2>
+											<ul>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon18.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Remote workhub</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												
+											</ul>
+										</div>
+										<div class="enoch-menu-block-items">
+											<h2>Developer</h2>
+											<ul>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon21.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Develop</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon22.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Grow </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon23.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Earn </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon24.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Github  </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon25.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Docs </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												
+											</ul>
+										</div>
+									</div>
+								</div>
+								</div>
+							</div>
+							<div class="right-top-body-block-right">
+								<h3>Create</h3>
+								<ul>
+									<li><a href="#"><span><img src="images/creat-icon1.png" class="img-fluid" alt="icon"/></span> Post</a></li>
+									<li><a href="#"><span><img src="images/creat-icon2.png" class="img-fluid" alt="icon"/></span> Community</a></li>
+									<li><a href="#"><span><img src="images/creat-icon3.png" class="img-fluid" alt="icon"/></span> Artist Channel</a></li>
+									<li><a href="#"><span><img src="images/creat-icon4.png" class="img-fluid" alt="icon"/></span> Group</a></li>
+									<li><a href="#"><span><img src="images/creat-icon5.png" class="img-fluid" alt="icon"/></span> Event</a></li>
+									<li><a href="#"><span><img src="images/creat-icon6.png" class="img-fluid" alt="icon"/></span> Company page </a></li>
+									<li><a href="#"><span><img src="images/creat-icon7.png" class="img-fluid" alt="icon"/></span> Job</a></li>
+									<li><a href="#"><span><img src="images/creat-icon8.png" class="img-fluid" alt="icon"/></span> Digital Art </a></li>
+									<li><a href="#"><span><img src="images/creat-icon8.png" class="img-fluid" alt="icon"/></span> AD </a></li>									 
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>								
+			</div>
+	</div>
+	</div>		
+	<div class="row">	
+		<div class="ezl-dashboard-container">			
+			<div class="enoch-community-header-banner mb-4">			
+				<img src="images/community-img1.png" class="img-fluid" alt="banner"/>
+			</div>
+			<div class="enoch-community-deefi-block">
+				<div class="enoch-community-deefi-block-lft">
+					<div class="enoch-community-deefi-signal mb-4">
+						<div class="enoch-community-deefi-signal-lft">
+							<div class="mr-4"><img src="images/community-img2.png" class="img-fluid" alt="defi"/></div>
+							<div>
+								<h3>DeFi Signal </h3>
+								<p>@defisignal</p>
+							</div>
+						</div>
+						<div class="enoch-community-deefi-signal-right">
+							<button class="btn defi-joined-btn">Joined</button>
+						</div>
+					</div>
+					<div class="enoch-community-people mb-4">
+						<h3>People in this community</h3>
+						<ul>
+							<li><img src="images/ReginaCooper.png" class="img-fluid" alt="ReginaCooper"/></li>
+							<li><img src="images/KieraThomson.png" class="img-fluid" alt="KieraThomson"/></li>
+							<li class="in-group"><img src="images/DanBrooks1.png" class="img-fluid" alt="DanBrooks"/></li>
+							<li><img src="images/StevenGomes1.png" class="img-fluid" alt="StevenGomes"/></li>
+							<li class="in-group"><img src="images/JackWilliams1.png" class="img-fluid" alt="JackWilliams"/></li>
+							<li><img src="images/SamualFick.png" class="img-fluid" alt="SamualFick"/></li>
+							<li class="in-group"><img src="images/ChuckWitherington.png" class="img-fluid" alt="ChuckWitherington"/></li>
+							<li><img src="images/JacqulineGantt.png" class="img-fluid" alt="JacqulineGantt"/></li>
+							<li><img src="images/LucianaKerney.png" class="img-fluid" alt="LucianaKerney"/></li>
+							<li><img src="images/AnnitaFeggins.png" class="img-fluid" alt="AnnitaFeggins"/></li>
+							<li><img src="images/MK.png" class="img-fluid" alt="MK"/></li>
+							<li class="in-group"><img src="images/JackWilliams1.png" class="img-fluid" alt="JackWilliams"/></li>
+							<li><img src="images/SamualFick.png" class="img-fluid" alt="SamualFick"/></li>
+							<li class="in-group"><img src="images/ChuckWitherington.png" class="img-fluid" alt="ChuckWitherington"/></li>
+							<li><img src="images/JacqulineGantt.png" class="img-fluid" alt="JacqulineGantt"/></li>
+							<li><img src="images/LucianaKerney.png" class="img-fluid" alt="LucianaKerney"/></li>
+							<li><img src="images/AnnitaFeggins.png" class="img-fluid" alt="AnnitaFeggins"/></li>
+							<li><img src="images/MK.png" class="img-fluid" alt="MK"/></li>
+							<li>+456</li>
+						</ul>
+						<p class="enoch-community-people-txt">Ali Akbar, Sachin Kumar, and 18 other connections are in this group</p>
+					</div>
+					<div class="enoch-community-creat-post mb-4">
+						<div class="enoch-community-creat-post-lft">
+							<span><img src="images/post-user-img.png" class="img-fluid" alt="user"></span><div class="home-post-input">Share </div>
+						</div>
+						<div class="enoch-community-creat-post-right">
+							<ul>
+											<li><img src="images/post-Image.png" class="img-fluid" alt="Photo"></li>
+											<li><img src="images/post-Video.png" class="img-fluid" alt="Video"></li>
+											<li><img src="images/post-Event.png" class="img-fluid" alt="Event"></li>
+											<li><img src="images/post-Article.png" class="img-fluid" alt="Write Article"></li>
+										</ul>
+						</div>
+					</div>
+					
+					<div class="enoch-community-post-block">
+						<div class="enoch-community-post-head">Latest Post</div>
+						<ul>
+							<li>
+								<p class="community-post-user">Posted byu/BurritoJusticeLeague <span><img src="images/event-time-icon.png" class="img-fluid mr-2" alt="icon"/>5 days ago</span></p>
+								<h3>A better Best, Reddit in new languages, and more</h3>
+								<p class="community-post-link mb-4"><a href="#">https://enoch.app/lo4qvky072b71.png?width=2162&format=png&auto=webp&s=e692dd237cfca1e7e25f347290741600983079c9</a></p>
+								<div class="community-post-txt">
+									<p class="mb-4">Hey there enochians,</p>
+									<p>Since we last chatted before the July 4th break (or July 1st for those of you who celebrate Canada Day) we’ve launched some new initiatives to make Enoch more accessible to people around the world, improve and evolve your home feed, get notifications about communities you moderate, and much much more.</p>
+								</div>
+								<div class="dApp-status-like-comment-share-sect enoch-community-react">
+			                                <ul>
+                                                <li>
+												<div class="home-post-usr-reaction-wrap">
+													<div class="home-post-usr-reaction">
+														<span><img src="images/reaction1.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction2.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction3.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction4.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction5.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction6.png" alt="icon" class="img-fluid"></span>
+													</div>
+												</div>
+												<span><img src="images/like-icon.png" alt="icon" class="img-fluid post-like"><img src="images/like-hov.png" alt="icon" class="img-fluid post-like-hov"></span><a href="#">Like</a>
+											</li>
+			                                    
+                                                <li><span><img src="images/dislike.png" alt="icon" class="img-fluid"></span><a href="#">Dislike</a></li>
+			                                    
+                                                <li><span><img src="images/gift.png" alt="icon" class="img-fluid"></span> <a href="#">Gift</a></li>
+			                                    
+                                                <li><span><img src="images/comment-icon.png" alt="icon" class="img-fluid"></span><a href="#">Comment</a></li>
+			                                    
+                                                <li><span><img src="images/dApp-Share.png" alt="icon" class="img-fluid"></span><a href="#">Share</a></li>
+			                                    
+                                                <li><span><img src="images/Paper-Plane.png" alt="icon" class="img-fluid"></span><a href="#">Send</a></li>
+			                                    
+			                                </ul>
+			                    </div>
+							</li>
+							<li>
+								<p class="community-post-user">Posted byu/BurritoJusticeLeague <span><img src="images/event-time-icon.png" class="img-fluid mr-2" alt="icon"/>5 days ago</span></p>
+								<h3>A better Best, Reddit in new languages, and more</h3>
+								<p class="community-post-link mb-4"><a href="#">https://enoch.app/lo4qvky072b71.png?width=2162&format=png&auto=webp&s=e692dd237cfca1e7e25f347290741600983079c9</a></p>
+								<div class="community-post-txt">
+									<p class="mb-4">Hey there enochians,</p>
+									<p>Since we last chatted before the July 4th break (or July 1st for those of you who celebrate Canada Day) we’ve launched some new initiatives to make Enoch more accessible to people around the world, improve and evolve your home feed, get notifications about communities you moderate, and much much more.</p>
+								</div>
+								<div class="dApp-status-like-comment-share-sect enoch-community-react">
+			                                <ul>
+                                                <li>
+												<div class="home-post-usr-reaction-wrap">
+													<div class="home-post-usr-reaction">
+														<span><img src="images/reaction1.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction2.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction3.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction4.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction5.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction6.png" alt="icon" class="img-fluid"></span>
+													</div>
+												</div>
+												<span><img src="images/like-icon.png" alt="icon" class="img-fluid post-like"><img src="images/like-hov.png" alt="icon" class="img-fluid post-like-hov"></span><a href="#">Like</a>
+											</li>
+			                                    
+                                                <li><span><img src="images/dislike.png" alt="icon" class="img-fluid"></span><a href="#">Dislike</a></li>
+			                                    
+                                                <li><span><img src="images/gift.png" alt="icon" class="img-fluid"></span> <a href="#">Gift</a></li>
+			                                    
+                                                <li><span><img src="images/comment-icon.png" alt="icon" class="img-fluid"></span><a href="#">Comment</a></li>
+			                                    
+                                                <li><span><img src="images/dApp-Share.png" alt="icon" class="img-fluid"></span><a href="#">Share</a></li>
+			                                    
+                                                <li><span><img src="images/Paper-Plane.png" alt="icon" class="img-fluid"></span><a href="#">Send</a></li>
+			                                    
+			                                </ul>
+			                    </div>
+							</li>
+							<li>
+								<p class="community-post-user">Posted byu/BurritoJusticeLeague <span><img src="images/event-time-icon.png" class="img-fluid mr-2" alt="icon"/>5 days ago</span></p>
+								<h3>A better Best, Reddit in new languages, and more</h3>
+								<p class="community-post-link mb-4"><a href="#">https://enoch.app/lo4qvky072b71.png?width=2162&format=png&auto=webp&s=e692dd237cfca1e7e25f347290741600983079c9</a></p>
+								<div class="community-post-txt">
+									<p class="mb-4">Hey there enochians,</p>
+									<p>Since we last chatted before the July 4th break (or July 1st for those of you who celebrate Canada Day) we’ve launched some new initiatives to make Enoch more accessible to people around the world, improve and evolve your home feed, get notifications about communities you moderate, and much much more.</p>
+								</div>
+								<div class="dApp-status-like-comment-share-sect enoch-community-react">
+			                                <ul>
+                                                <li>
+												<div class="home-post-usr-reaction-wrap">
+													<div class="home-post-usr-reaction">
+														<span><img src="images/reaction1.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction2.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction3.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction4.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction5.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction6.png" alt="icon" class="img-fluid"></span>
+													</div>
+												</div>
+												<span><img src="images/like-icon.png" alt="icon" class="img-fluid post-like"><img src="images/like-hov.png" alt="icon" class="img-fluid post-like-hov"></span><a href="#">Like</a>
+											</li>
+			                                    
+                                                <li><span><img src="images/dislike.png" alt="icon" class="img-fluid"></span><a href="#">Dislike</a></li>
+			                                    
+                                                <li><span><img src="images/gift.png" alt="icon" class="img-fluid"></span> <a href="#">Gift</a></li>
+			                                    
+                                                <li><span><img src="images/comment-icon.png" alt="icon" class="img-fluid"></span><a href="#">Comment</a></li>
+			                                    
+                                                <li><span><img src="images/dApp-Share.png" alt="icon" class="img-fluid"></span><a href="#">Share</a></li>
+			                                    
+                                                <li><span><img src="images/Paper-Plane.png" alt="icon" class="img-fluid"></span><a href="#">Send</a></li>
+			                                    
+			                                </ul>
+			                    </div>
+							</li>
+							<li>
+								<p class="community-post-user">Posted byu/BurritoJusticeLeague <span><img src="images/event-time-icon.png" class="img-fluid mr-2" alt="icon"/>5 days ago</span></p>
+								<h3>A better Best, Reddit in new languages, and more</h3>
+								<p class="community-post-link mb-4"><a href="#">https://enoch.app/lo4qvky072b71.png?width=2162&format=png&auto=webp&s=e692dd237cfca1e7e25f347290741600983079c9</a></p>
+								<div class="community-post-txt">
+									<p class="mb-4">Hey there enochians,</p>
+									<p>Since we last chatted before the July 4th break (or July 1st for those of you who celebrate Canada Day) we’ve launched some new initiatives to make Enoch more accessible to people around the world, improve and evolve your home feed, get notifications about communities you moderate, and much much more.</p>
+								</div>
+								<div class="dApp-status-like-comment-share-sect enoch-community-react">
+			                                <ul>
+                                                <li>
+												<div class="home-post-usr-reaction-wrap">
+													<div class="home-post-usr-reaction">
+														<span><img src="images/reaction1.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction2.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction3.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction4.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction5.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction6.png" alt="icon" class="img-fluid"></span>
+													</div>
+												</div>
+												<span><img src="images/like-icon.png" alt="icon" class="img-fluid post-like"><img src="images/like-hov.png" alt="icon" class="img-fluid post-like-hov"></span><a href="#">Like</a>
+											</li>
+			                                    
+                                                <li><span><img src="images/dislike.png" alt="icon" class="img-fluid"></span><a href="#">Dislike</a></li>
+			                                    
+                                                <li><span><img src="images/gift.png" alt="icon" class="img-fluid"></span> <a href="#">Gift</a></li>
+			                                    
+                                                <li><span><img src="images/comment-icon.png" alt="icon" class="img-fluid"></span><a href="#">Comment</a></li>
+			                                    
+                                                <li><span><img src="images/dApp-Share.png" alt="icon" class="img-fluid"></span><a href="#">Share</a></li>
+			                                    
+                                                <li><span><img src="images/Paper-Plane.png" alt="icon" class="img-fluid"></span><a href="#">Send</a></li>
+			                                    
+			                                </ul>
+			                    </div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="enoch-community-deefi-block-right">
+					<div class="community-signal-guide mb-4">
+							<h4>About DeFi Signal</h4>
+							<p>DeFi is a collective term for financial products and services that are accessible to anyone who can use Ethereum – anyone with an internet connection. With DeFi, the markets are always open and there are no centralized authorities who can block payments or deny you access to anything. </p>
+						</div>
+					<div class="enoch-manage-comm mb-4">
+						<h3>DeFi Signal Guidleines  </h3>
+						
+						<div class="ml-4 mr-4">
+							
+							<div class="enoch-community-created">
+									<span><img src="images/Birthday.png" class="img-fluid" alt="Birthday"></span>Created Jul 28, 2021
+							</div>
+							<p>Welcome to DeFi Signal , a community where you can be anyone, create anything, and interact with people from all over the world. <span class="comm-red-clr">Review our Community Guidelines that will help make DeFi Signal a welcoming and rewarding place.</span></p>
+							<div><button class="btn comm-access-admin-btn">Access Admin tools </button></div>
+						</div>
+					</div>
+					
+					<div class="enoch-community-addSect3">
+						<div class="enoch-community-addSect4-inner"><img src="images/banner-add2.png" class="img-fluid" alt="ad"/></div>
+						<p>Ad <span class="ml-1"><img src="images/mandala.png" class="img-fluid" alt="icon"/></span></p>
+					</div>
+					<div class="enoch-community-addSect3">
+						<div class="enoch-community-addSect5-inner"><img src="images/banner-add3.png" class="img-fluid" alt="ad"/></div>
+						<p>Ad <span class="ml-1"><img src="images/mandala.png" class="img-fluid" alt="icon"/></span></p>
+					</div>
+					<div class="enoch-community-addSect3">
+						<div class="enoch-community-addSect6-inner"><img src="images/banner-add4.png" class="img-fluid" alt="ad"/></div>
+						<p>Ad <span class="ml-1"><img src="images/mandala.png" class="img-fluid" alt="icon"/></span></p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+	
+	</div>
+	
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+
+// When the user clicks, open the popup
+function popupFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+
+}
+
+
+</script>
+<script>
+	/*for toggle sub menu*/
+		function subtogglediv(id, icon) {
+			var id = document.getElementById(id);
+			id.classList.toggle('submenu-active');
+			var cross = document.getElementById(icon);
+			cross.classList.toggle('fa-times');
+			cross.classList.toggle('fa-bars');
+		}
+		</script>
+		
+		<script type="text/javascript">
+		/* for modal dropdown menu*/
+	    var dropdownpopup = document.querySelectorAll('[data-toggle=dropdownpopup]');
+	    for (var k = 0; k < dropdownpopup.length; k++) {
+	        dropdownpopup[k].addEventListener('click', function (e) {
+	            if (this.hasAttribute('data-link')) {
+	                var m_ID1 = this.getAttribute('data-link');
+	                //for closing other popup
+	                var activedropdown = document.querySelector('.dropdown-menu.drop-active');
+	                if(activedropdown && activedropdown.getAttribute('id') != m_ID1)
+	                {
+	                    activedropdown.classList.remove('drop-active');
+	                }
+	                //activting popup
+	                document.getElementById(m_ID1).classList.toggle('drop-active');
+	            }
+	        });
+	    }
+	 
+		
+	    //For modal
+		document.addEventListener('click', function (e) {
+	        e = e || window.event;
+	        var target = e.target || e.srcElement;
+
+	        if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') 
+	        {
+	            if (target.hasAttribute('data-target')) 
+	            {
+	                var m_ID = target.getAttribute('data-target');
+	                document.getElementById(m_ID).classList.add('open');
+	            }
+	        }
+
+	        // Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
+	        if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') ||target.classList.contains('modal')) {
+	            var modal = document.querySelector('.modal.open');
+	            modal.classList.remove('open');
+	        }
+        }, false);
+
+       
+	
+ 	</script>
+	
+
+
+
+
+
+
+
+</body>
+
+</html>

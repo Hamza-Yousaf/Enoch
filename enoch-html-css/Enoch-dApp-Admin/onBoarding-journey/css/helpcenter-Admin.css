@@ -1,0 +1,588 @@
+.Write-to-radio-btn-sect {
+    margin: 20px 25px 25px 25px;
+}
+.Write-to-radio-btn-sect h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #000000;
+    padding-bottom: 10px;
+}
+.Write-to-radio-btn-sect .custom-radio-btn {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 26px;
+    color: #000000;
+}
+.Write-to-radio-btn-sect .custom-radio-btn input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.Write-to-radio-btn-sect .checkmark {
+    position: absolute;
+    top: 2.5px;
+    left: 0px;
+    height: 21.33px;
+    width: 21.33px;
+    background: #F8F8F8;
+    border-radius: 50%;
+    border: 1.5px solid #E8E9EB;
+    box-sizing: border-box;
+}
+.Write-to-radio-btn-sect .custom-radio-btn input:checked ~ .checkmark {
+    background-color: #ffffff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Write-to-radio-btn-sect .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.Write-to-radio-btn-sect .custom-radio-btn input:checked ~ .checkmark:after {
+    display: block;
+}
+.Write-to-radio-btn-sect .custom-radio-btn .checkmark:after {
+    top: -1px;
+    left: 0px;
+    width: 24.33px;
+    height: 24.33px;
+    border-radius: 50%;
+    background: url(../images/hAdminChecked.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Ticket-Status-content{
+    height: auto !important;
+}
+.Create-Support-Ticket-sect-Admin {
+    background: #FFFFFF;
+    border-radius: 2px;
+    box-sizing: border-box;
+    height: auto;
+    margin-bottom: 150px;
+    padding-bottom: 24px;
+}
+.Create-Support-Ticket-sect-Admin .Create-Support-dropdown-left .timeSetting-content{
+    box-shadow: none;
+    height: auto;
+}
+.Create-Support-Ticket-sect-Admin .Create-Support-dropdown-left{
+    padding-bottom: 20px;
+}
+.Create-Support-Ticket-sect-Admin .Create-Support-dropdown-right {
+    margin-top: 0px;
+}
+.Create-Support-Ticket-sect-Admin .HelpCenter-Resume-Writing-Sect {
+    margin-bottom: 2px;
+    margin-top: 0px;
+}
+.Create-Support-dropdown-left .timeSetting-droplist{
+    outline: none;
+}
+.onkeypress-contentAdmin{
+    padding: 0px;
+}
+.onkeypress-contentAdmin ul{
+    width: 101%;
+    margin-left: -1px;
+}
+.onkeypress-contentAdmin ul li{
+    margin-bottom: 0px;
+    height: 51px;
+    border-bottom: 2px solid #D4D8DD;
+    padding: 10px;
+}
+.no-border{
+    border: none !important;
+}
+.Admin-selectAll-defult{
+    display: none;
+}
+.Admin-selectAll-defult input{
+    outline: none;
+    width: 100%;
+    height: 49px;
+    padding: 14px 16px;
+    background: #EDEDED;
+    border: 1px solid #EDEDED;
+    border-radius: 2px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #8A9099;
+}
+.active-green-dot .active{
+    background: #2BBD54;
+    border: 1px solid #F8F8F8;
+    box-sizing: border-box;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    margin-top: 21px;
+    margin-left: -9px;
+}
+.Dactive-dot .Dactive{
+    background: #D4D8DD;
+    border: 1px solid #F8F8F8;
+    box-sizing: border-box;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    margin-top: 21px;
+    margin-left: -9px;
+}
+.Ticket-ID-modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000000;
+}
+.Ticket-ID-popUp-sect{
+    background: #FFFFFF;
+    max-width: 380px;
+    text-align: center;
+    padding: 24px;
+    margin: auto;
+}
+.admin-Ticket-ID-Modal .modal-content{
+    max-width: 380px;
+    margin: auto;
+    border-radius: 0px;
+}
+.Ticket-ID-popUp-tittle{}
+.Ticket-ID-popUp-tittle .Ticket-ID-close{
+    text-align: right;
+    margin-right: -10px;
+    margin-top: -15px;
+    opacity: 1;
+}
+.Ticket-ID-popUp-tittle h1 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #000000;
+    margin-top: 3px;
+}
+.Ticket-ID-popUp-sect .Participents h2{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #8A9099;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    display: flex;
+}
+.Ticket-ID-Add-People{
+    display: flex;
+    align-items: center;
+}
+.Ticket-ID-Add-People .Add-People-img{
+    background: #FFFFFF;
+    border: 1px solid #D4D8DD;
+    box-sizing: border-box;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.Ticket-ID-Add-People .Add-People-text{
+    width: 77px;
+    margin-left: 13px;
+}
+.Ticket-ID-Add-People .Add-People-text h3 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 180%;
+    color: #1E1F2D;
+    padding-top: 5px;
+}
+.active-status .active{
+    background: #2BBD54;
+    border: 1px solid #F8F8F8;
+    box-sizing: border-box;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    margin-top: 21px;
+    margin-left: -9px;
+}
+.Add-People-list{
+    border: 1px solid #D4D8DD;
+    box-sizing: border-box;
+    background: #ffffff;
+    margin-top: 24px;
+}
+.Add-People-list ul{
+    
+}
+.Add-People-list ul li{
+    height: 50px;
+    border-bottom: 1px solid #D4D8DD;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+}
+.Add-People-list-show-more{
+    text-align: right;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+.Add-People-list-show-more a {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 140%;
+    color: #7521E2;
+    
+}
+.Ticket-ID-Thread-Gallery h1 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #8A9099;
+    border-bottom: 1px solid #D4D8DD;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: flex;
+}
+.Thread-Gallery-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+}
+.Thread-Gallery-img img{
+    width: 49.7%;
+    opacity: 1;
+}
+.Thread-SETTINGS-headings h1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #8A9099;
+    border-bottom: 1px solid #D4D8DD;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    display: flex;
+}
+.Transfer_Ticket_collapsible {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 100%;
+    background: #ffffff;
+    outline: none;
+    border: none;
+    padding: 0px;
+    border-bottom: 1px solid #D4D8DD;
+}
+.Transfer_Ticket_collapsible h6{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #7521E2;
+    padding-top: 8px;
+    width: 101px;
+}
+.Transfer_Ticket_collapsible:focus-within{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #D4D8DD;
+}
+.Transfer_Ticket_collaps{
+  display: none;
+  overflow: hidden;
+}
+.Add-People-list-confirm-btn{
+    text-align: right;
+}
+.transfer-ticket-user-name h5 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 180%;
+    color: #1E1F2D;
+    text-align: left;
+}
+.Transfer_Ticket_collaps .btn-Confirm{
+    background: #ffffff;
+    text-align: right;
+    height: 22px;
+    width: 67px;
+    border: 1px solid #2BBD54;
+    box-sizing: border-box;
+    border-radius: 40px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Transfer_Ticket_collaps .btn-Confirm a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 180%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2BBD54;
+    margin-top: -2px;
+}
+.Transfer_Ticket_collaps ul li .user-dp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.Transfer_Ticket_collaps ul li:hover{
+    border: 1px solid #2BBD54 !important;
+}
+.Transfer_Ticket-collpse-minus{
+    display: none;
+}
+.TiCKET-Status-headings{
+    margin-top: 20px;
+}
+.TiCKET-Status-headings h1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #8A9099;
+    border-bottom: 1px solid #D4D8DD;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    display: flex;
+}
+.TiCKET-Status-checkbox{
+    margin-top: 11px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    
+}
+.TiCKET-Status-checkbox .Sloved {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 140%;
+    color: #2BBD54;
+    padding-right: 15px;
+}
+.TiCKET-Status-checkbox .Closed-act{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 140%;
+    color: #3F434A;
+    opacity: 1;
+    padding-right: 15px;
+    margin-left: 24px;
+}
+.TiCKET-Status-checkbox .Closed{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 140%;
+    color: #3F434A;
+    opacity: 0.2;
+    padding-right: 15px;
+    margin-left: 24px;
+}
+.TiCKET-Status-checkbox input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E8E9EB;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.TiCKET-Status-checkbox  input[type="checkbox"]:after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f00c";
+    font-size: 10px;
+    color: white;
+    display: none;
+}
+.TiCKET-Status-checkbox input[type="checkbox"]:checked{
+    background: #FF8A00;
+    border: none;
+}
+.TiCKET-Status-checkbox input[type="checkbox"]:checked:after{
+    display: block;
+}
+.TiCKET-Status-Leave-conversation{
+    margin-top: 18px;
+    margin-bottom: 48px;
+}
+.TiCKET-Status-Leave-conversation h1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #D4D8DD;
+    display: flex;
+}
+.TiCKET-Status-Leave-conversation-act h1{
+    color: #F03B31;
+}
+.Add-People-list .share-ticket-user-name h5{
+    font-size: 13px;
+    text-align: left;
+    line-height: 180%;
+}
+.Add-People-list .user-dp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.Add-People-list .user-dp .btn-Remove{
+    outline: none;
+    border: 1px solid #F03B31;
+    box-sizing: border-box;
+    border-radius: 40px;
+    height: 22px;
+    width: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+}
+.Add-People-list .user-dp .btn-Remove a {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 180%;
+    display: flex;
+    align-items: center;
+    color: #F03B31;
+}
+.Ticket-ID-Thread-Gallery-modal .modal-dialog{
+    max-width: 846px;
+    margin: auto;
+    
+}
+.Ticket-ID-Thread-Gallery-modal .modal-content{
+    max-width: 846px;
+    background: #ffffff;
+    margin: auto;
+    margin-top: 150px;
+}
+.Ticket-ID-Thread-Gallery-modal .Thread-Gallery-modal-left-img{
+    border-right: 1px solid #D4D8DD;
+    width: 85%;
+    padding: 24px 20px 21px 24px;
+}
+.Ticket-ID-Thread-Gallery-modal .doc-back{
+    display: none;
+}
+.modal-content-body{
+    display: flex;
+}
+.Thread-Gallery-modal-right-img{
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px;
+}
+.Thread-Gallery-modal-right-img img{
+    margin-bottom: 10px;
+}
+.Ticket-ID-Thread-Gallery-modal-close{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+.TiCKET-Status-checkbox .checkbox{
+    display: flex;
+    align-items: center;
+}
+
+
+@media(max-width: 991px){
+    .Create-Support-Ticket-sect-Admin .HelpCenter-Resume-Writing-Sect {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 359px){
+    .Add-People-list .share-ticket-user-name h5{
+        font-size: 11px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

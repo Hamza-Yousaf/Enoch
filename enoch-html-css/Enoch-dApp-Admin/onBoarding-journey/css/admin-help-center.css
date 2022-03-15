@@ -1,0 +1,368 @@
+.admin-helpCenter-table-draft .tableHeading .tableCell:nth-child(1), .admin-helpCenter-table-draft .tableRowHeader .tableCell:nth-child(1) {
+    width: 9%;
+}
+.admin-helpCenter-table-draft .tableHeading .tableCell:nth-child(2), .admin-helpCenter-table-draft .tableRowHeader .tableCell:nth-child(2) {
+    width: 8%;
+}
+.admin-helpCenter-table-draft .tableHeading .tableCell:nth-child(3), .admin-helpCenter-table-draft .tableRowHeader .tableCell:nth-child(3) {
+    width: 12%;
+}
+.admin-helpCenter-table-draft .tableHeading .tableCell:nth-child(4), .admin-helpCenter-table-draft .tableRowHeader .tableCell:nth-child(4) {
+    width: 28%;
+}
+.admin-helpCenter-table-draft .tableHeading .tableCell:nth-child(5), .admin-helpCenter-table-draft .tableRowHeader .tableCell:nth-child(5) {
+    width: 37%;
+}
+.admin-helpCenter-table-draft .tableHeading .tableCell:nth-child(6), .admin-helpCenter-table-draft .tableRowHeader .tableCell:nth-child(6) {
+    width: 16%;
+}
+.admin-helpCenter-table-draft .tableRowHeader{
+	font-weight:400;
+	font-size:15px;
+}
+.admin-helpCenter-table-draft .tableCell-txt{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #3F434A;
+}
+
+.msg-thread-head a{
+	color: #7521E2;
+}
+.msg-thread-head span{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 10px;
+	line-height: 14px;
+	text-transform: uppercase;
+	color: #C6C9CC;
+	text-align:center;
+	display:block;
+}
+.admin-white-bg{
+	background:#fff;
+}
+.tableRow-collapse-block-right{
+	position:relative;
+}
+.msg-thread-collapse-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+}
+/*modal*/
+.addthread-modal-block .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999999;
+    padding-top: 0px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+    opacity: 1;
+}
+.addthread-modal-block .close {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    opacity: 1!important;
+    cursor: pointer;
+
+}
+.addthread-modal-block  .modal-content {
+    margin: auto;
+    border: none;
+    width: 100%;
+    align-items: flex-start;
+    max-width: 380px;
+    margin: auto;
+	padding:24px;
+	background: #fff;
+    /* margin-bottom: 80px; */
+   
+}
+.addthread-modal-block .modal.open{
+	display:flex;
+}
+.addthread-body {
+    width: 100%;
+}
+
+.addthread-body h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    text-align: center;
+	margin-bottom:24px;
+}
+.threadCat-drop-box {
+    max-width: 380px;
+    position: relative;
+}
+.threadCat-droplist {
+    border: 1px solid #E8E9EB;
+    box-sizing: border-box;
+    border-radius: 2px;
+    max-width: 380px;
+    display: flex;
+    width: 100%;
+    height: 48px;
+    align-items: center;
+    padding: 0px 16px;
+    overflow: hidden;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #8A9099;
+}
+.threadCat-droplist:hover{
+	color: #8A9099;
+}
+.threadCat-droplist:after {
+    content: "\f107";
+    font-family: fontawesome;
+    position: absolute;
+    top: 0;
+    right: 18px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #8A9099;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.threadCat-content{
+	background: #FFFFFF;
+    border: 1px solid #D4D8DD;
+    box-sizing: border-box;
+	padding: 24px 16px;
+	display:none;
+	position: absolute;
+    width: 100%;
+}
+.threadCat-content.show{
+	display:block;
+}
+.threadCat-content ul li {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #3F434A;
+    margin-bottom: 19px;
+	cursor:pointer;
+	transition:ease .2s;
+}
+.threadCat-content ul li:hover{
+	font-weight:700;
+}
+.threadCat-content ul li:last-child{
+	margin-bottom:0px;
+}
+.addthread-body h3{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #8A9099;
+    margin-top: 18px;
+    text-align: left;
+    margin-bottom: 13px;
+    border-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+
+.suggested-user-block {
+    display: flex;
+    justify-content: space-between;	
+    align-items: center;
+}
+.suggested-user{
+	    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 180%;
+    color: #1E1F2D;
+}
+.suggested-user img{
+	max-width:30px;
+}
+.suggested-list-block-inner ul{
+	border: 1px solid #D4D8DD;
+}
+.suggested-list-block-inner ul li{
+	padding:10px;
+	border-bottom: 1px solid #D4D8DD;
+}
+.suggested-list-block-inner ul li:last-child{
+	border-bottom:0px;
+}
+
+/* The suggested-user-container */
+.suggested-user-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.suggested-user-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.suggested-user-checkmark {
+    position: absolute;
+    top: -6px;
+    right: 0;
+    height: 21px;
+    width: 21px;
+   background: #F8F8F8;
+    border-radius: 50%;
+    border: 1.5px solid #E8E9EB;
+    box-sizing: border-box;
+}
+
+
+
+/* When the radio button is checked, add a blue background */
+.suggested-user-container input:checked ~ .suggested-user-checkmark {
+      background: url(../images/sChecked.png) no-repeat;
+    border: 0px;
+    overflow: visible;
+    width: 27px;
+    height: 23px;
+	margin-right: -5px;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.suggested-user-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.suggested-btn{
+	width:88px;
+	height:30px;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 16px;
+}
+.suggested-btn-block {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+.suggested-list-block {
+    height: 300px;
+    overflow-y: scroll;
+    overflow-x: auto;
+	position:relative;
+}
+.suggested-list-block::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 20px;
+}
+/* Track */
+.suggested-list-block::-webkit-scrollbar-track {
+  background:#F8F8F8;
+  border-radius: 1px;
+}
+.suggested-list-block::-webkit-scrollbar-thumb {
+    background: #8A9099;
+    border-radius: 20px;
+    border-left: 2px solid #F8F8F8;
+    border-right: 2px solid #F8F8F8;
+    position: absolute;
+    right: 10px;
+}
+.suggested-list-block-inner {
+    margin-right: 12px;
+}
+.disable-user{
+	opacity:0.5;
+}
+.Thread-Gallery-img span:first-child{
+	margin-right:4px;
+}
+.Thread-Gallery-img img {
+    width: 100%;
+}
+.user-dp-after-select .dp{
+	width:40px;
+}
+.business-ops{
+	text-transform:uppercase;
+}
+.qout-bottm-txt2 {
+    border-top: 1px solid #FFFFFF;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+}
+.qout-green-clr{
+	    color: #065B1E !important;
+}
+/*responsive*/
+@media only screen and (max-width: 1280px){
+		.admin-helpCenter-table-draft .tableHeading .tableCell:nth-child(6), .admin-helpCenter-table-draft .tableRowHeader .tableCell:nth-child(6) {
+    width: 29%;
+}
+}
+@media only screen and (max-width: 1024px){
+.admin-helpCenter-table-draft{
+    width: 100%;
+}
+
+.admin-helpCenter-table-draft .tableHeading .tableCell:nth-child(6), .admin-helpCenter-table-draft .tableRowHeader .tableCell:nth-child(6) {
+    width: 18%;
+}
+.admin-helpCenter-table-draft .tableHeading .tableCell:nth-child(4), .admin-helpCenter-table-draft .tableRowHeader .tableCell:nth-child(4) {
+    width: 18%;
+}
+.admin-helpCenter-table-draft .tableHeading .tableCell:nth-child(3), .admin-helpCenter-table-draft .tableRowHeader .tableCell:nth-child(3) {
+    width: 21%;
+}
+.admin-helpCenter-table-draft .tableHeading .tableCell:nth-child(5), .admin-helpCenter-table-draft .tableRowHeader .tableCell:nth-child(5) {
+    width: 48%;
+}
+}
+@media only screen and (max-width: 991px){
+	.admin-helpCenter-table-draft .tableCell-txt{
+		font-size;12px;
+	}
+}
+@media only screen and (max-width: 768px){
+	.admin-helpCenter-table-draft {
+    width: 717px;
+}
+}

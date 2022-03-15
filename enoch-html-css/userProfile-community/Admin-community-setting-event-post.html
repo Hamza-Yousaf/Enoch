@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>HOME</title>
+	<!-- Fav Icons -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/dashboard-header.css" rel="stylesheet" />
+	<link href="css/dashboard-style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/dApp-S-home.css" />
+	<link rel="stylesheet" href="css/community.css" />
+    <link rel="stylesheet" href="css/home-post.css" />
+	<link rel="stylesheet" href="css/community-setting-style.css" />
+</head>
+
+<body>
+	<div class="container-fluid dashboard-body-bg second-body-bg">
+	<div class="row">
+		<header class="custom-header">			
+			<div class="ezl-dashboard-header">
+				<div class="menu-left">
+					<div class="menu-wrap"><!--trade menu-->
+						<a href="#menu" class="menu-link" onclick="tradeFunction()"><img src="images/Menu.png" alt="Menu" class="img-fluid"/></a>
+						<div class="tradecontainer" id="trademenu-drpdown">
+						  <div class="trade-menu-panel-panel-group" id="accordionMenu" role="tablist" aria-multiselectable="true">
+							<div class="trade-menu-panel">
+							  <div class="trade-menu-heading" role="tab">
+								<h4 class="trade-menu-title">
+								<a role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+								  <span><img src="images/Over.png" class="img-fluid" alt="Overview"/></span>Overview
+								</a>
+							  </h4>
+							  </div>
+							 
+							</div>
+							<div class="trade-menu-panel">
+							  <div class="trade-menu-heading" role="tab" id="headingTwo">
+								<h4 class="trade-menu-title">
+								<a class="collapsed trade-dropmenu" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								 <span><img src="images/Borrow.png" class="img-fluid trade-menu-icon" alt="Trade"/><img src="images/Borrow2.png" class="img-fluid trade-menu-icon-active" alt="Trade"/></span>Trade
+								</a>
+							  </h4>
+							  </div>
+							  <div id="collapseTwo" class="trade-menu-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+								<ul class="nav">
+									<li><a href="#!">Swap</a></li>
+									<li><a href="#!" class="trade-menuItem-active">Liquidity</a></li>
+								  </ul>
+							  </div>
+							</div>
+							<div class="trade-menu-panel">
+							  <div class="trade-menu-heading" role="tab" id="headingThree">
+								<h4 class="trade-menu-title">
+								<a class="collapsed trade-dropmenu" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								 <span><img src="images/pools.png" class="img-fluid trade-menu-icon" alt="pools"/><img src="images/pools2.png" class="img-fluid trade-menu-icon-active" alt="pools"/></span>Pools
+								</a>
+							  </h4>
+							  </div>
+							  <div id="collapseThree" class="trade-menu-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+								<ul class="nav">
+									<li><a href="#!" class="trade-menuItem-active">Entertainment Pools</a></li>
+									<li><a href="#!">NFT Farming Pools</a></li>
+								  </ul>
+							  </div>
+							</div>
+							
+							
+							<div class="trade-menu-panel">
+							  <div class="trade-menu-heading" role="tab" id="headingFour">
+								<h4 class="trade-menu-title">
+								<a class="collapsed trade-dropmenu" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								  <span><img src="images/menuStacking.png" class="img-fluid trade-menu-icon" alt="Staking"/><img src="images/menuStacking2.png" class="img-fluid trade-menu-icon-active" alt="Staking"/></span>Staking
+								</a>
+							  </h4>
+							  </div>
+							  <div id="collapseFour" class="trade-menu-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+								
+								  <ul class="">
+									<li><a href="#!">Enoch Staking</a></li>
+									<li><a href="#!" class="trade-menuItem-active">NFT staking</a></li>
+								  </ul>
+							
+							  </div>
+							</div>
+							
+						  </div>
+						</div>
+					</div>
+					<div class="header-logo"><a href="javascript:void(0)"><img src="images/logo.png" alt="logo" class="img-fluid"/><span class="onboard-beta">BETA</span></a></div>
+				</div>
+				<div class="menuright-side">
+					<div class="right-search">
+						<form class="search-form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Search">
+									<button class="search-form-btn" type="Submit"><img class="search-img" src="images/search.png" alt="search"></button>
+							</div>
+						</form>
+					</div>
+					<div class="menu-mid-sect">
+						<ul id="submenubar">
+							<li class="submenubar-item">
+								<div class="menu-times-notifi"><img src="images/home.png" alt="home" class="img-fluid"/></div>
+								<a href="javascript:void(0)">Home</a>
+							</li>
+							
+							<li class="submenubar-item">
+								<div class="menu-times-notifi"><img src="images/Chat.png" alt="Chat" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">Messaging</a>
+							</li>
+							<li class="ether-block">
+								<div class="menu-times-notifi mr-2"><img src="images/Ethereum.png" alt="Ethereum" class="img-fluid"/></div>
+								<a href="javascript:void(0)">ETH Mainnet <i class="fa fa-angle-right"></i></a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)">Connect Wallet</a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)"><span><img src="images/cart.png" class="img-fluid mr-2"/></span>Cart</a>
+							</li>
+							
+						</ul>
+						<div class="toggle-menu">
+								<div onclick="subtogglediv('submenubar','submenu-toggle');" class="d-inline-block">
+									<i class="fa fa-bars" aria-hidden="true" id="submenu-toggle"></i>
+								</div>
+							</div>
+					</div>
+					
+					<div class="ezl-notificaion">
+					<div class="position-relative notificaion-dropdown ezl-notificaion-marg">
+						<a href="javascript:void(0)" class="popup"><img src="images/help.png" alt="help"/></a>							
+											
+					</div>
+					<div class=" position-relative notificaion-dropdown">
+						<a href="javascript:void(0)" class="popup"><img src="images/alertBell.png" alt="Bell"><span class="notificaion-spn">10</span></a>							
+						
+					</div>
+					</div>
+					<div class="ezl-user-ac">
+					
+					<div class="account-d dropdown">
+						<div class="dropdown-buttn"><span class="popup" onclick="popupFunction()"><div class="user-img"><img src="images/user-ReginaCooper.png" alt="user image" class="img-fluid"/></div></span>
+							<div class="popupbox dropdown-menu" id="myPopup">
+								
+								<ul class="">
+									<li>
+										<div  class="enoch-usr-prof"><span><img src="images/user-pro-pic.png" class="img-fluid mr-1" alt="profile- pic"/> @Hulk66</span><span><a href="#!">Change</a></span></div>
+									</li>
+									<li>
+										<div class="enoch-usr-status-block">
+											<div class="usr-status-left">Online Status</div>
+											<div class="usr-status-right">
+												<div class="post-switch">
+													<label class="postswitch">
+													  <input type="checkbox" checked>
+													  <span class="post-slider round"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="enoch-usr-status-block"><a href="#!">Become Creator </a></div>
+										<div class="enoch-usr-status-block mb-0"><a href="#!" class="enoch-blue-clr">Your Public Profile</a></div>
+									</li>
+									<li>
+										<div class="enoch-usr-status-block"><a href="#!">Setting </a></div>
+										<div class="enoch-usr-status-block"><a href="#!">Help Center</a></div>										
+										<div class="enoch-usr-status-block mb-0"><a href="#!" class="orange-clr">Upgrade to Premium</a></div>
+									</li>
+									<li class="mt-4">
+										<div class="enoch-usr-status-block mb-0">Wallet  <span><a href="#!" class="btn freebonus-btn">$400 </a></span></div>
+									</li>
+									<li class="mt-4 pb-0">
+										<div class="enoch-usr-status-block mb-0 manage-ac">
+											<h3>Manage</h3>
+											<ul>
+												<li>
+													<div class="manage-ac-block">
+														<span>Comapny:	</span>
+														<span class="ml-1"><img src="images/man-icon1.png" class="img-fluid mr-1" alt="user"/>88mph  </span>
+													</div>
+												</li>
+												<li>
+													<div class="manage-ac-block">
+														<span>Comapny:	</span>
+														<span class="ml-1"><img src="images/man-icon2.png" class="img-fluid mr-1" alt="user"/>CryptoBlue    </span>
+													</div>
+												</li>
+											</ul>
+										</div>
+										
+									</li>
+									<li class="mb-0 pb-0">
+										<div class="enoch-usr-status-block mb-0"><a href="#!" class="post-red-clr">Logout</a></div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>				
+			</div>
+			
+			<div class="dApp-menu-btn">
+				<a href="#!"><img src="images/LeftSide-Menu.png" alt="menu" class="img-fluid"  data-toggle="modal" data-target="right-top-modal" /></a>
+				<div class="right-top-modal-block">
+					<div id="right-top-modal" class="modal fade">
+						<!-- Modal content -->
+						<div class="modal-content right-top-modal-content">
+							<span class="close"><img src="images/postCross2.png" alt="close" class="img-fluid" data-dismiss="modal"></span>
+							<div class="right-top-body-block">
+								<div class="right-top-body-block-lft">
+									<form class="right-search-form">
+										<div class="right-form-group">
+											<img src="images/help-Search.png" class="img-fluid" alt="search"/><input type="text" class="form-control" placeholder="Search menu...">
+												
+										</div>
+									</form>
+									<div class="enoch-community-scrollable">
+									<div class="enoch-menu-block-panel">
+										<div class="enoch-menu-block-lft">
+											<div class="enoch-menu-block-items">
+												<h2>Personal</h2>
+												<ul>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon1.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">NFT Vault </a>
+																<p>Organise or find events and other things
+																	to do online and nearby</p>
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon2.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Earning </a>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon28.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Wallet</a>
+															<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon3.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Billing</a>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon29.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Membership</a>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon35.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Ranking</a>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</div>
+													</li>
+													
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon4.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Affiliate</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="enoch-menu-block-items">
+												<h2>Entertainment</h2>
+												<ul>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon11.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Popular</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon30.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Casino</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon31.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Sports</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon32.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Games</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon16.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Promotions</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="enoch-menu-block-items">
+												<h2>Advertising</h2>
+												<ul>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon19.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Ad Manager </a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon20.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Enoch Ad</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+														
+														</div>
+													</li>
+													
+												</ul>
+											</div>
+											<div class="enoch-menu-block-items mb-0">
+												<h2>User Setting </h2>
+												<ul>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon26.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Your Profile </a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon27.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Your Account</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													
+												</ul>
+											</div>
+										</div>
+										<div class="enoch-menu-block-right">
+											<div class="enoch-menu-block-items">
+												<h2>Social</h2>
+												<ul>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon5.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">My Networks</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon6.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Communities</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon33.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Creator Portals </a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon36.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Livezone</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon8.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Company pages </a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon9.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Events</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon37.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">News Feed </a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="enoch-menu-block-items">
+												<h2>Shopping</h2>
+												<ul>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon34.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Digital  Marketplace</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon38.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Enoch Shops</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="enoch-menu-block-items">
+												<h2>Jobs</h2>
+												<ul>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon18.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Remote workhub</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													
+												</ul>
+											</div>
+											<div class="enoch-menu-block-items">
+												<h2>Developer</h2>
+												<ul>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon21.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Develop</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon22.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Grow</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon23.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Monetisation </a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													 <li>
+														<div class="right-modal-lft"><img src="images/menu-icon24.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Github</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon25.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Docs</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li> 
+													
+												</ul>
+											</div>
+										</div>
+									</div>
+									</div>
+								</div>
+								<div class="right-top-body-block-right">
+									<h3>Create</h3>
+									<ul>
+										<li><a href="#!"><span><img src="images/creat-icon1.png" class="img-fluid" alt="icon"/></span> Post</a></li>
+										<li><a href="#!"><span><img src="images/creat-icon2.png" class="img-fluid" alt="icon"/></span> Community</a></li>
+										<li><a href="#!"><span><img src="images/creat-icon5.png" class="img-fluid" alt="icon"/></span> Event</a></li>
+										<li><a href="#!"><span><img src="images/creat-icon10.png" class="img-fluid" alt="icon"/></span> NFT</a></li>
+										<li><a href="#!"><span><img src="images/creat-icon11.png" class="img-fluid" alt="icon"/></span> Reel</a></li>
+										<li><a href="#!"><span><img src="images/creat-icon14.png" class="img-fluid" alt="icon"/></span> Company page </a></li>
+										<li><a href="#!"><span><img src="images/creat-icon12.png" class="img-fluid" alt="icon"/></span> Group</a></li>
+										<li><a href="#!"><span><img src="images/creat-icon7.png" class="img-fluid" alt="icon"/></span> Job</a></li>								
+										<li><a href="#!"><span><img src="images/creat-icon13.png" class="img-fluid" alt="icon"/></span> AD </a></li>									 
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>								
+				</div>
+				</div>
+		</header>
+	</div>	
+	<div class="row">	
+		<div class="ezl-dashboard-container">			
+			<div class="posting-steps-block">
+				<div class="posting-steps-block-left">
+						<div class="community-post-content-body">
+							<h2 class="border-0">Create Post</h2>
+							<div class="community-post-To">
+								<div class="event-form-input dropdown">
+									<div class="community-post-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<img src="images/Community-Info.png" class="img-fluid mr-1" alt="info"/><span id="dropdown-boxId22">88mph</span>
+									</div>
+									<div id="create-event-dropList33" class="dropdown-menu create-drop-list-quantity">
+									  <ul>
+										<li><img src="images/defi.png" class="img-fluid" alt="defi"/><span>DeFi Signal</span> </li>
+										<li><img src="images/postUser2.png" class="img-fluid" alt="defi"/><span>88mph</span></li>
+										
+									  </ul>
+									</div>
+								  </div>
+							</div>
+							<div class="community-post-title">
+								<input type="text" placeholder="Title">
+							</div>
+							<div class="community-post-textarea">
+								<div class="posting-steps-topBar">
+									<ul>
+									  <li><img src="images/Ebold.png" class="img-fluid" alt="Ebold"></li>
+									  <li><img src="images/Eitalic.png" class="img-fluid" alt="Eitalic"></li>
+									  <li><img src="images/Eunderline.png" class="img-fluid" alt="Eunderline"></li>
+									  <li><img src="images/strikeThrough.png" class="img-fluid" alt="strikeThrough"></li>
+									  <li class="mr-5"><img src="images/Esmile.png" class="img-fluid" alt="Esmile"></li>
+									  <li><img src="images/Etextalign.png" class="img-fluid" alt="Etextalign"></li>
+									  <li><img src="images/EDropdown.png" class="img-fluid" alt="EDropdown"></li>
+									  <li><img src="images/EDropdown2.png" class="img-fluid" alt="EDropdown"></li>
+									  <li><img src="images/Eindent.png" class="img-fluid" alt="Eindent"></li>
+									  <li class="mr-5"><img src="images/outdent.png" class="img-fluid" alt="outdent"></li>
+									  <li><img src="images/EinsertImage.png" class="img-fluid" alt="EinsertImage"></li>
+									  <li><img src="images/EinsertLink.png" class="img-fluid" alt="EinsertLink"></li>
+									  <li><img src="images/EinsertVideo.png" class="img-fluid" alt="EinsertVideo"></li>
+									  <li><img src="images/redo.png" class="img-fluid" alt="redo"></li>
+									  <li><img src="images/undo.png" class="img-fluid" alt="undo"></li>
+									</ul>
+								</div>
+								<textarea placeholder="Text (optional)"></textarea>
+							</div>
+							<h3>Posts to</h3>
+							<div class="community-post-To">
+								<div class="event-form-input dropdown">
+									<div id="dropdown-boxId3" class="community-post-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Enoch/Community Name
+									</div>
+									<div id="create-event-dropList23" class="dropdown-menu create-drop-list-quantity">
+									  <ul>
+										<li><img src="images/defi.png" class="img-fluid" alt="defi"/><span>DeFi Signal</span> </li>
+										<li><img src="images/postUser2.png" class="img-fluid" alt="defi"/><span>88mph</span></li>
+										
+									  </ul>
+									</div>
+								  </div>
+							</div>
+							<div class="posting-steps-bottm-sect border-0">
+								<div class="posting-steps-bottm-links">
+									<ul>
+										<li class="posingtablinks photo-title" onclick="helpfunction(event, 'Photo')">
+											<a href="javascript:void(0) photo-title"><img src="images/post-icon1.png" class="img-fluid posting-link-img" alt="images"/><img src="images/post-icon1-hov.png" class="img-fluid posting-link-img-hov" alt="images"/><span class="posting-hovr">Photo</span></a>
+										</li>
+										<li class="posingtablinks video-title" onclick="helpfunction(event, 'Video')">
+											<a href="javascript:void(0)"><img src="images/post-icon2.png" class="img-fluid posting-link-img" alt="images"/><img src="images/post-icon2-hov.png" class="img-fluid posting-link-img-hov" alt="images"/><span class="posting-hovr">Video</span></a>
+										</li>
+										<li class="posingtablinks doc-title" onclick="helpfunction(event, 'Documents')">
+											<a href="javascript:void(0)"><img src="images/post-icon3.png" class="img-fluid posting-link-img" alt="images"/><img src="images/post-icon3-hov.png" class="img-fluid posting-link-img-hov" alt="images"/><span class="posting-hovr custm-left">Documents</span></a>
+										</li>
+										<li class="posingtablinks poll-title" onclick="helpfunction(event, 'Poll')">
+											<a href="javascript:void(0)"><img src="images/post-icon4.png" class="img-fluid posting-link-img" alt="images"/><img src="images/post-icon4-hov.png" class="img-fluid posting-link-img-hov" alt="images"/><span class="posting-hovr">Poll</span></a>
+										</li>
+										<li class="posingtablinks celeb-title" onclick="helpfunction(event, 'Celebrate')">
+											<a href="javascript:void(0)"><img src="images/post-icon5.png" class="img-fluid posting-link-img" alt="images"/><img src="images/post-icon5-hov.png" class="img-fluid posting-link-img-hov" alt="images"/><span class="posting-hovr custm-left2">Celebrate</span></a>
+										</li>
+										<li class="posingtablinks help-title">
+											<a href="javascript:void(0)"><img src="images/post-icon6.png" class="img-fluid" alt="images"/><span class="posting-hovr">Help</span></a>
+										</li>
+									</ul>
+								</div>
+								<div class="posting-steps-btn-links">
+									
+									<span class="mr-2">
+										<div class="sve_draft_btn">
+										<button class="sve_drft">Save Draft</button>
+										<div class="d-flex"><button class="sve_drft2" id="btn-1"  disabled>Post</button><span  class="clndr_img" data-toggle="modal" data-target="#Calender_avex"><img class="" src="images/Calendar.svg" alt="img"></span></div>
+									</div>
+										
+									</span>
+									
+								</div>
+							</div>
+						</div>
+
+				</div>
+				<div class="posting-steps-block-right">
+					<div class="posting-steps-block-list">
+						<h2>Posting on Enoch</h2>
+						<ul>
+							<li>1. Remember the human</li>
+							<li>2. Behave like you would in real life</li>
+							<li>3. Look for the original source of content</li>
+							<li>4. Search for duplicates before posting</li>
+							<li>5. Read the community’s rules</li>
+						</ul>
+						
+					</div>
+					<p>Please be mindful of Enoch's <a href="#!">content policy</a> and practice good reddiquette.</p>
+				</div>
+			</div>
+		</div>
+		
+		
+	</div>
+	<!-- calender modal  -->
+
+<!-- Modal -->
+<div class="modal fade avex_calendr" id="Calender_avex" tabindex="-1" role="dialog" aria-labelledby="Calender_avex">
+	<div class="modal-dialog nfft_calender modal-dialog-centered">
+	  <div class="modal-content avex_calendr2">
+		<div class="modal-header_clndr">
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/modl_cross.svg" alt=""></span></button>
+		  <h3 class="heading_calndr">Schedule this post</h3>
+		  <hr>		  
+		</div>
+		
+		<div class="modal-body_nfft_calender_avex">
+		 <h3 class="sbmt">Repeat Time</h3>
+		 <div class="dte_clndr">
+			<div class="dte_avext_nft"><input type="text" placeholder="08/02/2022" class="datepicker_avex"></div>
+			<div class="tme_zne_title">
+			<input type="text" placeholder="08:00 AM" class="timepicker_avex">
+			</div>
+			<div class="pst_evnt_zne">
+			<h5 class="tme_zne">Time zone</h5>
+			
+			<div class="community-post-calender33" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			
+				<span id="dropdown-boxId22">(GMT+05:30) Asia - Kolkata</span>
+			</div>
+			
+		    </div>
+  
+		 </div>
+		 <div class="rpt_options">
+			 <h3>Repeat Options</h3>
+			</div>
+			<div class="dropdown evnt_avex">
+				<div class="community-post-calender" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			
+					<span id="dropdown-boxId22">Does not repeat</span>
+				</div>
+				<div class="drpdwn-lst_avex">
+					<ul>
+						<li class="avex_nft_evntclndr">
+							not repeat
+						</li>
+						<li>
+							not repeat
+						</li>
+						<li>
+							not repeat
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		     
+		<div class="adv_options">
+			<h3>Advanced Options</h3>
+		   </div>
+		   
+	<!-- Default comment order -->
+	<div class="community-avex_events">
+		<div class="event-form-input dropdown_events">
+			<div id="dropdown-boxId3" class="community-Events_avex1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Default comment order
+			</div>
+			<div id="create-event-dropList23" class="dropdown-menu_events_avex">
+			  <ul>
+				<li>comment order</li>
+				<li>comment order</li>
+				
+			  </ul>
+			</div>
+		  </div>
+		  <!-- Default comment order End -->
+
+		  <!-- Not a sticky post-->
+	
+	<div class="community-avex_events">
+		<div class="event-form-input dropdown_events2">
+			<div id="dropdown-boxId3" class="community-Events_avex12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Not a sticky post
+			</div>
+			<div id="create-event-dropList23" class="dropdown-menu_events_avex2">
+			  <ul>
+				<li>comment order</li>
+				<li>comment order</li>
+				
+			  </ul>
+			</div>
+		  </div>
+	</div>
+	 <!-- Not a sticky post End -->
+	
+	</div>
+	
+
+	
+
+
+	<div class="enoch_evnets">
+		<div class="usr-events">Online Status</div>
+		<div class="usr-status-event-right">
+			<div class="post-switch-event">
+				<label class="postswitch-event">
+				  <input type="checkbox">
+				  <span class="post-slider-events round"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="enoch_evnets">
+		<div class="usr-events">Post as AutoModerator</div>
+		<div class="usr-status-event-right">
+			<div class="post-switch-event">
+				<label class="postswitch-event">
+				  <input type="checkbox">
+				  <span class="post-slider-events round"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="notce-event">
+		<p>Note: This post will be Scheduled Posts in mod hub and editable.</p>
+	</div>
+		</div>
+		<div class="modal-footer_avex_events">
+			<span class="events_btns">
+				<button class="cncl_event" data-dismiss="modal">Cancle</button>
+				<button class="aply_evnt" data-dismiss="modal" onclick="enableButton2()">Apply</button>
+			</span>
+		 
+		</div>
+	  </div>
+	</div>
+  </div>
+	  
+
+		<!--  Modal end  -->
+	
+	</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+
+// When the user clicks, open the popup
+function popupFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+
+}
+
+// When the user clicks, open trade mennu
+function tradeFunction() {
+  var trade = document.getElementById("trademenu-drpdown");
+  trade.classList.toggle("show");
+}
+</script>
+<script>
+	/*for toggle sub menu*/
+		function subtogglediv(id, icon) {
+			var id = document.getElementById(id);
+			id.classList.toggle('submenu-active');
+			var cross = document.getElementById(icon);
+			cross.classList.toggle('fa-times');
+			cross.classList.toggle('fa-bars');
+		}
+		</script>
+		<script>
+	/*for Tab*/
+        function helpfunction(evt, faqName) {
+            var i, supporttabcontent, posingtablinks;
+            supporttabcontent = document.getElementsByClassName("supporttabcontent");
+            for (i = 0; i < supporttabcontent.length; i++) {
+                supporttabcontent[i].style.display = "none";
+            }
+            posingtablinks = document.getElementsByClassName("posingtablinks");
+            for (i = 0; i < posingtablinks.length; i++) {
+                posingtablinks[i].className = posingtablinks[i].className.replace(" posting-active", "");
+            }
+            document.getElementById(faqName).style.display = "block";
+            evt.currentTarget.className += " posting-active";
+        }
+		</script>
+		<script type="text/javascript">
+		/* for modal dropdown menu*/
+	    var dropdownpopup = document.querySelectorAll('[data-toggle=dropdownpopup]');
+	    for (var k = 0; k < dropdownpopup.length; k++) {
+	        dropdownpopup[k].addEventListener('click', function (e) {
+	            if (this.hasAttribute('data-link')) {
+	                var m_ID1 = this.getAttribute('data-link');
+	                //for closing other popup
+	                var activedropdown = document.querySelector('.dropdown-menu.drop-active');
+	                if(activedropdown && activedropdown.getAttribute('id') != m_ID1)
+	                {
+	                    activedropdown.classList.remove('drop-active');
+	                }
+	                //activting popup
+	                document.getElementById(m_ID1).classList.toggle('drop-active');
+	            }
+	        });
+	    }
+	 
+		
+
+	    //For modal
+		document.addEventListener('click', function (e) {
+	        e = e || window.event;
+	        var target = e.target || e.srcElement;
+
+	        if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') 
+	        {
+	            if (target.hasAttribute('data-target')) 
+	            {
+	                var m_ID = target.getAttribute('data-target');
+	                document.getElementById(m_ID).classList.add('open');
+	            }
+	        }
+
+	        // Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
+	        if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') ||target.classList.contains('modal')) {
+	            var modal = document.querySelector('.modal.open');
+	            modal.classList.remove('open');
+	        }
+        }, false);
+
+       //close first popup window
+	var modal = document.getElementById("post-user-modal2");
+	var btnmodal = document.getElementById("post-save-btn");
+	btnmodal.onclick = function() {
+	  modal.classList.remove('open');
+	  }
+	
+ 	</script>
+
+<script>
+	$(function(){
+	   $('.menu-mid-sect ul li.submenubar-item a').click(function(){
+		 $('.menu-mid-sect ul li.submenubar-item a').each(function(a){
+		   $( this ).removeClass('selectedclass')
+		 });
+		 $( this ).addClass('selectedclass');
+	   });
+	  
+	 });
+	</script>
+	<script>
+		//To post dropdown
+		var eTypeVal1 = document.getElementById("create-event-dropList33").querySelectorAll(".create-drop-list-quantity ul li span");
+		eTypeVal1.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('dropdown-boxId22').innerHTML = this.innerHTML;	        
+		 }
+		  
+        });
+		var eTypeVal = document.getElementById("create-event-dropList23").querySelectorAll(".create-drop-list-quantity ul li span");
+		eTypeVal.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('dropdown-boxId3').innerHTML = this.innerHTML;	        
+		 }
+		  
+        });
+	</script>
+	<script>
+        function enableButton2() {
+            document.getElementById("btn-1").disabled = false;
+        }
+    </script>
+
+</body>
+
+</html>

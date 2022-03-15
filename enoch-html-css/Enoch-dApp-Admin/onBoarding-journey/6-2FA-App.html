@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Authenticar App</title>
+	<!-- Fav Icons -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/dashboard-header.css" rel="stylesheet" />
+    <link href="css/dashboard-style.css" rel="stylesheet" />
+    <link href="css/helpCenterStyle.css" rel="stylesheet" />
+    <link href="css/help-center.css" rel="stylesheet" />
+    <link href="css/helpcenter-Admin.css" rel="stylesheet" />
+    <link href="css/admin-help-center.css" rel="stylesheet" />
+    <link href="css/admin-profile.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/OnBoardingJourney.css" />
+</head>
+
+<body>
+	<div class="container-fluid dashboard-body-bg">
+	<div class="row">
+		<header class="custom-header">			
+			<div class="ezl-dashboard-header">
+				<div class="menu-left">
+					<div class="menu-wrap">
+						<a href="#menu" class="menu-link"><img src="images/Menu.png" alt="Menu" class="img-fluid"/></a>
+					</div>
+					<div class="header-logo"><a href="javascript:void(0)"><img src="images/logo.png" alt="logo" class="img-fluid"/></a></div>
+				</div>
+				<div class="menuright-side">
+					<div class="right-search">
+						<form class="search-form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Fund, ISIN, Keyword ">
+									<button class="search-form-btn" type="Submit"><img class="search-img" src="images/search.png" alt="search"></button>
+							</div>
+						</form>
+					</div>
+					<div class="menu-mid-sect">
+						<ul id="submenubar">
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/home.png" alt="home" class="img-fluid"/></div>
+								<a href="javascript:void(0)">Home</a>
+							</li>
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/network.png" alt="network" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">My Network</a>
+							</li>
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/jobs.png" alt="jobs" class="img-fluid"/></div>
+								<a href="javascript:void(0)">Jobs</a>
+							</li>
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/Chat.png" alt="Chat" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">Messaging</a>
+							</li>
+							<li class="ether-block">
+								<div class="menu-times-notifi mr-2"><img src="images/Ethereum.png" alt="Ethereum" class="img-fluid"/></div>
+								<a href="javascript:void(0)">ETH Mainnet <i class="fa fa-angle-right"></i></a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)">Connect Wallet</a>
+							</li>
+							
+						</ul>
+						<div class="toggle-menu">
+								<div onclick="subtogglediv('submenubar','submenu-toggle');" class="d-inline-block">
+									<i class="fa fa-bars" aria-hidden="true" id="submenu-toggle"></i>
+								</div>
+							</div>
+					</div>
+					
+					<div class="ezl-notificaion">
+					<div class="position-relative notificaion-dropdown ezl-notificaion-marg">
+						<a href="javascript:void(0)" class="popup"><img src="images/help.png" alt="help"/></a>							
+											
+					</div>
+					<div class=" position-relative notificaion-dropdown">
+						<a href="javascript:void(0)" class="popup"><img src="images/alertBell.png" alt="Bell"><span class="notificaion-spn">10</span></a>							
+						
+					</div>
+					</div>
+					<div class="ezl-user-ac">
+					
+					<div class="account-d dropdown">
+						<div class="dropdown-buttn"><span class="popup" onclick="popupFunction()"><div class="user-img"><img src="images/user-ReginaCooper.png" alt="user image" class="img-fluid"></div></span>
+							<div class="popupbox dropdown-menu" id="myPopup">
+								<ul class="">
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+	
+				
+			</div>
+		</header>
+	</div>
+	<!--	
+	<div class="row">	
+		<div class="ezl-dashboard-container">			
+			<div class="Authenticar-App-body">
+			    <div class="Authenticar-App-Tittle">
+			        <h1>Activate 2FA verification <br> Authenticar App</h1>
+			    </div>
+			    <div class="Install-Authenticar-App-Sect">
+			        <h2>1. Install an <a href="#">Google Authenticar App</a> on your smart device.</h2>
+                    <div class="Play-store-And-App-store-logo">
+                        <div class="Play-store-logo">
+                            <a href="#"><img src="images/Play-store-Logo.png" alt="App Store Logo" class="img-fluid" /></a>
+                        </div>
+                        <div class="App-store-logo">
+                            <a href="#"><img src="images/App-store-logo.png" alt="App Store Logo" class="img-fluid" /></a>
+                        </div>
+                    </div>
+			    </div>
+			    <div class="Authenticator-app-QR-Code-sect">
+			        <h2>2. Open your Google Authenticator app and <a href="#">Scan the QR Code</a> below.</h2>
+			        <div class="Authenticator-app-scan-QR-Code">
+			            <img src="images/Scan-QR-Code.png" alt="QR-Code" class="img-fluid" />
+			        </div>
+			        <div class="Enter-Key-Manually-sect">
+			            <h3>or<a href="#">Enter Key Manually</a></h3>
+			        </div>
+			    </div>
+			    <div class="Enter-6digit-Code-generate-sect">
+			        <h2>3. Enter the <a href="#">6 Digit Code</a> generated in your Google Authenticator app.</h2>
+			        <div class="Enter-6digit-Code-input">
+			            <ul>
+			                <li><input type="text" class="form-control" maxlength="1"></li>
+			                <li><input type="text" class="form-control" maxlength="1"></li>
+			                <li><input type="text" class="form-control" maxlength="1"></li>
+			                <li><input type="text" class="form-control" maxlength="1"></li>
+			                <li><input type="text" class="form-control" maxlength="1"></li>
+			                <li><input type="text" class="form-control" maxlength="1"></li>
+			            </ul>
+			        </div>
+			    </div>
+			    <div class="Authenticator-app-Alert-sect">
+			        <div class="Authenticator-app-Alert-icon">
+			            <img src="images/2FA-Alert.png" alt="Alert" class="img-fluid" />
+			        </div>
+			        <p>Make sure the phone’s date and time is synchronized with the its cellular network.</p>
+			        
+			    </div>
+			    <div class="Authenticar-App-Continue-btn">
+			        <button><a href="#">Continue</a></button>
+			    </div>
+			</div>
+			
+			
+		</div>
+		
+	
+	</div>
+    -->
+        <div class="Act-2-Step-verifi-body">
+            <div class="Act-2-Step-verifi-title">
+                <h1>Activate 2-Step verification - Authenticator app</h1>
+            </div>
+            <div class="Authenticator-app-activated-sect">
+                <div class="Authenticator-app-activated-icon">
+                    <img src="images/App-activate-Check.png" alt="icon" class="img-fluid" />
+                </div>
+                <div class="Authenticator-app-activated-text">
+                    <h3>2-Step verification with an Authenticator app activated</h3>
+                </div>
+            </div>
+            
+            <div class="Two-factor-backup-codes-sect">
+                <h2>Two factor backup codes </h2>
+                <p>Treat this with the same level of attention to your password. Backup codes are used to log in to your account if you lose access to your device and  can’t receive authentication codes.</p>
+            </div> 
+            
+            <div class="Two-factor-backup-code-block">
+                <div class="Two-factor-backup-code-Alert-sect">
+                    <div class="Two-factor-backup-code-Alert-icon">
+                        <img src="images/Backup-code-Alert.png" alt="icon" class="img-fluid" />
+                    </div>
+                    <div class="Two-factor-backup-code-Alert-text">
+                        <p>Please keep these in a <span>safe ans accessible place.</span> If you lose access to your two-factor device and don’t  have backup codes, you will lose access to your account.</p>
+                    </div>
+                </div>
+                <div class="Two-factor-backup-code-sect">
+                    <h1>Two-factor backup code</h1>
+                    <div class="Two-factor-backup-codes">
+                        <ul>
+                            <li>FGBSPH</li>
+                            <li>YSUCWP</li>
+                            <li>FSXMAF</li>
+                        </ul>
+                        
+                        <ul>
+                            <li>DUYPAF</li>
+                            <li>WGXAYX</li>
+                            <li>KNSPFD</li>
+                        </ul>
+                        
+                        <ul>
+                            <li>DUYPAF</li>
+                            <li>WGXAYX</li>
+                            <li>KNSPFD</li>
+                        </ul>
+                        
+                        <ul>
+                            <li>DUYPAF</li>
+                            <li>WGXAYX</li>
+                            <li>KNSPFD</li>
+                        </ul>
+                        
+                        <ul>
+                            <li>DUYPAF</li>
+                            <li>WGXAYX</li>
+                            <li>KNSPFD</li>
+                        </ul>
+                        
+                        <ul>
+                            <li>DUYPAF</li>
+                            <li>WGXAYX</li>
+                            <li>KNSPFD</li>
+                        </ul>
+                        
+                        <ul>
+                            <li>DUYPAF</li>
+                            <li>WGXAYX</li>
+                            <li>KNSPFD</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="backup-code-print-download-save-sect">
+                    <ul>
+                        <li><span><img src="images/code-print.png" alt="icon" class="img-fluid" /></span>Print</li>
+                        <li><span><img src="images/code-download.png" alt="icon" class="img-fluid" /></span>Download</li>
+                        <li><span><img src="images/code-save.png" alt="icon" class="img-fluid" /></span>Save</li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+            <div class="Two-factor-backup-code-btn">
+                <button><a href="#">Continue</a></button>
+            </div>
+            
+            
+        </div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+
+// When the user clicks, open the popup
+function popupFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+
+}
+
+
+</script>
+<script>
+	/*for toggle sub menu*/
+		function subtogglediv(id, icon) {
+			var id = document.getElementById(id);
+			id.classList.toggle('submenu-active');
+			var cross = document.getElementById(icon);
+			cross.classList.toggle('fa-times');
+			cross.classList.toggle('fa-bars');
+		}
+		</script>
+		<script>
+	/*for Tab*/
+        function helpfunction(evt, faqName) {
+            var i, supporttabcontent, helptablinks;
+            supporttabcontent = document.getElementsByClassName("supporttabcontent");
+            for (i = 0; i < supporttabcontent.length; i++) {
+                supporttabcontent[i].style.display = "none";
+            }
+            helptablinks = document.getElementsByClassName("helptablinks");
+            for (i = 0; i < helptablinks.length; i++) {
+                helptablinks[i].className = helptablinks[i].className.replace(" h-active", "");
+            }
+            document.getElementById(faqName).style.display = "block";
+            evt.currentTarget.className += " h-active";
+        }
+		</script>
+		<script type="text/javascript">
+		/* for modal dropdown menu*/
+	    var dropdownpopup = document.querySelectorAll('[data-toggle=dropdownpopup]');
+	    for (var k = 0; k < dropdownpopup.length; k++) {
+	        dropdownpopup[k].addEventListener('click', function (e) {
+	            if (this.hasAttribute('data-link')) {
+	                var m_ID1 = this.getAttribute('data-link');
+	                //for closing other popup
+	                var activedropdown = document.querySelector('.dropdown-menu.drop-active');
+	                if(activedropdown && activedropdown.getAttribute('id') != m_ID1)
+	                {
+	                    activedropdown.classList.remove('drop-active');
+	                }
+	                //activting popup
+	                document.getElementById(m_ID1).classList.toggle('drop-active');
+	            }
+	        });
+	    }
+	 
+		/*mass select*/
+		function checkall(source) {
+	  		checkboxes = document.getElementsByName('foo');
+	  		for(var i=0, n=checkboxes.length;i<n;i++) {
+	    		checkboxes[i].checked = source.checked;
+	  		}
+		}
+		
+
+		/*rating start*/
+		var changeClass = document.querySelectorAll('[data-toggleclass=starclass]');
+	    for (var k = 0; k < changeClass.length; k++) {
+	        changeClass[k].addEventListener('click', function (e) {
+	            if (this.hasAttribute('data-class')) {
+	                var dataClass = this.getAttribute('data-class');
+	                this.classList.toggle(dataClass);
+	            }
+	        });
+	    }
+
+	    //For modal
+		document.addEventListener('click', function (e) {
+	        e = e || window.event;
+	        var target = e.target || e.srcElement;
+
+	        if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') 
+	        {
+	            if (target.hasAttribute('data-target')) 
+	            {
+	                var m_ID = target.getAttribute('data-target');
+	                document.getElementById(m_ID).classList.add('open');
+	            }
+	        }
+
+	        // Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
+	        if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') ||target.classList.contains('modal')) {
+	            var modal = document.querySelector('.modal.open');
+	            modal.classList.remove('open');
+	        }
+        }, false);
+
+       
+	
+ 	</script>
+	<script>
+//var accrow = document.getElementsByClassName("tableCell-collapse-btn");
+//var i;
+//var accrowblock=document.getElementsByClassName("tableRow");
+//for (i = 0; i < accrowblock.length; i++) {
+ // accrow[i].addEventListener("click", function() {
+ //   accrowblock[1].classList.toggle("tableRow-active");
+	    
+//  });
+ 
+//}
+
+
+</script>
+<script type="text/javascript">
+		
+     //for accordion tab
+		var accItem = document.getElementsByClassName('tableRow');
+		var accHD = document.getElementsByClassName('hlp-collapse-bttn');
+		for (i = 0; i < accHD.length; i++) {
+			accHD[i].addEventListener('click', toggleItem, false);
+		}
+		function toggleItem() {
+			var itemClass = this.parentElement.className;
+			for (i = 0; i < accItem.length; i++) {
+				accItem[i].className = 'tableRow tableRow-inactive';
+			}
+			if (itemClass == 'tableRow tableRow-inactive') {
+				this.parentNode.className = 'tableRow tableRow-active';
+			}
+		}
+		
+	</script>
+<script type="text/javascript">
+	
+
+		var enable = document.querySelectorAll('.enable')
+		function rowenable() {
+			a = document.getElementsByClassName('cebox');
+		  	for (var i = 0; i < enable.length; i++) {
+		  		for(var i=0; i < a.length; i++) {
+		  			if (a[i].checked = "checked") {
+		  				enable[i].classList.add('border-row');
+		  			}
+		  			else {
+	  					enable[i].classList.remove('border-row');
+		  			}
+		    	}
+		  	}
+		  	//remove disable row
+		  	var disable = document.querySelectorAll('.disable.border-row')
+		  	b = document.getElementsByClassName('cbox');
+		  	for (var i = 0; i < disable.length; i++) {
+		  		for(var i=0; i < b.length; i++) {
+		  			if (b[i].checked = "checked") {
+		  				disable[i].classList.remove('border-row');
+		  				b[i].checked = false
+		  			}
+		  			else {
+	  					console.log("else");
+		  			}
+		    	}
+		  	}
+		}
+ 
+		var disable = document.querySelectorAll('.disable')
+		function rowdisable() {
+			a = document.getElementsByClassName('cbox');
+		  	for (var i = 0; i < disable.length; i++) {
+		  		for(var i=0; i < a.length; i++) {
+		  			if (a[i].checked = "checked") {
+		  				disable[i].classList.add('border-row');
+		  			}
+		  			else {
+	  					disable[i].classList.remove('border-row');
+		  			}
+		    	}
+		  	}
+		  	//remove enable row
+		  	var enable = document.querySelectorAll('.enable.border-row')
+		  	b = document.getElementsByClassName('cebox');
+		  	for (var i = 0; i < enable.length; i++) {
+		  		for(var i=0; i < b.length; i++) {
+		  			if (b[i].checked = "checked") {
+		  				enable[i].classList.remove('border-row');
+		  				b[i].checked = false
+		  			}
+		  			else {
+	  					console.log("else");
+		  			}
+		    	}
+		  	}
+		}
+ 	</script>
+
+
+
+
+
+</body>
+
+</html>

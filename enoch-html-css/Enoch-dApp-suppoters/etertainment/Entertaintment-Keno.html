@@ -1,0 +1,1906 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Entertainment</title>
+	<!-- Fav Icons -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/dashboard-header.css" rel="stylesheet" />
+    <link href="css/dashboard-style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/dApp-S-home.css" />
+    <link rel="stylesheet" href="css/home-post.css" />
+    <link href="css/entertainment.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="container-fluid dashboard-body-bg second-body-bg">
+	<div class="row">
+		<header class="custom-header">			
+			<div class="ezl-dashboard-header">
+				<div class="menu-left">
+					<div class="menu-wrap">
+						<a href="#menu" class="menu-link"><img src="images/Menu.png" alt="Menu" class="img-fluid"/></a>
+					</div>
+					<div class="header-logo"><a href="javascript:void(0)"><img src="images/logo.png" alt="logo" class="img-fluid"/></a></div>
+				</div>
+				<div class="menuright-side">
+					<div class="right-search">
+						<form class="search-form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Fund, ISIN, Keyword ">
+									<button class="search-form-btn" type="Submit"><img class="search-img" src="images/search.png" alt="search"></button>
+							</div>
+						</form>
+					</div>
+					<div class="menu-mid-sect">
+						<ul id="submenubar">
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/home.png" alt="home" class="img-fluid"/></div>
+								<a href="javascript:void(0)">Home</a>
+							</li>
+							<!-- <li class="">
+								<div class="menu-times-notifi"><img src="images/network.png" alt="network" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">My Network</a>
+							</li> -->
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/Chat.png" alt="Chat" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">Messaging</a>
+							</li>
+							<li class="ether-block">
+								<div class="menu-times-notifi mr-2"><img src="images/Ethereum.png" alt="Ethereum" class="img-fluid"/></div>
+								<a href="javascript:void(0)">ETH Mainnet <i class="fa fa-angle-right"></i></a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)">Connect Wallet</a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)"><span><img src="images/cart.png" class="img-fluid mr-2"/></span>Cart</a>
+							</li>
+							
+						</ul>
+						<div class="toggle-menu">
+								<div onclick="subtogglediv('submenubar','submenu-toggle');" class="d-inline-block">
+									<i class="fa fa-bars" aria-hidden="true" id="submenu-toggle"></i>
+								</div>
+							</div>
+					</div>
+					
+					<div class="ezl-notificaion">
+					<div class="position-relative notificaion-dropdown ezl-notificaion-marg">
+						<a href="javascript:void(0)" class="popup"><img src="images/help.png" alt="help"/></a>							
+											
+					</div>
+					<div class=" position-relative notificaion-dropdown">
+						<a href="javascript:void(0)" class="popup"><img src="images/alertBell.png" alt="Bell"><span class="notificaion-spn">10</span></a>							
+						
+					</div>
+					</div>
+					<div class="ezl-user-ac">
+					
+					<div class="account-d dropdown">
+						<div class="dropdown-buttn"><span class="popup" onclick="popupFunction()"><div class="user-img"><img src="images/user-ReginaCooper.png" alt="user image" class="img-fluid"/></div></span>
+							<div class="popupbox dropdown-menu" id="myPopup">
+								
+								<ul class="">
+									<li>
+										<div class="enoch-usr-prof"><span><img src="images/user-pro-pic.png" class="img-fluid mr-1" alt="profile- pic"> @Hulk66</span><span><a href="#">Change</a></span></div>
+									</li>
+									<li>
+										<div class="enoch-usr-status-block">
+											<div class="usr-status-left">Online Status</div>
+											<div class="usr-status-right">
+												<div class="post-switch">
+													<label class="postswitch">
+													  <input type="checkbox" checked="">
+													  <span class="post-slider round"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="enoch-usr-status-block"><a href="#">Become Creator </a></div>
+										<div class="enoch-usr-status-block mb-0"><a href="#" class="enoch-blue-clr">Your Public Profile</a></div>
+									</li>
+									<li>
+										<div class="enoch-usr-status-block"><a href="#">Setting </a></div>
+										<div class="enoch-usr-status-block"><a href="#">Help Center</a></div>										
+										<div class="enoch-usr-status-block mb-0"><a href="#" class="orange-clr">Upgrade to Premium</a></div>
+									</li>
+									<li class="mt-4">
+										<div class="enoch-usr-status-block mb-0">Wallet  <span><a href="#" class="btn freebonus-btn">$400 </a></span></div>
+									</li>
+									<li class="mt-4 pb-0">
+										<div class="enoch-usr-status-block mb-0 manage-ac">
+											<h3>Manage</h3>
+											<ul>
+												<li>
+													<div class="manage-ac-block">
+														<span>Comapny:	</span>
+														<span class="ml-1"><img src="images/man-icon1.png" class="img-fluid mr-1" alt="user">88mph  </span>
+													</div>
+												</li>
+												<li>
+													<div class="manage-ac-block">
+														<span>Comapny:	</span>
+														<span class="ml-1"><img src="images/man-icon2.png" class="img-fluid mr-1" alt="user">CryptoBlue    </span>
+													</div>
+												</li>
+											</ul>
+										</div>
+										
+									</li>
+									<li class="mb-0 pb-0">
+										<div class="enoch-usr-status-block mb-0"><a href="#" class="post-red-clr">Logout</a></div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>				
+			</div>
+			<div class="switch-user-modal-block">
+				<div id="switch-user-modal" class="modal fade">
+					<!-- Modal content -->
+					<div class="modal-content switch-user-modal-content">
+						<span class="close"><img src="images/postCross.png" alt="close" class="img-fluid" data-dismiss="modal"></span>
+						<h2>Which account would you like to use?</h2>
+						<div class="switch-user-modal-list">
+							<h3>Your accounts</h3>
+							<ul>
+								<li><img src="images/postUser1.png" class="img-fluid" alt="pic"> <span>Robert Rose</span></li>
+								<li><img src="images/postUser2.png" class="img-fluid" alt="pic"> <span>88mph</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>								
+			</div>
+		</header>
+		<div class="dApp-menu-btn">
+	   <a href="#"><img src="images/LeftSide-Menu.png" alt="menu" class="img-fluid"  data-toggle="modal" data-target="right-top-modal" /></a>
+	   <div class="right-top-modal-block">
+				<div id="right-top-modal" class="modal fade">
+					<!-- Modal content -->
+					<div class="modal-content right-top-modal-content">
+						<span class="close"><img src="images/postCross2.png" alt="close" class="img-fluid" data-dismiss="modal"></span>
+						<div class="right-top-body-block">
+							<div class="right-top-body-block-lft">
+								<form class="right-search-form">
+									<div class="right-form-group">
+										<img src="images/help-Search.png" class="img-fluid" alt="search"/><input type="text" class="form-control" placeholder="Search menu...">
+											
+									</div>
+								</form>
+								<div class="enoch-community-scrollable">
+								<div class="enoch-menu-block-panel">
+									<div class="enoch-menu-block-lft">
+										<div class="enoch-menu-block-items">
+											<h2>Peronal</h2>
+											<ul>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon1.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Earn</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon2.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Ranking</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon3.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Billing</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon4.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Affiliate</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												
+											</ul>
+										</div>
+										<div class="enoch-menu-block-items">
+											<h2>Entertainment</h2>
+											<ul>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon11.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Popular</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon12.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Slots</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon13.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Live Casino </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon14.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Lottery</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon15.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Roulette</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon16.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Promotions</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="enoch-menu-block-items">
+											<h2>Advertising</h2>
+											<ul>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon19.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Ad Manager </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon20.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Enoch Ad  </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												
+											</ul>
+										</div>
+										<div class="enoch-menu-block-items mb-0">
+											<h2>User Setting </h2>
+											<ul>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon26.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Your Profile  </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon27.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Your Account</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												
+											</ul>
+										</div>
+									</div>
+									<div class="enoch-menu-block-right">
+										<div class="enoch-menu-block-items">
+											<h2>Social</h2>
+											<ul>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon5.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>My Networks</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon6.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Communities</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon7.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Artist Channels </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon8.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Company pages </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon9.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Events </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon10.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>News Feed  </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="enoch-menu-block-items">
+											<h2>Shopping</h2>
+											<ul>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon17.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Digital Art Marketplace </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												
+											</ul>
+										</div>
+										<div class="enoch-menu-block-items">
+											<h2>Jobs</h2>
+											<ul>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon18.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Remote workhub</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												
+											</ul>
+										</div>
+										<div class="enoch-menu-block-items">
+											<h2>Developer</h2>
+											<ul>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon21.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Develop</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon22.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Grow </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon23.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Earn </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon24.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Github  </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon25.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Docs </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												
+											</ul>
+										</div>
+									</div>
+								</div>
+								</div>
+							</div>
+							<div class="right-top-body-block-right">
+								<h3>Create</h3>
+								<ul>
+									<li><a href="#"><span><img src="images/creat-icon1.png" class="img-fluid" alt="icon"/></span> Post</a></li>
+									<li><a href="#"><span><img src="images/creat-icon2.png" class="img-fluid" alt="icon"/></span> Community</a></li>
+									<li><a href="#"><span><img src="images/creat-icon3.png" class="img-fluid" alt="icon"/></span> Artist Channel</a></li>
+									<li><a href="#"><span><img src="images/creat-icon4.png" class="img-fluid" alt="icon"/></span> Group</a></li>
+									<li><a href="#"><span><img src="images/creat-icon5.png" class="img-fluid" alt="icon"/></span> Event</a></li>
+									<li><a href="#"><span><img src="images/creat-icon6.png" class="img-fluid" alt="icon"/></span> Company page </a></li>
+									<li><a href="#"><span><img src="images/creat-icon7.png" class="img-fluid" alt="icon"/></span> Job</a></li>
+									<li><a href="#"><span><img src="images/creat-icon8.png" class="img-fluid" alt="icon"/></span> Digital Art </a></li>
+									<li><a href="#"><span><img src="images/creat-icon8.png" class="img-fluid" alt="icon"/></span> AD </a></li>									 
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>								
+			</div>
+	</div>
+	</div>		
+	<div class="row">	
+		<div class="ezl-dashboard-container">			
+			<div class="enoch-entertainment-header-banner Keno-top-banner-sect">
+			    <div class="Entertaintment-Keno-top-banner-img">
+			        <img src="images/Entertaintment-web-Banner.png" alt="banner" class="img-fluid" />
+			    </div>
+			    <div class="Entertaintment-Keno-banner-3Dots">
+			        <img src="images/Entertaintment-BannerDots.png" alt="3dots" class="img-fluid" />
+			    </div>
+			</div>
+			<div class="entertainment-tag-block">
+				<div class="entertainment-tag-line1 flex-row-reverse">
+					<div class="entertainment-tag-search"><span><img src="images/tagsearch.png" class="img-fluid" alt="search"/></span><input type="text" placeholder="Search for the games"></div>
+					<ul>
+						<li class="tag-active1">Popular</li>
+						<li>Keno</li>
+						<li>Slots</li>
+						<li>Live Casino</li>
+						<li>Lottery</li>
+						<li>Roulette</li>
+						<li>Promotions </li>
+					</ul>
+					
+				</div>
+				<div class="entertainment-tag-line2">
+					<ul>
+						<li>Bonuses </li>
+						<li class="tag-active2">Keno</li>
+						<li>Poker</li>
+						<li>Roulette</li>
+						<li>Blackjack</li>
+						<li>Joker Poker</li>
+						<li>Slots</li>
+						<li>Baccarat</li>
+						<li>Blackjack Gold</li>
+						<li>Jackpot</li>
+					</ul>
+				</div>
+			</div>
+			
+			
+			<div class="entertainment-Keno-contemt">
+			    <div class="jackpot-prize-sect">
+			        <div class="jackpot-prize-text">
+			            <h1>We are giving our fantastic players the chance to win weekly prizes of up to 1,000,000 Amber</h1>
+			            <h2>jackpot prize <span>6,000,000 amber</span> COINS !</h2>
+			            <p> Players share & take home the entire 6,000,000 jackpot prize, which requiers premium membership to withdraw winnings .To be in with a chance to win, You must play our fantastic free bonus games to earn Amber coin to purchase Keno Tickets.</p>
+			            <p><a href="#">T&C’s apply</a></p>
+			        </div>
+			    </div>
+			    
+			    <div class="keno-gamesCard-sect">
+			        <div class="row">
+			            <div class="col-sm-6 col-lg-4 p-0">
+			                <div class="game-card-bg game-card1-bg">
+								<div class="top-draw">
+									<span><img src="images/stime.png" class="img-fluid mr-1" alt="time"/> DRAW</span>
+									<span>20:00:00</span>
+								</div>
+								<div class="leko-like-view">
+									<span><img src="images/klike.png" class="img-fluid mr-1" alt="like"/>1.2K</span>
+									<span><img src="images/kview.png" class="img-fluid mr-1" alt="viiew"/>3.5K</span>
+								</div>
+			                    <div class="game-card-blur-bg">									
+			                        <div class="game-card-blur-bg-content">
+			                            <ul>
+			                                <li class="white-border row-1">
+			                                    <h2>Treasure hunt monthly</h2>
+			                                    <h3>1,000,000 AMBER </h3>
+			                                </li>
+
+			                                <li class="white-border">
+			                                    <h2>Prize Position</h2>
+			                                    <h3>100</h3>
+			                                </li>
+
+			                                <li class="gray-border">
+			                                    <h2>Winning Strategy</h2>
+			                                    <h3>A X BET = X Points</h3>
+			                                </li>
+
+			                                <li class="gray-border">
+			                                    <h2>Tournament Game </h2>
+			                                    <h3>KENO</h3>
+			                                </li>
+
+			                            </ul>
+			                            <button>PLAY NOW</button>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			            
+			            <div class="col-sm-6 col-lg-4 p-0">
+			                <div class="game-card-bg game-card2-bg">
+								<div class="top-draw">
+									<span><img src="images/stime.png" class="img-fluid mr-1" alt="time"> DRAW</span>
+									<span>20:00:00</span>
+								</div>
+								<div class="leko-like-view">
+									<span><img src="images/klike.png" class="img-fluid mr-1" alt="like"/>1.2K</span>
+									<span><img src="images/kview.png" class="img-fluid mr-1" alt="viiew"/>3.5K</span>
+								</div>
+			                    <div class="game-card-blur-bg">
+			                        <div class="game-card-blur-bg-content">
+			                            <ul>
+			                                <li class="white-border row-1">
+			                                    <h2>Treasure hunt monthly</h2>
+			                                    <h3>1,000,000 AMBER </h3>
+			                                </li>
+
+			                                <li class="white-border">
+			                                    <h2>Prize Position</h2>
+			                                    <h3>100</h3>
+			                                </li>
+
+			                                <li class="gray-border">
+			                                    <h2>Winning Strategy</h2>
+			                                    <h3>A X BET = X Points</h3>
+			                                </li>
+
+			                                <li class="gray-border">
+			                                    <h2>Tournament Game </h2>
+			                                    <h3>KENO</h3>
+			                                </li>
+
+			                            </ul>
+			                            <button>PLAY NOW</button>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			            
+			            <div class="col-sm-6 col-lg-4 p-0">
+							
+			                <div class="game-card-bg game-card3-bg">
+								<div class="top-draw">
+									<span><img src="images/stime.png" class="img-fluid mr-1" alt="time"> DRAW</span>
+									<span>20:00:00</span>
+								</div>
+								<div class="leko-like-view">
+									<span><img src="images/klike.png" class="img-fluid mr-1" alt="like"/>1.2K</span>
+									<span><img src="images/kview.png" class="img-fluid mr-1" alt="viiew"/>3.5K</span>
+								</div>
+			                    <div class="game-card-blur-bg">
+			                        <div class="game-card-blur-bg-content">
+			                            <ul>
+			                                <li class="white-border row-1">
+			                                    <h2>Treasure hunt monthly</h2>
+			                                    <h3>1,000,000 AMBER </h3>
+			                                </li>
+
+			                                <li class="white-border">
+			                                    <h2>Prize Position</h2>
+			                                    <h3>100</h3>
+			                                </li>
+
+			                                <li class="gray-border">
+			                                    <h2>Winning Strategy</h2>
+			                                    <h3>A X BET = X Points</h3>
+			                                </li>
+
+			                                <li class="gray-border">
+			                                    <h2>Tournament Game </h2>
+			                                    <h3>KENO</h3>
+			                                </li>
+
+			                            </ul>
+			                            <button>PLAY NOW</button>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			            
+			            <div class="col-sm-6 col-lg-4 p-0">
+							
+			                <div class="game-card-bg game-card4-bg">
+								<div class="top-draw">
+									<span><img src="images/stime.png" class="img-fluid mr-1" alt="time"> DRAW</span>
+									<span>20:00:00</span>
+								</div>
+								<div class="leko-like-view">
+									<span><img src="images/klike.png" class="img-fluid mr-1" alt="like"/>1.2K</span>
+									<span><img src="images/kview.png" class="img-fluid mr-1" alt="viiew"/>3.5K</span>
+								</div>
+			                    <div class="game-card-blur-bg">
+			                        <div class="game-card-blur-bg-content">
+			                            <ul>
+			                                <li class="white-border row-1">
+			                                    <h2>Treasure hunt monthly</h2>
+			                                    <h3>1,000,000 AMBER </h3>
+			                                </li>
+
+			                                <li class="white-border">
+			                                    <h2>Prize Position</h2>
+			                                    <h3>100</h3>
+			                                </li>
+
+			                                <li class="gray-border">
+			                                    <h2>Winning Strategy</h2>
+			                                    <h3>A X BET = X Points</h3>
+			                                </li>
+
+			                                <li class="gray-border">
+			                                    <h2>Tournament Game </h2>
+			                                    <h3>KENO</h3>
+			                                </li>
+
+			                            </ul>
+			                            <button>PLAY NOW</button>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			            
+			            <div class="col-sm-6 col-lg-4 p-0">
+							
+			                <div class="game-card-bg game-card5-bg">
+								<div class="top-draw">
+									<span><img src="images/stime.png" class="img-fluid mr-1" alt="time"> DRAW</span>
+									<span>20:00:00</span>
+								</div>
+								<div class="leko-like-view">
+									<span><img src="images/klike.png" class="img-fluid mr-1" alt="like"/>1.2K</span>
+									<span><img src="images/kview.png" class="img-fluid mr-1" alt="viiew"/>3.5K</span>
+								</div>
+			                    <div class="game-card-blur-bg">
+			                        <div class="game-card-blur-bg-content">
+			                            <ul>
+			                                <li class="white-border row-1">
+			                                    <h2>Treasure hunt monthly</h2>
+			                                    <h3>1,000,000 AMBER </h3>
+			                                </li>
+
+			                                <li class="white-border">
+			                                    <h2>Prize Position</h2>
+			                                    <h3>100</h3>
+			                                </li>
+
+			                                <li class="gray-border">
+			                                    <h2>Winning Strategy</h2>
+			                                    <h3>A X BET = X Points</h3>
+			                                </li>
+
+			                                <li class="gray-border">
+			                                    <h2>Tournament Game </h2>
+			                                    <h3>KENO</h3>
+			                                </li>
+
+			                            </ul>
+			                            <button>PLAY NOW</button>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			            
+			            <div class="col-sm-6 col-lg-4 p-0">
+							
+			                <div class="game-card-bg game-card6-bg">
+								<div class="top-draw">
+									<span><img src="images/stime.png" class="img-fluid mr-1" alt="time"> DRAW</span>
+									<span>20:00:00</span>
+								</div>
+								<div class="leko-like-view">
+									<span><img src="images/klike.png" class="img-fluid mr-1" alt="like"/>1.2K</span>
+									<span><img src="images/kview.png" class="img-fluid mr-1" alt="viiew"/>3.5K</span>
+								</div>
+			                    <div class="game-card-blur-bg">
+			                        <div class="game-card-blur-bg-content">
+			                            <ul>
+			                                <li class="white-border row-1">
+			                                    <h2>Treasure hunt monthly</h2>
+			                                    <h3>1,000,000 AMBER </h3>
+			                                </li>
+
+			                                <li class="white-border">
+			                                    <h2>Prize Position</h2>
+			                                    <h3>100</h3>
+			                                </li>
+
+			                                <li class="gray-border">
+			                                    <h2>Winning Strategy</h2>
+			                                    <h3>A X BET = X Points</h3>
+			                                </li>
+
+			                                <li class="gray-border">
+			                                    <h2>Tournament Game </h2>
+			                                    <h3>KENO</h3>
+			                                </li>
+
+			                            </ul>
+			                            <button>PLAY NOW</button>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			            
+			        </div>
+			    </div>
+			    
+			    <div class="Keno-Tabs-section">
+			        <div class="tab keno-tab">
+			            <button class="keno_tablinks1 active" onclick="kenuFunc(event, 'Keno_Tournament')">Keno Tournament</button>
+			            <button class="keno_tablinks1" onclick="kenuFunc(event, 'Keno_Winners')">Keno Winners</button>
+			            <button class="keno_tablinks1" onclick="kenuFunc(event, 'Keno_Result')">Keno Result</button>
+			            <button class="keno_tablinks1 mr-0" onclick="kenuFunc(event, 'Keno_Information')">Keno Information</button>
+			        </div>
+
+			        <div id="Keno_Tournament" class="keno_tabcontent keno-d-block">
+			            <div class="Keno-Tournament-content">
+			                
+			                <div class="tab Keno-Tournament-tab">
+			                    <button class="tablinks active" onclick="kenuFunc2(event, 'UPCOMING')">UPCOMING</button>
+			                    <button class="tablinks mr-0" onclick="kenuFunc2(event, 'ENDED')">ENDED</button>
+			                </div>
+
+			                <div id="UPCOMING" class="uptabcontent keno-d-block">
+			                    <div class="KT-table">
+			                        <table>
+										<thead>
+											<tr class="table-header">
+												<th class="Sl-No">NO</th>
+												<th class="TOURNAMENT">TOURNAMENT</th>
+												<th class="WINNING-STRATEGY">WINNING STRATEGY</th>
+												<th class="JACKPOT">JACKPOT</th>
+												<th class="GUESS-RANGE">GUESS RANGE</th>
+												<th class="mr-0 TOURNAMENT-STATUS">TOURNAMENT STATUS</th>
+											</tr>
+			                            </thead>
+										<tbody>
+											<tr class="bg-F6F6F6">
+												<td class="Sl-No">1</td>
+												<td class="TOURNAMENT">Treasure Hunt Monthly </td>
+												<td class="WINNING-STRATEGY">A X BET = X Points</td>
+												<td class="JACKPOT">1,000,000 AMBER</td>
+												<td class="GUESS-RANGE">1 – 10 / 70</td>
+												<td class="mr-0 TOURNAMENT-STATUS">
+													<h2 class="open">OPen</h2>
+													<h3>Closing  July 22 2020, 12:14 PM</h3>
+												</td>
+											</tr>
+											
+											<tr class="bg-FCFCFC">
+												<td class="Sl-No">2</td>
+												<td class="TOURNAMENT">Kill the Boss / Qual #1 </td>
+												<td class="WINNING-STRATEGY">A X BET = X Points</td>
+												<td class="JACKPOT">1,000,000 AMBER</td>
+												<td class="GUESS-RANGE">1 – 10 / 70</td>
+												<td class="mr-0 TOURNAMENT-STATUS">
+													<h2 class="open">OPen</h2>
+													<h3>Closing  July 22 2020, 12:14 PM</h3>
+												</td>
+											</tr>
+											
+											<tr class="bg-F6F6F6">
+												<td class="Sl-No">3</td>
+												<td class="TOURNAMENT">Treasure Hunt Monthly </td>
+												<td class="WINNING-STRATEGY">A X BET = X Points</td>
+												<td class="JACKPOT">1,000,000 AMBER</td>
+												<td class="GUESS-RANGE">1 – 10 / 70</td>
+												<td class="mr-0 TOURNAMENT-STATUS">
+													<h2 class="open">OPen</h2>
+													<h3>Closing  July 22 2020, 12:14 PM</h3>
+												</td>
+											</tr>
+											
+											<tr class="bg-FCFCFC">
+												<td class="Sl-No">4</td>
+												<td class="TOURNAMENT">Kill the Boss / Qual #1</td>
+												<td class="WINNING-STRATEGY">A X BET = X Points</td>
+												<td class="JACKPOT">1,000,000 AMBER</td>
+												<td class="GUESS-RANGE">1 – 10 / 70</td>
+												<td class="mr-0 TOURNAMENT-STATUS">
+													<h2 class="open">OPen</h2>
+													<h3>Closing  July 22 2020, 12:14 PM</h3>
+												</td>
+											</tr>
+											
+											<tr class="bg-F6F6F6">
+												<td class="Sl-No">5</td>
+												<td class="TOURNAMENT">Treasure Hunt Monthly </td>
+												<td class="WINNING-STRATEGY">A X BET = X Points</td>
+												<td class="JACKPOT">1,000,000 AMBER</td>
+												<td class="GUESS-RANGE">1 – 10 / 70</td>
+												<td class="mr-0 TOURNAMENT-STATUS">
+													<h2 class="open">OPen</h2>
+													<h3>Closing  July 22 2020, 12:14 PM</h3>
+												</td>
+											</tr>
+											
+											<tr class="bg-FCFCFC">
+												<td class="Sl-No">6</td>
+												<td class="TOURNAMENT">Kill the Boss / Qual #1</td>
+												<td class="WINNING-STRATEGY">A X BET = X Points</td>
+												<td class="JACKPOT">1,000,000 AMBER</td>
+												<td class="GUESS-RANGE">1 – 10 / 70</td>
+												<td class="mr-0 TOURNAMENT-STATUS">
+													<h2 class="open">OPen</h2>
+													<h3>Closing  July 22 2020, 12:14 PM</h3>
+												</td>
+											</tr>
+										</tbody>
+			                        </table>
+			                    </div>
+			                </div>
+
+			                <div id="ENDED" class="uptabcontent">
+			                   <div class="KT-table">
+			                        <div class="mybet-no-bet">
+										<div><img src="images/no-bet.png" class="img-fluid" alt="no bet"></div>
+										<p>NO BET FOUND</p>
+									</div>
+			                    </div>
+			                </div>
+			                
+			            </div>
+			        </div>
+
+			        <div id="Keno_Winners" class="keno_tabcontent">
+			           <div class="Keno-Tournament-content">
+			                
+			                <div class="tab Keno-winner-tab">
+								<div class="d-flex">
+									<button class="tablinks2 active" onclick="kenuFunc3(event, 'allBets')">All Bets</button>
+									<button class="tablinks2 mr-0" onclick="kenuFunc3(event, 'myBets')">My Bets</button>
+								</div>
+								<div class="Keno-Results-header-right">
+			                        <div class="Treasure-Hunt input-fild">
+			                            <a href="#" id="Treasure-dropbox-list-input" class="Treasure-hunt-box" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Treasure Hunt Monthly </a>
+										<div id="Treasure-dropbox-list" class="dropdown-menu Treasure-hunt-dropbox-list">
+											<ul>
+												<li>Treasure hunt monthly</li>
+												<li>Treasure hunt monthly2</li>
+												<li>Treasure hunt monthly3</li>
+												<li>Treasure hunt monthly4</li>
+												<li>Treasure hunt monthly5</li>
+												<li>Treasure hunt monthly6</li>
+											</ul>										
+										</div>
+			                        </div>
+			                        <div class="date-input-fild">
+										<span>
+			                                <img src="images/keno-Calendar.png" alt="icon" class="img-fluid">
+			                            </span>
+			                            <input type="text" placeholder="" value="Aug 12, 2021">
+			                            
+			                        </div>
+			                        <div class="time input-fild">
+			                           <span><img src="images/keno-Clock.png" alt="icon" class="img-fluid"></span><a href="#" id="time-dropbox-list-input" class="time-hunt-box" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> Select time</a>
+										<div id="time-dropbox-list" class="dropdown-menu time-hunt-dropbox-list">
+											<div class="kWinner-cat">
+												<input id="kWinner-check" name="b-plan" type="checkbox">
+												<label for="kWinner-check">
+													<p class="kWinner-event-txt1">All day</p>													
+												</label>
+											</div>
+											<div class="time-select">
+												<ul>
+													<li>01:00 AM</li>
+													<li>02:00 AM</li>
+													<li>03:00 AM</li>
+													<li>04:00 AM</li>
+													<li class="time-sel-active">05:00 AM</li>
+													<li>06:00 AM</li>
+													<li>07:00 AM</li>
+													<li>08:00 AM</li>
+													<li>09:00 AM</li>
+													<li>10:00 AM</li>
+													<li>11:00 AM</li>
+													<li>12:00 AM</li>
+													
+												</ul>
+												<ul>
+													<li>13:00 AM</li>
+													<li>14:00 AM</li>
+													<li>15:00 AM</li>
+													<li>16:00 AM</li>
+													<li>17:00 AM</li>
+													<li>18:00 AM</li>
+													<li>19:00 AM</li>
+													<li>20:00 AM</li>
+													<li>21:00 AM</li>
+													<li>22:00 AM</li>
+													<li>23:00 AM</li>
+													<li>24:00 AM</li>
+													
+												</ul>
+											</div>	
+										</div>
+			                           
+			                            
+			                        </div>
+			                    </div>
+			                </div>
+
+			                <div id="allBets" class="tourtabcontent keno-d-block">
+			                    <div class="KT-table2">
+			                        <table class="table">
+										<thead>
+											<tr class="table-header">
+												<th class="">NO</th>
+												<th class="">Game  contest </th>
+												<th class="">BET ID</th>
+												<th class="">AMMOUNT</th>
+												<th class="">mULTIPLIER   </th>
+												<th class="">PAYOUT</th>
+												<th class="">DATE</th>
+											</tr>
+			                            </thead>
+										<tbody>
+											<tr>
+												<td class=""><img src="images/bets-no.png" class="img-fluid" alt="icon"/></td>
+												<td class="">Treasure Hunt Monthly</td>
+												<td class="">#30864451032842241</td>
+												<td class="">7000 AMBER</td>
+												<td class="">X10</td>
+												<td class="payout-clr">50,000 AMBER </td>
+												<td class="">Aug 12, 2021, 5:12 PM</td>
+											</tr>
+											<tr>
+												<td class=""><img src="images/bets-no.png" class="img-fluid" alt="icon"/></td>
+												<td class="">Treasure Hunt Monthly</td>
+												<td class="">#30864451032842241</td>
+												<td class="">11000 AMBER</td>
+												<td class="">X10</td>
+												<td class="payout-clr">50,000 AMBER </td>
+												<td class="">Aug 12, 2021, 5:12 PM</td>
+											</tr>
+											<tr>
+												<td class=""><img src="images/bets-no.png" class="img-fluid" alt="icon"/></td>
+												<td class="">Treasure Hunt Monthly</td>
+												<td class="">#30864451032842241</td>
+												<td class="">7000 AMBER</td>
+												<td class="">X10</td>
+												<td class="payout-clr">50,000 AMBER </td>
+												<td class="">Aug 12, 2021, 5:12 PM</td>
+											</tr>
+											<tr>
+												<td class="">4.</td>
+												<td class="">Treasure Hunt Monthly</td>
+												<td class="">#30864451032842241</td>
+												<td class="">1700 AMBER</td>
+												<td class="">X4</td>
+												<td class="">22,000 AMBER </td>
+												<td class="">Aug 12, 2021, 5:12 PM</td>
+											</tr>
+											<tr>
+												<td class="">5.</td>
+												<td class="">Treasure Hunt Monthly</td>
+												<td class="">#30864451032842241</td>
+												<td class="">2800 AMBER</td>
+												<td class="">X6</td>
+												<td class="">22,000 AMBER </td>
+												<td class="">Aug 12, 2021, 5:12 PM</td>
+											</tr>
+											<tr>
+												<td class="">6.</td>
+												<td class="">Treasure Hunt Monthly</td>
+												<td class="">#30864451032842241</td>
+												<td class="">980 AMBER</td>
+												<td class="">X6</td>
+												<td class="">15,000 AMBER </td>
+												<td class="">Aug 12, 2021, 5:12 PM</td>
+											</tr>
+											<tr class="winner-row-avtive">
+												<td class="">7.</td>
+												<td class="">Treasure Hunt Monthly <span class="ml-2"><img src="images/TInfo.png" class="img-fluid" alt="imfo"/></span></td>
+												<td class="">#30864451032842241</td>
+												<td class="">1150 AMBER</td>
+												<td class="">X4</td>
+												<td class="">4,000 AMBER </td>
+												<td class="">Aug 12, 2021, 5:12 PM</td>
+											</tr>
+											<tr>
+												<td class="">8.</td>
+												<td class="">Treasure Hunt Monthly</td>
+												<td class="">#30864451032842241</td>
+												<td class="">900 AMBER</td>
+												<td class="">X6</td>
+												<td class="">39,00 AMBER </td>
+												<td class="">Aug 12, 2021, 5:12 PM</td>
+											</tr>
+											<tr>
+												<td class="">9.</td>
+												<td class="">Treasure Hunt Monthly</td>
+												<td class="">#30864451032842241</td>
+												<td class="">2000 AMBER</td>
+												<td class="">X1</td>
+												<td class="">1000 AMBER </td>
+												<td class="">Aug 12, 2021, 5:12 PM</td>
+											</tr>
+											<tr>
+												<td class="">10.</td>
+												<td class="">Treasure Hunt Monthly</td>
+												<td class="">#30864451032842241</td>
+												<td class="">3600 AMBER</td>
+												<td class="">X10</td>
+												<td class="">800 AMBER </td>
+												<td class="">Aug 12, 2021, 5:12 PM</td>
+											</tr>
+			                            </tbody>
+			                            
+			                        </table>
+									
+			                    </div>
+								<div class="keno-table-pagination">
+										<span class="pagi-angle"><i class="fa fa-angle-left"></i></span>
+										<ul>
+											<li class="pagiactive">1</li>
+											<li>2</li>
+											<li>3</li>
+										</ul>
+										<span class="pagi-angle"><i class="fa fa-angle-right"></i></span>
+									</div>
+			                </div>
+
+			                <div id="myBets" class="tourtabcontent">
+			                   <div class="KT-table2">
+			                        <div class="mybet-no-bet">
+										<div><img src="images/no-bet.png" class="img-fluid" alt="no bet"/></div>
+										<p>NO BET FOUND</p>
+									</div>
+			                    </div>
+			                </div>
+			                
+			            </div>
+			        </div>
+
+			        <div id="Keno_Result" class="keno_tabcontent">
+			            <div class="Keno-Tournaments-Results">
+			                <div class="Keno-Tournaments-Results-header">
+			                    <div class="Keno-Results-header-left">
+			                        <h1>Keno Tournaments Results</h1>
+			                    </div>
+			                    <div class="Keno-Results-header-right">
+			                        <div class="Treasure-Hunt input-fild">
+			                            <a href="#" id="Treasure-dropbox-list-input2" class="Treasure-hunt-box" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Treasure Hunt Monthly </a>
+										<div id="Treasure-dropbox-list2" class="dropdown-menu Treasure-hunt-dropbox-list">
+											<ul>
+												<li>Treasure hunt monthly</li>
+												<li>Treasure hunt monthly2</li>
+												<li>Treasure hunt monthly3</li>
+												<li>Treasure hunt monthly4</li>
+												<li>Treasure hunt monthly5</li>
+												<li>Treasure hunt monthly6</li>
+											</ul>										
+										</div>
+			                        </div>
+			                        <div class="date-input-fild">
+										<span>
+			                                <img src="images/keno-Calendar.png" alt="icon" class="img-fluid">
+			                            </span>
+			                            <input type="text" placeholder="" value="Aug 12, 2021">
+			                            
+			                        </div>
+			                        <div class="time input-fild">
+			                           <span><img src="images/keno-Clock.png" alt="icon" class="img-fluid"></span><a href="#" id="time-dropbox-list-input2" class="time-hunt-box" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> Select time</a>
+										<div id="time-dropbox-list2" class="dropdown-menu time-hunt-dropbox-list">
+											<div class="kWinner-cat">
+												<input id="kWinner-check2" name="kWinner" type="checkbox">
+												<label for="kWinner-check2">
+													<p class="kWinner-event-txt1">All day</p>													
+												</label>
+											</div>
+											<div class="time-select">
+												<ul>
+													<li>01:00 AM</li>
+													<li>02:00 AM</li>
+													<li>03:00 AM</li>
+													<li>04:00 AM</li>
+													<li class="time-sel-active">05:00 AM</li>
+													<li>06:00 AM</li>
+													<li>07:00 AM</li>
+													<li>08:00 AM</li>
+													<li>09:00 AM</li>
+													<li>10:00 AM</li>
+													<li>11:00 AM</li>
+													<li>12:00 AM</li>
+													
+												</ul>
+												<ul>
+													<li>13:00 AM</li>
+													<li>14:00 AM</li>
+													<li>15:00 AM</li>
+													<li>16:00 AM</li>
+													<li>17:00 AM</li>
+													<li>18:00 AM</li>
+													<li>19:00 AM</li>
+													<li>20:00 AM</li>
+													<li>21:00 AM</li>
+													<li>22:00 AM</li>
+													<li>23:00 AM</li>
+													<li>24:00 AM</li>
+													
+												</ul>
+											</div>	
+										</div>
+			                           
+			                            
+			                        </div>
+			                    </div>
+			                </div>
+			                <div class="keno-result-midblock">
+			                    <div class="keno-result-midblock-top">
+									<div class="keno-result-lft">
+										<h3>Country</h3>
+										<p><img src="images/Globe-icon.png" class="img-fluid" alt="globe"/></p>
+									</div>
+									
+									<div class="keno-result-mid">
+										<h3>Schedule</h3>
+										<p>Draws take place every 1 hour between 00:00 – 23:59 GMT</p>
+									</div>
+									<div class="keno-result-right">
+										<h3>Guess Range</h3>
+										<p>1 – 10 / 70</p>
+									</div>
+								</div>
+								<div class="keno-result-midblock-bottom">
+									<div class="keno-result-bottom-block">
+										<ul>
+											<li>
+												Contest: <span>Treasure Hunt </span>
+											</li>
+											<li>
+												Draw number: <span>59379 </span>
+											</li>
+											<li>
+												Estimated jackpot: <span class="kresult-gcolor">1,000,000 AMBER</span>
+											</li>
+										</ul>
+									</div>
+									<div class="keno-result-bottom-circle">
+										<ul>
+											<li>6</li>
+											<li>10</li>
+											<li>22</li>
+											<li>18</li>
+											<li>19</li>
+											<li>8</li>
+											<li>21</li>
+											<li>65</li>
+											<li>10</li>
+											<li>10</li>
+											<li>6</li>
+											<li>10</li>
+											<li>10</li>
+											<li>10</li>
+											<li>10</li>
+											<li>10</li>
+											<li>10</li>
+											<li>10</li>
+											<li>10</li>
+											<li>10</li>
+										</ul>
+									</div>
+								</div>
+			                </div>
+			                
+			                <div class="Multiplier-dropdown-sect">
+			                    <h2>Multiplier</h2>
+			                    <div class="Multiplier-dropdown">
+			                        <a href="#" id="Multiplier-dropbox-list-input" class="Multiplier-hunt-box" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">1</a>
+									<div id="Multiplier-dropbox-list" class="dropdown-menu Multiplier-hunt-dropbox-list">
+											<ul>
+												<li>1</li>
+												<li>2</li>
+												<li>3</li>
+												
+											</ul>										
+										</div>
+			                    </div>
+			                </div>
+			                <div class="keno-restlt-table-sect-block">
+								<div class="keno-restlt-table-sect">
+									<div class="keno-restlt-table-tittle">
+										<h1>Typed numbers</h1>
+									</div>
+									<div class="keno-restlt-table-content">
+										<div class="keno-restlt-table-left-tittle">
+											<h1>Correctly picked numbers</h1>
+										</div>
+										<div class="keno-restlt-table-Body">
+											<table>
+												<tr class="top-row">
+													<td>&nbsp;</td>
+													<td class="bg-F1F3F3">10</td>
+													<td class="bg-F1F3F3">9</td>
+													<td class="bg-F1F3F3">8</td>
+													<td class="bg-F1F3F3">7</td>
+													<td class="bg-F1F3F3">6</td>
+													<td class="bg-F1F3F3">5</td>
+													<td class="bg-F1F3F3">4</td>
+													<td class="bg-F1F3F3">3</td>
+													<td class="bg-F1F3F3">2</td>
+													<td class="bg-F1F3F3">1</td>
+												</tr>
+
+												<tr>
+													<td class="bg-F1F3F3">10</td>
+													<td class="bg-ffffff">100000</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+												</tr>
+
+												<tr>
+													<td class="bg-F1F3F3 no-top-border">9</td>
+													<td class="bg-ffffff">1500</td>
+													<td class="bg-ffffff">25000</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+												</tr>
+
+												<tr>
+													<td class="bg-F1F3F3 no-top-border">8</td>
+													<td class="bg-ffffff">125</td>
+													<td class="bg-ffffff">375</td>
+													<td class="bg-ffffff">5000</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+												</tr>
+
+												<tr>
+													<td class="bg-F1F3F3 no-top-border">7</td>
+													<td class="bg-ffffff">16</td>
+													<td class="bg-ffffff">50</td>
+													<td class="bg-ffffff">150</td>
+													<td class="bg-ffffff">750</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+												</tr>
+
+												<tr>
+													<td class="bg-F1F3F3 no-top-border">6</td>
+													<td class="bg-ffffff">3</td>
+													<td class="bg-ffffff">5</td>
+													<td class="bg-ffffff">22</td>
+													<td class="bg-ffffff">33</td>
+													<td class="bg-ffffff">250</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+												</tr>
+
+												<tr>
+													<td class="bg-F1F3F3 no-top-border">5</td>
+													<td class="bg-ffffff">1</td>
+													<td class="bg-ffffff">2</td>
+													<td class="bg-ffffff">4</td>
+													<td class="bg-ffffff">4</td>
+													<td class="bg-ffffff">27</td>
+													<td class="bg-ffffff">125</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+												</tr>
+
+												<tr>
+													<td class="bg-F1F3F3 no-top-border">4</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">1</td>
+													<td class="bg-ffffff">1</td>
+													<td class="bg-ffffff">2</td>
+													<td class="bg-ffffff">3</td>
+													<td class="bg-ffffff">9</td>
+													<td class="bg-ffffff">30</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+												</tr>
+
+												<tr>
+													<td class="bg-F1F3F3 no-top-border">3</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">1</td>
+													<td class="bg-ffffff">1</td>
+													<td class="bg-ffffff">2</td>
+													<td class="bg-ffffff">2</td>
+													<td class="bg-ffffff">9</td>
+													<td class="bg-ffffff">&nbsp;</td>
+												</tr>
+
+												<tr>
+													<td class="bg-F1F3F3 no-top-border">2</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">1</td>
+													<td class="bg-ffffff">2</td>
+													<td class="bg-ffffff">7</td>
+													<td class="bg-ffffff">&nbsp;</td>
+												</tr>
+
+												<tr>
+													<td class="bg-F1F3F3 no-top-border">1</td>
+													<td class="bg-ffffff">1</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">1.5</td>
+												</tr>
+
+												<tr class="last-row">
+													<td class="bg-F1F3F3 no-top-border">0</td>
+													<td class="bg-ffffff">3</td>
+													<td class="bg-ffffff">1</td>
+													<td class="bg-ffffff">1</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">1.5</td>
+												</tr>
+
+
+											</table>
+										</div>
+									</div>
+									
+									
+								</div>
+							</div>
+							<div class="keno-result-bottm-block">
+								<h3>Winning numbers and Keno prize distribution</h3>
+								<p>Check the latest GG World Keno draw results here to see if you’ve been lucky and collected one of the prizes – or maybe you picked all the required numbers correctly and won the big jackpot.</p>
+								<p>The prize breakdown for each draw is shown in the box. To understand the prizes for each type of bet, simply look at the number of numbers selected (chequered line at the top), and the number of correct guesses (shaded bar on the left).</p>
+								<p>For example, if you have chosen 6 numbers between 1 and 70, with multiplier x1, and you have matched 6 of the 20 numbers of the winning combination, the prize you get according to the table is $250.</p>
+								<p>So if the game has been 10 numbers and the numbers matched are also 10, the prize is $100,000 (with multiplier x1).</p>
+								<p>Simply match the vertical result with the horizontal result.</p>
+								<p>Above this large box, there is a drop down that allows you to automatically make the change depending on the bet multiplier selected (1 to 10).</p>
+								<h3>All today’s Keno results</h3>
+								<p>You can also check the results of previous draws by selecting a date and time in the drop-down box to the right of the numbers corresponding to the winning combination.</p>
+								<div class="keno-result-share-with">
+									<h3>Share with:</h3> 
+									<ul>
+										<li><a href="#"><img src="images/media-icon1.png" class="img-fluid" alt="icon"/></a></li>
+										<li><a href="#"><img src="images/media-icon2.png" class="img-fluid" alt="icon"/></a></li>
+										<li><a href="#"><img src="images/media-icon3.png" class="img-fluid" alt="icon"/></a></li>
+										<li><a href="#"><img src="images/media-icon4.png" class="img-fluid" alt="icon"/></a></li>
+										<li><a href="#"><img src="images/media-icon5.png" class="img-fluid" alt="icon"/></a></li>
+										<li><a href="#"><img src="images/media-icon6.png" class="img-fluid" alt="icon"/></a></li>
+									</ul>
+								</div>
+							</div>
+			            </div>
+			        </div>
+                   
+                    <div id="Keno_Information" class="keno_tabcontent">
+			            <div class="Keno-Tournaments-Results">
+			                <div class="Keno-Tournaments-Results-header">
+			                    <div class="Keno-Results-header-left">
+			                        <h1>Keno Information</h1>
+			                    </div>
+			                    
+			                </div>
+			                <div class="keno-result-bottm-block">
+								<h3 class="mt-0">Winning numbers and Keno prize distribution</h3>
+								<p>The rules for playing GG World Keno are very simple; you just have to select the number of numbers you want to play, choosing from a grid numbered from 1 to 70 inclusive.</p>
+								<p>Select the bet multiplier (between 1 and 10) with the same combination of numbers chosen, and proceed to the payout.</p>
+								<p>As simple and easy as that, there is a different draw every four minutes 24 hours a day. See in more detail how to play here.</p>
+								<p>The player can follow the results of the draws and check if his plays have won prizes directly through our platform.</p>
+								
+								<h3>Advantages of playing Keno online</h3>
+								<p>The game of Keno is offered in many casinos, both in person and online, and at LottoHoy.com we offer the possibility of accompanying your traditional lottery games with Keno bets.</p>
+								<p>From the comfort of your home, workplace, at the bus or train stop, having a drink at the bar, or in the situation you prefer and simply with an internet connection, you can enjoy the game 24/7.</p>
+								<h3>How do I win the jackpot?</h3>
+								<p>In order to win the jackpot you must match all 10 numbers on any of the bets you place, using the x10 multiplier, the maximum possible prize is $1,000,000.</p>
+								<h3>What do I do if I win?</h3>
+								<p>The player can verify winnings through their user account. The money won is deposited directly into your account, and is available for you to reinvest in new purchases of GG World Keno or any of the other lotteries we offer, or to request a withdrawal.</p>
+								<p>To request a withdrawal, this can be done directly from your user account by clicking on the withdrawal button in the “my transactions” section.</p>
+								<p>You will then be asked for proof of identity and proof of address and once these documents have been confirmed, you will be able to withdraw your winnings.</p>
+							</div>
+			                
+			                <div class="Multiplier-dropdown-sect mt-35">
+			                    <h2>Multiplier</h2>
+			                    <div class="Multiplier-dropdown">
+			                        <a href="#" id="Multiplier-dropbox-list-input" class="Multiplier-hunt-box" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">1</a>
+									<div id="Multiplier-dropbox-list" class="dropdown-menu Multiplier-hunt-dropbox-list">
+											<ul>
+												<li>1</li>
+												<li>2</li>
+												<li>3</li>
+												
+											</ul>										
+										</div>
+			                    </div>
+			                </div>
+			                <div class="keno-restlt-table-sect-block">
+								<div class="keno-restlt-table-sect">
+									<div class="keno-restlt-table-tittle">
+										<h1>Typed numbers</h1>
+									</div>
+									<div class="keno-restlt-table-content">
+										<div class="keno-restlt-table-left-tittle">
+											<h1>Correctly picked numbers</h1>
+										</div>
+										<div class="keno-restlt-table-Body">
+											<table>
+												<tbody><tr class="top-row">
+													<td>&nbsp;</td>
+													<td class="bg-F1F3F3">10</td>
+													<td class="bg-F1F3F3">9</td>
+													<td class="bg-F1F3F3">8</td>
+													<td class="bg-F1F3F3">7</td>
+													<td class="bg-F1F3F3">6</td>
+													<td class="bg-F1F3F3">5</td>
+													<td class="bg-F1F3F3">4</td>
+													<td class="bg-F1F3F3">3</td>
+													<td class="bg-F1F3F3">2</td>
+													<td class="bg-F1F3F3">1</td>
+												</tr>
+
+												<tr>
+													<td class="bg-F1F3F3">10</td>
+													<td class="bg-ffffff">100000</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+												</tr>
+
+												<tr>
+													<td class="bg-F1F3F3 no-top-border">9</td>
+													<td class="bg-ffffff">1500</td>
+													<td class="bg-ffffff">25000</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+												</tr>
+
+												<tr>
+													<td class="bg-F1F3F3 no-top-border">8</td>
+													<td class="bg-ffffff">125</td>
+													<td class="bg-ffffff">375</td>
+													<td class="bg-ffffff">5000</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+												</tr>
+
+												<tr>
+													<td class="bg-F1F3F3 no-top-border">7</td>
+													<td class="bg-ffffff">16</td>
+													<td class="bg-ffffff">50</td>
+													<td class="bg-ffffff">150</td>
+													<td class="bg-ffffff">750</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+												</tr>
+
+												<tr>
+													<td class="bg-F1F3F3 no-top-border">6</td>
+													<td class="bg-ffffff">3</td>
+													<td class="bg-ffffff">5</td>
+													<td class="bg-ffffff">22</td>
+													<td class="bg-ffffff">33</td>
+													<td class="bg-ffffff">250</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+												</tr>
+
+												<tr>
+													<td class="bg-F1F3F3 no-top-border">5</td>
+													<td class="bg-ffffff">1</td>
+													<td class="bg-ffffff">2</td>
+													<td class="bg-ffffff">4</td>
+													<td class="bg-ffffff">4</td>
+													<td class="bg-ffffff">27</td>
+													<td class="bg-ffffff">125</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+												</tr>
+
+												<tr>
+													<td class="bg-F1F3F3 no-top-border">4</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">1</td>
+													<td class="bg-ffffff">1</td>
+													<td class="bg-ffffff">2</td>
+													<td class="bg-ffffff">3</td>
+													<td class="bg-ffffff">9</td>
+													<td class="bg-ffffff">30</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+												</tr>
+
+												<tr>
+													<td class="bg-F1F3F3 no-top-border">3</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">1</td>
+													<td class="bg-ffffff">1</td>
+													<td class="bg-ffffff">2</td>
+													<td class="bg-ffffff">2</td>
+													<td class="bg-ffffff">9</td>
+													<td class="bg-ffffff">&nbsp;</td>
+												</tr>
+
+												<tr>
+													<td class="bg-F1F3F3 no-top-border">2</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">1</td>
+													<td class="bg-ffffff">2</td>
+													<td class="bg-ffffff">7</td>
+													<td class="bg-ffffff">&nbsp;</td>
+												</tr>
+
+												<tr>
+													<td class="bg-F1F3F3 no-top-border">1</td>
+													<td class="bg-ffffff">1</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">1.5</td>
+												</tr>
+
+												<tr class="last-row">
+													<td class="bg-F1F3F3 no-top-border">0</td>
+													<td class="bg-ffffff">3</td>
+													<td class="bg-ffffff">1</td>
+													<td class="bg-ffffff">1</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">&nbsp;</td>
+													<td class="bg-ffffff">1.5</td>
+												</tr>
+
+
+											</tbody>
+											</table>
+										</div>
+									</div>
+									
+									
+								</div>
+								
+							</div>
+							<div class="keno-result-share-with">
+									<h3>Share with:</h3> 
+									<ul>
+										<li><a href="#"><img src="images/media-icon1.png" class="img-fluid" alt="icon"></a></li>
+										<li><a href="#"><img src="images/media-icon2.png" class="img-fluid" alt="icon"></a></li>
+										<li><a href="#"><img src="images/media-icon3.png" class="img-fluid" alt="icon"></a></li>
+										<li><a href="#"><img src="images/media-icon4.png" class="img-fluid" alt="icon"></a></li>
+										<li><a href="#"><img src="images/media-icon5.png" class="img-fluid" alt="icon"></a></li>
+										<li><a href="#"><img src="images/media-icon6.png" class="img-fluid" alt="icon"></a></li>
+									</ul>
+								</div>
+			            </div>
+			        </div>
+
+			    </div>
+
+			</div>
+			
+			
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			
+			
+		</div>
+		
+	
+	</div>
+	
+	</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+// When the user clicks, open the popup
+function popupFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+
+}
+</script>
+<script>
+	/*for toggle sub menu*/
+		function subtogglediv(id, icon) {
+			var id = document.getElementById(id);
+			id.classList.toggle('submenu-active');
+			var cross = document.getElementById(icon);
+			cross.classList.toggle('fa-times');
+			cross.classList.toggle('fa-bars');
+		}
+		</script>
+<script type="text/javascript">
+    //For modal
+    document.addEventListener('click', function(e) {
+        e = e || window.event;
+        var target = e.target || e.srcElement;
+
+        if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') {
+            if (target.hasAttribute('data-target')) {
+                var m_ID = target.getAttribute('data-target');
+                document.getElementById(m_ID).classList.add('open');
+            }
+        }
+
+        // Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
+        if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') || target.classList.contains('modal')) {
+            var modal = document.querySelector('.modal.open');
+            modal.classList.remove('open');
+        }
+    }, false);
+</script>
+<script>
+    function kenuFunc(evt, kenuinput1) {
+        var i, keno_tabcontent, keno_tablinks1;
+        keno_tabcontent = document.getElementsByClassName("keno_tabcontent");
+        for (i = 0; i < keno_tabcontent.length; i++) {
+            keno_tabcontent[i].style.display = "none";
+        }
+        keno_tablinks1 = document.getElementsByClassName("keno_tablinks1");
+        for (i = 0; i < keno_tablinks1.length; i++) {
+            keno_tablinks1[i].className = keno_tablinks1[i].className.replace(" active", "");
+        }
+        document.getElementById(kenuinput1).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+</script>
+
+<script>
+    function kenuFunc2(evtt, kenuinput2) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("uptabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(kenuinput2).style.display = "block";
+        evtt.currentTarget.className += " active";
+    }
+
+
+	
+	function kenuFunc3(evtt, kenuinput3) {
+        var i, tourtabcontent, tablinks2;
+        tourtabcontent = document.getElementsByClassName("tourtabcontent");
+        for (i = 0; i < tourtabcontent.length; i++) {
+            tourtabcontent[i].style.display = "none";
+        }
+        tablinks2 = document.getElementsByClassName("tablinks2");
+        for (i = 0; i < tablinks2.length; i++) {
+            tablinks2[i].className = tablinks2[i].className.replace(" active", "");
+        }
+        document.getElementById(kenuinput3).style.display = "block";
+        evtt.currentTarget.className += " active";
+    }
+	
+</script>
+<script>
+//Treasure Hunt dropdown
+		var treasureVal = document.getElementById("Treasure-dropbox-list").querySelectorAll(".Treasure-hunt-dropbox-list ul li");
+		treasureVal.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('Treasure-dropbox-list-input').innerHTML = this.innerHTML;
+ 
+	
+	        
+		 }
+		  
+        });
+		//time Hunt dropdown
+		var timeVal = document.getElementById("time-dropbox-list").querySelectorAll(".time-hunt-dropbox-list ul li");
+		timeVal.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('time-dropbox-list-input').innerHTML = this.innerHTML;
+ 
+	
+	        
+		 }
+		  
+        });
+		//Treasure Hunt dropdown
+		var treasureVal2 = document.getElementById("Treasure-dropbox-list2").querySelectorAll(".Treasure-hunt-dropbox-list ul li");
+		treasureVal2.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('Treasure-dropbox-list-input2').innerHTML = this.innerHTML;
+ 
+	
+	        
+		 }
+		  
+        });
+		//time Hunt dropdown
+		var timeVal2 = document.getElementById("time-dropbox-list2").querySelectorAll(".time-hunt-dropbox-list ul li");
+		timeVal2.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('time-dropbox-list-input2').innerHTML = this.innerHTML;
+ 
+	
+	        
+		 }
+		  
+        });
+		//multiplier Hunt dropdown
+		var multiplierVal = document.getElementById("Multiplier-dropbox-list").querySelectorAll(".Multiplier-hunt-dropbox-list ul li");
+		multiplierVal.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('Multiplier-dropbox-list-input').innerHTML = this.innerHTML;
+ 
+	
+	        
+		 }
+		  
+        });
+</script>
+
+</body>
+
+</html>

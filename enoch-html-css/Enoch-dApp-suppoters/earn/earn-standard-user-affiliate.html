@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Earn</title>
+	<!-- Fav Icons -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/dashboard-header.css" rel="stylesheet" />
+    <link href="css/dashboard-style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/dApp-S-home.css" />
+    <link href="css/earn.css" rel="stylesheet"/>
+	
+</head>
+
+<body>
+	<div class="container-fluid dashboard-body-bg second-body-bg pb-0">
+	<div class="row">
+		<header class="custom-header">			
+			<div class="ezl-dashboard-header">
+				<div class="menu-left">
+					<div class="menu-wrap"><!--trade menu-->
+						<a href="#menu" class="menu-link" onclick="tradeFunction()"><img src="images/Menu.png" alt="Menu" class="img-fluid"></a>
+						<div class="tradecontainer" id="trademenu-drpdown">
+						  <div class="trade-menu-panel-panel-group" id="accordionMenu" role="tablist" aria-multiselectable="true">
+							<div class="trade-menu-panel">
+							  <div class="trade-menu-heading" role="tab">
+								<h4 class="trade-menu-title">
+								<a role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+								  <span><img src="images/Over.png" class="img-fluid" alt="Overview"></span>Overview
+								</a>
+							  </h4>
+							  </div>
+							 
+							</div>
+							<div class="trade-menu-panel">
+							  <div class="trade-menu-heading" role="tab" id="headingTwo">
+								<h4 class="trade-menu-title">
+								<a class="trade-dropmenu collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								 <span><img src="images/Borrow.png" class="img-fluid trade-menu-icon" alt="Trade"><img src="images/Borrow2.png" class="img-fluid trade-menu-icon-active" alt="Trade"></span>Trade
+								</a>
+							  </h4>
+							  </div>
+							  <div id="collapseTwo" class="trade-menu-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
+								<ul class="nav">
+									<li><a href="#">Swap</a></li>
+									<li><a href="#" class="trade-menuItem-active">Liquidity</a></li>
+								  </ul>
+							  </div>
+							</div>
+							<div class="trade-menu-panel">
+							  <div class="trade-menu-heading" role="tab" id="headingThree">
+								<h4 class="trade-menu-title">
+								<a class="collapsed trade-dropmenu" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								 <span><img src="images/pools.png" class="img-fluid trade-menu-icon" alt="pools"><img src="images/pools2.png" class="img-fluid trade-menu-icon-active" alt="pools"></span>Pools
+								</a>
+							  </h4>
+							  </div>
+							  <div id="collapseThree" class="trade-menu-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+								<ul class="nav">
+									<li><a href="#" class="trade-menuItem-active">Entertainment Pools</a></li>
+									<li><a href="#">NFT Farming Pools</a></li>
+								  </ul>
+							  </div>
+							</div>
+							
+							
+							<div class="trade-menu-panel">
+							  <div class="trade-menu-heading" role="tab" id="headingFour">
+								<h4 class="trade-menu-title">
+								<a class="collapsed trade-dropmenu" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								  <span><img src="images/menuStacking.png" class="img-fluid trade-menu-icon" alt="Staking"><img src="images/menuStacking2.png" class="img-fluid trade-menu-icon-active" alt="Staking"></span>Staking
+								</a>
+							  </h4>
+							  </div>
+							  <div id="collapseFour" class="trade-menu-collapse collapse" role="tabpanel" aria-labelledby="headingFour" aria-expanded="false">
+								
+								  <ul class="">
+									<li><a href="#">Enoch Staking</a></li>
+									<li><a href="#" class="trade-menuItem-active">NFT staking</a></li>
+								  </ul>
+							
+							  </div>
+							</div>
+							
+						  </div>
+						</div>
+					</div>
+					<div class="header-logo"><a href="javascript:void(0)"><img src="images/logo.png" alt="logo" class="img-fluid"></a></div>
+				</div>
+				<div class="menuright-side">
+					<div class="right-search">
+						<form class="search-form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Fund, ISIN, Keyword ">
+									<button class="search-form-btn" type="Submit"><img class="search-img" src="images/search.png" alt="search"></button>
+							</div>
+						</form>
+					</div>
+					<div class="menu-mid-sect">
+						<ul id="submenubar">
+							<li class="submenubar-item">
+								<div class="menu-times-notifi"><img src="images/home.png" alt="home" class="img-fluid"></div>
+								<a href="javascript:void(0)">Home</a>
+							</li>
+							
+							<li class="submenubar-item">
+								<div class="menu-times-notifi"><img src="images/Chat.png" alt="Chat" class="img-fluid"><span>0</span></div>
+								<a href="javascript:void(0)">Messaging</a>
+							</li>
+							<li class="ether-block">
+								<div class="menu-times-notifi mr-2"><img src="images/Ethereum.png" alt="Ethereum" class="img-fluid"></div>
+								<a href="javascript:void(0)">ETH Mainnet <i class="fa fa-angle-right"></i></a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)">Connect Wallet</a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)"><span><img src="images/cart.png" class="img-fluid mr-2"></span>Cart</a>
+							</li>
+							
+						</ul>
+						<div class="toggle-menu">
+								<div onclick="subtogglediv('submenubar','submenu-toggle');" class="d-inline-block">
+									<i class="fa fa-bars" aria-hidden="true" id="submenu-toggle"></i>
+								</div>
+							</div>
+					</div>
+					
+					<div class="ezl-notificaion">
+					<div class="position-relative notificaion-dropdown ezl-notificaion-marg">
+						<a href="javascript:void(0)" class="popup"><img src="images/help.png" alt="help"></a>							
+											
+					</div>
+					<div class=" position-relative notificaion-dropdown">
+						<a href="javascript:void(0)" class="popup"><img src="images/alertBell.png" alt="Bell"><span class="notificaion-spn">10</span></a>							
+						
+					</div>
+					</div>
+					<div class="ezl-user-ac">
+					
+					<div class="account-d dropdown">
+						<div class="dropdown-buttn"><span class="popup" onclick="popupFunction()"><div class="user-img"><img src="images/user-ReginaCooper.png" alt="user image" class="img-fluid"></div></span>
+							<div class="popupbox dropdown-menu" id="myPopup">
+								
+								<ul class="">
+									<li>
+										<div class="enoch-usr-prof"><span><img src="images/user-pro-pic.png" class="img-fluid mr-1" alt="profile- pic"> @Hulk66</span><span><a href="#">Change</a></span></div>
+									</li>
+									<li>
+										<div class="enoch-usr-status-block">
+											<div class="usr-status-left">Online Status</div>
+											<div class="usr-status-right">
+												<div class="post-switch">
+													<label class="postswitch">
+													  <input type="checkbox" checked="">
+													  <span class="post-slider round"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="enoch-usr-status-block"><a href="#">Become Creator </a></div>
+										<div class="enoch-usr-status-block mb-0"><a href="#" class="enoch-blue-clr">Your Public Profile</a></div>
+									</li>
+									<li>
+										<div class="enoch-usr-status-block"><a href="#">Setting </a></div>
+										<div class="enoch-usr-status-block"><a href="#">Help Center</a></div>										
+										<div class="enoch-usr-status-block mb-0"><a href="#" class="orange-clr">Upgrade to Premium</a></div>
+									</li>
+									<li class="mt-4">
+										<div class="enoch-usr-status-block mb-0">Wallet  <span><a href="#" class="btn freebonus-btn">$400 </a></span></div>
+									</li>
+									<li class="mt-4 pb-0">
+										<div class="enoch-usr-status-block mb-0 manage-ac">
+											<h3>Manage</h3>
+											<ul>
+												<li>
+													<div class="manage-ac-block">
+														<span>Comapny:	</span>
+														<span class="ml-1"><img src="images/man-icon1.png" class="img-fluid mr-1" alt="user">88mph  </span>
+													</div>
+												</li>
+												<li>
+													<div class="manage-ac-block">
+														<span>Comapny:	</span>
+														<span class="ml-1"><img src="images/man-icon2.png" class="img-fluid mr-1" alt="user">CryptoBlue    </span>
+													</div>
+												</li>
+											</ul>
+										</div>
+										
+									</li>
+									<li class="mb-0 pb-0">
+										<div class="enoch-usr-status-block mb-0"><a href="#" class="post-red-clr">Logout</a></div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>				
+			</div>
+			
+			<div class="dApp-menu-btn">
+			<a href="#"><img src="images/LeftSide-Menu.png" alt="menu" class="img-fluid" data-toggle="modal" data-target="right-top-modal"></a>
+			<div class="right-top-modal-block">
+				<div id="right-top-modal" class="modal fade">
+					<!-- Modal content -->
+					<div class="modal-content right-top-modal-content">
+						<span class="close"><img src="images/postCross2.png" alt="close" class="img-fluid" data-dismiss="modal"></span>
+						<div class="right-top-body-block">
+							<div class="right-top-body-block-lft">
+								<form class="right-search-form">
+									<div class="right-form-group">
+										<img src="images/help-Search.png" class="img-fluid" alt="search"><input type="text" class="form-control" placeholder="Search menu...">
+											
+									</div>
+								</form>
+								<div class="enoch-community-scrollable">
+								<div class="enoch-menu-block-panel">
+									<div class="enoch-menu-block-lft">
+										<div class="enoch-menu-block-items">
+											<h2>Peronal</h2>
+											<ul>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon1.png" class="img-fluid" alt="planner"></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Earn</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon2.png" class="img-fluid" alt="planner"></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Ranking</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon3.png" class="img-fluid" alt="planner"></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Billing</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon4.png" class="img-fluid" alt="planner"></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Affiliate</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												
+											</ul>
+										</div>
+										<div class="enoch-menu-block-items">
+											<h2>Entertainment</h2>
+											<ul>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon11.png" class="img-fluid" alt="planner"></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Popular</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon12.png" class="img-fluid" alt="planner"></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Slots</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon13.png" class="img-fluid" alt="planner"></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Live Casino </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon14.png" class="img-fluid" alt="planner"></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Lottery</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon15.png" class="img-fluid" alt="planner"></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Roulette</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon16.png" class="img-fluid" alt="planner"></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Promotions</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="enoch-menu-block-items">
+											<h2>Advertising</h2>
+											<ul>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon19.png" class="img-fluid" alt="planner"></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Ad Manager </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon20.png" class="img-fluid" alt="planner"></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Enoch Ad  </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												
+											</ul>
+										</div>
+										<div class="enoch-menu-block-items mb-0">
+											<h2>User Setting </h2>
+											<ul>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon26.png" class="img-fluid" alt="planner"></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Your Profile  </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon27.png" class="img-fluid" alt="planner"></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Your Account</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												
+											</ul>
+										</div>
+									</div>
+									<div class="enoch-menu-block-right">
+										<div class="enoch-menu-block-items">
+											<h2>Social</h2>
+											<ul>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon5.png" class="img-fluid" alt="planner"></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>My Networks</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon6.png" class="img-fluid" alt="planner"></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Communities</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon7.png" class="img-fluid" alt="planner"></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Artist Channels </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon8.png" class="img-fluid" alt="planner"></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Company pages </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon9.png" class="img-fluid" alt="planner"></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Events </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon10.png" class="img-fluid" alt="planner"></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>News Feed  </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="enoch-menu-block-items">
+											<h2>Shopping</h2>
+											<ul>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon17.png" class="img-fluid" alt="planner"></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Digital Art Marketplace </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												
+											</ul>
+										</div>
+										<div class="enoch-menu-block-items">
+											<h2>Jobs</h2>
+											<ul>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon18.png" class="img-fluid" alt="planner"></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Remote workhub</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												
+											</ul>
+										</div>
+										<div class="enoch-menu-block-items">
+											<h2>Developer</h2>
+											<ul>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon21.png" class="img-fluid" alt="planner"></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Develop</h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon22.png" class="img-fluid" alt="planner"></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Grow </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon23.png" class="img-fluid" alt="planner"></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Earn </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<!-- <li>
+													<div class="right-modal-lft"><img src="images/menu-icon24.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Github  </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li>
+												<li>
+													<div class="right-modal-lft"><img src="images/menu-icon25.png" class="img-fluid" alt="planner"/></div>
+													<div class="right-modal-right">
+														<a href="#">
+															<h3>Docs </h3>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</a>
+													</div>
+												</li> -->
+												
+											</ul>
+										</div>
+									</div>
+								</div>
+								</div>
+							</div>
+							<div class="right-top-body-block-right">
+								<h3>Create</h3>
+								<ul>
+									<li><a href="#"><span><img src="images/creat-icon1.png" class="img-fluid" alt="icon"></span> Post</a></li>
+									<li><a href="#"><span><img src="images/creat-icon2.png" class="img-fluid" alt="icon"></span> Community</a></li>
+									<li><a href="#"><span><img src="images/creat-icon3.png" class="img-fluid" alt="icon"></span> Artist Channel</a></li>
+									<li><a href="#"><span><img src="images/creat-icon4.png" class="img-fluid" alt="icon"></span> Group</a></li>
+									<li><a href="#"><span><img src="images/creat-icon5.png" class="img-fluid" alt="icon"></span> Event</a></li>
+									<li><a href="#"><span><img src="images/creat-icon6.png" class="img-fluid" alt="icon"></span> Company page </a></li>
+									<li><a href="#"><span><img src="images/creat-icon7.png" class="img-fluid" alt="icon"></span> Job</a></li>
+									<li><a href="#"><span><img src="images/creat-icon8.png" class="img-fluid" alt="icon"></span> Digital Art </a></li>
+									<li><a href="#"><span><img src="images/creat-icon8.png" class="img-fluid" alt="icon"></span> AD </a></li>									 
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>								
+			</div>
+		</div>
+		</header>
+	</div>		
+	<div class="row">	
+		<div class="ezl-dashboard-container">			
+			<div class="earn-head-banner">
+				<div class="earn-head-iconimg">
+					<ul>
+						<li><img src="images/earn-hd-icon1.png" class="img-fluid" alt="logo"/></li>
+						<li><img src="images/earn-hd-icon2.png" class="img-fluid" alt="logo"/></li>
+						<li><img src="images/earn-hd-icon3.png" class="img-fluid" alt="logo"/></li>
+						<li><img src="images/earn-hd-icon4.png" class="img-fluid" alt="logo"/></li>
+						<li><img src="images/earn-hd-icon5.png" class="img-fluid" alt="logo"/></li>
+						<li><img src="images/earn-hd-icon6.png" class="img-fluid" alt="logo"/></li>
+						<li><img src="images/earn-hd-icon7.png" class="img-fluid" alt="logo"/></li>
+						<li><img src="images/earn-hd-icon8.png" class="img-fluid" alt="logo"/></li>
+						<li><img src="images/earn-hd-icon9.png" class="img-fluid" alt="logo"/></li>
+						<li><img src="images/earn-hd-icon10.png" class="img-fluid" alt="logo"/></li>
+						<li><img src="images/earn-hd-icon11.png" class="img-fluid" alt="logo"/></li>
+						<li><img src="images/earn-hd-icon12.png" class="img-fluid" alt="logo"/></li>
+					</ul>
+				</div>
+				<h2>Earn Money</h2>
+				<p>Complete offers , from rewards, refer friends & win prizes</p>
+			</div>
+			<div class="earn-iron-rank">
+				<h3>Iron Rank</h3>
+				<div class="earn-iron-rank-top">
+					<div class="earn-iron-rank-top-lft">
+						<h3>Personal Star</h3>
+						<ul>
+							<li><img src="images/earn-star.png" class="img-fluid" alt="star"/></li>
+							<li><img src="images/earn-star.png" class="img-fluid" alt="star"/></li>
+							<li><img src="images/earn-star2.png" class="img-fluid" alt="star"/></li>
+							<li><img src="images/earn-star2.png" class="img-fluid" alt="star"/></li>
+						</ul>
+					</div>
+					<div class="earn-iron-rank-top-mid">
+						<h3>1970 XP </h3>
+						<p>Earned</p>
+					</div>
+					<div class="earn-iron-rank-top-right">
+						<h3>Badges</h3>
+						<ul>
+							<li><span><img src="images/badge1.png" class="img-fluid" alt="badge"/></span><span>CARRER BEST </span></li>
+							<li><span><img src="images/badge1.png" class="img-fluid" alt="badge"/></span><span>LEVEL UP</span></li>
+							<li><span><img src="images/badge2.png" class="img-fluid" alt="badge"/></span><span>LEVEL UP</span></li>
+							<li><span><img src="images/badge2.png" class="img-fluid" alt="badge"/></span><span>LEVEL UP</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="earn-iron-rank-bottom">
+					<h3>FIRST WIN OF THE DAY <span>+500XP</span></h3>
+					<div class="earn-iron-progressbar-block">
+						<div class="earn-top-value"><span>4 XP</span><span>565 XP</span></div>
+						<div class="earn-iron-progressbar">
+							<div class="earn-iron-progressbar-nner">
+							
+							</div>
+							<span class="progressbar-val">8XP</span>
+						</div>
+					</div>
+					<p class="earn-iron-bottm-txt">+20% XP(BONUS ) </p>
+				</div>
+			</div>
+			<div class="earn-balance-sect">
+				<div class="earn-balance-lft">
+					<span><img src="images/balance-bag.png" class="img-fluid" alt="icon"/></span>
+					<div>
+						<h3>Total Balance</h3>
+						<p>No View your balance and handle pending transactiobs </p>
+					</div>
+				</div>
+				<div class="earn-balance-right">
+					3000.00  USD  
+				</div>
+			</div>
+			<div class="earn-overview-tab-sect">
+				<div class="earn-tablink-sect">
+					<ul>
+						<li><button class="earn_tablinks" onclick="earnFunc(event, 'overview')">Overview</button></li>
+						<li><button class="earn_tablinks" >Transactions</button></li>
+						<li><button class="earn_tablinks" >Game Contest</button></li>
+						<li><button class="earn_tablinks active" onclick="earnFunc(event, 'affiliate')">Affiliate</button></li>
+						<li><button class="earn_tablinks">Currency</button></li>
+					</ul>
+			    </div>
+				<div class="earn-tabcontent-block">
+					 <div id="overview" class="earn_tabcontent ">
+						<div class="earn-withdraw-b">	
+							<div class="earn-withdraw-lft">	
+								<span><img src="images/withdrawIcon.png" class="img-fluid" alt="icon"/></span>
+								<div>
+									<h3>Withdraw Balance</h3>
+									<p>Total money you are abel to withdraw </p>
+								</div>
+							</div>
+							<div class="earn-withdraw-right">	
+								<div class="earn-withdraw-right-input">
+									<span class="earn-withdraw-total">Total</span>
+									<span class="withdraw-total-val">$900.00  </span>
+									<div class="earn-withdraw-input-fild">
+										
+			                            <a href="#" id="withdraw-dropbox-list-input" class="withdraw-box" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Currency</a>
+										<div id="withdraw-dropbox-list" class="dropdown-menu withdraw-dropbox-list">
+											<ul>
+												<li>-</li>
+												<li>-</li>
+												<li>-</li>
+												<li>-</li>
+												
+											</ul>										
+										</div>
+			                        </div>
+								</div>
+								<div><button class="earn-withdraw-bttn">Withdraw Now</button></div>
+							</div>
+						</div>
+						<div class="earn-pending-withdraw-sect">
+							<div class="earn-pending-withdraw-lft">	
+								<div class="pending-withdraw-p0">
+									<span><img src="images/pending.png" class="img-fluid" alt="icon"></span>
+									<div class="pending-withdraw-p0-txt">
+										<h3>Pending Withdrawls</h3>
+										<p>Total amount locked in bonuses  </p>
+									</div>
+								</div>
+								<span class="no-pending-fund">No Pending Fund</span>
+							</div>
+							<div class="earn-pending-withdraw-right">
+								<div class="pending-withdraw-p0">
+									<span><img src="images/bonus-balance.png" class="img-fluid" alt="icon"></span>
+									<div class="pending-withdraw-p0-txt">
+										<h3>Bonus Balance</h3>
+										<p>Total amount locked in bonuses  </p>
+									</div>
+								</div>
+								<div class="earn-pending-right-input">
+									<div class="pending-total-val">
+										<span class="earn-pndng-withdraw-total">Total</span>
+										<span class="withdraw-total-val">$500.00  </span>
+									</div>
+									<div class="earn-withdraw-input-fild">
+										
+			                            <a href="#" id="withdraw-dropbox-list-input1" class="pending-withdraw-box" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Currency</a>
+										<div id="withdraw-dropbox-list1" class="dropdown-menu withdraw-dropbox-list">
+											<ul>
+												<li>
+													<div class="earn-currency-listItem">
+														<div class="currency-listItem-lft">
+															<span><img src="images/Amber.png" class="img-fluid" alt="icon"></span>
+															<div class="currency-listItem-txt">
+																<h3>Amber</h3>
+																<p>$0.0016</p>
+															</div>
+														</div>
+														<div class="currency-listItem-mid">
+															<span><img src="images/Polygon1.png" class="img-fluid" alt="icon"></span>1.1%
+														</div>
+														<div class="currency-listItem-right">
+															<h3>100,800</h3>
+															<p>$161,28</p>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="earn-currency-listItem">
+														<div class="currency-listItem-lft">
+															<span><img src="images/USDC.png" class="img-fluid" alt="icon"></span>
+															<div class="currency-listItem-txt">
+																<h3>USDC</h3>
+																<p>$0.46</p>
+															</div>
+														</div>
+														<div class="currency-listItem-mid">
+															<span><img src="images/Polygon1.png" class="img-fluid" alt="icon"></span>1.1%
+														</div>
+														<div class="currency-listItem-right">
+															<h3>13,800</h3>
+															<p>$150,000</p>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="earn-currency-listItem">
+														<div class="currency-listItem-lft">
+															<span><img src="images/USDT.png" class="img-fluid" alt="icon"></span>
+															<div class="currency-listItem-txt">
+																<h3>USDT</h3>
+																<p>$0.46</p>
+															</div>
+														</div>
+														<div class="currency-listItem-mid">
+															<span><img src="images/Polygon2.png" class="img-fluid" alt="icon"></span>-2.1%
+														</div>
+														<div class="currency-listItem-right">
+															<h3>13,800</h3>
+															<p>$150,000</p>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="earn-currency-listItem">
+														<div class="currency-listItem-lft">
+															<span><img src="images/DAI.png" class="img-fluid" alt="icon"></span>
+															<div class="currency-listItem-txt">
+																<h3>DAI</h3>
+																<p>$0.46</p>
+															</div>
+														</div>
+														<div class="currency-listItem-mid">
+															<span><img src="images/Polygon1.png" class="img-fluid" alt="icon"></span>1.1%
+														</div>
+														<div class="currency-listItem-right">
+															<h3>13,800</h3>
+															<p>$150,000</p>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="earn-currency-listItem">
+														<div class="currency-listItem-lft">
+															<span><img src="images/Ether.png" class="img-fluid" alt="icon"></span>
+															<div class="currency-listItem-txt">
+																<h3>Ether</h3>
+																<p>$0.46</p>
+															</div>
+														</div>
+														<div class="currency-listItem-mid">
+															<span><img src="images/Polygon1.png" class="img-fluid" alt="icon"></span>1.1%
+														</div>
+														<div class="currency-listItem-right">
+															<h3>13,800</h3>
+															<p>$150,000</p>
+														</div>
+													</div>
+												</li>
+												
+											</ul>										
+										</div>
+			                        </div>
+								</div>
+							</div>
+						</div>
+						<div class="earn-recent-income-sect">
+							<div class="earn-recent-income-hd">
+								<h3>Recent Income </h3>
+								<p>Manage and view your income  </p>
+							</div>
+							<div class="earn-pending-withdraw-sect">
+							<div class="earn-pending-withdraw-lft">	
+								<div class="pending-withdraw-recent-p0">
+									<span><img src="images/freind.png" class="img-fluid" alt="icon"></span>
+									<div class="pending-withdraw-p0-txt">
+										<h3>Friends</h3>
+										<p>Total amount locked in bonuses   </p>
+									</div>
+								</div>
+								<div class="earn-pending-right-input">
+									<div class="pending-total-val">
+										<span class="earn-pndng-withdraw-total">Total</span>
+										<span class="withdraw-total-val">$120.00 </span>
+									</div>
+									<div class="earn-withdraw-input-fild">
+										
+			                            <a href="#" id="withdraw-dropbox-list-input2" class="pending-withdraw-box" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Currency</a>
+										<div id="withdraw-dropbox-list2" class="dropdown-menu withdraw-dropbox-list">
+											<ul>
+												<li>
+													<div class="earn-currency-listItem">
+														<div class="currency-listItem-lft">
+															<span><img src="images/Amber.png" class="img-fluid" alt="icon"></span>
+															<div class="currency-listItem-txt">
+																<h3>Amber</h3>
+																<p>$0.0016</p>
+															</div>
+														</div>
+														<div class="currency-listItem-mid">
+															<span><img src="images/Polygon1.png" class="img-fluid" alt="icon"></span>1.1%
+														</div>
+														<div class="currency-listItem-right">
+															<h3>100,800</h3>
+															<p>$161,28</p>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="earn-currency-listItem">
+														<div class="currency-listItem-lft">
+															<span><img src="images/Enoch.png" class="img-fluid" alt="icon"></span>
+															<div class="currency-listItem-txt">
+																<h3>Enoch</h3>
+																<p>$1.16</p>
+															</div>
+														</div>
+														<div class="currency-listItem-mid">
+															<span><img src="images/Polygon1.png" class="img-fluid" alt="icon"></span>1.1%
+														</div>
+														<div class="currency-listItem-right">
+															<h3>0</h3>
+															<p>$0.00</p>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="earn-currency-listItem">
+														<div class="currency-listItem-lft">
+															<span><img src="images/DAI.png" class="img-fluid" alt="icon"></span>
+															<div class="currency-listItem-txt">
+																<h3>DAI</h3>
+																<p>$1.00</p>
+															</div>
+														</div>
+														<div class="currency-listItem-mid">
+															<span><img src="images/Polygon2.png" class="img-fluid" alt="icon"></span>-2.1%
+														</div>
+														<div class="currency-listItem-right">
+															<h3>0</h3>
+															<p>$0</p>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="earn-currency-listItem">
+														<div class="currency-listItem-lft">
+															<span><img src="images/USDC.png" class="img-fluid" alt="icon"></span>
+															<div class="currency-listItem-txt">
+																<h3>USDC</h3>
+																<p>$1.00</p>
+															</div>
+														</div>
+														<div class="currency-listItem-mid">
+															<span><img src="images/Polygon1.png" class="img-fluid" alt="icon"></span>1.1%
+														</div>
+														<div class="currency-listItem-right">
+															<h3>0</h3>
+															<p>$0</p>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="earn-currency-listItem">
+														<div class="currency-listItem-lft">
+															<span><img src="images/USDT.png" class="img-fluid" alt="icon"></span>
+															<div class="currency-listItem-txt">
+																<h3>USDT</h3>
+																<p>$0.46</p>
+															</div>
+														</div>
+														<div class="currency-listItem-mid">
+															<span><img src="images/Polygon1.png" class="img-fluid" alt="icon"></span>1.1%
+														</div>
+														<div class="currency-listItem-right">
+															<h3>0</h3>
+															<p>$0</p>
+														</div>
+													</div>
+												</li>
+												
+												<li>
+													<div class="earn-currency-listItem">
+														<div class="currency-listItem-lft">
+															<span><img src="images/Ether.png" class="img-fluid" alt="icon"></span>
+															<div class="currency-listItem-txt">
+																<h3>ETH</h3>
+																<p>$3200</p>
+															</div>
+														</div>
+														<div class="currency-listItem-mid">
+															<span><img src="images/Polygon1.png" class="img-fluid" alt="icon"></span>1.1%
+														</div>
+														<div class="currency-listItem-right">
+															<h3>0</h3>
+															<p>$0</p>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="earn-currency-listItem">
+														<div class="currency-listItem-lft">
+															<span><img src="images/wBTC.png" class="img-fluid" alt="icon"></span>
+															<div class="currency-listItem-txt">
+																<h3>wBTC</h3>
+																<p>$42000</p>
+															</div>
+														</div>
+														<div class="currency-listItem-mid">
+															<span><img src="images/Polygon1.png" class="img-fluid" alt="icon"></span>1.1%
+														</div>
+														<div class="currency-listItem-right">
+															<h3>0</h3>
+															<p>$0</p>
+														</div>
+													</div>
+												</li>
+											</ul>										
+										</div>
+			                        </div>
+								</div>
+							</div>
+							<div class="earn-pending-withdraw-right">
+								<div class="pending-withdraw-recent-p0">
+									<span><img src="images/mandala.png" class="img-fluid" alt="icon"></span>
+									<div class="pending-withdraw-p0-txt">
+										<h3>Mandala</h3>
+										<p>Total amount locked in bonuses </p>
+									</div>
+								</div>
+								<div class="earn-pending-right-input">
+									<div class="pending-total-val">
+										<span class="earn-pndng-withdraw-total">Total</span>
+										<span class="withdraw-total-val">$10.000  </span>
+									</div>
+									<div class="earn-withdraw-input-fild">
+										
+			                            <a href="#" id="withdraw-dropbox-list-input3" class="pending-withdraw-box" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Currency</a>
+										<div id="withdraw-dropbox-list3" class="dropdown-menu withdraw-dropbox-list">
+											<ul>
+												<li>-</li>
+												<li>-</li>
+												<li>-</li>
+												<li>-</li>
+												
+											</ul>										
+										</div>
+			                        </div>
+								</div>
+							</div>
+							<div class="earn-pending-withdraw-lft">	
+								<div class="pending-withdraw-recent-p0">
+									<span><img src="images/NomadCitizen.png" class="img-fluid" alt="icon"></span>
+									<div class="pending-withdraw-p0-txt">
+										<h3>Nomad Citizen</h3>
+										<p>Total amount locked in bonuses   </p>
+									</div>
+								</div>
+								<div class="earn-pending-right-input">
+									<div class="pending-total-val">
+										<span class="earn-pndng-withdraw-total">Total</span>
+										<span class="withdraw-total-val">$500.00  </span>
+									</div>
+									<div class="earn-withdraw-input-fild">
+										
+			                            <a href="#" id="withdraw-dropbox-list-input4" class="pending-withdraw-box" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Currency</a>
+										<div id="withdraw-dropbox-list4" class="dropdown-menu withdraw-dropbox-list">
+											<ul>
+												<li>-</li>
+												<li>-</li>
+												<li>-</li>
+												<li>-</li>
+												
+											</ul>										
+										</div>
+			                        </div>
+								</div>
+							</div>
+							<div class="earn-pending-withdraw-right">
+								<div class="pending-withdraw-recent-p0">
+									<span><img src="images/Entertainment.png" class="img-fluid" alt="icon"></span>
+									<div class="pending-withdraw-p0-txt">
+										<h3>Entertainment</h3>
+										<p>Total amount locked in bonuses </p>
+									</div>
+								</div>
+								<div class="earn-pending-right-input">
+									<div class="pending-total-val">
+										<span class="earn-pndng-withdraw-total">Total</span>
+										<span class="withdraw-total-val">$600.00 </span>
+									</div>
+									<div class="earn-withdraw-input-fild">
+										
+			                            <a href="#" id="withdraw-dropbox-list-input5" class="pending-withdraw-box" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Currency</a>
+										<div id="withdraw-dropbox-list5" class="dropdown-menu withdraw-dropbox-list">
+											<ul>
+												<li>
+													<div class="earn-currency-listItem">
+														<div class="currency-listItem-lft">
+															<span><img src="images/Amber.png" class="img-fluid" alt="icon"></span>
+															<div class="currency-listItem-txt">
+																<h3>Amber</h3>
+																<p>$0.0016</p>
+															</div>
+														</div>
+														<div class="currency-listItem-mid">
+															<span><img src="images/Polygon1.png" class="img-fluid" alt="icon"></span>1.1%
+														</div>
+														<div class="currency-listItem-right">
+															<h3>100,800</h3>
+															<p>$161,28</p>
+														</div>
+													</div>
+												</li>
+												
+												<li>
+													<div class="earn-currency-listItem">
+														<div class="currency-listItem-lft">
+															<span><img src="images/DAI.png" class="img-fluid" alt="icon"></span>
+															<div class="currency-listItem-txt">
+																<h3>DAI</h3>
+																<p>$1.00</p>
+															</div>
+														</div>
+														<div class="currency-listItem-mid">
+															<span><img src="images/Polygon2.png" class="img-fluid" alt="icon"></span>-2.1%
+														</div>
+														<div class="currency-listItem-right">
+															<h3>0</h3>
+															<p>$0</p>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="earn-currency-listItem">
+														<div class="currency-listItem-lft">
+															<span><img src="images/USDC.png" class="img-fluid" alt="icon"></span>
+															<div class="currency-listItem-txt">
+																<h3>USDC</h3>
+																<p>$1.00</p>
+															</div>
+														</div>
+														<div class="currency-listItem-mid">
+															<span><img src="images/Polygon1.png" class="img-fluid" alt="icon"></span>1.1%
+														</div>
+														<div class="currency-listItem-right">
+															<h3>0</h3>
+															<p>$0</p>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="earn-currency-listItem">
+														<div class="currency-listItem-lft">
+															<span><img src="images/USDT.png" class="img-fluid" alt="icon"></span>
+															<div class="currency-listItem-txt">
+																<h3>USDT</h3>
+																<p>$0.46</p>
+															</div>
+														</div>
+														<div class="currency-listItem-mid">
+															<span><img src="images/Polygon1.png" class="img-fluid" alt="icon"></span>1.1%
+														</div>
+														<div class="currency-listItem-right">
+															<h3>0</h3>
+															<p>$0</p>
+														</div>
+													</div>
+												</li>
+												
+												<li>
+													<div class="earn-currency-listItem">
+														<div class="currency-listItem-lft">
+															<span><img src="images/Ether.png" class="img-fluid" alt="icon"></span>
+															<div class="currency-listItem-txt">
+																<h3>ETH</h3>
+																<p>$3200</p>
+															</div>
+														</div>
+														<div class="currency-listItem-mid">
+															<span><img src="images/Polygon1.png" class="img-fluid" alt="icon"></span>1.1%
+														</div>
+														<div class="currency-listItem-right">
+															<h3>0</h3>
+															<p>$0</p>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="earn-currency-listItem">
+														<div class="currency-listItem-lft">
+															<span><img src="images/wBTC.png" class="img-fluid" alt="icon"></span>
+															<div class="currency-listItem-txt">
+																<h3>wBTC</h3>
+																<p>$42000</p>
+															</div>
+														</div>
+														<div class="currency-listItem-mid">
+															<span><img src="images/Polygon1.png" class="img-fluid" alt="icon"></span>1.1%
+														</div>
+														<div class="currency-listItem-right">
+															<h3>0</h3>
+															<p>$0</p>
+														</div>
+													</div>
+												</li>
+											</ul>										
+										</div>
+			                        </div>
+								</div>
+							</div>
+						</div>
+						</div>
+						<div class="earn-recent-income-sect">
+							<div class="earn-recent-income-hd">
+								<h3>Recent Bonuses  </h3>
+								<p>Manage and view your income   </p>
+							</div>
+							<div class="earn-pending-withdraw-sect">
+							<div class="earn-pending-withdraw-lft">	
+								<div class="pending-withdraw-recent-p0">
+									<span><img src="images/bonus.png" class="img-fluid" alt="icon"></span>
+									<div class="pending-withdraw-p0-txt">
+										<h3>Welcome Bonus, 100 free spins</h3>
+										<p>Expires August 27, 2021  </p>
+									</div>
+								</div>
+								<div class="earn-pending-right-panel">
+									<div class="earn-bonus-spin"><span class="earn-blue-clr">0% </span><span>spins</span></div>
+									<span class="earn-right-arrw"><a href="#"><img src="images/right-angl.png" class="img-fluid" alt="forward"/></a></span>
+								</div>
+							</div>
+							<div class="earn-pending-withdraw-right">
+								<div class="pending-withdraw-recent-p0">
+									<span><img src="images/treasure-chest.png" class="img-fluid" alt="icon"></span>
+									<div class="pending-withdraw-p0-txt">
+										<h3>Bonus,Promotion code     </h3>
+										<p>Expires August 27, 2021</p>
+									</div>
+								</div>
+								<div class="earn-pending-right-panel">
+									<div class="earn-bonus-spin"><span  class="earn-green-clr">0% </span><span>promo<br/>code</span></div>
+									<span class="earn-right-arrw"><a href="#"><img src="images/right-angl.png" class="img-fluid" alt="forward"/></a></span>
+								</div>
+							</div>
+							
+						</div>
+						</div>
+						<div class="earn-recent-income-sect">
+							<div class="earn-recent-income-hd">
+								<h3>Affiliate </h3>
+								<p>Manage and view your income </p>
+							</div>
+							<div class="earn-affiliate-b">	
+								<div class="earn-withdraw-lft">	
+									<span><img src="images/withdrawIcon.png" class="img-fluid" alt="icon"></span>
+									<div>
+										<h3>Withdraw Balance</h3>
+										<p>Total money you are abel to withdraw </p>
+									</div>
+								</div>
+								<div class="earn-withdraw-right">	
+									<div class="earn-withdraw-right-input">
+										<span class="earn-withdraw-total affiliate-total">Total</span>
+										<span class="withdraw-total-val">$200.00  </span>
+										<div class="earn-withdraw-input-fild">
+											
+											<a href="#" id="withdraw-dropbox-list-input6" class="withdraw-box affiliate-box" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Currency</a>
+											<div id="withdraw-dropbox-list6" class="dropdown-menu withdraw-dropbox-list">
+												<ul>
+													<li>-</li>
+													<li>-</li>
+													<li>-</li>
+													<li>-</li>
+													
+												</ul>										
+											</div>
+										</div>
+									</div>
+									<div><button class="earn-withdraw-bttn">Withdraw Now</button></div>
+								</div>
+							</div>
+						</div>
+						<div class="earn-pending-withdraw-sect">
+							<div class="earn-pending-withdraw-lft">	
+								<div class="pending-withdraw-p0">
+									<span><img src="images/pending.png" class="img-fluid" alt="icon"></span>
+									<div class="pending-withdraw-p0-txt">
+										<h3>Pending Withdrawls</h3>
+										<p>Total amount locked in bonuses  </p>
+									</div>
+								</div>
+								<span class="no-pending-fund">No Pending Fund</span>
+							</div>
+							<div class="earn-pending-withdraw-right">
+								<div class="pending-withdraw-p0">
+									<span><img src="images/refferal.png" class="img-fluid" alt="icon"></span>
+									<div class="pending-withdraw-p0-txt">
+										<h3>Paid  Referral </h3>
+										<p>All  Paying Referrals </p>
+									</div>
+								</div>
+								<span class="no-refferal-fund">  24    </span>
+							</div>
+						</div>
+						<!-- <div class="earn-invite-sect">
+							<div class="earn-invite-sect-lft">
+								<div class="earn-invite-txt">
+									<h3>Invite your friend</h3>
+									<p>Earn up to 30% monthly of every paid referral ,Recurring lifetime commissions .</p>
+								</div>
+							</div>
+							<div class="earn-invite-sect-right">
+								<button class="earn-join-bttn">Join & Start to earn </button>
+							</div>
+						</div> -->
+					 </div>
+					 <div id="transactions" class="earn_tabcontent">
+						Transactions
+					 </div>
+					 <div id="game_contest" class="earn_tabcontent">
+						Game Contest    
+					 </div>
+					 <div id="affiliate" class="earn_tabcontent earn-d-block">
+						<div class="earn-progress-sect">
+							<h2>Earning Progress</h2>
+							<div class="earn-progress-chart-hd"><h3>Earning in USD</h3></div>
+							<div class="earn-progress-chart-block">
+								
+								<ul class="chart-left-val">
+									<li>$3000</li>
+									<li>$2700</li>
+									<li>$2400</li>
+									<li>$2100</li>
+									<li>$1800</li>
+									<li>$1500</li>
+									<li>$1200</li>
+									<li>$900</li>
+									<li>$600</li>
+									<li>$300</li>
+									<li>$100</li>
+									<li>$0.00</li>
+								</ul>
+								<ul class="chart">
+								  <li>
+									<span title="JAN"></span>
+								  </li>
+								  <li>
+									<span title="FEB"></span>
+								  </li>
+								  <li>
+									<span title="MAR"></span>
+								  </li>
+								  <li>
+									<span title="APR"></span>
+								  </li>
+								  <li>
+									<span title="MAY"></span>
+								  </li>
+								  <li>
+									<span title="JUN"></span>
+								  </li>
+								  <li>
+									<span title="JUL"></span>
+								  </li>
+								  <li>
+									<span title="AUG"></span>
+								  </li>
+								  <li>
+									<span title="SEP"></span>
+								  </li>
+								  <li>
+									<span title="OCT"></span>
+								  </li>
+								  <li>
+									<span title="NOV"></span>
+								  </li>
+								  <li>
+									<span title="DEC"></span>
+								  </li>
+								</ul>    
+							</div>
+						</div>
+						<div class="earn-affiliate-transactHistory">
+							<h3>Affiliate Transaction history</h3>
+							<div class="affiliate-transactHistory-table table-responsive">
+								<table class="table transactHistory-tbl">
+									<thead>
+										<th>Timestamp</th>
+										<th>Transaction ID </th>
+										<th>Referal name   </th>
+										<th>Subject   </th>
+										<th>Type  </th>
+										<th>Royalty%  </th>
+										<th>Value </th>
+										<th>Status </th>
+									</thead>
+									<tbody>
+										<tr>
+											<td>13-10-2020</td>
+											<td>12345689</td>
+											<td>@Greatwilliam</td>
+											<td>Membership</td>
+											<td>Premium</td>
+											<td>4%</td>
+											<td>$0.75</td>
+											<td class="aff-pending-clr">Pending </td>
+										</tr>
+										<tr>
+											<td>13-10-2020</td>
+											<td>12345689</td>
+											<td>@Greatwilliam</td>
+											<td>Membership</td>
+											<td>Premium</td>
+											<td>4%</td>
+											<td>$0.75</td>
+											<td class="aff-pending-clr">Pending </td>
+										</tr>
+										<tr>
+											<td>13-10-2020</td>
+											<td>12345689</td>
+											<td>@Greatwilliam</td>
+											<td>Membership</td>
+											<td>Premium</td>
+											<td>4%</td>
+											<td>$0.75</td>
+											<td class="aff-pending-clr">Pending </td>
+										</tr>
+										<tr>
+											<td>13-10-2020</td>
+											<td>12345689</td>
+											<td>@Greatwilliam</td>
+											<td>Membership</td>
+											<td>Premium</td>
+											<td>4%</td>
+											<td>$0.75</td>
+											<td class="aff-pending-clr">Pending </td>
+										</tr>
+										<tr>
+											<td>13-10-2020</td>
+											<td>12345689</td>
+											<td>@Greatwilliam</td>
+											<td>Membership</td>
+											<td>Premium</td>
+											<td>4%</td>
+											<td>$0.75</td>
+											<td class="aff-pending-clr">Pending </td>
+										</tr>
+										<tr>
+											<td>13-10-2020</td>
+											<td>12345689</td>
+											<td>@Greatwilliam</td>
+											<td>Membership</td>
+											<td>Premium</td>
+											<td>4%</td>
+											<td>$0.75</td>
+											<td class="aff-pending-clr">Pending </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="aff-table-pagination">
+								<ul class="">
+									
+									<li>					  	
+										<a href="javascript:void(0)" class="arow-link-lft"><i class="fa fa-angle-left" aria-hidden="true"></i></a>					    												      	
+									</li>
+									<li class="pagi-active">
+										<a href="javascript:void(0)" class="">1</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)" class="">2</a>
+									</li>
+									<li><a href="javascript:void(0)" class="">3</a></li>
+									
+									<li>
+										<a href="javascript:void(0)" class="arow-link-right"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</li>
+									
+															
+								</ul>
+							</div>
+						</div>
+						<div class="affiliate-program-sect">
+							<h3>Affiliate Program </h3>
+							<div class="earn-refferal-block2">
+								<div class="earn-refferal-block-lft refferal-block-padd-lft">
+									<h3>Earn money with the BigCommerce Affiliate Program</h3>
+									<div><button class="viiew-affiliate-btn">View Affiliate </button></div>
+								</div>
+								<div class="earn-refferal-block-right2">
+									<img src="images/refral-img2.png" class="img-fluid" alt="reward"/>
+								</div>
+							</div>
+						</div>
+					 </div>
+					 <div id="currency" class="earn_tabcontent">
+						Currency
+					 </div>
+				</div>
+			</div>
+		</div>			
+	</div>
+</div>
+	
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+// When the user clicks, open the popup
+function popupFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+
+}
+// When the user clicks, open trade mennu
+function tradeFunction() {
+  var trade = document.getElementById("trademenu-drpdown");
+  trade.classList.toggle("show");
+}
+</script>
+<script>
+	/*for toggle sub menu*/
+		function subtogglediv(id, icon) {
+			var id = document.getElementById(id);
+			id.classList.toggle('submenu-active');
+			var cross = document.getElementById(icon);
+			cross.classList.toggle('fa-times');
+			cross.classList.toggle('fa-bars');
+		}
+		</script>
+	<script>
+		//earn dropdown
+		var treasureVal = document.getElementById("withdraw-dropbox-list5").querySelectorAll(".withdraw-dropbox-list ul li .currency-listItem-right p");
+		treasureVal.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('withdraw-dropbox-list-input5').innerHTML = this.innerHTML;	        
+		 }
+		  
+        });
+		
+	</script>
+	<script type="text/javascript">
+		
+	    //For modal
+		document.addEventListener('click', function (e) {
+	        e = e || window.event;
+	        var target = e.target || e.srcElement;
+
+	        if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') 
+	        {
+	            if (target.hasAttribute('data-target')) 
+	            {
+	                var m_ID = target.getAttribute('data-target');
+	                document.getElementById(m_ID).classList.add('open');
+	            }
+	        }
+
+	        // Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
+	        if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') ||target.classList.contains('modal')) {
+	            var modal = document.querySelector('.modal.open');
+	            modal.classList.remove('open');
+	        }
+        }, false);
+      	
+ 	</script>
+	<script>
+	//for tab
+    function earnFunc(evt, earninput) {
+        var i, earn_tabcontent, earn_tablinks;
+        earn_tabcontent = document.getElementsByClassName("earn_tabcontent");
+        for (i = 0; i < earn_tabcontent.length; i++) {
+            earn_tabcontent[i].style.display = "none";
+        }
+        earn_tablinks = document.getElementsByClassName("earn_tablinks");
+        for (i = 0; i < earn_tablinks.length; i++) {
+            earn_tablinks[i].className = earn_tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(earninput).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+</script>
+<script>
+	$(function(){
+	   $('.menu-mid-sect ul li.submenubar-item a').click(function(){
+		 $('.menu-mid-sect ul li.submenubar-item a').each(function(a){
+		   $( this ).removeClass('selectedclass')
+		 });
+		 $( this ).addClass('selectedclass');
+	   });
+	  
+	 });
+	</script>
+</body>
+
+</html>

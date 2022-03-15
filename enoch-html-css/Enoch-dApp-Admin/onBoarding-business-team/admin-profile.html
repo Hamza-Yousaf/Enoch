@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Admin::Profile</title>
+	<!-- Fav Icons -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/dashboard-header.css" rel="stylesheet" />
+    <link href="css/dashboard-style.css" rel="stylesheet" />
+    <link href="css/helpCenterStyle.css" rel="stylesheet" />
+    <link href="css/help-center.css" rel="stylesheet" />
+    <link href="css/helpcenter-Admin.css" rel="stylesheet" />
+    <link href="css/admin-help-center.css" rel="stylesheet" />
+    <link href="css/admin-profile.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="container-fluid dashboard-body-bg">
+	<div class="row">
+		<header class="custom-header">			
+			<div class="ezl-dashboard-header">
+				<div class="menu-left">
+					<div class="menu-wrap">
+						<a href="#menu" class="menu-link"><img src="images/Menu.png" alt="Menu" class="img-fluid"/></a>
+					</div>
+					<div class="header-logo"><a href="javascript:void(0)"><img src="images/logo.png" alt="logo" class="img-fluid"/></a></div>
+				</div>
+				<div class="menuright-side">
+					<div class="right-search">
+						<form class="search-form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Fund, ISIN, Keyword ">
+									<button class="search-form-btn" type="Submit"><img class="search-img" src="images/search.png" alt="search"></button>
+							</div>
+						</form>
+					</div>
+					<div class="menu-mid-sect">
+						<ul id="submenubar">
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/home.png" alt="home" class="img-fluid"/></div>
+								<a href="javascript:void(0)">Home</a>
+							</li>
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/network.png" alt="network" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">My Network</a>
+							</li>
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/jobs.png" alt="jobs" class="img-fluid"/></div>
+								<a href="javascript:void(0)">Jobs</a>
+							</li>
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/Chat.png" alt="Chat" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">Messaging</a>
+							</li>
+							<li class="ether-block">
+								<div class="menu-times-notifi mr-2"><img src="images/Ethereum.png" alt="Ethereum" class="img-fluid"/></div>
+								<a href="javascript:void(0)">ETH Mainnet <i class="fa fa-angle-right"></i></a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)">Connect Wallet</a>
+							</li>
+							
+						</ul>
+						<div class="toggle-menu">
+								<div onclick="subtogglediv('submenubar','submenu-toggle');" class="d-inline-block">
+									<i class="fa fa-bars" aria-hidden="true" id="submenu-toggle"></i>
+								</div>
+							</div>
+					</div>
+					
+					<div class="ezl-notificaion">
+					<div class="position-relative notificaion-dropdown ezl-notificaion-marg">
+						<a href="javascript:void(0)" class="popup"><img src="images/help.png" alt="help"/></a>							
+											
+					</div>
+					<div class=" position-relative notificaion-dropdown">
+						<a href="javascript:void(0)" class="popup"><img src="images/alertBell.png" alt="Bell"><span class="notificaion-spn">10</span></a>							
+						
+					</div>
+					</div>
+					<div class="ezl-user-ac">
+					
+					<div class="account-d dropdown">
+						<div class="dropdown-buttn"><span class="popup" onclick="popupFunction()"><div class="user-img"><img src="images/user-ReginaCooper.png" alt="user image" class="img-fluid"></div></span>
+							<div class="popupbox dropdown-menu" id="myPopup">
+								<ul class="">
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+	
+				
+			</div>
+		</header>
+	</div>	
+	<div class="row">
+        <div class="dashboard-header-bredcrumb">
+			<div class="ezl-dashboard-container">
+				<div class="col-12 p-md-0">
+					<ul>
+						<li class="mr-2"><img src="images/home-icon.png" alt="icon" class="img-fluid"/> </li>
+						
+						<li><a href="javascript:void(0)" class="helpCenter-active-black pl-1"> Admin / </a></li>
+						<li><a href="javascript:void(0)" class="pl-1"> Profile / regina cooper </a></li>
+					</ul>
+				</div>
+			</div> 
+		</div>
+	</div>
+	<div class="row">	
+		<div class="ezl-dashboard-container">			
+			<div class="Admin-Profile-body">
+			    <div class="row custom-row">
+			        <div class="col-lg-4 custom-col-lg-4 pl-lg-0 mb-4">
+			            <div class="Admin-Profile-body-left-cell">
+			                <div class="admin-profile-sect">
+			                    
+			                        <div class="KYC-profile-picture admin-profile-picture">
+			                            <div class="KYC-profile-picture-img admin-profile-picture-img">
+			                                <img src="images/admin-profile-pic.png" alt="profile-picture" class="img-fluid" />
+			                            </div>
+			                            <input type="file" class="my_file update-profile" />
+			                        </div>
+			                    
+			                    <div class="admin-name-And-Email-and-btn">
+			                        <h1>Regina Cooper</h1>
+			                        <h2>reginacooper01@gmail.com</h2>
+			                        <button><a href="#">Active</a></button>
+			                        <h3>Last sign in: 40 minutes agoCreated: June,12 2021</h3>
+			                    </div>
+			                </div>
+			                <div class="Organizational-Unit-sect">
+			                    <h1>Organizational Unit</h1>
+			                    <h2>Encoh.app</h2>
+			                </div>
+			                <div class="RESEND-SIGN-INFO-list">
+			                    <ul>
+			                        <li>RESEND SIGN IN INFO</li>
+			                        <li>RESET PASSWORD</li>
+			                        <li class="disable">SUSPEND USER</li>
+			                        <li>RESTORE DATA</li>
+			                        <li class="disable">DELETE USER</li>
+			                        <li class="pb-0">CHANGE 2FA METHOD</li>
+			                        <li class="disable Authenticator-enabled">APP Authenticator <button><a href="#">enabled</a></button></li>
+			                        <li>CHNAGE ORGANiZATIONAL UNIT</li>
+			                    </ul>
+			                </div>
+			            </div>
+			        </div>
+			        
+			        <div class="col-lg-5 custom-col-lg-5 mb-4">
+			            <div class="Admin-Profile-body-center-cell">
+			                <div class="Admin-Profile-col-heading">
+			                    <h1>User Information</h1>
+			                    <a href="#" class="edit-form user-info-edit" id="Edit-act">EDIT</a>
+			                </div>
+			                <div class="User-Info-form">
+			                    <form>
+			                        <div class="row">
+			                            <div class="col-md-6">
+			                                <lable>name</lable>
+			                                <input type="text" class="disable" id="remove-disable" value="Regina">
+			                            </div>
+			                            <div class="col-md-6">
+			                                <lable>surname</lable>
+			                                <input type="text" class="disable" id="remove-disable2" value="Cooper">
+			                            </div>
+			                            <div class="col-md-12">
+			                                <lable>email id</lable>
+			                                <input type="text" class="disable" id="remove-disable3" value="reginacooper01@gmail.com">
+			                            </div>
+			                            <div class="col-md-6">
+			                                <lable>organizational unit</lable>
+			                                <input type="text" class="disable" id="remove-disable4" value="Enoch.app">
+			                            </div>
+			                            <div class="col-md-6">
+			                                <lable>&nbsp;</lable>
+			                                <input type="text" class="disable" id="remove-disable5" value="Support Desk">
+			                            </div>
+			                            <div class="col-md-12">
+			                                <lable>secondary email</lable>
+			                                <input type="text" class="disable" id="remove-disable6" value="reginacooper01@gmail.com">
+			                            </div>
+			                            <div class="col-md-12">
+			                                <lable>mobile no.</lable>
+			                                <input type="text" class="disable" id="remove-disable7" value="+44  67890 89878">
+			                            </div>
+			                            <div class="col-md-12">
+			                                <lable>country</lable>
+			                                <div class="Create-Support-dropdown-left admin-profile-country-dropdown">
+			                                    <div class="position-relative">
+			                                        <div class="timeSetting-drop-box helpcenter-admin-country-drop-box disable" id="remove-disable8">
+			                                            <a href="javascript:void(0)" onclick="adminProfileDropdown()" id="adminProfileDropdown" class="timeSetting-droplist adminProfile-Droplist select-active">United Kingdom</a>
+			                                        </div>
+			                                        <div id="adminPprofile-DropdownList" class="timeSetting-content adminProfile-dropdown-content custm-zindex-1">
+			                                            <ul class="setting-form-drop-scrollable">
+			                                                <li>Gambia</li>
+			                                                <li>Georgia</li>
+			                                                <li>Germany</li>
+			                                                <li>Ghana</li>
+			                                                <li>Grand Duchy of Tuscany</li>
+			                                                <li>Greece</li>
+			                                            </ul>
+			                                        </div>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </div>
+			                    </form>
+			                    <div class="admin-profile-save-btns User-Info-btns">
+			                        <button class="Cancel Cancel-disable" id="remove-Cancel-disable"><a href="#">Cancel</a></button>
+			                        <button class="Save-Chnages Save-Chnages-disable" id="remove-Save-Chnages-disable"><a href="#">Save Chnages</a></button>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			        
+			        <div class="col-lg-3 custom-col-lg-3 pr-lg-0 mb-4">
+			            <div class="Admin-Profile-body-right-cell">
+			                <div class="Organizational-Details-headings">
+			                    <h1>Organizational Details</h1>
+			                    <a href="#" class="edit-form Organizational-Details-edit" id="Edit-act-2">EDIT</a>
+			                </div>
+			                <div class="Organizational-Details-body">
+			                    <form>
+			                        <div class="row">
+                                        <div class="col-md-12">
+			                                <lable>Job Title</lable>
+			                                <div class="Create-Support-dropdown-left admin-profile-country-dropdown">
+			                                    <div class="position-relative">
+			                                        <div class="timeSetting-drop-box helpcenter-admin-country-drop-box disable" id="remove-disable9">
+			                                            <a href="javascript:void(0)" onclick="adminProfileDropdown2()" id="adminProfileDropdown2" class="timeSetting-droplist adminProfile-Droplist adminProfile-Droplist-act select-active">KYC-Support Desk</a>
+			                                        </div>
+			                                        <div id="adminPprofile-DropdownList-2" class="timeSetting-content adminProfile-dropdown-content custm-zindex-1">
+			                                            <ul class="setting-form-drop-scrollable">
+			                                                <li>&nbsp;</li>
+			                                                <li>&nbsp;</li>
+			                                                <li>&nbsp;</li>
+			                                            </ul>
+			                                        </div>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                            
+			                            <div class="col-md-12">
+			                                <lable>Role</lable>
+			                                <div class="Create-Support-dropdown-left admin-profile-country-dropdown">
+			                                    <div class="position-relative">
+			                                        <div class="timeSetting-drop-box helpcenter-admin-country-drop-box disable" id="remove-disable10">
+			                                            <a href="javascript:void(0)" onclick="adminProfileDropdown3()" id="adminProfileDropdown3" class="timeSetting-droplist adminProfile-Droplist adminProfile-Droplist-act select-active">KYC, Editor</a>
+			                                        </div>
+			                                        <div id="adminPprofile-DropdownList-3" class="timeSetting-content adminProfile-dropdown-content custm-zindex-1">
+			                                            <ul class="setting-form-drop-scrollable">
+			                                                <li>&nbsp;</li>
+			                                                <li>&nbsp;</li>
+			                                                <li>&nbsp;</li>
+			                                            </ul>
+			                                        </div>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                            
+			                            <div class="col-md-12">
+			                                <lable>Permission</lable>
+			                                <div class="Create-Support-dropdown-left admin-profile-country-dropdown">
+			                                    <div class="position-relative">
+			                                        <div class="timeSetting-drop-box helpcenter-admin-country-drop-box disable Permission-btns disable" id="remove-disable11">
+			                                            <div href="javascript:void(0)" onclick="adminProfileDropdown4()" id="adminProfileDropdown4" class="timeSetting-droplist adminProfile-Droplist adminProfile-Droplist-btns adminProfile-Droplist-act select-active">
+			                                                
+			                                                <div class="two-btns">
+			                                                    <a href="#"  id="addPermission-Act">Permission 1</a>
+			                                                    <a href="#"  id="addPermission-Act-2">Permission 2</a>
+			                                                </div>
+			                                                <div class="last-one-btn">
+			                                                    <a href="#"  id="addPermission-Act-3">Permission 3</a>
+			                                                </div>
+                                                        </div>
+			                                        </div>
+			                                        <div id="adminPprofile-DropdownList-4" class="timeSetting-content adminProfile-dropdown-content custm-zindex-1">
+			                                            <ul class="setting-form-drop-scrollable">
+			                                                <li>&nbsp;</li>
+			                                                <li>&nbsp;</li>
+			                                                <li>&nbsp;</li>
+			                                            </ul>
+			                                        </div>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </div>
+			                    </form>
+			                    <div class="admin-profile-save-btns Organizational-Details-btns">
+			                        <button class="Cancel Cancel-disable" id="remove-Cancel-disable2"><a href="#">Cancel</a></button>
+			                        <button class="Save-Chnages Save-Chnages-disable" id="remove-Save-Chnages-disable2"><a href="#">Save Chnages</a></button>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+		</div>
+		
+	
+	</div>
+	
+	
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+
+// When the user clicks, open the popup
+function popupFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+
+}
+
+
+</script>
+<script>
+	/*for toggle sub menu*/
+		function subtogglediv(id, icon) {
+			var id = document.getElementById(id);
+			id.classList.toggle('submenu-active');
+			var cross = document.getElementById(icon);
+			cross.classList.toggle('fa-times');
+			cross.classList.toggle('fa-bars');
+		}
+		</script>
+		<script>
+	/*for Tab*/
+        function helpfunction(evt, faqName) {
+            var i, supporttabcontent, helptablinks;
+            supporttabcontent = document.getElementsByClassName("supporttabcontent");
+            for (i = 0; i < supporttabcontent.length; i++) {
+                supporttabcontent[i].style.display = "none";
+            }
+            helptablinks = document.getElementsByClassName("helptablinks");
+            for (i = 0; i < helptablinks.length; i++) {
+                helptablinks[i].className = helptablinks[i].className.replace(" h-active", "");
+            }
+            document.getElementById(faqName).style.display = "block";
+            evt.currentTarget.className += " h-active";
+        }
+		</script>
+		<script type="text/javascript">
+		/* for modal dropdown menu*/
+	    var dropdownpopup = document.querySelectorAll('[data-toggle=dropdownpopup]');
+	    for (var k = 0; k < dropdownpopup.length; k++) {
+	        dropdownpopup[k].addEventListener('click', function (e) {
+	            if (this.hasAttribute('data-link')) {
+	                var m_ID1 = this.getAttribute('data-link');
+	                //for closing other popup
+	                var activedropdown = document.querySelector('.dropdown-menu.drop-active');
+	                if(activedropdown && activedropdown.getAttribute('id') != m_ID1)
+	                {
+	                    activedropdown.classList.remove('drop-active');
+	                }
+	                //activting popup
+	                document.getElementById(m_ID1).classList.toggle('drop-active');
+	            }
+	        });
+	    }
+	 
+		/*mass select*/
+		function checkall(source) {
+	  		checkboxes = document.getElementsByName('foo');
+	  		for(var i=0, n=checkboxes.length;i<n;i++) {
+	    		checkboxes[i].checked = source.checked;
+	  		}
+		}
+		
+
+		/*rating start*/
+		var changeClass = document.querySelectorAll('[data-toggleclass=starclass]');
+	    for (var k = 0; k < changeClass.length; k++) {
+	        changeClass[k].addEventListener('click', function (e) {
+	            if (this.hasAttribute('data-class')) {
+	                var dataClass = this.getAttribute('data-class');
+	                this.classList.toggle(dataClass);
+	            }
+	        });
+	    }
+
+	    //For modal
+		document.addEventListener('click', function (e) {
+	        e = e || window.event;
+	        var target = e.target || e.srcElement;
+
+	        if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') 
+	        {
+	            if (target.hasAttribute('data-target')) 
+	            {
+	                var m_ID = target.getAttribute('data-target');
+	                document.getElementById(m_ID).classList.add('open');
+	            }
+	        }
+
+	        // Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
+	        if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') ||target.classList.contains('modal')) {
+	            var modal = document.querySelector('.modal.open');
+	            modal.classList.remove('open');
+	        }
+        }, false);
+
+       
+	
+ 	</script>
+	<script>
+//var accrow = document.getElementsByClassName("tableCell-collapse-btn");
+//var i;
+//var accrowblock=document.getElementsByClassName("tableRow");
+//for (i = 0; i < accrowblock.length; i++) {
+ // accrow[i].addEventListener("click", function() {
+ //   accrowblock[1].classList.toggle("tableRow-active");
+	    
+//  });
+ 
+//}
+
+
+</script>
+<script type="text/javascript">
+		
+     //for accordion tab
+		var accItem = document.getElementsByClassName('tableRow');
+		var accHD = document.getElementsByClassName('hlp-collapse-bttn');
+		for (i = 0; i < accHD.length; i++) {
+			accHD[i].addEventListener('click', toggleItem, false);
+		}
+		function toggleItem() {
+			var itemClass = this.parentElement.className;
+			for (i = 0; i < accItem.length; i++) {
+				accItem[i].className = 'tableRow tableRow-inactive';
+			}
+			if (itemClass == 'tableRow tableRow-inactive') {
+				this.parentNode.className = 'tableRow tableRow-active';
+			}
+		}
+		
+	</script>
+<script type="text/javascript">
+	
+
+		var enable = document.querySelectorAll('.enable')
+		function rowenable() {
+			a = document.getElementsByClassName('cebox');
+		  	for (var i = 0; i < enable.length; i++) {
+		  		for(var i=0; i < a.length; i++) {
+		  			if (a[i].checked = "checked") {
+		  				enable[i].classList.add('border-row');
+		  			}
+		  			else {
+	  					enable[i].classList.remove('border-row');
+		  			}
+		    	}
+		  	}
+		  	//remove disable row
+		  	var disable = document.querySelectorAll('.disable.border-row')
+		  	b = document.getElementsByClassName('cbox');
+		  	for (var i = 0; i < disable.length; i++) {
+		  		for(var i=0; i < b.length; i++) {
+		  			if (b[i].checked = "checked") {
+		  				disable[i].classList.remove('border-row');
+		  				b[i].checked = false
+		  			}
+		  			else {
+	  					console.log("else");
+		  			}
+		    	}
+		  	}
+		}
+ 
+		var disable = document.querySelectorAll('.disable')
+		function rowdisable() {
+			a = document.getElementsByClassName('cbox');
+		  	for (var i = 0; i < disable.length; i++) {
+		  		for(var i=0; i < a.length; i++) {
+		  			if (a[i].checked = "checked") {
+		  				disable[i].classList.add('border-row');
+		  			}
+		  			else {
+	  					disable[i].classList.remove('border-row');
+		  			}
+		    	}
+		  	}
+		  	//remove enable row
+		  	var enable = document.querySelectorAll('.enable.border-row')
+		  	b = document.getElementsByClassName('cebox');
+		  	for (var i = 0; i < enable.length; i++) {
+		  		for(var i=0; i < b.length; i++) {
+		  			if (b[i].checked = "checked") {
+		  				enable[i].classList.remove('border-row');
+		  				b[i].checked = false
+		  			}
+		  			else {
+	  					console.log("else");
+		  			}
+		    	}
+		  	}
+		}
+ 	</script>
+<script>
+var coll = document.getElementsByClassName("Transfer_Ticket_collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var Transfer_Ticket_collaps = this.nextElementSibling;
+    if (Transfer_Ticket_collaps.style.display === "block") {
+      Transfer_Ticket_collaps.style.display = "none";
+    } else {
+      Transfer_Ticket_collaps.style.display = "block";
+    }
+  });
+}
+</script> 	
+    
+<script>
+    $(document).ready(function() {
+        $('.Transfer_Ticket_collapsible').click(function() {
+            $('.Transfer_Ticket-collpse-plus').toggle();
+        });
+    });
+
+    $(document).ready(function() {
+        $('.Transfer_Ticket_collapsible').click(function() {
+            $('.Transfer_Ticket-collpse-minus').toggle();
+        });
+    });
+</script>
+
+<script> 
+$('#Edit-act').bind('click', function() {
+    if(allFilledpassauthd()) $('#remove-disable , #remove-disable2 , #remove-disable3 , #remove-disable4 , #remove-disable5 , #remove-disable6 , #remove-disable7 , #remove-disable8').removeClass('disable');
+});
+
+function allFilledpassauthd() {
+    var filled = true;
+    $('.TiCKET-Status-checkbox .ckeckbox-1 input').each(function() {
+        if($(this).val() == '') filled = false;
+    });
+    return filled;
+}
+</script>
+
+<script> 
+$('#Edit-act').bind('click', function() {
+    if(allFilledpassauthd()) $('#Edit-act').removeClass('edit-form');
+});
+
+function allFilledpassauthdd() {
+    var filledd = true;
+    $('.TiCKET-Status-checkbox .ckeckbox-1 input').each(function() {
+        if($(this).val() == '') filled = false;
+    });
+    return filled;
+}
+</script>
+
+<script> 
+$('#Edit-act-2').bind('click', function() {
+    if(allFilledpassauthd()) $('#Edit-act-2').removeClass('edit-form');
+});
+
+function allFilledpassauthddd() {
+    var filleddd = true;
+    $('.TiCKET-Status-checkbox .ckeckbox-1 input').each(function() {
+        if($(this).val() == '') filled = false;
+    });
+    return filled;
+}
+</script>
+
+<script>
+$(document).ready(function(){
+ 
+  $(".disable-click-btn").click(function(){
+  
+    $(".help-option-group").addClass("disable-rest-btn");
+  });
+   $(".enable-click-btn").click(function(){
+  
+    $(".help-option-group").removeClass("disable-rest-btn");
+  });
+  
+});
+</script>
+    
+<script> 
+$('#Edit-act-2').bind('click', function() {
+    if(allFilledpassauthd()) $('#remove-disable9 , #remove-disable10 , #remove-disable11').removeClass('disable');
+});
+
+function allFilledpassauthd() {
+    var filled = true;
+    $('.TiCKET-Status-checkbox .ckeckbox-1 input').each(function() {
+        if($(this).val() == '') filled = false;
+    });
+    return filled;
+}
+</script>
+
+<script> 
+$('#Edit-act').bind('click', function() {
+    if(allFilledpassauthd()) $('#remove-Cancel-disable').removeClass('Cancel-disable');
+});
+
+$('#Edit-act').bind('click', function() {
+    if(allFilledpassauthd()) $('#remove-Save-Chnages-disable').removeClass('Save-Chnages-disable');
+});
+
+function allFilledpassauthd() {
+    var filled = true;
+    $('.TiCKET-Status-checkbox .ckeckbox-1 input').each(function() {
+        if($(this).val() == '') filled = false;
+    });
+    return filled;
+}
+</script>
+
+<script> 
+$('#Edit-act-2').bind('click', function() {
+    if(allFilledpassauthd()) $('#remove-Cancel-disable2').removeClass('Cancel-disable');
+});
+$('#Edit-act-2').bind('click', function() {
+    if(allFilledpassauthd()) $('#remove-Save-Chnages-disable2').removeClass('Save-Chnages-disable');
+});
+
+function allFilledpassauthd() {
+    var filled = true;
+    $('.TiCKET-Status-checkbox .ckeckbox-1 input').each(function() {
+        if($(this).val() == '') filled = false;
+    });
+    return filled;
+}
+</script>
+
+<script>
+		
+		function adminProfileDropdown() {
+
+	var selectmedia11 = document.getElementById("adminPprofile-DropdownList");
+	selectmedia11.classList.toggle("show");
+	var selItemm = document.getElementById("adminProfileDropdown");
+	
+  selItemm.classList.toggle("select-active"); 
+}
+var selectmedia22 = document.getElementById("adminPprofile-DropdownList").querySelectorAll(".adminProfile-dropdown-content ul li");
+selectmedia22.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('adminProfileDropdown').innerHTML = this.innerHTML;
+ 
+	
+	        
+		 }
+		  
+        });
+    
+    
+    function adminProfileDropdown2() {
+
+	var selectmedia111 = document.getElementById("adminPprofile-DropdownList-2");
+	selectmedia111.classList.toggle("show");
+	var selItemmm = document.getElementById("adminProfileDropdown2");
+	
+  selItemmm.classList.toggle("select-active"); 
+}
+var selectmedia222 = document.getElementById("adminPprofile-DropdownList-2").querySelectorAll(".adminProfile-dropdown-content ul li");
+selectmedia222.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('adminProfileDropdown2').innerHTML = this.innerHTML;
+ 
+	
+	        
+		 }
+		  
+        });
+    
+    function adminProfileDropdown3() {
+
+	var selectmedia5 = document.getElementById("adminPprofile-DropdownList-3");
+	selectmedia5.classList.toggle("show");
+	var selIted = document.getElementById("adminProfileDropdown3");
+	
+  selIted.classList.toggle("select-active"); 
+}
+var selectmedia6 = document.getElementById("adminPprofile-DropdownList-3").querySelectorAll(".adminProfile-dropdown-content ul li");
+selectmedia6.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('adminProfileDropdown3').innerHTML = this.innerHTML;
+ 
+	
+	        
+		 }
+		  
+        });
+    
+	
+    function adminProfileDropdown4() {
+
+	var selectmedia1111 = document.getElementById("adminPprofile-DropdownList-4");
+	selectmedia1111.classList.toggle("show");
+	var selItemmmm = document.getElementById("adminProfileDropdown4");
+	
+  selItemmmm.classList.toggle("select-active"); 
+}
+var selectmedia2222 = document.getElementById("adminPprofile-DropdownList-4").querySelectorAll(".adminProfile-dropdown-content ul li");
+selectmedia2222.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('adminProfileDropdown4').innerHTML = this.innerHTML;
+ 
+	
+	        
+		 }
+		  
+        });
+	
+    
+	
+    
+    
+		// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.timeSetting-droplist')) {
+    var dropdowns = document.getElementsByClassName("timeSetting-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+	<!--  var selItem = document.getElementById("athp-sel"); -->
+	
+}
+	</script>
+
+<script>
+    $(document).ready(function() {
+        $('.user-info-edit').click(function() {
+            $('.User-Info-btns').show();
+        });
+    });
+
+    $(document).ready(function() {
+        $('.Organizational-Details-edit').click(function() {
+            $('.Organizational-Details-btns').show();
+        });
+    });
+</script>
+
+</body>
+
+</html>

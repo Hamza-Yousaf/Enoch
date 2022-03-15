@@ -1,0 +1,2538 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>HOME</title>
+	<!-- Fav Icons -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/dashboard-header.css" rel="stylesheet" />
+    <link href="css/dashboard-style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/OnBoardingJourney.css" />
+    <link rel="stylesheet" href="css/dApp-S-home.css" />
+    <link rel="stylesheet" href="css/home-post.css" />
+    <link rel="stylesheet" href="css/mynetwork.css" />
+	<link rel="stylesheet" href="css/massaging.css" />
+    <link rel="stylesheet" href="css/massaging-dp.css" />
+	<link rel="stylesheet" href="css/massaging.css" />
+    <link rel="stylesheet" href="css/massaging-dp.css" />
+</head>
+
+<body>
+	<div class="container-fluid dashboard-body-bg second-body-bg">
+		<div class="row">
+			<header class="custom-header">			
+				<div class="ezl-dashboard-header">
+					<div class="menu-left">
+						<div class="menu-wrap"><!--trade menu-->
+							<a href="#menu" class="menu-link" onclick="tradeFunction()"><img src="images/Menu.png" alt="Menu" class="img-fluid"/></a>
+							<div class="tradecontainer" id="trademenu-drpdown">
+							<div class="trade-menu-panel-panel-group" id="accordionMenu" role="tablist" aria-multiselectable="true">
+								<div class="trade-menu-panel">
+								<div class="trade-menu-heading" role="tab">
+									<h4 class="trade-menu-title">
+									<a role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+									<span><img src="images/Over.png" class="img-fluid" alt="Overview"/></span>Overview
+									</a>
+								</h4>
+								</div>
+								
+								</div>
+								<div class="trade-menu-panel">
+								<div class="trade-menu-heading" role="tab" id="headingTwo">
+									<h4 class="trade-menu-title">
+									<a class="collapsed trade-dropmenu" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									<span><img src="images/Borrow.png" class="img-fluid trade-menu-icon" alt="Trade"/><img src="images/Borrow2.png" class="img-fluid trade-menu-icon-active" alt="Trade"/></span>Trade
+									</a>
+								</h4>
+								</div>
+								<div id="collapseTwo" class="trade-menu-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+									<ul class="nav">
+										<li><a href="#">Swap</a></li>
+										<li><a href="#" class="trade-menuItem-active">Liquidity</a></li>
+									</ul>
+								</div>
+								</div>
+								<div class="trade-menu-panel">
+								<div class="trade-menu-heading" role="tab" id="headingThree">
+									<h4 class="trade-menu-title">
+									<a class="collapsed trade-dropmenu" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									<span><img src="images/pools.png" class="img-fluid trade-menu-icon" alt="pools"/><img src="images/pools2.png" class="img-fluid trade-menu-icon-active" alt="pools"/></span>Pools
+									</a>
+								</h4>
+								</div>
+								<div id="collapseThree" class="trade-menu-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+									<ul class="nav">
+										<li><a href="#" class="trade-menuItem-active">Entertainment Pools</a></li>
+										<li><a href="#">NFT Farming Pools</a></li>
+									</ul>
+								</div>
+								</div>
+								
+								
+								<div class="trade-menu-panel">
+								<div class="trade-menu-heading" role="tab" id="headingFour">
+									<h4 class="trade-menu-title">
+									<a class="collapsed trade-dropmenu" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+									<span><img src="images/menuStacking.png" class="img-fluid trade-menu-icon" alt="Staking"/><img src="images/menuStacking2.png" class="img-fluid trade-menu-icon-active" alt="Staking"/></span>Staking
+									</a>
+								</h4>
+								</div>
+								<div id="collapseFour" class="trade-menu-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+									
+									<ul class="">
+										<li><a href="#">Enoch Staking</a></li>
+										<li><a href="#" class="trade-menuItem-active">NFT staking</a></li>
+									</ul>
+								
+								</div>
+								</div>
+								
+							</div>
+							</div>
+						</div>
+						<div class="header-logo"><a href="javascript:void(0)"><img src="images/logo.png" alt="logo" class="img-fluid"/><span class="onboard-beta">BETA</span></a></div>
+					</div>
+					<div class="menuright-side">
+						<div class="right-search">
+							<form class="search-form">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Search">
+										<button class="search-form-btn" type="Submit"><img class="search-img" src="images/search.png" alt="search"></button>
+								</div>
+							</form>
+						</div>
+						<div class="menu-mid-sect">
+							<ul id="submenubar">
+								<li class="submenubar-item">
+									<div class="menu-times-notifi"><img src="images/home.png" alt="home" class="img-fluid"/></div>
+									<a href="javascript:void(0)">Home</a>
+								</li>
+								
+								<li class="submenubar-item">
+									<div class="menu-times-notifi"><img src="images/Chat.png" alt="Chat" class="img-fluid"/><span>0</span></div>
+									<a href="javascript:void(0)">Messaging</a>
+								</li>
+								<li class="ether-block">
+									<div class="menu-times-notifi mr-2"><img src="images/Ethereum.png" alt="Ethereum" class="img-fluid"/></div>
+									<a href="javascript:void(0)">ETH Mainnet <i class="fa fa-angle-right"></i></a>
+								</li>
+								<li class="connect-wallet-block">
+									
+									<a href="javascript:void(0)">Connect Wallet</a>
+								</li>
+								<li class="connect-wallet-block">
+									
+									<a href="javascript:void(0)"><span><img src="images/cart.png" class="img-fluid mr-2"/></span>Cart</a>
+								</li>
+								
+							</ul>
+							<div class="toggle-menu">
+									<div onclick="subtogglediv('submenubar','submenu-toggle');" class="d-inline-block">
+										<i class="fa fa-bars" aria-hidden="true" id="submenu-toggle"></i>
+									</div>
+								</div>
+						</div>
+						
+						<div class="ezl-notificaion">
+						<div class="position-relative notificaion-dropdown ezl-notificaion-marg">
+							<a href="javascript:void(0)" class="popup"><img src="images/help.png" alt="help"/></a>							
+												
+						</div>
+						<div class=" position-relative notificaion-dropdown">
+							<a href="javascript:void(0)" class="popup"><img src="images/alertBell.png" alt="Bell"><span class="notificaion-spn">10</span></a>							
+							
+						</div>
+						</div>
+						<div class="ezl-user-ac">
+						
+						<div class="account-d dropdown">
+							<div class="dropdown-buttn"><span class="popup" onclick="popupFunction()"><div class="user-img"><img src="images/user-ReginaCooper.png" alt="user image" class="img-fluid"/></div></span>
+								<div class="popupbox dropdown-menu" id="myPopup">
+									
+									<ul class="">
+										<li>
+											<div  class="enoch-usr-prof"><span><img src="images/user-pro-pic.png" class="img-fluid mr-1" alt="profile- pic"/> @Hulk66</span><span><a href="#">Change</a></span></div>
+										</li>
+										<li>
+											<div class="enoch-usr-status-block">
+												<div class="usr-status-left">Online Status</div>
+												<div class="usr-status-right">
+													<div class="post-switch">
+														<label class="postswitch">
+														<input type="checkbox" checked>
+														<span class="post-slider round"></span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="enoch-usr-status-block"><a href="#">Become Creator </a></div>
+											<div class="enoch-usr-status-block mb-0"><a href="#" class="enoch-blue-clr">Your Public Profile</a></div>
+										</li>
+										<li>
+											<div class="enoch-usr-status-block"><a href="#">Setting </a></div>
+											<div class="enoch-usr-status-block"><a href="#">Help Center</a></div>										
+											<div class="enoch-usr-status-block mb-0"><a href="#" class="orange-clr">Upgrade to Premium</a></div>
+										</li>
+										<li class="mt-4">
+											<div class="enoch-usr-status-block mb-0">Wallet  <span><a href="#" class="btn freebonus-btn">$400 </a></span></div>
+										</li>
+										<li class="mt-4 pb-0">
+											<div class="enoch-usr-status-block mb-0 manage-ac">
+												<h3>Manage</h3>
+												<ul>
+													<li>
+														<div class="manage-ac-block">
+															<span>Comapny:	</span>
+															<span class="ml-1"><img src="images/man-icon1.png" class="img-fluid mr-1" alt="user"/>88mph  </span>
+														</div>
+													</li>
+													<li>
+														<div class="manage-ac-block">
+															<span>Comapny:	</span>
+															<span class="ml-1"><img src="images/man-icon2.png" class="img-fluid mr-1" alt="user"/>CryptoBlue    </span>
+														</div>
+													</li>
+												</ul>
+											</div>
+											
+										</li>
+										<li class="mb-0 pb-0">
+											<div class="enoch-usr-status-block mb-0"><a href="#" class="post-red-clr">Logout</a></div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>				
+				</div>
+				
+				<div class="dApp-menu-btn">
+					<a href="#"><img src="images/LeftSide-Menu.png" alt="menu" class="img-fluid"  data-toggle="modal" data-target="right-top-modal" /></a>
+					<div class="right-top-modal-block">
+						<div id="right-top-modal" class="modal fade">
+							<!-- Modal content -->
+							<div class="modal-content right-top-modal-content">
+								<span class="close"><img src="images/postCross2.png" alt="close" class="img-fluid" data-dismiss="modal"></span>
+								<div class="right-top-body-block">
+									<div class="right-top-body-block-lft">
+										<form class="right-search-form">
+											<div class="right-form-group">
+												<img src="images/help-Search.png" class="img-fluid" alt="search"/><input type="text" class="form-control" placeholder="Search menu...">
+													
+											</div>
+										</form>
+										<div class="enoch-community-scrollable">
+										<div class="enoch-menu-block-panel">
+											<div class="enoch-menu-block-lft">
+												<div class="enoch-menu-block-items">
+													<h2>Personal</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon1.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">NFT Vault </a>
+																	<p>Organise or find events and other things
+																		to do online and nearby</p>
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon2.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Earning </a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon28.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Wallet</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon3.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Billing</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon29.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Membership</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon35.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Ranking</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															</div>
+														</li>
+														
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon4.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Affiliate</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items">
+													<h2>Entertainment</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon11.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Popular</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon30.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Casino</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon31.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Sports</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon32.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Games</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon16.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Promotions</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items">
+													<h2>Advertising</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon19.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Ad Manager </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon20.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Enoch Ad</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+															
+															</div>
+														</li>
+														
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items mb-0">
+													<h2>User Setting </h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon26.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Your Profile </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon27.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Your Account</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														
+													</ul>
+												</div>
+											</div>
+											<div class="enoch-menu-block-right">
+												<div class="enoch-menu-block-items">
+													<h2>Social</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon5.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">My Networks</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon6.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Communities</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon33.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Creator Portals </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon36.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Livezone</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon8.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Company pages </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon9.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Events</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon37.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">News Feed </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items">
+													<h2>Shopping</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon34.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Digital  Marketplace</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon38.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Enoch Shops</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items">
+													<h2>Jobs</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon18.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Remote workhub</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items">
+													<h2>Developer</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon21.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Develop</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon22.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Grow</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon23.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Monetisation </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon24.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Github</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon25.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#">Docs</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li> 
+														
+													</ul>
+												</div>
+											</div>
+										</div>
+										</div>
+									</div>
+									<div class="right-top-body-block-right">
+										<h3>Create</h3>
+										<ul>
+											<li><a href="#"><span><img src="images/creat-icon1.png" class="img-fluid" alt="icon"/></span> Post</a></li>
+											<li><a href="#"><span><img src="images/creat-icon2.png" class="img-fluid" alt="icon"/></span> Community</a></li>
+											<li><a href="#"><span><img src="images/creat-icon5.png" class="img-fluid" alt="icon"/></span> Event</a></li>
+											<li><a href="#"><span><img src="images/creat-icon10.png" class="img-fluid" alt="icon"/></span> NFT</a></li>
+											<li><a href="#"><span><img src="images/creat-icon11.png" class="img-fluid" alt="icon"/></span> Reel</a></li>
+											<li><a href="#"><span><img src="images/creat-icon14.png" class="img-fluid" alt="icon"/></span> Company page </a></li>
+											<li><a href="#"><span><img src="images/creat-icon12.png" class="img-fluid" alt="icon"/></span> Group</a></li>
+											<li><a href="#"><span><img src="images/creat-icon7.png" class="img-fluid" alt="icon"/></span> Job</a></li>								
+											<li><a href="#"><span><img src="images/creat-icon13.png" class="img-fluid" alt="icon"/></span> AD </a></li>									 
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>								
+					</div>
+					</div>
+			</header>
+		</div>			
+		<div class="row">	
+			<div class="ezl-dashboard-container">			
+				<div class="mynetworkBody">
+				    <div class="row m-0">
+				        <div class="col-lg-3 p-0">
+				            <div class="MyNetworkLeftCol-sect">
+                                <div class="MyNetworkLeftCol_Headings">
+                                    <h2>Manage my network</h2>
+                                </div>
+				                <ul class="ManageMyNetwork-list">
+				                    <li ><span><img src="images/Followers.svg" alt="icon" class="img-fluid"></span>Connections</li>
+				                    <li><span><img src="images/contact.svg" alt="icon" class="img-fluid"></span>Contacts</li>
+				                    <li class="active"><span><img src="images/invitations.svg" alt="icon" class="img-fluid"></span>Invitations</li>
+				                    <li><span><img src="images/people_follow.svg" alt="icon" class="img-fluid"></span>People | Follow</li>
+				                    <li><span><img src="images/events.svg" alt="icon" class="img-fluid"></span>Events</li>
+				                    <li><span><img src="images/live_zone.svg" alt="icon" class="img-fluid"></span>Live zone</li>
+				                    <li><span><img src="images/Spheres.svg" alt="icon" class="img-fluid"></span>Spheres</li>
+				                    <li class="no-border"><span><img src="images/Newsletters.svg" alt="icon" class="img-fluid"></span>Newsletters</li>
+				                </ul>
+				            </div>
+				        </div>
+				        <div class="col-lg-9 p-0">
+				            <div class="MyNetworkRightCol-sect">
+				                <div class="Manage-invitations-sect">
+				                    <div class="Manage-invitations-headings">
+				                        <h2>Manage invitations</h2>
+				                        <span class="Manage-invitations-settingsBtn"><img src="images/Settings.svg" alt="img" class="img-fluid" /></span>
+				                        <div class="Choose-who-connect-popUp">
+				                            <h3>Choose who can connect with you</h3>
+				                            <div class="Choose-who-connect-popUp-text">
+				                                <h4>Choose what invitations to receive</h4>
+				                                <p>People you are following who are not connections</p>
+				                            </div>
+				                        </div>
+				                    </div>
+				                    <div class="Manage-invitations-tab-sect">
+				                        <div class="Manage_invitations_tabs">
+				                            <button class="Manage_invitations_tablinks" onclick="openEvent(event, 'Received')" id="manage_Invititation_Tab_defaultOpen">Received</button>
+				                            <button class="Manage_invitations_tablinks" onclick="openEvent(event, 'Sent')">Sent</button>
+				                        </div>
+
+				                        <div id="Received" class="Manage_invitations_tabcontent">
+											<div class="selct_numbering">
+												<p class="num_slct">Select 1-53 of 53</p>
+												<div class="Avex_Manage_invitations_sent_tab_headings_right">
+												  <h3>Filter By:</h3>
+												  <div class="All_invitations_dropdown_sect">
+				                                            <div class="All_invitations_dropbox">
+				                                                <h4>All invitations</h4>
+				                                                <span><img src="images/arrow.svg" alt="icon" class="img-fluid"></span>
+				                                            </div>
+				                                            <div class="All_invitations_dropList">
+				                                                <ul>
+				                                                    <li>-</li>
+				                                                    <li>-</li>
+				                                                    <li>-</li>
+				                                                    <li>-</li>
+				                                                </ul>
+				                                            </div>
+				                                        </div>
+											  </div>
+										
+												</div>
+				                            
+											<div class="avex_netrk1"> 
+												<div class="Find-start-conversation-Chat-list_ave_network pt-2">
+												 <ul class="net_avex_new">
+												   <li>
+													   <!-- new div -->
+													   <div class="soho_li">
+													   <div class="custom_checkbox_avex">
+														   <label class="Avex_ntwrk_container">
+															   <input type="checkbox">
+															   <span class="checkmark"></span>
+															 </label>
+													   </div>
+													 <div class="cus_avex_netwrk">
+													   <div class="Find-start-conversation-Chat-list-users_avex_network">
+														   <div class="Find-start-conversation-Chat-list-user-dp_avex_network_dp">
+															   <img src="images/3.png" alt="img" class="img-fluid">
+															 
+														   </div>
+														   <div class="Find-start-conversation-Chat-list-text_avex_nft">
+															 <h4>@SohoShek</h4>
+															 <p>NFT Community and Metaverse. Follow and ...</p>
+														   </div>
+														 </div>
+														 <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+													   
+														 </div>
+														 
+													 </div>
+													</div>
+													<div class="flw_bck">
+														<h6><span><img src="images/mutual.svg" alt="icon" class="mutaual_avex img-fluid"></span>8 mutual firends</h6>
+													 <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+														
+													   <div class="sidebarUserListLiblack_avex_nft" id="btn1">
+														<img class="plus_server_icon img-fluid green_arrow " src="images/Check_tick.png" alt="">
+														<img class="plus_server_icon img-fluid white_arrow" src="images/Check_avex_white22.svg" alt="">
+														<!-- follow btn purple-->
+														
+														<!-- End  -->
+														 </div>
+														 <div class="sidebarUserListLi_follow_bck1 " id="btn2">
+															<button class="follow_back_btn2">Follow</button>
+														</div>
+														<div class="sidebarUserListLi_follow_bck" id="btn3" >
+															
+															<button class="Following-btn"><span>
+																<img src="images/following-Check.svg" alt="icon" class="avex_btn3_check img-fluid">
+															</span>Following</button>
+														</div>
+														 <div class="sidebarUserListLired_avex_nft" id="btn4">
+														   <img class="plus_server_icon img-fluid" src="images/Cross_alert.png" alt="">
+															</div>
+													 <!-- 2 button hide show  -->
+                                                         
+													 <!-- hide show inner button  -->
+													 
+													 </div>
+													</div>
+												   </li>
+
+												   <li>
+													<!-- new div -->
+													<div class="soho_li">
+													<div class="custom_checkbox_avex">
+														<label class="Avex_ntwrk_container">
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														  </label>
+													</div>
+												  <div class="cus_avex_netwrk">
+													<div class="Find-start-conversation-Chat-list-users_avex_network">
+														<div class="Find-start-conversation-Chat-list-user-dp_avex_network_dp">
+															<img src="images/3.png" alt="img" class="img-fluid">
+														  
+														</div>
+														<div class="Find-start-conversation-Chat-list-text_avex_nft">
+														  <h4>@SohoShek</h4>
+														  <p>NFT Community and Metaverse. Follow and ...</p>
+														</div>
+													  </div>
+													  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+													
+													  </div>
+													  
+												  </div>
+												 </div>
+												 <div class="flw_bck">
+													 <h6><span><img src="images/mutual.svg" alt="icon" class="mutaual_avex img-fluid"></span>8 mutual firends</h6>
+												  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+													 
+													<div class="sidebarUserListLiblack_avex_nft" id="btn1">
+													 <img class="plus_server_icon img-fluid green_arrow " src="images/Check_tick.png" alt="">
+													 <img class="plus_server_icon img-fluid white_arrow" src="images/Check_avex_white22.svg" alt="">
+													 <!-- follow btn purple-->
+													 
+													 <!-- End  -->
+													  </div>
+													  
+													  <div class="sidebarUserListLired_avex_nft" id="btn4">
+														<img class="plus_server_icon img-fluid" src="images/Cross_alert.png" alt="">
+														 </div>
+												  <!-- 2 button hide show  -->
+													  
+												  <!-- hide show inner button  -->
+												  
+												  </div>
+												 </div>
+												</li>
+
+												<li>
+													<!-- new div -->
+													<div class="soho_li">
+													<div class="custom_checkbox_avex">
+														<label class="Avex_ntwrk_container">
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														  </label>
+													</div>
+												  <div class="cus_avex_netwrk">
+													<div class="Find-start-conversation-Chat-list-users_avex_network">
+														<div class="Find-start-conversation-Chat-list-user-dp_avex_network_dp">
+															<img src="images/3.png" alt="img" class="img-fluid">
+														  
+														</div>
+														<div class="Find-start-conversation-Chat-list-text_avex_nft">
+														  <h4>@SohoShek</h4>
+														  <p>NFT Community and Metaverse. Follow and ...</p>
+														</div>
+													  </div>
+													  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+													
+													  </div>
+													  
+												  </div>
+												 </div>
+												 <div class="flw_bck">
+													 <h6><span><img src="images/mutual.svg" alt="icon" class="mutaual_avex img-fluid"></span>8 mutual firends</h6>
+												  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+													 
+													<div class="sidebarUserListLiblack_avex_nft" id="btn1">
+													 <img class="plus_server_icon img-fluid green_arrow " src="images/Check_tick.png" alt="">
+													 <img class="plus_server_icon img-fluid white_arrow" src="images/Check_avex_white22.svg" alt="">
+													 <!-- follow btn purple-->
+													 
+													 <!-- End  -->
+													  </div>
+													  
+													  <div class="sidebarUserListLired_avex_nft" id="btn4">
+														<img class="plus_server_icon img-fluid" src="images/Cross_alert.png" alt="">
+														 </div>
+												  <!-- 2 button hide show  -->
+													  
+												  <!-- hide show inner button  -->
+												  
+												  </div>
+												 </div>
+												</li>
+
+												<li>
+													<!-- new div -->
+													<div class="soho_li">
+													<div class="custom_checkbox_avex">
+														<label class="Avex_ntwrk_container">
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														  </label>
+													</div>
+												  <div class="cus_avex_netwrk">
+													<div class="Find-start-conversation-Chat-list-users_avex_network">
+														<div class="Find-start-conversation-Chat-list-user-dp_avex_network_dp">
+															<img src="images/3.png" alt="img" class="img-fluid">
+														  
+														</div>
+														<div class="Find-start-conversation-Chat-list-text_avex_nft">
+														  <h4>@SohoShek</h4>
+														  <p>NFT Community and Metaverse. Follow and ...</p>
+														</div>
+													  </div>
+													  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+													
+													  </div>
+													  
+												  </div>
+												 </div>
+												 <div class="flw_bck">
+													 <h6><span><img src="images/mutual.svg" alt="icon" class="mutaual_avex img-fluid"></span>8 mutual firends</h6>
+												  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+													 
+													<div class="sidebarUserListLiblack_avex_nft" id="btn1">
+													 <img class="plus_server_icon img-fluid green_arrow " src="images/Check_tick.png" alt="">
+													 <img class="plus_server_icon img-fluid white_arrow" src="images/Check_avex_white22.svg" alt="">
+													 <!-- follow btn purple-->
+													 
+													 <!-- End  -->
+													  </div>
+													  
+													  <div class="sidebarUserListLired_avex_nft" id="btn4">
+														<img class="plus_server_icon img-fluid" src="images/Cross_alert.png" alt="">
+														 </div>
+												  <!-- 2 button hide show  -->
+													  
+												  <!-- hide show inner button  -->
+												  
+												  </div>
+												 </div>
+												</li>
+
+												<li>
+													<!-- new div -->
+													<div class="soho_li">
+													<div class="custom_checkbox_avex">
+														<label class="Avex_ntwrk_container">
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														  </label>
+													</div>
+												  <div class="cus_avex_netwrk">
+													<div class="Find-start-conversation-Chat-list-users_avex_network">
+														<div class="Find-start-conversation-Chat-list-user-dp_avex_network_dp">
+															<img src="images/3.png" alt="img" class="img-fluid">
+														  
+														</div>
+														<div class="Find-start-conversation-Chat-list-text_avex_nft">
+														  <h4>@SohoShek</h4>
+														  <p>NFT Community and Metaverse. Follow and ...</p>
+														</div>
+													  </div>
+													  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+													
+													  </div>
+													  
+												  </div>
+												 </div>
+												 <div class="flw_bck">
+													 <h6><span><img src="images/mutual.svg" alt="icon" class="mutaual_avex img-fluid"></span>8 mutual firends</h6>
+												  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+													 
+													<div class="sidebarUserListLiblack_avex_nft" id="btn1">
+													 <img class="plus_server_icon img-fluid green_arrow " src="images/Check_tick.png" alt="">
+													 <img class="plus_server_icon img-fluid white_arrow" src="images/Check_avex_white22.svg" alt="">
+													 <!-- follow btn purple-->
+													 
+													 <!-- End  -->
+													  </div>
+													  
+													  <div class="sidebarUserListLired_avex_nft" id="btn4">
+														<img class="plus_server_icon img-fluid" src="images/Cross_alert.png" alt="">
+														 </div>
+												  <!-- 2 button hide show  -->
+													  
+												  <!-- hide show inner button  -->
+												  
+												  </div>
+												 </div>
+												</li>
+
+												<li>
+													<!-- new div -->
+													<div class="soho_li">
+													<div class="custom_checkbox_avex">
+														<label class="Avex_ntwrk_container">
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														  </label>
+													</div>
+												  <div class="cus_avex_netwrk">
+													<div class="Find-start-conversation-Chat-list-users_avex_network">
+														<div class="Find-start-conversation-Chat-list-user-dp_avex_network_dp">
+															<img src="images/3.png" alt="img" class="img-fluid">
+														  
+														</div>
+														<div class="Find-start-conversation-Chat-list-text_avex_nft">
+														  <h4>@SohoShek</h4>
+														  <p>NFT Community and Metaverse. Follow and ...</p>
+														</div>
+													  </div>
+													  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+													
+													  </div>
+													  
+												  </div>
+												 </div>
+												 <div class="flw_bck">
+													 <h6><span><img src="images/mutual.svg" alt="icon" class="mutaual_avex img-fluid"></span>8 mutual firends</h6>
+												  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+													 
+													<div class="sidebarUserListLiblack_avex_nft" id="btn1">
+													 <img class="plus_server_icon img-fluid green_arrow " src="images/Check_tick.png" alt="">
+													 <img class="plus_server_icon img-fluid white_arrow" src="images/Check_avex_white22.svg" alt="">
+													 <!-- follow btn purple-->
+													 
+													 <!-- End  -->
+													  </div>
+													  
+													  <div class="sidebarUserListLired_avex_nft" id="btn4">
+														<img class="plus_server_icon img-fluid" src="images/Cross_alert.png" alt="">
+														 </div>
+												  <!-- 2 button hide show  -->
+													  
+												  <!-- hide show inner button  -->
+												  
+												  </div>
+												 </div>
+												</li>
+
+												<li>
+													<!-- new div -->
+													<div class="soho_li">
+													<div class="custom_checkbox_avex">
+														<label class="Avex_ntwrk_container">
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														  </label>
+													</div>
+												  <div class="cus_avex_netwrk">
+													<div class="Find-start-conversation-Chat-list-users_avex_network">
+														<div class="Find-start-conversation-Chat-list-user-dp_avex_network_dp">
+															<img src="images/3.png" alt="img" class="img-fluid">
+														  
+														</div>
+														<div class="Find-start-conversation-Chat-list-text_avex_nft">
+														  <h4>@SohoShek</h4>
+														  <p>NFT Community and Metaverse. Follow and ...</p>
+														</div>
+													  </div>
+													  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+													
+													  </div>
+													  
+												  </div>
+												 </div>
+												 <div class="flw_bck">
+													 <h6><span><img src="images/mutual.svg" alt="icon" class="mutaual_avex img-fluid"></span>8 mutual firends</h6>
+												  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+													 
+													<div class="sidebarUserListLiblack_avex_nft" id="btn1">
+													 <img class="plus_server_icon img-fluid green_arrow " src="images/Check_tick.png" alt="">
+													 <img class="plus_server_icon img-fluid white_arrow" src="images/Check_avex_white22.svg" alt="">
+													 <!-- follow btn purple-->
+													 
+													 <!-- End  -->
+													  </div>
+													  
+													  <div class="sidebarUserListLired_avex_nft" id="btn4">
+														<img class="plus_server_icon img-fluid" src="images/Cross_alert.png" alt="">
+														 </div>
+												  <!-- 2 button hide show  -->
+													  
+												  <!-- hide show inner button  -->
+												  
+												  </div>
+												 </div>
+												</li>
+
+												<li>
+													<!-- new div -->
+													<div class="soho_li">
+													<div class="custom_checkbox_avex">
+														<label class="Avex_ntwrk_container">
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														  </label>
+													</div>
+												  <div class="cus_avex_netwrk">
+													<div class="Find-start-conversation-Chat-list-users_avex_network">
+														<div class="Find-start-conversation-Chat-list-user-dp_avex_network_dp">
+															<img src="images/3.png" alt="img" class="img-fluid">
+														  
+														</div>
+														<div class="Find-start-conversation-Chat-list-text_avex_nft">
+														  <h4>@SohoShek</h4>
+														  <p>NFT Community and Metaverse. Follow and ...</p>
+														</div>
+													  </div>
+													  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+													
+													  </div>
+													  
+												  </div>
+												 </div>
+												 <div class="flw_bck">
+													 <h6><span><img src="images/mutual.svg" alt="icon" class="mutaual_avex img-fluid"></span>8 mutual firends</h6>
+												  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+													 
+													<div class="sidebarUserListLiblack_avex_nft" id="btn1">
+													 <img class="plus_server_icon img-fluid green_arrow " src="images/Check_tick.png" alt="">
+													 <img class="plus_server_icon img-fluid white_arrow" src="images/Check_avex_white22.svg" alt="">
+													 <!-- follow btn purple-->
+													 
+													 <!-- End  -->
+													  </div>
+													  
+													  <div class="sidebarUserListLired_avex_nft" id="btn4">
+														<img class="plus_server_icon img-fluid" src="images/Cross_alert.png" alt="">
+														 </div>
+												  <!-- 2 button hide show  -->
+													  
+												  <!-- hide show inner button  -->
+												  
+												  </div>
+												 </div>
+												</li>
+
+												<li>
+													<!-- new div -->
+													<div class="soho_li">
+													<div class="custom_checkbox_avex">
+														<label class="Avex_ntwrk_container">
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														  </label>
+													</div>
+												  <div class="cus_avex_netwrk">
+													<div class="Find-start-conversation-Chat-list-users_avex_network">
+														<div class="Find-start-conversation-Chat-list-user-dp_avex_network_dp">
+															<img src="images/3.png" alt="img" class="img-fluid">
+														  
+														</div>
+														<div class="Find-start-conversation-Chat-list-text_avex_nft">
+														  <h4>@SohoShek</h4>
+														  <p>NFT Community and Metaverse. Follow and ...</p>
+														</div>
+													  </div>
+													  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+													
+													  </div>
+													  
+												  </div>
+												 </div>
+												 <div class="flw_bck">
+													 <h6><span><img src="images/mutual.svg" alt="icon" class="mutaual_avex img-fluid"></span>8 mutual firends</h6>
+												  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+													 
+													<div class="sidebarUserListLiblack_avex_nft" id="btn1">
+													 <img class="plus_server_icon img-fluid green_arrow " src="images/Check_tick.png" alt="">
+													 <img class="plus_server_icon img-fluid white_arrow" src="images/Check_avex_white22.svg" alt="">
+													 <!-- follow btn purple-->
+													 
+													 <!-- End  -->
+													  </div>
+													  
+													  <div class="sidebarUserListLired_avex_nft" id="btn4">
+														<img class="plus_server_icon img-fluid" src="images/Cross_alert.png" alt="">
+														 </div>
+												  <!-- 2 button hide show  -->
+													  
+												  <!-- hide show inner button  -->
+												  
+												  </div>
+												 </div>
+												</li>
+
+												<li>
+													<!-- new div -->
+													<div class="soho_li">
+													<div class="custom_checkbox_avex">
+														<label class="Avex_ntwrk_container">
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														  </label>
+													</div>
+												  <div class="cus_avex_netwrk">
+													<div class="Find-start-conversation-Chat-list-users_avex_network">
+														<div class="Find-start-conversation-Chat-list-user-dp_avex_network_dp">
+															<img src="images/3.png" alt="img" class="img-fluid">
+														  
+														</div>
+														<div class="Find-start-conversation-Chat-list-text_avex_nft">
+														  <h4>@SohoShek</h4>
+														  <p>NFT Community and Metaverse. Follow and ...</p>
+														</div>
+													  </div>
+													  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+													
+													  </div>
+													  
+												  </div>
+												 </div>
+												 <div class="flw_bck">
+													 <h6><span><img src="images/mutual.svg" alt="icon" class="mutaual_avex img-fluid"></span>8 mutual firends</h6>
+												  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+													 
+													<div class="sidebarUserListLiblack_avex_nft" id="btn1">
+													 <img class="plus_server_icon img-fluid green_arrow " src="images/Check_tick.png" alt="">
+													 <img class="plus_server_icon img-fluid white_arrow" src="images/Check_avex_white22.svg" alt="">
+													 <!-- follow btn purple-->
+													 
+													 <!-- End  -->
+													  </div>
+													  
+													  <div class="sidebarUserListLired_avex_nft" id="btn4">
+														<img class="plus_server_icon img-fluid" src="images/Cross_alert.png" alt="">
+														 </div>
+												  <!-- 2 button hide show  -->
+													  
+												  <!-- hide show inner button  -->
+												  
+												  </div>
+												 </div>
+												</li>
+ 
+												
+												  
+												 </ul>
+											   </div>
+										   </div>
+										
+										</div>
+
+				                        <div id="Sent" class="Manage_invitations_tabcontent">
+				                            <div class="Manage_invitations_sent_tab_sect">
+				                                <div class="Manage_invitations_sent_tab_headings_avex1">
+				                                    <div class="Manage_invitations_sent_tab_headings_left">
+				                                        <h3>Select 1-53 of 53</h3>
+				                                    </div>
+				                                    <div class="Manage_invitations_sent_tab_headings_right">
+				                                        <h3>Filter By:</h3>
+				                                        <div class="All_invitations_dropdown_sect">
+				                                            <div class="All_invitations_dropbox">
+				                                                <h4>All invitations</h4>
+				                                                <span><img src="images/arrow.svg" alt="icon" class="img-fluid"></span>
+				                                            </div>
+				                                            <div class="All_invitations_dropList">
+				                                                <ul>
+				                                                    <li>-</li>
+				                                                    <li>-</li>
+				                                                    <li>-</li>
+				                                                    <li>-</li>
+				                                                </ul>
+				                                            </div>
+				                                        </div>
+				                                    </div>
+				                                </div>
+				                                <div class="Manage_invitations_sent_tab_body">
+				                                    <!-- sent cross -->
+													<div class="avex_netrk1"> 
+														<div class="Find-start-conversation-Chat-list_ave_network pt-2">
+														 <ul class="net_avex_new">
+															<li>
+																<!-- new div -->
+																<div class="soho_li">
+																<div class="custom_checkbox_avex">
+																	<label class="Avex_ntwrk_container">
+																		<input type="checkbox">
+																		<span class="checkmark"></span>
+																	  </label>
+																</div>
+															  <div class="cus_avex_netwrk">
+																<div class="Find-start-conversation-Chat-list-users_avex_network">
+																	<div class="Find-start-conversation-Chat-list-user-dp_avex_network_dp">
+																		<img src="images/3.png" alt="img" class="img-fluid">
+																	  
+																	</div>
+																	<div class="Find-start-conversation-Chat-list-text_avex_nft">
+																	  <h4>@SohoShek</h4>
+																	  <p>NFT Community and Metaverse. Follow and ...</p>
+																	</div>
+																  </div>
+																  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+																
+																  </div>
+																  
+															  </div>
+															 </div>
+															 <div class="flw_bck">
+																 <h6><span><img src="images/mutual.svg" alt="icon" class="mutaual_avex img-fluid"></span>8 mutual firends</h6>
+															  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+																 
+																
+																  
+																  <div class="sidebarUserListLired_avex_nft" id="btn4">
+																	<img class="plus_server_icon img-fluid" src="images/Cross_alert.png" alt="">
+																	 </div>
+															  <!-- 2 button hide show  -->
+																  
+															  <!-- hide show inner button  -->
+															  
+															  </div>
+															 </div>
+															</li>
+															<li>
+																<!-- new div -->
+																<div class="soho_li">
+																<div class="custom_checkbox_avex">
+																	<label class="Avex_ntwrk_container">
+																		<input type="checkbox">
+																		<span class="checkmark"></span>
+																	  </label>
+																</div>
+															  <div class="cus_avex_netwrk">
+																<div class="Find-start-conversation-Chat-list-users_avex_network">
+																	<div class="Find-start-conversation-Chat-list-user-dp_avex_network_dp">
+																		<img src="images/3.png" alt="img" class="img-fluid">
+																	  
+																	</div>
+																	<div class="Find-start-conversation-Chat-list-text_avex_nft">
+																	  <h4>@SohoShek</h4>
+																	  <p>NFT Community and Metaverse. Follow and ...</p>
+																	</div>
+																  </div>
+																  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+																
+																  </div>
+																  
+															  </div>
+															 </div>
+															 <div class="flw_bck">
+																 <h6><span><img src="images/mutual.svg" alt="icon" class="mutaual_avex img-fluid"></span>8 mutual firends</h6>
+															  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+																 
+																
+																  
+																  <div class="sidebarUserListLired_avex_nft" id="btn4">
+																	<img class="plus_server_icon img-fluid" src="images/Cross_alert.png" alt="">
+																	 </div>
+															  <!-- 2 button hide show  -->
+																  
+															  <!-- hide show inner button  -->
+															  
+															  </div>
+															 </div>
+															</li>
+
+															<li>
+																<!-- new div -->
+																<div class="soho_li">
+																<div class="custom_checkbox_avex">
+																	<label class="Avex_ntwrk_container">
+																		<input type="checkbox">
+																		<span class="checkmark"></span>
+																	  </label>
+																</div>
+															  <div class="cus_avex_netwrk">
+																<div class="Find-start-conversation-Chat-list-users_avex_network">
+																	<div class="Find-start-conversation-Chat-list-user-dp_avex_network_dp">
+																		<img src="images/3.png" alt="img" class="img-fluid">
+																	  
+																	</div>
+																	<div class="Find-start-conversation-Chat-list-text_avex_nft">
+																	  <h4>@SohoShek</h4>
+																	  <p>NFT Community and Metaverse. Follow and ...</p>
+																	</div>
+																  </div>
+																  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+																
+																  </div>
+																  
+															  </div>
+															 </div>
+															 <div class="flw_bck">
+																 
+															  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+																 
+																
+																  
+																  <div class="sidebarUserListLired_avex_nft" id="btn4">
+																	<img class="plus_server_icon img-fluid" src="images/Cross_alert.png" alt="">
+																	 </div>
+															  <!-- 2 button hide show  -->
+																  
+															  <!-- hide show inner button  -->
+															  
+															  </div>
+															 </div>
+															</li>
+
+															<li>
+																<!-- new div -->
+																<div class="soho_li">
+																<div class="custom_checkbox_avex">
+																	<label class="Avex_ntwrk_container">
+																		<input type="checkbox">
+																		<span class="checkmark"></span>
+																	  </label>
+																</div>
+															  <div class="cus_avex_netwrk">
+																<div class="Find-start-conversation-Chat-list-users_avex_network">
+																	<div class="Find-start-conversation-Chat-list-user-dp_avex_network_dp">
+																		<img src="images/3.png" alt="img" class="img-fluid">
+																	  
+																	</div>
+																	<div class="Find-start-conversation-Chat-list-text_avex_nft">
+																	  <h4>@SohoShek</h4>
+																	  <p>NFT Community and Metaverse. Follow and ...</p>
+																	</div>
+																  </div>
+																  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+																
+																  </div>
+																  
+															  </div>
+															 </div>
+															 <div class="flw_bck">
+																 
+															  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+																 
+																
+																  
+																  <div class="sidebarUserListLired_avex_nft" id="btn4">
+																	<img class="plus_server_icon img-fluid" src="images/Cross_alert.png" alt="">
+																	 </div>
+															  <!-- 2 button hide show  -->
+																  
+															  <!-- hide show inner button  -->
+															  
+															  </div>
+															 </div>
+															</li>
+
+															<li>
+																<!-- new div -->
+																<div class="soho_li">
+																<div class="custom_checkbox_avex">
+																	<label class="Avex_ntwrk_container">
+																		<input type="checkbox">
+																		<span class="checkmark"></span>
+																	  </label>
+																</div>
+															  <div class="cus_avex_netwrk">
+																<div class="Find-start-conversation-Chat-list-users_avex_network">
+																	<div class="Find-start-conversation-Chat-list-user-dp_avex_network_dp">
+																		<img src="images/3.png" alt="img" class="img-fluid">
+																	  
+																	</div>
+																	<div class="Find-start-conversation-Chat-list-text_avex_nft">
+																	  <h4>@SohoShek</h4>
+																	  <p>NFT Community and Metaverse. Follow and ...</p>
+																	</div>
+																  </div>
+																  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+																
+																  </div>
+																  
+															  </div>
+															 </div>
+															 <div class="flw_bck">
+																 
+															  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+																 
+																
+																  
+																  <div class="sidebarUserListLired_avex_nft" id="btn4">
+																	<img class="plus_server_icon img-fluid" src="images/Cross_alert.png" alt="">
+																	 </div>
+															  <!-- 2 button hide show  -->
+																  
+															  <!-- hide show inner button  -->
+															  
+															  </div>
+															 </div>
+															</li>
+
+															<li>
+																<!-- new div -->
+																<div class="soho_li">
+																<div class="custom_checkbox_avex">
+																	<label class="Avex_ntwrk_container">
+																		<input type="checkbox">
+																		<span class="checkmark"></span>
+																	  </label>
+																</div>
+															  <div class="cus_avex_netwrk">
+																<div class="Find-start-conversation-Chat-list-users_avex_network">
+																	<div class="Find-start-conversation-Chat-list-user-dp_avex_network_dp">
+																		<img src="images/3.png" alt="img" class="img-fluid">
+																	  
+																	</div>
+																	<div class="Find-start-conversation-Chat-list-text_avex_nft">
+																	  <h4>@SohoShek</h4>
+																	  <p>NFT Community and Metaverse. Follow and ...</p>
+																	</div>
+																  </div>
+																  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+																
+																  </div>
+																  
+															  </div>
+															 </div>
+															 <div class="flw_bck">
+																 
+															  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+																 
+																
+																  
+																  <div class="sidebarUserListLired_avex_nft" id="btn4">
+																	<img class="plus_server_icon img-fluid" src="images/Cross_alert.png" alt="">
+																	 </div>
+															  <!-- 2 button hide show  -->
+																  
+															  <!-- hide show inner button  -->
+															  
+															  </div>
+															 </div>
+															</li>
+
+															<li>
+																<!-- new div -->
+																<div class="soho_li">
+																<div class="custom_checkbox_avex">
+																	<label class="Avex_ntwrk_container">
+																		<input type="checkbox">
+																		<span class="checkmark"></span>
+																	  </label>
+																</div>
+															  <div class="cus_avex_netwrk">
+																<div class="Find-start-conversation-Chat-list-users_avex_network">
+																	<div class="Find-start-conversation-Chat-list-user-dp_avex_network_dp">
+																		<img src="images/3.png" alt="img" class="img-fluid">
+																	  
+																	</div>
+																	<div class="Find-start-conversation-Chat-list-text_avex_nft">
+																	  <h4>@SohoShek</h4>
+																	  <p>NFT Community and Metaverse. Follow and ...</p>
+																	</div>
+																  </div>
+																  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+																
+																  </div>
+																  
+															  </div>
+															 </div>
+															 <div class="flw_bck">
+																 
+															  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+																 
+																
+																  
+																  <div class="sidebarUserListLired_avex_nft" id="btn4">
+																	<img class="plus_server_icon img-fluid" src="images/Cross_alert.png" alt="">
+																	 </div>
+															  <!-- 2 button hide show  -->
+																  
+															  <!-- hide show inner button  -->
+															  
+															  </div>
+															 </div>
+															</li>
+
+															<li>
+																<!-- new div -->
+																<div class="soho_li">
+																<div class="custom_checkbox_avex">
+																	<label class="Avex_ntwrk_container">
+																		<input type="checkbox">
+																		<span class="checkmark"></span>
+																	  </label>
+																</div>
+															  <div class="cus_avex_netwrk">
+																<div class="Find-start-conversation-Chat-list-users_avex_network">
+																	<div class="Find-start-conversation-Chat-list-user-dp_avex_network_dp">
+																		<img src="images/3.png" alt="img" class="img-fluid">
+																	  
+																	</div>
+																	<div class="Find-start-conversation-Chat-list-text_avex_nft">
+																	  <h4>@SohoShek</h4>
+																	  <p>NFT Community and Metaverse. Follow and ...</p>
+																	</div>
+																  </div>
+																  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+																
+																  </div>
+																  
+															  </div>
+															 </div>
+															 <div class="flw_bck">
+																 
+															  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+																 
+																
+																  
+																  <div class="sidebarUserListLired_avex_nft" id="btn4">
+																	<img class="plus_server_icon img-fluid" src="images/Cross_alert.png" alt="">
+																	 </div>
+															  <!-- 2 button hide show  -->
+																  
+															  <!-- hide show inner button  -->
+															  
+															  </div>
+															 </div>
+															</li>
+
+															<li>
+																<!-- new div -->
+																<div class="soho_li">
+																<div class="custom_checkbox_avex">
+																	<label class="Avex_ntwrk_container">
+																		<input type="checkbox">
+																		<span class="checkmark"></span>
+																	  </label>
+																</div>
+															  <div class="cus_avex_netwrk">
+																<div class="Find-start-conversation-Chat-list-users_avex_network">
+																	<div class="Find-start-conversation-Chat-list-user-dp_avex_network_dp">
+																		<img src="images/3.png" alt="img" class="img-fluid">
+																	  
+																	</div>
+																	<div class="Find-start-conversation-Chat-list-text_avex_nft">
+																	  <h4>@SohoShek</h4>
+																	  <p>NFT Community and Metaverse. Follow and ...</p>
+																	</div>
+																  </div>
+																  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+																
+																  </div>
+																  
+															  </div>
+															 </div>
+															 <div class="flw_bck">
+																 
+															  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+																 
+																
+																  
+																  <div class="sidebarUserListLired_avex_nft" id="btn4">
+																	<img class="plus_server_icon img-fluid" src="images/Cross_alert.png" alt="">
+																	 </div>
+															  <!-- 2 button hide show  -->
+																  
+															  <!-- hide show inner button  -->
+															  
+															  </div>
+															 </div>
+															</li>
+
+															<li>
+																<!-- new div -->
+																<div class="soho_li">
+																<div class="custom_checkbox_avex">
+																	<label class="Avex_ntwrk_container">
+																		<input type="checkbox">
+																		<span class="checkmark"></span>
+																	  </label>
+																</div>
+															  <div class="cus_avex_netwrk">
+																<div class="Find-start-conversation-Chat-list-users_avex_network">
+																	<div class="Find-start-conversation-Chat-list-user-dp_avex_network_dp">
+																		<img src="images/3.png" alt="img" class="img-fluid">
+																	  
+																	</div>
+																	<div class="Find-start-conversation-Chat-list-text_avex_nft">
+																	  <h4>@SohoShek</h4>
+																	  <p>NFT Community and Metaverse. Follow and ...</p>
+																	</div>
+																  </div>
+																  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+																
+																  </div>
+																  
+															  </div>
+															 </div>
+															 <div class="flw_bck">
+																 
+															  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+																 
+																
+																  
+																  <div class="sidebarUserListLired_avex_nft" id="btn4">
+																	<img class="plus_server_icon img-fluid" src="images/Cross_alert.png" alt="">
+																	 </div>
+															  <!-- 2 button hide show  -->
+																  
+															  <!-- hide show inner button  -->
+															  
+															  </div>
+															 </div>
+															</li>
+
+															<li>
+																<!-- new div -->
+																<div class="soho_li">
+																<div class="custom_checkbox_avex">
+																	<label class="Avex_ntwrk_container">
+																		<input type="checkbox">
+																		<span class="checkmark"></span>
+																	  </label>
+																</div>
+															  <div class="cus_avex_netwrk">
+																<div class="Find-start-conversation-Chat-list-users_avex_network">
+																	<div class="Find-start-conversation-Chat-list-user-dp_avex_network_dp">
+																		<img src="images/3.png" alt="img" class="img-fluid">
+																	  
+																	</div>
+																	<div class="Find-start-conversation-Chat-list-text_avex_nft">
+																	  <h4>@SohoShek</h4>
+																	  <p>NFT Community and Metaverse. Follow and ...</p>
+																	</div>
+																  </div>
+																  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+																
+																  </div>
+																  
+															  </div>
+															 </div>
+															 <div class="flw_bck">
+																 
+															  <div class="Find-start-conversation-Chat-list-btns_avex_netwrk">
+																 
+																
+																  
+																  <div class="sidebarUserListLired_avex_nft" id="btn4">
+																	<img class="plus_server_icon img-fluid" src="images/Cross_alert.png" alt="">
+																	 </div>
+															  <!-- 2 button hide show  -->
+																  
+															  <!-- hide show inner button  -->
+															  
+															  </div>
+															 </div>
+															</li>
+														 </ul>
+													   </div>
+												   </div>
+													<!-- sent cross End  -->
+				                                </div>
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div>
+				                <div class="follow-Suggestions-people-list-sect">
+				                    <div class="follow-list-content">
+				                        <div class="follow_list_card follow_Connections_card follow_OutOfNetwork_card follow_Companies_card">
+				                            <div class="follow_list_card_DP">
+				                                <img src="images/Follow-card-DP-1.png" alt="img" class="img-fluid">
+				                            </div>
+				                            <h4>@SohoShek</h4>
+				                            <h5>NFT Community and Metaverse. Follow and ...</h5>
+				                            <h6><span><img src="images/mutual.svg" alt="icon" class="img-fluid"></span>8 mutual firends</h6>
+				                            <div class="follow_card_btns">
+				                                <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                            </div>
+				                            
+				                            <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                        </div>
+				                        <div class="follow_list_card follow_Connections_card follow_OutOfNetwork_card follow_Companies_card">
+				                            <div class="follow_list_card_DP">
+				                                <img src="images/Follow-card-DP-2.png" alt="img" class="img-fluid">
+				                            </div>
+				                            <h4>@Shaquille.oatmeal</h4>
+				                            <h5>NFT Community and Metaverse. Follow and ...</h5>
+				                            <h6><span><img src="images/mutual.svg" alt="icon" class="img-fluid"></span>8 mutual firends</h6>
+				                            <div class="follow_card_btns">
+				                                <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                            </div>
+				                            
+				                            <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                        </div>
+				                        <div class="follow_list_card follow_Connections_card follow_OutOfNetwork_card follow_Companies_card">
+				                            <div class="follow_list_card_DP">
+				                                <img src="images/Follow-card-DP-3.png" alt="img" class="img-fluid">
+				                            </div>
+				                            <h4>@Hoosier-daddy</h4>
+				                            <h5>NFT Community and Metaverse. Follow and ...</h5>
+				                            <h6><span><img src="images/mutual.svg" alt="icon" class="img-fluid"></span>8 mutual firends</h6>
+				                            <div class="follow_card_btns">
+				                                <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                            </div>
+				                            
+				                            <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                        </div>
+				                        <div class="follow_list_card follow_Connections_card follow_OutOfNetwork_card follow_Companies_card">
+				                            <div class="follow_list_card_DP">
+				                                <img src="images/Follow-card-DP-4.png" alt="img" class="img-fluid">
+				                            </div>
+				                            <h4>@SohoShek</h4>
+				                            <h5>NFT Community and Metaverse. Follow and ...</h5>
+				                            <h6><span><img src="images/mutual.svg" alt="icon" class="img-fluid"></span>8 mutual firends</h6>
+				                            <div class="follow_card_btns">
+				                                <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                            </div>
+				                            
+				                            <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                        </div>
+				                        <div class="follow_list_card follow_Connections_card">
+				                            <div class="follow_list_card_DP">
+				                                <img src="images/Follow-card-DP-5.png" alt="img" class="img-fluid">
+				                            </div>
+				                            <h4>@Hoosier-daddy</h4>
+				                            <h5>NFT Community and Metaverse. Follow and ...</h5>
+				                            <h6><span><img src="images/mutual.svg" alt="icon" class="img-fluid"></span>8 mutual firends</h6>
+				                            <div class="follow_card_btns">
+				                                <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                            </div>
+				                            
+				                            <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                        </div>
+				                        <div class="follow_list_card follow_Connections_card">
+				                            <div class="follow_list_card_DP">
+				                                <img src="images/Follow-card-DP-6.png" alt="img" class="img-fluid">
+				                            </div>
+				                            <h4>@Casanova</h4>
+				                            <h5>NFT Community and Metaverse. Follow and ...</h5>
+				                            <h6><span><img src="images/mutual.svg" alt="icon" class="img-fluid"></span>8 mutual firends</h6>
+				                            <div class="follow_card_btns">
+				                                <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                            </div>
+				                            
+				                            <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                        </div>
+				                        <div class="follow_list_card follow_Connections_card">
+				                            <div class="follow_list_card_DP">
+				                                <img src="images/Follow-card-DP-7.png" alt="img" class="img-fluid">
+				                            </div>
+				                            <h4>@MisterTea5</h4>
+				                            <h5>NFT Community and Metaverse. Follow and ...</h5>
+				                            <h6><span><img src="images/mutual.svg" alt="icon" class="img-fluid"></span>8 mutual firends</h6>
+				                            <div class="follow_card_btns">
+				                                <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                            </div>
+				                            
+				                            <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                        </div>
+				                        <div class="follow_list_card follow_Connections_card">
+				                            <div class="follow_list_card_DP">
+				                                <img src="images/Follow-card-DP-8.png" alt="img" class="img-fluid">
+				                            </div>
+				                            <h4>@MisterTea5</h4>
+				                            <h5>NFT Community and Metaverse. Follow and ...</h5>
+				                            <h6><span><img src="images/mutual.svg" alt="icon" class="img-fluid"></span>8 mutual firends</h6>
+				                            <div class="follow_card_btns">
+				                                <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                            </div>
+				                            
+				                            <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                        </div>
+				                        <div class="follow_list_card">
+				                            <div class="follow_list_card_DP">
+				                                <img src="images/Follow-card-DP-9.png" alt="img" class="img-fluid">
+				                            </div>
+				                            <h4>@HairyPoppins</h4>
+				                            <h5>NFT Community and Metaverse. Follow and ...</h5>
+				                            <h6><span><img src="images/mutual.svg" alt="icon" class="img-fluid"></span>8 mutual firends</h6>
+				                            <div class="follow_card_btns">
+				                                <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                            </div>
+				                            
+				                            <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                        </div>
+				                        <div class="follow_list_card">
+				                            <div class="follow_list_card_DP">
+				                                <img src="images/Follow-card-DP-10.png" alt="img" class="img-fluid">
+				                            </div>
+				                            <h4>@YellowSnowman</h4>
+				                            <h5>NFT Community and Metaverse. Follow and ...</h5>
+				                            <h6><span><img src="images/mutual.svg" alt="icon" class="img-fluid"></span>8 mutual firends</h6>
+				                            <div class="follow_card_btns">
+				                                <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                            </div>
+				                            
+				                            <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                        </div>
+				                        <div class="follow_list_card">
+				                            <div class="follow_list_card_DP">
+				                                <img src="images/Follow-card-DP-11.png" alt="img" class="img-fluid">
+				                            </div>
+				                            <h4>@Tinfoilhat</h4>
+				                            <h5>NFT Community and Metaverse. Follow and ...</h5>
+				                            <h6><span><img src="images/mutual.svg" alt="icon" class="img-fluid"></span>8 mutual firends</h6>
+				                            <div class="follow_card_btns">
+				                                <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                            </div>
+				                            
+				                            <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                        </div>
+				                        <div class="follow_list_card">
+				                            <div class="follow_list_card_DP">
+				                                <img src="images/Follow-card-DP-12.png" alt="img" class="img-fluid">
+				                            </div>
+				                            <h4>@Tinfoilhat</h4>
+				                            <h5>NFT Community and Metaverse. Follow and ...</h5>
+				                            <h6><span><img src="images/mutual.svg" alt="icon" class="img-fluid"></span>8 mutual firends</h6>
+				                            <div class="follow_card_btns">
+				                                <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                            </div>
+				                            
+				                            <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                        </div>
+				                        <div class="follow_list_card">
+				                            <div class="follow_list_card_DP">
+				                                <img src="images/Follow-card-DP-5.png" alt="img" class="img-fluid">
+				                            </div>
+				                            <h4>@Hoosier-daddy</h4>
+				                            <h5>NFT Community and Metaverse. Follow and ...</h5>
+				                            <h6><span><img src="images/mutual.svg" alt="icon" class="img-fluid"></span>8 mutual firends</h6>
+				                            <div class="follow_card_btns">
+				                                <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                            </div>
+				                            
+				                            <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                        </div>
+				                        <div class="follow_list_card">
+				                            <div class="follow_list_card_DP">
+				                                <img src="images/Follow-card-DP-6.png" alt="img" class="img-fluid">
+				                            </div>
+				                            <h4>@Casanova</h4>
+				                            <h5>NFT Community and Metaverse. Follow and ...</h5>
+				                            <h6><span><img src="images/mutual.svg" alt="icon" class="img-fluid"></span>8 mutual firends</h6>
+				                            <div class="follow_card_btns">
+				                                <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                            </div>
+				                            
+				                            <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                        </div>
+				                        <div class="follow_list_card">
+				                            <div class="follow_list_card_DP">
+				                                <img src="images/Follow-card-DP-7.png" alt="img" class="img-fluid">
+				                            </div>
+				                            <h4>@MisterTea5</h4>
+				                            <h5>NFT Community and Metaverse. Follow and ...</h5>
+				                            <h6><span><img src="images/mutual.svg" alt="icon" class="img-fluid"></span>8 mutual firends</h6>
+				                            <div class="follow_card_btns">
+				                                <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                            </div>
+				                            
+				                            <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                        </div>
+				                        <div class="follow_list_card">
+				                            <div class="follow_list_card_DP">
+				                                <img src="images/Follow-card-DP-8.png" alt="img" class="img-fluid">
+				                            </div>
+				                            <h4>@MisterTea5</h4>
+				                            <h5>NFT Community and Metaverse. Follow and ...</h5>
+				                            <h6><span><img src="images/mutual.svg" alt="icon" class="img-fluid"></span>8 mutual firends</h6>
+				                            <div class="follow_card_btns">
+				                                <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                            </div>
+				                            
+				                            <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                        </div>
+				                        <div class="follow_list_card">
+				                            <div class="follow_list_card_DP">
+				                                <img src="images/Follow-card-DP-9.png" alt="img" class="img-fluid">
+				                            </div>
+				                            <h4>@HairyPoppins</h4>
+				                            <h5>NFT Community and Metaverse. Follow and ...</h5>
+				                            <h6><span><img src="images/mutual.svg" alt="icon" class="img-fluid"></span>8 mutual firends</h6>
+				                            <div class="follow_card_btns">
+				                                <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                            </div>
+				                            
+				                            <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                        </div>
+				                        <div class="follow_list_card">
+				                            <div class="follow_list_card_DP">
+				                                <img src="images/Follow-card-DP-10.png" alt="img" class="img-fluid">
+				                            </div>
+				                            <h4>@YellowSnowman</h4>
+				                            <h5>NFT Community and Metaverse. Follow and ...</h5>
+				                            <h6><span><img src="images/mutual.svg" alt="icon" class="img-fluid"></span>8 mutual firends</h6>
+				                            <div class="follow_card_btns">
+				                                <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                            </div>
+				                            
+				                            <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                        </div>
+				                        <div class="follow_list_card">
+				                            <div class="follow_list_card_DP">
+				                                <img src="images/Follow-card-DP-11.png" alt="img" class="img-fluid">
+				                            </div>
+				                            <h4>@Tinfoilhat</h4>
+				                            <h5>NFT Community and Metaverse. Follow and ...</h5>
+				                            <h6><span><img src="images/mutual.svg" alt="icon" class="img-fluid"></span>8 mutual firends</h6>
+				                            <div class="follow_card_btns">
+				                                <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                            </div>
+				                            
+				                            <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                        </div>
+				                        <div class="follow_list_card">
+				                            <div class="follow_list_card_DP">
+				                                <img src="images/Follow-card-DP-12.png" alt="img" class="img-fluid">
+				                            </div>
+				                            <h4>@Tinfoilhat</h4>
+				                            <h5>NFT Community and Metaverse. Follow and ...</h5>
+				                            <h6><span><img src="images/mutual.svg" alt="icon" class="img-fluid"></span>8 mutual firends</h6>
+				                            <div class="follow_card_btns">
+				                                <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                            </div>
+				                            
+				                            <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                        </div>
+				                        
+				                        <div class="follow_list_card follow_HashTag_card">
+				                            <div class="follow_HashTag_card_content">
+				                                <div class="follow_list_card_DP">
+				                                    <img src="images/hashtagImg.png" alt="img" class="img-fluid">
+				                                </div>
+				                                <h4>#NFTshopping</h4>
+				                                <p>4.6M followers</p>
+				                                <div class="follow_card_btns follow_HashTag_card_btns">
+				                                    <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                    <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                                </div>
+
+				                                <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                            </div>
+				                        </div>
+				                        <div class="follow_list_card follow_HashTag_card">
+				                            <div class="follow_HashTag_card_content">
+				                                <div class="follow_list_card_DP">
+				                                    <img src="images/hashtagImg.png" alt="img" class="img-fluid">
+				                                </div>
+				                                <h4>#NFTshopping</h4>
+				                                <p>4.6M followers</p>
+				                                <div class="follow_card_btns follow_HashTag_card_btns">
+				                                    <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                    <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                                </div>
+
+				                                <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                            </div>
+				                        </div>
+				                        <div class="follow_list_card follow_HashTag_card">
+				                            <div class="follow_HashTag_card_content">
+				                                <div class="follow_list_card_DP">
+				                                    <img src="images/hashtagImg.png" alt="img" class="img-fluid">
+				                                </div>
+				                                <h4>#NFTshopping</h4>
+				                                <p>4.6M followers</p>
+				                                <div class="follow_card_btns follow_HashTag_card_btns">
+				                                    <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                    <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                                </div>
+
+				                                <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                            </div>
+				                        </div>
+				                        <div class="follow_list_card follow_HashTag_card">
+				                            <div class="follow_HashTag_card_content">
+				                                <div class="follow_list_card_DP">
+				                                    <img src="images/hashtagImg.png" alt="img" class="img-fluid">
+				                                </div>
+				                                <h4>#NFTshopping</h4>
+				                                <p>4.6M followers</p>
+				                                <div class="follow_card_btns follow_HashTag_card_btns">
+				                                    <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                    <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                                </div>
+
+				                                <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                            </div>
+				                        </div>
+				                        <div class="follow_list_card follow_HashTag_card">
+				                            <div class="follow_HashTag_card_content">
+				                                <div class="follow_list_card_DP">
+				                                    <img src="images/hashtagImg.png" alt="img" class="img-fluid">
+				                                </div>
+				                                <h4>#NFTshopping</h4>
+				                                <p>4.6M followers</p>
+				                                <div class="follow_card_btns follow_HashTag_card_btns">
+				                                    <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                    <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                                </div>
+				                                
+				                                <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                            </div>
+				                        </div>
+				                        <div class="follow_list_card follow_HashTag_card">
+				                            <div class="follow_HashTag_card_content">
+				                                <div class="follow_list_card_DP">
+				                                    <img src="images/hashtagImg.png" alt="img" class="img-fluid">
+				                                </div>
+				                                <h4>#NFTshopping</h4>
+				                                <p>4.6M followers</p>
+				                                <div class="follow_card_btns follow_HashTag_card_btns">
+				                                    <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                    <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                                </div>
+
+				                                <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                            </div>
+				                        </div>
+				                        <div class="follow_list_card follow_HashTag_card">
+				                            <div class="follow_HashTag_card_content">
+				                                <div class="follow_list_card_DP">
+				                                    <img src="images/hashtagImg.png" alt="img" class="img-fluid">
+				                                </div>
+				                                <h4>#NFTshopping</h4>
+				                                <p>4.6M followers</p>
+				                                <div class="follow_card_btns follow_HashTag_card_btns">
+				                                    <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                    <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                                </div>
+
+				                                <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                            </div>
+				                        </div>
+				                        <div class="follow_list_card follow_HashTag_card">
+				                            <div class="follow_HashTag_card_content">
+				                                <div class="follow_list_card_DP">
+				                                    <img src="images/hashtagImg.png" alt="img" class="img-fluid">
+				                                </div>
+				                                <h4>#NFTshopping</h4>
+				                                <p>4.6M followers</p>
+				                                <div class="follow_card_btns follow_HashTag_card_btns">
+				                                    <button class="Follow-btn"><span><img src="images/follow-Icon-Artwork.svg" alt="icon" class="img-fluid"></span>Follow</button>
+				                                    <button class="Following-btn"><span><img src="images/following-Check.svg" alt="icon" class="img-fluid"></span>Following</button>
+				                                </div>
+
+				                                <button class="follow-card-close-btn"><img src="images/follow-card-Cross.svg" alt="icon" class="img-fluid"></button>
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+			</div>
+        </div>	
+	</div>
+	
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	  <script src="js/dropdown.js"></script>
+	  <script>
+		$(function(){
+		   $('.menu-mid-sect ul li.submenubar-item a').click(function(){
+			 $('.menu-mid-sect ul li.submenubar-item a').each(function(a){
+			   $( this ).removeClass('selectedclass')
+			 });
+			 $( this ).addClass('selectedclass');
+		   });
+		  
+		 });
+		</script>
+		<script type="text/javascript">
+	// When the user clicks, open the popup
+	function popupFunction() {
+	  var popup = document.getElementById("myPopup");
+	  popup.classList.toggle("show");
+	
+	}
+	
+	// When the user clicks, open trade mennu
+	function tradeFunction() {
+	  var trade = document.getElementById("trademenu-drpdown");
+	  trade.classList.toggle("show");
+	}
+	</script>
+	<script>
+		/*for toggle sub menu*/
+			function subtogglediv(id, icon) {
+				var id = document.getElementById(id);
+				id.classList.toggle('submenu-active');
+				var cross = document.getElementById(icon);
+				cross.classList.toggle('fa-times');
+				cross.classList.toggle('fa-bars');
+			}
+			</script>
+	
+			<script type="text/javascript">
+			/* for modal dropdown menu*/
+			var dropdownpopup = document.querySelectorAll('[data-toggle=dropdownpopup]');
+			for (var k = 0; k < dropdownpopup.length; k++) {
+				dropdownpopup[k].addEventListener('click', function (e) {
+					if (this.hasAttribute('data-link')) {
+						var m_ID1 = this.getAttribute('data-link');
+						//for closing other popup
+						var activedropdown = document.querySelector('.dropdown-menu.drop-active');
+						if(activedropdown && activedropdown.getAttribute('id') != m_ID1)
+						{
+							activedropdown.classList.remove('drop-active');
+						}
+						//activting popup
+						document.getElementById(m_ID1).classList.toggle('drop-active');
+					}
+				});
+			}
+		 
+		
+	
+			//For modal
+			document.addEventListener('click', function (e) {
+				e = e || window.event;
+				var target = e.target || e.srcElement;
+	
+				if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') 
+				{
+					if (target.hasAttribute('data-target')) 
+					{
+						var m_ID = target.getAttribute('data-target');
+						document.getElementById(m_ID).classList.add('open');
+					}
+				}
+	
+				// Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
+				if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') ||target.classList.contains('modal')) {
+					var modal = document.querySelector('.modal.open');
+					modal.classList.remove('open');
+				}
+			}, false);
+	
+		   
+		
+		 </script>
+	
+	<script>
+		$(document).ready(function() {
+			$('#Create-Community-button').click(function() {
+				$('.input-name-error-text').show();
+			});
+		});
+	</script>
+	<script> 
+	$('#Create-Community-button').bind('click', function() {
+		if(allFilledpassauthd()) $('#CreateCommunity-input-name-fild').addClass('error');
+	});
+	
+	function allFilledpassauthd() {
+		var filled = true;
+		$('.CreateCommunity-Modal-body input').each(function() {
+			if($(this).val() == '') filled = false;
+		});
+		return filled;
+	}
+	</script>
+	<script>
+		//for reaction tab
+	function reactionFunc(evt, reactioninput) {
+		var i, reaction_tabcontent, reaction_tablinks;
+		reaction_tabcontent = document.getElementsByClassName("user-reaction-content-list");
+		for (i = 0; i < reaction_tabcontent.length; i++) {
+			reaction_tabcontent[i].style.display = "none";
+		}
+		reaction_tablinks = document.getElementsByClassName("reaction_tablinks");
+		for (i = 0; i < reaction_tablinks.length; i++) {
+			reaction_tablinks[i].className = reaction_tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(reactioninput).style.display = "block";
+		evt.currentTarget.className += " active";
+	}
+	</script>
+	
+	<script>
+		$(document).ready(function() {
+			$('.save-post').click(function() {
+                $('.unfllow-user-notification-box').hide();
+                $('.copy-link-post-notification-box').hide();
+                $('.mute-user-notification-box').hide();
+				$('.save-post-notification-box').show();
+			});
+		});
+        $(document).ready(function() {
+			$('.save-post-notification-box-close-btn').click(function() {
+				$('.save-post-notification-box').hide();
+			});
+		});
+        $(document).ready(function() {
+			$('.view-all-save-post').click(function() {
+				$('.save-post-notification-box').hide();
+				$('.status-section').hide();
+                $('.save-this-status').show();
+                $('#back-to-feed-btn').show();
+			});
+		});
+        $(document).ready(function() {
+			$('#back-to-feed-btn').click(function() {
+				$('.save-post-notification-box').hide();
+                $('.save-this-status').hide();
+                $('.status-section').show();
+                $('#back-to-feed-btn').hide();
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function() {
+			$('.copy-post-link').click(function() {
+                $('.unfllow-user-notification-box').hide();
+                $('.save-post-notification-box').hide();
+                $('.mute-user-notification-box').hide();
+				$('.copy-link-post-notification-box').show();
+			});
+		});
+        $(document).ready(function() {
+			$('.copy-link-post-notification-box-close-btn').click(function() {
+				$('.copy-link-post-notification-box').hide();
+			});
+		});
+        $(document).ready(function() {
+			$('.view-all-copy-link-post').click(function() {
+				$('.copy-link-post-notification-box').hide();
+				$('.status-section').hide();
+                $('.copy-link-this-status').show();
+                $('#back-to-feed-btn').show();
+			});
+		});
+        $(document).ready(function() {
+			$('#back-to-feed-btn').click(function() {
+				$('.copy-link-post-notification-box').hide();
+                $('.copy-link-this-status').hide();
+                $('.status-section').show();
+                $('#back-to-feed-btn').hide();
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function() {
+			$('.unfllow-user').click(function() {
+				$('.unfllow-user-notification-box').show();
+                $('.unfllow-user-stutas').hide();
+                $('.save-post-notification-box').hide();
+                $('.copy-link-post-notification-box').hide();
+                $('.mute-user-notification-box').hide();
+				$('.Post-removed-alart-action-box').show();
+			});
+		});
+        $(document).ready(function() {
+			$('.unfllow-user-notification-box-close-btn').click(function() {
+				$('.unfllow-user-notification-box').hide();
+			});
+		});
+        $(document).ready(function() {
+			$('.Post-removed-undo-btn').click(function() {
+				$('.Post-removed-alart-action-box').hide();
+                $('.unfllow-user-notification-box').hide();
+                $('.status-section').show();
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function() {
+			$('.mute-user').click(function() {
+				$('.mute-user-notification-box').show();
+                $('.unfllow-user-notification-box').hide();
+                $('.copy-link-post-notification-box').hide();
+				$('.save-post-notification-box').hide();
+                $('.mute-user-stutas').hide();
+				$('.Post-removed-alart-action-box').show();
+			});
+		});
+        $(document).ready(function() {
+			$('.mute-user-notification-box-close-btn').click(function() {
+				$('.mute-user-notification-box').hide();
+			});
+		});
+        $(document).ready(function() {
+			$('.Post-removed-undo-btn').click(function() {
+				$('.Post-removed-alart-action-box').hide();
+                $('.mute-user-notification-box').hide();
+                $('.status-section').show();  
+			});
+		});
+	</script>	
+	<script>
+	    $(function() {
+	        $('.reason-list form ul li').click(function() {
+	            $('.dont_Want_See-post-Modal-footer button').each(function(a) {
+	                $(this).removeClass('disable')
+	            });
+	        });
+	    });
+	</script>
+	
+	
+    
+    <script>
+        function openEvent(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("Manage_invitations_tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("Manage_invitations_tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("manage_Invititation_Tab_defaultOpen").click();
+    </script>
+	
+	<script>
+        $(document).ready(function() {
+			$('.Manage-invitations-settingsBtn').click(function() {
+				$('.Choose-who-connect-popUp').toggle();
+			});
+		});
+    </script>
+	
+	<script>
+        $(document).ready(function() {
+			$('.filter_menu_sect_all_btn').click(function() {
+				$('.follow_list_card').show();
+				$('.follow_HashTag_card').show();
+			});
+		});
+        $(document).ready(function() {
+			$('.filter_menu_sect_Connections_btn').click(function() {
+				$('.follow_list_card').hide();
+				$('.follow_Connections_card').show();
+			});
+		});
+        $(document).ready(function() {
+			$('.filter_menu_sect_OutOfNetwork_btn').click(function() {
+				$('.follow_list_card').hide();
+				$('.follow_OutOfNetwork_card').show();
+			});
+		});
+        $(document).ready(function() {
+			$('.filter_menu_sect_OutOfNetwork_btn').click(function() {
+				$('.follow_list_card').hide();
+				$('.follow_OutOfNetwork_card').show();
+			});
+		});
+        $(document).ready(function() {
+			$('.filter_menu_sect_Companies_btn').click(function() {
+				$('.follow_list_card').hide();
+				$('.follow_Companies_card').show();
+			});
+		});
+        $(document).ready(function() {
+			$('.filter_menu_sect_Hashtags_btn').click(function() {
+				$('.follow_list_card').hide();
+				$('.follow_HashTag_card').show();
+			});
+		});
+    </script>
+	
+	<script>
+        var coll = document.getElementsByClassName("follow_card_btns");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                }
+            });
+        }
+    </script>
+	<script>
+	    $(document).ready(function() {
+	        $('.All_invitations_dropbox').click(function() {
+	            $('.All_invitations_dropList').toggle();
+	        });
+	    });
+        $(document).ready(function() {
+	        $('.All_invitations_dropList').click(function() {
+	            $('.All_invitations_dropList').hide();
+	        });
+	    });
+	</script>		
+	<script>
+		
+		$(function() {
+
+   
+
+// Then hide the second div
+$("#btn2").hide();
+$("#btn3").hide();
+
+// Then add a click handlers to the buttons
+$("#btn1").click(function() {
+  $("#btn2").show();
+  $("#btn1").hide();
+  $("#btn4").hide();
+
+});
+$("#btn2").click(function() {
+  $("#btn2").hide();
+  $("#btn3").show();
+  $("#btn4").hide();
+});
+}) 
+
+// 2 new
+
+// Then hide the second div
+$("#btn22").hide();
+$("#btn33").hide();
+
+// Then add a click handlers to the buttons
+$("#btn11").click(function() {
+  $("#btn20").show();
+  $("#btn110").hide();
+  $("#btn40").hide();
+
+});
+$("#btn2").click(function() {
+  $("#btn2").hide();
+  $("#btn3").show();
+  $("#btn4").hide();
+});
+
+
+// end 
+
+// / Then add a click handlers to the buttons
+$("#btn1").click(function() {
+  $("#btn2").show();
+  $("#btn1").hide();
+  $("#btn4").hide();
+
+});
+$("#btn2").click(function() {
+  $("#btn2").hide();
+  $("#btn3").show();
+  $("#btn4").hide();
+});
+
+
+// end 
+
+
+// / Then add a click handlers to the buttons
+$("#btn1").click(function() {
+  $("#btn2").show();
+  $("#btn1").hide();
+  $("#btn4").hide();
+
+});
+$("#btn2").click(function() {
+  $("#btn2").hide();
+  $("#btn3").show();
+  $("#btn4").hide();
+});
+
+
+// end 
+
+
+// / Then add a click handlers to the buttons
+$("#btn1").click(function() {
+  $("#btn2").show();
+  $("#btn1").hide();
+  $("#btn4").hide();
+
+});
+$("#btn2").click(function() {
+  $("#btn2").hide();
+  $("#btn3").show();
+  $("#btn4").hide();
+});
+
+
+// end 
+
+
+// / Then add a click handlers to the buttons
+$("#btn1").click(function() {
+  $("#btn2").show();
+  $("#btn1").hide();
+  $("#btn4").hide();
+
+});
+$("#btn2").click(function() {
+  $("#btn2").hide();
+  $("#btn3").show();
+  $("#btn4").hide();
+});
+
+
+// end 
+
+
+// / Then add a click handlers to the buttons
+$("#btn1").click(function() {
+  $("#btn2").show();
+  $("#btn1").hide();
+  $("#btn4").hide();
+
+});
+$("#btn2").click(function() {
+  $("#btn2").hide();
+  $("#btn3").show();
+  $("#btn4").hide();
+});
+
+
+// end 
+
+
+// Then add a click handlers to the buttons
+$("#btn1").click(function() {
+  $("#btn2").show();
+  $("#btn1").hide();
+  $("#btn4").hide();
+
+});
+$("#btn2").click(function() {
+  $("#btn2").hide();
+  $("#btn3").show();
+  $("#btn4").hide();
+});
+
+
+// end 
+
+	</script>	
+</body>
+
+</html>

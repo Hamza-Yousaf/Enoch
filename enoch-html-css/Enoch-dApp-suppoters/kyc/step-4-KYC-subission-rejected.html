@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>KYC :: Validation/rejected</title>
+	<!-- Fav Icons -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!--JS-->
+    <script src="js/jquery.min.js"></script>
+	<!-- Stylesheets -->
+	
+	<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/dashboard-header.css" rel="stylesheet" />
+	<link href="css/dashboard-style.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+  
+</head>
+
+<body>
+<div class="container-fluid dashboard-body-bg">
+	<div class="row">
+		<header class="custom-header">			
+			<div class="ezl-dashboard-header">
+				<div class="menu-left">
+					<div class="menu-wrap">
+						<a href="#menu" class="menu-link"><img src="images/Menu.png" alt="Menu" class="img-fluid"/></a>
+					</div>
+					<div class="header-logo"><a href="javascript:void(0)"><img src="images/logo.png" alt="logo" class="img-fluid"/></a></div>
+				</div>
+				<div class="menuright-side">
+					<div class="right-search">
+						<form class="search-form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Fund, ISIN, Keyword ">
+									<button class="search-form-btn" type="Submit"><img class="search-img" src="images/search.png" alt="search"></button>
+							</div>
+						</form>
+					</div>
+					<div class="menu-mid-sect">
+						<ul id="submenubar">
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/home.png" alt="home" class="img-fluid"/></div>
+								<a href="javascript:void(0)">Home</a>
+							</li>
+							<!-- <li class="">
+								<div class="menu-times-notifi"><img src="images/network.png" alt="network" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">My Network</a>
+							</li> -->
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/Chat.png" alt="Chat" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">Messaging</a>
+							</li>
+							<li class="ether-block">
+								<div class="menu-times-notifi mr-2"><img src="images/Ethereum.png" alt="Ethereum" class="img-fluid"/></div>
+								<a href="javascript:void(0)">ETH Mainnet <i class="fa fa-angle-right"></i></a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)">Connect Wallet</a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)"><span><img src="images/cart.png" class="img-fluid mr-2"/></span>Cart</a>
+							</li>
+							
+						</ul>
+						<div class="toggle-menu">
+								<div onclick="subtogglediv('submenubar','submenu-toggle');" class="d-inline-block">
+									<i class="fa fa-bars" aria-hidden="true" id="submenu-toggle"></i>
+								</div>
+							</div>
+					</div>
+					
+					<div class="ezl-notificaion">
+					<div class="position-relative notificaion-dropdown ezl-notificaion-marg">
+						<a href="javascript:void(0)" class="popup"><img src="images/help.png" alt="help"/></a>							
+											
+					</div>
+					<div class=" position-relative notificaion-dropdown">
+						<a href="javascript:void(0)" class="popup"><img src="images/alertBell.png" alt="Bell"><span class="notificaion-spn">10</span></a>							
+						
+					</div>
+					</div>
+					<div class="ezl-user-ac">
+					
+					<div class="account-d dropdown">
+						<div class="dropdown-buttn"><span class="popup" onclick="popupFunction()"><div class="user-img"><img src="images/user-img.png" alt="user image" class="img-fluid"/></div></span>
+							<!-- <div class="popupbox dropdown-menu" id="myPopup">
+								
+								<ul class="">
+									<li>
+										<div  class="enoch-usr-prof"><span><img src="images/user-pro-pic.png" class="img-fluid" alt="profile- pic"/> EncchUser007</span><span><a href="#">Change</a></span></div>
+									</li>
+									<li>
+										<div class="enoch-usr-status-block">
+											<div class="usr-status-left">Online Status</div>
+											<div class="usr-status-right">
+												<div class="post-switch">
+													<label class="postswitch">
+													  <input type="checkbox" checked>
+													  <span class="post-slider round"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="enoch-usr-status-block"><a href="#">Public Profile</a></div>
+										<div class="enoch-usr-status-block mb-0"><a href="#">User Settings</a></div>
+									</li>
+									<li>
+										<div class="enoch-usr-status-block"><a href="#">Billing</a></div>
+										<div class="enoch-usr-status-block"><a href="#">Help Center</a></div>
+										<div class="enoch-usr-status-block"><a href="#">Verify Account (KYC)</a></div>
+										<div class="enoch-usr-status-block mb-0"><a href="#" class="orange-clr">Upgrade to Premium</a></div>
+									</li>
+									<li class="mt-4">
+										<div class="enoch-usr-status-block mb-0">Free Bonus<span><a href="#" class="btn freebonus-btn">$50/500 $Enoch </a></span></div>
+									</li>
+									<li class="mt-4">
+										<div class="enoch-usr-status-block mb-0"><a href="#" data-toggle="modal" data-target="switch-user-modal">Switch Account</a></div>
+										
+									</li>
+									<li class="mt-4 mb-0 pb-0">
+										<div class="enoch-usr-status-block mb-0"><a href="#" class="post-red-clr">Logout</a></div>
+									</li>
+								</ul>
+							</div> -->
+						</div>
+					</div>
+					</div>
+				</div>				
+			</div>
+			
+		</header>
+	</div>	
+	<div class="row">
+        <div class="dashboard-header-bredcrumb">
+			<div class="ezl-dashboard-container">
+				<div class="col-12">
+					<ul>
+						<li class="mr-2"><img src="images/bread-crumb-icon-home.png" alt="icon" class="img-fluid"/> </li>
+						<li class="mr-1"><a href="#" class="dsh-active-black"> Individual KYC / </a></li>
+						<li><a href="#" class="dsh-active"> </a></li>
+						<li><a href="#"> Status Update</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="KYC-BODY ezl-dashboard-container">
+	    <div class="Linking-wallet-four-icons-sect">
+	        <div class="four-icons-list">
+	            <div class="row">
+	                <div class="col-md-3">
+	                    <div class="Linking-wallet-icon Linking-wallet-icon-1">
+	                        <div class="Linking-wallet-icon-img Linking-wallet-icon-1-img">
+	                            <img src="images/step-2-imgs/icon-1.png" alt="step-1" class="img-fluid"/>
+	                        </div>
+	                        <div class="Linking-wallet-icon-text Linking-wallet-icon-1-text">
+	                            <h1>Step 1</h1>
+	                            <h2>Individual Profile</h2>
+	                        </div>
+	                    </div>
+	                </div>
+	                
+	                <div class="col-md-3">
+	                    <div class="Linking-wallet-icon Linking-wallet-icon-2">
+	                        <div class="Linking-wallet-icon-img Linking-wallet-icon-2-img Linking-wallet-icon-img-act">
+	                            <img src="images/step-2-imgs/icon-2-act.png" alt="step-2" class="img-fluid"/>
+	                        </div>
+	                        <div class="Linking-wallet-icon-text Linking-wallet-icon-2-text">
+	                            <h1>Step 2</h1>
+	                            <h2>Linking Wallet</h2>
+	                        </div>
+	                    </div>
+	                </div>
+	                
+	                <div class="col-md-3">
+	                    <div class="Linking-wallet-icon Linking-wallet-icon-3">
+	                        <div class="Linking-wallet-icon-img Linking-wallet-icon-3-img Linking-wallet-icon-img-act">
+	                            <img src="images/step-4-imgs/icon-3-act.png" alt="step-3" class="img-fluid"/>
+	                        </div>
+	                        <div class="Linking-wallet-icon-text Linking-wallet-icon-3-text">
+	                            <h1>Step 3</h1>
+	                            <h2>User ID Documentation</h2>
+	                        </div>
+	                    </div>
+	                </div>
+	                
+	                <div class="col-md-3">
+	                    <div class="Linking-wallet-icon Linking-wallet-icon-4">
+	                        <div class="Linking-wallet-icon-img Linking-wallet-icon-4-img">
+	                            <img src="images/step-4-imgs/icon-4.png" alt="step-4" class="img-fluid"/>
+	                        </div>
+	                        <div class="Linking-wallet-icon-text Linking-wallet-icon-4-text Linking-wallet-active">
+	                            <h1>Step 4</h1>
+	                            <h2>KYC Validation</h2>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    
+	    <div class="Personal-KYC-Pending-sect Personal-KYC-rejected-sect">
+            <div class="need-help">
+                <h1>Need help ? <a href="#">contact support</a></h1>
+            </div>
+	        <div class="row">
+	            <div class="col-lg-3">
+	                <div class="Personal-KYC-Pending-left-sect Personal-KYC-reject-left-sect">
+	                    <img src="images/step-4-imgs/rejectected-error.png" alt="error" class="img-fluid"/>
+	                </div>
+	            </div>
+	            <div class="col-lg-9">
+                    
+	                <div class="Personal-KYC-Pending-right-sect Personal-KYC-rejected-right-sect">
+	                    <div class="Personal-KYC-Pending-title">
+	                        <h1>KYC SUBMISSION</h1>
+	                        <h2>is <span class="rejected">REJECTED</span></h2>
+	                    </div>
+	                    <div class="Personal-KYC-reject-text">            
+	                        <p>As part of compliance requirements, we have identified that your KYC is incomplete due to absence of Clear selfie and passport ID. Your KYC is now marked rejected in your Enoch Account .Kindly submit all relevant KYC Documents to ensure your account is fully compliant and all features enabled.</p>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    
+	    <div class="KYC-step-4-btn mb-5">
+	        <button class="button-primary"><a href="#">Re-Submit KYC</a></button>
+	    </div>
+	    
+	    <div class="col-lg-6">
+	        <div class="KYC-submission-sect">
+	            <div class="row">
+	                <div class="col-2">
+	                    <div class="Path-success">
+	                        <img src="images/step-4-imgs/danger.png" alt="danger" class="img-fluid"/>
+	                    </div>
+	                </div>
+	                <div class="col-8 p-0">
+	                    <div class="KYC-submission-text KYC-submission-rejected-text">
+	                        <h1>Your KYC is now marked rejected in your Account and are <br> auto-suspneded</h1>
+	                        <h2>Contact support</h2>
+	                    </div>
+	                </div>
+	                <div class="col-2">
+	                    <div class="KYC-submission-close">
+	                        <img src="images/step-4-imgs/danger-close.png" alt="X" class="img-fluid KYC-submission-sect-close"/>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    
+	    
+
+	</div>
+	
+</div>
+	
+	<script type="text/javascript">
+	    // When the user clicks, open the popup
+	    function popupFunction() {
+	        var popup = document.getElementById("myPopup");
+	        popup.classList.toggle("show");
+
+	    }
+	</script>
+    
+    <script>
+        $(document).ready(function() {
+            $('.KYC-submission-sect-close').click(function() {
+                $('.KYC-submission-sect').fadeOut();
+            });
+        });
+    </script>
+   
+    <script>
+        /*for toggle sub menu*/
+        function subtogglediv(id, icon) {
+            var id = document.getElementById(id);
+            id.classList.toggle('submenu-active');
+            var cross = document.getElementById(icon);
+            cross.classList.toggle('fa-times');
+            cross.classList.toggle('fa-bars');
+        }
+    </script>
+    <script>
+		$(function(){
+		   $('.menu-mid-sect ul li.submenubar-item a').click(function(){
+			 $('.menu-mid-sect ul li.submenubar-item a').each(function(a){
+			   $( this ).removeClass('selectedclass')
+			 });
+			 $( this ).addClass('selectedclass');
+		   });
+		  
+		 });
+		</script>
+    
+</body>
+
+
+</html>

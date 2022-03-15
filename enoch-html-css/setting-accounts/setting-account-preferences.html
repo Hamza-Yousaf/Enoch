@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Setting/Account</title>
+	<!-- Fav Icons -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- Stylesheets -->
+	<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/global.css" rel="stylesheet" />
+  <link href="css/dashboard-header.css" rel="stylesheet" />
+  <link href="css/dashboard-style.css" rel="stylesheet" />
+  
+  
+</head>
+
+<body>
+	<div class="container-fluid dashboard-body-bg">
+	<div class="row">
+		<header class="custom-header">			
+			<div class="ezl-dashboard-header">
+				<div class="menu-left">
+					<div class="menu-wrap">
+						<a href="#menu" class="menu-link"><img src="images/Menu.png" alt="Menu" class="img-fluid"/></a>
+					</div>
+					<div class="header-logo"><a href="javascript:void(0)"><img src="images/logo.png" alt="logo" class="img-fluid"/></a></div>
+				</div>
+				<div class="menuright-side">
+					<div class="right-search">
+						<form class="search-form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Fund, ISIN, Keyword ">
+									<button class="search-form-btn" type="Submit"><img class="search-img" src="images/search.png" alt="search"></button>
+							</div>
+						</form>
+					</div>
+					<div class="menu-mid-sect">
+						<ul id="submenubar">
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/home.png" alt="home" class="img-fluid"/></div>
+								<a href="javascript:void(0)">Home</a>
+							</li>
+							<!-- <li class="">
+								<div class="menu-times-notifi"><img src="images/network.png" alt="network" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">My Network</a>
+							</li> -->
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/Chat.png" alt="Chat" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">Messaging</a>
+							</li>
+							<li class="ether-block">
+								<div class="menu-times-notifi mr-2"><img src="images/Ethereum.png" alt="Ethereum" class="img-fluid"/></div>
+								<a href="javascript:void(0)">ETH Mainnet <i class="fa fa-angle-right"></i></a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)">Connect Wallet</a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)"><span><img src="images/cart.png" class="img-fluid mr-2"/></span>Cart</a>
+							</li>
+							
+						</ul>
+						<div class="toggle-menu">
+								<div onclick="subtogglediv('submenubar','submenu-toggle');" class="d-inline-block">
+									<i class="fa fa-bars" aria-hidden="true" id="submenu-toggle"></i>
+								</div>
+							</div>
+					</div>
+					
+					<div class="ezl-notificaion">
+					<div class="position-relative notificaion-dropdown ezl-notificaion-marg">
+						<a href="javascript:void(0)" class="popup"><img src="images/help.png" alt="help"/></a>							
+											
+					</div>
+					<div class=" position-relative notificaion-dropdown">
+						<a href="javascript:void(0)" class="popup"><img src="images/alertBell.png" alt="Bell"><span class="notificaion-spn">10</span></a>							
+						
+					</div>
+					</div>
+					<div class="ezl-user-ac">
+					
+					<div class="account-d dropdown">
+						<div class="dropdown-buttn"><span class="popup" onclick="popupFunction()"><div class="user-img"><img src="images/user-img.png" alt="user image" class="img-fluid"/></div></span>
+							<!-- <div class="popupbox dropdown-menu" id="myPopup">
+								
+								<ul class="">
+									<li>
+										<div  class="enoch-usr-prof"><span><img src="images/user-pro-pic.png" class="img-fluid" alt="profile- pic"/> EncchUser007</span><span><a href="#">Change</a></span></div>
+									</li>
+									<li>
+										<div class="enoch-usr-status-block">
+											<div class="usr-status-left">Online Status</div>
+											<div class="usr-status-right">
+												<div class="post-switch">
+													<label class="postswitch">
+													  <input type="checkbox" checked>
+													  <span class="post-slider round"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="enoch-usr-status-block"><a href="#">Public Profile</a></div>
+										<div class="enoch-usr-status-block mb-0"><a href="#">User Settings</a></div>
+									</li>
+									<li>
+										<div class="enoch-usr-status-block"><a href="#">Billing</a></div>
+										<div class="enoch-usr-status-block"><a href="#">Help Center</a></div>
+										<div class="enoch-usr-status-block"><a href="#">Verify Account (KYC)</a></div>
+										<div class="enoch-usr-status-block mb-0"><a href="#" class="orange-clr">Upgrade to Premium</a></div>
+									</li>
+									<li class="mt-4">
+										<div class="enoch-usr-status-block mb-0">Free Bonus<span><a href="#" class="btn freebonus-btn">$50/500 $Enoch </a></span></div>
+									</li>
+									<li class="mt-4">
+										<div class="enoch-usr-status-block mb-0"><a href="#" data-toggle="modal" data-target="switch-user-modal">Switch Account</a></div>
+										
+									</li>
+									<li class="mt-4 mb-0 pb-0">
+										<div class="enoch-usr-status-block mb-0"><a href="#" class="post-red-clr">Logout</a></div>
+									</li>
+								</ul>
+							</div> -->
+						</div>
+					</div>
+					</div>
+				</div>				
+			</div>
+			
+		</header>
+	</div>	
+	<div class="row">
+        <div class="dashboard-header-bredcrumb">
+			<div class="ezl-dashboard-container">
+				<div class="col-12 p-md-0">
+					<ul>
+						<li class="mr-2"><img src="images/bd-icon.png" alt="icon" class="img-fluid"/> </li>
+						<li class="mr-1"><a href="javascript:void(0)"> Setting / </a></li>
+						<li><a href="javascript:void(0)" class="dsh-active"> Account / </a></li>
+						<li><a href="javascript:void(0)"> Account Prefrences</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ezl-dashboard-container">	
+		<div class="row">
+			<div class="col-12">
+			<div class="enoch-setting-acblock">
+
+				<div class="enoch-setting-acblock-lft" id="accordion-block">
+					<div class="enoch-setting-acblock-lft-panel">
+						<h3 class="enoch-setting-accordion accordion-active">Account  Prefrences </h3>
+						<ul class="tog-d-block">
+							<li class="setting-list-active"><a href="#proffile-info">Profile Information</a></li>
+							<li><a href="#site-prefrnc">Site Preferences</a></li>
+							<li><a href="#sync-option">Syncing Options</a></li>
+							<li><a href="#subscription-payment">Subscription & payments</a></li>
+							<li><a href="#partners-service">Partners & services</a></li>
+							<li><a href="#account-mngt">Account management</a></li>
+						</ul>
+					</div>
+					<div class="enoch-setting-acblock-lft-panel">
+						<h3 class="enoch-setting-accordion">Sign in & Security</h3>
+						<ul class="tog-d-block">
+							<li class="setting-list-active"><a href="#account-access"> Account Access</a></li>
+							
+						
+						</ul>
+					</div>
+					<div class="enoch-setting-acblock-lft-panel">
+						<h3 class="enoch-setting-accordion">Visibility</h3>
+						<ul class="tog-d-block">
+							<li class="setting-list-active"><a href="#profile-network">Visibility of your Profile & Network</a></li>
+							<li><a href="#visibility-activity">Visibility of your Enoch Activity</a></li>	
+						
+						</ul>
+					</div>
+					<div class="enoch-setting-acblock-lft-panel">
+						<h3 class="enoch-setting-accordion">Communications</h3>
+						<ul class="tog-d-block">
+							<li class="setting-list-active"><a href="#get-notification">How you get your notifications</a></li>
+							<li><a href="#who-reach">Who can Reach you</a></li>
+							<li><a href="#message-exp">Messaging experience</a></li>																		
+						</ul>
+					</div>
+					<div class="enoch-setting-acblock-lft-panel">
+						<h3 class="enoch-setting-accordion">Data Privacy</h3>
+						<ul class="tog-d-block">
+							<li class="setting-list-active"><a href="#use-your-data">How Enroch uses your data</a></li>
+							<li><a href="#job-seeking">Who can Reach you</a></li>
+							<li><a href="#other-application">Other applications</a></li>																		
+						</ul>
+					</div>
+					<div class="enoch-setting-acblock-lft-panel">
+						<h3 class="enoch-setting-accordion border-bottom-0">Advertising Data</h3>
+						<ul class="tog-d-block">
+							<li class="setting-list-active"><a href="#advertising-data">Advertising preferences</a></li>
+							<li><a href="#data-collected">Who can Reach you</a></li>
+							<li><a href="#third-party-data">Third-party data</a></li>																		
+						</ul>
+					</div>
+				</div>
+
+				<div class="enoch-setting-acblock-right" id="accordion-togg-block">
+					<div class="enoch-setting-right-block" id="proffile-info">
+						<h3>Profile Information</h3>
+						<h4>Basic information associated with your profile</h4>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-block">
+							<div class="enoch-acount-detail-lft">
+								<h5>Full Name, D.O.B, Nationality</h5>
+								<p>Provide full name & D.O.B as per your ID documents  </p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">View</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-content-name">
+									<ul>
+										<li><span>Full Name</span><span>Robert Miles </span></li>
+										<li><span>Date Of Birth</span><span>11/09/1976</span></li>
+										<li><span>Nationality</span><span>German</span></li>
+									</ul>
+								</div>
+							</div>
+							</div>
+							
+						</div>
+						
+						<div class="enoch-acount-detail mb-0">
+							<div class="enoch-acount-detail-block">
+							<div class="enoch-acount-detail-lft">
+								<h5>Address</h5>
+								<p>Provide residential address as per proof of address </p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">View</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-content-txt">
+									<p>15 Neutwache Frankfurt, Down Town Station, Berlin, 21149</p>
+								</div>
+							</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="enoch-setting-right-block" id="site-prefrnc">
+						<h3>Site preferences</h3>
+						<h4>Manage your Enoch experience  </h4>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-lft">
+								<h5>Time Zone</h5>
+								<p>Select a time zone </p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+								<p>(GMT+01:00) CET</p>
+								
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-content-time">
+								<h3>Choose a timezone</h3>
+								<div class="position-relative">
+									<div class="timeSetting-drop-box">
+										<a href="javascript:void(0)" onclick="timeSetting()" id="timeSetting" class="timeSetting-droplist">GMT+1 (European Central Time)</a>
+									</div>
+									<div id="timeSetting-DropdownList" class="timeSetting-content custm-zindex-1">										
+										<ul class="setting-form-drop-scrollable">
+											<li>GMT (Greenwich Mean Time)</li>
+											<li>GMT (Universal Coordinated Time)</li>
+											<li>GMT+1 (European Central Time)</li>
+											<li>GMT+2 (Eastern European Time)</li>
+											<li>GMT+2 (Saudi Arabia Standard Time)</li>
+											<li>GMT+3 (Eastern African Time)</li>																																																																				
+										</ul>
+									</div>
+								</div>
+								</div>
+							</div>
+						</div>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-lft">
+								<h5>Language</h5>
+								<p>Select a language you use on infinity</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+								<p>English</p>
+								
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-content-time">
+								<h3>Choose a Language</h3>
+								<div class="position-relative">
+									<div class="timeSetting-drop-box">
+										<a href="javascript:void(0)" onclick="langSetting()" id="langSetting" class="timeSetting-droplist">English (UK)</a>
+									</div>
+									<div id="langSetting-DropdownList" class="timeSetting-content custm-zindex-2">										
+										<ul class="setting-form-drop-scrollable">
+											<li>Dutch</li>
+											<li>English (India)</li>
+											<li>English (UK)</li>
+											<li>English (USA)</li>
+											<li>Esperanto</li>
+											<li>Estonian</li>																																																																				
+										</ul>
+									</div>
+								</div>
+								</div>
+							</div>
+						</div>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-lft">
+								<h5>Content Language</h5>
+								<p>Select a language for translation</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+								<p>English</p>
+								
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-content-time">
+								<h3>Choose a Language</h3>
+								<div class="position-relative">
+									<div class="timeSetting-drop-box">
+										<a href="javascript:void(0)" onclick="contentlangSetting()" id="contentlangSetting" class="timeSetting-droplist">English (UK)</a>
+									</div>
+									<div id="contentlangSetting-DropdownList" class="timeSetting-content custm-zindex-3">										
+										<ul class="setting-form-drop-scrollable">
+											<li>Dutch</li>
+											<li>English (India)</li>
+											<li>English (UK)</li>
+											<li>English (USA)</li>
+											<li>Esperanto</li>
+											<li>Estonian</li>																																																																				
+										</ul>
+									</div>
+								</div>
+								</div>
+							</div>
+						</div>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-lft">
+								<h5>Autoplay Videos </h5>
+								<p>Choose autoplay videos on infinity</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+																
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-content-time">
+									<h3>Autoplay videos that appear on Enoch?</h3>
+									<div class="autoplay-switch">Yes
+										<label class="switch">
+										  <input type="checkbox" checked>
+										  <span class="autoplay-slider round"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-lft">
+								<h5>Showing profile</h5>
+								<p>Choose to show or hide your profile to other member</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+								
+								
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-content-time">
+								<h3>Display “People also viewed” box on your Profile page?e</h3>
+								<div class="position-relative">
+									<div class="timeSetting-drop-box">
+										<a href="javascript:void(0)" onclick="profileSetting()" id="profileSetting" class="timeSetting-droplist">All Enoch Members</a>
+									</div>
+									<div id="profileSetting-DropdownList" class="timeSetting-content custm-zindex-4">										
+										<ul class="">
+											<li>No One</li>
+											<li>Your Connections</li>
+											<li>Your Network</li>
+											<li>All Enoch Members</li>
+											<li>Esperanto</li>
+											<li>Estonian</li>																																																																				
+										</ul>
+									</div>
+								</div>
+								</div>
+							</div>
+						</div>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-lft">
+								<h5>Feed preferences</h5>
+								<p>Feed preferences</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+																
+							</div>
+						</div>
+						<div class="enoch-acount-detail mb-0">
+							<div class="enoch-acount-detail-lft">
+								<h5>People also viewed</h5>
+								<p>Choose if this feature appears on your profille</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+																
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-content-time">
+									<h3>Display “People also viewed” box on your Profile page?</h3>
+									<div class="autoplay-switch">Yes
+										<label class="switch">
+										  <input type="checkbox" checked>
+										  <span class="autoplay-slider round"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="enoch-setting-right-block" id="sync-option">
+						<h3>Syncing Options</h3>
+						<h4>Manage your Enoch experience  </h4>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-lft">
+								<h5>Sync Calendar</h5>
+								<p>Manage or Sync Calendar to get timely updates about who you’ll be meeting with</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+																
+							</div>
+						</div>
+						<div class="enoch-acount-detail mb-0">
+							<div class="enoch-acount-detail-lft">
+								<h5>Sync Contacts</h5>
+								<p>Manage or Sync Contacts to connect with people you know directly from your address book</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+																
+							</div>
+						</div>
+					</div>
+					<div class="enoch-setting-right-block" id="subscription-payment">
+						<h3>Subcriptions & Payments</h3>
+						<h4>Keep track of Purchases and Subscription Status</h4>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-lft">
+								<h5>Premium Subscription</h5>
+								<p>See your Billing Information and Cancel Premium</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+																
+							</div>
+						</div>
+						<div class="enoch-acount-detail mb-0">
+							<div class="enoch-acount-detail-lft">
+								<h5>View Purchase History</h5>
+								<p>See your previous Purchases and Transaction on Linkedin</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+																
+							</div>
+						</div>
+					</div>
+					<div class="enoch-setting-right-block" id="partners-service">
+						<h3>Partners & Services</h3>
+						<h4>Services you have connected your Enoch Account</h4>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-lft">
+								<h5>Microsoft</h5>
+								<p>View Microsoft Account you’ve connected to your Linkedin Account</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+								<p>0 Connected Accounts</p>
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-partner-service">
+									<p>You can control which wallet address you grant access to your Enoch data. You have granted access to metamask wallet.</p>
+									<p class="mb-0"><a href="#">Change</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="enoch-acount-detail mb-0">
+							<div class="enoch-acount-detail-lft">
+								<h5>Twitter</h5>
+								<p>Manage your Twitter Info on your Linkedin Account</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+								<p>Not Connected</p>
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-partner-twitt">
+									
+									<p class="mb-0"><a href="#">+ Add a Twitter Account</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="enoch-setting-right-block" id="account-mngt">
+						<h3>Account Management</h3>
+						<h4>Control your Enoch Account</h4>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-lft">
+								<h5>Merge Accounts</h5>
+								<p>Transfer Connections from a duplicate Account, then ciose it</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-marge-account">
+									<p>Here’s the account you’re signed into now - you’ll keep this account and the connections from the duplicate account will be moved to this one.</p>
+									<div class="marge-account-user">
+										<span><img src="images/avtr.png" alt="avater" class="img-fluid"/></span>Robert Miles 
+									</div>
+									<div class="marge-account-email">
+										<h3>Enter the email address and password of the duplicate account.</h3>
+										<p>This lets us know you own the account.</p>
+										<p>The connections from the account will be transferred. After you review and confirm, that account will be closed.</p>
+										<div class="marge-account-email-form">
+										<form>
+											<div class="account-email-input"><input type="txt" placeholder="r.rose@gmail.com"/></div>
+											<div class="account-email-input"><input type="password" placeholder="***************"/></div>
+											<p><a href="#">Having Trouble?</a></p>
+											<div><button type="submit" class="bttn-primary mrgacc-bttn">Submit</button></div>
+										</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-lft">
+								<h5>Hibernate Account</h5>
+								<p>Temporarily Deactivate your Account</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+							</div>
+							
+						</div>
+						<div class="enoch-acount-detail mb-0">
+							<div class="enoch-acount-detail-lft">
+								<h5>Close Account</h5>
+								<p>Learn about your options and close your account if you wish</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		
+	
+	</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+
+// When the user clicks, open the popup
+function popupFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+
+}
+
+
+</script>
+<script>
+	/*for toggle sub menu*/
+		function subtogglediv(id, icon) {
+			var id = document.getElementById(id);
+			id.classList.toggle('submenu-active');
+			var cross = document.getElementById(icon);
+			cross.classList.toggle('fa-times');
+			cross.classList.toggle('fa-bars');
+		}
+		</script>
+	<script>
+// Add active class to the current button (highlight it)
+//var header = document.getElementById("accordion-block");
+var btns = document.getElementsByClassName("enoch-setting-accordion");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  btnlinks = document.getElementsByClassName("enoch-setting-accordion");
+            for (i = 0; i < btnlinks.length; i++) {
+                btnlinks[i].className = btnlinks[i].className.replace(" accordion-active", "");
+            }
+  this.className += " accordion-active";
+  });
+}
+</script>
+
+<script>
+var acc = document.getElementsByClassName("enoch-acount-detail-right");
+var i;
+var accblock=document.getElementsByClassName("enoch-acount-detail");
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("acc-active");
+	
+    
+  });
+   accblock[i].addEventListener("click", function() {
+    this.classList.toggle("acc-active-parent");
+	
+    
+  });
+}
+
+
+</script>
+<script>
+		
+		function timeSetting() {
+
+	var selectmedia1 = document.getElementById("timeSetting-DropdownList");
+	selectmedia1.classList.toggle("show");
+	var selItem = document.getElementById("timeSetting");
+	
+  selItem.classList.toggle("select-active"); 
+}
+var selectmedia2 = document.getElementById("timeSetting-DropdownList").querySelectorAll(".timeSetting-content ul li");
+selectmedia2.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('timeSetting').innerHTML = this.innerHTML;
+ 
+	
+	        
+		 }
+		  
+        });
+		//language dropdown
+		function langSetting() {
+
+	var selectlang = document.getElementById("langSetting-DropdownList");
+	selectlang.classList.toggle("show");
+	var selItem2 = document.getElementById("langSetting");
+	
+  selItem2.classList.toggle("select-active"); 
+}
+var selectlang2 = document.getElementById("langSetting-DropdownList").querySelectorAll(".timeSetting-content ul li");
+selectlang2.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('langSetting').innerHTML = this.innerHTML;
+ 
+	
+	        
+		 }
+		  
+        });
+		//content language dropdown
+		function contentlangSetting() {
+
+	var selectcontentlang = document.getElementById("contentlangSetting-DropdownList");
+	selectcontentlang.classList.toggle("show");
+	var selectcontentlang2 = document.getElementById("contentlangSetting");
+	
+  selectcontentlang2.classList.toggle("select-active"); 
+}
+var selectcontentlang3 = document.getElementById("contentlangSetting-DropdownList").querySelectorAll(".timeSetting-content ul li");
+selectcontentlang3.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('contentlangSetting').innerHTML = this.innerHTML;
+ 
+	
+	        
+		 }
+		  
+        });
+		//showing profile dropdown
+		function profileSetting() {
+
+	var profileSetting = document.getElementById("profileSetting-DropdownList");
+	profileSetting.classList.toggle("show");
+	var profileSetting2 = document.getElementById("profileSetting");
+	
+  profileSetting2.classList.toggle("select-active"); 
+}
+var profileSetting3 = document.getElementById("profileSetting-DropdownList").querySelectorAll(".timeSetting-content ul li");
+profileSetting3.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('profileSetting').innerHTML = this.innerHTML;
+ 
+	
+	        
+		 }
+		  
+        });
+
+		// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.timeSetting-droplist')) {
+    var dropdowns = document.getElementsByClassName("timeSetting-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+	<!--  var selItem = document.getElementById("athp-sel"); -->
+	
+}
+	</script>
+</body>
+
+</html>

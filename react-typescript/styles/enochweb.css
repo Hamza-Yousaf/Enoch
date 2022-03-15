@@ -1,0 +1,4643 @@
+@import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+/*home page*/
+.enochweb-explore-sect {
+  padding-top: 100px;
+}
+
+.enochweb-explore-sect h2 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 160%;
+  text-align: center;
+  color: #000000;
+  max-width: 988px;
+  margin: auto;
+}
+
+.enoch-home-explore-item ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.enoch-home-explore-item ul li {
+  width: 48.3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0px 0px 28px rgb(52 91 136 / 6%);
+  border-radius: 52px;
+  padding: 56px 62px;
+  margin-bottom: 40px;
+  height: 620px;
+}
+.enoch-home-explore-item ul .explore-cust-padd {
+  padding-left: 36px;
+  padding-right: 36px;
+}
+.explore-item-clr1 {
+  color: #793cd5;
+}
+.explore-item-clr2 {
+  color: #46c8d9;
+}
+.explore-item-clr3 {
+  color: #de5aff;
+}
+.explore-item-clr4 {
+  color: #63c455;
+}
+.enoch-home-explore-item ul li h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 130%;
+  text-align: center;
+  margin-top: 28px;
+  margin-bottom: 32px;
+}
+.enoch-home-explore-item ul li p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 160%;
+  text-align: center;
+  color: #3f5159;
+}
+.enoch-home-explore-item {
+  margin-top: 100px;
+}
+.enochweb-home-stuff-sect {
+  padding-bottom: 100px;
+}
+.enochweb-do-stuff-block {
+  margin-left: 14%;
+}
+.enochweb-do-stuff-innerblock {
+  display: flex;
+  margin-top: 56px;
+  justify-content: space-between;
+}
+.enochweb-do-stuff-block-lft {
+  width: 39.5%;
+}
+.enochweb-do-stuff-block-right {
+  margin-left: 80px;
+  background: #e6efff;
+  border-radius: 44px 0px 0px 80px;
+  width: 53%;
+  height: 855px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.do-stuff-img {
+  position: absolute;
+  bottom: 64px;
+  left: -87px;
+  width: 236px;
+  height: 236px;
+  background: #fff;
+  border-radius: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stuff-block-img {
+  margin-left: 60px;
+}
+.enochweb-do-stuff-block-lft {
+  width: 39.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.do-stuff-txt1 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 160%;
+  color: #1485c5;
+  margin-bottom: 12px;
+}
+.enochweb-do-stuff-block-lft h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 130%;
+  color: #f46c20;
+  margin-bottom: 12px;
+  max-width: 588px;
+}
+.do-stuff-txt2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 160%;
+  color: #333333;
+  margin-bottom: 40px;
+}
+
+.enochweb-do-stuff-block-lft ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.enochweb-do-stuff-block-lft ul li {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 200%;
+  color: #231f20;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.enochweb-makemoney-sect {
+  background: #410285;
+  padding: 117px 0px;
+}
+.makemoney-hd-img {
+  margin-bottom: 24px;
+}
+.makemoney-hd-txt {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 160%;
+  color: #ffffff;
+  margin-bottom: 83px;
+}
+.enoch-home-makemoney-item ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.enoch-home-makemoney-item ul li {
+  width: 48.5%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(24px);
+  border-radius: 18px;
+  padding: 62px 48px;
+  margin-bottom: 40px;
+  height: 800px;
+}
+.makemoney-hd-icon {
+  margin-bottom: 44px;
+}
+.enoch-home-makemoney-item ul li h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 130%;
+  color: #ffcb00;
+  margin-bottom: 24px;
+}
+
+.enoch-home-makemoney-item ul li p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 180%;
+  color: #ffffff;
+}
+.enochweb-promoteBrand-sect {
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+.promoteBrand-hd-content h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 78px;
+  line-height: 110%;
+  text-align: center;
+  color: #f46c20;
+  margin-bottom: 18px;
+}
+.promoteBrand-hd-content p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 160%;
+  text-align: center;
+  color: #333333;
+}
+.promoteBrand-hd-content {
+  max-width: 1180px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.promote-brand-list-lft {
+  background: #ffffff;
+  box-shadow: 0px 0px 28px rgb(52 91 136 / 6%);
+  border-radius: 24px;
+  max-width: 41%;
+  padding: 20px;
+}
+
+.promote-card-hd-img {
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  height: 280px;
+  display: flex;
+}
+.promobrand-bag {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+}
+.promotebrand-use {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #212325;
+  margin-top: 13px;
+}
+.promotebrand-use span {
+  margin-right: 10px;
+}
+.promoteBrand-list ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.promoteBrand-list ul li {
+  margin-bottom: 20px;
+}
+.promote-card-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 23px;
+}
+.promote-addcart-brn button {
+  width: 264px;
+  height: 56px;
+  /* padding: 0; */
+  background: #7b3cf7;
+  border-radius: 4px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #fcfcfc;
+}
+.promote-card-content-lft {
+  width: 47%;
+  margin-right: 10px;
+}
+.promote-line1 {
+  background: #e7e7e7;
+  height: 7px;
+  max-width: 244px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 9px;
+}
+.promote-line2 {
+  background: #e7e7e7;
+  height: 7px;
+  max-width: 144px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 9px;
+}
+.promote-line-bottp {
+  display: flex;
+  align-items: center;
+}
+.promote-line3 {
+  background: #000;
+  height: 7px;
+  max-width: 144px;
+  width: 100%;
+  display: flex;
+  /* margin-bottom: 9px; */
+  margin: 0px 10px;
+}
+.promote-brand-list-mid {
+  background: #ffffff;
+  box-shadow: 0px 0px 28px rgb(52 91 136 / 6%);
+  border-radius: 24px;
+  max-width: 30%;
+  padding: 20px;
+}
+.promote-line4 {
+  background: #e7e7e7;
+  height: 7px;
+  max-width: 144px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+.promote-line5 {
+  background: #000;
+  height: 7px;
+  max-width: 26px;
+  width: 100%;
+  display: flex;
+  margin: 0px 5px;
+  align-items: center;
+}
+.promote-brand-list-right {
+  background: #ffffff;
+  box-shadow: 0px 0px 28px rgb(52 91 136 / 6%);
+  border-radius: 24px;
+  max-width: 28.5%;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+}
+.promote-reminder-block {
+  position: relative;
+  background: url(/images/promotebrand-img3.png) no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+  border-radius: 24px;
+}
+.promotebrand-launch {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #fff;
+  padding-top: 24px;
+  padding-left: 24px;
+}
+.promotebrand-launch span {
+  margin-right: 10px;
+}
+.launcing-block {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.launcing-innerblock {
+  background: linear-gradient(
+    180deg,
+    rgba(187, 215, 252, 0.4) 0%,
+    rgba(192, 230, 253, 0.4) 100%
+  );
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  max-width: 240px;
+  width: 100%;
+  padding-top: 17px;
+}
+
+.launcing-innerblock h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 12px;
+}
+.launching-time-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+}
+.reminfer-bttn-blcok {
+  background: #ffffff;
+  border-radius: 0px 0px 10px 10px;
+  margin-top: 14px;
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.launching-time-block span {
+  background: #ffffff;
+  border-radius: 2px;
+  height: 36px;
+  width: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #929292;
+}
+.promote-brand-list-bottm-lft {
+  background: #ffffff;
+  box-shadow: 0px 0px 28px rgb(52 91 136 / 6%);
+  border-radius: 24px;
+  max-width: 21.4%;
+  padding: 20px;
+}
+.enochweb-behind-sect {
+  background: #ffffff;
+  box-shadow: 0px 0px 28px rgb(52 91 136 / 6%);
+  padding: 118px 0px;
+}
+.behind-enoch-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.behind-enoch-block-right h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 130%;
+  color: #f46c20;
+  margin-bottom: 18px;
+}
+.promote-line6 {
+  background: #e7e7e7;
+  height: 7px;
+  max-width: 244px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 9px;
+}
+.promote-card-btmcontent {
+  margin-top: 10px;
+}
+.promote-btmtxt {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #7db831;
+  margin-bottom: 6px;
+}
+.promote-offer-btn button {
+  width: 100%;
+  height: 56px;
+  /* padding: 0; */
+  background: #7b3cf7;
+  border-radius: 4px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #fcfcfc;
+}
+.promote-btmtxt2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+.promote-brand-list-bottm-mid {
+  background: #ffffff;
+  box-shadow: 0px 0px 28px rgb(52 91 136 / 6%);
+  border-radius: 24px;
+  max-width: 54%;
+  width: 100%;
+  padding: 20px;
+}
+.promote-brand-TAC {
+  background: #fef8f1;
+  border-radius: 24px;
+  height: 329px;
+  display: flex;
+  overflow: hidden;
+}
+.promote-brand-TAC-lft {
+  width: 60%;
+}
+
+.promote-brand-TAC-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 53px;
+}
+.promote-brand-TAC-lft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url(/images/tac-bg.png) no-repeat;
+  background-image: 100% 100%;
+  background-position: right;
+}
+
+.promote-brand-TAC-lft h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 110%;
+  /* text-align: center; */
+  color: #ffffff;
+}
+.promote-brand-TAC-lft p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  color: #ffffff;
+  max-width: 268px;
+}
+.promote-brand-TAC-lft {
+  padding-left: 45px;
+}
+
+.promote-brand-TAC-right h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 110%;
+  text-align: center;
+  color: #858585;
+  margin-bottom: 4px;
+}
+.promote-brand-TAC-right h4 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 110%;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+.promote-brand-TAC-right p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 110%;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 14px;
+}
+.mt-42 {
+  margin-top: 45px;
+}
+.mt-13 {
+  margin-top: 13px;
+}
+.behind-enoch-txt1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 160%;
+  color: #333333;
+  margin-bottom: 18px;
+}
+.behind-enoch-txt2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 118.6%;
+  /* text-align: center; */
+  color: #000000;
+}
+.behind-enoch-txt2 a {
+  color: #8656ef;
+  text-decoration: underline;
+}
+.behind-enoch-block-lft {
+  width: 43%;
+}
+.behind-enoch-block-right {
+  width: 50%;
+}
+.enochweb-roadmap-sect {
+  padding: 200px 0px 100px;
+  position: relative;
+}
+.enochweb-roadmap-sect h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 130%;
+  margin-bottom: 6px;
+}
+.enochweb-roadmap-sect p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 160%;
+  color: #3f5159;
+}
+.enoch-roadmap-schedule1,
+.enoch-roadmap-schedule2,
+.enoch-roadmap-schedule3,
+.enoch-roadmap-schedule4,
+.enoch-roadmap-schedule5 {
+  max-width: 377px;
+}
+.roadmap-clr1 {
+  color: #ffa318;
+}
+.roadmap-clr2 {
+  color: #801ad0;
+}
+.roadmap-clr3 {
+  color: #7db831;
+}
+.roadmap-clr4 {
+  color: #ff1368;
+}
+.roadmap-clr5 {
+  color: #27beff;
+}
+.enoch-roadmap-schedule1 {
+  position: absolute;
+  top: 36%;
+  left: 6%;
+}
+.enoch-roadmap-schedule2 {
+  position: absolute;
+  bottom: 10%;
+  left: 32%;
+  max-width: 550px;
+}
+.enoch-roadmap-schedule3 {
+  position: absolute;
+  top: 10%;
+  left: 53%;
+}
+.enoch-roadmap-schedule4 {
+  position: absolute;
+  top: 29%;
+  right: 4.5%;
+  max-width: 426px;
+}
+.enoch-roadmap-schedule5 {
+  position: absolute;
+  bottom: 3%;
+  right: 1%;
+  max-width: 406px;
+}
+.enochweb-roadmap-sect ul {
+  margin-left: 20px;
+}
+.enochweb-roadmap-sect ul li {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 160%;
+  color: #333333;
+  list-style: outside;
+}
+.enochweb-invest-sect {
+  background: linear-gradient(253.97deg, #8d00cf -1.24%, #5100b8 99.65%);
+  padding: 90px 27px 40px;
+}
+.enochweb-invest-innerblock {
+  margin-left: 14%;
+}
+.enoch-invest-block {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+.enoch-invest-block-lft h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 68px;
+  line-height: 130%;
+  color: #ffcb00;
+}
+.enoch-invest-block-lft p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 160%;
+  color: #ffffff;
+  margin-bottom: 36px;
+}
+.enoch-invest-txt1 {
+  max-width: 661px;
+}
+.invest-block-txt1 {
+  max-width: 660px;
+  width: 100%;
+}
+.invest-block-txt2 {
+  max-width: 710px;
+  width: 100%;
+}
+.enoch-invest-block-lft p a {
+  color: #fcd539;
+  font-weight: 700;
+}
+.enochweb-learnmo-bttn {
+  background: #fff;
+  border-radius: 7.11475px;
+  border: none;
+  outline: none;
+  width: 161px;
+  height: 71px;
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21.3443px;
+  line-height: 118.6%;
+  color: #8656ef;
+}
+
+.enoch-invest-block-lft {
+  width: 46.5%;
+}
+
+.enochweb-partners-investors-sect {
+  padding-top: 120px;
+}
+.partners-investors-hd h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 88px;
+  line-height: 130%;
+  text-align: center;
+  color: #f46c20;
+}
+.partners-investors-hd p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 160%;
+  text-align: center;
+  color: #3f5159;
+}
+.partners-investors-hd {
+  margin-bottom: 40px;
+}
+.partners-compny-list {
+  background: url(/images/partners-bg.png) no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: relative;
+  height: 800px;
+}
+.partners-compny-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  align-items: flex-end;
+  position: relative;
+}
+.partners-compny-listBlock1 {
+  height: 300px;
+}
+.partners-compny-list ul li {
+  background: #ffffff;
+  box-shadow: 0px 0px 23.876px rgb(52 91 136 / 6%);
+  border-radius: 10.2326px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.partners-compny-list .pcompny-logo1 {
+  height: 195px;
+  max-width: 307px;
+  width: 100%;
+  padding: 45px;
+  position: absolute;
+  top: 22%;
+  left: 5.5%;
+}
+.partners-compny-list .pcompny-logo2 {
+  max-width: 427px;
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  left: 32%;
+  top: 0;
+}
+.partners-compny-list .pcompny-logo3 {
+  max-width: 380px;
+  width: 100%;
+  height: 255px;
+  position: absolute;
+  left: 67%;
+  top: 22%;
+}
+.partners-compny-list .pcompny-logo4 {
+  max-width: 307px;
+  width: 100%;
+  height: 220px;
+  position: absolute;
+  top: 0;
+}
+.partners-compny-list .pcompny-logo5 {
+  position: absolute;
+  left: 26%;
+  top: 0;
+  max-width: 310px;
+  width: 100%;
+  height: 153px;
+  padding: 26px 40px;
+}
+.partners-compny-list .pcompny-logo6 {
+  position: absolute;
+  left: 26%;
+  top: 187px;
+  max-width: 310px;
+  width: 100%;
+  height: 193px;
+  padding: 26px 40px;
+}
+.partners-compny-list .pcompny-logo7 {
+  max-width: 329px;
+  width: 100%;
+  height: 225px;
+  position: absolute;
+  top: 55px;
+  left: 52%;
+}
+.partners-compny-list .pcompny-logo8 {
+  max-width: 277px;
+  width: 100%;
+  height: 192px;
+  position: absolute;
+  top: 80px;
+  left: 80%;
+}
+.enochweb-nft-market-block {
+  display: flex;
+}
+.enochweb-nft-market-block {
+  display: flex;
+}
+.enochweb-nft-market-lft {
+  max-width: 630px;
+  padding-top: 40px;
+}
+.enochweb-nft-market-lft h2 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 160%;
+  color: #1485c5;
+  margin-bottom: 15px;
+}
+
+.enochweb-nft-market-lft h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 130%;
+  color: #f46c20;
+  margin-bottom: 24px;
+}
+.enochweb-nft-market-lft p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 160%;
+  color: #333;
+}
+.enochweb-nft-market-lft p span {
+  color: #8656ef;
+  cursor: pointer;
+}
+.enochweb-nft-market-right {
+  display: flex;
+  background: url(/images/app-bg.png) no-repeat;
+  background-size: 100%;
+  background-position: center right;
+}
+.mb-36 {
+  margin-bottom: 36px;
+}
+.mb-26 {
+  margin-bottom: 26px;
+}
+
+.nft-market-btngroup button {
+  border: none;
+  background: none;
+  outline: none;
+}
+.market-mbl2 {
+  margin-left: -55px;
+  margin-top: 17%;
+}
+.enochweb-nft-market-sect {
+  margin-top: 30px;
+}
+.enochweb-follow {
+  text-align: center;
+}
+.enochweb-follow h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 68px;
+  line-height: 130%;
+  text-align: center;
+  color: #f46c20;
+}
+.enochweb-follow p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 160%;
+  text-align: center;
+  color: #333;
+  max-width: 770px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.enochweb-follow ul {
+  display: flex;
+  justify-content: center;
+}
+.enochweb-follow ul li {
+  margin-left: -30px;
+}
+.subscribeModal-close .close {
+  opacity: 1;
+  cursor: pointer;
+}
+.subscribeModal-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 1;
+}
+.subscribeModal-block .modal-dialog {
+  max-width: 1000px;
+}
+.subscribeModal-head {
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.subscribeModal-head h2 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 130%;
+  color: #000000;
+  margin-bottom: 0px;
+}
+.subscribeModal-head p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  color: #3f5159;
+}
+.subscribeModal-content {
+  background: #f8fafd;
+  border-radius: 12px;
+}
+.subscribeModal-steps-content {
+  position: relative;
+}
+.subscribeModal-steps ul {
+  display: flex;
+}
+.subscribeModal-steps ul li {
+  display: flex;
+  flex-direction: column;
+  max-width: 307px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: -24px;
+}
+.subscribeModal-line {
+  margin-top: 13%;
+}
+.subscribeModal-steps-content {
+  position: relative;
+  height: 237px;
+}
+.subscribeModal-steps-content h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 97%;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.subscribeModal-steps-content p {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #ffffff;
+}
+.substeps-img1 {
+  position: absolute;
+  top: -17%;
+  left: 21%;
+}
+
+.substeps-img2 {
+  position: absolute;
+  top: 8%;
+  right: 15%;
+}
+.steps-innercontent {
+  position: absolute;
+  top: 94px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  right: 0;
+  left: 0;
+}
+.subscribeModal-steps-bottmcontent {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 90%;
+  color: #000000;
+  display: flex;
+  align-items: flex-start;
+  max-width: 294px;
+  margin-top: 16px;
+  text-align: left;
+}
+.subscribeModal-steps-bottmcontent span {
+  width: 42%;
+}
+.substeps-img3 {
+  position: absolute;
+  top: 10%;
+  left: 9%;
+}
+.substeps-img4 {
+  position: absolute;
+  top: 19%;
+  right: 33%;
+}
+.substeps-img5 {
+  position: absolute;
+  top: 19%;
+  right: 6%;
+}
+.subscribeModal-steps-content .substeps-txt {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 90%;
+  text-align: center;
+  color: #f1870b;
+  transform: rotate(10.53deg);
+  position: absolute;
+  max-width: 116px;
+  top: 5%;
+  right: -38px;
+}
+.substeps-img6 {
+  position: absolute;
+  top: 19%;
+  right: 31%;
+}
+.customsteps-pos {
+  top: 22%;
+}
+.subscribeModal-form form {
+  width: 100%;
+}
+.subscribeModal-form h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 130%;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.subscribeModal-form {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 68px;
+  margin-bottom: 28px;
+}
+.subscribeModal-subscribeform {
+  width: 100%;
+  display: flex;
+  /* max-width: 800px; */
+  margin: auto;
+  justify-content: center;
+}
+.subscribeModal-subscribeform input {
+  background: #ffffff;
+  border: 1px solid #c7dbea;
+  box-sizing: border-box;
+  border-radius: 8px;
+  max-width: 334px;
+  width: 100%;
+  height: 80px;
+  outline: none;
+  text-indent: 30px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 118.6%;
+  margin-right: 20px;
+}
+.subscribeModal-subscribeform input::placeholder {
+  color: #6e7f83;
+}
+.subscribeform-bttn2 {
+  background: #01a3ff;
+  border-radius: 8px;
+  height: 80px;
+  max-width: 208px;
+  width: 100%;
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 118.6%;
+  color: #ffffff;
+}
+.subscribeform-bttm-txt {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140.8%;
+  color: #000000;
+  text-align: left;
+  margin-top: 22px;
+  width: 100%;
+  padding-left: 22px;
+}
+.subscribeform-bttm-txt a {
+  color: #27beff;
+  text-decoration: underline;
+}
+/*end*/
+/*Team*/
+.enochweb-.team-sect {
+  padding-top: 70px;
+  background: #fff;
+  padding-bottom: 115px;
+}
+.enochweb-header-team {
+  background: linear-gradient(253.97deg, #4203aa -1.24%, #4c007b 99.65%);
+  padding-top: 5px;
+  display: flex;
+  align-items: flex-end;
+}
+.enochweb-team-block-hd {
+  text-align: center;
+  margin-bottom: 54px;
+}
+.enochweb-team-block-hd h2 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 140%;
+  color: #1485c5;
+}
+.enochweb-team-block-hd h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 78px;
+  line-height: 140%;
+  text-align: center;
+  color: #f46c20;
+  margin-bottom: 19px;
+}
+
+.enochweb-team-block-hd p {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 160%;
+  text-align: center;
+  color: #3f5159;
+  max-width: 881px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 19px;
+}
+.enochweb-team-members ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.enochweb-team-members ul li {
+  width: 25%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.enochweb-team-img {
+  margin-bottom: 36px;
+  width: 232px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.enochweb-team-socio-media {
+  margin-bottom: 10px;
+}
+.enochweb-team-socio-media span {
+  margin: 0px 12px;
+}
+.enochweb-team-members h2 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 140%;
+  text-align: center;
+  color: #3d3652;
+  margin-bottom: 40px;
+}
+.enochweb-team-members p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  color: #696969;
+}
+.enochweb-team-members ul li h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 140%;
+  text-align: center;
+  color: #1485c5;
+  margin-bottom: 0px;
+}
+.enochweb-adventure-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enochweb-adventureright h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 140%;
+  color: #f46c20;
+  margin-bottom: 16px;
+}
+.enochweb-adventureright p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 140%;
+  color: #3f5159;
+  margin-bottom: 16px;
+}
+.jointeam-btn {
+  background: #01a3ff;
+  border-radius: 8px;
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 118.6%;
+  color: #ffffff;
+  height: 76px;
+  width: 205px;
+}
+.enochweb-adventureright {
+  max-width: 645px;
+  margin-left: 40px;
+}
+.enochweb-adventure {
+  padding-top: 140px;
+}
+/* End  */
+/* Career */
+.enochweb-header-career {
+  background: linear-gradient(253.97deg, #4203aa -1.24%, #4c007b 99.65%);
+  padding-top: 5 px;
+  display: flex;
+  align-items: flex-end;
+}
+.enochweb-career-block-hd {
+  text-align: center;
+}
+.enochweb-career-block-hd h2 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 140%;
+  color: #1485c5;
+}
+.enochweb-career-block-hd h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 78px;
+  line-height: 140%;
+  text-align: center;
+  color: #f46c20;
+  margin-bottom: 19px;
+}
+.enochweb-career-block-hd p {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 160%;
+  text-align: center;
+  color: #333;
+  max-width: 1217px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 19px;
+}
+
+.enochweb-career-perkBnifit-sect {
+  margin-top: 100px;
+  margin-bottom: 130px;
+}
+.enochweb-career-perkBnifit-sect h2 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 104.727px;
+  line-height: 118.6%;
+  text-align: center;
+  color: #f46c20;
+}
+.enochweb-career-mid-img {
+  text-align: center;
+  margin-bottom: 17px;
+}
+
+.enochweb-career-perkBnifit-sect ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.enochweb-career-perkBnifit-sect ul li {
+  width: auto;
+}
+.enochweb-perkBnifit-block h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 180%;
+  text-transform: uppercase;
+  color: #333;
+  margin-top: 22px;
+  margin-bottom: 0px;
+}
+
+.enochweb-perkBnifit-block p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 0.03em;
+  color: #333;
+  max-width: 204px;
+}
+.enochweb-ceate-foundation-sect {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.enochweb-ceate-foundation-sect h2 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 110%;
+  text-align: center;
+  color: #f46c20;
+  margin-bottom: 24px;
+}
+.enochweb-ceate-foundation-sect p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  color: #3f5159;
+  margin-bottom: 24px;
+  max-width: 804px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.enochweb-wprkWant-sect {
+  text-align: center;
+}
+.enochweb-wprkWant-sect h2 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 140%;
+  text-align: center;
+  color: #1485c5;
+}
+.enochweb-wprkWant-sect h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 110%;
+  text-align: center;
+  color: #f46c20;
+  margin-bottom: 24px;
+}
+.enochweb-wprkWant-sect p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  color: #333;
+  margin: auto;
+  max-width: 666px;
+}
+.enochweb-wprkWant-countryList {
+  padding: 30px 55px;
+  background: rgba(20, 133, 197, 0.09);
+  border-radius: 12px;
+  max-width: 782px;
+  margin: 24px auto;
+}
+.enochweb-wprkWant-countryList ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 160%;
+  text-align: center;
+  color: #000000;
+  flex-wrap: wrap;
+}
+.enochweb-wprkWant-countryList ul li {
+  margin: 0px 4px;
+}
+.enochweb-weHiring-sect {
+  margin-bottom: -15%;
+  background: url(/images/hiring-bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 944px;
+  padding-top: 50px;
+}
+.hiretabContent {
+  display: none;
+}
+.hire-d-block {
+  display: block;
+}
+.enochweb-weHiring-content-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  background: url(/images/hire-bg2.png) no-repeat;
+  background-size: 100%;
+  background-position: top;
+  padding-top: 13%;
+}
+.enochweb-weHiring-content-block h2 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 118.6%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f46c20;
+  margin-bottom: 0px;
+}
+.enochweb-weHiring-content-block p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  color: #333;
+  margin-bottom: 60px;
+  max-width: 804px;
+}
+.enochweb-weHiring-tabBlock ul {
+  display: flex;
+}
+.hiretablinks {
+  margin: 0px 20px;
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 118.6%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #676767;
+}
+.hiretabContent {
+  margin-top: 58px;
+}
+.hiretabContent p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 110%;
+  text-align: center;
+  color: #1485c5;
+  max-width: 790px;
+  margin: auto;
+}
+.hiretablinks.hire-active {
+  color: #8656ef;
+}
+/* End */
+
+/*contact us*/
+.enochweb-header-contactimg {
+  margin-top: -40px;
+}
+.enochweb-contact-sect {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+.enochweb-header-contact {
+  background: linear-gradient(253.97deg, #4203aa -1.24%, #4c007b 99.65%);
+  display: flex;
+  align-items: flex-end;
+}
+.enochweb-contact-block {
+  display: flex;
+  justify-content: space-between;
+}
+.enoch-contactblock-lft {
+  width: 70%;
+  margin-right: 42px;
+}
+.enoch-contactblock-right {
+  width: 32.4%;
+}
+.enoch-contactblock-lft h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 150%;
+  color: #f46c20;
+  margin-bottom: 0px;
+}
+.enoch-contactblock-lft p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 180.8%;
+  color: #32969c;
+  margin-bottom: 54px;
+}
+
+.contacttab {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacttablinks {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 160%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #9eaaac;
+  padding-bottom: 16px;
+}
+.contacttab {
+  border-bottom: 1px solid rgba(32, 84, 165, 0.3);
+  margin-bottom: 16px;
+}
+.contacttablinks {
+  position: relative;
+}
+.contacttablinks.active {
+  color: #8656ef;
+  border-bottom: 1px solid #8656ef;
+}
+.contacttablinks.active:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 14px solid #8656ef;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.contact-tabcontent {
+  display: none;
+}
+.contact-tab-head {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180.8%;
+  letter-spacing: 0.03em;
+  color: #696969;
+}
+
+/*form*/
+.enoch-contact-form {
+  margin-top: 40px;
+}
+/****  enochweb-floating-Lable style start ****/
+.enochweb-floating-label {
+  position: relative;
+  margin-bottom: 32px;
+}
+.enochweb-floating-input {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  padding: 22px 30px;
+  font-size: 18px;
+  line-height: 180.8%;
+  letter-spacing: 0.03em;
+  color: #000;
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid rgba(32, 84, 165, 0.2);
+  box-sizing: border-box;
+  border-radius: 2px;
+  height: 88px;
+  max-width: 100%;
+  width: 100%;
+  outline: none;
+}
+.enochweb-floating-input::placeholder {
+  color: #899498;
+}
+.enochweb-floating-label label {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180.8%;
+  letter-spacing: 0.03em;
+  color: #899498;
+  position: absolute;
+  left: 32px;
+  top: 26px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+  pointer-events: none;
+  margin-bottom: 0;
+}
+.enochweb-floating-label label span {
+  color: #e72929;
+}
+.enochweb-floating-input:focus ~ label,
+.enochweb-floating-input:not(:placeholder-shown) ~ label {
+  top: 5px;
+  font-size: 14px;
+  color: #899498;
+  left: 20px;
+}
+.enochweb-floating-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact-enochweb-floating-form-grp {
+  width: 48.5%;
+}
+/*dropbox*/
+.contact-drop-box {
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid rgba(32, 84, 165, 0.2);
+  box-sizing: border-box;
+  border-radius: 2px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  padding-left: 32px;
+  position: relative;
+  width: 100%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180.8%;
+  letter-spacing: 0.03em;
+  color: #899498;
+  cursor: pointer;
+}
+.contact-drop-box:after {
+  content: "\f0d7";
+  font-family: fontawesome;
+  position: absolute;
+  border: 0;
+  color: #a6bbdb;
+  right: 26px;
+  bottom: 0;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.contact-drop-box span {
+  color: #e72929;
+}
+.contact-dropdown-content {
+  display: none;
+  position: relative;
+  z-index: 9;
+}
+.enochweb-contact-dropdown.open .contact-dropdown-content {
+  display: block;
+}
+.contact-dropdown-content ul li {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 280%;
+  color: #000000;
+  cursor: pointer;
+  margin: 0px 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #c2d9dd;
+}
+.contact-dropdown-content ul li:hover {
+  background: #d3e6ea;
+  margin: 0px;
+  padding: 0pc 20px;
+  border-bottom: 0px;
+}
+
+.contact-dropdown-content ul li:last-child div {
+  border: none;
+}
+.contact-drop-scrollable {
+  position: absolute;
+  background: #fdfdfd;
+  border: 1px solid rgba(32, 84, 165, 0.2);
+  width: 100%;
+  padding: 20px 0px;
+}
+.skill-zindex {
+  z-index: 1;
+}
+.enoch-contactblock-lft .conatct-skill-txt {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 180.8%;
+  letter-spacing: 0.03em;
+  color: #525252;
+  margin-top: 13px;
+  margin-bottom: 30px;
+}
+.enoch-contact-form textarea {
+  resize: none;
+  height: 214px;
+  margin-bottom: 18px;
+}
+.enoch-contact-form textarea:placeholder {
+  color: #899498;
+}
+/*checkbox*/
+.coontactcheckbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  /* height: 0; */
+  /* width: 0; */
+}
+.coontactcheckbox-container {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 46px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 180.8%;
+  color: #696969;
+  letter-spacing: 0.03em;
+}
+
+.contactcheckmark {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  height: 23px;
+  width: 23px;
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid rgba(32, 84, 165, 0.4);
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.coontactcheckbox-container input:checked ~ .contactcheckmark {
+  background: #8656ef;
+  border: 1px solid #8656ef;
+  background: #ffa600;
+  border: 1px solid #ffa600;
+}
+
+/* Create the contactcheckmark/indicator (hidden when not checked) */
+.contactcheckmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the contactcheckmark when checked */
+.coontactcheckbox-container input:checked ~ .contactcheckmark:after {
+  display: block;
+}
+
+/* Style the contactcheckmark/indicator */
+.coontactcheckbox-container .contactcheckmark:after {
+  left: 7px;
+  top: 1px;
+  width: 7px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.contact-gcaptcha {
+  margin-bottom: 30px;
+}
+.contact-submit-btn {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.002em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #01a3ff;
+  border: 3px solid #01a3ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 18px 30px;
+  outline: none;
+  box-shadow: none;
+}
+.contact-submit-btn:focus {
+  outline: none;
+}
+.enoch-contactblock-right-block1 {
+  background: url(/images/contact-bg1.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 24px 32px;
+  margin-bottom: 20px;
+  border-radius: 6.11465px;
+}
+.enoch-contactblock-right-block1 h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.5223px;
+  line-height: 140.8%;
+  letter-spacing: 0.03em;
+  color: #fff066;
+  margin-bottom: 8px;
+}
+.enoch-contactblock-right-block1 ul {
+  display: flex;
+  margin-bottom: 20px;
+}
+.enoch-contactblock-right-block1 ul li {
+  margin-right: 16px;
+}
+.enoch-contactblock-right-block2 {
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.contactblock-right-img {
+  border-radius: 6.11465px;
+}
+.contactblock-right-txt {
+  position: absolute;
+  top: 28%;
+  left: 23%;
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 29.0446px;
+  line-height: 140.8%;
+  letter-spacing: 0.03em;
+  color: #545454;
+  transform: rotate(-3deg);
+}
+
+.contactblock-right-txt span {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 54px;
+  text-align: center;
+  letter-spacing: -0.07em;
+  color: #f46701;
+  transform: rotate(-3deg);
+  display: block;
+}
+
+.enoch-contactblock-right-block2 p {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13.758px;
+  line-height: 140.8%;
+  letter-spacing: 0.03em;
+  color: #5b5b5b;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.enoch-contactblock-right-block3 {
+  position: relative;
+}
+.contactblock-help-img {
+  border-radius: 6.11465px;
+}
+.contactblock-help-txt {
+  position: absolute;
+  top: 23%;
+  right: 9%;
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 62.5345px;
+  line-height: 140.8%;
+  text-align: center;
+  letter-spacing: -0.07em;
+  color: #ffffff;
+  transform: rotate(-3deg);
+}
+.contactblock-help-txt span {
+  display: block;
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 73.8723px;
+  line-height: 26px;
+  text-indent: 43px;
+  letter-spacing: -0.07em;
+  color: #ffffff;
+  transform: rotate(-3deg);
+}
+.enochweb-contact-location-sect {
+  margin-top: 100px;
+}
+.enochweb-contact-location-head {
+  max-width: 680px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.enochweb-contact-location-head h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 140.8%;
+  text-align: center;
+  color: #f46c20;
+  margin-bottom: 16px;
+}
+.enochweb-contact-location-head p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #525252;
+  margin-bottom: 0px;
+}
+.enochweb-locationBlock ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.enochweb-locationBlock ul li {
+  width: 48.3%;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 42px;
+  box-shadow: 0px 0px 28px rgba(52, 91, 136, 0.06);
+}
+
+.enochwb-location-imgBlock img {
+  width: 100%;
+}
+.enochwb-location-txtBlock {
+  text-align: center;
+  padding: 20px;
+}
+.enochwb-location-txtBlock h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 140.8%;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.enochwb-location-txtBlock p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.contact-clr1 {
+  color: #f47920;
+}
+.contact-clr2 {
+  color: #0aa9a9;
+}
+.contact-clr3 {
+  color: #1f85bd;
+}
+.contact-clr4 {
+  color: #26a426;
+}
+
+.enochweb-header-contact-submited {
+  background: linear-gradient(253.97deg, #4203aa -1.24%, #4c007b 99.65%);
+  padding-top: 211px;
+  padding-bottom: 120px;
+}
+.enochweb-contact-submited-innerblock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.enochweb-contact-submitted-lft {
+  width: 50%;
+}
+.enochweb-contact-submitted-right {
+  width: 50%;
+}
+.enochweb-contact-submitted-lft h2 {
+  font-family: Sacramento;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 103.618px;
+  line-height: 95px;
+  letter-spacing: 0.085em;
+  color: #ffcb00;
+  margin-bottom: 0px;
+}
+.enochweb-contact-submitted-lft h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 200px;
+  line-height: 174px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+.contact-submitted-txt1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+.contact-submitted-txt2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 160%;
+  color: #ffcb00;
+  margin-bottom: 0px;
+}
+.enochweb-submitted-go {
+  background: #01a3ff;
+  border-radius: 8px;
+  /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+  width: 234px;
+  height: 66px;
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 118.6%;
+  color: #ffffff;
+  margin-right: 15px;
+}
+.enochweb-submitted-back {
+  background: #c8cfd4;
+  border-radius: 8px;
+  height: 66px;
+  width: 120px;
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 118.6%;
+  color: #ffffff;
+}
+.enochweb-submitted-btngrp {
+  margin-top: 18px;
+}
+.enochweb-contact-submitted-sect {
+  margin-top: 190px;
+  margin-bottom: 80px;
+}
+/* end  */
+/*FAq page*/
+.enochweb-header-Faq {
+  background: linear-gradient(253.97deg, #4203aa -1.24%, #4c007b 99.65%);
+  display: flex;
+  align-items: flex-end;
+}
+.enochweb-header-Faqimg {
+  margin-top: -60px;
+}
+.wnochweb-Faq-sect {
+  margin-top: 100px;
+}
+.enochweb-faq-head {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.enochweb-faq-head h2 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 140%;
+  color: #1485c5;
+}
+.enochweb-faq-head h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 78px;
+  line-height: 140%;
+  text-align: center;
+  color: #f46c20;
+}
+
+.enochweb-faq-head p {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 160%;
+  text-align: center;
+  color: #696969;
+  max-width: 1127px;
+  margin: auto;
+}
+.Faqtabcontent {
+  display: none;
+}
+.faq-display {
+  display: block;
+}
+.collapse.in {
+  display: block;
+}
+.enochweb-collapse-block {
+  display: flex;
+  justify-content: space-between;
+}
+.enochweb-collapse-block-lft {
+  width: 24%;
+}
+.enochweb-collapse-block-lft ul {
+  background: #ffffff;
+  box-shadow: 0px 0px 16px rgb(209 209 209 / 25%);
+  padding: 15px 24px;
+}
+.enochweb-collapse-block-right {
+  width: 73%;
+}
+.enochfaqtablinks {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 64px;
+  text-transform: uppercase;
+  padding: 0px;
+}
+.enochweb-collapse-block-lft ul li {
+  border-bottom: 1px solid rgba(32, 84, 165, 0.25);
+}
+.enochweb-collapse-block-lft ul li:last-child {
+  border-bottom: 0px;
+}
+.enochfaqtablinks.active {
+  color: #8656ef;
+}
+
+.Faqtabcontent h2 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 200%;
+  text-transform: uppercase;
+  color: #1485c5;
+  margin-bottom: 0px;
+  border-bottom: 1px solid rgba(32, 84, 165, 0.3);
+}
+.enochweb-panel-title.collapsed {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: #fff;
+  border-bottom: 1px solid rgba(32, 84, 165, 0.3);
+  padding-left: 0px;
+  border-top: 0px;
+}
+.enochweb-panel-title {
+  border-top: 1px solid #7346bc;
+  background: #f8f5ff;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 32px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  align-items: center;
+}
+.enochweb-panel-title::after {
+  content: "\2212";
+  font-family: fontawesome;
+  position: absolute;
+  right: 17px;
+  top: 6px;
+  font-size: 36px;
+  font-weight: 800;
+  transition: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+  background: #7346bc;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+  bottom: 0;
+  margin: auto;
+}
+
+.enochweb-panel-title.collapsed::after {
+  content: "\002B";
+  font-family: fontawesome;
+  position: absolute;
+  right: 17px;
+  top: 0;
+  font-size: 38px;
+  font-weight: 800;
+  transition: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+  background: #d0d4ec;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+  bottom: 0;
+  margin: auto;
+}
+.enochweb-panel-title h4 {
+  max-width: 670px;
+  margin-bottom: 0px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 170%;
+  color: #3d3652;
+  position: relative;
+}
+.enochweb-panel-collapse {
+  background: #f8f5ff;
+}
+.enochweb-panel-collapse {
+  padding-left: 40px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 200%;
+  color: #000000;
+}
+.enochweb-panel-collapse.collapse.in {
+  border-bottom: 1px solid #7346bc;
+}
+.enochweb-panel-collapse p {
+  margin-right: 10%;
+}
+/* end */
+/* Cookie privacy legal */
+.enochweb-header-coookiePolicy {
+  background: linear-gradient(253.97deg, #4203aa -1.24%, #4c007b 99.65%);
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  height: 242px;
+}
+.cookietabcontent {
+  display: none;
+}
+.cookie-display {
+  display: block;
+}
+.enochweb-header-tag {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 59px;
+}
+.enochwen-cookiePolicy-headline h2 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 32px;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+.enochwen-cookiePolicy-headline {
+  display: none;
+}
+.cookiePolicy-headline-dBlock {
+  display: block;
+}
+.enochweb-cookiePolicy-sect {
+  margin-top: 100px;
+}
+.cookie-policy-block {
+  display: flex;
+  justify-content: space-between;
+}
+.cookie-policy-block-lft {
+  width: 20.5%;
+}
+.cookie-policy-block-right {
+  width: 79%;
+  margin-left: 40px;
+}
+.cookie-policy-block-lft ul {
+  background: #ffffff;
+  box-shadow: 0px 0px 16px rgb(209 209 209 / 25%);
+  padding: 15px 24px;
+}
+.cookie-policy-block-lft ul li {
+  border-bottom: 1px solid rgba(32, 84, 165, 0.25);
+}
+.cookie-policy-block-lft ul li:last-child {
+  border-bottom: 0px;
+}
+.cookietablink {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 64px;
+  text-transform: uppercase;
+  padding: 0px;
+}
+
+.cookietablink.active {
+  color: #8656ef;
+}
+.cookie-policy-privacy-body h2 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+.cookie-policy-privacy-body p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 0;
+}
+.cookie-policy-privacy-body h3 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 0;
+}
+.cookie-policy-privacy-body h4 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 0;
+}
+.cookie-policy-privacy-body p a {
+  color: #000;
+}
+/* end */
+/*responsive*/
+
+@media only screen and (max-width: 1800px) {
+}
+@media only screen and (max-width: 1560px) {
+  .enochweb-explore-sect h2 {
+    font-size: 48px;
+    line-height: 158%;
+  }
+  .enochweb-do-stuff-block {
+    margin-left: 8.5%;
+  }
+  .enochweb-do-stuff-block-lft ul li {
+    font-size: 22px;
+  }
+  .stuff-block-img {
+    max-width: 600px;
+  }
+  .do-stuff-img {
+    width: 200px;
+    height: 200px;
+  }
+  .enoch-roadmap-schedule1 {
+    left: 5%;
+  }
+  .enoch-roadmap-schedule4 {
+    top: 30%;
+    right: 4%;
+    max-width: 344px;
+  }
+  .enoch-roadmap-schedule2 {
+    bottom: 5%;
+    max-width: 478px;
+  }
+  .enochweb-roadmap-sect p {
+    font-size: 22px;
+  }
+
+  .enoch-roadmap-schedule5 {
+    right: 0;
+    max-width: 349px;
+  }
+  .promoteBrand-hd-content h3 {
+    font-size: 64px;
+  }
+  .promoteBrand-hd-content {
+    max-width: 1166px;
+  }
+  .promoteBrand-hd-content p {
+    font-size: 30px;
+  }
+  .promote-brand-list-lft {
+    max-width: 39%;
+  }
+  .enochweb-team-block-hd h3 {
+    font-size: 58px;
+  }
+  .enochweb-team-block-hd p {
+    font-size: 32px;
+    line-height: 140%;
+  }
+  .enochweb-header-team {
+    height: 600px;
+  }
+  .enochweb-header-career {
+    height: 510px;
+  }
+  .enochweb-adventure {
+    padding-top: 100px;
+  }
+  .enochweb-.team-sect {
+    padding-bottom: 80px;
+  }
+  .promote-brand-TAC-right h4 {
+    font-size: 36px;
+  }
+  .promote-btmtxt {
+    font-size: 18px;
+  }
+  .contactblock-right-txt span {
+    font-size: 68px;
+  }
+  .contactblock-help-txt span {
+    font-size: 60.8723px;
+  }
+  .contactblock-help-txt {
+    font-size: 54.5345px;
+  }
+  .enochweb-header-Faq {
+    height: 533px;
+  }
+  .enochweb-roadmap-sect ul li {
+    font-size: 22px;
+  }
+  .enochweb-invest-innerblock {
+    margin-left: 8%;
+  }
+  .enoch-invest-block-lft h3 {
+    font-size: 56px;
+  }
+  .enoch-invest-block-lft p {
+    font-size: 20px;
+  }
+  .partners-investors-hd h3 {
+    font-size: 68px;
+  }
+  .partners-compny-list .pcompny-logo3 {
+    left: 68%;
+  }
+  .enoch-home-explore-item ul li p {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 1480px) {
+  /*new css */
+
+  .enochweb-header-centent {
+    height: 900px;
+  }
+  span.enochweb-top-hd {
+    max-width: 120px;
+  }
+  .enochweb-header-img {
+    margin-top: 60px;
+  }
+  .enochweb-explore-sect {
+    padding-top: 80px;
+  }
+  .enoch-home-explore-item {
+    margin-top: 80px;
+  }
+  .enoch-home-explore-item ul li p {
+    font-size: 22px;
+  }
+  .enoch-home-explore-item ul li h3 {
+    font-size: 40px;
+    line-height: 120%;
+  }
+  .enochweb-do-stuff-block {
+    margin-left: 7.6%;
+  }
+  .enochweb-do-stuff-block-lft ul li {
+    font-size: 20px;
+  }
+  .do-stuff-img {
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+  }
+  .enoch-home-makemoney-item ul li h3 {
+    font-size: 44px;
+    line-height: 120%;
+  }
+  .enoch-home-makemoney-item ul li p {
+    font-size: 22px;
+  }
+  .enoch-home-makemoney-item ul li {
+    height: 750px;
+  }
+
+  .behind-enoch-block-right h3 {
+    font-size: 44px;
+    line-height: 120%;
+  }
+  .behind-enoch-txt1 {
+    font-size: 30px;
+    line-height: 150%;
+  }
+  .behind-enoch-txt2 {
+    font-size: 22px;
+  }
+  .enochweb-makemoney-sect {
+    padding: 80px 0px;
+  }
+  .enochweb-promoteBrand-sect {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .enochweb-behind-sect {
+    padding: 80px 0px;
+  }
+  .enochweb-roadmap-sect {
+    padding: 200px 0px;
+  }
+  .enochweb-roadmap-sect p {
+    font-size: 20px;
+  }
+  .enoch-roadmap-schedule1 {
+    top: 35%;
+  }
+  .enoch-roadmap-schedule3 {
+    top: 9%;
+  }
+  .enochweb-roadmap-sect h3 {
+    font-size: 42px;
+  }
+  .enochweb-roadmap-sect ul li {
+    font-size: 20px;
+  }
+  .enoch-roadmap-schedule4 {
+    max-width: 317px;
+    top: 27%;
+  }
+  .enoch-roadmap-schedule2 {
+    bottom: 10%;
+    max-width: 430px;
+  }
+  .enoch-roadmap-schedule5 {
+    right: 10px;
+    max-width: 317px;
+    bottom: 8%;
+  }
+  .enochweb-invest-sect {
+    padding: 90px 27px 60px;
+  }
+  .enochweb-follow {
+    margin-top: 40px;
+  }
+  .partners-compny-list .pcompny-logo1 {
+    top: 26%;
+  }
+  .partners-compny-list .pcompny-logo2 {
+    left: 33.7%;
+    max-width: 31%;
+  }
+  .partners-compny-list .pcompny-logo4 {
+    max-width: 23.5%;
+  }
+  .partners-compny-list .pcompny-logo5 {
+    max-width: 23.9%;
+  }
+  .partners-compny-list .pcompny-logo2 {
+    top: 13px;
+  }
+  .partners-compny-list .pcompny-logo7 {
+    top: 48px;
+    max-width: 25%;
+  }
+  .partners-compny-list .pcompny-logo8 {
+    top: 70px;
+  }
+  .partners-compny-list .pcompny-logo6 {
+    top: 177px;
+    max-width: 23.9%;
+  }
+  .enochweb-partners-investors-sect {
+    padding-top: 80px;
+  }
+  .partners-compny-list {
+    height: 738px;
+  }
+  .stuff-block-img {
+    max-width: 540px;
+  }
+  .enochweb-home-stuff-sect {
+    padding-bottom: 80px;
+  }
+  .enoch-invest-block-lft h3 {
+    font-size: 52px;
+  }
+  .enoch-invest-block-lft p {
+    font-size: 20px;
+  }
+  .partners-investors-hd h3 {
+    font-size: 68px;
+  }
+  .enochweb-team-block-hd h3 {
+    font-size: 58px;
+  }
+  .enochweb-team-block-hd p {
+    font-size: 34px;
+    line-height: 140%;
+  }
+  .enochweb-team-members h2 {
+    font-size: 54px;
+  }
+  .promote-btmtxt {
+    font-size: 18px;
+  }
+  .makemoney-hd-img {
+    max-width: 562px;
+  }
+  .promote-brand-list-mid,
+  .promote-brand-list-right {
+    max-width: 28%;
+  }
+  .promote-addcart-brn button {
+    width: 225px;
+  }
+  .enochweb-adventure {
+    padding-top: 80px;
+  }
+  .enochweb-.team-sect {
+    padding-bottom: 80px;
+  }
+  .promote-brand-list-lft {
+    max-width: 40%;
+  }
+
+  .promote-brand-TAC-right {
+    padding: 20px 36px;
+  }
+  .enochweb-explore-sect h2 {
+    font-size: 42px;
+    line-height: 140%;
+  }
+  .promoteBrand-hd-content h3 {
+    font-size: 54px;
+  }
+  .promoteBrand-hd-content p {
+    font-size: 28px;
+  }
+  /* End */
+  .enochweb-career-perkBnifit-sect h2 {
+    font-size: 72px;
+  }
+  .enochweb-perkBnifit-block h3 {
+    font-size: 36px;
+  }
+  .enochweb-perkBnifit-block p {
+    font-size: 18px;
+  }
+  .enochweb-career-perkBnifit-sect {
+    margin-bottom: 80px;
+  }
+  .enochweb-career-block-hd h3 {
+    font-size: 68px;
+  }
+  .enochweb-weHiring-content-block h2 {
+    font-size: 58px;
+  }
+  .hiretabContent p {
+    max-width: 720px;
+    font-size: 42px;
+  }
+  .enochweb-weHiring-sect {
+    height: 840px;
+    margin-bottom: -18%;
+  }
+  .hiretablinks {
+    font-size: 27px;
+  }
+  .enochweb-header-career {
+    height: 480px;
+  }
+  .enochweb-header-contactimg {
+    margin-top: -10px;
+  }
+  .enoch-contactblock-right-block2 p {
+    font-size: 12px;
+  }
+  .enochweb-header-Faqimg {
+    margin-top: 0;
+  }
+  .enochweb-header-Faq {
+    height: 492px;
+  }
+  .enochweb-faq-head h3 {
+    font-size: 68px;
+  }
+  .enochweb-invest-innerblock {
+    margin-left: 4%;
+  }
+  .enoch-invest-block-lft {
+    width: 52.5%;
+  }
+  .enochweb-contact-submitted-lft h3 {
+    font-size: 168px;
+  }
+  .enochweb-contact-submitted-lft h2 {
+    font-size: 96px;
+  }
+}
+@media only screen and (max-width: 1380px) {
+  .enochweb-do-stuff-block {
+    margin-left: 5.6%;
+  }
+  .enoch-roadmap-schedule5 {
+    max-width: 289px;
+    bottom: 6%;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  /*new css*/
+
+  .enochweb-header-img {
+    max-width: 76%;
+  }
+  .enochweb-header-centent p {
+    font-size: 25.1094px;
+  }
+  .enochweb-header-centent {
+    height: 700px;
+  }
+  .enochweb-explore-sect h2 {
+    font-size: 42px;
+    line-height: 140%;
+  }
+  .enoch-home-explore-item ul li h3 {
+    font-size: 38px;
+    line-height: 116%;
+  }
+  .enochweb-do-stuff-block-lft h3 {
+    font-size: 40px;
+    line-height: 120%;
+  }
+  .enochweb-do-stuff-block {
+    margin-left: 7%;
+  }
+  .do-stuff-txt2 {
+    font-size: 22px;
+    line-height: 140%;
+  }
+  .enochweb-do-stuff-block-lft ul li {
+    font-size: 16px;
+  }
+  .enochweb-do-stuff-block-right {
+    height: 678px;
+  }
+  .stuff-block-img {
+    max-width: 477px;
+  }
+  .do-stuff-img {
+    width: 150px;
+    height: 150px;
+  }
+  .makemoney-hd-img {
+    max-width: 457px;
+  }
+  .makemoney-hd-txt {
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
+  .enoch-home-makemoney-item ul li h3 {
+    font-size: 38px;
+    line-height: 120%;
+  }
+  .enoch-home-makemoney-item ul li p {
+    font-size: 20px;
+  }
+  .promoteBrand-hd-content h3 {
+    font-size: 58px;
+  }
+  .promoteBrand-hd-content p {
+    font-size: 28px;
+  }
+  .promote-addcart-brn button {
+    width: 172px;
+  }
+  .launcing-innerblock {
+    max-width: 210px;
+  }
+  .launching-time-block span {
+    width: 22px;
+  }
+  .promote-brand-TAC-lft {
+    padding-left: 30px;
+  }
+  .promote-brand-TAC-lft h3 {
+    font-size: 58px;
+  }
+  .promote-brand-TAC-lft p {
+    font-size: 18px;
+    max-width: 230px;
+  }
+  .promote-brand-TAC-lft {
+    width: 55%;
+  }
+  .promote-brand-TAC-right h3 {
+    font-size: 20px;
+  }
+  .promote-brand-TAC-right h4 {
+    font-size: 26px;
+  }
+  .promote-brand-TAC-right p {
+    font-size: 15px;
+  }
+  .promote-btmtxt {
+    font-size: 15px;
+  }
+  .promotebrand-use {
+    font-size: 15px;
+  }
+  .enochweb-roadmap-sect h3 {
+    font-size: 34px;
+  }
+  .enochweb-roadmap-sect p {
+    font-size: 18px;
+  }
+  .enoch-roadmap-schedule1,
+  .enoch-roadmap-schedule2,
+  .enoch-roadmap-schedule3,
+  .enoch-roadmap-schedule4 {
+    max-width: 277px;
+  }
+  .enoch-roadmap-schedule5 {
+    max-width: 250px;
+  }
+  .enoch-roadmap-schedule4 {
+    top: 29%;
+    right: 3%;
+  }
+  .enoch-invest-block-lft h3 {
+    font-size: 42px;
+  }
+  .enoch-invest-block-lft p {
+    font-size: 18px;
+  }
+  .partners-compny-list .pcompny-logo1 {
+    max-width: 24%;
+  }
+
+  .partners-compny-list .pcompny-logo3 {
+    max-width: 25%;
+  }
+  .partners-compny-list .pcompny-logo4 {
+    max-width: 24%;
+    width: 100%;
+  }
+  .partners-compny-list .pcompny-logo5,
+  .partners-compny-list .pcompny-logo6 {
+    max-width: 22%;
+  }
+  .partners-compny-list .pcompny-logo7 {
+    max-width: 25%;
+    left: 50%;
+    height: 216px;
+  }
+  .partners-compny-list .pcompny-logo8 {
+    max-width: 20%;
+    left: 78%;
+  }
+  .enochweb-follow {
+    margin-top: 40px;
+  }
+  .subscribeModal-steps-content {
+    max-width: 88%;
+  }
+  .subscribeModal-steps-content h3 {
+    font-size: 38px;
+  }
+  .subscribeModal-steps-content p {
+    font-size: 14px;
+  }
+  .steps-innercontent {
+    top: 48%;
+  }
+  .subscribeModal-steps-bottmcontent {
+    font-size: 16px;
+    line-height: 110%;
+  }
+  .subscribeModal-head {
+    margin-bottom: 24px;
+  }
+  .subscribeModal-form {
+    margin-top: 24px;
+  }
+  .subscribeModal-form h3 {
+    font-size: 28px;
+  }
+  .subscribeModal-subscribeform input,
+  .subscribeform-bttn2 {
+    height: 58px;
+  }
+  .subscribeModal-form {
+    margin-bottom: 18px;
+  }
+  .subscribeModal-head {
+    margin-top: 28px;
+  }
+  .customsteps-pos {
+    top: 22%;
+  }
+  .subscribeModal-steps-content {
+    height: 204px;
+  }
+  .enochweb-team-members ul li h3 {
+    font-size: 30px;
+  }
+  .enochweb-team-members p {
+    font-size: 20px;
+  }
+  .enochweb-team-img {
+    width: 190px;
+  }
+  .enochweb-team-block-hd h3 {
+    font-size: 48px;
+  }
+  .enochweb-team-block-hd p {
+    font-size: 32px;
+    line-height: 140%;
+    max-width: 810px;
+  }
+  .enochweb-adventureright p {
+    font-size: 24px;
+  }
+  .enochweb-adventureright h3 {
+    font-size: 42px;
+  }
+  .enochweb-header-team {
+    height: 510px;
+  }
+  .enochweb-header-career {
+    height: 440px;
+  }
+  .market-mbl2 {
+    margin-left: -25px;
+  }
+  .enoch-home-explore-item ul li p {
+    font-size: 20px;
+  }
+  .enochweb-roadmap-sect ul li {
+    font-size: 17px;
+  }
+  /* End */
+  .enochweb-career-block-hd h3 {
+    font-size: 58px;
+  }
+  .enochweb-career-block-hd p {
+    font-size: 32px;
+    line-height: 140%;
+  }
+  .enochweb-career-perkBnifit-sect h2 {
+    font-size: 62px;
+  }
+  .enochweb-perkBnifit-block h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .enochweb-perkBnifit-block p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .enochweb-ceate-foundation-sect h2 {
+    font-size: 42px;
+  }
+  .create-foundtn-img {
+    max-width: 800px;
+    margin: auto;
+  }
+  .enochweb-ceate-foundation-sect {
+    margin-bottom: 80px;
+  }
+  .hiretablinks {
+    margin: 0px 16px;
+    font-size: 22px;
+  }
+  .hiretabContent p {
+    max-width: 654px;
+    font-size: 38px;
+  }
+  .hiretabContent {
+    margin-top: 40px;
+  }
+  .enochweb-weHiring-content-block {
+    padding-top: 10%;
+  }
+  .enoch-contactblock-lft h3 {
+    font-size: 36px;
+  }
+  .enoch-contactblock-lft p {
+    font-size: 17px;
+  }
+  .contact-tab-head {
+    font-size: 16px;
+  }
+  .contactblock-right-txt span {
+    font-size: 46px;
+    line-height: 38px;
+  }
+  .contactblock-right-txt {
+    top: 25%;
+    left: 27%;
+  }
+  .contactblock-help-txt {
+    font-size: 38.5345px;
+  }
+  .contactblock-help-txt span {
+    font-size: 44.8723px;
+  }
+  .enoch-contactblock-right-block1 h3 {
+    font-size: 12.5223px;
+  }
+  .enochfaqtablinks {
+    font-size: 18px;
+  }
+  .enochweb-panel-title h4 {
+    font-size: 22px;
+  }
+  .enochweb-header-Faq {
+    height: 441px;
+  }
+  .cookie-policy-block-lft {
+    width: 26.5%;
+  }
+  .substeps-img4 {
+    max-width: 45px;
+  }
+  .enochweb-contact-submitted-lft h3 {
+    font-size: 140px;
+    line-height: 140px;
+  }
+  .contact-submitted-txt1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  /*new css*/
+  .enochweb-header-img {
+    margin-top: 140px;
+  }
+  span.enochweb-top-hd {
+    max-width: 106px;
+    top: 32%;
+  }
+  .enochweb-explore-sect h2 {
+    font-size: 28px;
+    line-height: 130%;
+  }
+  .enochweb-explore-sect {
+    padding-top: 60px;
+  }
+  .enoch-home-explore-item {
+    margin-top: 60px;
+  }
+  .enoch-home-explore-item ul li {
+    height: auto;
+  }
+  .enochweb-do-stuff-block-lft h3 {
+    font-size: 34px;
+    line-height: 120%;
+  }
+  .do-stuff-txt2 {
+    font-size: 20px;
+  }
+  .enochweb-do-stuff-block-lft ul li {
+    font-size: 14px;
+  }
+  .enoch-home-makemoney-item ul li {
+    height: auto;
+  }
+  .enoch-home-makemoney-item ul li h3 {
+    font-size: 36px;
+  }
+  .enoch-home-makemoney-item ul li p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .promoteBrand-hd-content h3 {
+    font-size: 48px;
+  }
+  .promoteBrand-hd-content p {
+    font-size: 24px;
+  }
+  .promote-addcart-brn button {
+    width: 158px;
+    font-size: 14px;
+  }
+  .launching-time-block span {
+    width: 18px;
+    font-size: 14px;
+  }
+  .launcing-innerblock {
+    max-width: 184px;
+  }
+  .promotebrand-launch,
+  .promotebrand-use {
+    font-size: 13px;
+  }
+  .promobrand-bag {
+    top: 20px;
+    max-width: 20px;
+    right: 20px;
+  }
+  .promote-brand-TAC-lft h3 {
+    font-size: 46px;
+  }
+  .promote-brand-TAC-lft p {
+    font-size: 16px;
+  }
+  .promote-brand-TAC-right h3 {
+    font-size: 18px;
+  }
+  .promote-brand-TAC-right h4 {
+    font-size: 21px;
+  }
+  .promote-brand-TAC-right {
+    padding: 20px 30px;
+  }
+  .promote-btmtxt {
+    font-size: 13px;
+  }
+  .mt-13 {
+    margin-top: 23px;
+  }
+  .enochweb-do-stuff-innerblock {
+    margin-top: 46px;
+  }
+  .enochweb-makemoney-sect {
+    padding: 60px 0px;
+  }
+  .makemoney-hd-img {
+    max-width: 370px;
+  }
+  .enochweb-promoteBrand-sect {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .enochweb-behind-sect {
+    padding: 60px 0px;
+  }
+  .behind-enoch-block-right h3 {
+    font-size: 38px;
+  }
+  .behind-enoch-txt1 {
+    font-size: 24px;
+    line-height: 140%;
+  }
+  .behind-enoch-txt2 {
+    font-size: 18px;
+  }
+  .enochweb-roadmap-sect {
+    padding: 60px 0px;
+  }
+  .enochweb-roadmap-sect h3 {
+    font-size: 32px;
+  }
+  .enoch-roadmap-schedule1,
+  .enoch-roadmap-schedule2,
+  .enoch-roadmap-schedule3,
+  .enoch-roadmap-schedule4,
+  .enoch-roadmap-schedule5 {
+    max-width: 226px;
+  }
+  .enochweb-roadmap-sect p {
+    font-size: 16px;
+  }
+  .enochweb-invest-sect {
+    height: auto;
+    padding: 60px 0px;
+  }
+  .enoch-invest-block-lft h3 {
+    font-size: 42px;
+  }
+  .enoch-invest-block-lft p {
+    font-size: 16px;
+  }
+  .enoch-invest-block-lft {
+    width: 80.5%;
+  }
+  .partners-investors-hd h3 {
+    font-size: 48px;
+  }
+  .partners-investors-hd p {
+    font-size: 20px;
+  }
+  .enochweb-partners-investors-sect {
+    padding-top: 60px;
+  }
+  .partners-compny-list .pcompny-logo1 {
+    width: 23%;
+  }
+  .partners-compny-list .pcompny-logo2 {
+    max-width: 33%;
+    width: 100%;
+    top: 20px;
+    left: 31.7%;
+  }
+  .partners-compny-list .pcompny-logo3 {
+    max-width: 28%;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  .partners-compny-list .pcompny-logo4 {
+    max-width: 24%;
+    width: 100%;
+    padding: 30px;
+  }
+  .partners-compny-list .pcompny-logo5 {
+    max-width: 22%;
+    padding: 26px 40px;
+  }
+  .partners-compny-list .pcompny-logo6 {
+    max-width: 22%;
+    padding: 26px 40px;
+  }
+  .partners-compny-list .pcompny-logo7 {
+    top: 32px;
+    max-width: 25%;
+    padding: 40px;
+  }
+  .partners-compny-list .pcompny-logo8 {
+    top: 57px;
+    max-width: 20%;
+    padding: 25px;
+  }
+  .enochweb-nft-market-lft h3 {
+    font-size: 48px;
+    line-height: 110%;
+  }
+  .enochweb-nft-market-lft p {
+    font-size: 18px;
+    line-height: 140%;
+  }
+  .enochweb-nft-market-lft {
+    max-width: 492px;
+  }
+  .nft-market-btngroup button {
+    max-width: 200px;
+  }
+  .enochweb-follow h3 {
+    font-size: 48px;
+  }
+  .enochweb-follow p {
+    font-size: 20px;
+  }
+  .enochweb-follow {
+    margin-top: 40px;
+  }
+  .enochweb-follow ul li {
+    max-width: 98px;
+    margin-left: -18px;
+  }
+
+  .promote-card-hd-img {
+    height: 223px;
+  }
+
+  .subscribeModal-subscribeform input,
+  .subscribeform-bttn2 {
+    height: 64px;
+  }
+  .enochweb-home-stuff-sect {
+    padding-bottom: 60px;
+  }
+  .promote-brand-TAC {
+    height: 253px;
+  }
+  .enochweb-team-members ul li {
+    width: 30%;
+  }
+  .subscribeModal-steps-content {
+    height: auto;
+  }
+  .subscribeModal-steps-content {
+    max-width: 100%;
+  }
+  .steps-innercontent {
+    top: 40%;
+  }
+  .customsteps-pos {
+    top: 22%;
+  }
+  /* End */
+  .enochweb-career-perkBnifit-sect ul li {
+    width: 22%;
+    text-align: center;
+  }
+  .enochweb-career-perkBnifit-sect {
+    margin-bottom: 60px;
+  }
+  .enochweb-career-block-hd h3 {
+    font-size: 48px;
+  }
+  .enochweb-career-block-hd p {
+    font-size: 28px;
+  }
+  .enochweb-career-perkBnifit-sect h2 {
+    font-size: 52px;
+  }
+  .enochweb-ceate-foundation-sect h2 {
+    font-size: 38px;
+  }
+  .enochweb-ceate-foundation-sect p {
+    font-size: 22px;
+  }
+  .enochweb-wprkWant-sect h2 {
+    font-size: 28px;
+  }
+  .enochweb-wprkWant-sect h3 {
+    font-size: 42px;
+  }
+  .enochweb-wprkWant-sect p {
+    font-size: 22px;
+  }
+  .enochweb-wprkWant-countryList ul {
+    font-size: 22px;
+  }
+  .enochweb-weHiring-content-block h2 {
+    font-size: 48px;
+  }
+  .enochweb-weHiring-content-block p {
+    font-size: 22px;
+    max-width: 685px;
+  }
+  .enochweb-weHiring-sect {
+    height: 706px;
+    margin-bottom: -260px;
+  }
+  .hiretabContent p {
+    max-width: 654px;
+    font-size: 38px;
+  }
+  .enochweb-header-career {
+    height: 387px;
+  }
+  .enochweb-header-contactimg {
+    margin-top: 0;
+  }
+  .enochweb-header-contact {
+    height: 407px;
+  }
+  .enochweb-panel-title h4 {
+    font-size: 20px;
+    margin-right: 40px;
+  }
+  .Faqtabcontent h2 {
+    font-size: 32px;
+  }
+  .enochweb-panel-title.collapsed,
+  .enochweb-panel-title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .enochweb-panel-title::after {
+    top: 0;
+  }
+  .enochweb-faq-head h3 {
+    font-size: 58px;
+  }
+  .enochweb-faq-head p {
+    font-size: 30px;
+  }
+  .enochweb-collapse-block-lft {
+    width: 25%;
+  }
+  .cookietablink {
+    font-size: 16px;
+  }
+  .enochweb-cookiePolicy-sect {
+    margin-top: 60px;
+  }
+  .enochweb-do-stuff-block {
+    margin-left: 40px;
+  }
+  .enochweb-invest-innerblock {
+    margin-left: 40px;
+  }
+  .enochweb-roadmap-sect ul li {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .enoch-roadmap-schedule1 {
+    top: 32%;
+  }
+  .enoch-roadmap-schedule3 {
+    top: 4%;
+  }
+  .enoch-roadmap-schedule2 {
+    bottom: 6%;
+  }
+  .enochweb-contact-submitted-lft h3 {
+    font-size: 114px;
+    line-height: 114px;
+  }
+  .enochweb-contact-submitted-lft h2 {
+    font-size: 80px;
+  }
+  .contact-submitted-txt1 {
+    font-size: 26px;
+  }
+  .contact-submitted-txt2 {
+    font-size: 18px;
+  }
+  .enochweb-contact-submitted-sect {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  /*new css*/
+  .enochweb-header-centent p {
+    font-size: 20.1094px;
+  }
+
+  .enoch-home-explore-item ul li h3 {
+    font-size: 28px;
+  }
+  .enoch-home-explore-item ul li p {
+    font-size: 15px;
+  }
+  .enoch-home-explore-item ul li {
+    padding: 56px 20px;
+    margin-bottom: 24px;
+  }
+  .enochweb-do-stuff-innerblock {
+    flex-direction: column;
+  }
+  .enochweb-do-stuff-block-lft {
+    width: 100%;
+    padding-right: 30px;
+  }
+  .enochweb-do-stuff-block {
+    margin-left: 7%;
+  }
+  .enochweb-do-stuff-block-lft h3 {
+    font-size: 30px;
+  }
+  .enochweb-do-stuff-block-right {
+    width: auto;
+    margin-top: 40px;
+  }
+  .makemoney-hd-img {
+    max-width: 290px;
+  }
+  .enoch-home-makemoney-item ul li {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+  }
+  .enoch-home-makemoney-item ul li h3 {
+    font-size: 24px;
+  }
+  .enoch-home-makemoney-item ul li p {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .promoteBrand-list ul li {
+    max-width: 48%;
+    width: 100%;
+  }
+  .stuff-block-img {
+    max-width: 540px;
+  }
+  .enochweb-do-stuff-block-right {
+    justify-content: flex-start;
+  }
+
+  .promote-card-hd-img {
+    height: 226px;
+  }
+  .promote-card-hd-img img {
+    height: 100%;
+    width: 100%;
+  }
+  .promote-brand-TAC-lft h3 {
+    font-size: 28px;
+  }
+  .promote-brand-TAC-lft p {
+    font-size: 14px;
+  }
+  .promote-brand-TAC-lft {
+    padding-left: 15px;
+  }
+  .promote-brand-TAC-right {
+    padding: 20px 10px;
+  }
+  .enochweb-header-centent {
+    height: 583px;
+  }
+  .enochweb-roadmap-sect h3 {
+    font-size: 28px;
+  }
+  .enochweb-roadmap-sect p {
+    font-size: 13px;
+  }
+  .enoch-roadmap-schedule1,
+  .enoch-roadmap-schedule4,
+  .enoch-roadmap-schedule5 {
+    max-width: 158px;
+  }
+  .enoch-roadmap-schedule1 {
+    top: 22%;
+  }
+  .enoch-roadmap-schedule2 {
+    bottom: 3%;
+    max-width: 240px;
+  }
+  .enoch-roadmap-schedule3 {
+    max-width: 232px;
+  }
+  .enoch-roadmap-schedule4 {
+    right: 5%;
+  }
+  .enoch-roadmap-schedule5 {
+    right: 2%;
+    bottom: 21px;
+  }
+  .enochweb-roadmap-sect ul li {
+    font-size: 13px;
+  }
+  .enoch-invest-block-lft {
+    width: 100%;
+  }
+  .enoch-invest-block {
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .enoch-invest-block-right {
+    margin-top: 40px;
+  }
+  .partners-compny-list .pcompny-logo3 {
+    top: 41%;
+  }
+  .enochweb-nft-market-right {
+    align-items: center;
+  }
+  .enochweb-nft-market-lft {
+    max-width: 376px;
+  }
+  .enochweb-nft-market-lft h3 {
+    font-size: 38px;
+  }
+  .enochweb-nft-market-lft p {
+    font-size: 15px;
+  }
+  .mb-36 {
+    margin-bottom: 20px;
+  }
+  .nft-market-btngroup button {
+    max-width: 182px;
+  }
+  .enochweb-nft-market-lft h2 {
+    font-size: 22px;
+  }
+  .steps-innercontent p {
+    font-size: 10px;
+  }
+  .enochweb-team-members ul li {
+    width: 50%;
+  }
+  .enochweb-team-block-hd h3 {
+    font-size: 34px;
+  }
+  .enochweb-team-block-hd p {
+    font-size: 28px;
+  }
+  .enochweb-.team-sect {
+    padding-bottom: 40px;
+  }
+  .enochweb-adventure {
+    padding-top: 40px;
+  }
+  .steps-innercontent {
+    top: 47%;
+  }
+  .customsteps-pos {
+    top: 22%;
+  }
+  .substeps-img2 {
+    right: 6%;
+  }
+  /* End */
+  .enochweb-weHiring-content-block h2 {
+    font-size: 38px;
+  }
+  .enochweb-weHiring-content-block p {
+    font-size: 18px;
+    max-width: 530px;
+    margin-bottom: 30px;
+  }
+  .hiretablinks {
+    margin: 0px 12px;
+    font-size: 16px;
+  }
+  .hiretabContent p {
+    max-width: 462px;
+    font-size: 28px;
+  }
+  .enochweb-weHiring-sect {
+    height: 601px;
+  }
+  .enoch-contactblock-lft {
+    width: 60%;
+    margin-right: 30px;
+  }
+  .enoch-contactblock-lft {
+    width: 60%;
+    margin-right: 30px;
+  }
+  .contact-enochweb-floating-form-grp {
+    width: 100%;
+  }
+  .enochweb-floating-input,
+  .contact-drop-box {
+    height: 64px;
+  }
+  .enochweb-floating-label label {
+    top: 16px;
+  }
+  .contacttablinks {
+    font-size: 17px;
+  }
+  .enoch-contactblock-lft p {
+    margin-bottom: 30px;
+  }
+  .enoch-contactblock-right-block1 ul li {
+    margin-right: 10px;
+  }
+  .enoch-contactblock-right-block1 {
+    padding: 24px;
+  }
+  .contactblock-right-txt span {
+    font-size: 34px;
+    line-height: 23px;
+  }
+  .contactblock-right-txt {
+    font-size: 24px;
+  }
+  .contactblock-right-txt {
+    top: 20%;
+  }
+  .contactblock-help-txt span {
+    font-size: 32.8723px;
+  }
+  .contactblock-help-txt {
+    font-size: 28.5345px;
+  }
+  .enoch-contactblock-lft h3 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  .enochwb-location-txtBlock h3 {
+    font-size: 28px;
+  }
+  .enochwb-location-txtBlock p {
+    font-size: 22px;
+  }
+  .enochweb-contact-sect {
+    margin-bottom: 0px;
+  }
+  .enochweb-collapse-block-right {
+    width: 68%;
+  }
+  .enochweb-collapse-block-lft {
+    width: 34%;
+    margin-right: 20px;
+  }
+  .enochfaqtablinks {
+    font-size: 16px;
+  }
+  .cookie-policy-block-lft {
+    width: 40.5%;
+  }
+  .enochweb-header-coookiePolicy {
+    height: 295px;
+  }
+  .enochweb-invest-innerblock {
+    margin-left: 0;
+  }
+  .subscribeModal-steps ul li {
+    max-width: 234px;
+  }
+  .substeps-img1 {
+    max-width: 69px;
+    top: -4%;
+  }
+  .substeps-img4 {
+    max-width: 32px;
+  }
+  .substeps-img3 {
+    max-width: 90px;
+  }
+  .substeps-img2 {
+    max-width: 76px;
+  }
+  .enochweb-contact-submitted-lft h2 {
+    font-size: 56px;
+    line-height: 56px;
+  }
+  .enochweb-contact-submitted-lft h3 {
+    font-size: 90px;
+    line-height: 114px;
+  }
+  .contact-submitted-txt1 {
+    font-size: 20px;
+  }
+  .contact-submitted-txt2 {
+    font-size: 15px;
+  }
+  .enochweb-submitted-go {
+    width: 204px;
+    font-size: 20px;
+  }
+  .enochweb-submitted-back {
+    font-size: 20px;
+  }
+  .enochweb-contact-submitted-sect {
+    margin-top: 80px;
+  }
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 767px) {
+  /*new css*/
+
+  .enochweb-header-centent p {
+    max-width: 400px;
+  }
+  span.enochweb-top-hd {
+    max-width: 66px;
+  }
+  .enochweb-header-centent {
+    height: 486px;
+  }
+  .enochweb-header-img {
+    margin-top: 118px;
+    max-width: 400px;
+  }
+  .enochweb-explore-sect h2 {
+    font-size: 22px;
+    line-height: 128%;
+  }
+  .enoch-home-explore-item ul,
+  .enoch-home-makemoney-item ul,
+  .promoteBrand-list ul {
+    flex-direction: column;
+  }
+  .enoch-home-explore-item ul li,
+  .enoch-home-makemoney-item ul li,
+  .promoteBrand-list ul li {
+    max-width: 100%;
+    width: 100%;
+  }
+  .enochweb-do-stuff-block-lft {
+    text-align: center;
+  }
+  .makemoney-hd-img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .makemoney-hd-txt {
+    text-align: center;
+  }
+  .promoteBrand-hd-content h3 {
+    font-size: 28px;
+  }
+  .promoteBrand-hd-content p {
+    font-size: 18px;
+  }
+  .promote-reminder-block {
+    height: 350px;
+  }
+  .behind-enoch-block {
+    flex-direction: column;
+  }
+  .behind-enoch-block-lft {
+    width: 100%;
+  }
+  .behind-enoch-block-right {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .enoch-invest-block-lft {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+  .partners-investors-hd h3 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .enochweb-nft-market-block {
+    flex-direction: column;
+  }
+  .enochweb-nft-market-lft {
+    max-width: 100%;
+    text-align: center;
+  }
+  .enochweb-nft-market-lft h2 {
+    font-size: 20px;
+  }
+  .enochweb-nft-market-lft h3 {
+    font-size: 28px;
+  }
+  .enochweb-nft-market-lft p {
+    font-size: 13px;
+  }
+  .enoch-home-explore-item ul li,
+  .enoch-home-makemoney-item ul li,
+  .promoteBrand-list ul li {
+    text-align: center;
+  }
+  .promote-card-hd-img {
+    height: auto;
+  }
+  .enochweb-do-stuff-block {
+    margin-left: 0;
+  }
+  .enochweb-do-stuff-block-right {
+    width: 100%;
+    margin-left: auto;
+    max-width: 79%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .enochweb-do-stuff-block-lft {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .subscribeModal-steps ul {
+    flex-direction: column;
+  }
+  .subscribeModal-steps ul li {
+    max-width: 100%;
+  }
+  .subscribeModal-line {
+    transform: rotate(90deg);
+    margin-top: 9%;
+    margin-bottom: 9%;
+  }
+  .subscribeModal-subscribeform {
+    flex-direction: column;
+  }
+  .subscribeModal-subscribeform {
+    width: 100%;
+  }
+  .subscribeModal-subscribeform input,
+  .subscribeform-bttn2 {
+    max-width: 100%;
+    margin-right: 0px;
+    margin-top: 16px;
+  }
+  .subscribeform-bttm-txt {
+    padding-left: 0px;
+    text-align: center;
+  }
+  .enochweb-header-team {
+    height: 366px;
+  }
+  .enochweb-header-career {
+    height: 254px;
+  }
+  /* End  */
+  .enochweb-career-block-hd h3 {
+    font-size: 38px;
+  }
+  .enochweb-career-block-hd p {
+    font-size: 22px;
+  }
+  .enochweb-career-perkBnifit-sect h2 {
+    font-size: 38px;
+  }
+  .enochweb-career-perkBnifit-sect ul li {
+    width: 48%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .enochweb-perkBnifit-block h3 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .enochweb-perkBnifit-block p {
+    font-size: 15px;
+    max-width: 100%;
+  }
+  .enochweb-ceate-foundation-sect h2 {
+    font-size: 32px;
+  }
+  .enochweb-ceate-foundation-sect p {
+    font-size: 18px;
+  }
+  .enochweb-wprkWant-sect h2 {
+    font-size: 22px;
+  }
+  .enochweb-wprkWant-sect h3 {
+    font-size: 32px;
+  }
+  .enochweb-wprkWant-sect p {
+    font-size: 18px;
+  }
+  .enochweb-wprkWant-countryList ul {
+    font-size: 14px;
+  }
+  .enochweb-weHiring-content-block h2 {
+    font-size: 28px;
+  }
+  .enochweb-weHiring-content-block p {
+    font-size: 13px;
+    max-width: 376px;
+    margin-bottom: 20px;
+  }
+  .hiretablinks {
+    margin: 0px 7px;
+    font-size: 13px;
+  }
+  .hiretabContent p {
+    max-width: 290px;
+    font-size: 18px;
+  }
+  .hiretabContent {
+    margin-top: 24px;
+  }
+  .enochweb-contact-block {
+    flex-direction: column;
+  }
+  .enoch-contactblock-lft {
+    width: 100%;
+    margin-right: 0px;
+    text-align: center;
+  }
+  .enoch-contactblock-right {
+    margin-top: 32px;
+    width: 100%;
+  }
+  .contactblock-right-img img,
+  .contactblock-help-img img {
+    width: 100%;
+  }
+  .enochweb-contact-bttn {
+    width: 100%;
+  }
+  .enochweb-faq-head h3 {
+    font-size: 36px;
+  }
+  .enochweb-faq-head p {
+    font-size: 22px;
+  }
+  .enochweb-collapse-block {
+    flex-direction: column;
+  }
+  .enochweb-collapse-block-lft,
+  .enochweb-collapse-block-right {
+    width: 100%;
+  }
+  .enochweb-collapse-block-right {
+    margin-top: 40px;
+  }
+  .enochweb-panel-title.collapsed::after,
+  .enochweb-panel-title::after {
+    width: 38px;
+    height: 38px;
+  }
+  .enochweb-header-Faq {
+    height: 283px;
+  }
+  .enochweb-collapse-block-lft {
+    margin-right: 0;
+  }
+  .enochweb-cookiePolicy-sect {
+    margin-top: 60px;
+  }
+  .cookie-policy-block {
+    flex-direction: column;
+  }
+  .cookie-policy-block-lft {
+    width: 100%;
+    text-align: center;
+  }
+  .cookie-policy-block-right {
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .enochweb-contact-submited-innerblock {
+    flex-direction: column-reverse;
+  }
+  .enochweb-contact-submitted-lft {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .enochweb-contact-submitted-lft h3 {
+    font-size: 78px;
+    line-height: 114px;
+  }
+  .enochweb-submitted-go {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .enochweb-submitted-back {
+    width: 100%;
+  }
+  .enochweb-header-contact-submited {
+    padding-bottom: 70px;
+  }
+  .subscribeModal-content {
+    margin-top: 80px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /*new css*/
+  .enochweb-header-img {
+    max-width: 240px;
+  }
+  .enochweb-header-centent p {
+    max-width: 347px;
+    padding: 0px 20px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .makemoney-hd-icon {
+    max-width: 88px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .promote-brand-TAC-right h3 {
+    font-size: 15px;
+  }
+  .promote-brand-TAC-right h4 {
+    font-size: 17px;
+  }
+  .promote-brand-TAC-right p {
+    font-size: 13px;
+  }
+  promote-brand-TAC-right img {
+    max-width: 64px;
+  }
+  .enochweb-roadmap-sect h3 {
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+  .enochweb-roadmap-sect p {
+    font-size: 8px;
+    line-height: 11px;
+  }
+  .enoch-roadmap-schedule1,
+  .enoch-roadmap-schedule2,
+  .enoch-roadmap-schedule3,
+  .enoch-roadmap-schedule4,
+  .enoch-roadmap-schedule5 {
+    max-width: 104px;
+  }
+  .enochweb-roadmap-sect ul li {
+    font-size: 7px;
+    line-height: 10px;
+  }
+  .enochweb-roadmap-sect ul {
+    margin-left: 10px;
+  }
+  .enochweb-roadmap-sect {
+    padding: 100px 0px;
+  }
+  .enoch-roadmap-schedule4 {
+    top: 15%;
+  }
+  .enoch-roadmap-schedule1 {
+    top: 29%;
+  }
+  .enoch-roadmap-schedule2 {
+    bottom: 8%;
+    left: 28%;
+  }
+  .enoch-roadmap-schedule3 {
+    top: 7%;
+    left: 24%;
+  }
+  .enoch-roadmap-schedule5 {
+    bottom: 15px;
+  }
+  .enoch-invest-block-lft h3 {
+    font-size: 38px;
+  }
+  .partners-compny-list {
+    height: 300px;
+  }
+  .partners-compny-listBlock1 {
+    height: 113px;
+  }
+  .partners-compny-list .pcompny-logo1 {
+    padding: 20px 10px;
+    height: auto;
+    top: 48%;
+  }
+  .partners-compny-list .pcompny-logo2 {
+    max-width: 33%;
+    width: 100%;
+    top: 0px;
+    padding: 10px 20px;
+    height: auto;
+  }
+  .partners-compny-list .pcompny-logo3 {
+    top: 29%;
+  }
+  .partners-compny-list .pcompny-logo4 {
+    max-width: 24%;
+    width: 100%;
+    padding: 20px 15px;
+    height: auto;
+  }
+  .partners-compny-list .pcompny-logo5 {
+    max-width: 24%;
+    padding: 11px;
+    height: auto;
+  }
+  .partners-compny-list .pcompny-logo6 {
+    max-width: 24%;
+    padding: 11px;
+    height: auto;
+    top: 60px;
+  }
+  .partners-compny-list .pcompny-logo7 {
+    top: 25px;
+    max-width: 25%;
+    padding: 18px 15px;
+    height: auto;
+  }
+  .partners-compny-list .pcompny-logo8 {
+    top: 35px;
+    max-width: 20%;
+    padding: 17px 10px;
+    height: auto;
+  }
+  .partners-compny-list {
+    height: auto;
+    margin-bottom: 80px;
+  }
+  .nft-market-btngroup button {
+    max-width: 125px;
+  }
+  .enochweb-do-stuff-block-lft {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .enochweb-do-stuff-block-lft ul {
+    flex-direction: column;
+  }
+  .enochweb-do-stuff-block-lft ul li {
+    width: 100%;
+  }
+  .enochweb-do-stuff-block {
+    margin-left: 0;
+  }
+  .enochweb-do-stuff-block-right {
+    width: 100%;
+    margin-left: auto;
+    max-width: 79%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .enochweb-do-stuff-block-right {
+    height: 347px;
+  }
+  .stuff-block-img {
+    margin: 24px;
+  }
+  .do-stuff-img {
+    width: 80px;
+    height: 80px;
+    left: -58px;
+  }
+  .promote-brand-TAC {
+    flex-direction: column;
+    height: auto;
+  }
+  .promote-brand-TAC-lft {
+    width: 100%;
+  }
+  .promote-brand-TAC-lft {
+    padding: 20px;
+    background: #c66802;
+  }
+  .promote-brand-TAC-lft {
+    width: 100%;
+  }
+  .promote-brand-TAC-right {
+    padding: 20px;
+    width: 100%;
+  }
+  .promote-card-content {
+    flex-direction: column;
+  }
+  .promote-card-content-lft {
+    width: 100%;
+  }
+  .promote-addcart-brn button {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .partners-compny-list {
+    background-position: top;
+  }
+  .market-mbl2 {
+    margin-left: -22px;
+  }
+  .enochweb-learnmo-bttn {
+    width: 100%;
+    height: 56px;
+  }
+  .subscribeModal-line {
+    margin-top: 13%;
+  }
+  .subscribeModal-steps-content .substeps-txt {
+    top: 0%;
+    right: -2px;
+  }
+  .enochweb-header-team {
+    height: 240px;
+  }
+  .enochweb-header-career {
+    height: 204px;
+  }
+  .enochweb-team-block-hd h3 {
+    font-size: 28px;
+  }
+  .enochweb-team-block-hd p {
+    font-size: 24px;
+  }
+  .enochweb-team-members ul li {
+    width: 100%;
+  }
+  .enochweb-adventure-block {
+    flex-direction: column;
+  }
+  .enochweb-adventure-left {
+    margin-bottom: 40px;
+  }
+  .enochweb-adventureright h3 {
+    font-size: 32px;
+  }
+  .enochweb-adventureright {
+    max-width: 100%;
+    text-align: center;
+    margin-left: 0px;
+  }
+  .jointeam-btn {
+    width: 100%;
+  }
+  .subscribeModal-head {
+    margin-top: 60px;
+  }
+  /* End  */
+  .enochweb-career-perkBnifit-sect ul li {
+    width: 100%;
+  }
+  .enochweb-perkBnifit-block p {
+    font-size: 17px;
+  }
+  .enochweb-ceate-foundation-sect h2 {
+    font-size: 28px;
+  }
+  .enochweb-ceate-foundation-sect p {
+    font-size: 16px;
+  }
+  .enochweb-wprkWant-sect h3 {
+    font-size: 28px;
+  }
+  .enochweb-wprkWant-countryList {
+    padding: 30px 18px;
+  }
+  .enochweb-weHiring-tabBlock ul {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .enochweb-weHiring-sect {
+    padding-top: 20px;
+  }
+  .enochweb-weHiring-sect {
+    height: 697px;
+  }
+  .enochweb-weHiring-sect {
+    height: 706px;
+    margin-bottom: -185px;
+  }
+  .enochweb-weHiring-content-block {
+    padding-top: 28%;
+  }
+  .enochweb-weHiring-content-block h2 {
+    font-size: 24px;
+  }
+  .enochweb-weHiring-content-block p {
+    font-size: 13px;
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+  .enochweb-weHiring-content-block {
+    background-size: 100% 72%;
+  }
+  .enochweb-header-contact {
+    height: 182px;
+  }
+  .contacttablinks {
+    font-size: 12px;
+    padding: 5px 0px;
+  }
+  .contact-tab-head {
+    font-size: 14px;
+  }
+  .contact-tab-head {
+    font-size: 14px;
+  }
+  .enoch-contactblock-lft h3 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .enochweb-contact-sect {
+    margin-top: 40px;
+  }
+  .enoch-contactblock-lft p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .enochweb-floating-input {
+    font-size: 15px;
+  }
+  .enochweb-floating-label label {
+    font-size: 15px;
+  }
+  .enochweb-floating-label label {
+    top: 18px;
+  }
+  .coontactcheckbox-container {
+    text-align: left;
+    font-size: 13px;
+  }
+  .contact-submit-btn {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 15xp;
+  }
+  .contactblock-right-txt {
+    top: 30%;
+    left: 30%;
+  }
+  .enochweb-locationBlock ul li {
+    width: 100%;
+  }
+  .enochwb-location-txtBlock h3 {
+    font-size: 22px;
+  }
+  .enochwb-location-txtBlock p {
+    font-size: 16px;
+  }
+  .enochweb-header-Faq {
+    height: 186px;
+  }
+  .enochweb-header-coookiePolicy {
+    height: 164px;
+  }
+  .enochweb-header-tag {
+    bottom: 22px;
+  }
+  .enochwen-cookiePolicy-headline h2 {
+    font-size: 28px;
+  }
+  .cookie-policy-privacy-body h2 {
+    font-size: 24px;
+  }
+  .cookie-policy-privacy-body p {
+    font-size: 15px;
+  }
+  .cookie-policy-privacy-body h3 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+}
+@media only screen and (max-width: 320px) {
+  .partners-compny-list .pcompny-logo2 {
+    top: 26px;
+  }
+}

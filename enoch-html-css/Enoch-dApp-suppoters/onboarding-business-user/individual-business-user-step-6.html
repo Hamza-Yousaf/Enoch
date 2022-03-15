@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Onboarding</title>
+	<!-- Fav Icons -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/onboarding-newstyle.css" />
+</head>
+<body>
+	<div class="container-fluid">
+	
+	<div class="row">	
+		<div class="onboarding-new-container container-bg2">
+			<div class="onboard-individual-body">
+				<div class="onboard-business-logo"><img src="images/businessNewLogo.png" class="img-fluid" alt="logo"/></div>
+				<div class="onboard-business-bottm-img"><img src="images/business-img.png" class="img-fluid" alt="logo"/></div>
+				
+				<div class="onboard-business-innerbody">
+					<div class="onboard-business-progressBlock">
+						<div class="onboard-business-progressbar">
+							<div class="onboard-business-progressbar-inner progress-100">
+							
+							</div>
+						</div>
+						<div class="onboard-business-bottmVal">
+							<span><img src="images/back-arrow.png" class="img-fluid mr-2" alt="back"/>GO BACK</span>
+							<span>6/6</span>
+						</div>
+					</div>
+					
+					<div class="onboard-business-chooseAv-block">
+						<div class="onboard-business-chooseAv-left">
+							<div class="onboard-business-hd">
+								<h2>Choose your avatar</h2>
+								<p>Create mind blowing profile in a flash!</p>
+							</div>
+							<h3>Create mind blowing profile in a flash!</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+						<div class="business-avatar-gal">
+							<ul>
+								<li><img src="images/avatr-pic1.png" class="img-fluid" alt="avatar"/></li>
+								<li><img src="images/avatr-pic6.png" class="img-fluid" alt="avatar"/></li>
+								<li><img src="images/avatr-pic11.png" class="img-fluid" alt="avatar"/></li>
+								<li><img src="images/avatr-pic16.png" class="img-fluid" alt="avatar"/></li>
+								<li><img src="images/avatr-pic2.png" class="img-fluid" alt="avatar"/></li>
+								<li><img src="images/avatr-pic7.png" class="img-fluid" alt="avatar"/></li>
+								<li><img src="images/avatr-pic12.png" class="img-fluid" alt="avatar"/></li>
+								<li><img src="images/avatr-pic17.png" class="img-fluid" alt="avatar"/></li>
+								<li><img src="images/avatr-pic3.png" class="img-fluid" alt="avatar"/></li>
+								<li><img src="images/avatr-pic8.png" class="img-fluid" alt="avatar"/></li>
+								<li><img src="images/avatr-pic13.png" class="img-fluid" alt="avatar"/></li>
+								<li><img src="images/avatr-pic18.png" class="img-fluid" alt="avatar"/></li>
+								<li><img src="images/avatr-pic4.png" class="img-fluid" alt="avatar"/></li>
+								<li><img src="images/avatr-pic9.png" class="img-fluid" alt="avatar"/></li>
+								<li><img src="images/avatr-pic14.png" class="img-fluid" alt="avatar"/></li>
+								<li><img src="images/avatr-pic19.png" class="img-fluid" alt="avatar"/></li>
+								<li class="mb-0"><img src="images/avatr-pic5.png" class="img-fluid" alt="avatar"/></li>
+								<li class="mb-0"><img src="images/avatr-pic10.png" class="img-fluid" alt="avatar"/></li>
+								<li class="mb-0"><img src="images/avatr-pic15.png" class="img-fluid" alt="avatar"/></li>
+								<li class="mb-0"><img src="images/avatr-pic20.png" class="img-fluid" alt="avatar"/></li>
+							</ul>
+							<div class="avatar-gal-overlay">
+								HELLO<br/> GET YOUR<br/> AVATAR
+							</div>
+						</div>
+					</div>
+					<div class="onboard-busines-nxt"><button id="selectothers-cont-btn" class="bunsinss-nxt-bttn">Next</button></div>
+				</div>
+				
+			</div>
+		</div>
+		
+	
+	</div>
+
+	</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+	//For modal
+	document.addEventListener('click', function (e) {
+	        e = e || window.event;
+	        var target = e.target || e.srcElement;
+
+	        if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') 
+	        {
+	            if (target.hasAttribute('data-target')) 
+	            {
+	                var m_ID = target.getAttribute('data-target');
+	                document.getElementById(m_ID).classList.add('open');
+	            }
+	        }
+
+	        // Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
+	        if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') ||target.classList.contains('modal')) {
+	            var modal = document.querySelector('.modal.open');
+	            modal.classList.remove('open');
+	        }
+        }, false);
+		//close first popup window
+	var selectmodal = document.getElementById("onboard-selectOthers-modal");
+	var btnmodal = document.getElementById("selectothers-cont-btn");
+	btnmodal.onclick = function() {
+		selectmodal.classList.remove('open');
+	}
+</script>
+ 
+
+</body>
+
+</html>

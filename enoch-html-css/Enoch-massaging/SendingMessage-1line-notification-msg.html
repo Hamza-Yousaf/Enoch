@@ -1,0 +1,1702 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Messaging</title>
+  <!-- Fav Icons -->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/dashboard-header.css" rel="stylesheet" />
+    <link href="css/dashboard-style.css" rel="stylesheet" />  
+    <link rel="stylesheet" href="css/OnBoardingJourney.css" />
+    <link rel="stylesheet" href="css/dApp-S-home.css" />
+	<link rel="stylesheet" href="css/comunitySettings.css" />
+    <link rel="stylesheet" href="css/massaging.css" />
+    <link rel="stylesheet" href="css/massaging-dp.css" />
+</head>
+
+<body>
+  <div class="container-fluid dashboard-body-bg second-body-bg">
+    <div class="row">
+      <header class="custom-header">
+        <div class="ezl-dashboard-header">
+          <div class="menu-left">
+            <div class="menu-wrap">
+              <!--trade menu-->
+              <a href="#menu" class="menu-link" onclick="tradeFunction()"><img src="images/Menu.png" alt="Menu"
+                  class="img-fluid"></a>
+              <div class="tradecontainer" id="trademenu-drpdown">
+                <div class="trade-menu-panel-panel-group" id="accordionMenu" role="tablist" aria-multiselectable="true">
+                  <div class="trade-menu-panel">
+                    <div class="trade-menu-heading" role="tab">
+                      <h4 class="trade-menu-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseOne"
+                          aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                          <span><img src="images/Over.png" class="img-fluid" alt="Overview"></span>Overview
+                        </a>
+                      </h4>
+                    </div>
+
+                  </div>
+                  <div class="trade-menu-panel">
+                    <div class="trade-menu-heading" role="tab" id="headingTwo">
+                      <h4 class="trade-menu-title">
+                        <a class="trade-dropmenu collapsed" role="button" data-toggle="collapse"
+                          data-parent="#accordionMenu" href="#collapseTwo" aria-expanded="false"
+                          aria-controls="collapseTwo">
+                          <span><img src="images/Borrow.png" class="img-fluid trade-menu-icon" alt="Trade"><img
+                              src="images/Borrow2.png" class="img-fluid trade-menu-icon-active" alt="Trade"></span>Trade
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo" class="trade-menu-collapse collapse" role="tabpanel"
+                      aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
+                      <ul class="nav">
+                        <li><a href="#!">Swap</a></li>
+                        <li><a href="#!" class="trade-menuItem-active">Liquidity</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="trade-menu-panel">
+                    <div class="trade-menu-heading" role="tab" id="headingThree">
+                      <h4 class="trade-menu-title">
+                        <a class="collapsed trade-dropmenu" role="button" data-toggle="collapse"
+                          data-parent="#accordionMenu" href="#collapseThree" aria-expanded="false"
+                          aria-controls="collapseThree">
+                          <span><img src="images/pools.png" class="img-fluid trade-menu-icon" alt="pools"><img
+                              src="images/pools2.png" class="img-fluid trade-menu-icon-active" alt="pools"></span>Pools
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseThree" class="trade-menu-collapse collapse" role="tabpanel"
+                      aria-labelledby="headingThree" aria-expanded="false">
+                      <ul class="nav">
+                        <li><a href="#!" class="trade-menuItem-active">Entertainment Pools</a>
+                        </li>
+                        <li><a href="#!">NFT Farming Pools</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+                  <div class="trade-menu-panel">
+                    <div class="trade-menu-heading" role="tab" id="headingFour">
+                      <h4 class="trade-menu-title">
+                        <a class="collapsed trade-dropmenu" role="button" data-toggle="collapse"
+                          data-parent="#accordionMenu" href="#collapseFour" aria-expanded="false"
+                          aria-controls="collapseFour">
+                          <span><img src="images/menuStacking.png" class="img-fluid trade-menu-icon" alt="Staking"><img
+                              src="images/menuStacking2.png" class="img-fluid trade-menu-icon-active"
+                              alt="Staking"></span>Staking
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseFour" class="trade-menu-collapse collapse" role="tabpanel"
+                      aria-labelledby="headingFour" aria-expanded="false">
+
+                      <ul class="">
+                        <li><a href="#!">Enoch Staking</a></li>
+                        <li><a href="#!" class="trade-menuItem-active">NFT staking</a></li>
+                      </ul>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="header-logo"><a href="javascript:void(0)"><img src="images/logo.png" alt="logo"
+                  class="img-fluid"></a></div>
+          </div>
+          <div class="menuright-side">
+            <div class="right-search">
+              <form class="search-form">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Fund, ISIN, Keyword ">
+                  <button class="search-form-btn" type="Submit"><img class="search-img" src="images/search.png"
+                      alt="search"></button>
+                </div>
+              </form>
+            </div>
+            <div class="menu-mid-sect">
+              <ul id="submenubar">
+                <li class="submenubar-item">
+                  <div class="menu-times-notifi"><img src="images/home.png" alt="home" class="img-fluid"></div>
+                  <a href="javascript:void(0)">Home</a>
+                </li>
+
+                <li class="submenubar-item">
+                  <div class="menu-times-notifi"><img src="images/Chat.png" alt="Chat" class="img-fluid"><span>0</span>
+                  </div>
+                  <a href="javascript:void(0)">Messaging</a>
+                </li>
+                <li class="ether-block">
+                  <div class="menu-times-notifi mr-2"><img src="images/Ethereum.png" alt="Ethereum" class="img-fluid">
+                  </div>
+                  <a href="javascript:void(0)">ETH Mainnet <i class="fa fa-angle-right"></i></a>
+                </li>
+                <li class="connect-wallet-block">
+
+                  <a href="javascript:void(0)">Connect Wallet</a>
+                </li>
+                <li class="connect-wallet-block">
+
+                  <a href="javascript:void(0)"><span><img src="images/cart.png" class="img-fluid mr-2"></span>Cart</a>
+                </li>
+
+              </ul>
+              <div class="toggle-menu">
+                <div onclick="subtogglediv('submenubar','submenu-toggle');" class="d-inline-block">
+                  <i class="fa fa-bars" aria-hidden="true" id="submenu-toggle"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="ezl-notificaion">
+              <div class="position-relative notificaion-dropdown ezl-notificaion-marg">
+                <a href="javascript:void(0)" class="popup"><img src="images/help.png" alt="help"></a>
+
+              </div>
+              <div class=" position-relative notificaion-dropdown">
+                <a href="javascript:void(0)" class="popup"><img src="images/alertBell.png" alt="Bell"><span
+                    class="notificaion-spn">10</span></a>
+
+              </div>
+            </div>
+            <div class="ezl-user-ac">
+
+              <div class="account-d dropdown">
+                <div class="dropdown-buttn"><span class="popup" onclick="popupFunction()">
+                    <div class="user-img"><img src="images/user-ReginaCooper.png" alt="user image" class="img-fluid">
+                    </div>
+                  </span>
+                  <div class="popupbox dropdown-menu" id="myPopup">
+
+                    <ul class="">
+                      <li>
+                        <div class="enoch-usr-prof"><span><img src="images/user-pro-pic.png" class="img-fluid mr-1"
+                              alt="profile- pic">
+                            @Hulk66</span><span><a href="#!">Change</a></span></div>
+                      </li>
+                      <li>
+                        <div class="enoch-usr-status-block">
+                          <div class="usr-status-left">Online Status</div>
+                          <div class="usr-status-right">
+                            <div class="post-switch">
+                              <label class="postswitch">
+                                <input type="checkbox" checked="">
+                                <span class="post-slider round"></span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="enoch-usr-status-block"><a href="#!">Become Creator </a>
+                        </div>
+                        <div class="enoch-usr-status-block mb-0"><a href="#!" class="enoch-blue-clr">Your Public
+                            Profile</a></div>
+                      </li>
+                      <li>
+                        <div class="enoch-usr-status-block"><a href="#!">Setting </a></div>
+                        <div class="enoch-usr-status-block"><a href="#!">Help Center</a></div>
+                        <div class="enoch-usr-status-block mb-0"><a href="#!" class="orange-clr">Upgrade to Premium</a>
+                        </div>
+                      </li>
+                      <li class="mt-4">
+                        <div class="enoch-usr-status-block mb-0">Wallet <span><a href="#!"
+                              class="btn freebonus-btn">$400 </a></span></div>
+                      </li>
+                      <li class="mt-4 pb-0">
+                        <div class="enoch-usr-status-block mb-0 manage-ac">
+                          <h3>Manage</h3>
+                          <ul>
+                            <li>
+                              <div class="manage-ac-block">
+                                <span>Comapny: </span>
+                                <span class="ml-1"><img src="images/man-icon1.png" class="img-fluid mr-1"
+                                    alt="user">88mph </span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="manage-ac-block">
+                                <span>Comapny: </span>
+                                <span class="ml-1"><img src="images/man-icon2.png" class="img-fluid mr-1"
+                                    alt="user">CryptoBlue
+                                </span>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+
+                      </li>
+                      <li class="mb-0 pb-0">
+                        <div class="enoch-usr-status-block mb-0"><a href="#!" class="post-red-clr">Logout</a></div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dApp-menu-btn">
+          <a href="#!"><img src="images/LeftSide-Menu.png" alt="menu" class="img-fluid" data-toggle="modal"
+              data-target="right-top-modal" /></a>
+          <div class="right-top-modal-block">
+            <div id="right-top-modal" class="modal fade">
+              <!-- Modal content -->
+              <div class="modal-content right-top-modal-content">
+                <span class="close"><img src="images/postCross2.png" alt="close" class="img-fluid"
+                    data-dismiss="modal"></span>
+                <div class="right-top-body-block">
+                  <div class="right-top-body-block-lft">
+                    <form class="right-search-form">
+                      <div class="right-form-group">
+                        <img src="images/help-Search.png" class="img-fluid" alt="search" /><input type="text"
+                          class="form-control" placeholder="Search menu...">
+
+                      </div>
+                    </form>
+                    <div class="enoch-community-scrollable">
+                      <div class="enoch-menu-block-panel">
+                        <div class="enoch-menu-block-lft">
+                          <div class="enoch-menu-block-items">
+                            <h2>Personal</h2>
+                            <ul>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon1.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">NFT Vault </a>
+                                  <p>Organise or find events and other things
+                                    to do online and nearby</p>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon2.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Earning </a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon28.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Wallet</a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+
+                                </div>
+                              </li>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon3.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Billing</a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon29.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Membership</a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon35.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Ranking</a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+                                </div>
+                              </li>
+
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon4.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Affiliate</a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="enoch-menu-block-items">
+                            <h2>Entertainment</h2>
+                            <ul>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon11.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Popular</a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+
+                                </div>
+                              </li>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon30.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Casino</a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+
+                                </div>
+                              </li>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon31.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Sports</a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+
+                                </div>
+                              </li>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon32.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Games</a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+
+                                </div>
+                              </li>
+
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon16.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Promotions</a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="enoch-menu-block-items">
+                            <h2>Advertising</h2>
+                            <ul>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon19.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Ad Manager </a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+
+                                </div>
+                              </li>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon20.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Enoch Ad</a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+
+                                </div>
+                              </li>
+
+                            </ul>
+                          </div>
+                          <div class="enoch-menu-block-items mb-0">
+                            <h2>User Setting </h2>
+                            <ul>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon26.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Your Profile </a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+
+                                </div>
+                              </li>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon27.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Your Account</a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+
+                                </div>
+                              </li>
+
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="enoch-menu-block-right">
+                          <div class="enoch-menu-block-items">
+                            <h2>Social</h2>
+                            <ul>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon5.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">My Networks</a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+
+                                </div>
+                              </li>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon6.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Communities</a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+
+                                </div>
+                              </li>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon33.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Creator Portals </a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+
+                                </div>
+                              </li>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon36.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Livezone</a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+
+                                </div>
+                              </li>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon8.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Company pages </a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+
+                                </div>
+                              </li>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon9.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Events</a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+
+                                </div>
+                              </li>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon37.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">News Feed </a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="enoch-menu-block-items">
+                            <h2>Shopping</h2>
+                            <ul>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon34.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Digital Marketplace</a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+
+                                </div>
+                              </li>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon38.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Enoch Shops</a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="enoch-menu-block-items">
+                            <h2>Jobs</h2>
+                            <ul>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon18.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Remote workhub</a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+
+                                </div>
+                              </li>
+
+                            </ul>
+                          </div>
+                          <div class="enoch-menu-block-items">
+                            <h2>Developer</h2>
+                            <ul>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon21.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Develop</a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+
+                                </div>
+                              </li>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon22.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Grow</a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+
+                                </div>
+                              </li>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon23.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Monetisation </a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+
+                                </div>
+                              </li>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon24.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Github</a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+
+                                </div>
+                              </li>
+                              <li>
+                                <div class="right-modal-lft"><img src="images/menu-icon25.png" class="img-fluid"
+                                    alt="planner" /></div>
+                                <div class="right-modal-right">
+                                  <a href="#!">Docs</a>
+                                  <p>Organise or find events and other things to do
+                                    online and nearby</p>
+
+                                </div>
+                              </li>
+
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right-top-body-block-right">
+                    <h3>Create</h3>
+                    <ul>
+                      <li><a href="#!"><span><img src="images/creat-icon1.png" class="img-fluid" alt="icon" /></span>
+                          Post</a></li>
+                      <li><a href="#!"><span><img src="images/creat-icon2.png" class="img-fluid" alt="icon" /></span>
+                          Community</a></li>
+                      <li><a href="#!"><span><img src="images/creat-icon5.png" class="img-fluid" alt="icon" /></span>
+                          Event</a></li>
+                      <li><a href="#!"><span><img src="images/creat-icon10.png" class="img-fluid" alt="icon" /></span>
+                          NFT</a></li>
+                      <li><a href="#!"><span><img src="images/creat-icon11.png" class="img-fluid" alt="icon" /></span>
+                          Reel</a></li>
+                      <li><a href="#!"><span><img src="images/creat-icon14.png" class="img-fluid" alt="icon" /></span>
+                          Company page </a></li>
+                      <li><a href="#!"><span><img src="images/creat-icon12.png" class="img-fluid" alt="icon" /></span>
+                          Group</a></li>
+                      <li><a href="#!"><span><img src="images/creat-icon7.png" class="img-fluid" alt="icon" /></span>
+                          Job</a></li>
+                      <li><a href="#!"><span><img src="images/creat-icon13.png" class="img-fluid" alt="icon" /></span>
+                          AD </a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="row">
+      <div class="massaging-dashboard-container">
+        <div class="messaging-body-sect">
+          <div class="Enoch-massage-left-col-sect">
+            <div class="Enoch-massage-home-btn-col">
+              <div class="sidebarChatButton">
+                <ul>
+                  <li>
+                    <a href="">
+                      <span class="icon1"><img src="images/masseging-home-btn-icon.svg" alt="">
+                        
+                       </span>
+                      
+                    </a>
+                    
+                  </li>
+                 
+                  <li>
+                    <a href="">
+                      <span class="icon"><img class="user_online_icon"  src="images/user-2.png" alt="">
+                        <div class="sidebarUserChatNumber">1</div>
+                       </span>
+                      <span class="title">Helloowl</span>
+                    </a>
+                    
+                  </li>
+                </ul>
+              </div>
+                  <div class="sidebarChatButton bottomChat">
+                    <ul class="sidebarUserList">
+                      <li class="sidebarUserListLiblue"></li>
+                      <li class="sidebarUserListLidarkblue"></li>
+                      <li class="sidebarUserListLiblack">
+                        <img class="plus_server_icon" src="images/Plus_avex_server.png" alt="">
+                      </li>
+                      <li class="sidebarUserListLigreen">
+                        <img class="plus_server_icon" src="images/compass_avex.png" alt="">
+                      </li>
+                    </ul>
+                  </div>
+
+                
+                <!-- <div class="Enoch-massage-home-btn-col-servers">
+                  <span><img src="images/blue-server-icon.svg" alt="icon" class="img-fluid"></span>
+  
+                </div>
+                <div class="Enoch-massage-home-btn-col-servers">
+                  <span><img src="images/Server-Name2-purple.svg" alt="icon" class="img-fluid"></span>
+                </div> 
+                <div class="Enoch-massage-home-btn-col-servers">
+                  <span><img src="images/Add-Server-plus-icon.svg" alt="icon" class="img-fluid"></span>
+                </div>
+                <div class="Enoch-massage-home-btn-col-servers">
+                  <span><img src="images/PublicServers-green-icon.svg" alt="icon" class="img-fluid"></span>
+                </div> -->
+              </div>
+            <div class="Find-start-conversation-sect">
+              <div class="Find-start-conversation-headings">
+                <input type="text" placeholder="Find or start a conversation">
+              </div>
+              <div class="Find-start-conversation-body">
+                <div class="Find-start-conversation-friends-sect">
+                  <span><img src="images/friends-Icon.svg" alt="icon" class="img-fluid" /></span>
+                  <h3>Friends</h3>
+                </div>
+                <div class="DIRECT-MESSAGES-sect">
+                  <h3>DIRECT MESSAGES</h3>
+                  <span><img src="images/massage-Plus.svg" alt="img" class="img-fluid" /></span>
+                </div>
+                
+                <div class="Find-start-conversation-Chat-list">
+                    <ul>
+                        <li>
+                          <div class="Find-start-conversation-Chat-list-users">
+                            <div class="Find-start-conversation-Chat-list-user-dp">
+                              <img src="images/follow-user-dp13.png" alt="img" class="img-fluid">
+                              <span class="userstatus-available"></span>
+                            </div>
+                            <div class="Find-start-conversation-Chat-list-text">
+                              <h4>@Ruangsunyi</h4>
+                              <p>Design grafis dan ilusyrator...</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="Find-start-conversation-Chat-list-users">
+                            <div class="Find-start-conversation-Chat-list-user-dp">
+                              <img src="images/follow-user-dp14.png" alt="img" class="img-fluid">
+                              <span class="userstatus-available"></span>
+                            </div>
+                            <div class="Find-start-conversation-Chat-list-text">
+                              <h4>@Helloowl</h4>
+                              <p>Design grafis dan ilusyrator...</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="Find-start-conversation-Chat-list-users">
+                            <div class="Find-start-conversation-Chat-list-user-dp">
+                              <img src="images/user-2.png" alt="img" class="img-fluid">
+                              <span class="userstatus-unavailable"></span>
+                            </div>
+                            <div class="Find-start-conversation-Chat-list-text">
+                              <h4>@Helloowl</h4>
+                              <p>Design grafis dan ilusyrator...</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="Find-start-conversation-Chat-list-users">
+                            <div class="Find-start-conversation-Chat-list-user-dp">
+                              <img src="images/user-chatlist.png" alt="img" class="img-fluid">
+                              <span class="userstatus-unavailable"></span>
+                            </div>
+                            <div class="Find-start-conversation-Chat-list-text">
+                              <h4>@Helloowl</h4>
+                              <p>Design grafis dan ilusyrator...</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="Find-start-conversation-Chat-list-users">
+                            <div class="Find-start-conversation-Chat-list-user-dp">
+                              <img src="images/speaker4.png" alt="img" class="img-fluid">
+                              <span class="userstatus-active"></span>
+                            </div>
+                            <div class="Find-start-conversation-Chat-list-text">
+                              <h4>@Helloowl</h4>
+                              <p>Design grafis dan ilusyrator...</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="Find-start-conversation-Chat-list-users">
+                            <div class="Find-start-conversation-Chat-list-user-dp">
+                              <img src="images/follow-user-dp14.png" alt="img" class="img-fluid">
+                              <span class="userstatus-inactive"></span>
+                            </div>
+                            <div class="Find-start-conversation-Chat-list-text">
+                              <h4>@Helloowl</h4>
+                              <p>Design grafis dan ilusyrator...</p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                </div>
+                <div class="Find-start-conversation-profile-view-sect">
+                  <div class="Voice-connected-sect">
+                    <div class="voice-level-text">
+                      <div class="voice-level-simbol">
+                        <span class="level-1"><img src="images/voice-level-1.svg" alt="icon" class="img-fluid" /></span>
+                        <span class="level-2"><img src="images/voice-level-2.svg" alt="icon" class="img-fluid" /></span>
+                        <span class="level-3"><img src="images/voice-level-3.svg" alt="icon" class="img-fluid" /></span>
+                      </div>
+                      <h4>Voice connected</h4>
+                    </div>
+                    <a href="#">@username</a>
+                    <div class="videoAndStreemBtns">
+                      <button class="ml-0"><span><img src="images/video-icon.svg" alt="icon"
+                            class="img-fluid" /></span>Video</button>
+                      <button><span><img src="images/share-screen-icon.svg" alt="icon"
+                            class="img-fluid" /></span>Screen</button>
+                    </div>
+                  </div>
+                  <div class="Find-start-conversation-profile-viewBox">
+                    <div class="conversation-profile-view-dp-name">
+                      <div class="conversation-profile-view-dp">
+                        <img src="images/RobertRosePic-event.png" alt="img" class="img-fluid" />
+                        <span class="userstatus-available"></span>
+                      </div>
+                      <h3>@Hulk66</h3>
+                    </div>
+                    <ul>
+                      <li class="voice-chanel"><img src="images/microPhone-icon.svg" alt="icon" class="img-fluid" />
+                      </li>
+                      <li><img src="images/headPhone-icon.svg" alt="icon" class="img-fluid" />
+                      </li>
+                      <li><img src="images/settings-icon.svg" alt="icon" class="img-fluid" /></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Group chat screen Ahti -->
+
+
+          <div id="EnochCallCenter" class=".Enoch-massage-center-col-sect_avex_group Enoch-massage-center-width" style="display: block;">
+            <div class="Enoch-massage-conversession-col-headings">
+							<div class="Enoch-massage-conversession-Username">
+								<h2>@Ruangsunyi</h2>
+								<div class="user-act-mark">
+
+								</div>
+							</div>
+							<div class="Enoch-massage-conversession-header-menu">
+								<ul>
+									<li class="ml-0"><span><img src="images/Voice-call-icon.svg" alt="icon" class="img-fluid"></span></li>
+									<li><span><img src="images/Video-call-icon.svg" alt="icon" class="img-fluid"></span></li>
+									<li class="pin-message-notification-btn">
+										<span><img src="images/Pinned-Messages-icon.svg" alt="icon" class="img-fluid"></span>
+										<div class="pin-message-notification-box" style="display: none;">
+											<div class="pin-message-notification-headings">
+												<h2>Pinned message</h2>
+											</div>
+											<div class="pin-message-notification-body">
+												<div class="pin-message-box">
+													<div class="text-user-dp">
+														<img src="images/user-text-dp.png" alt="img" class="img-fluid">
+													</div>
+													<div class="text-user-right-content">
+														<div class="text-username">
+															<h6>@Ruangsunyi</h6>
+															<span>Today at 07:55</span>
+														</div>
+														<div class="text-user-message">
+															<div class="message-text">
+																<p>Keep your Enoch on at all time</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li><span><img src="images/GroupAdd-icon.svg" alt="icon" class="img-fluid"></span>
+									</li>
+									<li class="Enoch-massage-conversession-header-searchBox"><input type="text" placeholder="Search"><button><img src="images/Search-Icon.svg" alt="icon" class="img-fluid"></button></li>
+									<li><span><img src="images/save-icon.svg" alt="icon" class="img-fluid"></span>
+									</li>
+									<li><span><img src="images/question-mark.svg" alt="icon" class="img-fluid"></span>
+									</li>
+								</ul>
+							</div>
+						</div>
+            <div class="Enoch-massage-center-col-body div-align">
+
+              <div class="message-box2">
+                <span><img class="message-img-width" src="images/Group-Avatr_ahti.png"></span>
+                <h2 class="pop-h2">@Ruangsunyi</h2>
+                <p class="group_chat_descp">
+                  This is the beginning of your direct message history with
+                  <strong>@Ruangsunyi</strong>
+                </p>
+                <div class="d-flex div-align-items">
+                    <span class="circle-sign"> </span>
+                    <span class="span-mutual">1 mutual Server</span>
+                    <button type="button" class="btns-light">
+                      Remove friend
+                    </button>
+                    <button type="button" class="btns-light">Block</button>
+                </div>
+
+                <div class="input-message">
+                  <div class="Enoch-massage-conversession-text-input-sect">
+                                
+	                            <div class="Enoch-massage-conversession-text-input-content">
+	                                <div class="Enoch-massage-input-box-left">
+	                                    <span class="upload-file-btn"><img src="images/add-attachment-icon.svg" alt="icon" class="img-fluid"></span>
+	                                    <div class="Enoch-massage-input-fild">
+	                                        <textarea>Message @Ruangsunyi</textarea>
+	                                    </div>
+	                                    <div class="massage-file-upload-sect" data-toggle="modal" data-target="#Upload_file_modal">
+	                                        <h3><span><img src="images/uploadIconArtwork.svg" alt="icon" class="img-fluid"></span>Upload a file</h3>
+	                                        <h4>Tip: Double-click the <span><img src="images/upload-Plus.svg" alt="icon" class="img-fluid"></span></h4>
+	                                    </div>
+	                                </div>
+	                                <ul class="Enoch-massage-input-box-right">
+											<li><img src="images/gift-icon.svg" alt="icon" class="img-fluid"></li>
+											<li class="gif-sect">
+												<img src="images/Gif.svg" alt="icon" class="img-fluid input-gif-btn input-gif-btn-dact">
+												<img src="images/Gif.act.svg" alt="icon" class="img-fluid input-gif-btn input-gif-btn-act">
+												<div class="Enoch-massage-conversession-text-input-gif-sect">
+													<div class="Enoch-massage-conversession-text-input-gif-content">
+														<div class="Enoch-massage-conversession-text-input-gif-headings">
+															<div class="Enoch-massage-conversession-text-input-gifStickerImg-menu">
+																<ul>
+																	<li class="active input-gif-btn">GIFs</li>
+																	<li class="input-sticker-btn">Stickers</li>
+																	<li class="input-emoji-btn">Emoji</li>
+																</ul>
+																<div class="Enoch-massage-conversession-text-input-gifStickerImg-searchBox">
+																	<button><img src="images/gif-search-icon.svg" alt="icon" class="img-fluid"></button>
+																	<input type="text" placeholder="Search Tenor">
+																</div>
+															</div>
+														</div>
+														<div class="Enoch-massage-conversession-Gif-body">
+															<div class="Enoch-massage-conversession-Gif-fev-list">
+																<ul class="conversession-Gif-fev-left-list">
+																	<li class="Favourites">
+																		<h6>Favourites</h6>
+																	</li>
+																	<li class="Why">
+																		<h6>Why</h6>
+																	</li>
+																	<li class="Wow">
+																		<h6>Wow</h6>
+																	</li>
+																</ul>
+																<ul class="conversession-Gif-fev-right-list">
+																	<li class="Treanding">
+																		<h6>Treanding GIFs</h6>
+																	</li>
+																	<li class="ThumbsUP">
+																		<h6>Thumbs up</h6>
+																	</li>
+																	<li class="Ouch">
+																		<h6>Ouch</h6>
+																	</li>
+																</ul>
+															</div>
+															<div class="massage-conversession-Gif-list-sect">
+																<button class="backToFavListBtn"><span><img src="images/back-arow-gif.svg" alt="icon" class="img-fluid"></span>Favourites</button>
+																<div class="massage-conversession-Gif-list">
+																	<ul class="massage-conversession-Gif-Left-list">
+																		<li><img src="images/gif-img-1.png" alt="img" class="img-fluid"></li>
+																		<li><img src="images/gif-img-2.png" alt="img" class="img-fluid"></li>
+																	</ul>
+																	<ul class="massage-conversession-Gif-right-list">
+																		<li><img src="images/gif-img-3.png" alt="img" class="img-fluid"></li>
+																		<li><img src="images/gif-img-4.png" alt="img" class="img-fluid"></li>
+																		<li><img src="images/gif-img-5.png" alt="img" class="img-fluid"></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="sticker-sect">
+												<img src="images/sticker.svg" alt="icon" class="img-fluid input-sticker-btn input-sticker-btn-dact">
+												<img src="images/sticker.act.svg" alt="icon" class="img-fluid input-sticker-btn input-sticker-btn-act">
+												<div class="Enoch-massage-conversession-text-input-sticker-sect">
+													<div class="Enoch-massage-conversession-text-input-gifAndSticker-content">
+														<div class="Enoch-massage-conversession-text-input-gif-headings">
+															<div class="Enoch-massage-conversession-text-input-gifStickerImg-menu">
+																<ul>
+																	<li class="input-gif-btn">GIFs</li>
+																	<li class="active input-sticker-btn">Stickers</li>
+																	<li class="input-emoji-btn">Emoji</li>
+																</ul>
+																<div class="Enoch-massage-conversession-text-input-gifStickerImg-searchBox">
+																	<button><img src="images/gif-search-icon.svg" alt="icon" class="img-fluid"></button>
+																	<input type="text" placeholder="Search Tenor">
+																</div>
+																<!-- Sticker tabs Ayaan -->
+																<div class="Enoch-massage-sticker-scct">
+																	 <div class="tab_avex">
+																		<button class="tablinks2 active" onclick="openCity2(event, 'avex_sticker')" id="defaultOpen2"><img class="GrinningFace img-fluid" src="images/Frame_cake_gif.svg" alt=""></button>
+																		<button class="tablinks2" onclick="openCity2(event, 'avex2')"><img class="GrinningFace img-fluid" src="images/Frame_cake_gif.svg" alt=""></button>
+																		<button class="tablinks2" onclick="openCity2(event, 'avex3')"><img class="GrinningFace img-fluid" src="images/Frame_cake_gif.svg" alt=""></button>
+																	  </div>
+																	  
+																	  <div id="avex_sticker" class="tabcontent2" style="display: block;">
+																		<div class="mostRelevent">
+																				
+																			<span class="mostRelevent__link" data-toggle="collapse" href="" role="button" aria-expanded="false" aria-controls="collapseExample">
+																			Most relevant
+																			<img src="images/Arrow-Down_infinity.svg" class="mostarrowIcon img-fluid" alt="">
+																			</span>
+																		
+																	</div>
+																	<ul class="cutsom_section_avex">
+																		<li class="cus_sec_avex">
+																			<img src="images/Frame_cake_gif.svg" alt="" class="cus_gif_avex_icon img-fluid">
+																		</li>
+																		<li class="cus_sec_avex">
+																			<img src="images/burger_bhalo.svg" alt="" class="cus_gif_avex_icon img-fluid">
+																		</li>
+																		<li class="cus_sec_avex">
+																			<img src="images/cattoo_avex.svg" alt="img-fluid" class="cus_gif_avex_icon img-fluid">
+																		</li>
+																	</ul>
+																	<div>
+																		<ul class="cutsom_section_avex_lol">
+																	             <li class="cus_sec_avex">
+																				<img src="images/lol_gif_img.png" alt="img-fluid" class="cus_gif_avex_lol img-fluid">
+																			</li>
+																		</ul>
+																	</div>
+																	<ul class="cutsom_section_avex">
+																		<li class="cus_sec_avex">
+																			<img src="images/Frame_cake_gif.svg" alt="img-fluid" class="cus_gif_avex_icon img-fluid">
+																		</li>
+																		<li class="cus_sec_avex">
+																			<img src="images/burger_bhalo.svg" alt="img-fluid" class="cus_gif_avex_icon img-fluid">
+																		</li>
+																		<li class="cus_sec_avex">
+																			<img src="images/cattoo_avex.svg" alt="img-fluid" class="cus_gif_avex_icon img-fluid">
+																		</li>
+																	</ul>
+																	<div>
+																		<ul class="cutsom_section_avex_lol">
+																	             <li class="cus_sec_avex">
+																				<img src="images/lol_gif_img.png" alt="img-fluid" class="cus_gif_avex_lol img-fluid">
+																			</li>
+																		</ul>
+																	</div>
+																	  </div>
+																	  
+																	  <div id="avex2" class="tabcontent2" style="display: none;">
+																		<span><img class="avex_cake_icon2 img-fluid" src="images/cattoo.svg" alt=""></span> 
+																	  </div>
+																	  
+																	  <div id="avex3" class="tabcontent2" style="display: none;">
+																		<span><img class="avex_cake_icon2 img-fluid" src="images/cattoo.svg" alt=""></span>
+																	  </div> 
+
+																	  <!-- Sticker tabs  End  -->
+	                                                            </div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="Emoji-sect">
+												<img src="images/emoji-icon.svg" alt="icon" class="img-fluid input-emoji-btn input-emoji-btn-dact">
+												<img src="images/emoji-icon.act.svg" alt="icon" class="img-fluid input-emoji-btn input-emoji-btn-act">
+												<div class="Enoch-massage-conversession-text-input-Emoji-sect">
+													<div class="Enoch-massage-conversession-text-input-gifAndSticker-content">
+														<div class="Enoch-massage-conversession-text-input-gif-headings">
+															<div class="Enoch-massage-conversession-text-input-gifStickerImg-menu">
+																<ul>
+																	<li class="input-gif-btn">GIFs</li>
+																	<li class="input-sticker-btn">Stickers</li>
+																	<li class="active input-emoji-btn">Emoji</li>
+																</ul>
+																<div class="Enoch-massage-conversession-text-input-gifStickerImg-searchBox">
+																	<button><img src="images/gif-search-icon.svg" alt="icon" class="img-fluid"></button>
+																	<input type="text" placeholder="Search Tenor">
+																</div>
+																<div class="">
+																	<!-- Emojis vertical tabs ayaan -->
+
+																	<div class="Enoch-massage-sticker-scct">
+																	
+																		<div class="tab_avex">
+																			<button class="tablinks active" onclick="openCity_avex(event, 'London')" id="defaultOpen"><img class="GrinningFace" src="images/Grinning Face_emoji_icon.png" alt=""></button>
+																			<button class="tablinks" onclick="openCity_avex(event, 'Paris')"><img class="GrinningFace" src="images/avex_clock.png" alt=""></button>
+																			<button class="tablinks" onclick="openCity_avex(event, 'Tokyo')"><img class="GrinningFace" src="images/avex_monkey.png" alt=""></button>
+																			<button class="tablinks" onclick="openCity_avex(event, 'Tokyo1')"><img class="GrinningFace" src="images/salad_avex.png" alt=""></button>
+																			<button class="tablinks" onclick="openCity_avex(event, 'Tokyo2')"><img class="GrinningFace" src="images/mountain_avex.png" alt=""></button>
+																		  </div>
+																		  
+																		  <div id="London" class="tabcontent" style="display: block;">
+																			<!-- <div class="mostRelevent">
+																				
+																					<span class="mostRelevent__link" data-toggle="collapse" href="" role="button" aria-expanded="false" aria-controls="collapseExample">
+																					Most relevant
+																					<img src="images/play-button.svg" class="mostarrowIcon" alt="">
+																					</span>
+																				
+																			</div> -->
+																			<span><img class="avex_cake_icon img-fluid" src="images/emoji_Group_avex.png" alt=""></span>
+																		  </div>
+																		  
+																		  <div id="Paris" class="tabcontent" style="display: none;">
+																			<span><img class="avex_cake_icon2 img-fluid" src="images/clock_emoji.png" alt=""></span>
+																		  </div>
+																		  
+																		  <div id="Tokyo" class="tabcontent" style="display: none;">
+																			<span><img class="avex_cake_icon2 img-fluid" src="images/monkey_emoji.png" alt=""></span>
+																		  </div>
+																		  <div id="Tokyo1" class="tabcontent" style="display: none;">
+																			<span><img class="avex_cake_icon2 img-fluid" src="images/allsalad_img.png" alt=""></span>
+																		  </div>
+																		  <div id="Tokyo2" class="tabcontent" style="display: none;">
+																			<span><img class="avex_cake_icon2 img-fluid" src="images/mountaing_all.png" alt=""></span>
+																		  </div>
+
+																	</div>
+
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+	                            </div>
+	                        </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="Enoch-massage-screen">
+      <div class="send-post-masage-sect">
+        <div class="send-post-masage-cards-sect">
+          <div class="send-post-Messaging-card">
+            <div class="send-messaging-collaps">
+              <div class="send-messaging-collapsible">
+                <div class="send-post-Messaging-card-headings">
+                  <div class="send-post-Messaging-card-headings-left">
+                    <div class="send-post-Messaging-card-headings-dp-sect">
+                      <div class="send-post-Messaging-card-headings-dp">
+                        <img src="images/RobertRosePic-event.png" alt="img" class="img-fluid " />
+                      </div>
+                      <span><img src="images/active-icon-green.svg" alt="icon" class="img-fluid" /></span>
+                    </div>
+                    <h2>Messaging</h2>
+                  </div>
+                  <div class="send-post-Messaging-card-headings-right">
+                    <ul>
+                      <li class="Messaging-3dots-btn">
+                        <span><img src="images/ThreeDots.svg" alt="icon" class="img-fluid" /></span>
+                        <div class="Messaging-3dots-dropdown">
+                          <ul>
+                            <li class="active">All Messages</li>
+                            <li>Archived</li>
+                            <li>My Connections</li>
+                            <li>Unread</li>
+                            <li>InMail</li>
+                            <li>Spam</li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li><img src="images/Messaging-Icon.svg" alt="icon" class="img-fluid" />
+                      </li>
+                      <li class="send-messaging-collapsible-btn"><img src="images/chevron-up-o.svg" alt="icon"
+                          class="img-fluid" /></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="send-post-Messaging-card-content">
+                  <div class="Messaging-card-search-box">
+                    <span><img src="images/message-search.svg" alt="icon" class="img-fluid" /></span>
+                    <input type="text" placeholder="Search messages">
+                    <span><img src="images/message-settings.svg" alt="icon" class="img-fluid" /></span>
+                  </div>
+                  <div class="Messaging-card-chatlist">
+                    <ul>
+                      <li>
+                        <div class="Messaging-card-chatlist-left">
+                          <div class="Messaging-card-chatlist-dp">
+                            <img src="images/chat-1.png" alt="img" class="img-fluid" />
+                            <span class="act-green">&nbsp;</span>
+                          </div>
+                          <div class="Messaging-card-chatlist-text">
+                            <h2>@Miguel Castro Diseño</h2>
+                            <h3>Hello friend</h3>
+                          </div>
+                        </div>
+                        <div class="Messaging-card-chatlist-date">
+                          <h3>Dec 12</h3>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="Messaging-card-chatlist-left">
+                          <div class="Messaging-card-chatlist-dp">
+                            <img src="images/chat-2.png" alt="img" class="img-fluid" />
+                            <span class="act-red">&nbsp;</span>
+                          </div>
+                          <div class="Messaging-card-chatlist-text">
+                            <h2>@Sato77</h2>
+                            <h3>You: you’re welcome</h3>
+                          </div>
+                        </div>
+                        <div class="Messaging-card-chatlist-date">
+                          <h3>Dec 10</h3>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="Messaging-card-chatlist-left">
+                          <div class="Messaging-card-chatlist-dp">
+                            <img src="images/chat-1.png" alt="img" class="img-fluid" />
+                            <span class="act-oldlace">&nbsp;</span>
+                          </div>
+                          <div class="Messaging-card-chatlist-text">
+                            <h2>@Monsterra</h2>
+                            <h3>You: Congrats on your new role!</h3>
+                          </div>
+                        </div>
+                        <div class="Messaging-card-chatlist-date">
+                          <h3>Dec 10</h3>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="Messaging-card-chatlist-left">
+                          <div class="Messaging-card-chatlist-dp">
+                            <img src="images/chat-4.png" alt="img" class="img-fluid" />
+                            <span class="act-green">&nbsp;</span>
+                          </div>
+                          <div class="Messaging-card-chatlist-text">
+                            <h2>@Flor</h2>
+                            <h3>Any confusion?</h3>
+                          </div>
+                        </div>
+                        <div class="Messaging-card-chatlist-date">
+                          <h3>Oct 28</h3>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="Messaging-card-chatlist-left">
+                          <div class="Messaging-card-chatlist-dp">
+                            <img src="images/chat-5.png" alt="img" class="img-fluid" />
+                            <span class="act">&nbsp;</span>
+                          </div>
+                          <div class="Messaging-card-chatlist-text">
+                            <h2>@Aliceloo</h2>
+                            <h3>You: Happy birthday mate! </h3>
+                          </div>
+                        </div>
+                        <div class="Messaging-card-chatlist-date">
+                          <h3>Oct 27</h3>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="Messaging-card-chatlist-left">
+                          <div class="Messaging-card-chatlist-dp">
+                            <img src="images/chat-6.png" alt="img" class="img-fluid" />
+                            <span class="act">&nbsp;</span>
+                          </div>
+                          <div class="Messaging-card-chatlist-text">
+                            <h2>@Chase</h2>
+                            <h3>I am not available in this week</h3>
+                          </div>
+                        </div>
+                        <div class="Messaging-card-chatlist-date">
+                          <h3>Oct 22</h3>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="Messaging-card-chatlist-left">
+                          <div class="Messaging-card-chatlist-dp">
+                            <img src="images/chat-7.png" alt="img" class="img-fluid" />
+                            <span class="act">&nbsp;</span>
+                          </div>
+                          <div class="Messaging-card-chatlist-text">
+                            <h2>@Rogvarok</h2>
+                            <h3>In case you have not reecived m...</h3>
+                          </div>
+                        </div>
+                        <div class="Messaging-card-chatlist-date">
+                          <h3>Dec 10</h3>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="Messaging-card-chatlist-left">
+                          <div class="Messaging-card-chatlist-dp">
+                            <img src="images/chat-8.png" alt="img" class="img-fluid" />
+                            <span class="act-green">&nbsp;</span>
+                          </div>
+                          <div class="Messaging-card-chatlist-text">
+                            <h2>@Airdrop King</h2>
+                            <h3>Anyway</h3>
+                          </div>
+                        </div>
+                        <div class="Messaging-card-chatlist-date">
+                          <h3>Oct 09</h3>
+                        </div>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- user group chat modal -->
+
+    <div class="modal" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="removeModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Leave @Ruangsunyi, @Helloowl</h5>
+          </div>
+          <div class="modal-body">
+            <div class="bodyText">
+              Are you sure you want to leave @Ruangsunyi, @Helloowl? You won’t be able to rejoin this group unless you
+              are re-invited.
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="avex_btn_btn_CancelBTn" data-dismiss="modal">
+              Cancel
+            </button>
+            <button type="button" class="btn_btn-cancle-avex_blockBtn">
+              Leave Group
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- user group chat modal -->
+  </div>
+  <div class="UserNotifWrap">
+        <div class="UserNotifmssageReceive">
+          <div class="UserNotifmssageImage">
+            <span>
+              <img src="images/masseging-home-btn-icon.svg" alt="">
+            </span>
+          </div>
+          <div class="UserNotifheadingWrap">
+            <div class="UserNotifheadinglarge">@Helloowl</div>
+            <div class="UserNotifheadingsmall">Good Morning friend!</div>
+          </div>
+        </div>
+        <span class="notficationImagees">
+          <img src="images/notification-img.png" alt="">
+        </span>
+      </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+    // When the user clicks, open the popup
+    function popupFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+
+    }
+
+    // When the user clicks, open trade mennu
+    function tradeFunction() {
+      var trade = document.getElementById("trademenu-drpdown");
+      trade.classList.toggle("show");
+    }
+  </script>
+  <script>
+    /*for toggle sub menu*/
+    function subtogglediv(id, icon) {
+      var id = document.getElementById(id);
+      id.classList.toggle('submenu-active');
+      var cross = document.getElementById(icon);
+      cross.classList.toggle('fa-times');
+      cross.classList.toggle('fa-bars');
+    }
+  </script>
+  <script>
+    /*for Tab*/
+    function helpfunction(evt, faqName) {
+      var i, supporttabcontent, posingtablinks;
+      supporttabcontent = document.getElementsByClassName("posttabcontent");
+      for (i = 0; i < supporttabcontent.length; i++) {
+        supporttabcontent[i].style.display = "none";
+      }
+      posingtablinks = document.getElementsByClassName("posingtablinks");
+      for (i = 0; i < posingtablinks.length; i++) {
+        posingtablinks[i].className = posingtablinks[i].className.replace(" posting-active", "");
+      }
+      document.getElementById(faqName).style.display = "block";
+      evt.currentTarget.className += " posting-active";
+    }
+  </script>
+  <script type="text/javascript">
+    /* for modal dropdown menu*/
+    var dropdownpopup = document.querySelectorAll('[data-toggle=dropdownpopup]');
+    for (var k = 0; k < dropdownpopup.length; k++) {
+      dropdownpopup[k].addEventListener('click', function (e) {
+        if (this.hasAttribute('data-link')) {
+          var m_ID1 = this.getAttribute('data-link');
+          //for closing other popup
+          var activedropdown = document.querySelector('.dropdown-menu.drop-active');
+          if (activedropdown && activedropdown.getAttribute('id') != m_ID1) {
+            activedropdown.classList.remove('drop-active');
+          }
+          //activting popup
+          document.getElementById(m_ID1).classList.toggle('drop-active');
+        }
+      });
+    }
+
+
+
+    //For modal
+    document.addEventListener('click', function (e) {
+      e = e || window.event;
+      var target = e.target || e.srcElement;
+
+      if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') {
+        if (target.hasAttribute('data-target')) {
+          var m_ID = target.getAttribute('data-target');
+          document.getElementById(m_ID).classList.add('open');
+        }
+      }
+
+      // Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
+      if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') || target
+        .classList.contains('modal')) {
+        var modal = document.querySelector('.modal.open');
+        modal.classList.remove('open');
+      }
+    }, false);
+
+    //close first popup window
+    var modal = document.getElementById("post-user-modal2");
+    var btnmodal = document.getElementById("post-save-btn");
+    btnmodal.onclick = function () {
+      modal.classList.remove('open');
+    }
+  </script>
+
+  <script>
+    var postVal = document.getElementById("post-user-modal").querySelectorAll(".post-user-modal-list ul li span");
+    postVal.forEach(function (item) {
+      item.onclick = function (e) {
+        document.getElementById('posting-steps-drop').innerHTML = this.innerHTML;
+
+
+
+      }
+
+    });
+    //tribe option dropdown
+    var tribeVal = document.getElementById("tribe-dropbox-list").querySelectorAll(
+      ".posting-steps-tribe-dropbox-list ul li");
+    tribeVal.forEach(function (item) {
+      item.onclick = function (e) {
+        document.getElementById('tribe-dropbox-list-input').innerHTML = this.innerHTML;
+
+
+
+      }
+
+    });
+  </script>
+  <script>
+    $('.photo-title').on('click', function () {
+      $("h2.posting-step-hd-title").text("Create Post")
+
+    });
+    $('.video-title').on('click', function () {
+      $("h2.posting-step-hd-title").text("Create Post")
+
+    });
+    $('.doc-title').on('click', function () {
+      $("h2.posting-step-hd-title").text("Share a document")
+
+    });
+    $('.poll-title').on('click', function () {
+      $("h2.posting-step-hd-title").text("Create a poll")
+
+    });
+    $('.celeb-title').on('click', function () {
+      $("h2.posting-step-hd-title").text("Select an option")
+
+    });
+  </script>
+  <script>
+    $(function () {
+      $('.menu-mid-sect ul li.submenubar-item a').click(function () {
+        $('.menu-mid-sect ul li.submenubar-item a').each(function (a) {
+          $(this).removeClass('selectedclass')
+        });
+        $(this).addClass('selectedclass');
+      });
+
+    });
+  </script>
+
+  <script>
+    $(function () {
+      $('.send-messaging-collapsible-btn').click(function () {
+        $('.send-messaging-collapsible-btn').each(function (a) {
+          $(this).toggleClass('active')
+        });
+      });
+    });
+    $(function () {
+      $('.send-messaging-collapsible-btn').click(function () {
+        $('.Messaging-3dots-btn').each(function (a) {
+          $(this).toggleClass('active')
+        });
+      });
+    });
+    $(document).ready(function () {
+      $('.send-messaging-collapsible-btn').click(function () {
+        $('.send-messaging-collaps .content').toggle();
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.Messaging-3dots-btn').click(function () {
+        $('.Messaging-3dots-dropdown').toggle();
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.voice-chanel').click(function () {
+        $('.Voice-connected-sect').toggle();
+      });
+    });
+  </script>
+<script>
+		$(document).ready(function () {
+			$('.input-gif-btn').click(function () {
+				$('.Enoch-massage-conversession-text-input-gif-sect').toggle();
+				$('.Enoch-massage-conversession-text-input-sticker-sect').hide();
+				$('.Enoch-massage-conversession-text-input-Emoji-sect').hide();
+				$('.Enoch-massage-conversession-Gif-fev-list').show();
+				$('.Enoch-massage-conversession-text-input-gifStickerImg-searchBox').show();
+				$('.massage-conversession-Gif-list-sect').hide();
+			});
+		});
+		$(document).ready(function () {
+			$('.input-sticker-btn').click(function () {
+				$('.Enoch-massage-conversession-text-input-gif-sect').hide();
+				$('.Enoch-massage-conversession-text-input-Emoji-sect').hide();
+				$('.Enoch-massage-conversession-text-input-sticker-sect').toggle();
+				$('.Enoch-massage-conversession-Gif-fev-list').show();
+				$('.Enoch-massage-conversession-text-input-gifStickerImg-searchBox').show();
+				$('.massage-conversession-Gif-list-sect').hide();
+			});
+		});
+		$(document).ready(function () {
+			$('.input-emoji-btn').click(function () {
+				$('.Enoch-massage-conversession-text-input-gif-sect').hide();
+				$('.Enoch-massage-conversession-text-input-sticker-sect').hide();
+				$('.Enoch-massage-conversession-text-input-Emoji-sect').toggle();
+				$('.Enoch-massage-conversession-Gif-fev-list').show();
+				$('.Enoch-massage-conversession-text-input-gifStickerImg-searchBox').show();
+				$('.massage-conversession-Gif-list-sect').hide();
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function () {
+			$('.Enoch-massage-conversession-Gif-fev-list ul li').click(function () {
+				$('.Enoch-massage-conversession-Gif-fev-list').hide();
+				$('.Enoch-massage-conversession-text-input-gifStickerImg-searchBox').hide();
+				$('.massage-conversession-Gif-list-sect').show();
+			});
+		});
+
+		$(document).ready(function () {
+			$('.backToFavListBtn').click(function () {
+				$('.Enoch-massage-conversession-Gif-fev-list').show();
+				$('.Enoch-massage-conversession-text-input-gifStickerImg-searchBox').show();
+				$('.massage-conversession-Gif-list-sect').hide();
+			});
+		});
+	</script>
+
+	<script>
+		$(function () {
+			$('.input-gif-btn').click(function () {
+				$('.Enoch-massage-input-box-right li.gif-sect').each(function (a) {
+					$(this).toggleClass('active')
+				});
+			});
+		});
+
+		$(function () {
+			$('.input-gif-btn').click(function () {
+				$('.Enoch-massage-input-box-right li.sticker-sect').each(function (a) {
+					$(this).removeClass('active')
+				});
+			});
+		});
+
+		$(function () {
+			$('.input-gif-btn').click(function () {
+				$('.Enoch-massage-input-box-right li.Emoji-sect').each(function (a) {
+					$(this).removeClass('active')
+				});
+			});
+		});
+	</script>
+
+	<script>
+		$(function () {
+			$('.input-sticker-btn').click(function () {
+				$('.Enoch-massage-input-box-right li.sticker-sect').each(function (a) {
+					$(this).toggleClass('active')
+				});
+			});
+		});
+
+		$(function () {
+			$('.input-sticker-btn').click(function () {
+				$('.Enoch-massage-input-box-right li.gif-sect').each(function (a) {
+					$(this).removeClass('active')
+				});
+			});
+		});
+
+		$(function () {
+			$('.input-sticker-btn').click(function () {
+				$('.Enoch-massage-input-box-right li.Emoji-sect').each(function (a) {
+					$(this).removeClass('active')
+				});
+			});
+		});
+	</script>
+
+	<script>
+		$(function () {
+			$('.input-emoji-btn').click(function () {
+				$('.Enoch-massage-input-box-right li.Emoji-sect').each(function (a) {
+					$(this).toggleClass('active')
+				});
+			});
+		});
+
+		$(function () {
+			$('.input-emoji-btn').click(function () {
+				$('.Enoch-massage-input-box-right li.sticker-sect').each(function (a) {
+					$(this).removeClass('active')
+				});
+			});
+		});
+
+		$(function () {
+			$('.input-emoji-btn').click(function () {
+				$('.Enoch-massage-input-box-right li.gif-sect').each(function (a) {
+					$(this).removeClass('active')
+				});
+			});
+		});
+	</script>
+
+	<script>
+		$(document).ready(function () {
+			$('.massage-conversession-Gif-list-sect ul li').click(function () {
+				$('.Enoch-massage-conversession-col-body-text-sect ul li.conversession-body-text-list-gif')
+					.show();
+			});
+		});
+	</script>
+	<script>
+  $(document).ready(function() {
+      $('.pin-message-notification-btn').click(function() {
+          $('.pin-message-notification-box').toggle();
+      });
+  });
+</script>
+</body>
+
+</html>

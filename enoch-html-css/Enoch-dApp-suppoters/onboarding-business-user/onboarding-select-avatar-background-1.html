@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Onboarding</title>
+	<!-- Fav Icons -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/onboarding-newstyle.css" />
+</head>
+<body>
+	<div class="container-fluid">
+	
+	<div class="row">	
+		<div class="onboarding-new-container">
+			<div class="onboard-business-img-gal">
+				<div class="business-hd-logo"><img src="images/businessNewLogo.png" class="img-fluid" alt="logo"/></div>
+				<h2>Create your profile</h2>
+				<div class="business-user-imgGal" style="background-image: url('images/business-user-bg1.png');">
+					<div class="business-user-select-namme-block">
+						<div class="business-user-select-namme-hd">
+							<h3>Select username</h3> 
+							<span><img src="images/userAlert.png" class="img-fluid" alt="info"/>
+								<div class="businessusr-info-txt">In the case of your username, remember that will have to be unique, you need to be aware of before you change your username. First, your username can only be changed once every 30 days, so make sure it’s one you can live with, at least for that period.</div>
+							</span>
+						</div>
+						<div class="business-username-select-box">
+							<div class="position-relative">
+								<span class="username-prefix">@</span>
+								<input type="text" onkeypress="onkeypresstextarea()" class="timeSetting-droplist" placeholder="Enter username (Max 11 letters, mix of numbers, and capital & lower letters  ) " value="Hulk66">
+								<span class="username-success"><img src="images/business-tick.png" class="img-fluid" alt="tick"/></span>
+							</div>
+							<div id="onkeypress-textareaList" class="username-content custm-zindex-1">
+								<sapn class="alert-red-cross"><img src="images/rdCross.png" class="img-fluid" alt="cross"/></sapn>
+								
+								<!-- for user name avaiable -->
+								<!-- <sapn class="alert-Ok"><img src="images/usrOk.png" class="img-fluid" alt="ok"/></sapn> -->
+								<div class="username-content-innerbody">
+									<p class="business-username-drop-txt1"><span><img src="images/redalert.png" class="img-fluid" alt="icon"/></span>This username is already taken</p>
+									<p class="business-username-drop-txt2">Suggestion; Riddler22, Riddler45, Riddler33</p>
+									<!-- for user name avaiable -->
+									<!-- <p class="business-username-drop-txt3">This username is available click ‘Ok’ to continue</p> -->
+								</div>
+							</div>
+						</div>
+							<p>You can not change or apply Avatar or Background untill u choose a username .</p>
+					</div>
+					<div class="changeuserImg-modal-content-inner">
+						<div class="changeuserImg-tab-block">
+							<div class="changeuserImg-tabLink-block">
+								<ul>
+									<li><button class="changeuserImg-tablinks active" onclick="changeuserImgFunc(event, 'select-av')">Select your avatar</button>  </li>
+									<li><button class="changeuserImg-tablinks" onclick="changeuserImgFunc(event, 'select-bg')">Change Background Image</button>  </li>
+								</ul>
+							</div>
+							<div class="changeuserImg-tabcontent-block">
+								<div id="select-av" class="changeuserImg_tabcontent changeuserImg-d-block">
+									<div class="changeuserImg-Innertab-block">
+										<div class="changeuserImg-InnertabLink-block">
+											<ul>
+												<li><button class="changeuserImg-Innertablinks-av active" onclick="changeAvImgFunc(event, 'RPG-av')">RPG  AVATAR </button>  </li>
+												<li><button class="changeuserImg-Innertablinks-av" onclick="changeAvImgFunc(event, 'APOCALYPSE-av')">APOCALYPSE AVATAR </button>  </li>
+												<li><button class="changeuserImg-Innertablinks-av" onclick="changeAvImgFunc(event, 'ALIEN-av')">ALIEN AVATAR </button>  </li>
+											</ul>
+										</div>
+										<div class="changeuserImg-Innertabcontent-block">
+											<div id="RPG-av" class="changeAvImg_tabcontent changeuserImg-d-block">
+												<div class="changeAvImg-innerImg-block">
+													<div class="changeAvImg-innerImg-block-lft">
+														<img src="images/user-ava-img.png" class="img-fluid" alt="avatar">
+													</div>
+													<div class="changeAvImg-innerImg-block-right">
+														
+														<ul>
+															<li><img src="images/user-Av1.png" class="img-fluid" alt="avatar" data-toggle="modal" data-target="changeImg-Modal"/></li>
+															<li><img src="images/user-Av2.png" class="img-fluid" alt="avatar" data-toggle="modal" data-target="changeImg-Modal"/></li>
+															<li><img src="images/user-Av3.png" class="img-fluid" alt="avatar" data-toggle="modal" data-target="changeImg-Modal"/></li>
+															<li><img src="images/user-Av4.png" class="img-fluid" alt="avatar" data-toggle="modal" data-target="changeImg-Modal"/></li>
+															<li><img src="images/user-Av5.png" class="img-fluid" alt="avatar" data-toggle="modal" data-target="changeImg-Modal"/></li>
+															<li><img src="images/user-Av6.png" class="img-fluid" alt="avatar" data-toggle="modal" data-target="changeImg-Modal"/></li>
+															<li><img src="images/user-Av7.png" class="img-fluid" alt="avatar" data-toggle="modal" data-target="changeImg-Modal"/></li>
+															<li><img src="images/user-Av8.png" class="img-fluid" alt="avatar" data-toggle="modal" data-target="changeImg-Modal"/></li>
+															<li><img src="images/user-Av9.png" class="img-fluid" alt="avatar" data-toggle="modal" data-target="changeImg-Modal"/></li>
+															<li><img src="images/user-Av10.png" class="img-fluid" alt="avatar" data-toggle="modal" data-target="changeImg-Modal"/></li>
+															<li><img src="images/user-Av11.png" class="img-fluid" alt="avatar" data-toggle="modal" data-target="changeImg-Modal"/></li>
+															<li><img src="images/user-Av12.png" class="img-fluid" alt="avatar" data-toggle="modal" data-target="changeImg-Modal"/></li>
+															<li><img src="images/user-Av10.png" class="img-fluid" alt="avatar" data-toggle="modal" data-target="changeImg-Modal"/></li>
+															<li><img src="images/user-Av11.png" class="img-fluid" alt="avatar" data-toggle="modal" data-target="changeImg-Modal"/></li>
+															<li><img src="images/user-Av12.png" class="img-fluid" alt="avatar" data-toggle="modal" data-target="changeImg-Modal"/></li>
+															<li><img src="images/user-Av11.png" class="img-fluid" alt="avatar" data-toggle="modal" data-target="changeImg-Modal"/></li>
+															<li><img src="images/user-Av12.png" class="img-fluid" alt="avatar" data-toggle="modal" data-target="changeImg-Modal"/></li>
+															<li><img src="images/user-Av10.png" class="img-fluid" alt="avatar" data-toggle="modal" data-target="changeImg-Modal"/></li>
+															<li><img src="images/user-Av11.png" class="img-fluid" alt="avatar" data-toggle="modal" data-target="changeImg-Modal"/></li>
+															<li><img src="images/user-Av12.png" class="img-fluid" alt="avatar" data-toggle="modal" data-target="changeImg-Modal"/></li>
+														</ul>
+														
+													</div>
+													<div class="changeuser-modal-block">
+														<div id="changeImg-Modal" class="modal fade changeuser-img-modal">
+															<div class="modal-dialog">
+																<div class="modal-content changeuser-modal-content">
+																	<h3>Choose your card</h3>
+																	<div class="userImg-modal-gall">
+																		<div class="userImg-modal-gall-lft">
+																			<div class="userImg-gall-lft">
+																				<ul>
+																					<li class="userImg-card usercard-overlay-active">
+																						<img src="images/card-img1.png" class="img-fluid" alt="image"/>
+																						
+																					</li>
+																					<li class="userImg-card">
+																						<img src="images/card-img2.png" class="img-fluid" alt="image"/>
+																						<div class="usercard-overlay"></div>
+																					</li>
+																					<li class="userImg-card">
+																						<img src="images/card-img3.png" class="img-fluid" alt="image"/>
+																						
+																					</li>
+																				</ul>
+																			</div>
+																			<div class="userImg-gall-right">
+																				<img src="images/card-img1.png" class="img-fluid" alt="image"/>
+																			</div>
+																		</div>
+																		<div class="userImg-modal-gall-right">
+																			<div class="userImg-modal-gall-right-txtbox">
+																				<textarea placeholder="Write a bio for a card"></textarea>
+																				<span><img src="images/restore-icon.png" class="img-fluid" alt="restore"/></span>
+																			</div>
+																			<p>This bio will display on your public profile</p>
+																			<div class="modal-greenArrow"><img src="images/green-arrow.png" class="img-fluid" alt="icon"/></div>
+																			<div class="changeuserImg-confirm"><button class="changeuserImg-continue-btn">Confirm</button></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div id="APOCALYPSE-av" class="changeAvImg_tabcontent">
+												<div class="changeAvImg-innerImg-block">
+													<div class="changeAvImg-innerImg-block-lft">
+														<img src="images/user-ava-img.png" class="img-fluid" alt="avatar">
+													</div>
+													<div class="changeAvImg-innerImg-block-right">
+														
+														<ul>
+															<li><img src="images/user-Av1.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av2.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av3.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av4.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av5.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av6.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av7.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av8.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av9.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av10.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av11.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av12.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av10.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av11.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av12.png" class="img-fluid" alt="avatar"/></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div id="ALIEN-av" class="changeAvImg_tabcontent">
+												<div class="changeAvImg-innerImg-block">
+													<div class="changeAvImg-innerImg-block-lft">
+														<img src="images/user-ava-img.png" class="img-fluid" alt="avatar">
+													</div>
+													<div class="changeAvImg-innerImg-block-right">
+														
+														<ul>
+															<li><img src="images/user-Av1.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av2.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av3.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av4.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av5.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av6.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av7.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av8.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av9.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av10.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av11.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av12.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av10.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av11.png" class="img-fluid" alt="avatar"/></li>
+															<li><img src="images/user-Av12.png" class="img-fluid" alt="avatar"/></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="select-bg" class="changeuserImg_tabcontent">
+									<div class="changeuserImg-Innertab-block">
+										<div class="changeuserImg-InnertabLink-block">
+											<ul>
+												<li><button class="changeuserImg-Innertablinks-bg active" onclick="changeBgImgFunc(event, 'RPG-bg')">RPG  BG </button>  </li>
+												<li><button class="changeuserImg-Innertablinks-bg" onclick="changeBgImgFunc(event, 'APOCALYPSE-bg')">APOCALYPSE BG </button>  </li>
+												<li><button class="changeuserImg-Innertablinks-bg" onclick="changeBgImgFunc(event, 'ALIEN-bg')">ALIEN BG </button>  </li>
+											</ul>
+										</div>
+										<div class="changeuserImg-Innertabcontent-block mt-4">
+											<div id="RPG-bg" class="changebgImg_tabcontent changeuserImg-d-block">
+												<div class="changeuserImg-bg-block">
+														<ul>
+															<li><img src="images/changeImg-bg1.png" class="img-fluid" alt="avatar"></li>
+															<li><img src="images/changeImg-bg2.png" class="img-fluid" alt="avatar"></li>
+															<li><img src="images/changeImg-bg3.png" class="img-fluid" alt="avatar"></li>
+															<li><img src="images/changeImg-bg4.png" class="img-fluid" alt="avatar"></li>
+															<li><img src="images/changeImg-bg5.png" class="img-fluid" alt="avatar"></li>
+															<li><img src="images/changeImg-bg6.png" class="img-fluid" alt="avatar"></li>
+															<li><img src="images/changeImg-bg7.png" class="img-fluid" alt="avatar"></li>
+															<li><img src="images/changeImg-bg8.png" class="img-fluid" alt="avatar"></li>
+															<li><img src="images/changeImg-bg9.png" class="img-fluid" alt="avatar"></li>
+														</ul>
+													</div>
+											</div>
+											<div id="APOCALYPSE-bg" class="changebgImg_tabcontent">
+												<div class="changeuserImg-bg-block">
+														<ul>
+															<li><img src="images/changeImg-bg1.png" class="img-fluid" alt="avatar"></li>
+															<li><img src="images/changeImg-bg2.png" class="img-fluid" alt="avatar"></li>
+															<li><img src="images/changeImg-bg3.png" class="img-fluid" alt="avatar"></li>
+															<li><img src="images/changeImg-bg4.png" class="img-fluid" alt="avatar"></li>
+															<li><img src="images/changeImg-bg5.png" class="img-fluid" alt="avatar"></li>
+															<li><img src="images/changeImg-bg6.png" class="img-fluid" alt="avatar"></li>
+															<li><img src="images/changeImg-bg7.png" class="img-fluid" alt="avatar"></li>
+															<li><img src="images/changeImg-bg8.png" class="img-fluid" alt="avatar"></li>
+															<li><img src="images/changeImg-bg9.png" class="img-fluid" alt="avatar"></li>
+														</ul>
+													</div>
+											</div>
+											<div id="ALIEN-bg" class="changebgImg_tabcontent">
+												<div class="changeuserImg-bg-block">
+													<ul>
+														<li><img src="images/changeImg-bg1.png" class="img-fluid" alt="avatar"></li>
+														<li><img src="images/changeImg-bg2.png" class="img-fluid" alt="avatar"></li>
+														<li><img src="images/changeImg-bg3.png" class="img-fluid" alt="avatar"></li>
+														<li><img src="images/changeImg-bg4.png" class="img-fluid" alt="avatar"></li>
+														<li><img src="images/changeImg-bg5.png" class="img-fluid" alt="avatar"></li>
+														<li><img src="images/changeImg-bg6.png" class="img-fluid" alt="avatar"></li>
+														<li><img src="images/changeImg-bg7.png" class="img-fluid" alt="avatar"></li>
+														<li><img src="images/changeImg-bg8.png" class="img-fluid" alt="avatar"></li>
+														<li><img src="images/changeImg-bg9.png" class="img-fluid" alt="avatar"></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="changeuserImg-continue"><button class="changeuserImg-continue-btn" data-toggle="modal" data-target="user-gentle-reminder">Continue</button></div>
+					<div class="onboard-gentleRemainder-block">
+						<div id="user-gentle-reminder" class="modal fade onboard-gentleRemainder-modal">
+							<div class="modal-dialog">
+								<div class="modal-content gentleRemainder-modalcontent">
+									<div class="gentleRemainder-modalcontent-hd">
+										<img src="images/gentleremainder-bg.png" class="img-fluid" alt="bg"/>
+										<div class="gentleremainder-hd-txt">
+											<h2>Gentle </h2>
+											<h3>Reminder</h3>
+										</div>
+											
+									</div>
+									<div class="gentleremainder-body">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+										<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										<ul>
+											<li>1st Offense: <span class="green-Rclr">7-Day Incentive Freeze</span></li>
+											<li>2ndOffense: <span class="yellw-Rclr">14-Day Incentive Freeze</span></li>
+											<li>3rd and Final Offense: <span class="accent-Rclr"> Incentive Freeze</span></li>
+											<li>Special Condition: <span class="red-Rclr"> Permanent Ban</span></li>
+										</ul>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+										<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,.</p>
+										<div class="gentleremainder-btn-grp">
+											<button class="gentleremainder-decline-btn" data-dismiss="modal">DECLINE</button>
+											<button class="gentleremainder-agree-btn">AGREE (7)</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	
+	</div>
+
+	</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+		
+	function onkeypresstextarea() {
+
+var selectmedia1 = document.getElementById("onkeypress-textareaList");
+selectmedia1.classList.toggle("show");
+var selItem = document.getElementById("onkeypresstextarea");
+
+selItem.classList.toggle("select-active"); 
+}
+var selectmedia2 = document.getElementById("onkeypress-textareaList").querySelectorAll(".username-content ul li .user-dp h5");
+selectmedia2.forEach(function(item) {
+	  item.onclick = function(e) {
+		document.getElementById('onkeypresstextarea').innerHTML = this.innerHTML;
+
+
+		
+	 }
+	  
+	});
+
+
+	// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.timeSetting-droplist')) {
+var dropdowns = document.getElementsByClassName("username-content");
+var i;
+for (i = 0; i < dropdowns.length; i++) {
+  var openDropdown = dropdowns[i];
+  if (openDropdown.classList.contains('show')) {
+	openDropdown.classList.remove('show');
+  }
+}
+}
+
+
+}
+</script>
+<script>
+	//For modal
+	document.addEventListener('click', function (e) {
+	        e = e || window.event;
+	        var target = e.target || e.srcElement;
+
+	        if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') 
+	        {
+	            if (target.hasAttribute('data-target')) 
+	            {
+	                var m_ID = target.getAttribute('data-target');
+	                document.getElementById(m_ID).classList.add('open');
+	            }
+	        }
+
+	        // Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
+	        if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') ||target.classList.contains('modal')) {
+	            var modal = document.querySelector('.modal.open');
+	            modal.classList.remove('open');
+	        }
+        }, false);
+
+</script>
+  <script>
+	//for tab
+    function changeuserImgFunc(evt, changeuserImginput) {
+        var i, changeuserImg_tabcontent, changeuserImg_tablinks;
+        changeuserImg_tabcontent = document.getElementsByClassName("changeuserImg_tabcontent");
+        for (i = 0; i < changeuserImg_tabcontent.length; i++) {
+            changeuserImg_tabcontent[i].style.display = "none";
+        }
+        changeuserImg_tablinks = document.getElementsByClassName("changeuserImg-tablinks");
+        for (i = 0; i < changeuserImg_tablinks.length; i++) {
+            changeuserImg_tablinks[i].className = changeuserImg_tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(changeuserImginput).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+//for Inner Avatar tab
+    function changeAvImgFunc(evt, changeuserImginput) {
+        var i, changeAvImg_tabcontent, changeAvImg_tablinks;
+        changeAvImg_tabcontent = document.getElementsByClassName("changeAvImg_tabcontent");
+        for (i = 0; i < changeAvImg_tabcontent.length; i++) {
+            changeAvImg_tabcontent[i].style.display = "none";
+        }
+        changeAvImg_tablinks = document.getElementsByClassName("changeuserImg-Innertablinks-av");
+        for (i = 0; i < changeAvImg_tablinks.length; i++) {
+            changeAvImg_tablinks[i].className = changeAvImg_tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(changeuserImginput).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+	//for Inner background tab
+    function changeBgImgFunc(evt, changeuserImginput) {
+        var i, changeBgImg_tabcontent, changeBgImg_tablinks;
+        changeBgImg_tabcontent = document.getElementsByClassName("changebgImg_tabcontent");
+        for (i = 0; i < changeBgImg_tabcontent.length; i++) {
+            changeBgImg_tabcontent[i].style.display = "none";
+        }
+        changeBgImg_tablinks = document.getElementsByClassName("changeuserImg-Innertablinks-bg");
+        for (i = 0; i < changeBgImg_tablinks.length; i++) {
+            changeBgImg_tablinks[i].className = changeBgImg_tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(changeuserImginput).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+//for reaction tab
+    function reactionFunc(evt, reactioninput) {
+        var i, reaction_tabcontent, reaction_tablinks;
+        reaction_tabcontent = document.getElementsByClassName("user-reaction-content-list");
+        for (i = 0; i < reaction_tabcontent.length; i++) {
+            reaction_tabcontent[i].style.display = "none";
+        }
+        reaction_tablinks = document.getElementsByClassName("reaction_tablinks");
+        for (i = 0; i < reaction_tablinks.length; i++) {
+            reaction_tablinks[i].className = reaction_tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(reactioninput).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+
+</body>
+
+</html>

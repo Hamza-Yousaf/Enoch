@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>HOME</title>
+	<!-- Fav Icons -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalabel=0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/dashboard-header.css" rel="stylesheet" />
+    <link href="css/dashboard-style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/dApp-S-home.css" />
+    <link rel="stylesheet" href="css/home-post.css" />
+    <link rel="stylesheet" href="css/onboarding-newstyle.css" />
+	<link rel="stylesheet" href="css/comunitySettings.css" />
+</head>
+
+<body>
+	<div class="container-fluid dashboard-body-bg second-body-bg">
+	<div class="row">
+		<header class="custom-header">			
+			<div class="ezl-dashboard-header">
+				<div class="menu-left">
+					<div class="menu-wrap"><!--trade menu-->
+						<a href="#menu" class="menu-link" onclick="tradeFunction()"><img src="images/Menu.png" alt="Menu" class="img-fluid"/></a>
+						<div class="tradecontainer" id="trademenu-drpdown">
+						  <div class="trade-menu-panel-panel-group" id="accordionMenu" role="tablist" aria-multiselectable="true">
+							<div class="trade-menu-panel">
+							  <div class="trade-menu-heading" role="tab">
+								<h4 class="trade-menu-title">
+								<a role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+								  <span><img src="images/Over.png" class="img-fluid" alt="Overview"/></span>Overview
+								</a>
+							  </h4>
+							  </div>
+							 
+							</div>
+							<div class="trade-menu-panel">
+							  <div class="trade-menu-heading" role="tab" id="headingTwo">
+								<h4 class="trade-menu-title">
+								<a class="collapsed trade-dropmenu" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								 <span><img src="images/Borrow.png" class="img-fluid trade-menu-icon" alt="Trade"/><img src="images/Borrow2.png" class="img-fluid trade-menu-icon-active" alt="Trade"/></span>Trade
+								</a>
+							  </h4>
+							  </div>
+							  <div id="collapseTwo" class="trade-menu-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+								<ul class="nav">
+									<li><a href="#!">Swap</a></li>
+									<li><a href="#!" class="trade-menuItem-active">Liquidity</a></li>
+								  </ul>
+							  </div>
+							</div>
+							<div class="trade-menu-panel">
+							  <div class="trade-menu-heading" role="tab" id="headingThree">
+								<h4 class="trade-menu-title">
+								<a class="collapsed trade-dropmenu" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								 <span><img src="images/pools.png" class="img-fluid trade-menu-icon" alt="pools"/><img src="images/pools2.png" class="img-fluid trade-menu-icon-active" alt="pools"/></span>Pools
+								</a>
+							  </h4>
+							  </div>
+							  <div id="collapseThree" class="trade-menu-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+								<ul class="nav">
+									<li><a href="#!" class="trade-menuItem-active">Entertainment Pools</a></li>
+									<li><a href="#!">NFT Farming Pools</a></li>
+								  </ul>
+							  </div>
+							</div>
+							
+							
+							<div class="trade-menu-panel">
+							  <div class="trade-menu-heading" role="tab" id="headingFour">
+								<h4 class="trade-menu-title">
+								<a class="collapsed trade-dropmenu" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								  <span><img src="images/menuStacking.png" class="img-fluid trade-menu-icon" alt="Staking"/><img src="images/menuStacking2.png" class="img-fluid trade-menu-icon-active" alt="Staking"/></span>Staking
+								</a>
+							  </h4>
+							  </div>
+							  <div id="collapseFour" class="trade-menu-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+								
+								  <ul class="">
+									<li><a href="#!">Enoch Staking</a></li>
+									<li><a href="#!" class="trade-menuItem-active">NFT staking</a></li>
+								  </ul>
+							
+							  </div>
+							</div>
+							
+						  </div>
+						</div>
+					</div>
+					<div class="header-logo"><a href="javascript:void(0)"><img src="images/logo.png" alt="logo" class="img-fluid"/></a></div>
+				</div>
+				<div class="menuright-side">
+					<div class="right-search">
+						<form class="search-form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Fund, ISIN, Keyword ">
+									<button class="search-form-btn" type="Submit"><img class="search-img" src="images/search.png" alt="search"></button>
+							</div>
+						</form>
+					</div>
+					<div class="menu-mid-sect">
+						<ul id="submenubar">
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/home.png" alt="home" class="img-fluid"/></div>
+								<a href="javascript:void(0)">Home</a>
+							</li>
+							
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/Chat.png" alt="Chat" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">Messaging</a>
+							</li>
+							<li class="ether-block">
+								<div class="menu-times-notifi mr-2"><img src="images/Ethereum.png" alt="Ethereum" class="img-fluid"/></div>
+								<a href="javascript:void(0)">ETH Mainnet <i class="fa fa-angle-right"></i></a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)">Connect Wallet</a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)"><span><img src="images/cart.png" class="img-fluid mr-2"/></span>Cart</a>
+							</li>
+							
+						</ul>
+						<div class="toggle-menu">
+								<div onclick="subtogglediv('submenubar','submenu-toggle');" class="d-inline-block">
+									<i class="fa fa-bars" aria-hidden="true" id="submenu-toggle"></i>
+								</div>
+							</div>
+					</div>
+					
+					<div class="ezl-notificaion">
+					<div class="position-relative notificaion-dropdown ezl-notificaion-marg">
+						<a href="javascript:void(0)" class="popup"><img src="images/help.png" alt="help"/></a>							
+											
+					</div>
+					<div class=" position-relative notificaion-dropdown">
+						<a href="javascript:void(0)" class="popup"><img src="images/alertBell.png" alt="Bell"><span class="notificaion-spn">10</span></a>							
+						
+					</div>
+					</div>
+					<div class="ezl-user-ac">
+					
+						<div class="account-d dropdown">
+							<div class="dropdown-buttn"><span class="popup" onclick="popupFunction()"><div class="user-img"><img src="images/user-ReginaCooper.png" alt="user image" class="img-fluid"/></div></span>
+								<div class="popupbox dropdown-menu" id="myPopup">
+									
+									<ul class="">
+										<li>
+											<div  class="enoch-usr-prof"><span><img src="images/user-pro-pic.png" class="img-fluid mr-1" alt="profile- pic"/> @Hulk66</span><span><a href="#!">Change</a></span></div>
+										</li>
+										<li>
+											<div class="enoch-usr-status-block">
+												<div class="usr-status-left">Online Status</div>
+												<div class="usr-status-right">
+													<div class="post-switch">
+														<label class="postswitch">
+														  <input type="checkbox" checked>
+														  <span class="post-slider round"></span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="enoch-usr-status-block"><a href="#!">Become Creator </a></div>
+											<div class="enoch-usr-status-block"><a href="#!">Your Public Profile</a></div>
+											<div class="enoch-usr-status-block mb-0"><a href="#!">Invite a Friend</a></div>
+										</li>
+										<li>
+											<div class="enoch-usr-status-block"><a href="#!">Setting </a></div>
+											<div class="enoch-usr-status-block"><a href="#!">Help Center</a></div>										
+											<div class="enoch-usr-status-block mb-0"><a href="#!" class="orange-clr">Upgrade to Premium</a></div>
+										</li>
+										<li class="mt-4">
+											<div class="enoch-usr-status-block mb-0">Wallet  <span><a href="#!" class="btn freebonus-btn">$400 </a></span></div>
+										</li>
+										<li class="mt-4 pb-0">
+											<div class="enoch-usr-status-block mb-0 manage-ac">
+												<h3>Manage</h3>
+												<ul>
+													<li>
+														<div class="manage-ac-block">
+															<span>Comapny:	</span>
+															<span class="ml-1"><img src="images/man-icon1.png" class="img-fluid mr-1" alt="user"/>88mph  </span>
+														</div>
+													</li>
+													<li>
+														<div class="manage-ac-block">
+															<span>Comapny:	</span>
+															<span class="ml-1"><img src="images/man-icon2.png" class="img-fluid mr-1" alt="user"/>CryptoBlue    </span>
+														</div>
+													</li>
+												</ul>
+											</div>
+											
+										</li>
+										<li class="mb-0 pb-0">
+											<div class="enoch-usr-status-block mb-0"><a href="#!" class="post-red-clr">Logout</a></div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+			
+			<div class="dApp-menu-btn">
+				<a href="#!"><img src="images/LeftSide-Menu.png" alt="menu" class="img-fluid"  data-toggle="modal" data-target="right-top-modal" /></a>
+				<div class="right-top-modal-block">
+					<div id="right-top-modal" class="modal fade">
+						<!-- Modal content -->
+						<div class="modal-content right-top-modal-content">
+							<span class="close"><img src="images/postCross2.png" alt="close" class="img-fluid" data-dismiss="modal"></span>
+							<div class="right-top-body-block">
+								<div class="right-top-body-block-lft">
+									<form class="right-search-form">
+										<div class="right-form-group">
+											<img src="images/help-Search.png" class="img-fluid" alt="search"/><input type="text" class="form-control" placeholder="Search menu...">
+												
+										</div>
+									</form>
+									<div class="enoch-community-scrollable">
+									<div class="enoch-menu-block-panel">
+										<div class="enoch-menu-block-lft">
+											<div class="enoch-menu-block-items">
+												<h2>Personal</h2>
+												<ul>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon1.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">NFT Vault </a>
+																<p>Organise or find events and other things
+																	to do online and nearby</p>
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon2.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Earning </a>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon28.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Wallet</a>
+															<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon3.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Billing</a>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon29.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Membership</a>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon35.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Ranking</a>
+															<p>Organise or find events and other things to do online and nearby</p>
+														</div>
+													</li>
+													
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon4.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Affiliate</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="enoch-menu-block-items">
+												<h2>Entertainment</h2>
+												<ul>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon11.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Popular</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon30.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Casino</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon31.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Sports</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon32.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Games</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon16.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Promotions</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="enoch-menu-block-items">
+												<h2>Advertising</h2>
+												<ul>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon19.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Ad Manager </a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon20.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Enoch Ad</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+														
+														</div>
+													</li>
+													
+												</ul>
+											</div>
+											<div class="enoch-menu-block-items mb-0">
+												<h2>User Setting </h2>
+												<ul>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon26.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Your Profile </a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon27.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Your Account</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													
+												</ul>
+											</div>
+										</div>
+										<div class="enoch-menu-block-right">
+											<div class="enoch-menu-block-items">
+												<h2>Social</h2>
+												<ul>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon5.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">My Networks</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon6.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Communities</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon33.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Creator Portals </a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon36.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Livezone</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon8.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Company pages </a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon9.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Events</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon37.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">News Feed </a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="enoch-menu-block-items">
+												<h2>Shopping</h2>
+												<ul>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon34.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Digital  Marketplace</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon38.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Enoch Shops</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="enoch-menu-block-items">
+												<h2>Jobs</h2>
+												<ul>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon18.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Remote workhub</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													
+												</ul>
+											</div>
+											<div class="enoch-menu-block-items">
+												<h2>Developer</h2>
+												<ul>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon21.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Develop</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon22.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Grow</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon23.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Monetisation </a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													 <li>
+														<div class="right-modal-lft"><img src="images/menu-icon24.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Github</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li>
+													<li>
+														<div class="right-modal-lft"><img src="images/menu-icon25.png" class="img-fluid" alt="planner"/></div>
+														<div class="right-modal-right">
+															<a href="#!">Docs</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															
+														</div>
+													</li> 
+													
+												</ul>
+											</div>
+										</div>
+									</div>
+									</div>
+								</div>
+								<div class="right-top-body-block-right">
+									<h3>Create</h3>
+									<ul>
+										<li><a href="#!"><span><img src="images/creat-icon1.png" class="img-fluid" alt="icon"/></span> Post</a></li>
+										<li><a href="#!"><span><img src="images/creat-icon2.png" class="img-fluid" alt="icon"/></span> Community</a></li>
+										<li><a href="#!"><span><img src="images/creat-icon5.png" class="img-fluid" alt="icon"/></span> Event</a></li>
+										<li><a href="#!"><span><img src="images/creat-icon10.png" class="img-fluid" alt="icon"/></span> NFT</a></li>
+										<li><a href="#!"><span><img src="images/creat-icon11.png" class="img-fluid" alt="icon"/></span> Reel</a></li>
+										<li><a href="#!"><span><img src="images/creat-icon14.png" class="img-fluid" alt="icon"/></span> Company page </a></li>
+										<li><a href="#!"><span><img src="images/creat-icon12.png" class="img-fluid" alt="icon"/></span> Group</a></li>
+										<li><a href="#!"><span><img src="images/creat-icon7.png" class="img-fluid" alt="icon"/></span> Job</a></li>								
+										<li><a href="#!"><span><img src="images/creat-icon13.png" class="img-fluid" alt="icon"/></span> AD </a></li>									 
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>								
+				</div>
+				</div>
+		</header>
+	</div>		
+	<div class="row">	
+		<div class="ezl-dashboard-container">			
+			<div class="dApp-S-Home-body">
+			    <div class="row m-0">
+					<div class="home-post-block">
+						<div class="home-post-lft">
+						<div class="lft-ovelay dApp-overlay"></div>
+                       <div class="dApp-new-banner-sect1">
+							<img src="images/onboard-banners.png" alt="Banner" class="img-fluid" />
+							<div class="dApp-new-banner-content-sect">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun</p>
+								<div><button class="dApp-unlockClub-btn">Unlock VIP cLUB</button></div>
+							</div>
+					   </div>
+					   <div class="dApp-Win-a-Day-Banner-sect">
+							<img src="images/win-a-day-banner.png" alt="Banner" class="img-fluid">
+							<div class="dApp-betNow"><button class="dApp-betnow-btn"><img src="images/BetNow.png" class="img-fluid" alt="bet now"></button></div>
+						</div>
+						<div class="dApp-daily-bonous-Banner-sect">
+							<img src="images/daily-bonous-banner.png" alt="Banner" class="img-fluid">
+							<div class="dApp-playNow"><button class="dApp-playnow-btn"><img src="images/PlayNow.png" class="img-fluid" alt="bet now"></button></div>
+						</div>
+			            
+			            <div class="dApp-home-Create-Post-sect">
+			                <h1>Community</h1>
+			                <p>Your personal Enoch frontpage. Comehere to check in with your favorite communication.</p>
+			                <div class="dApp-home-Create-Post-btn-sect">
+			                    <button class="Create-Post-btn" data-toggle="modal" data-target="#CreatePostModal">Create Post</button>
+			                    <button class="Create-Community-btn" data-toggle="modal" data-target="#CreateCommunity-Modal">Create Community</button>
+			                </div>
+			            </div>
+			            <!-- The Modal -->
+			             <div class="CreateCommunity-Modal-sect">
+			                 <div class="modal" id="CreateCommunity-Modal">
+			                     <div class="modal-dialog">
+			                         <div class="modal-content">
+
+			                             <!-- Modal Header -->
+			                             <div class="CreateCommunity-Modal-header">
+			                                 <!--<h4 class="modal-title">Add experience</h4>-->
+			                                 <div class="close CreateCommunity-Modal-modal-close" data-dismiss="modal"><img src="images/hCross.png" alt="icon" class="img-fluid" /></div>
+			                             </div>
+
+			                             <!-- Modal body -->
+			                             <div class="CreateCommunity-Modal-body">
+			                                 <div class="input-name">
+			                                     <h1>Name*</h1>
+			                                     <p>Community names including capitalization cannot be changed.</p>
+			                                     <input type="text" value="" placeholder="@defiInvestment " id="CreateCommunity-input-name-fild">
+			                                     <p class="input-name-error-text">Community already availabel, Please choose some diffrent name</p>
+			                                     <p class="pt-1">21 character remaining </p>
+			                                 </div>
+			                                 
+			                                 <div class="Community-type">
+			                                     <h1>Community type*</h1>
+			                                     
+			                                     <div class="Community-type-radio-sect">
+			                                         <label class="container"><strong>Public <span>Anyone can view, post, and comment to this community</span></strong>
+			                                             <input type="radio" name="radio">
+			                                             <span class="checkmark"></span>
+			                                         </label>
+			                                         <label class="container"><strong>Restricted <span>Anyone can view this community, but only approved users can post</span></strong>
+			                                             <input type="radio" name="radio">
+			                                             <span class="checkmark"></span>
+			                                         </label>
+			                                         <label class="container"><strong>Private <span>Only approved users can view and submit to this community</span></strong>
+			                                             <input type="radio" name="radio">
+			                                             <span class="checkmark"></span>
+			                                         </label>
+			                                     </div>
+			                                     
+			                                     
+			                                 </div>
+			                                 
+			                                 <div class="Adult-content-sect">
+			                                     <h1>Adult content</h1>
+			                                     <div class="Adult-content-Checkbox">
+			                                         <input type="checkbox">
+			                                         <label>18+ year old community</label>
+			                                     </div>
+			                                 </div>
+			                                 
+			                                 <div class="CreateCommunity-Modal-btn">
+			                                     <button id="Create-Community-button"><a href="#!">Create Community</a></button>
+			                                 </div>
+			                                 
+			                             </div>
+			                         </div>
+			                     </div>
+			                 </div>
+			             </div>
+						 <div class="Create-Post-Modal-sect">
+							<!-- Modal -->
+							<div class="modal fade create-post-modal-body" id="CreatePostModal" role="dialog">
+								<div class="modal-dialog">
+
+									<!-- Modal content-->
+									<div class="modal-content">
+										<div class="Create-post-modal-header">
+											<h4 class="modal-title">Create your first post</h4>
+											<button class="close" data-dismiss="modal"><img src="images/create-post-modal-Cross.png" alt="icon" class="imf-fluid" /></button>
+										</div>
+										<div class="Create-post-modal-body">
+											<p>Welcome to your new community, Enoch/Community name. Set for your community and welcome new members with a post</p>
+											<div class="Create-post-modal-btns">
+												<button>Continue</button>
+												<button>Create a Post</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>   
+			        </div>
+			        
+						<div class="home-post-mid">
+			                
+			                 <div class="home-post-mid-show-more-sect">
+			                     <div class="home-post-mid-show-more-content">
+			                         <div class="home-post-mid-show-more-headings">
+			                             <span class="close-show-more-content"><img src="images/follow-arrow-right.png" alt="icon" class="img-fluid" /></span><h2>Connect</h2>
+			                         </div>
+			                         <div class="You-might-like-follow-sect">
+			                             <h3>You might like</h3>
+			                         </div>
+			                         <div class="You-might-like-follow-list">
+			                             <ul>
+			                                 <li>
+			                                     <div class="You-might-like-follow-dp">
+			                                         <img src="images/follow-user-dp.png" alt="image" class="img-fluid" />
+			                                         <div class="user-vip-tag">
+			                                             <img src="images/vip-tag.png" alt="icon" class="img-fluid" />
+			                                         </div>
+			                                     </div>
+			                                     <div class="You-might-like-follow-text-sect">
+			                                         <div class="You-might-like-follow-text">
+                                                         <div class="follow-dp-vip-user-text">
+                                                             <span><img src="images/vip-user-icon.png" alt="icon" class="img-fluid" /></span>
+                                                             <h4>@SunYoo and 3 others follow</h4>
+                                                         </div>
+			                                             <div class="You-might-like-follow-username">
+			                                                 <h5>@JaniceHum</h5>
+			                                                 <span>Follows you</span>
+			                                             </div>
+			                                             <p>Entrepreneur always eager to learn more and contribute as much as possible into making a better world. <a href="#!">#crypto</a> beginner & <a href="#!">#nft</a> creator <a href="#!">#startup</a> enthusiast</p>
+			                                         </div>
+			                                         <div class="You-might-like-follow-btn">
+                                                        <button>Follow</button>
+                                                     </div>
+			                                     </div>
+			                                 </li>
+			                                 
+			                                 <li>
+			                                     <div class="You-might-like-follow-dp">
+			                                         <img src="images/follow-user-dp2.png" alt="image" class="img-fluid" />
+			                                     </div>
+			                                     <div class="You-might-like-follow-text-sect">
+			                                         <div class="You-might-like-follow-text">
+			                                             <div class="You-might-like-follow-username">
+			                                                 <h5>@NFT_ CreatorXO</h5>
+			                                             </div>
+			                                             <p>I am a Japanese NFT artist. I draw art of nature and animals. I want to make the world Smiling face with sunglasses 日本のNFTを世界へ。<a href="#!">#NFT</a> <a href="#!">#nftart</a> <a href="#!">#NFTcollection</a></p>
+			                                         </div>
+			                                         <div class="You-might-like-follow-btn">
+                                                        <button>Follow</button>
+                                                     </div>
+			                                     </div>
+			                                 </li>
+			                                 
+			                                 <li>
+			                                     <div class="You-might-like-follow-dp">
+			                                         <img src="images/follow-user-dp3.png" alt="image" class="img-fluid" />
+			                                     </div>
+			                                     <div class="You-might-like-follow-text-sect">
+			                                         <div class="You-might-like-follow-text">
+			                                             <div class="You-might-like-follow-username">
+			                                                 <h5>@CroCchazy</h5>
+			                                                 <span>Follows you</span>
+			                                             </div>
+			                                             <p>Highlighting Black #NFT creators from around the world. Reach out on @ blacknftcreators on Instagram /  <a href="#!">#blockchain</a> <a href="#!">#nfts</a> <a href="#!">#blackart</a> <a href="#!">#crypto</a></p>
+			                                         </div>
+			                                         <div class="You-might-like-follow-btn">
+                                                        <button>Follow</button>
+                                                     </div>
+			                                     </div>
+			                                 </li>
+			                                 
+			                                 <li>
+			                                     <div class="You-might-like-follow-dp">
+			                                         <img src="images/follow-user-dp4.png" alt="image" class="img-fluid" />
+			                                         <div class="user-vip-tag">
+			                                             <img src="images/vip-tag.png" alt="icon" class="img-fluid" />
+			                                         </div>
+			                                     </div>
+			                                     <div class="You-might-like-follow-text-sect">
+			                                         <div class="You-might-like-follow-text">
+                                                         <div class="follow-dp-vip-user-text">
+                                                             <span><img src="images/vip-user-icon.png" alt="icon" class="img-fluid" /></span>
+                                                             <h4>@SunYoo and 3 others follow</h4>
+                                                         </div>
+			                                             <div class="You-might-like-follow-username">
+			                                                 <h5>@blackNFTart</h5>
+			                                                 <span>Follows you</span>
+			                                             </div>
+			                                             <p>NFT digital art creator.Cryptocurrency investor.</p> 
+			                                             <p> I will do my best for all "Crypto Zootei lovers"<a href="#!">https://oncyber.io/ exhibits/uvIbH2QoS0xhp JoUKbGR</a></p>
+			                                         </div>
+			                                         <div class="You-might-like-follow-btn">
+                                                        <button>Follow</button>
+                                                     </div>
+			                                     </div>
+			                                 </li>
+			                                 
+			                                 <li>
+			                                     <div class="You-might-like-follow-dp">
+			                                         <img src="images/follow-user-dp5.png" alt="image" class="img-fluid" />
+			                                     </div>
+			                                     <div class="You-might-like-follow-text-sect">
+			                                         <div class="You-might-like-follow-text">
+			                                             <div class="You-might-like-follow-username">
+			                                                 <h5>@Crypto Zootei</h5>
+			                                             </div>
+			                                             <p>NFT digital art creator.Cryptocurrency investor. I will do my best for all "Crypto Zootei lovers"</p>
+			                                         </div>
+			                                         <div class="You-might-like-follow-btn">
+                                                        <button>Follow</button>
+                                                     </div>
+			                                     </div>
+			                                 </li>
+			                                 
+			                                 <li>
+			                                     <div class="You-might-like-follow-dp">
+			                                         <img src="images/follow-user-dp6.png" alt="image" class="img-fluid" />
+			                                     </div>
+			                                     <div class="You-might-like-follow-text-sect">
+			                                         <div class="You-might-like-follow-text">
+			                                             <div class="You-might-like-follow-username">
+			                                                 <h5>@Nifty Drops </h5>
+			                                             </div>
+			                                             <p>The first #NFTdrop app Helping NFT Collectors find NFT drops across all blockchains & NFT Creators MARKET your NFT launches. SUBMIT your NFT drops</p>
+			                                         </div>
+			                                         <div class="You-might-like-follow-btn">
+                                                        <button>Follow</button>
+                                                     </div>
+			                                     </div>
+			                                 </li>
+			                                 
+			                                 <li>
+			                                     <div class="You-might-like-follow-dp">
+			                                         <img src="images/follow-user-dp7.png" alt="image" class="img-fluid" />
+			                                     </div>
+			                                     <div class="You-might-like-follow-text-sect">
+			                                         <div class="You-might-like-follow-text">
+			                                             <div class="You-might-like-follow-username">
+			                                                 <h5>@NFT_ CreatorXO</h5>
+			                                             </div>
+			                                             <p>I am a Japanese NFT artist. I draw art of nature and animals. I want to make the world Smiling face with sunglasses 日本のNFTを世界へ。<a href="#!">#NFT</a> <a href="#!">#nftart</a> <a href="#!">#NFTcollection</a></p>
+			                                         </div>
+			                                         <div class="You-might-like-follow-btn">
+                                                        <button>Follow</button>
+                                                     </div>
+			                                     </div>
+			                                 </li>
+			                                 
+			                                 <li>
+			                                     <div class="You-might-like-follow-dp">
+			                                         <img src="images/follow-user-dp2.png" alt="image" class="img-fluid" />
+			                                     </div>
+			                                     <div class="You-might-like-follow-text-sect">
+			                                         <div class="You-might-like-follow-text">
+			                                             <div class="You-might-like-follow-username">
+			                                                 <h5>@NFT_ CreatorXO</h5>
+			                                             </div>
+			                                             <p>I am a Japanese NFT artist. I draw art of nature and animals. I want to make the world Smiling face with sunglasses 日本のNFTを世界へ。<a href="#!">#NFT</a> <a href="#!">#nftart</a> <a href="#!">#NFTcollection</a></p>
+			                                         </div>
+			                                         <div class="You-might-like-follow-btn">
+                                                        <button>Follow</button>
+                                                     </div>
+			                                     </div>
+			                                 </li>
+			                                 
+			                                 <li>
+			                                     <div class="You-might-like-follow-dp">
+			                                         <img src="images/follow-user-dp6.png" alt="image" class="img-fluid" />
+			                                     </div>
+			                                     <div class="You-might-like-follow-text-sect">
+			                                         <div class="You-might-like-follow-text">
+			                                             <div class="You-might-like-follow-username">
+			                                                 <h5>@Nifty Drops </h5>
+			                                             </div>
+			                                             <p>The first #NFTdrop app Helping NFT Collectors find NFT drops across all blockchains & NFT Creators MARKET your NFT launches. SUBMIT your NFT drops</p>
+			                                         </div>
+			                                         <div class="You-might-like-follow-btn">
+                                                        <button>Follow</button>
+                                                     </div>
+			                                     </div>
+			                                 </li>
+			                                 
+			                                 <li>
+			                                     <div class="You-might-like-follow-dp">
+			                                         <img src="images/follow-user-dp7.png" alt="image" class="img-fluid" />
+			                                     </div>
+			                                     <div class="You-might-like-follow-text-sect">
+			                                         <div class="You-might-like-follow-text">
+			                                             <div class="You-might-like-follow-username">
+			                                                 <h5>@NFT_ CreatorXO</h5>
+			                                             </div>
+			                                             <p>I am a Japanese NFT artist. I draw art of nature and animals. I want to make the world Smiling face with sunglasses 日本のNFTを世界へ。<a href="#!">#NFT</a> <a href="#!">#nftart</a> <a href="#!">#NFTcollection</a></p>
+			                                         </div>
+			                                         <div class="You-might-like-follow-btn">
+                                                        <button>Follow</button>
+                                                     </div>
+			                                     </div>
+			                                 </li>
+			                                 
+			                                 <li>
+			                                     <div class="You-might-like-follow-dp">
+			                                         <img src="images/follow-user-dp10.png" alt="image" class="img-fluid" />
+			                                     </div>
+			                                     <div class="You-might-like-follow-text-sect">
+			                                         <div class="You-might-like-follow-text">
+			                                             <div class="You-might-like-follow-username">
+			                                                 <h5>@NFT_ CreatorXO</h5>
+			                                             </div>
+			                                             <p>I am a Japanese NFT artist. I draw art of nature and animals. I want to make the world Smiling face with sunglasses 日本のNFTを世界へ。<a href="#!">#NFT</a> <a href="#!">#nftart</a> <a href="#!">#NFTcollection</a></p>
+			                                         </div>
+			                                         <div class="You-might-like-follow-btn">
+                                                        <button>Follow</button>
+                                                     </div>
+			                                     </div>
+			                                 </li>
+			                                 
+			                                 <li>
+			                                     <div class="You-might-like-follow-dp">
+			                                         <img src="images/follow-user-dp11.png" alt="image" class="img-fluid" />
+			                                     </div>
+			                                     <div class="You-might-like-follow-text-sect">
+			                                         <div class="You-might-like-follow-text">
+			                                             <div class="You-might-like-follow-username">
+			                                                 <h5>@NFT_ CreatorXO</h5>
+			                                             </div>
+			                                             <p>I am a Japanese NFT artist. I draw art of nature and animals. I want to make the world Smiling face with sunglasses 日本のNFTを世界へ。<a href="#!">#NFT</a> <a href="#!">#nftart</a> <a href="#!">#NFTcollection</a></p>
+			                                         </div>
+			                                         <div class="You-might-like-follow-btn">
+                                                        <button>Follow</button>
+                                                     </div>
+			                                     </div>
+			                                 </li>
+			                                 
+			                                 <li>
+			                                     <div class="You-might-like-follow-dp">
+			                                         <img src="images/follow-user-dp12.png" alt="image" class="img-fluid" />
+			                                     </div>
+			                                     <div class="You-might-like-follow-text-sect">
+			                                         <div class="You-might-like-follow-text">
+			                                             <div class="You-might-like-follow-username">
+			                                                 <h5>@NFT_ CreatorXO</h5>
+			                                             </div>
+			                                             <p>I am a Japanese NFT artist. I draw art of nature and animals. I want to make the world Smiling face with sunglasses 日本のNFTを世界へ。<a href="#!">#NFT</a> <a href="#!">#nftart</a> <a href="#!">#NFTcollection</a></p>
+			                                         </div>
+			                                         <div class="You-might-like-follow-btn">
+                                                        <button>Follow</button>
+                                                     </div>
+			                                     </div>
+			                                 </li>
+			                                 
+			                                 <li>
+			                                     <div class="You-might-like-follow-dp">
+			                                         <img src="images/follow-user-dp13.png" alt="image" class="img-fluid" />
+			                                     </div>
+			                                     <div class="You-might-like-follow-text-sect">
+			                                         <div class="You-might-like-follow-text">
+			                                             <div class="You-might-like-follow-username">
+			                                                 <h5>@Nifty Drops </h5>
+			                                             </div>
+			                                             <p>The first #NFTdrop app Helping NFT Collectors find NFT drops across all blockchains & NFT Creators MARKET your NFT launches. SUBMIT your NFT drops</p>
+			                                         </div>
+			                                         <div class="You-might-like-follow-btn">
+                                                        <button>Follow</button>
+                                                     </div>
+			                                     </div>
+			                                 </li>
+			                                 
+			                                 <li>
+			                                     <div class="You-might-like-follow-dp">
+			                                         <img src="images/follow-user-dp14.png" alt="image" class="img-fluid" />
+			                                     </div>
+			                                     <div class="You-might-like-follow-text-sect">
+			                                         <div class="You-might-like-follow-text">
+			                                             <div class="You-might-like-follow-username">
+			                                                 <h5>@NFT_ CreatorXO</h5>
+			                                             </div>
+			                                             <p>I am a Japanese NFT artist. I draw art of nature and animals. I want to make the world Smiling face with sunglasses 日本のNFTを世界へ。<a href="#!">#NFT</a> <a href="#!">#nftart</a> <a href="#!">#NFTcollection</a></p>
+			                                         </div>
+			                                         <div class="You-might-like-follow-btn">
+                                                        <button>Follow</button>
+                                                     </div>
+			                                     </div>
+			                                 </li>
+			                                 
+			                                 <li>
+			                                     <div class="You-might-like-follow-dp">
+			                                         <img src="images/follow-user-dp15.png" alt="image" class="img-fluid" />
+			                                     </div>
+			                                     <div class="You-might-like-follow-text-sect">
+			                                         <div class="You-might-like-follow-text">
+			                                             <div class="You-might-like-follow-username">
+			                                                 <h5>@NFT_ CreatorXO</h5>
+			                                             </div>
+			                                             <p>I am a Japanese NFT artist. I draw art of nature and animals. I want to make the world Smiling face with sunglasses 日本のNFTを世界へ。<a href="#!">#NFT</a> <a href="#!">#nftart</a> <a href="#!">#NFTcollection</a></p>
+			                                         </div>
+                                                     <div class="You-might-like-follow-btn">
+                                                        <button>Follow</button>
+                                                     </div>
+													</div>
+			                                 </li>
+			                                 
+			                             </ul>
+			                         </div>
+			                     </div>
+			                 </div>	            
+			            </div>
+			        
+					<div class="home-post-right">
+                       <div class="right-ovelay dApp-overlay"></div>
+                       <!---
+			            <div class="Complete-profile-progress-sect">
+			                <div class="Complete-profile-DP">
+			                    <img src="images/onboard-user-pi2.png" alt="User-DP" class="img-fluid" />
+			                </div>
+			                <div class="Complete-profile-progress-userName">
+			                  
+			                    <div class="Complete-profile-progress-Bar">
+			                        <div class="Complete-profile-progress-line"></div>
+			                    </div>
+			                    <p>60% Complete</p>
+			                </div>
+			                <div class="onboarding-edit-prof-link"><a href="#!">Edit  Public Profile & URL</a></div>			              
+			                <p class="onboarding-edit-prof-bottm">A Completed profile is 71% more likely to be views by a recruiter.</p>
+			            </div>
+			            -->
+			            <div class="dApp-What-happening-sect">
+							<div class="dApp-What-happeningheadings">
+								<h1>What’s happening</h1>
+							</div>
+							<div class="dApp-What-happening-news-sect">
+								<div class="dApp-What-happening-news">
+									<div class="dApp-What-happening-news-text">
+										<h2>News . <span>2 minutes ago</span></h2>
+										<p>Looking at the claim that discourse around ‘White Previlege’ can hamper white working class students.</p>
+									</div>
+									<div class="dApp-What-happening-news-photo">
+										<img src="images/dApp-news-pic-1.png" alt="photo" class="img-fluid">
+									</div>
+								</div>
+								<h6>Treanding with <a href="#!">#WhitePrevilege</a></h6>
+							</div>
+							
+							<div class="dApp-Trending-United-Kingdom-sect">
+								<h1>Trending in United Kingdom</h1>
+								<a href="#!">#CryptoCash</a>
+								<p>17.1K Pinned</p>
+								<div class="dApp-Trending-United-Kingdom-3dots">
+									<img src="images/dApp-ThreeDots.png" alt="3Dots" class="img-fluid">
+								</div>
+							</div>
+							<div class="dApp-Trending-United-Kingdom-sect">
+								<h1>Trending in United Kingdom</h1>
+								<a href="#!">#CryptoCash</a>
+								<p>17.1K Pinned</p>
+								<div class="dApp-Trending-United-Kingdom-3dots">
+									<img src="images/dApp-ThreeDots.png" alt="3Dots" class="img-fluid">
+								</div>
+							</div>
+							
+							<div class="dApp-Who-seemore"><a href="#!">Show more</a></div>
+						</div>
+			            
+			            <!-- <div class="dApp-Who-to-follow-sect">
+			                <div class="dApp-Who-to-follow-headings">
+			                    <h1>You might like</h1>
+			                </div>
+			                <div class="dApp-Who-to-follow">
+			                    <div class="dApp-Who-to-follow-content">
+			                        <div class="dApp-Who-to-follow-dp">
+			                            <img src="images/userAvatar4.png" alt="photo" class="img-fluid">
+										
+			                        </div>
+			                        <ul>
+			                            <li class="profile-name">@djirridiant </li>			                            
+			                            <li class="Promoted"><span><img src="images/External-Link.png" alt="icon" class="img-fluid"></span>Promoted</li>
+			                        </ul>
+			                    </div>
+			                    <div class="dApp-Who-to-follow-btn">
+			                        <button>Follow</button>
+			                    </div>
+			                </div>
+			                
+			                <div class="dApp-Who-to-follow">
+			                    <div class="dApp-Who-to-follow-content">
+			                        <div class="dApp-Who-to-follow-dp">
+			                            <img src="images/userAvatar2.png" alt="photo" class="img-fluid">
+										<span class="dApp-follow-dp-icon"><img src="images/follow-icon.png" alt="photo" class="img-fluid"></span>
+			                        </div>
+			                        <ul>
+			                            <li class="profile-name">@CurtisDaws</li>
+			                           
+			                        </ul>
+			                    </div>
+			                    <div class="dApp-Who-to-follow-btn">
+			                        <button>Follow</button>
+			                    </div>
+			                </div>
+			                
+			                <div class="dApp-Who-to-follow mb-4">
+			                    <div class="dApp-Who-to-follow-content">
+			                        <div class="dApp-Who-to-follow-dp">
+			                            <img src="images/userAvatar5.png" alt="photo" class="img-fluid">
+			                        </div>
+			                        <ul>
+			                            <li class="profile-name">@JaniceHum</li>
+			                           
+			                        </ul>
+			                    </div>
+			                    <div class="dApp-Who-to-follow-btn">
+			                        <button>Follow</button>
+			                    </div>
+			                </div>
+			                
+			                <div class="dApp-Who-seemore dApp-Who-to-follow-seemore"><a href="#!">Show more</a></div>
+			            </div> -->
+			            <div class="dApp-Who-quickLink">
+							<h2>Quick links</h2>
+								<ul>
+									<li><a href="#!">Events</a></li>
+									<li><a href="#!">Community</a></li>
+									<li><a href="#!">Marketplace</a></li>
+									<li><a href="#!">Livezone</a></li>
+									<li><a href="#!">Spheres</a></li>
+								</ul>
+						 </div>
+			        </div>
+			        </div>
+			    </div>
+			</div>
+		</div>
+		
+	
+	</div>
+	
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+
+// When the user clicks, open the popup
+function popupFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+
+}
+// When the user clicks, open trade mennu
+function tradeFunction() {
+  var trade = document.getElementById("trademenu-drpdown");
+  trade.classList.toggle("show");
+}
+
+</script>
+<script>
+	/*for toggle sub menu*/
+		function subtogglediv(id, icon) {
+			var id = document.getElementById(id);
+			id.classList.toggle('submenu-active');
+			var cross = document.getElementById(icon);
+			cross.classList.toggle('fa-times');
+			cross.classList.toggle('fa-bars');
+		}
+		</script>
+		<script>
+	/*for Tab*/
+        function helpfunction(evt, faqName) {
+            var i, supporttabcontent, helptablinks;
+            supporttabcontent = document.getElementsByClassName("supporttabcontent");
+            for (i = 0; i < supporttabcontent.length; i++) {
+                supporttabcontent[i].style.display = "none";
+            }
+            helptablinks = document.getElementsByClassName("helptablinks");
+            for (i = 0; i < helptablinks.length; i++) {
+                helptablinks[i].className = helptablinks[i].className.replace(" h-active", "");
+            }
+            document.getElementById(faqName).style.display = "block";
+            evt.currentTarget.className += " h-active";
+        }
+		</script>
+		<script type="text/javascript">
+		/* for modal dropdown menu*/
+	    var dropdownpopup = document.querySelectorAll('[data-toggle=dropdownpopup]');
+	    for (var k = 0; k < dropdownpopup.length; k++) {
+	        dropdownpopup[k].addEventListener('click', function (e) {
+	            if (this.hasAttribute('data-link')) {
+	                var m_ID1 = this.getAttribute('data-link');
+	                //for closing other popup
+	                var activedropdown = document.querySelector('.dropdown-menu.drop-active');
+	                if(activedropdown && activedropdown.getAttribute('id') != m_ID1)
+	                {
+	                    activedropdown.classList.remove('drop-active');
+	                }
+	                //activting popup
+	                document.getElementById(m_ID1).classList.toggle('drop-active');
+	            }
+	        });
+	    }
+	 
+		/*mass select*/
+		function checkall(source) {
+	  		checkboxes = document.getElementsByName('foo');
+	  		for(var i=0, n=checkboxes.length;i<n;i++) {
+	    		checkboxes[i].checked = source.checked;
+	  		}
+		}
+		
+
+		/*rating start*/
+		var changeClass = document.querySelectorAll('[data-toggleclass=starclass]');
+	    for (var k = 0; k < changeClass.length; k++) {
+	        changeClass[k].addEventListener('click', function (e) {
+	            if (this.hasAttribute('data-class')) {
+	                var dataClass = this.getAttribute('data-class');
+	                this.classList.toggle(dataClass);
+	            }
+	        });
+	    }
+
+	    //For modal
+		document.addEventListener('click', function (e) {
+	        e = e || window.event;
+	        var target = e.target || e.srcElement;
+
+	        if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') 
+	        {
+	            if (target.hasAttribute('data-target')) 
+	            {
+	                var m_ID = target.getAttribute('data-target');
+	                document.getElementById(m_ID).classList.add('open');
+	            }
+	        }
+
+	        // Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
+	        if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') ||target.classList.contains('modal')) {
+	            var modal = document.querySelector('.modal.open');
+	            modal.classList.remove('open');
+	        }
+        }, false);
+
+       
+	
+ 	</script>
+
+<script type="text/javascript">
+		
+     //for accordion tab
+		var accItem = document.getElementsByClassName('tableRow');
+		var accHD = document.getElementsByClassName('hlp-collapse-bttn');
+		for (i = 0; i < accHD.length; i++) {
+			accHD[i].addEventListener('click', toggleItem, false);
+		}
+		function toggleItem() {
+			var itemClass = this.parentElement.className;
+			for (i = 0; i < accItem.length; i++) {
+				accItem[i].className = 'tableRow tableRow-inactive';
+			}
+			if (itemClass == 'tableRow tableRow-inactive') {
+				this.parentNode.className = 'tableRow tableRow-active';
+			}
+		}
+		
+	</script>
+
+
+
+
+<script>
+    $(document).ready(function() {
+        $('#Edit-username-input').click(function() {
+            $('.username-dropdown').toggle();
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function() {
+        $('#City-drop-box').click(function() {
+            $('.City-dropdown-list').toggle();
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function() {
+        $('#Country-drop-box').click(function() {
+            $('.Country-dropdown-list').toggle();
+        });
+    });
+</script>
+
+<script>
+    var coll = document.getElementsByClassName("dApp-home-profile-collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var Transfer_Ticket_collaps = this.nextElementSibling;
+            if (Transfer_Ticket_collaps.style.display === "block") {
+                Transfer_Ticket_collaps.style.display = "none";
+            } else {
+                Transfer_Ticket_collaps.style.display = "block";
+            }
+        });
+    }
+</script>
+
+<script>
+    function InterestOpenCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("Interest_tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("Interest_tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("Interest_defaultOpen").click();
+</script>
+
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+
+<script>
+    $(document).ready(function() {
+        $('#Edit-Employment-type').click(function() {
+            $('.Edit-Employment-dropdown').toggle();
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function() {
+        $('#Create-Community-button').click(function() {
+            $('.input-name-error-text').show();
+        });
+    });
+</script>
+
+<script> 
+$('#Create-Community-button').bind('click', function() {
+    if(allFilledpassauthd()) $('#CreateCommunity-input-name-fild').addClass('error');
+});
+
+function allFilledpassauthd() {
+    var filled = true;
+    $('.CreateCommunity-Modal-body input').each(function() {
+        if($(this).val() == '') filled = false;
+    });
+    return filled;
+}
+</script>
+   
+<script>
+    $(document).ready(function() {
+        $('.username-dropdown ul li').click(function() {
+            $('.username-dropdown .success').show();
+        });
+    });
+    
+    $(document).ready(function() {
+        $('.username-dropdown ul li').click(function() {
+            $('.username-dropdown .error').hide();
+        });
+    });
+</script>
+
+<script> 
+$('#username_list li').bind('click', function() {
+    if(allFilledpassauthd()) $('#Edit-username-input').addClass('username-input-success');
+});
+  
+$('#username_list li').bind('click', function() {
+    if(allFilledpassauthd()) $('#Edit-username-input').removeClass('username-input-error');
+});
+
+function allFilledpassauthd() {
+    var filled = true;
+    $('.dApp-home-profile-modal-form .Edit-username input').each(function() {
+        if($(this).val() == '') filled = false;
+    });
+    return filled;
+}
+</script>
+   
+<script>
+    $(document).ready(function() {
+        $('.username-dropdown button').click(function() {
+            $('.username-dropdown .error').show();
+        });
+    });
+    
+    $(document).ready(function() {
+        $('.username-dropdown button').click(function() {
+            $('.username-dropdown .success').hide();
+        });
+    });
+</script>
+
+<script> 
+$('#edit-userName-btn').bind('click', function() {
+    if(allFilledpassauthd()) $('#Edit-username-input').addClass('username-input-error');
+});
+
+function allFilledpassauthd() {
+    var filled = true;
+    $('.dApp-home-profile-modal-form .Edit-username input').each(function() {
+        if($(this).val() == '') filled = false;
+    });
+    return filled;
+}
+</script>
+   
+<script> 
+$('#username_list li').bind('click', function() {
+    if(allFilledpassauthd()) $('#edit-userName-btn').removeClass('disable');
+});
+
+$('#Edit-username-input').bind('keyup', function() {
+    if(allFilledpassauthd()) $('#edit-userName-btn').removeClass('disable');
+});
+
+function allFilledpassauthd() {
+    var filled = true;
+    $('.dApp-home-profile-modal-form .button').each(function() {
+        if($(this).val() == '') filled = false;
+    });
+    return filled;
+}
+</script>
+
+<script> 
+$('.dApp-home-profile-modal-form .input-fild').bind('click', function() {
+    if(allFilledpassauthd()) $('#profile-edit-save-btn').removeClass('disable');
+});
+
+
+function allFilledpassauthd() {
+    var filled = true;
+    $('.dApp-home-profile-modal-sect .modal-footer .button').each(function() {
+        if($(this).val() == '') filled = false;
+    });
+    return filled;
+}
+</script>
+
+<script> 
+$('#username_list li').bind('click', function() {
+    if(allFilledpassauthd()) $('.Edit-username').addClass('Edit-username-success');
+});
+    
+$('#edit-userName-btn').bind('click', function() {
+    if(allFilledpassauthd()) $('.Edit-username').removeClass('Edit-username-success');
+});
+
+function allFilledpassauthdd() {
+    var filled = true;
+    $('.dApp-home-profile-modal-form .Edit-username').each(function() {
+        if($(this).val() == '') filled = false;
+    });
+    return filled;
+}
+</script>
+
+<script>
+
+$('.Location-checkbox input:checkbox').change(function(){
+    if($(this).is(":checked")) {
+        $('#onboardSavebtn').removeClass("exprnc-disable-bttn");
+    } else {
+        $('#onboardSavebtn').addClass("exprnc-disable-bttn");
+    }
+});
+</script>
+<script>
+		//earn dropdown
+		var eTypeVal = document.getElementById("Employment-type-dropList").querySelectorAll(".Employment-type-dropbox-list ul li");
+		eTypeVal.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('Edit-Employment-type-dropBox').innerHTML = this.innerHTML;	        
+		 }
+		  
+        });
+		//edit profile dropdown
+		var editVal = document.getElementById("edit-input-dropList").querySelectorAll(".edit-input-dropbox-list ul li");
+		editVal.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('edit-input-dropBox').innerHTML = this.innerHTML;	        
+		 }
+		  }); 
+		  //edit country dropdown
+		var countryVal = document.getElementById("edit-countryinput-dropList").querySelectorAll(".edit-input-dropbox-list ul li");
+		countryVal.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('edit-countryinput-dropBox').innerHTML = this.innerHTML;	        
+		 }
+		  }); 
+		   //edit relation dropdown
+		var relationVal = document.getElementById("edit-relationinput-dropList").querySelectorAll(".edit-input-dropbox-list ul li");
+		relationVal.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('edit-relationinput-dropBox').innerHTML = this.innerHTML;	        
+		 }
+		  }); 
+		  //edit here for dropdown
+		var hereVal = document.getElementById("edit-hereinput-dropList").querySelectorAll(".edit-input-dropbox-list ul li");
+		hereVal.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('edit-hereinput-dropBox').innerHTML = this.innerHTML;	        
+		 }
+		  }); 
+	</script>
+	<script>
+		$(".onboardinguser-edit-btn").click(function(){
+  $(".dApp-overlay").addClass("panel-overlay");
+  $(".dApp-proPoic-overlay").addClass("proPoic-overlay");
+  $(".d-none-actiive").addClass("d-none");
+   $(".onbording-new-edit-form").addClass("edit-form-d-block");
+   $(".dApp-prof-bg").addClass("dApp-prof-bg-d-block");
+});
+$(".onboarding-update-bttn").click(function(){
+  $(".dApp-overlay").removeClass("panel-overlay");
+  $(".dApp-proPoic-overlay").removeClass("proPoic-overlay");
+  $(".d-none-actiive").removeClass("d-none");
+   $(".onbording-new-edit-form").removeClass("edit-form-d-block");
+    $(".dApp-prof-bg").removeClass("dApp-prof-bg-d-block");
+});
+	</script>
+	<script>
+	//for tab
+    function changeImgFunc(evt, changeImginput) {
+        var i, changeImg_tabcontent, changeImg_tablinks;
+        changeImg_tabcontent = document.getElementsByClassName("changeImg_tabcontent");
+        for (i = 0; i < changeImg_tabcontent.length; i++) {
+            changeImg_tabcontent[i].style.display = "none";
+        }
+        changeImg_tablinks = document.getElementsByClassName("changeImg-tablinks");
+        for (i = 0; i < changeImg_tablinks.length; i++) {
+            changeImg_tablinks[i].className = changeImg_tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(changeImginput).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+//for Inner Avatar tab
+    function changeAvImgFunc(evt, changeImginput) {
+        var i, changeAvImg_tabcontent, changeAvImg_tablinks;
+        changeAvImg_tabcontent = document.getElementsByClassName("changeAvImg_tabcontent");
+        for (i = 0; i < changeAvImg_tabcontent.length; i++) {
+            changeAvImg_tabcontent[i].style.display = "none";
+        }
+        changeAvImg_tablinks = document.getElementsByClassName("changeImg-Innertablinks-av");
+        for (i = 0; i < changeAvImg_tablinks.length; i++) {
+            changeAvImg_tablinks[i].className = changeAvImg_tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(changeImginput).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+	//for Inner background tab
+    function changeBgImgFunc(evt, changeImginput) {
+        var i, changeBgImg_tabcontent, changeBgImg_tablinks;
+        changeBgImg_tabcontent = document.getElementsByClassName("changebgImg_tabcontent");
+        for (i = 0; i < changeBgImg_tabcontent.length; i++) {
+            changeBgImg_tabcontent[i].style.display = "none";
+        }
+        changeBgImg_tablinks = document.getElementsByClassName("changeImg-Innertablinks-bg");
+        for (i = 0; i < changeBgImg_tablinks.length; i++) {
+            changeBgImg_tablinks[i].className = changeBgImg_tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(changeImginput).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+//for reaction tab
+    function reactionFunc(evt, reactioninput) {
+        var i, reaction_tabcontent, reaction_tablinks;
+        reaction_tabcontent = document.getElementsByClassName("user-reaction-content-list");
+        for (i = 0; i < reaction_tabcontent.length; i++) {
+            reaction_tabcontent[i].style.display = "none";
+        }
+        reaction_tablinks = document.getElementsByClassName("reaction_tablinks");
+        for (i = 0; i < reaction_tablinks.length; i++) {
+            reaction_tablinks[i].className = reaction_tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(reactioninput).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+
+
+</body>
+
+</html>

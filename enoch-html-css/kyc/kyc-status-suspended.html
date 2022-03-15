@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Setting :: profile</title>
+	<!-- Fav Icons -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!--JS-->
+    <script src="js/jquery.min.js"></script>
+	<!-- Stylesheets -->
+	
+	<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	
+	<link rel="stylesheet" href="css/style.css" />
+	<link href="css/dashboard-header.css" rel="stylesheet" />
+	<link href="css/dashboard-style.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+  
+</head>
+
+<body>
+<div class="container-fluid dashboard-body-bg">
+	<div class="row">
+		<header class="custom-header">			
+			<div class="ezl-dashboard-header">
+				<div class="menu-left">
+					<div class="menu-wrap">
+						<a href="#menu" class="menu-link"><img src="images/Menu.png" alt="Menu" class="img-fluid"/></a>
+					</div>
+					<div class="header-logo"><a href="javascript:void(0)"><img src="images/logo.png" alt="logo" class="img-fluid"/></a></div>
+				</div>
+				<div class="menuright-side">
+					<div class="right-search">
+						<form class="search-form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Fund, ISIN, Keyword ">
+									<button class="search-form-btn" type="Submit"><img class="search-img" src="images/search.png" alt="search"></button>
+							</div>
+						</form>
+					</div>
+					<div class="menu-mid-sect">
+						<ul id="submenubar">
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/home.png" alt="home" class="img-fluid"/></div>
+								<a href="javascript:void(0)">Home</a>
+							</li>
+							<!-- <li class="">
+								<div class="menu-times-notifi"><img src="images/network.png" alt="network" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">My Network</a>
+							</li> -->
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/Chat.png" alt="Chat" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">Messaging</a>
+							</li>
+							<li class="ether-block">
+								<div class="menu-times-notifi mr-2"><img src="images/Ethereum.png" alt="Ethereum" class="img-fluid"/></div>
+								<a href="javascript:void(0)">ETH Mainnet <i class="fa fa-angle-right"></i></a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)">Connect Wallet</a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)"><span><img src="images/cart.png" class="img-fluid mr-2"/></span>Cart</a>
+							</li>
+							
+						</ul>
+						<div class="toggle-menu">
+								<div onclick="subtogglediv('submenubar','submenu-toggle');" class="d-inline-block">
+									<i class="fa fa-bars" aria-hidden="true" id="submenu-toggle"></i>
+								</div>
+							</div>
+					</div>
+					
+					<div class="ezl-notificaion">
+					<div class="position-relative notificaion-dropdown ezl-notificaion-marg">
+						<a href="javascript:void(0)" class="popup"><img src="images/help.png" alt="help"/></a>							
+											
+					</div>
+					<div class=" position-relative notificaion-dropdown">
+						<a href="javascript:void(0)" class="popup"><img src="images/alertBell.png" alt="Bell"><span class="notificaion-spn">10</span></a>							
+						
+					</div>
+					</div>
+					<div class="ezl-user-ac">
+					
+					<div class="account-d dropdown">
+						<div class="dropdown-buttn"><span class="popup" onclick="popupFunction()"><div class="user-img"><img src="images/user-img.png" alt="user image" class="img-fluid"/></div></span>
+							<!-- <div class="popupbox dropdown-menu" id="myPopup">
+								
+								<ul class="">
+									<li>
+										<div  class="enoch-usr-prof"><span><img src="images/user-pro-pic.png" class="img-fluid" alt="profile- pic"/> EncchUser007</span><span><a href="#">Change</a></span></div>
+									</li>
+									<li>
+										<div class="enoch-usr-status-block">
+											<div class="usr-status-left">Online Status</div>
+											<div class="usr-status-right">
+												<div class="post-switch">
+													<label class="postswitch">
+													  <input type="checkbox" checked>
+													  <span class="post-slider round"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="enoch-usr-status-block"><a href="#">Public Profile</a></div>
+										<div class="enoch-usr-status-block mb-0"><a href="#">User Settings</a></div>
+									</li>
+									<li>
+										<div class="enoch-usr-status-block"><a href="#">Billing</a></div>
+										<div class="enoch-usr-status-block"><a href="#">Help Center</a></div>
+										<div class="enoch-usr-status-block"><a href="#">Verify Account (KYC)</a></div>
+										<div class="enoch-usr-status-block mb-0"><a href="#" class="orange-clr">Upgrade to Premium</a></div>
+									</li>
+									<li class="mt-4">
+										<div class="enoch-usr-status-block mb-0">Free Bonus<span><a href="#" class="btn freebonus-btn">$50/500 $Enoch </a></span></div>
+									</li>
+									<li class="mt-4">
+										<div class="enoch-usr-status-block mb-0"><a href="#" data-toggle="modal" data-target="switch-user-modal">Switch Account</a></div>
+										
+									</li>
+									<li class="mt-4 mb-0 pb-0">
+										<div class="enoch-usr-status-block mb-0"><a href="#" class="post-red-clr">Logout</a></div>
+									</li>
+								</ul>
+							</div> -->
+						</div>
+					</div>
+					</div>
+				</div>				
+			</div>
+			
+		</header>
+	</div>	
+	
+	<div class="row">
+        <div class="dashboard-header-bredcrumb">
+			<div class="ezl-dashboard-container">
+				<div class="col-12">
+					<ul>
+						<li class="mr-2"><img src="images/bread-crumb-icon-home.png" alt="icon" class="img-fluid"/> </li>
+						<li class="mr-1"><a href="#" class="dsh-active-black"> Setting /</a></li>
+						<li><a href="#"> profile </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<div class="KYC-BODY ezl-dashboard-container">
+		<div class="kyc-acct-suspended">
+			<div class="kyc-acct-suspended-lft"><span><img src="images/Fire.png" class="img-fluid" alt="icon"/></span>
+			<p>Your Financial Account Robert Miles (E/23456789) has been suspended due to issues with payment methods on file. Please <a href="#">update payment</a> methods to restore full functionality to your Account.</p>
+			</div>
+			<div class="kyc-redcross kycd-active" id="kyc-redcrossd"><img src="images/redcross.png" alt="close" class="img-fluid" id="remove-altert"/></div>
+		</div>
+	    <div class="row">
+	        <div class="col-lg-6">
+	            <div class="Individual-profile-sect">
+	                <h1 class="textBlue">Name & D.O.B information</h1>
+	                <div class="KYC-profile-picture-sect Setting-profile-sect">
+	                    <div class="KYC-profile-picture-content Setting-profile-content">
+	                        <div class="row">
+	                            <div class="col-md-3">
+                                    <div class="KYC-profile-picture Setting-profile-picture">
+                                        <div class="KYC-profile-picture-img Setting-profile-picture-img">
+                                            <img src="images/profile-pic.png" alt="profile-picture" class="img-fluid" id="blah"/>
+                                        </div>
+                                        <input type="file" class="my_file" onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])">
+                                    </div>
+	                            </div>
+	                            
+	                            <div class="col-md-9">
+	                                <div class="Setting-profile-picture-text">
+	                                    <ul>
+	                                        <li class="border-bottom-1-gray">
+	                                            <h1>Name</h1>
+	                                            <h2>Robert Miles</h2>
+	                                        </li>
+	                                        <li>
+	                                            <h1>Date of Birth </h1>
+	                                            <h2>11/09/1976</h2>
+	                                        </li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+	                            
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        
+	        <div class="col-lg-6">
+	            <div class="Personal-Information-sect">
+                    <ul class="kyc-card-headings">
+                        <li class="textBlue">Site prefrence </li>
+                        <li class="pencil pencil-active pr-2"><img src="images/KYC-AML/pencil-active.png" alt="pencil" class="img-fluid"/></li>
+                    </ul>
+                
+	                <div class="KYC-Personal-Information Setting-profile-Personal-Information">
+	                    <ul>
+	                        <li class="text-gray">Time Zone <span class="list-1">(GMT+01:00) CET</span></li>
+	                        <li class="text-gray">Language<span class="list-2">English</span></li>
+	                        <li class="last-list text-gray">Content language  <span class="list-3">English</span></li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	       
+	        <div class="col-lg-6">
+	            <div class="ACCOUNT-ACCESS">
+                    <ul class="kyc-card-headings">
+                        <li class="textBlue">ACCOUNT ACCESS </li>
+                        <li class="pencil pencil-active pr-2"><img src="images/KYC-AML/pencil-active.png" alt="pencil" class="img-fluid"/></li>
+                    </ul>
+                
+	                <div class="Setting-profile-ACCOUNT-ACCESS">
+                        <div class="Setting-profile-ACCOUNT-ACCESS-Rows">
+                            <div class="ACCOUNT-ACCESS-Row ACCOUNT-ACCESS-Row-1">
+                                <div class="ACCOUNT-ACCESS-Row-left">
+                                    <ul>
+                                        <li><h1>Phone No.</h1></li>
+                                        <li><h2>+49 0755******678</h2></li>
+                                    </ul>
+                                </div>
+                                <div class="ACCOUNT-ACCESS-Row-right">
+                                    <ul>
+                                        <li><h3>Verified</h3></li>
+                                        <li><h4>Primary</h4></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="ACCOUNT-ACCESS-Row ACCOUNT-ACCESS-Row-2">
+                                <div class="ACCOUNT-ACCESS-Row-left">
+                                    <ul>
+                                        <li><h1>Email</h1></li>
+                                        <li><h2> r.rose@gmail.com </h2></li>
+                                    </ul>
+                                </div>
+                                <div class="ACCOUNT-ACCESS-Row-right">
+                                    <ul>
+                                        <li><h3>&nbsp;</h3></li>
+                                        <li><h4>Primary</h4></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="ACCOUNT-ACCESS-Row ACCOUNT-ACCESS-Row-3">
+                                <div class="ACCOUNT-ACCESS-Row-3-text">
+                                    <p>To update an email address, you must have <span>2 Email Address</span> at least on the Account</p>
+                                </div>
+                            </div>
+                            
+                            <div class="ACCOUNT-ACCESS-Row ACCOUNT-ACCESS-Row-4">
+                                <div class="ACCOUNT-ACCESS-Row-4-left">
+                                    <h3>Two Step verification</h3>
+                                </div>
+                                <div class="ACCOUNT-ACCESS-Row-4-right">
+                                    <h4>ON</h4>
+                                </div>
+                            </div>
+                            
+                            <div class="ACCOUNT-ACCESS-Row ACCOUNT-ACCESS-Row-5">
+                                <div class="ACCOUNT-ACCESS-Row-4-text">
+                                    <p>Verification codes will be sent to this number at sign-in:</p>
+                                    <b>DE +44 755*****67</b>
+                                    <p>This number cannot be deleted while being used for two-step verification</p>
+                                    <a href="#">Change verification MOde</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+	                </div>
+	            </div>
+	            
+	            <div class="Change-or-Close-acc-sect">
+	                <a href="#">Change to business account</a>
+	                <br>
+	                <a href="#">Close your account</a>
+	            </div>
+	        </div>
+	        
+	        <div class="col-lg-6">
+	            <div class="Address-information">
+                    <ul class="kyc-card-headings">
+                        <li class="textBlue">Address</li>
+                        <li class="pencil pencil-active pr-2"><img src="images/KYC-AML/pencil-active.png" alt="pencil" class="img-fluid"/></li>
+                    </ul>
+                
+	                <div class="KYC-Address-information">
+	                    <ul>
+	                        <li class="text-gray">Address 1</li>
+	                        <li class="text-gray">Address 2</li>
+	                        <li class="text-gray">City/Town</li>
+	                        <li class="text-gray">Country</li>
+	                        <li class="last-list text-gray">Postal code</li>
+	                    </ul>
+	                </div>
+	            </div>
+	            
+	            <div class="Personal-Information-sect Setting-profile-Account-MANAGMENT-sect">
+                    <ul class="kyc-card-headings">
+                        <li class="textBlue">Account MANAGMENT </li>
+                    </ul>
+                
+	                <div class="KYC-Personal-Information Setting-profile-Personal-Information Setting-profile-Acc-MANAGMENT">
+	                    <ul>
+	                        <li class="text-gray">Account Stats<span class="list-1">Active</span></li>
+	                        <li class="text-gray">Account Type<span class="list-2">Individual</span></li>
+	                        <li class="text-gray">Account ID<span class="list-3">EZD/23456789</span></li>
+	                        <li class="last-list text-gray">KYC Status<span>KYC Completed</span></li>
+	                    </ul>
+	                </div>
+	            </div>
+	            
+	        </div>
+	        
+	        <div class="col-lg-6">
+	            
+	        </div>
+	        
+	        
+	    </div>
+	</div>
+	
+	
+</div>
+	
+	<script type="text/javascript">
+
+// When the user clicks, open the popup
+function popupFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+
+}
+
+
+</script>
+    <script>
+        $(document).ready(function() {
+            $('.KYC-submission-sect-close').click(function() {
+                $('.KYC-submission-sect').fadeOut();
+            });
+        });
+    </script>
+    <script>
+        /*for toggle sub menu*/
+        function subtogglediv(id, icon) {
+            var id = document.getElementById(id);
+            id.classList.toggle('submenu-active');
+            var cross = document.getElementById(icon);
+            cross.classList.toggle('fa-times');
+            cross.classList.toggle('fa-bars');
+        }
+    </script>
+    
+   
+   <script>
+//close notification
+	var project = document.getElementById("kyc-redcrossd");
+	var btn = document.getElementById("remove-altert");
+	btn.onclick = function() {
+	  project.classList.remove('kycd-active');
+	}
+</script>
+<script>
+	$(function(){
+	   $('.menu-mid-sect ul li.submenubar-item a').click(function(){
+		 $('.menu-mid-sect ul li.submenubar-item a').each(function(a){
+		   $( this ).removeClass('selectedclass')
+		 });
+		 $( this ).addClass('selectedclass');
+	   });
+	  
+	 });
+	</script>
+</body>
+
+
+</html>

@@ -1,0 +1,373 @@
+.c-pointer{
+    cursor: pointer;
+}
+.phone-authenticator-Modal .modal-dialog{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.modal-content{
+    
+}
+.phone-authenticator-OTP-header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    /* text-transform: uppercase; */
+    color: #000000;
+    padding: 16px 32px;
+    border-bottom: 1px solid #D4D8DD;
+    width: 100%;
+}
+.phone-authenticator-OTP-text {
+    padding: 30px 29px;
+    width: 100%;
+}
+.phone-authenticator-OTP-text p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 180%;
+    color: #000000;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.phone-authenticator-Modal .phone-authenticator-otp .phone-authenticator-OTP-box {
+    max-width: 95%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.phone-authenticator-Modal .setting-key ul li input{
+    padding: 0px;
+    padding-bottom: 5px;
+}
+.phone-authenticator-Modal .setting-key ul li .input-act{
+    border: 1px solid #2BBD54;
+    box-shadow: none;
+}
+.RESEND-SIGN-INFO-list ul .app-Authenticator-enabled{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #C6C9CC;
+}
+.phone-authenticator-Modal .close{
+    opacity: 1;
+}
+
+/*----Authenticar-App-body-----*/
+.Authenticar-App-body{
+    max-width: 920px;
+    width: 100%;
+    margin: auto;
+}
+.Authenticar-App-Tittle{
+    max-width: 881px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 37px;
+}
+.Authenticar-App-Tittle h1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 37.1523px;
+    line-height: 130%;
+    text-align: center;
+    color: #000000;
+}
+.Install-Authenticar-App-Sect {
+    background: #ffffff;
+    border: 1px solid #D4D8DD;
+    box-sizing: border-box;
+    border-radius: 2px;
+    max-width: 100%;
+    padding: 24px;
+}
+.Install-Authenticar-App-Sect h2 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #828282;
+}
+.Install-Authenticar-App-Sect h2 a{
+    color: #000000;
+}
+.Play-store-And-App-store-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 352px;
+    width: 100%;
+    margin: 30px auto;
+    margin-bottom: 16px;
+}
+
+.Authenticator-app-QR-Code-sect{
+    background: #ffffff;
+    border: 1px solid #D4D8DD;
+    box-sizing: border-box;
+    border-radius: 2px;
+    max-width: 100%;
+    padding: 24px;
+    margin-top: 24px;
+}
+.Authenticator-app-QR-Code-sect h2 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #828282;
+}
+.Authenticator-app-QR-Code-sect h2 a{
+    color: #000000;
+}
+.Authenticator-app-scan-QR-Code{
+    text-align: center;
+    margin-top: 10px;
+}
+.Enter-Key-Manually-sect h3 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 200%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #828282;
+    flex-direction: column;
+}
+.Enter-Key-Manually-sect h3 a {
+    color: #7521E2;
+    text-transform: uppercase;
+}
+.Enter-6digit-Code-generate-sect{
+    background: #ffffff;
+    border: 1px solid #D4D8DD;
+    box-sizing: border-box;
+    border-radius: 2px;
+    max-width: 100%;
+    padding: 24px;
+    margin-top: 24px;
+}
+.Enter-6digit-Code-generate-sect h2{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #828282;
+}
+.Enter-6digit-Code-generate-sect h2 a{
+    color: #000000;
+}
+.Enter-6digit-Code-input{
+    max-width: 360px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+.Enter-6digit-Code-input ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.Enter-6digit-Code-input ul li input {
+    max-width: 53.62px;
+    height: 56px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    padding: 0px;
+    display: flex;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #3F434A;
+    border: 1px solid #D4D8DD;
+    box-sizing: border-box;
+    border-radius: 2px;
+    box-shadow: none !important;
+}
+.Enter-6digit-Code-input ul li input:focus {
+    border: 1px solid #2BBD54;
+    box-sizing: border-box;
+}
+.Authenticator-app-Alert-sect{
+    display: flex;
+    justify-content: center;
+    max-width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 41px;
+}
+.Authenticator-app-Alert-sect p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    color: #C78403;
+    padding-left: 10px;
+    max-width: 93%;
+}
+.Authenticar-App-Continue-btn{
+    text-align: center;
+    margin-bottom: 63px;
+}
+.Authenticar-App-Continue-btn button{
+    height: 48px;
+    width: 137px;
+    background: #FF8A00;
+    outline: none;
+    border: 3px solid transparent;
+    border-bottom: 3px solid rgba(0,0,0,.2);
+    border-radius: 2px;
+    margin: auto;
+}
+.Authenticar-App-Continue-btn button a {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+.Authenticar-App-Continue-btn button:hover{
+    outline: none;
+    border: 3px solid transparent;
+}
+
+
+
+
+
+
+@media (max-width: 767px){
+    .Authenticar-App-body{
+        padding: 0px 10px;
+    }
+}
+@media (max-width: 615px) {
+    .phone-authenticator-Modal .phone-authenticator-otp .phone-authenticator-OTP-box {
+        max-width: 95%;
+        margin: auto;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+    
+    .phone-authenticator-Modal .setting-confirm-btn {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .Authenticar-App-Tittle h1{
+        font-size: 35px;
+    }
+    
+}
+
+@media (min-width: 576px) {
+    .phone-authenticator-Modal .modal-dialog {
+        max-width: 620px;
+        margin: 1.75rem auto;
+    }
+}
+
+@media (max-width: 539px){
+    .Authenticar-App-Tittle h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 410px){
+    .Play-store-And-App-store-logo{
+        flex-direction: column;
+    }
+    .App-store-logo{
+        margin-top: 20px;
+    }
+    .Enter-6digit-Code-input ul li input {
+        width: 45px;
+        height: 48px;
+    }
+    .Authenticar-App-Tittle h1{
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 374px) {
+    .phone-authenticator-Modal .setting-confirm-btn {
+        margin-left: -3px;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .phone-authenticator-Modal .phone-authenticator-otp .phone-authenticator-OTP-box {
+        max-width: 100%;
+    }
+    .Authenticar-App-Tittle h1{
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 359px){
+    .phone-authenticator-Modal .setting-key ul li input {
+        width: 30px;
+        height: 48px;
+    }
+    .Enter-6digit-Code-input ul li input {
+        width: 35px;
+        height: 38px;
+    }
+    .Authenticar-App-Tittle h1 {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 319px){
+    .phone-authenticator-Modal .setting-key ul li input {
+        width: 25px;
+        height: 40px;
+        font-size: 25px;
+    }
+    .Enter-6digit-Code-input ul li input {
+        width: 30px;
+        height: 33px;
+        font-size: 22px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

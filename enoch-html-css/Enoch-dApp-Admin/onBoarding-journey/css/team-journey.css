@@ -1,0 +1,119 @@
+.team-signIn{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+	padding-top: 0;
+}
+.team-signIn-image{
+	background: linear-gradient(210.81deg, #580BFD 4.82%, #AD29DB 105.23%);
+	padding: 140px 60px;
+}
+.team-header-logo{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+.team-signIn .signin-head h2 {
+    font-size: 33px;
+}
+.team-signIn .input-label{
+	margin-bottom:12px;
+	font-size:14px;
+}
+.team-signIn .sign-form-input{
+	margin-bottom:20px;
+}
+.team-signin-bttn{
+	max-width:148px;
+	width:100%;
+	margin-bottom:16px;
+}
+.team-signin-accetBody p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #4D5B61;
+}
+.team-signin-accetBody p a{
+	    color: #007bff;
+}
+.tble-action-disable{
+	opacity:0.1;
+	pointer-events:none;
+}
+.not-granted-permission{
+    background: #FFFFFF;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.not-granted-permission p{
+	    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 170.23%;
+    color: #3F434A;
+    text-align: center;
+}
+
+.onboarding-enable-form {
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	margin-top:30px;
+	margin-bottom:200px;
+}
+.onboarding-enable-head {
+    text-align: center;
+}
+.onboarding-enable-head h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 37.1523px;
+    line-height: 160%;
+    color: #000000;
+    margin-bottom: 15px;
+}
+.onboarding-enable-head h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+    margin-bottom: 50px;
+}
+.onboarding-enable-head p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 26px;
+    color: #000000;
+    margin-bottom: 37px;
+    /* max-width: 625px; */
+}
+.onboarding-enable-options{
+	max-width:624px;
+	margin-bottom:40px;
+}
+.onboarding-continue-btn {
+    width: 137px;
+    height: 48px;
+}
+/*responsive*/
+@media (max-width: 767px){
+	.not-granted-permission {
+    padding: 40px;
+	height: 496px;
+}
+.not-granted-permission p{
+	font-size:13px;
+}
+}

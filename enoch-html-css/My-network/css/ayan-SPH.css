@@ -1,0 +1,377 @@
+/* Spheres Cards Css */
+
+.Spheres-header {
+    border-bottom: 1px solid #D4D8DD;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 410px) {
+
+    
+
+}
+
+img.sph_img133 {
+    width: 24px;
+    height: 24px;
+    margin-left: 0px;
+}
+
+img.sph_img13 {
+    width: 24px;
+    height: 24px;
+    margin-left: -10px;
+}
+
+img.sph_img1 {
+    width: 24px;
+    height: 24px;
+    margin-left: -10px;
+}
+
+
+.bdy_sec_Spheres {
+    padding: 24px;
+    background: white;
+
+}
+
+
+.SPH-images {
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+
+}
+
+
+.btn-source {
+
+
+    width: 95px;
+    height: 37px;
+    border: none;
+    background: #FFD240;
+    border-radius: 40px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 132%;
+    color: black;
+    position: absolute;
+    right: 38px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+
+.sph-card {
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 30%;
+    min-height: 391px;
+    border-radius: 24px;
+    margin-top: 26px;
+    padding: 24px;
+    border: none;
+    position: relative;
+    border-radius: 22px;
+    background: #7F3F0B;
+    margin-left: 11.5px;
+    margin-right: 11.5px;
+}
+
+.sph-card.red {
+
+
+    background: #6B1511;
+}
+
+.sph-card.white {
+
+
+    background: white;
+}
+
+.sph-card.black {
+
+
+    background: #1E1F2D;
+}
+
+
+.sph-card.pink {
+
+
+    background: #9A317F;
+}
+
+
+.sph-card.blue {
+
+
+    background: #474CD5;
+}
+
+.sph-card.purple {
+
+
+    background: #474CD5;
+}
+
+
+.sph-card.grey {
+
+
+    background: #3F434A;
+}
+
+
+.sph-card.green {
+
+
+    background: #1A3045;
+}
+
+
+.SPH_head {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 170.23%;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.SPH_enoch {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.SPH_enoch p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 170.23%;
+    color: #FFFFFF;
+    margin-right: 6px;
+}
+
+.stuf-open {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    width: 243px;
+    height: 81px;
+    margin-top: 10px;
+    margin-right: 0px !important;
+    margin-bottom: 0px;
+}
+
+.centr_txt_SPH {
+
+    border-top: 1px solid #FFFFFF;
+    /* opacity: 0.2; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+
+.sph_avex {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    margin-top: 16px;
+    padding-bottom: 16px;
+    
+}
+
+.joining_avex {
+
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 158%;
+    color: #FFFFFF;
+    margin-left: 8.2px;
+
+}
+
+.sph_avex_nft33 {
+    border-top: 1px solid #FFFFFF;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 18px;
+
+}
+
+.sph_avex_nft33 p {
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 158%;
+    color: #FFFFFF;
+
+
+}
+
+.decrp_sph {
+    margin-top: 8px;
+}
+
+.decrp_sph p {
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.sph_btn_avex {
+    margin-top: 16px;
+}
+
+.sph_btn_avex button {
+    border: none;
+    outline: none;
+    background: #2BBD54;
+    border-radius: 30px;
+    padding: 8px 24px 8px 24px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+
+img.SPH {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 8px;
+}
+
+.SPH_head2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 170.23%;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+
+@media screen and (min-device-width: 700px) and (max-device-width: 1024px) {
+
+
+    .sph-card {
+
+        width: 45%;
+        background-repeat: repeat;
+        background-size: 100%;
+
+    }
+
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 690px) {
+    .SPH-images {
+
+
+        justify-content: center;
+    }
+
+    .sph-card {
+
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+}
+
+.attend-class {
+    position: absolute;
+    right: 30px;
+    width: 98px;
+    height: 37px;
+    background: #FFD240;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 132%;
+    color: #000000;
+}
+
+.no-users123 {
+
+
+
+    display: flex;
+    opacity: 0.1;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+
+}
+
+.sph_img {
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ovr_lap_img ul li:first-child {
+
+
+margin-left: 0px;
+
+}
+
+ul li {
+
+
+    margin-left: -10px;
+    
+    }

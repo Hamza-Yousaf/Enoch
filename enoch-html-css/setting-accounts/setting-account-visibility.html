@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Setting/Account</title>
+	<!-- Fav Icons -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- Stylesheets -->
+	<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/global.css" rel="stylesheet" />
+  <link href="css/dashboard-header.css" rel="stylesheet" />
+  <link href="css/dashboard-style.css" rel="stylesheet" />
+  
+  
+</head>
+
+<body>
+	<div class="container-fluid dashboard-body-bg">
+	<div class="row">
+		<header class="custom-header">			
+			<div class="ezl-dashboard-header">
+				<div class="menu-left">
+					<div class="menu-wrap">
+						<a href="#menu" class="menu-link"><img src="images/Menu.png" alt="Menu" class="img-fluid"/></a>
+					</div>
+					<div class="header-logo"><a href="javascript:void(0)"><img src="images/logo.png" alt="logo" class="img-fluid"/></a></div>
+				</div>
+				<div class="menuright-side">
+					<div class="right-search">
+						<form class="search-form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Fund, ISIN, Keyword ">
+									<button class="search-form-btn" type="Submit"><img class="search-img" src="images/search.png" alt="search"></button>
+							</div>
+						</form>
+					</div>
+					<div class="menu-mid-sect">
+						<ul id="submenubar">
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/home.png" alt="home" class="img-fluid"/></div>
+								<a href="javascript:void(0)">Home</a>
+							</li>
+							<!-- <li class="">
+								<div class="menu-times-notifi"><img src="images/network.png" alt="network" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">My Network</a>
+							</li> -->
+							<li class="">
+								<div class="menu-times-notifi"><img src="images/Chat.png" alt="Chat" class="img-fluid"/><span>0</span></div>
+								<a href="javascript:void(0)">Messaging</a>
+							</li>
+							<li class="ether-block">
+								<div class="menu-times-notifi mr-2"><img src="images/Ethereum.png" alt="Ethereum" class="img-fluid"/></div>
+								<a href="javascript:void(0)">ETH Mainnet <i class="fa fa-angle-right"></i></a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)">Connect Wallet</a>
+							</li>
+							<li class="connect-wallet-block">
+								
+								<a href="javascript:void(0)"><span><img src="images/cart.png" class="img-fluid mr-2"/></span>Cart</a>
+							</li>
+							
+						</ul>
+						<div class="toggle-menu">
+								<div onclick="subtogglediv('submenubar','submenu-toggle');" class="d-inline-block">
+									<i class="fa fa-bars" aria-hidden="true" id="submenu-toggle"></i>
+								</div>
+							</div>
+					</div>
+					
+					<div class="ezl-notificaion">
+					<div class="position-relative notificaion-dropdown ezl-notificaion-marg">
+						<a href="javascript:void(0)" class="popup"><img src="images/help.png" alt="help"/></a>							
+											
+					</div>
+					<div class=" position-relative notificaion-dropdown">
+						<a href="javascript:void(0)" class="popup"><img src="images/alertBell.png" alt="Bell"><span class="notificaion-spn">10</span></a>							
+						
+					</div>
+					</div>
+					<div class="ezl-user-ac">
+					
+					<div class="account-d dropdown">
+						<div class="dropdown-buttn"><span class="popup" onclick="popupFunction()"><div class="user-img"><img src="images/user-img.png" alt="user image" class="img-fluid"/></div></span>
+							<!-- <div class="popupbox dropdown-menu" id="myPopup">
+								
+								<ul class="">
+									<li>
+										<div  class="enoch-usr-prof"><span><img src="images/user-pro-pic.png" class="img-fluid" alt="profile- pic"/> EncchUser007</span><span><a href="#">Change</a></span></div>
+									</li>
+									<li>
+										<div class="enoch-usr-status-block">
+											<div class="usr-status-left">Online Status</div>
+											<div class="usr-status-right">
+												<div class="post-switch">
+													<label class="postswitch">
+													  <input type="checkbox" checked>
+													  <span class="post-slider round"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="enoch-usr-status-block"><a href="#">Public Profile</a></div>
+										<div class="enoch-usr-status-block mb-0"><a href="#">User Settings</a></div>
+									</li>
+									<li>
+										<div class="enoch-usr-status-block"><a href="#">Billing</a></div>
+										<div class="enoch-usr-status-block"><a href="#">Help Center</a></div>
+										<div class="enoch-usr-status-block"><a href="#">Verify Account (KYC)</a></div>
+										<div class="enoch-usr-status-block mb-0"><a href="#" class="orange-clr">Upgrade to Premium</a></div>
+									</li>
+									<li class="mt-4">
+										<div class="enoch-usr-status-block mb-0">Free Bonus<span><a href="#" class="btn freebonus-btn">$50/500 $Enoch </a></span></div>
+									</li>
+									<li class="mt-4">
+										<div class="enoch-usr-status-block mb-0"><a href="#" data-toggle="modal" data-target="switch-user-modal">Switch Account</a></div>
+										
+									</li>
+									<li class="mt-4 mb-0 pb-0">
+										<div class="enoch-usr-status-block mb-0"><a href="#" class="post-red-clr">Logout</a></div>
+									</li>
+								</ul>
+							</div> -->
+						</div>
+					</div>
+					</div>
+				</div>				
+			</div>
+			
+		</header>
+	</div>	
+	<div class="row">
+        <div class="dashboard-header-bredcrumb">
+			<div class="ezl-dashboard-container">
+				<div class="col-12 p-md-0">
+					<ul>
+						<li class="mr-2"><img src="images/bd-icon.png" alt="icon" class="img-fluid"/> </li>
+						<li class="mr-1"><a href="javascript:void(0)"> Setting / </a></li>
+						<li><a href="javascript:void(0)" class="dsh-active"> Account / </a></li>
+						<li><a href="javascript:void(0)"> Account Prefrences</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ezl-dashboard-container">	
+		<div class="row">
+			<div class="col-12">
+			<div class="enoch-setting-acblock">
+				<div class="enoch-setting-acblock-lft" id="accordion-block">
+					<div class="enoch-setting-acblock-lft-panel">
+						<h3 class="enoch-setting-accordion">Account  Prefrences </h3>
+						<ul class="tog-d-block">
+							<li class="setting-list-active"><a href="#proffile-info">Profile Information</a></li>
+							<li><a href="#site-prefrnc">Site Preferences</a></li>
+							<li><a href="#sync-option">Syncing Options</a></li>
+							<li><a href="#subscription-payment">Subscription & payments</a></li>
+							<li><a href="#partners-service">Partners & services</a></li>
+							<li><a href="#account-mngt">Account management</a></li>
+						</ul>
+					</div>
+					<div class="enoch-setting-acblock-lft-panel">
+						<h3 class="enoch-setting-accordion">Sign in & Security</h3>
+						<ul class="tog-d-block">
+							<li class="setting-list-active"><a href="#account-access"> Account Access</a></li>
+							
+						
+						</ul>
+					</div>
+					<div class="enoch-setting-acblock-lft-panel">
+						<h3 class="enoch-setting-accordion accordion-active">Visibility</h3>
+						<ul class="tog-d-block">
+							<li class="setting-list-active"><a href="#profile-network">Visibility of your Profile & Network</a></li>
+							<li><a href="#visibility-activity">Visibility of your Enoch Activity</a></li>	
+						
+						</ul>
+					</div>
+					<div class="enoch-setting-acblock-lft-panel">
+						<h3 class="enoch-setting-accordion">Communications</h3>
+						<ul class="tog-d-block">
+							<li class="setting-list-active"><a href="#get-notification">How you get your notifications</a></li>
+							<li><a href="#who-reach">Who can Reach you</a></li>
+							<li><a href="#message-exp">Messaging experience</a></li>																		
+						</ul>
+					</div>
+					<div class="enoch-setting-acblock-lft-panel">
+						<h3 class="enoch-setting-accordion">Data Privacy</h3>
+						<ul class="tog-d-block">
+							<li class="setting-list-active"><a href="#use-your-data">How Enroch uses your data</a></li>
+							<li><a href="#job-seeking">Who can Reach you</a></li>
+							<li><a href="#other-application">Other applications</a></li>																		
+						</ul>
+					</div>
+					<div class="enoch-setting-acblock-lft-panel">
+						<h3 class="enoch-setting-accordion border-bottom-0">Advertising Data</h3>
+						<ul class="tog-d-block">
+							<li class="setting-list-active"><a href="#advertising-data">Advertising preferences</a></li>
+							<li><a href="#data-collected">Who can Reach you</a></li>
+							<li><a href="#third-party-data">Third-party data</a></li>																		
+						</ul>
+					</div>
+				</div>
+				<div class="enoch-setting-acblock-right" id="accordion-togg-block">
+					<div class="enoch-setting-right-block" id="profile-network">
+						<h3>Visibility of your profile & network</h3>
+						<h4>Make your profile and contact info only visible to those you choose</h4>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-block">
+							<div class="enoch-acount-detail-lft">
+								<h5>Profile viewing options</h5>
+								<p>Choose whether you’re visible or viewing in private mode</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+								<p>Full Profile</p>
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-content-visibility">
+									<p class="content-visibility-txt">Select what others see when you’ve viewed their profile</p>
+									<div class="content-visibility-user-block">
+										<h3>Your name and headline</h3>
+										<div class="authenticator-enable-options-block visibility-profile-user">
+											<div class="authenticator-enable-options-sel">
+												<input id="user-v1" name="b-plan" type="radio" checked>
+												<label for="user-v1"></label>
+											</div>
+											<div class="visibility-profile-view">
+												<span><img src="images/avtr.png" alt="avater" class="img-fluid"/></span>
+												<div>
+													<h3>Robert Miles </h3>
+													<p>Manager – Design studio Adobe</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="content-visibility-user-block">
+										<h3>Private profile characteristics</h3>
+										<div class="authenticator-enable-options-block visibility-profile-user">
+											<div class="authenticator-enable-options-sel">
+												<input id="user-v2" name="b-plan" type="radio">
+												<label for="user-v2"></label>
+											</div>
+											<div class="visibility-profile-view">
+												<span><img src="images/avtr.png" alt="avater" class="img-fluid"/></span>
+												<div>
+													<h3>Someone at Adobe</h3>
+													<p></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="content-visibility-user-block">
+										<h3>Private mode</h3>
+										<div class="authenticator-enable-options-block visibility-profile-user">
+											<div class="authenticator-enable-options-sel">
+												<input id="user-v3" name="b-plan" type="radio">
+												<label for="user-v3"></label>
+											</div>
+											<div class="visibility-profile-view">
+												<span><img src="images/avtr.png" alt="avater" class="img-fluid"/></span>
+												<div>
+													<h3>Anonymous Enoch Member</h3>
+													
+												</div>
+											</div>
+										</div>
+									</div>
+									<p>Selecting Private profile characteristics or Private mode will disable Who's Viewed Your Profile and erase your viewer history. <br/><a href="#">Upgrade to Premium</a> to see all your viewers in the last 90 days while browsing in private mode.</p>
+								</div>
+							</div>
+							</div>
+							
+						</div>
+						
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-block">
+							<div class="enoch-acount-detail-lft">
+								<h5>Story viewing options</h5>
+								<p>Choose whether you’re visible or viewing in private mode</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-content-visibility">
+									<p class="content-visibility-txt">Select what creators see when you’ve viewed their story</p>
+									<div class="content-visibility-user-block">
+										<h3>Your name and headline</h3>
+										<div class="authenticator-enable-options-block visibility-profile-user">
+											<div class="authenticator-enable-options-sel">
+												<input id="user-v4" name="b-user" type="radio" checked="">
+												<label for="user-v4"></label>
+											</div>
+											<div class="visibility-profile-view">
+												<span><img src="images/avtr.png" alt="avater" class="img-fluid"></span>
+												<div>
+													<h3>Robert Miles </h3>
+													<p>Manager – Design studio Adobe</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="content-visibility-user-block">
+										<h3>Private profile characteristics</h3>
+										<div class="authenticator-enable-options-block visibility-profile-user">
+											<div class="authenticator-enable-options-sel">
+												<input id="user-v5" name="b-user" type="radio">
+												<label for="user-v5"></label>
+											</div>
+											<div class="visibility-profile-view">
+												<span><img src="images/avtr.png" alt="avater" class="img-fluid"></span>
+												<div>
+													<h3>Robert Miles at Adobe</h3>
+													<p></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="content-visibility-user-block mb-0">
+										<h3>Private mode</h3>
+										<div class="authenticator-enable-options-block visibility-profile-user">
+											<div class="authenticator-enable-options-sel">
+												<input id="user-v6" name="b-user" type="radio">
+												<label for="user-v6"></label>
+											</div>
+											<div class="visibility-profile-view">
+												<span><img src="images/avtr.png" alt="avater" class="img-fluid"></span>
+												<div>
+													<h3>Anonymous LinkedIn Member</h3>
+													<p></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							</div>
+							
+						</div>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-block">
+							<div class="enoch-acount-detail-lft">
+								<h5>Edit your public profile</h5>
+								<p>Choose how your profile appears to non-logged in members via search</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-content-txt">
+									
+								</div>
+							</div>
+							</div>
+							
+						</div>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-block">
+							<div class="enoch-acount-detail-lft">
+								<h5>Who can see or download your email address</h5>
+								<p>Choose who can see your email address on your profile or in approved apps or download it in their data export</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-content-dwnld">
+									<p class="accordion-content-dwnld-txt">Who can see jaisinghdesign@gmail.com on your profile or in approved apps?</p>
+									<div class="profile-visibility-dropdown position-relative">
+										<div class="visibilitySetting-drop-box">
+											<a href="javascript:void(0)" onclick="visibilitySetting()" id="visibilitySetting" class="timeSetting-droplist visibilitySetting-droplist">Everyone on Enoch</a>
+										</div>
+										<div id="visibilitySetting-DropdownList" class="timeSetting-content visibilitySetting-content">										
+											<ul class="sign-form-drop-scrollable">
+											
+												<li>Your connection</li>
+												<li>Everyone on Enoch</li>
+																																																																															
+											</ul>
+										</div>
+									</div>
+									<p class="visibility-para1">Allow your connections to download your email <span>mail@gmail.com</span> in their data export? If no, your primary email address will not be included. <a href="#">Learn more</a></p>
+									<div class="visibility-switch">No
+										<label class="visibilityswitch">
+										  <input type="checkbox">
+										  <span class="visibility-slider round"></span>
+										</label>
+									</div>
+									<p class="visibility-para1 mb-0">If someone can see your email address, they will be able to contact you directly. <a href="#">Learn more</a> You can control your primary email address in <a href="#">settings.</a></p>
+								</div>
+							</div>
+							</div>
+							
+						</div>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-block">
+							<div class="enoch-acount-detail-lft">
+								<h5>Who can see your connections</h5>
+								<p>Choose who can see your list of connections</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+								<p>Connections</p>
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-content-dwnld">
+									<p class="accordion-content-dwnld-txt">Who can see your connections displayed on your profile</p>
+									<div class="profile-visibility-dropdown position-relative">
+										<div class="visibilitySetting-drop-box">
+											<a href="javascript:void(0)" onclick="connectionSetting()" id="connectionSetting" class="timeSetting-droplist visibilitySetting-droplist">Your connections</a>
+										</div>
+										<div id="connectionSetting-DropdownList" class="timeSetting-content visibilitySetting-content">										
+											<ul class="sign-form-drop-scrollable">
+											
+												<li>Nobody</li>
+												<li>Your connections</li>
+												<li>Everyone</li>
+																																																																															
+											</ul>
+										</div>
+									</div>
+									
+									<p class="visibility-para2 mb-0">Other members will still be able to see connections that have endorsed you or any connections they share with you. If you don’t want your endorsements visible, switch your option to Only you. <a href="#">Learn more</a></p>
+								</div>
+							</div>
+							</div>
+							
+						</div>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-block">
+							<div class="enoch-acount-detail-lft">
+								<h5>Who can see your last name</h5>
+								<p>Choose how you want your name to appear</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+								<p>Full</p>
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-content-visibility">
+									
+									<div class="content-visibility-user-block">
+										<h3>Your name and headline</h3>
+										<div class="authenticator-enable-options-block visibility-profile-user">
+											<div class="authenticator-enable-options-sel">
+												<input id="user-v11" name="b-plan" type="radio" checked>
+												<label for="user-v11"></label>
+											</div>
+											<div class="visibility-profile-view">
+												<span><img src="images/avtr.png" alt="avater" class="img-fluid"/></span>
+												<div>
+													<h3>Robert Miles </h3>
+													<p>Manager – Design studio Adobe</p>
+												</div>
+											</div>
+										</div>
+										<div class="authenticator-enable-options-block visibility-profile-user">
+											<div class="authenticator-enable-options-sel">
+												<input id="user-v12" name="b-plan" type="radio" >
+												<label for="user-v12"></label>
+											</div>
+											<div class="visibility-profile-view">
+												<span><img src="images/avtr.png" alt="avater" class="img-fluid"/></span>
+												<div>
+													<h3>Robert Miles </h3>
+													<p>Manager – Design studio Adobe</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+								<div class="visibility-profile-work">
+										<h3>How does this work?</h3>
+										<ul>
+											<li>- Only the first initial of your last name will be displayed for anyone who isn't a connection.</li>
+											<li>- Your connections will continue to see your full first and last name.</li>
+											<li>- Anyone who's interested in connecting with you can still find you by using your first and last name.</li>
+										</ul>
+									</div>
+							</div>
+							</div>
+							
+						</div>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-block">
+							<div class="enoch-acount-detail-lft">
+								<h5>Representing your organization and interests</h5>
+								<p>Show your name and/or profile information with other content shown on Enoch?</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+								<p>Yes</p>
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-content-represent">
+									<p class="accordion-content-dwnld-txt mw-100">Show your name and/or profile information with other content shown on Enoch?</p>
+									<div class="visibility-switch">Yes
+										<label class="visibilityswitch">
+										  <input type="checkbox" checked>
+										  <span class="visibility-slider round"></span>
+										</label>
+									</div>
+									<p class="visibility-para2">Your information can be presented with content such as job postings, company pages and insights, sponsored content, and other content related to your publicly expressed interests. Public interests can include a service you like, public events you are attending, or a company you follow or have interacted with on LinkedIn by sharing or commenting on its posts.</p>
+								</div>
+							</div>
+							</div>
+							
+						</div>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-block">
+							<div class="enoch-acount-detail-lft">
+								<h5>Profile visibility off Enoch</h5>
+								<p>Choose how your profile appears via partners’ and other permitted services</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+								<p>Yes</p>
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-content-represent">
+									<p class="accordion-content-represent-txt">Should we show information from your profile to users of permitted services such as Outlook? <a href="#">Learn more</a></p>
+									<div class="visibility-switch mb-0">Yes
+										<label class="visibilityswitch">
+										  <input type="checkbox" checked>
+										  <span class="visibility-slider round"></span>
+										</label>
+									</div>
+									
+								</div>
+							</div>
+							</div>
+							
+						</div>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-block">
+							<div class="enoch-acount-detail-lft">
+								<h5>Profile discovery using email address</h5>
+								<p>Choose who can discover your profile if they haven't connected with you, but have your email address</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+								<p>Yes</p>
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-content-dwnld">
+									<p class="accordion-content-dwnld-txt mw-100">Who can discover your profile or connect with you if they have your email address?</p>
+									<div class="profile-visibility-dropdown position-relative">
+										<div class="visibilitySetting-drop-box">
+											<a href="javascript:void(0)" onclick="discoverSetting()" id="discoverSetting" class="timeSetting-droplist visibilitySetting-droplist">Nobody</a>
+										</div>
+										<div id="discoverSetting-DropdownList" class="timeSetting-content visibilitySetting-content">										
+											<ul class="sign-form-drop-scrollable">
+											
+												<li>Nobody</li>
+												<li>2nd-degree connections</li>
+												<li>Everyone</li>
+																																																																															
+											</ul>
+										</div>
+									</div>
+									
+									<p class="visibility-para2 mb-0">Your 1st-degree connections can always discover you, since you're already connected with them. <a href="#">Learn more</a></p>
+								</div>
+							</div>
+							</div>
+							
+						</div>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-block">
+							<div class="enoch-acount-detail-lft">
+								<h5>Profile discovery using phone number</h5>
+								<p>Choose who can discover your profile if they haven't connected with you, but have your phone number</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+								<p>Yes</p>
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-content-txt">
+									
+								</div>
+							</div>
+							</div>
+							
+						</div>
+						<div class="enoch-acount-detail mb-0">
+							<div class="enoch-acount-detail-block">
+							<div class="enoch-acount-detail-lft">
+								<h5>Blocking</h5>
+								<p>See your list and make changes if you’d like</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+								
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-content-blocking">
+									<h3>You’re currently blocking 2 people:</h3>
+									<ul>
+										<li>
+											<div class="user-blocking-lft">
+												<span>Nikki Gomes</span>
+												<span>2 years ago</span>
+											</div>
+											<div class="user-blocking-right">
+												<a href="#">Unblock</a>
+											</div>
+										</li>
+										<li>
+											<div class="user-blocking-lft">
+												<span>Dan brooks</span>
+												<span>10 months ago</span>
+											</div>
+											<div class="user-blocking-right">
+												<a href="#">Unblock</a>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="enoch-setting-right-block" id="visibility-activity">
+						<h3>Visibility of your Enoch Activity</h3>
+						<h4>Make sure your network only sees the activity you choose to show</h4>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-block">
+							<div class="enoch-acount-detail-lft">
+								<h5>Manage active status</h5>
+								<p>Choose who can see when you are on LinkedIn</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+								<p>Full Profile</p>
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-content-visibility">
+									
+									<div class="content-visibility-user-block">
+										<h3 class="pb-2">Who can see that you are currently active while you are using Enoch?</h3>
+										<div class="authenticator-enable-options-block visibility-profile-user v-custm-pos">
+											<div class="authenticator-enable-options-sel">
+												<input id="user-v21" name="b-plan" type="radio">
+												<label for="user-v21"></label>
+											</div>
+											<div class="visibility-profile-view">												
+												<div>
+													<h3>Your Connections only</h3>
+													<p>Only your 1st-degree connections will be able to see when you are on LinkedIn.</p>
+												</div>
+											</div>
+										</div>
+										<div class="authenticator-enable-options-block visibility-profile-user v-custm-pos">
+											<div class="authenticator-enable-options-sel">
+												<input id="user-v22" name="b-plan" type="radio">
+												<label for="user-v22"></label>
+											</div>
+											<div class="visibility-profile-view">
+											
+												<div>
+													<h3>All Enoch members</h3>
+													<p>All LinkedIn members will be able to see when you are on LinkedIn.</p>
+												</div>
+											</div>
+										</div>
+										<div class="authenticator-enable-options-block visibility-profile-user v-custm-pos">
+											<div class="authenticator-enable-options-sel">
+												<input id="user-v23" name="b-plan" type="radio">
+												<label for="user-v23"></label>
+											</div>
+											<div class="visibility-profile-view">
+												
+												<div>
+													<h3>No one</h3>
+													<p>No LinkedIn member will be able to see when you are on LinkedIn, and you will not be<br/> able to see when others are active.</p>
+												</div>
+											</div>
+										</div>
+										<h3>Changes to this setting may take up to 30 minutes to take effect.</h3>
+									</div>
+									
+								</div>
+								<div class="visibility-profile-work">
+										<p>Enoch may use data relating to your activity on Enoch to personalize our services, so that they can be more relevant and useful to you and others.</p>
+									</div>
+							</div>
+							</div>
+							
+						</div>
+						
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-block">
+							<div class="enoch-acount-detail-lft">
+								<h5>Share profile updates with your network</h5>
+								<p>Choose if your network is notified about key updates from your profile</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+								<p>Yes</p>
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-content-represent">
+									<p class="accordion-content-dwnld-txt mw-100">Should we notify your network when your profile is updated or upon work anniversaries?</p>
+									<div class="visibility-switch">No
+										<label class="visibilityswitch">
+										  <input type="checkbox">
+										  <span class="visibility-slider round"></span>
+										</label>
+									</div>
+									<p class="accordion-content-dwnld-txt mw-100">Your profile updates can include job changes, education changes. Learn more</p>
+									<p class="visibility-para2">Your profile updates can include job changes, education changes. <a href="#">Learn more</a></p>
+								</div>
+							</div>
+							</div>
+							
+						</div>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-block">
+							<div class="enoch-acount-detail-lft">
+								<h5>Notify connections when you're in the news</h5>
+								<p>Choose if your network is notified when you've been mentioned in an article or blog post</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+								<p>Yes</p>
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-content-represent">
+									<p class="accordion-content-dwnld-txt mw-100">Should we notify your connections and followers when you’re mentioned in the news?</p>
+									<div class="visibility-switch">No
+										<label class="visibilityswitch">
+										  <input type="checkbox">
+										  <span class="visibility-slider round"></span>
+										</label>
+									</div>
+									
+								</div>
+							</div>
+							</div>
+							
+						</div>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-block">
+							<div class="enoch-acount-detail-lft">
+								<h5>Mentions or Tags</h5>
+								<p>Choose whether other members can mention or tag you</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+								<p>Yes</p>
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-content-represent">
+									<p class="accordion-content-dwnld-txt mw-100">Allow others to mention or tag you in content posted on LinkedIn</p>
+									<div class="visibility-switch">Yes
+										<label class="visibilityswitch">
+										  <input type="checkbox" checked>
+										  <span class="visibility-slider round"></span>
+										</label>
+									</div>
+									<p class="visibility-para1">Example of mentions include tagging you in posts/comments or tags in photos. You can control the visibility of your existing mentions. <a href="#">Learn more</a></p>
+								</div>
+							</div>
+							</div>
+							
+						</div>
+						<div class="enoch-acount-detail">
+							<div class="enoch-acount-detail-block">
+							<div class="enoch-acount-detail-lft">
+								<h5>Followers</h5>
+								<p>Choose who can follow you and see your public updates</p>
+							</div>
+							<div class="enoch-acount-detail-right">
+								<div class="enoch-acount-detail-bk"><span class="enoch-acount-view-btn"><a href="javascript:void(0)" class="enoch-acount-view-cls enochaccordion-block">Change</a><a href="javascript:void(0)" class="enoch-acount-view-cls accordion-block-close">close</a></span></div>
+								<p>Everyone</p>
+							</div>
+							<div class="accordion-content-blck">
+								<div class="accordion-content-dwnld">
+									<h3>Choosing “Everyone” lets people outside your network follow your public updates. If you switch from “Everyone” to “Your connections,” you’ll lose any out-of-network followers you have now. Any changes you make will take effect in about 24 hours.</h3>
+									<div class="profile-visibility-dropdown position-relative">
+										<div class="visibilitySetting-drop-box">
+											<a href="javascript:void(0)" onclick="followerSetting()" id="followerSetting" class="timeSetting-droplist visibilitySetting-droplist">Your connection</a>
+										</div>
+										<div id="followerSetting-DropdownList" class="timeSetting-content visibilitySetting-content">										
+											<ul class="sign-form-drop-scrollable">
+											
+												<li>Your connection</li>
+												<li>Everyone on Enoch</li>
+																																																																															
+											</ul>
+										</div>
+									</div>
+									
+									
+								</div>
+							</div>
+							</div>
+							
+						</div>
+						
+					</div>
+					
+					
+				</div>
+			</div>
+			</div>
+		</div>
+		
+	
+	</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+
+// When the user clicks, open the popup
+function popupFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+
+}
+
+
+</script>
+<script>
+	/*for toggle sub menu*/
+		function subtogglediv(id, icon) {
+			var id = document.getElementById(id);
+			id.classList.toggle('submenu-active');
+			var cross = document.getElementById(icon);
+			cross.classList.toggle('fa-times');
+			cross.classList.toggle('fa-bars');
+		}
+		</script>
+	<script>
+// Add active class to the current button (highlight it)
+//var header = document.getElementById("accordion-block");
+var btns = document.getElementsByClassName("enoch-setting-accordion");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  btnlinks = document.getElementsByClassName("enoch-setting-accordion");
+            for (i = 0; i < btnlinks.length; i++) {
+                btnlinks[i].className = btnlinks[i].className.replace(" accordion-active", "");
+            }
+  this.className += " accordion-active";
+  });
+}
+</script>
+
+<script>
+var acc = document.getElementsByClassName("enoch-acount-detail-right");
+var i;
+var accblock=document.getElementsByClassName("enoch-acount-detail");
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("acc-active");
+	
+    
+  });
+   accblock[i].addEventListener("click", function() {
+    this.classList.toggle("acc-active-parent");
+	
+    
+  });
+}
+
+
+</script>
+<script>
+		
+		
+		//showing visibility dropdown
+		function visibilitySetting() {
+
+	var visibilitySetting = document.getElementById("visibilitySetting-DropdownList");
+	visibilitySetting.classList.toggle("show");
+	var visibilitySetting2 = document.getElementById("visibilitySetting");
+	
+  visibilitySetting2.classList.toggle("select-active"); 
+}
+var visibilitySetting3 = document.getElementById("visibilitySetting-DropdownList").querySelectorAll(".timeSetting-content ul li");
+visibilitySetting3.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('visibilitySetting').innerHTML = this.innerHTML;
+ 
+	
+	        
+		 }
+		  
+        });
+//showing connection dropdown
+		function connectionSetting() {
+
+	var connectionSetting = document.getElementById("connectionSetting-DropdownList");
+	connectionSetting.classList.toggle("show");
+	var connectionSetting2 = document.getElementById("connectionSetting");
+	
+  connectionSetting2.classList.toggle("select-active"); 
+}
+var connectionSetting3 = document.getElementById("connectionSetting-DropdownList").querySelectorAll(".timeSetting-content ul li");
+connectionSetting3.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('connectionSetting').innerHTML = this.innerHTML;
+ 
+	
+	        
+		 }
+		  
+        });
+		//showing connection dropdown
+		function discoverSetting() {
+
+	var discoverSetting = document.getElementById("discoverSetting-DropdownList");
+	discoverSetting.classList.toggle("show");
+	var discoverSetting2 = document.getElementById("discoverSetting");
+	
+  discoverSetting2.classList.toggle("select-active"); 
+}
+var discoverSetting3 = document.getElementById("discoverSetting-DropdownList").querySelectorAll(".timeSetting-content ul li");
+discoverSetting3.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('discoverSetting').innerHTML = this.innerHTML;
+ 
+	
+	        
+		 }
+		  
+        });
+		//showing followers dropdown
+		function followerSetting() {
+
+	var followerSetting = document.getElementById("followerSetting-DropdownList");
+	followerSetting.classList.toggle("show");
+	var followerSetting2 = document.getElementById("followerSetting");
+	
+  followerSetting2.classList.toggle("select-active"); 
+}
+var followerSetting3 = document.getElementById("followerSetting-DropdownList").querySelectorAll(".timeSetting-content ul li");
+followerSetting3.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('followerSetting').innerHTML = this.innerHTML;
+ 
+	
+	        
+		 }
+		  
+        });
+		// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.timeSetting-droplist')) {
+    var dropdowns = document.getElementsByClassName("timeSetting-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+	<!--  var selItem = document.getElementById("athp-sel"); -->
+	
+}
+	</script>
+</body>
+
+</html>
